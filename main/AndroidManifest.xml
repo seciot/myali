@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest android:versionCode="52" android:versionName="8.1.0.043001" package="com.eg.android.AlipayGphone"
   xmlns:android="http://schemas.android.com/apk/res/android">
+  	<uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+  
     <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
     <permission android:name="android.Manifest.permission.MANAGE_ACCOUNTS" />
     <permission android:name="android.Manifest.permission.GET_ACCOUNTS" />
