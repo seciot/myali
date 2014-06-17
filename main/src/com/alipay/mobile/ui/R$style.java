@@ -1,0 +1,101 @@
+package com.alipay.mobile.ui;
+
+public final class R$style
+{
+  public static final int AppBaseTheme = 621477962;
+  public static final int AppTheme = 621477963;
+  public static final int boldStyle = 621477973;
+  public static final int bottom_popup_dialog = 621477978;
+  public static final int client_application_bg = 621477888;
+  public static final int dialogButtonStyle = 621477889;
+  public static final int dialog_with_no_title_style = 621477976;
+  public static final int dialog_with_no_title_style_trans_bg = 621477977;
+  public static final int framework_pullrefresh_overview = 621477964;
+  public static final int layoutButtonDarkbgStyle = 621477893;
+  public static final int layoutButtonStyle = 621477892;
+  public static final int mainButtonDarkbgStyle = 621477891;
+  public static final int mainButtonStyle = 621477890;
+  public static final int mainFundButtonStyle = 621477965;
+  public static final int normalStyle = 621477974;
+  public static final int share_select_dialog = 621477975;
+  public static final int simple_button_style = 621477970;
+  public static final int subButtonStyle = 621477894;
+  public static final int subSubButtonDarkbgStyle = 621477895;
+  public static final int subSubButtonStyle = 621477960;
+  public static final int subSubFundButtonStyle = 621477966;
+  public static final int subSwitchTabStyle = 621477967;
+  public static final int switch_btn_left_style = 621477971;
+  public static final int switch_btn_right_style = 621477972;
+  public static final int text_16 = 621477896;
+  public static final int text_18 = 621477897;
+  public static final int text_20 = 621477898;
+  public static final int text_22 = 621477899;
+  public static final int text_24 = 621477900;
+  public static final int text_26 = 621477901;
+  public static final int text_28 = 621477902;
+  public static final int text_30 = 621477903;
+  public static final int text_34 = 621477969;
+  public static final int text_blue_16 = 621477904;
+  public static final int text_blue_18 = 621477905;
+  public static final int text_blue_20 = 621477906;
+  public static final int text_blue_22 = 621477907;
+  public static final int text_blue_24 = 621477908;
+  public static final int text_blue_26 = 621477909;
+  public static final int text_blue_28 = 621477910;
+  public static final int text_blue_30 = 621477911;
+  public static final int text_dark_blue_16 = 621477912;
+  public static final int text_dark_blue_18 = 621477913;
+  public static final int text_dark_blue_20 = 621477914;
+  public static final int text_dark_blue_22 = 621477915;
+  public static final int text_dark_blue_24 = 621477916;
+  public static final int text_dark_blue_26 = 621477917;
+  public static final int text_dark_blue_28 = 621477918;
+  public static final int text_dark_blue_30 = 621477919;
+  public static final int text_dark_gray_16 = 621477920;
+  public static final int text_dark_gray_18 = 621477921;
+  public static final int text_dark_gray_20 = 621477922;
+  public static final int text_dark_gray_22 = 621477923;
+  public static final int text_dark_gray_24 = 621477924;
+  public static final int text_dark_gray_26 = 621477925;
+  public static final int text_dark_gray_28 = 621477926;
+  public static final int text_dark_gray_30 = 621477927;
+  public static final int text_gray_16 = 621477928;
+  public static final int text_gray_18 = 621477929;
+  public static final int text_gray_20 = 621477930;
+  public static final int text_gray_22 = 621477931;
+  public static final int text_gray_24 = 621477932;
+  public static final int text_gray_26 = 621477933;
+  public static final int text_gray_28 = 621477934;
+  public static final int text_gray_30 = 621477935;
+  public static final int text_green_16 = 621477936;
+  public static final int text_green_18 = 621477937;
+  public static final int text_green_20 = 621477938;
+  public static final int text_green_22 = 621477939;
+  public static final int text_green_24 = 621477940;
+  public static final int text_green_26 = 621477941;
+  public static final int text_green_28 = 621477942;
+  public static final int text_green_30 = 621477943;
+  public static final int text_light_gray_16 = 621477944;
+  public static final int text_light_gray_18 = 621477945;
+  public static final int text_light_gray_20 = 621477946;
+  public static final int text_light_gray_22 = 621477947;
+  public static final int text_light_gray_24 = 621477948;
+  public static final int text_light_gray_26 = 621477949;
+  public static final int text_light_gray_28 = 621477950;
+  public static final int text_light_gray_30 = 621477951;
+  public static final int text_orange_16 = 621477952;
+  public static final int text_orange_18 = 621477953;
+  public static final int text_orange_20 = 621477954;
+  public static final int text_orange_22 = 621477955;
+  public static final int text_orange_24 = 621477956;
+  public static final int text_orange_26 = 621477957;
+  public static final int text_orange_28 = 621477958;
+  public static final int text_orange_30 = 621477959;
+  public static final int text_white_28 = 621477968;
+  public static final int titlebar_button_style = 621477961;
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.mobile.ui.R.style
+ * JD-Core Version:    0.6.2
+ */

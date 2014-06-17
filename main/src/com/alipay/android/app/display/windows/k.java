@@ -1,0 +1,23 @@
+package com.alipay.android.app.display.windows;
+
+import com.alipay.android.app.data.Orientation;
+
+final class k
+  implements Runnable
+{
+  k(WindowsManager paramWindowsManager, UIWindow paramUIWindow, Orientation paramOrientation)
+  {
+  }
+
+  public final void run()
+  {
+    WindowsManager.a(this.c, System.currentTimeMillis());
+    if (WindowsManager.a(this.c) != null)
+      WindowsManager.a(this.c).a(this.a, this.b);
+  }
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.android.app.display.windows.k
+ * JD-Core Version:    0.6.2
+ */

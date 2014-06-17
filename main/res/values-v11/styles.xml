@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeNew" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MspAppBaseTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
+    <style name="MspAppTranslucentBaseTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
+</resources>

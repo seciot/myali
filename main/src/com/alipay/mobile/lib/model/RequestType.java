@@ -1,0 +1,84 @@
+package com.alipay.mobile.lib.model;
+
+public enum RequestType
+{
+  private int a;
+
+  static
+  {
+    REQUEST_TOP_PULL_MESSAGE = new RequestType("REQUEST_TOP_PULL_MESSAGE", 2, 256);
+    REQUEST_BOTTOM_PULL_MESSAGE = new RequestType("REQUEST_BOTTOM_PULL_MESSAGE", 3, 257);
+    REQUEST_PUBLIC_ACCOUNT_INFO = new RequestType("REQUEST_PUBLIC_ACCOUNT_INFO", 4, 258);
+    REQUEST_ACCOUNT_MENU = new RequestType("REQUEST_ACCOUNT_MENU", 5, 259);
+    REQUEST_CLICK_EVENT = new RequestType("REQUEST_CLICK_EVENT", 6, 260);
+    REQUEST_DELETE_MESSAGE = new RequestType("REQUEST_DELETE_MESSAGE", 7, 261);
+    REQUEST_REFRESH_RECORD_MESSAGE = new RequestType("REQUEST_REFRESH_RECORD_MESSAGE", 8, 263);
+    REQUEST_CLICK_EVENT_LOADING = new RequestType("REQUEST_CLICK_EVENT_LOADING", 9, 264);
+    REQUEST_TOP_PUBLIC_EVENT_PROCESS_MESSAGE = new RequestType("REQUEST_TOP_PUBLIC_EVENT_PROCESS_MESSAGE", 10, 265);
+    REQUEST_BOTTOM_PUBLIC_EVENT_PROCESS_MESSAGE = new RequestType("REQUEST_BOTTOM_PUBLIC_EVENT_PROCESS_MESSAGE", 11, 272);
+    REQUEST_PERSON_CONTACT_INFO = new RequestType("REQUEST_PERSON_CONTACT_INFO", 12, 273);
+    REQUEST_PUBLIC_ACCOUNT_INFO_DB = new RequestType("REQUEST_PUBLIC_ACCOUNT_INFO_DB", 13, 1000 + REQUEST_PUBLIC_ACCOUNT_INFO.getCode());
+    TOP_REQUEST_RESPONSE_ERROR = new RequestType("TOP_REQUEST_RESPONSE_ERROR", 14, REQUEST_TOP_PULL_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    BOTTOM_REQUEST_RESPONSE_ERROR = new RequestType("BOTTOM_REQUEST_RESPONSE_ERROR", 15, REQUEST_BOTTOM_PULL_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    TOP_REQUEST_PUBLIC_EVENT_PROCESS_ERROR = new RequestType("TOP_REQUEST_PUBLIC_EVENT_PROCESS_ERROR", 16, REQUEST_TOP_PUBLIC_EVENT_PROCESS_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    BOTTOM_REQUEST_PUBLIC_EVENT_PROCESS_ERROR = new RequestType("BOTTOM_REQUEST_PUBLIC_EVENT_PROCESS_ERROR", 17, REQUEST_BOTTOM_PUBLIC_EVENT_PROCESS_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    PUBLIC_REQUEST_RESPONSE_ERROR = new RequestType("PUBLIC_REQUEST_RESPONSE_ERROR", 18, REQUEST_PUBLIC_ACCOUNT_INFO, SUCESS_ERROR_SUB_VALUE);
+    REQUEST_PERSON_CONTACT_INFO_ERROR = new RequestType("REQUEST_PERSON_CONTACT_INFO_ERROR", 19, REQUEST_PERSON_CONTACT_INFO, SUCESS_ERROR_SUB_VALUE);
+    EVENT_REQUEST_RESPONSE_ERROR = new RequestType("EVENT_REQUEST_RESPONSE_ERROR", 20, REQUEST_CLICK_EVENT, SUCESS_ERROR_SUB_VALUE);
+    REQUEST_REFRESH_RECORD_MESSAGE_ERROR = new RequestType("REQUEST_REFRESH_RECORD_MESSAGE_ERROR", 21, REQUEST_REFRESH_RECORD_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    REQUEST_DELETE_MESSAGE_ERROR = new RequestType("REQUEST_DELETE_MESSAGE_ERROR", 22, REQUEST_DELETE_MESSAGE, SUCESS_ERROR_SUB_VALUE);
+    RequestType[] arrayOfRequestType = new RequestType[23];
+    arrayOfRequestType[0] = NONE;
+    arrayOfRequestType[1] = SUCESS_ERROR_SUB_VALUE;
+    arrayOfRequestType[2] = REQUEST_TOP_PULL_MESSAGE;
+    arrayOfRequestType[3] = REQUEST_BOTTOM_PULL_MESSAGE;
+    arrayOfRequestType[4] = REQUEST_PUBLIC_ACCOUNT_INFO;
+    arrayOfRequestType[5] = REQUEST_ACCOUNT_MENU;
+    arrayOfRequestType[6] = REQUEST_CLICK_EVENT;
+    arrayOfRequestType[7] = REQUEST_DELETE_MESSAGE;
+    arrayOfRequestType[8] = REQUEST_REFRESH_RECORD_MESSAGE;
+    arrayOfRequestType[9] = REQUEST_CLICK_EVENT_LOADING;
+    arrayOfRequestType[10] = REQUEST_TOP_PUBLIC_EVENT_PROCESS_MESSAGE;
+    arrayOfRequestType[11] = REQUEST_BOTTOM_PUBLIC_EVENT_PROCESS_MESSAGE;
+    arrayOfRequestType[12] = REQUEST_PERSON_CONTACT_INFO;
+    arrayOfRequestType[13] = REQUEST_PUBLIC_ACCOUNT_INFO_DB;
+    arrayOfRequestType[14] = TOP_REQUEST_RESPONSE_ERROR;
+    arrayOfRequestType[15] = BOTTOM_REQUEST_RESPONSE_ERROR;
+    arrayOfRequestType[16] = TOP_REQUEST_PUBLIC_EVENT_PROCESS_ERROR;
+    arrayOfRequestType[17] = BOTTOM_REQUEST_PUBLIC_EVENT_PROCESS_ERROR;
+    arrayOfRequestType[18] = PUBLIC_REQUEST_RESPONSE_ERROR;
+    arrayOfRequestType[19] = REQUEST_PERSON_CONTACT_INFO_ERROR;
+    arrayOfRequestType[20] = EVENT_REQUEST_RESPONSE_ERROR;
+    arrayOfRequestType[21] = REQUEST_REFRESH_RECORD_MESSAGE_ERROR;
+    arrayOfRequestType[22] = REQUEST_DELETE_MESSAGE_ERROR;
+  }
+
+  private RequestType(int paramInt)
+  {
+    this.a = paramInt;
+  }
+
+  private RequestType(RequestType paramRequestType1, RequestType paramRequestType2)
+  {
+    this.a = (paramRequestType1.getCode() + paramRequestType2.getCode());
+  }
+
+  public static RequestType getTypeByCode(int paramInt)
+  {
+    RequestType localRequestType1 = NONE;
+    for (RequestType localRequestType2 : values())
+      if (paramInt == localRequestType2.getCode())
+        return localRequestType2;
+    return localRequestType1;
+  }
+
+  public final int getCode()
+  {
+    return this.a;
+  }
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.mobile.lib.model.RequestType
+ * JD-Core Version:    0.6.2
+ */

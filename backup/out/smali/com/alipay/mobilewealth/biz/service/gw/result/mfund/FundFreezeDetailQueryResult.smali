@@ -1,0 +1,28 @@
+.class public Lcom/alipay/mobilewealth/biz/service/gw/result/mfund/FundFreezeDetailQueryResult;
+.super Lcom/alipay/mobilewealth/common/service/facade/result/CommonPageResult;
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# instance fields
+.field public fundFreezeDetails:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lcom/alipay/mobilewealth/core/model/models/mfund/FundFreezeDetail;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/alipay/mobilewealth/common/service/facade/result/CommonPageResult;-><init>()V
+
+    return-void
+.end method

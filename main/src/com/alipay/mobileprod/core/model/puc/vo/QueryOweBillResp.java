@@ -1,0 +1,18 @@
+package com.alipay.mobileprod.core.model.puc.vo;
+
+import com.alipay.mobileprod.core.model.puc.BaseRespVO;
+import java.io.Serializable;
+import java.util.List;
+
+public class QueryOweBillResp extends BaseRespVO
+  implements Serializable
+{
+  public String billAmount;
+  public List<BillContentVO> billContent;
+  public String title;
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.mobileprod.core.model.puc.vo.QueryOweBillResp
+ * JD-Core Version:    0.6.2
+ */

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="relativeLayout1">false</item>
+    <item type="id" name="about_process_icon">false</item>
+    <item type="id" name="update_cancel_btn">false</item>
+    <item type="id" name="download_process_title_txt">false</item>
+    <item type="id" name="download_process_bar">false</item>
+    <item type="id" name="progress_text">false</item>
+    <item type="id" name="promt">false</item>
+    <item type="id" name="alipaylogin_layout">false</item>
+    <item type="id" name="client_bg">false</item>
+    <item type="id" name="first_deploy_logo">false</item>
+    <item type="id" name="push_dialog_title">false</item>
+    <item type="id" name="push_dialog_title_app_image">false</item>
+    <item type="id" name="push_dialog_title_msg">false</item>
+    <item type="id" name="push_dialog_msg_text">false</item>
+    <item type="id" name="push_dialog_btn_enter">false</item>
+    <item type="id" name="push_dialog_btn_close">false</item>
+    <item type="id" name="push_app_image">false</item>
+    <item type="id" name="push_msg">false</item>
+    <item type="id" name="push_msg_title">false</item>
+    <item type="id" name="push_msg_time">false</item>
+    <item type="id" name="push_msg_body">false</item>
+</resources>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="52" android:versionName="8.1.0.043001" package="com.eg.android.AlipayGphone"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
+    <permission android:name="android.Manifest.permission.MANAGE_ACCOUNTS" />
+    <permission android:name="android.Manifest.permission.GET_ACCOUNTS" />
+    <permission android:name="android.Manifest.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <permission android:name="com.alipay.mobile.permission.Gesuture" />
+    <uses-permission android:name="com.alipay.mobile.permission.Gesuture" />
+    <permission android:name="com.ut.permission.DEVICE_STATE" />
+    <permission android:label="AlipayPushEventReceiver" android:name="com.alipay.mobile.push.permission.PUSH_EVENT" android:protectionLevel="signatureOrSystem" />
+    <permission android:label="AlipayPushService" android:name="com.alipay.mobile.push.permission.PUSHSERVICE" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="com.alipay.mobile.push.permission.PUSHSERVICE" />
+    <uses-permission android:name="com.alipay.mobile.push.permission.PUSH_EVENT" />
+    <uses-permission android:name="com.ut.permission.DEVICE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.alipay.mobile.push.permission.PUSHSERVICE" />
+    <uses-permission android:name="com.alipay.mobile.push.permission.PUSH_EVENT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.alipay.android.app.SHARE" />
+    <permission android:name="com.alipay.android.app.gphone.SHARE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <permission-group android:label="@string/permission_group_taobao_account" android:icon="@drawable/ic_sso_taobao_account" android:name="com.taobao.permission-group.ACCOUNT" android:description="@string/permission_group_taobao_account_desc" />
+    <permission android:label="@string/permission_use_taobao_account_credentials" android:name="com.taobao.permission.USE_CREDENTIALS" android:protectionLevel="dangerous" android:permissionGroup="com.taobao.permission-group.ACCOUNT" android:description="@string/permission_use_taobao_account_credentials_desc" />
+    <permission android:label="@string/permission_update_taobao_account_credentials" android:name="com.taobao.permission.UPDATE_CREDENTIALS" android:protectionLevel="dangerous" android:permissionGroup="com.taobao.permission-group.ACCOUNT" android:description="@string/permission_update_taobao_account_credentials_desc" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.taobao.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.taobao.permission.UPDATE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <permission android:name="org.agoo.android.permission.MESSAGE" />
+    <uses-permission android:name="org.agoo.android.permission.MESSAGE" />
+    <application android:theme="@style/AppThemeNew" android:label="@string/name" android:icon="@drawable/appicon" android:name="com.alipay.mobile.quinox.LauncherApplication" android:debuggable="false" android:allowBackup="true">
+        <meta-data android:name="lazy_bundle" android:value="android-phone-businesscommon-webapp:com.alipay.mobile.framework.service.WebAppService|android-phone-businesscommon-share:10000012,com.alipay.mobile.framework.service.ShareService|android-phone-businesscommon-map:20000050,com.alipay.mobile.framework.service.MapService|android-phone-scancode-scan:10000007,20000053,com.alipay.mobile.scan.ScanService|android-phone-publicplatform-ccbapp:20000037|android-phone-wealth-creditpay:20000035|android-phone-personalcredit-trust:20000118|android-phone-personalapp-lifepaymentapp:09999976|android-phone-wealth-bankcardmanager:20000014,09999983,com.alipay.mobile.framework.service.ext.card.ExpressCardService|android-phone-publicplatform-search:20000048,20000114,20000047|android-phone-personalapp-ccrapp:09999999|android-phone-wealth-accountdetail:20000019|android-phone-personalapp-aapay:20000066|android-phone-bill-statement:20000091,20000093,20000092|android-phone-wealth-fund:20000032,20000054,com.alipay.mobile.framework.service.ext.fund.FundService|android-phone-personalapp-transferapp:09999988,20000116,com.alipay.mobile.transferapp.extframework.TransferScenesService|android-phone-publicplatform-ppchat:20000042,com.alipay.mobile.pubsvc.PpchatService|android-phone-securityapp-mobileotp:10000008,com.alipay.mobile.security.se.SEService,com.alipay.mobile.security.otp.OtpManager|android-phone-bill-list:20000003,20000076|android-phone-bill-detail:20000090|android-phone-publicplatform-todo:20000079|android-phone-personalapp-payanotherapp:09999977|android-phone-personalapp-gamecardapp:10000004,10000006|android-phone-businesscommon-h5container:20000067,20000095,20000096,20000097,20000098,20000099,com.alipay.mobile.h5container.service.H5Service,com.alipay.mobile.h5container.service.H5RpcService|android-phone-wealth-bollywood:20000077|android-phone-wealth-fixeddeposit:20000059|android-phone-personalapp-payee:20000123" />
+        <meta-data android:name="so_bundle" android:value="android-phone-businesscommon-phonecashier|android-phone-scancode-scan|android-phone-securityapp-mobileotp|android-phone-businesscommon-map|android-phone-businesscommon-accountauthbiz" />
+        <activity android:theme="@style/alipaylogintheme" android:name="com.eg.android.AlipayGphone.AlipayLogin" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="alipays" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="alipayqr" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="alipaywifi" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.quinox.apk.ActivityShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.bundle.Activity_SHELL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.quinox.apk.FragmentActivityShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.bundle.FragmentActivity_SHELL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.alipay.pushsdk.BroadcastActionReceiver" android:permission="com.alipay.mobile.push.permission.PUSH_EVENT">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:label="NotificationService" android:name="com.alipay.pushsdk.push.NotificationService" android:permission="com.alipay.mobile.push.permission.PUSHSERVICE" android:enabled="true" android:exported="true" android:process="com.alipay.pushservice">
+            <intent-filter>
+                <action android:name="com.eg.android.AlipayGphone.push.action.NotificationService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.alipay.pushsdk.deliver.PushReportIntentService" android:permission="com.alipay.mobile.push.permission.PUSHSERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.eg.android.AlipayGphone.push.action.NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </service>
+        <service android:name="com.alipay.mobile.rome.pushservice.integration.RecvMsgIntentService" android:permission="com.alipay.mobile.push.permission.PUSHSERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.eg.android.AlipayGphone.push.action.MESSAGE_RECEIVED" />
+                <category android:name="com.eg.android.AlipayGphone" />
+            </intent-filter>
+        </service>
+        <service android:name="com.taobao.android.sso.internal.PidGetterService" android:exported="true" />
+        <service android:name="com.taobao.android.sso.internal.AuthenticationService" android:permission="android.permission.ACCOUNT_MANAGER" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator_taobao" />
+            <meta-data android:name="android.accounts.AccountAuthenticator.customTokens" android:value="true" />
+            <meta-data android:name="com.taobao.android.sso.Version" android:value="@integer/sso_version_code" />
+        </service>
+        <service android:name="com.alipay.mobile.security.authcenter.androidaccountmanager.AlipayAuthenticationService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositProductDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositBuyActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositBuyResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositAppointActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositRealizeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositMyAppointActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositPurchasedDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositRealizeRecordActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositAppointRecordActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositAppointInputActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositRenewalRecordActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositExpiredAssetActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fixeddeposit.ui.FixedDepositLauncherActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.login.LoginActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@style/floatingStyle" android:name="com.alipay.mobile.security.authcenter.ui.login.AccountSwitchActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.CompletePhoneUserInfoActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.OtpManagerActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.ModifyPayPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.ModifyLoginPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.CompleteUserInfoActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.AccountInfo.ui.SecurityAccountQrCodeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.ForgotLoginPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.BindPhoneActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityDribbletActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityExaminationActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.authentication.IdImageViewAcitvity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.authentication.AuthenticationCertifiedActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.authentication.AuthenticationCameraShootActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.android.widget.security.ui.authentication.AuthenticationUploadIdInfoActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityCertifiedCardActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityCertifiedBankActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityCertifiedResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityOperateRecordsActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.PushSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.ExternalLoginActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.RegisterNewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.AccountManagerActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityPasswordManagerActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.SelectAccountActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.RobotXiaoBaoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityAccountSecurityActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityPasswordManagerForTUserActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.authcenter.ui.TaobaoBindingAlipayUserActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.NickNameImplementationActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.IdCardVerifyActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.widget.security.ui.IndependentPwdSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.ModifySimplePwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.ui.WapForgotPayPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.ReportLossActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.AccountInfo.ui.AccountInfoActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.AccountInfo.ui.SecurityBindPhoneActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.alipay.mobile.security.accountmanager.AccountInfo.ui.ShareSavePicThireBtnActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.widget.security.ui.SmsCheckActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.widget.security.ui.ValidatePayPwdAcitivyt_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.security.accountmanager.AccountInfo.ui.SecurityAvatarViewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/floatingStyle" android:name="com.alipay.mobile.android.avatar.process.EditAvatarModActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.android.avatar.process.EditAvatarActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.devicemanage.ui.DeviceManageActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityWebviewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.widget.security.ui.QihooGuardActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.widget.security.ui.NFCSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.about.ui.FeedAssistantActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.about.ui.MultiPictureSelectorMenu" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.about.ui.MultiPictureSelectorActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.about.ui.FloatWindowActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.about.ui.AboutMainActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.about.ui.AboutFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.about.ui.AboutTheVersionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.PermAuthActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.TempAuthActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.AuthorizationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.AuthAdminActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.ScanToLoginOrConfirmActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.ScanErrorActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.LoginLogsActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.LoginLogsWelcomeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.AuthorizeLogsActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.deviceAuthorization.ui.SmsCheckActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <service android:name="com.alipay.mobile.about.service.FloatWindowService" />
+        <receiver android:name="com.ut.device.BQueryWhoHasOne" android:permission="com.ut.permission.DEVICE_STATE" android:exported="true">
+            <intent-filter>
+                <action android:name="UT.QueryWhoHasOne" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ut.device.BFoundIt" android:permission="com.ut.permission.DEVICE_STATE" android:exported="true">
+            <intent-filter>
+                <action android:name="UT.FoundIT" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.alipay.mobile.security.mobileotp.ui.MobileOtpActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.security.mobileotp.ui.MobileOtpSolutionActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.security.mobileotp.ui.DeviceAuthActivice" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:fadingEdge="none" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrIndexActivity_" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.NewUserRepaymentActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.BillQueryIndexActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.BillSettingRemind_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CardManageActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.OldCardRepaymentActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CreditCardOutCallEntry_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.RemindSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.Pushcom.alipay.mobile.commonui.widget.WebViewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.ChoiceBankActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.RepaymentSuccessResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductWelcome_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductSelectPaySource_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductSelectDeductTypeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductSetSuccessActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductManagerActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.ccrapp.ui.CcrDeductYuEBaoAuthActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bill.detail.ui.TradeDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.detail.ui.TradeFlowActivity2_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.phone.personalapp.payanotherapp.ui.PARequestForPayActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.android.phone.personalapp.payanotherapp.ui.PAPrepareToDispatchActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.android.phone.personalapp.payanotherapp.ui.PAPickPayerActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PublicAccountHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PublicAccountSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PubThirdAccountSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PubSetRemarkNameActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PubSvcTradeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.pubsvc.ui.PublicCallingCardActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.alipay.mobile.h5container.ui.H5Activity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alifi.themis.ui.credit.CreditEntryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.CreditMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowBackground="@*android:color/transparent" android:windowNoTitle="true" android:windowIsTranslucent="true" android:windowContentOverlay="@null" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.CreditComposeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.CreditDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.CreditOtherActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.ApplyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.SelectDefaultMessageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.common.UserActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.common.UserListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.game.VsActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.game.WinlessActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.request.MessageListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.contact.SelectContactActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.DoubtActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.GiveActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alifi.themis.ui.credit.RobotHelpActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alifi.themis.ui.credit.OperationActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.android.widget.security.ui.SecurityWidgetGroupAcitivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.publicsvc.todo.AlipayMessageActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.withdraw.ui.WithdrawActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.withdraw.ui.WithdrawSmsCheckActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/MspAppBaseTheme" android:name="com.alipay.android.app.pay.MainActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateUnspecified|adjustUnspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppTheme" android:name="com.alipay.android.app.pay.TransContainer" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppBaseTheme" android:name="com.alipay.android.app.pay.HyperlinkActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppTheme" android:name="com.alipay.android.mini.window.MiniPayActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:priority="800">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppBaseTheme" android:name="com.alipay.android.setting.activity.EntranceActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppBaseTheme" android:name="com.alipay.android.setting.activity.NoPasswordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppBaseTheme" android:name="com.alipay.android.setting.activity.PaymentChannelActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MspAppTheme" android:name="com.alipay.android.mini.window.MiniWebActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.alipay.android.app.pay.PageForBrowser" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="alipaymsp" android:host="securitypay" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.alipay.android.app.MspService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.eg.android.AlipayGphone.IAlixPay" />
+                <action android:name="com.eg.android.AlipayGphone.IAliPay" />
+            </intent-filter>
+        </service>
+        <service android:name="com.alipay.android.setting.request.RequestService" android:exported="false" />
+        <receiver android:name="com.alipay.android.app.AlarmReciver" />
+        <activity android:name="com.alipay.mobile.command.trigger.WebViewTrigger" android:enabled="false" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="alipaydt" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.browser.HtmlActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.browser.HtmlActivityV2_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.commonbiz.entry.StartGuideActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.common.ui.contacts.MobileContactListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.mobile.common.ui.contacts.AccountContactListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.mobile.common.ui.SelectCityActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.android.launcher.TabLauncher" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity-alias android:name="com.alipay.mobile.common.ui.contacts.ContactListViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:targetActivity="com.alipay.mobile.common.ui.contacts.MobileContactListActivity_" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <service android:label="commandCenter" android:name="com.alipay.mobile.command.engine.TaskExeService" android:enabled="true" />
+        <receiver android:name="com.alipay.mobile.command.trigger.PushBizTrigger">
+            <intent-filter>
+                <action android:name="com.alipay.mobile.push.CMD_RESUPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.alipay.mobile.command.trigger.NetChangeTrigger">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.alipay.mobile.command.trigger.NotifyTrigger" android:permission="com.alipay.mobile.command.trigger.permission" android:exported="true">
+            <intent-filter>
+                <action android:name="com.alipay.mobile.command.NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.alipay.mobile.command.trigger.SysEventChangeTrigger">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/share_select_dialog" android:name="com.alipay.android.shareassist.ui.ShareSelectActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.shareassist.ui.WeiboEditActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.android.shareassist.ui.WeiboAuthActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.shareassist.ui.WeiboFrindListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferHomeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.transferapp.ui.TransferHomeGuideActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToMobileActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToMobileConfirmActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToMobileSuccessActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToMobileResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.PpBindCardActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToCardFormActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToCardResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToCardConfirmActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.BankSelectActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.AccountSelectActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToAccountActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferToAccountSuccessActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.transferapp.ui.TransferForBillActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferHtmlActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.transferapp.ui.TransferForCreateOrder_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.TransferCardToCardFormActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.ui.CardToCardAccountSelectActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.trade.ui.TransferChatActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.transferapp.view.look.biz.AlipayApiBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.alipay.android.api.RPC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.aapay.ui.AaMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.AaPayerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.AccountContactListMulActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.ContactInputActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.PayeeArrangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.aapay.ui.PayerGroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.AaBillHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.aapay.ui.AaBillInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayFormActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifePaySuccessActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayCityListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayBillResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayHistoryActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayNewUserActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.lifepaymentapp.ui.LifePaySelectTypeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayInviteCityOpenBill_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayFromInnerToOpenBill_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayFromInnerToOpenBillSuccess_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayFromOutToOpentBill_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayBillDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.lifepaymentapp.ui.LifepayAddAccountActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <service android:name="com.alipay.mobile.longlink.service.LongLinkService" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.StatementsActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.ConsumeRankActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.AnnualBillActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.StatementsSectorDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.BillShakeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.BillShakeResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.BillPhotoFlingerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.statement.ui.DealActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.nfc.ui.NFCEntry" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.alipay.mobile.nfc" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+            <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name="com.alipay.mobile.nfc.ui.NFCBeamActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.nfc.ui.NFCFeedBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.nfc.ui.NFCAppDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.nfc.ui.NFCMainActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name="com.alipay.android.phone.nfd.wifisdk.ui.WifiConnectingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bill.list.ui.BillListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.alipay.mobile.bill.list.ui.ObjectSetActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bollywood.ui.BollywoodProductDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bollywood.ui.BollywoodProductPayActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bollywood.ui.BollywoodProductPayResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.bollywood.ui.BollywoodLauncherActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.TravelCurrentListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.TravelPastListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.VoucherCurrentListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.VoucherPastListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberCardCurrentListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberCardPastListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.TravelUserGuideActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassNoNetWorkActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/dialog_activity" android:name="com.alipay.mobile.alipassapp.ui.AlipassShareActivity_" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassRemindActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassPreviewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassSchemeTransferActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.alipass" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.alipass" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="text/html" />
+                <data android:scheme="content" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/dialog_activity_for_share" android:name="com.alipay.mobile.alipassapp.ui.AlipassForShareActivity_" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassHtmlActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassHtmlActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassQueryCardActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" android:hardwareAccelerated="false" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberCardObtainableListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberCardDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" android:hardwareAccelerated="false" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberChargeOffActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.MemberFirstDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.AlipassAutoPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.C2BConfirmActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassapp.ui.BasicConfirmActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.core.ActivityShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.core_new.ActivityShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.alipay.mobile.scan.as.main.MainCaptureActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustNothing" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.scan.as.router.CodeRouteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.scan.as.tool.CallbackProxyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.alipay.mobile.scan.as.tool.ToolsCaptureActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.alipay.mobile.code.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.mob.components.goods.GoodsPurchaseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.goods.PurchaseSuccessActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.price.EtaoGoodsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.price.EtaoWebActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.price.misc.BarcodeExpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.bankcard.BankCardDispatchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.account.AccountCodeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.alert.SimpleAlertActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.mobile.mob.components.operation.OperationCodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.mob.components.common.MobWebView" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.mob.components.scanpayee.ScanPayeeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.mob.components.scanpayee.ScanPayeeReceivedActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayGuideActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayQualifyFailedActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayApplyActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayApplyCheckCodeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayApplyResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayMainActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayBillDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayRepayActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayBillActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPaySignCheckActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.creditpay.ui.CreditPayIsClosingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.MobileRechargeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.MobileReChargePPBindMobileAcitvity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.MobileRechargeCashierActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.MobileBalancesWarnActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.BalancesWarnInputActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.BalancesVerifySmsActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.alipay.mobile.mobilerechargeapp.activity.BalancesWarnCmsActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.AccountDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.AvatarViewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.CouponDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.PointListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.CouponListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.DealActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.accountdetail.ui.DealDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.onsitepay.payee.FacePayeeActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.onsitepay.payer.confirm.C2BConfirmActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.onsitepay.payer.confirm.C2CConfirmActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.alipay.mobile.onsitepay.payer.sound.SendSoundViewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.alipay.mobile.onsitepay.payer.barcode.BarcodePayActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.onsitepay.payer.AutoPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.alipay.mobile.onsitepay.utils.ShareSavePicThireBtnActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.mapassist.ui.MapMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.android.mapassist.ui.RouteDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="a7dce791b1a465d9dd256220b54bc8a1" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.alipay.mobile.security.gesture.ui.GestureActivity_" android:permission="com.alipay.mobile.permission.Gesuture" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundFreezeDetailAcitvity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.AssetCommonTreatyWebViewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundIndexActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundIndexBlackActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundSignActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundMainNewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundIncomeListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundTransferInActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundTransferInResultActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundTransferOutActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundTransferOutNewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundTradeRecordActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundRegisterTransferIn_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundUserIdentityVerifyActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundSelectCardActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.fund.ui.FundSignCheckActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.payee.ui.PayeeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.payee.ui.PayeeSuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbBillDetailActivity_" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbBillListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbCardSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbImportActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbMailAuthActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbMailManager_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbMailSettingActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.ccbapp.ui.CcbWelcomeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <receiver android:name="com.alipay.mobile.ccbapp.manager.PollingQueryTaskReceiver" />
+        <activity android:name="com.alipay.android.phone.home.ui.AppsCenterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.alipassnfcapp.ui.AlipassWaveActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.alipassnfcapp.ui.AlipassWaveActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/Theme.PushDialog" android:name="com.alipay.mobile.rome.pushservice.integration.PushDialogActivity" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:theme="@style/dialogActivity" android:name="com.alipay.mobile.rome.pushservice.adapter.AlipayPushUpgrade" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <service android:name="com.alipay.mobile.rome.pushservice.integration.PushDistributerService" android:exported="false" />
+        <activity android:name="com.alipay.mobile.gamecardapp.ui.GameCardFormActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.gamecardapp.ui.GameCardConfirmActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@style/dialog" android:name="com.alipay.mobile.appstoreapp.ui.AppLaunchFromShortcutActivity" android:taskAffinity="com.alipay.shortcut" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.mobile.appstoreapp.ui.AppDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.appstoreapp.ui.FastLoginAppActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.authorization.ui.AuthorizationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/dialog" android:name="com.alipay.mobile.authorization.ui.AuthorizationCheckProtocol" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <service android:name="com.alipay.mobile.appstoreapp.download.ExternalDownloadIntentService" />
+        <receiver android:name="com.alipay.mobile.appstoreapp.util.PackageReplacedReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.BankCardListActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.BankCardDetailActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.UnboundBankCardCellPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.UnboundBankCardPwdActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.AddBankCardStepZeroActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.AddBankCardStepOneActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.AddBankCardStepTwoNewActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.AddBankCardStepThreeActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.android.phone.wealth.bankcardmanager.ui.AddBankCardStepFourActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.alipay.mobile.publicadd.ui.PublicSearchActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.alipay.mobile.publicrecom.ui.PublicRecomActivity_" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.alipay.mobile.publicappdetail.ui.PublicDetailActivity_" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="com.alipay.mobile.command.trigger.permission" />
+    <uses-permission android:name="com.alipay.mobile.command.trigger.permission" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.gau.go.launcherex.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.gau.go.launcherex.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.aspire.mm.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.aspire.mm.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ty.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ty.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.mediatek.launcherplus.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.mediatek.launcherplus.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.baiqi.weather.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.baiqi.weather.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="mobi.SyndicateApps.ICS.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="mobi.SyndicateApps.ICS.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.thunderst.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.thunderst.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+</manifest>

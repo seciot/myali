@@ -1,0 +1,37 @@
+package com.alipay.mobile.android.main.publichome.util;
+
+import android.graphics.Bitmap;
+import android.os.Handler;
+import android.widget.ImageView;
+
+final class ImageLoaderHelper$2 extends AbstructImageLoaderListener
+{
+  ImageLoaderHelper$2(Handler paramHandler, ImageView paramImageView, int paramInt)
+  {
+  }
+
+  public final void onCancelled(String paramString)
+  {
+    super.onCancelled(paramString);
+  }
+
+  public final void onFailed(String paramString1, int paramInt, String paramString2)
+  {
+    if (this.canceled)
+      return;
+    this.val$handler.post(new ImageLoaderHelper.2.2(this));
+    this.canceled = true;
+  }
+
+  public final void onPostLoad(String paramString, Bitmap paramBitmap)
+  {
+    if (this.canceled)
+      return;
+    this.val$handler.post(new ImageLoaderHelper.2.1(this, paramBitmap));
+  }
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.mobile.android.main.publichome.util.ImageLoaderHelper.2
+ * JD-Core Version:    0.6.2
+ */

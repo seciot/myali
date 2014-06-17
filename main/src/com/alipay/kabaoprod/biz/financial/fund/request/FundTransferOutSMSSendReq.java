@@ -1,0 +1,16 @@
+package com.alipay.kabaoprod.biz.financial.fund.request;
+
+import com.alipay.kabaoprod.service.facade.model.ToString;
+import java.io.Serializable;
+
+public class FundTransferOutSMSSendReq extends ToString
+  implements Serializable
+{
+  public String mobile;
+  public String tairKey;
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.kabaoprod.biz.financial.fund.request.FundTransferOutSMSSendReq
+ * JD-Core Version:    0.6.2
+ */

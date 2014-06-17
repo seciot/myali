@@ -1,0 +1,23 @@
+.class public Lcom/alipay/mobilebill/biz/shared/result/Result;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# instance fields
+.field public resultCode:I
+
+.field public resultMsg:Ljava/lang/String;
+
+.field public success:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

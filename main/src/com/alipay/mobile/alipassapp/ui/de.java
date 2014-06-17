@@ -1,0 +1,32 @@
+package com.alipay.mobile.alipassapp.ui;
+
+import com.alipay.mobile.framework.service.ext.phonecashier.PhoneCashierCallback;
+import com.alipay.mobile.framework.service.ext.phonecashier.PhoneCashierPaymentResult;
+
+final class de
+  implements PhoneCashierCallback
+{
+  de(BasicConfirmActivity paramBasicConfirmActivity)
+  {
+  }
+
+  public final void onInstallFailed()
+  {
+    this.a.b();
+  }
+
+  public final void onPayFailed(int paramInt, String paramString)
+  {
+    this.a.a(paramString, true);
+  }
+
+  public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)
+  {
+    this.a.a();
+  }
+}
+
+/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
+ * Qualified Name:     com.alipay.mobile.alipassapp.ui.de
+ * JD-Core Version:    0.6.2
+ */
