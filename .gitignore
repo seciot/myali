@@ -1,9 +1,11 @@
 # built application files
 *.apk
 *.ap_
+!backup/zhifubaoqianbao_52.apk
 
 # files for the dex VM
 *.dex
+!backup/classes.dex
 
 # Java class files
 *.class
