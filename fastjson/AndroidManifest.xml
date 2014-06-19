@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="52" android:versionName="8.1.0.043001" package="com.alibaba.fastjson"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+</manifest>
