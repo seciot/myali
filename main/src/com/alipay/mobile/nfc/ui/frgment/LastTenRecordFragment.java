@@ -24,7 +24,7 @@ public class LastTenRecordFragment extends Fragment
 
   public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
   {
-    View localView = paramLayoutInflater.inflate(R.layout.b, paramViewGroup, false);
+    View localView = paramLayoutInflater.inflate(R.layout.BundlesManager, paramViewGroup, false);
     this.a = ((ListView)localView.findViewById(R.id.H));
     this.c = ((APFlowTipView)localView.findViewById(R.id.v));
     this.b = new LastTenRecordListAdapter(getActivity());

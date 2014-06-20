@@ -11,9 +11,9 @@ public final class b
   {
     ArrayList localArrayList = new ArrayList();
     a = localArrayList;
-    localArrayList.add(new b.a((byte)0));
-    a.add(new b.b((byte)0));
-    a.add(new b.c((byte)0));
+    localArrayList.add(new AppBundle.a((byte)0));
+    a.add(new BundlesManager.b((byte)0));
+    a.add(new BundlesManager.c((byte)0));
   }
 
   public static void a()

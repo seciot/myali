@@ -14,7 +14,7 @@ public class SecurityMatrix
 
   public static void MatrixInitAsync(ContextWrapper paramContextWrapper)
   {
-    new Thread(new SecurityMatrix.a(paramContextWrapper)).start();
+    new Thread(new SecurityMatrix.AppBundle(paramContextWrapper)).start();
   }
 
   public static void MatrixInitSync(ContextWrapper paramContextWrapper)

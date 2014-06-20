@@ -37,7 +37,7 @@ final class aa
         localIFormShower.a(null, str2, str3, arrayOfActionType, null, null);
         return;
         if (bool)
-          str2 = localContext.getString(R.string.a);
+          str2 = localContext.getString(R.string.AppBundle);
         else
           str2 = str1;
       }

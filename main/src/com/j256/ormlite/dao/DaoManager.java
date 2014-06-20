@@ -23,9 +23,9 @@ public class DaoManager
 
   private static <T> Dao<?, ?> a(DaoManager.ClassConnectionSource paramClassConnectionSource)
   {
-    if (b == null)
-      b = new HashMap();
-    Dao localDao = (Dao)b.get(paramClassConnectionSource);
+    if (BundlesManager == null)
+      BundlesManager = new HashMap();
+    Dao localDao = (Dao)BundlesManager.get(paramClassConnectionSource);
     if (localDao == null)
       localDao = null;
     return localDao;
@@ -117,9 +117,9 @@ public class DaoManager
 
   private static void a(DaoManager.ClassConnectionSource paramClassConnectionSource, Dao<?, ?> paramDao)
   {
-    if (b == null)
-      b = new HashMap();
-    b.put(paramClassConnectionSource, paramDao);
+    if (BundlesManager == null)
+      BundlesManager = new HashMap();
+    BundlesManager.put(paramClassConnectionSource, paramDao);
   }
 
   private static void a(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource, Dao<?, ?> paramDao)
@@ -177,10 +177,10 @@ public class DaoManager
   {
     try
     {
-      if (b != null)
+      if (BundlesManager != null)
       {
-        b.clear();
-        b = null;
+        BundlesManager.clear();
+        BundlesManager = null;
       }
       if (c != null)
       {
@@ -357,8 +357,8 @@ public class DaoManager
       {
       }
     DaoManager.ClassConnectionSource localClassConnectionSource = new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass());
-    if (b != null)
-      b.remove(localClassConnectionSource);
+    if (BundlesManager != null)
+      BundlesManager.remove(localClassConnectionSource);
   }
 }
 

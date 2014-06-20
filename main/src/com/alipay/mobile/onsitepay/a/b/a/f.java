@@ -12,7 +12,7 @@ public final class f
 {
   LocalBroadcastManager a = null;
   BroadcastReceiver b = null;
-  a c = null;
+  AppBundle c = null;
 
   public final void a()
   {
@@ -20,7 +20,7 @@ public final class f
       this.a.unregisterReceiver(this.b);
   }
 
-  public final void a(AlipayApplication paramAlipayApplication, String paramString, a parama)
+  public final void a(AlipayApplication paramAlipayApplication, String paramString, AppBundle parama)
   {
     this.c = parama;
     this.a = LocalBroadcastManager.getInstance(paramAlipayApplication);

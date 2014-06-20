@@ -5,7 +5,7 @@ import com.alipay.pushsdk.push.j;
 public class b
   implements c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(b.class);
+  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(BundlesManager.class);
   private final j b;
 
   public b(j paramj)
@@ -14,7 +14,7 @@ public class b
   }
 
   // ERROR //
-  public final void a(com.alipay.pushsdk.push.c.a parama)
+  public final void a(com.alipay.pushsdk.push.c.AppBundle parama)
   {
     // Byte code:
     //   0: new 32	com/alipay/pushsdk/push/f

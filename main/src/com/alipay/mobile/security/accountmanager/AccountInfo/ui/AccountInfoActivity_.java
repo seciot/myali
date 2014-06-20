@@ -40,7 +40,7 @@ public final class AccountInfoActivity_ extends AccountInfoActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.b);
+    setContentView(R.layout.BundlesManager);
   }
 
   public final void setContentView(int paramInt)

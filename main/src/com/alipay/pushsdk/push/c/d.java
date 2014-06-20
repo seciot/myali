@@ -2,16 +2,16 @@ package com.alipay.pushsdk.push.c;
 
 import com.alipay.pushsdk.c.a.c;
 
-public class d extends a
+public class d extends AppBundle
 {
   private static final String c = c.a(d.class);
-  private int d = b.a;
-  private int e = b.b;
+  private int d = BundlesManager.AppBundle;
+  private int e = BundlesManager.b;
 
   public d()
   {
-    f(b.a);
-    g(b.b);
+    f(BundlesManager.AppBundle);
+    g(BundlesManager.b);
   }
 
   public final void b(byte[] paramArrayOfByte)

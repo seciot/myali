@@ -57,7 +57,7 @@ public class BankCardListAdapter extends BaseAdapter
       localViewHolder.c = ((TextView)paramView.findViewById(R.id.i));
       localViewHolder.d = ((RadioButton)paramView.findViewById(R.id.k));
       localViewHolder.d.setClickable(false);
-      paramView.setBackgroundResource(R.drawable.a);
+      paramView.setBackgroundResource(R.drawable.AppBundle);
       paramView.setTag(localViewHolder);
     }
     while (true)

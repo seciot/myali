@@ -39,7 +39,7 @@ public class MiniLabelInput extends LinearLayout
   {
     super(paramContext, paramAttributeSet);
     LayoutInflater.from(paramContext).inflate(R.layout.C, this, true);
-    TypedArray localTypedArray = paramContext.obtainStyledAttributes(paramAttributeSet, R.styleable.a);
+    TypedArray localTypedArray = paramContext.obtainStyledAttributes(paramAttributeSet, R.styleable.AppBundle);
     this.e = localTypedArray.getString(0);
     this.d = localTypedArray.getDrawable(1);
     this.g = localTypedArray.getString(2);

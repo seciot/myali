@@ -1,27 +1,27 @@
 package com.alipay.mobile.longlink.b.c;
 
-public class e extends a
+public class e extends AppBundle
 {
-  private static final String c = com.alipay.mobile.longlink.c.a.a(e.class);
-  private int d = b.a;
-  private int e = b.b;
+  private static final String c = com.alipay.mobile.longlink.c.AppBundle.a(e.class);
+  private int d = BundlesManager.AppBundle;
+  private int e = BundlesManager.b;
 
   public e()
   {
-    e(b.a);
-    f(b.b);
+    e(BundlesManager.AppBundle);
+    f(BundlesManager.b);
   }
 
   public final void b(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
-    com.alipay.mobile.longlink.c.a.a(5, c, "getHdrfromRead() got valid packet! msgType=" + i);
+    com.alipay.mobile.longlink.c.AppBundle.a(5, c, "getHdrfromRead() got valid packet! msgType=" + i);
     byte[] arrayOfByte = new byte[4];
     System.arraycopy(paramArrayOfByte, 1, arrayOfByte, 0, 4);
     int j = d(arrayOfByte);
-    com.alipay.mobile.longlink.c.a.a(4, c, "getHdrfromRead() got valid packet! msgLen=" + j);
+    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! msgLen=" + j);
     int k = paramArrayOfByte[5];
-    com.alipay.mobile.longlink.c.a.a(4, c, "getHdrfromRead() got valid packet! isGziped=" + k);
+    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! isGziped=" + k);
     d(k);
     b(i);
     c(j);
@@ -30,7 +30,7 @@ public class e extends a
   public final void c(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
-    com.alipay.mobile.longlink.c.a.a(4, c, "getHdrfromRead() got valid packet! msgId=" + i);
+    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! msgId=" + i);
     a(i);
   }
 
@@ -40,7 +40,7 @@ public class e extends a
     arrayOfByte1[0] = Integer.valueOf(this.d).byteValue();
     arrayOfByte1[1] = Integer.valueOf(a()).byteValue();
     arrayOfByte1[2] = Integer.valueOf(b()).byteValue();
-    int i = c();
+    int i = getBundleName();
     byte[] arrayOfByte2 = new byte[4];
     for (int j = 0; j < 4; j++)
       arrayOfByte2[j] = ((byte)(i >> 24 - j * 8));

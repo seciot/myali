@@ -20,7 +20,7 @@ final class j
       this.a.b(str);
       return;
       if ("taobao".equals(this.a.p))
-        str = this.a.s.c();
+        str = this.a.s.getBundleName();
     }
   }
 }

@@ -24,7 +24,7 @@ public abstract class a
   {
     try
     {
-      a = Boolean.getBoolean("smack.debugEnabled");
+      AppBundle = Boolean.getBoolean("smack.debugEnabled");
       label23: m.a();
       return;
     }
@@ -39,7 +39,7 @@ public abstract class a
     this.h = paramc;
   }
 
-  public final void a(com.alipay.mobile.longlink.b.b.c paramc)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.b.c paramc)
   {
     if (!a())
       throw new IllegalStateException("Not connected to server.");
@@ -49,13 +49,13 @@ public abstract class a
     this.b.add(paramc);
   }
 
-  public final void a(com.alipay.mobile.longlink.b.d.c paramc)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.d.c paramc)
   {
     if (paramc == null)
       throw new NullPointerException("Packet listener is null.");
-    b localb = new b(paramc);
+    BundlesManager localb = new BundlesManager(paramc);
     this.c.put(paramc, localb);
-    com.alipay.mobile.longlink.c.a.a(5, "Connection", "packageListener in the list is " + this.c.size());
+    com.alipay.mobile.longlink.c.AppBundle.a(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
   public abstract boolean a();
@@ -65,7 +65,7 @@ public abstract class a
     return this.b;
   }
 
-  public final void b(com.alipay.mobile.longlink.b.d.c paramc)
+  public final void b(com.alipay.mobile.longlink.BundlesManager.d.c paramc)
   {
     this.c.remove(paramc);
   }

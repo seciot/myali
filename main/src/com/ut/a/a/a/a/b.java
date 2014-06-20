@@ -111,7 +111,7 @@ public abstract class b
       for (int j = 0; j < i; j++)
       {
         byte b = paramArrayOfByte[j];
-        if ((61 == b) || (a(b)))
+        if ((61 == BundlesManager) || (a(BundlesManager)))
           return true;
       }
     }

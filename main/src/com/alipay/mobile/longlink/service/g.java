@@ -24,7 +24,7 @@ final class g
       this.a.a(false);
       if (this.a.q())
       {
-        com.alipay.mobile.longlink.c.a.a(3, a.x(), "ReconnectTask() return because of flag(forcestopped).");
+        com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle.x(), "ReconnectTask() return because of flag(forcestopped).");
         return;
       }
     }

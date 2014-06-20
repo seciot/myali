@@ -2,9 +2,9 @@ package com.alipay.mobile.longlink.b.c;
 
 public final class c
 {
-  public static a a(int paramInt)
+  public static AppBundle a(int paramInt)
   {
-    if (b.a == paramInt)
+    if (BundlesManager.AppBundle == paramInt)
       return new e();
     throw new Exception("Don't support this protovern:" + paramInt);
   }

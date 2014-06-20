@@ -48,7 +48,7 @@ public class AlipassPreviewActivity extends BaseActivity
   private APTitleBar k;
   private APPullRefreshView l = null;
   private APRelativeLayout m = null;
-  private com.alipay.mobile.alipassapp.biz.a.a n;
+  private com.alipay.mobile.alipassapp.biz.Bundle.AppBundle n;
   private final View.OnClickListener o = new be(this);
 
   // ERROR //
@@ -481,7 +481,7 @@ public class AlipassPreviewActivity extends BaseActivity
       this.k = ((APTitleBar)findViewById(R.id.titlebar));
       this.k.setTitleText(getResources().getString(R.string.alipass_preview_title));
       this.j = new com.alipay.mobile.alipassapp.biz.c.a(this.mApp);
-      this.n = new com.alipay.mobile.alipassapp.biz.a.a.a(this);
+      this.n = new com.alipay.mobile.alipassapp.biz.AppBundle.a.a(this);
       showProgressDialog("加载中...");
       f();
       return;

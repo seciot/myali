@@ -130,8 +130,8 @@ public class AssetWidgetGroup
     this.n.setBindingWidget("50000004");
     this.h.addChild(this.n);
     TextView localTextView = (TextView)this.o.findViewById(R.id.d);
-    localTextView.setText(this.c.getText(R.string.a));
-    Drawable localDrawable = this.c.getResources().getDrawable(R.drawable.a);
+    localTextView.setText(this.c.getText(R.string.AppBundle));
+    Drawable localDrawable = this.c.getResources().getDrawable(R.drawable.AppBundle);
     localDrawable.setBounds(0, 0, localDrawable.getMinimumWidth(), localDrawable.getMinimumHeight());
     localTextView.setCompoundDrawables(null, localDrawable, null, null);
     this.m = AssetDynamicDataProcessor_.a(this.c);
@@ -163,13 +163,13 @@ public class AssetWidgetGroup
     this.j = System.currentTimeMillis();
     if (this.f == null)
     {
-      this.e = ((ViewGroup)LayoutInflater.from(this.c).inflate(R.layout.b, null));
-      this.a = ((APTitleBar)this.e.findViewById(R.id.a));
-      this.a.setTitleText(this.c.getResources().getString(R.string.a));
+      this.e = ((ViewGroup)LayoutInflater.from(this.c).inflate(R.layout.BundlesManager, null));
+      this.a = ((APTitleBar)this.e.findViewById(R.id.AppBundle));
+      this.a.setTitleText(this.c.getResources().getString(R.string.AppBundle));
       this.a.setGenericButtonVisiable(true);
       this.a.setGenericButtonText("更多");
       this.a.setGenericButtonListener(new a(this));
-      this.f = ((WidgetContainer)this.e.findViewById(R.id.b));
+      this.f = ((WidgetContainer)this.e.findViewById(R.id.BundlesManager));
       this.f.setAdapter(this.l);
       this.a.attachNewFlagView(this.n);
       this.n.refreshMsgFlag();

@@ -6,29 +6,29 @@ import com.alipay.mobile.longlink.b.a.n;
 public class d
   implements c
 {
-  private static final String a = com.alipay.mobile.longlink.c.a.a(d.class);
-  private final com.alipay.mobile.longlink.service.a b;
+  private static final String a = com.alipay.mobile.longlink.c.AppBundle.a(d.class);
+  private final com.alipay.mobile.longlink.service.AppBundle b;
 
-  public d(com.alipay.mobile.longlink.service.a parama)
+  public d(com.alipay.mobile.longlink.service.AppBundle parama)
   {
     this.b = parama;
   }
 
   public final void a()
   {
-    com.alipay.mobile.longlink.c.a.a(3, a, "connectionClosed()...");
+    com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle, "connectionClosed()...");
   }
 
   public final void a(n paramn)
   {
     String str = paramn.a();
-    com.alipay.mobile.longlink.c.a.a(2, a, "connectionClosedOnError()... errorType=" + str + ", errorInfo: " + paramn.getMessage());
+    com.alipay.mobile.longlink.c.AppBundle.a(2, AppBundle, "connectionClosedOnError()... errorType=" + str + ", errorInfo: " + paramn.getMessage());
     if ((this.b.d() != null) && (this.b.d().a()))
     {
       this.b.a(false);
       this.b.d().e();
     }
-    com.alipay.mobile.longlink.c.a.a(3, a, "connectionClosedOnError() and then to startReconnectionThread...");
+    com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle, "connectionClosedOnError() and then to startReconnectionThread...");
     this.b.m();
   }
 }

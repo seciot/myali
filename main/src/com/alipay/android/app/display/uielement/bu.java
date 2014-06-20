@@ -17,7 +17,7 @@ final class bu
     UISwitcher.a(this.a).toggle();
     boolean bool2;
     UISwitcher localUISwitcher;
-    if (!this.a.c())
+    if (!this.a.getBundleName())
     {
       bool2 = bool1;
       localUISwitcher = this.a;

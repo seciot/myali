@@ -18,7 +18,7 @@ class NFCMainActivity$CardInfoTask extends AsyncTask<Intent, Void, Void>
 
   private Void a(Intent[] paramArrayOfIntent)
   {
-    NFCMainActivity.c();
+    NFCMainActivity.getBundleName();
     Intent localIntent = paramArrayOfIntent[0];
     try
     {
@@ -45,7 +45,7 @@ class NFCMainActivity$CardInfoTask extends AsyncTask<Intent, Void, Void>
           Thread.sleep(1000L - (l - this.b));
           return null;
           localException = localException;
-          NFCMainActivity.c();
+          NFCMainActivity.getBundleName();
           new StringBuilder("pboc card load fail:").append(localException.getMessage()).toString();
         }
         boolean bool = false;
@@ -60,7 +60,7 @@ class NFCMainActivity$CardInfoTask extends AsyncTask<Intent, Void, Void>
 
   protected void onPreExecute()
   {
-    NFCMainActivity.c();
+    NFCMainActivity.getBundleName();
     NFCMainActivity.c(this.a);
     this.a.showProgressDialog("数据读取中...");
     this.b = System.currentTimeMillis();

@@ -13,7 +13,7 @@ final class m
   public m(View paramView)
   {
     this.a = ((TextView)paramView.findViewById(R.id.aj));
-    this.b = ((CheckBox)paramView.findViewById(R.id.b));
+    this.b = ((CheckBox)paramView.findViewById(R.id.BundlesManager));
   }
 }
 

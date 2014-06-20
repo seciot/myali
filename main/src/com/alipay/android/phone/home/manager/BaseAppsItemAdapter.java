@@ -90,7 +90,7 @@ public class BaseAppsItemAdapter extends BaseAdapter
             while (paramApp.isOffline())
             {
               localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.d));
-              localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.b));
+              localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.BundlesManager));
               localViewHolder2.e.setVisibility(0);
               return localObject;
               paramApp.loadIcon(new g(this, paramApp, localViewHolder2));
@@ -113,7 +113,7 @@ public class BaseAppsItemAdapter extends BaseAdapter
           }
           while (paramApp.getInstallerType() == AppInstallerTypeEnum.independantApp);
           localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.c));
-          localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.a));
+          localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.AppBundle));
           localViewHolder2.e.setVisibility(0);
           return localObject;
         }

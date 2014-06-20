@@ -21,7 +21,7 @@ public final class SecurityBindPhoneActivity_ extends SecurityBindPhoneActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.a);
+    setContentView(R.layout.AppBundle);
   }
 
   public final void setContentView(int paramInt)

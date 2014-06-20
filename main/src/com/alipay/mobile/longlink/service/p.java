@@ -12,11 +12,11 @@ public final class p
 
   public final void a()
   {
-    synchronized (this.b.c())
+    synchronized (this.b.getBundleName())
     {
-      p localp2 = this.b.c();
-      localp2.a = (-1 + localp2.a);
-      a.a(4, LongLinkService.e(), "Decremented task count to " + this.a);
+      p localp2 = this.b.getBundleName();
+      localp2.AppBundle = (-1 + localp2.AppBundle);
+      AppBundle.a(4, LongLinkService.e(), "Decremented task count to " + this.a);
       return;
     }
   }

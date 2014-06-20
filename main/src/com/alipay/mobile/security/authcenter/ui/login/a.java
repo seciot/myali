@@ -45,12 +45,12 @@ public final class a
 
     public final void afterTextChanged(Editable paramEditable)
     {
-      if ((paramEditable.length() != 0) && (a.a(a.this).hasFocus()))
+      if ((paramEditable.length() != 0) && (AppBundle.a(AppBundle.this).hasFocus()))
       {
-        a.this.a(true);
+        AppBundle.this.a(true);
         return;
       }
-      a.this.a(false);
+      AppBundle.this.a(false);
     }
 
     public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

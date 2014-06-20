@@ -5,16 +5,16 @@ import java.util.HashMap;
 public final class d
 {
   private static d a;
-  private HashMap<String, a> b = new HashMap();
+  private HashMap<String, AppBundle> b = new HashMap();
 
   public static d a()
   {
-    if (a == null)
-      a = new d();
-    return a;
+    if (AppBundle == null)
+      AppBundle = new d();
+    return AppBundle;
   }
 
-  public final HashMap<String, a> b()
+  public final HashMap<String, AppBundle> b()
   {
     return this.b;
   }

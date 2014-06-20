@@ -15,14 +15,14 @@ public final class m
   {
     if (paramInt <= 0)
       throw new IllegalArgumentException();
-    a = paramInt * 1000;
+    AppBundle = paramInt * 1000;
   }
 
   public static int b()
   {
-    if (a <= 0)
-      a = 10000;
-    return a;
+    if (AppBundle <= 0)
+      AppBundle = 10000;
+    return AppBundle;
   }
 
   public static void b(int paramInt)
@@ -30,14 +30,14 @@ public final class m
     c = paramInt;
   }
 
-  public static int c()
+  public static int getBundleName()
   {
-    return b;
+    return BundlesManager;
   }
 
   public static void c(int paramInt)
   {
-    b = paramInt;
+    BundlesManager = paramInt;
   }
 }
 

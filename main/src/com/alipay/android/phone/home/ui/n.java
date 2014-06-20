@@ -91,7 +91,7 @@ final class n
               HeaderAreaLayout.j(this.b).setVisibility(0);
               continue;
               this.b.b();
-              this.b.c();
+              this.b.getBundleName();
               if (1 == this.c)
               {
                 HeaderAreaLayout.l(this.b).a(HeaderAreaLayout.m(this.b).getBottom(), true);

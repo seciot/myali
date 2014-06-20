@@ -29,10 +29,10 @@ public final class a
 
   private a(ClientConnectionManager paramClientConnectionManager, HttpParams paramHttpParams)
   {
-    this.a = new b(paramClientConnectionManager, paramHttpParams, (byte)0);
+    this.a = new BundlesManager(paramClientConnectionManager, paramHttpParams, (byte)0);
   }
 
-  public static a a(String paramString)
+  public static AppBundle a(String paramString)
   {
     BasicHttpParams localBasicHttpParams = new BasicHttpParams();
     HttpConnectionParams.setStaleCheckingEnabled(localBasicHttpParams, true);
@@ -50,7 +50,7 @@ public final class a
     localSSLSocketFactory.setHostnameVerifier((X509HostnameVerifier)localX509HostnameVerifier);
     HttpsURLConnection.setDefaultHostnameVerifier(localX509HostnameVerifier);
     localSchemeRegistry.register(new Scheme("https", localSSLSocketFactory, 443));
-    return new a(new ThreadSafeClientConnManager(localBasicHttpParams, localSchemeRegistry), localBasicHttpParams);
+    return new AppBundle(new ThreadSafeClientConnManager(localBasicHttpParams, localSchemeRegistry), localBasicHttpParams);
   }
 
   public final Object execute(HttpHost paramHttpHost, HttpRequest paramHttpRequest, ResponseHandler paramResponseHandler)

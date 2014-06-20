@@ -133,7 +133,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
   {
     APTextView localAPTextView = new APTextView(this.mContext);
     AbsListView.LayoutParams localLayoutParams = new AbsListView.LayoutParams(-1, -2);
-    localLayoutParams.height = ((int)this.mContext.getResources().getDimension(R.dimen.a));
+    localLayoutParams.height = ((int)this.mContext.getResources().getDimension(R.dimen.AppBundle));
     localAPTextView.setLayoutParams(localLayoutParams);
     localAPTextView.setGravity(17);
     localAPTextView.setText(this.mContext.getText(R.string.g));
@@ -164,7 +164,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       localViewHolder.a = ((APTextView)paramView.findViewById(R.id.d));
       localViewHolder.c = ((APTextView)paramView.findViewById(R.id.f));
       localViewHolder.d = ((APImageView)paramView.findViewById(R.id.n));
-      localViewHolder.e = ((APButton)paramView.findViewById(R.id.a));
+      localViewHolder.e = ((APButton)paramView.findViewById(R.id.AppBundle));
       paramView.setTag(localViewHolder);
       localApp = (App)this.mListDatas.get(paramInt);
       if (localApp != null)
@@ -176,8 +176,8 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
         localViewHolder.d.setVisibility(0);
         label173: if ((localApp.isInstalled()) || (localApp.isDownloading()))
           break label322;
-        localViewHolder.e.setBackgroundResource(R.drawable.b);
-        localViewHolder.e.setText(R.string.b);
+        localViewHolder.e.setBackgroundResource(R.drawable.BundlesManager);
+        localViewHolder.e.setText(R.string.BundlesManager);
         localViewHolder.e.setTextColor(-16777216);
         localViewHolder.e.setEnabled(true);
       }
@@ -198,7 +198,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       break label173;
       label322: if (localApp.isDownloading())
       {
-        localViewHolder.e.setBackgroundResource(R.drawable.a);
+        localViewHolder.e.setBackgroundResource(R.drawable.AppBundle);
         localViewHolder.e.setText(R.string.e);
         localViewHolder.e.setTextColor(-7829368);
         localViewHolder.e.setEnabled(false);
@@ -219,7 +219,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
   {
     View localView = LayoutInflater.from(this.mContext).inflate(com.alipay.mobile.ui.R.layout.refresh_loading, null);
     AbsListView.LayoutParams localLayoutParams = new AbsListView.LayoutParams(-1, -2);
-    localLayoutParams.height = ((int)this.mContext.getResources().getDimension(R.dimen.a));
+    localLayoutParams.height = ((int)this.mContext.getResources().getDimension(R.dimen.AppBundle));
     localView.setLayoutParams(localLayoutParams);
     return localView;
   }

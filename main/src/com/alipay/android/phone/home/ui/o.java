@@ -16,7 +16,7 @@ final class o
   {
     try
     {
-      MediaPlayer localMediaPlayer = MediaPlayer.create(AlipayApplication.getInstance().getApplicationContext(), R.raw.a);
+      MediaPlayer localMediaPlayer = MediaPlayer.create(AlipayApplication.getInstance().getApplicationContext(), R.raw.AppBundle);
       localMediaPlayer.setLooping(false);
       localMediaPlayer.seekTo(0);
       localMediaPlayer.start();

@@ -4,7 +4,7 @@ import java.util.Observable;
 
 final class d extends Observable
 {
-  private d(LauncherApplication paramLauncherApplication)
+  public d(LauncherApplication paramLauncherApplication)
   {
   }
 
@@ -13,8 +13,3 @@ final class d extends Observable
     super.setChanged();
   }
 }
-
-/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
- * Qualified Name:     com.alipay.mobile.quinox.d
- * JD-Core Version:    0.6.2
- */

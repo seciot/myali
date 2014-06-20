@@ -9,7 +9,7 @@ import com.alipay.pushsdk.push.p;
 
 public abstract class d
 {
-  private static final String c = com.alipay.pushsdk.c.a.c.a(d.class);
+  private static final String c = com.alipay.pushsdk.c.AppBundle.c.a(d.class);
   public j a;
   public Context b;
   private String d;
@@ -18,7 +18,7 @@ public abstract class d
   {
     this.a = paramj;
     this.b = this.a.a();
-    com.alipay.pushsdk.push.a.o.a(this.a.f());
+    com.alipay.pushsdk.push.AppBundle.o.a(this.a.f());
   }
 
   public abstract void a();
@@ -33,7 +33,7 @@ public abstract class d
     return this.d;
   }
 
-  public final void c()
+  public final void getBundleName()
   {
     if (d())
       a();
@@ -51,7 +51,7 @@ public abstract class d
     label118: 
     while (true)
     {
-      com.alipay.pushsdk.c.a.c.a(3, c, "checkState is " + bool1);
+      com.alipay.pushsdk.c.AppBundle.c.a(3, c, "checkState is " + bool1);
       return bool1;
       bool1 = false;
       continue;
@@ -74,11 +74,11 @@ public abstract class d
     if (localNetworkInfo != null)
     {
       boolean bool = com.alipay.pushsdk.c.c.b(this.b);
-      com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.h, com.alipay.pushsdk.c.a.d.E, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.C, 10000L + System.currentTimeMillis(), "Trigger_checkNetworkState: Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State=" + localNetworkInfo.getState());
-      com.alipay.pushsdk.c.a.c.a(4, c, "Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State = " + localNetworkInfo.getState() + ", net=" + bool + ", isconnected=" + localNetworkInfo.isConnected());
+      com.alipay.pushsdk.c.AppBundle.d.a(com.alipay.pushsdk.c.AppBundle.d.h, com.alipay.pushsdk.c.AppBundle.d.E, System.currentTimeMillis(), com.alipay.pushsdk.c.AppBundle.d.C, 10000L + System.currentTimeMillis(), "Trigger_checkNetworkState: Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State=" + localNetworkInfo.getState());
+      com.alipay.pushsdk.c.AppBundle.c.a(4, c, "Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State = " + localNetworkInfo.getState() + ", net=" + bool + ", isconnected=" + localNetworkInfo.isConnected());
       return bool;
     }
-    com.alipay.pushsdk.c.a.c.a(2, c, "Network unavailable");
+    com.alipay.pushsdk.c.AppBundle.c.a(2, c, "Network unavailable");
     this.a.r();
     return false;
   }

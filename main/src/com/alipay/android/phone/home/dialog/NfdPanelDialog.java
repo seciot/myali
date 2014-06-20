@@ -38,7 +38,7 @@ public class NfdPanelDialog extends Dialog
 
   public NfdPanelDialog(Context paramContext)
   {
-    super(paramContext, R.style.a);
+    super(paramContext, R.style.AppBundle);
     this.b = paramContext;
     setCanceledOnTouchOutside(true);
     setContentView(R.layout.k);
@@ -54,9 +54,9 @@ public class NfdPanelDialog extends Dialog
       localLayoutParams.width = -1;
       localLayoutParams.height = -1;
       localWindow.setAttributes(localLayoutParams);
-      this.h = AnimationUtils.loadAnimation(paramContext, R.anim.b);
+      this.h = AnimationUtils.loadAnimation(paramContext, R.anim.BundlesManager);
       this.h.setAnimationListener(new a(this));
-      this.g = AnimationUtils.loadAnimation(paramContext, R.anim.a);
+      this.g = AnimationUtils.loadAnimation(paramContext, R.anim.AppBundle);
       this.g.setAnimationListener(new b(this));
       this.i = new AlphaAnimation(0.1F, 0.6F);
       this.i.setDuration(200L);

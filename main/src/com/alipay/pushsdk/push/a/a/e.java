@@ -6,7 +6,7 @@ import javax.net.SocketFactory;
 
 public class e extends SocketFactory
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(e.class);
+  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(e.class);
   private c b;
 
   public e(c paramc)

@@ -30,17 +30,17 @@ public class a
   private Context c;
   private UserInfo d = null;
   private String e = null;
-  private com.alipay.mobile.discoverywidget.a.c f;
-  private com.alipay.mobile.discoverywidget.a.b g = null;
+  private com.alipay.mobile.discoverywidget.Bundle.AppBundle f;
+  private com.alipay.mobile.discoverywidget.Bundle.AppBundle g = null;
   private d h;
-  private HashMap<String, com.alipay.mobile.discoverywidget.a.a> i;
+  private HashMap<String, com.alipay.mobile.discoverywidget.AppBundle.a> i;
   private CacheManagerService j;
   private String k = "_DiscoveryWidgetHomeData";
 
   private void a()
   {
     this.j = ((CacheManagerService)this.b.findServiceByInterface(CacheManagerService.class.getName()));
-    this.g = new com.alipay.mobile.discoverywidget.a.a.a(this.b);
+    this.g = new com.alipay.mobile.discoverywidget.AppBundle.a.a(this.b);
     this.d = UserInfoHelper.getInstance().getUserInfo(this.b);
     if (this.d != null)
     {
@@ -50,7 +50,7 @@ public class a
     DiscoveryWidgetGroup.class.getName();
   }
 
-  private HashMap<String, com.alipay.mobile.discoverywidget.a.a> b()
+  private HashMap<String, com.alipay.mobile.discoverywidget.AppBundle.a> b()
   {
     try
     {
@@ -92,7 +92,7 @@ public class a
         Object localObject = this.i.get(this.e);
         localIndexWidgetResult = null;
         if (localObject != null)
-          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.a.a)this.i.get(this.e)).a();
+          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.AppBundle.a)this.i.get(this.e)).a();
       }
     }
   }
@@ -107,9 +107,9 @@ public class a
     {
       this.f.discoveryNotify(paramIndexWidgetResult);
       this.i = this.h.b();
-      com.alipay.mobile.discoverywidget.a.a locala = (com.alipay.mobile.discoverywidget.a.a)this.i.get(this.e);
+      com.alipay.mobile.discoverywidget.AppBundle.a locala = (com.alipay.mobile.discoverywidget.AppBundle.a)this.i.get(this.e);
       if (locala == null)
-        locala = new com.alipay.mobile.discoverywidget.a.a();
+        locala = new com.alipay.mobile.discoverywidget.AppBundle.a();
       locala.a(paramIndexWidgetResult);
       this.i.put(this.e, locala);
       if ((!paramIndexWidgetResult.redMark) || (paramIndexWidgetResult.tabRedMarkTip == null))
@@ -153,7 +153,7 @@ public class a
     a();
   }
 
-  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.a.c paramc)
+  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.AppBundle.c paramc)
   {
     this.b = paramMicroApplicationContext;
     this.c = paramMicroApplicationContext.getApplicationContext();

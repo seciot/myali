@@ -42,11 +42,11 @@ public class HomeAppsOnItemLongClickListener
           localHomeAppsItemAdapter.a(((AppManageService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(AppManageService.class.getName())).getHomeAppsFromLocal());
         return true;
       }
-      i = R.array.b;
+      i = R.array.BundlesManager;
       if (AppUtils.checkCanAddShortcut(localApp))
         break label206;
     }
-    label206: for (int j = R.array.a; ; j = i)
+    label206: for (int j = R.array.AppBundle; ; j = i)
     {
       AlertDialog localAlertDialog = new AlertDialog.Builder((Context)AlipayApplication.getInstance().getMicroApplicationContext().getTopActivity().get()).setTitle(localApp.getAppName()).setCancelable(true).setItems(j, new j(this, localApp, localHomeAppsItemAdapter)).create();
       localAlertDialog.setCanceledOnTouchOutside(true);

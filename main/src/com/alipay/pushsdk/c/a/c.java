@@ -19,17 +19,17 @@ public final class c
 
   public static void a()
   {
-    if (a == true)
+    if (AppBundle == true)
     {
-      b = e;
+      BundlesManager = e;
       return;
     }
-    b = c;
+    BundlesManager = c;
   }
 
   public static void a(int paramInt, String paramString1, String paramString2)
   {
-    if (b >= paramInt);
+    if (BundlesManager >= paramInt);
     switch (paramInt)
     {
     default:

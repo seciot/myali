@@ -13,7 +13,7 @@ public class LoggerFactory
   {
     int j;
     LoggerFactory.LogType localLogType;
-    if (a == null)
+    if (AppBundle == null)
     {
       LoggerFactory.LogType[] arrayOfLogType = LoggerFactory.LogType.values();
       int i = arrayOfLogType.length;
@@ -26,8 +26,8 @@ public class LoggerFactory
     }
     while (true)
     {
-      a = localLogType;
-      return new Logger(a.createLog(paramString));
+      AppBundle = localLogType;
+      return new Logger(AppBundle.createLog(paramString));
       label53: j++;
       break;
       label59: localLogType = LoggerFactory.LogType.LOCAL;

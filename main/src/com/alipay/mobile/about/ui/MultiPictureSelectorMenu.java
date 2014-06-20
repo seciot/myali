@@ -11,9 +11,9 @@ import com.alipay.mobile.framework.MicroApplicationContext;
 import com.alipay.mobile.framework.app.ActivityApplication;
 import java.util.List;
 
-public class MultiPictureSelectorMenu extends AbsAlbumListActivity<com.alipay.mobile.about.ui.a.b>
+public class MultiPictureSelectorMenu extends AbsAlbumListActivity<com.alipay.mobile.about.ui.AppBundle.BundlesManager>
 {
-  private com.alipay.mobile.about.ui.a.b e;
+  private com.alipay.mobile.about.ui.Bundle.AppBundle e;
 
   public static void a(ActivityApplication paramActivityApplication, Activity paramActivity, Intent paramIntent, int paramInt)
   {

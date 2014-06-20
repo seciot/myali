@@ -1,6 +1,6 @@
 package com.alipay.mobile.quinox.classloader;
 
-import com.alipay.mobile.quinox.bundle.b;
+import com.alipay.mobile.quinox.bundle.BundlesManager;
 import java.util.concurrent.ExecutorService;
 
 final class c

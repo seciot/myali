@@ -20,10 +20,10 @@ public class a extends OrmLiteSqliteOpenHelper
   private Dao<AlipassListStatus, Integer> d = null;
   private Dao<AlipassOffline, Integer> e = null;
   private Dao<AlipassOfflineV2, Integer> f = null;
-  private com.alipay.mobile.alipassapp.biz.a.a g;
+  private com.alipay.mobile.alipassapp.biz.Bundle.AppBundle g;
   private Context h;
 
-  public a(Context paramContext, com.alipay.mobile.alipassapp.biz.a.a parama)
+  public a(Context paramContext, com.alipay.mobile.alipassapp.biz.AppBundle.a parama)
   {
     super(paramContext, "alipayclient_alipass.db", null, 5);
     this.h = paramContext;

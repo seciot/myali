@@ -141,7 +141,7 @@ public class AboutFeedbackActivity extends BaseActivity
     this.f = ((APTitleBar)findViewById(R.id.ge));
     this.f.setGenericButtonListener(new a(this));
     this.e = this.f.getGenericButton();
-    ColorStateList localColorStateList = getResources().getColorStateList(R.color.a);
+    ColorStateList localColorStateList = getResources().getColorStateList(R.color.AppBundle);
     this.e.setTextColor(localColorStateList);
     this.c = ((APInputBox)findViewById(R.id.f));
     this.c.setTextFormatter(new APSplitTextFormatter("3,8"));

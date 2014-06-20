@@ -14,7 +14,7 @@ import com.alipay.mobilesecurity.core.model.Tid;
 final class b
   implements Runnable
 {
-  b(a parama, String paramString, Location paramLocation)
+  b(AppBundle parama, String paramString, Location paramLocation)
   {
   }
 

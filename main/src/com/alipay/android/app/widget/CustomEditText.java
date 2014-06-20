@@ -118,7 +118,7 @@ public class CustomEditText extends EditText
       if ((f1 >= this.d) && (f1 <= this.f) && (f2 >= this.e) && (f2 <= this.g) && (this.c != null))
       {
         CustomEditText.OnIconClickListener localOnIconClickListener = this.c;
-        localOnIconClickListener.i();
+        localOnIconClickListener.getAllBundles();
       }
     }
     hiddenPopHint();

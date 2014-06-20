@@ -17,7 +17,7 @@ final class i
   {
     if ((!this.c) && (MainActivity.b(this.b) != null))
     {
-      MainActivity.b(this.b).c();
+      MainActivity.b(this.b).getBundleName();
       MainActivity.b(this.b).b();
       this.c = true;
       MainActivity.a(this.b, this.a.d());

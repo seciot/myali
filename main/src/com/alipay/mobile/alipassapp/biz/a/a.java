@@ -56,7 +56,7 @@ public abstract interface a
 
   public abstract AlipassOffline c(String paramString1, String paramString2);
 
-  public abstract List<String> c();
+  public abstract List<String> getBundleName();
 
   public abstract PassListResult d(String paramString);
 

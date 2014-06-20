@@ -70,7 +70,7 @@ public final class b
     this.d = paramObject;
   }
 
-  public final Object c()
+  public final Object getBundleName()
   {
     return this.d;
   }
@@ -79,7 +79,7 @@ public final class b
   {
     try
     {
-      b localb = (b)super.clone();
+      BundlesManager localb = (BundlesManager)super.clone();
       return localb;
     }
     catch (CloneNotSupportedException localCloneNotSupportedException)

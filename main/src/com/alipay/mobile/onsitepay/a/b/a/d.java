@@ -15,9 +15,9 @@ public final class d
   private int d = 0;
   private int e = 0;
   private int f = 10;
-  private a g;
+  private AppBundle g;
 
-  public d(a parama)
+  public d(AppBundle parama)
   {
     this.g = parama;
     String str1 = SwitchConfigUtils.getConfigValue("ONSITE_ANDROID_PAYEE_POLLINGQUERY_TOTALCOUNT");

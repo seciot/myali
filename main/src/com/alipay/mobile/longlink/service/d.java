@@ -23,7 +23,7 @@ final class d
         locala.a(3);
         locala.b(0);
         locala.a("");
-        com.alipay.mobile.longlink.c.a.a(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.c());
+        com.alipay.mobile.longlink.c.a.a(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.getBundleName());
         this.a.d().a(locala);
         return;
       }

@@ -8,7 +8,7 @@ public final class d
 
   public static void a()
   {
-    new Thread(new d.a((byte)0)).start();
+    new Thread(new d.AppBundle((byte)0)).start();
   }
 
   public static void a(SEDelay paramSEDelay)

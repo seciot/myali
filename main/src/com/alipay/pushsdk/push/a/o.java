@@ -24,7 +24,7 @@ public final class o
   {
     if (paramInt <= 0)
       throw new IllegalArgumentException();
-    a = paramInt * 1000;
+    AppBundle = paramInt * 1000;
   }
 
   public static void a(long paramLong)
@@ -39,9 +39,9 @@ public final class o
 
   public static int b()
   {
-    if (a <= 0)
-      a = 10000;
-    return a;
+    if (AppBundle <= 0)
+      AppBundle = 10000;
+    return AppBundle;
   }
 
   public static void b(int paramInt)
@@ -54,14 +54,14 @@ public final class o
     i = paramBoolean;
   }
 
-  public static int c()
+  public static int getBundleName()
   {
     return d;
   }
 
   public static void c(int paramInt)
   {
-    b = paramInt;
+    BundlesManager = paramInt;
   }
 
   public static void c(boolean paramBoolean)
@@ -99,7 +99,7 @@ public final class o
     return i;
   }
 
-  public static boolean i()
+  public static boolean getAllBundles()
   {
     return j;
   }
@@ -116,7 +116,7 @@ public final class o
 
   public static int l()
   {
-    return b;
+    return BundlesManager;
   }
 }
 

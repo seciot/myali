@@ -14,7 +14,7 @@ public abstract class AbsAlbumListActivity<T extends ListAdapter> extends BaseAc
 {
   protected APListView a;
   protected b b;
-  protected List<com.alipay.mobile.about.ui.b.a> c = new ArrayList();
+  protected List<com.alipay.mobile.about.ui.AppBundle.a> c = new ArrayList();
   protected AdapterView.OnItemClickListener d = new m(this);
 
   protected abstract void a();

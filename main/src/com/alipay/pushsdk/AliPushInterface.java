@@ -57,7 +57,7 @@ public final class AliPushInterface
 
   public static void setDebugMode(boolean paramBoolean)
   {
-    c.a = paramBoolean;
+    c.AppBundle = paramBoolean;
     c.a();
   }
 

@@ -1,14 +1,15 @@
 package com.alipay.mobile.quinox;
 
-import android.os.Looper;
-import android.text.TextUtils;
-
-import com.alipay.mobile.quinox.bundle.b;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+
+import android.os.Looper;
+import android.text.TextUtils;
+
+import com.alipay.mobile.quinox.bundle.AppBundle;
+import com.alipay.mobile.quinox.bundle.BundlesManager;
 
 public class BundleContext {
 	private LauncherApplication app;
@@ -44,28 +45,27 @@ public class BundleContext {
 		return set;
 	}
 
-	public Set getAllBundleNames() {
-		Set localSet = app.getBundlesManager().i();
-		HashSet localHashSet = new HashSet();
-		Iterator localIterator = localSet.iterator();
-		while (localIterator.hasNext())
-			localHashSet.add(((com.alipay.mobile.quinox.bundle.a) localIterator
-					.next()).c());
-		return localHashSet;
+	public Set<String> getAllBundleNames() {
+		Set<AppBundle> allBundles = app.getBundlesManager().getAllBundles();
+		Set<String> allBundleNames = new HashSet<String>();
+		Iterator<AppBundle> ite = allBundles.iterator();
+		while (ite.hasNext())
+			allBundleNames.add((ite.next()).getBundleName());
+		return allBundleNames;
 	}
 
 	public String getBundleNameByComponent(String componentName) {
-		com.alipay.mobile.quinox.bundle.a locala = app.getBundlesManager()
+	    AppBundle locala = app.getBundlesManager()
 				.c(componentName);
 		if (locala == null)
 			return null;
-		return locala.c();
+		return locala.getBundleName();
 	}
 
 	public void init(String paramString) {
-		b localb = app.getBundlesManager();
-		com.alipay.mobile.quinox.bundle.a locala = localb.a(paramString);
-		com.alipay.mobile.quinox.classloader.a locala1 = localb.j();
+		BundlesManager manager = app.getBundlesManager();
+		AppBundle locala = manager.a(paramString);
+		com.alipay.mobile.quinox.classloader.a locala1 = manager.j();
 		if (locala1.b(paramString) == null) {
 			locala1.a(locala);
 			locala1.b(paramString);

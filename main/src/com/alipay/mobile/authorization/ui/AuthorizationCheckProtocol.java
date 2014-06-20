@@ -28,7 +28,7 @@ public class AuthorizationCheckProtocol extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.a);
+    setContentView(R.layout.AppBundle);
     getWindow().setLayout(-1, -2);
     this.c = getIntent().getStringExtra("protocol_url");
     this.a = ((APButton)findViewById(R.id.l));

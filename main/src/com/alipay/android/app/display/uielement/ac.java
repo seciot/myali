@@ -19,7 +19,7 @@ final class ac
       this.a.t();
       return;
     }
-    if (!this.a.c());
+    if (!this.a.getBundleName());
     for (boolean bool = true; ; bool = false)
     {
       this.a.a("checked", Boolean.valueOf(bool));

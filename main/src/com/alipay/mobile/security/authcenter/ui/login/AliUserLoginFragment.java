@@ -101,7 +101,7 @@ public abstract class AliUserLoginFragment<T> extends BaseLoginFragment
   @Background
   void g()
   {
-    List localList = c();
+    List localList = getBundleName();
     if ((localList != null) && (!localList.isEmpty()))
     {
       this.k.clear();
@@ -121,7 +121,7 @@ public abstract class AliUserLoginFragment<T> extends BaseLoginFragment
     for (int i1 = 0; ; i1 = 8)
     {
       localAPImageView.setVisibility(i1);
-      i();
+      getAllBundles();
       this.d.setDropDownBackgroundResource(R.drawable.j);
       return;
     }

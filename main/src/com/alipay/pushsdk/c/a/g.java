@@ -11,9 +11,9 @@ public final class g
   {
     try
     {
-      if (a == null)
-        a = new g();
-      g localg = a;
+      if (AppBundle == null)
+        AppBundle = new g();
+      g localg = AppBundle;
       return localg;
     }
     finally
@@ -43,7 +43,7 @@ public final class g
     this.b.clear();
   }
 
-  public final boolean c()
+  public final boolean getBundleName()
   {
     return !this.b.isEmpty();
   }

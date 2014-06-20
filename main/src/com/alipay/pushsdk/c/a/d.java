@@ -47,7 +47,7 @@ public final class d
 
   public static void a()
   {
-    if (c.b > 3)
+    if (c.BundlesManager > 3)
     {
       String str = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(System.currentTimeMillis()));
       Log.d("RecordtoFile", "curTime=" + str);
@@ -88,7 +88,7 @@ public final class d
 
   public static void a(String paramString1, String paramString2, long paramLong1, String paramString3, long paramLong2, String paramString4)
   {
-    if (c.b > 3)
+    if (c.BundlesManager > 3)
     {
       String str1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(paramLong1));
       String str2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(paramLong2));

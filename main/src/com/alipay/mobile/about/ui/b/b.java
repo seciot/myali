@@ -35,7 +35,7 @@ public final class b
     return this.c;
   }
 
-  public final View c()
+  public final View getBundleName()
   {
     return this.d;
   }

@@ -12,7 +12,7 @@ public abstract interface b
 
   public abstract boolean p();
 
-  public abstract b.a q();
+  public abstract BundlesManager.AppBundle q();
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

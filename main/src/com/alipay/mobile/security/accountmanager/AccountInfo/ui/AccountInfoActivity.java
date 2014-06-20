@@ -178,7 +178,7 @@ public class AccountInfoActivity extends BaseActivity
       this.a.setTitleText(getString(R.string.ak));
       this.c.setOnClickListener(new a(this));
       APButton localAPButton = this.a.getRightButton();
-      this.a.setGenericButtonIconResource(R.drawable.a);
+      this.a.setGenericButtonIconResource(R.drawable.AppBundle);
       localAPButton.setVisibility(0);
       localAPButton.setOnClickListener(this.h);
       return;
@@ -188,7 +188,7 @@ public class AccountInfoActivity extends BaseActivity
   @UiThread
   protected void a(Bitmap paramBitmap)
   {
-    float f1 = getResources().getDimension(R.dimen.a);
+    float f1 = getResources().getDimension(R.dimen.AppBundle);
     ExtViewUtil.convertDpToPixel(60.0F, this);
     if (paramBitmap != null)
     {

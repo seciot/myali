@@ -155,7 +155,7 @@ public class WithdrawSmsCheckActivity extends BaseActivity
     this.e = new EditTextHasNullChecker();
     this.a = ((LinearLayout)LayoutInflater.from(this).inflate(R.layout.f, null, false));
     setContentView(this.a);
-    ((APTitleBar)findViewById(R.id.n)).setTitleText(getString(R.string.a));
+    ((APTitleBar)findViewById(R.id.n)).setTitleText(getString(R.string.AppBundle));
     this.b = ((APCheckCodeHorizontalView)findViewById(R.id.m));
     APEditText localAPEditText = this.b.getInputBox().getEtContent();
     localAPEditText.setInputType(2);
@@ -164,7 +164,7 @@ public class WithdrawSmsCheckActivity extends BaseActivity
     this.b.scheduleTimer();
     this.e.addNeedCheckView(localAPEditText);
     localAPEditText.addTextChangedListener(this.e);
-    this.c = ((TextView)findViewById(R.id.b));
+    this.c = ((TextView)findViewById(R.id.BundlesManager));
     String str = "";
     Intent localIntent = getIntent();
     if (localIntent != null)

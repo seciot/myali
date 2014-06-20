@@ -9,7 +9,7 @@ import com.alipay.pushsdk.push.j;
 public class d
   implements c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(d.class);
+  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(d.class);
   private final j b;
 
   public d(j paramj)
@@ -19,13 +19,13 @@ public class d
 
   public final void a()
   {
-    com.alipay.pushsdk.c.a.c.a(3, a, "connectionClosed()...");
+    com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "connectionClosed()...");
   }
 
   public final void a(p paramp)
   {
-    com.alipay.pushsdk.c.a.c.a(2, a, "=== connectionClosedOnError()===");
-    com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.j, com.alipay.pushsdk.c.a.d.A, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.w, System.currentTimeMillis() + 1000 * (1 * o.c()), "PersistentConnectionListener_connectionClosedOnError:ReconnectInterval=" + 1000 * o.c());
+    com.alipay.pushsdk.c.AppBundle.c.a(2, AppBundle, "=== connectionClosedOnError()===");
+    com.alipay.pushsdk.c.AppBundle.d.a(com.alipay.pushsdk.c.AppBundle.d.j, com.alipay.pushsdk.c.AppBundle.d.A, System.currentTimeMillis(), com.alipay.pushsdk.c.AppBundle.d.w, System.currentTimeMillis() + 1000 * (1 * o.getBundleName()), "PersistentConnectionListener_connectionClosedOnError:ReconnectInterval=" + 1000 * o.getBundleName());
     String str = paramp.a();
     if ((this.b.d() != null) && (this.b.d().a()))
     {
@@ -37,7 +37,7 @@ public class d
     this.b.c(l);
     if ((this.b.w()) || (o.h()))
     {
-      com.alipay.pushsdk.c.a.c.a(3, a, "connectionClosedOnError() isFrontPolicy and then to startReconnectionThread...");
+      com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "connectionClosedOnError() isFrontPolicy and then to startReconnectionThread...");
       this.b.d(l);
       this.b.p();
       e.a(str, "80", "8");

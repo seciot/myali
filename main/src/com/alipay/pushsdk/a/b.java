@@ -3,14 +3,14 @@ package com.alipay.pushsdk.a;
 final class b
   implements Runnable
 {
-  b(a parama)
+  b(AppBundle parama)
   {
   }
 
   public final void run()
   {
-    com.alipay.pushsdk.c.a.c.a(3, a.a(), "sendConfigReq doing...");
-    new c(a.a(this.a)).a();
+    com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle.a(), "sendConfigReq doing...");
+    new c(AppBundle.a(this.a)).a();
   }
 }
 

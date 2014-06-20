@@ -57,7 +57,7 @@ final class a
     new Thread(FileDownloader.h(this.a)).start();
     FileDownloader.a(this.a, false);
     while (true)
-      if (!FileDownloader.h(this.a).c())
+      if (!FileDownloader.h(this.a).getBundleName())
         try
         {
           Thread.sleep(1500L);

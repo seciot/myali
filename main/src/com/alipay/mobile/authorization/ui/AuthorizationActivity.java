@@ -83,7 +83,7 @@ public class AuthorizationActivity extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.b);
+    setContentView(R.layout.BundlesManager);
     Intent localIntent = getIntent();
     this.d = localIntent.getStringExtra("appId");
     this.f = localIntent.getStringExtra("userId");
@@ -99,7 +99,7 @@ public class AuthorizationActivity extends BaseActivity
       this.g = a("authType");
     this.i = localIntent.getBooleanExtra("fromDesktop", false);
     this.a = ((APTextView)findViewById(R.id.o));
-    String str = getString(R.string.a);
+    String str = getString(R.string.AppBundle);
     SpannableStringBuilder localSpannableStringBuilder = new SpannableStringBuilder(str);
     localSpannableStringBuilder.setSpan(new c(this, this.mApp.getMicroApplicationContext(), getResources().getColor(R.color.protocol_link_color)), 2, str.length(), 512);
     this.a.setText(localSpannableStringBuilder);

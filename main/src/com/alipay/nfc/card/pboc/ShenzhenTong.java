@@ -17,7 +17,7 @@ final class ShenzhenTong extends PbocCard
 
   static final ShenzhenTong a(Iso7816.Tag paramTag)
   {
-    if ((paramTag.b(c).c()) && (paramTag.b(t).c()))
+    if ((paramTag.b(c).getBundleName()) && (paramTag.b(t).getBundleName()))
     {
       Iso7816.Response localResponse1 = paramTag.a(21);
       Iso7816.Response localResponse2 = paramTag.a(true);

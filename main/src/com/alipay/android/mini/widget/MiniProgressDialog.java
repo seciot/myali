@@ -15,7 +15,7 @@ public class MiniProgressDialog extends Dialog
 
   public MiniProgressDialog(Context paramContext)
   {
-    super(paramContext, R.style.b);
+    super(paramContext, R.style.BundlesManager);
   }
 
   public final MiniProgressDialog a(CharSequence paramCharSequence)

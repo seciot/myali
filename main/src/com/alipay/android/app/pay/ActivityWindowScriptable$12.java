@@ -9,7 +9,7 @@ class ActivityWindowScriptable$12
 
   public void run()
   {
-    this.this$0.c();
+    this.this$0.getBundleName();
   }
 }
 

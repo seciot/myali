@@ -8,14 +8,14 @@ import org.json.JSONObject;
 public final class d
   implements c
 {
-  private final com.alipay.mobile.longlink.service.a a;
+  private final com.alipay.mobile.longlink.service.AppBundle a;
 
-  public d(com.alipay.mobile.longlink.service.a parama)
+  public d(com.alipay.mobile.longlink.service.AppBundle parama)
   {
     this.a = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.b.c.a parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
   {
     String str;
     if (new f(2).a(parama))
@@ -23,7 +23,7 @@ public final class d
     try
     {
       m.b(new JSONObject(str).optInt("reconnectTime"));
-      this.a.c();
+      this.a.getBundleName();
       return;
     }
     catch (JSONException localJSONException)

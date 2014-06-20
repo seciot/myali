@@ -24,8 +24,8 @@ public final class b
     while (localCursor.moveToNext())
     {
       c localc = new c();
-      localc.a = localCursor.getString(localCursor.getColumnIndex("NAME"));
-      localc.b = localCursor.getString(localCursor.getColumnIndex("PASSWORD"));
+      localc.AppBundle = localCursor.getString(localCursor.getColumnIndex("NAME"));
+      localc.BundlesManager = localCursor.getString(localCursor.getColumnIndex("PASSWORD"));
       localc.c = localCursor.getString(localCursor.getColumnIndex("TYPE"));
       localc.d = localCursor.getString(localCursor.getColumnIndex("USERID"));
       localc.e = localCursor.getString(localCursor.getColumnIndex("RSAPASSWORD"));

@@ -17,7 +17,7 @@ public class YearMonthPickerDialog
 
   public YearMonthPickerDialog(String paramString, Context paramContext)
   {
-    View localView = LayoutInflater.from(paramContext).inflate(R.layout.b, null, false);
+    View localView = LayoutInflater.from(paramContext).inflate(R.layout.BundlesManager, null, false);
     this.b = ((YearMonthPicker)localView.findViewById(R.id.i));
     this.b.disableBeforeYear();
     this.a = new AlertDialog.Builder(paramContext);

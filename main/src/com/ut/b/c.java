@@ -21,7 +21,7 @@ public class c
   private SharedPreferences ap;
   private b aq;
   private SharedPreferences.Editor ar;
-  private b.a as;
+  private BundlesManager.AppBundle as;
   private d at;
   private boolean au;
   private Context mContext;
@@ -486,7 +486,7 @@ public class c
   {
     if ((paramSharedPreferences != null) && (paramb != null))
     {
-      b.a locala = paramb.q();
+      BundlesManager.AppBundle locala = paramb.q();
       if (locala != null)
       {
         locala.r();

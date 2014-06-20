@@ -10,7 +10,7 @@ final class c
 {
   String a = null;
 
-  public c(a parama, String paramString)
+  public c(AppBundle parama, String paramString)
   {
     this.a = paramString;
   }
@@ -19,7 +19,7 @@ final class c
   {
     if ((paramBoolean) && (paramLocation.longitude != 0.0D) && (paramLocation.latitude != 0.0D))
     {
-      BackgroundExecutor.execute(new b(this.b, this.a, paramLocation));
+      BackgroundExecutor.execute(new BundlesManager(this.b, this.a, paramLocation));
       LBSInfoGather.getInstance(this.b.b).removeUpdates(this.b.a);
     }
   }

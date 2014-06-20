@@ -17,16 +17,16 @@ public class i
       {
         f.i = 1 + f.i;
         long l = System.currentTimeMillis() - f.j;
-        c.a(3, a, "tracelogFlag=" + o.i() + ", log count=" + f.i + ", send log duration=" + l);
-        if ((!o.i()) || (f.i < 30) || (l < 1800000L))
+        c.a(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
+        if ((!o.getAllBundles()) || (f.i < 30) || (l < 1800000L))
         {
-          c.a(4, a, "checkAndSend is not ready.");
+          c.a(4, AppBundle, "checkAndSend is not ready.");
           return;
         }
-        if (b.get())
+        if (BundlesManager.get())
           return;
       }
-      b.set(true);
+      BundlesManager.set(true);
       new j(paramContext).start();
     }
   }

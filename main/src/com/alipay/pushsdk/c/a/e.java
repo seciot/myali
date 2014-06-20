@@ -18,7 +18,7 @@ public class e
     h.a(paramContext);
     com.alipay.pushsdk.push.h localh = new com.alipay.pushsdk.push.h(paramContext);
     i locali = i.a(paramContext);
-    String str1 = locali.c();
+    String str1 = locali.getBundleName();
     String str2 = localh.d();
     String str3 = localh.a();
     String str4 = locali.b();
@@ -29,8 +29,8 @@ public class e
   {
     try
     {
-      c.a(3, a, "writeLog start...");
-      if (!o.i())
+      c.a(3, AppBundle, "writeLog start...");
+      if (!o.getAllBundles())
         return;
       new k(paramString1, paramString2, paramString3).a();
       return;

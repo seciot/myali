@@ -161,7 +161,7 @@ public class SecurityAccountQrCodeActivity extends BaseActivity
       APButton localAPButton = this.c.getRightButton();
       if (d() != 0)
       {
-        this.c.setGenericButtonIconResource(R.drawable.b);
+        this.c.setGenericButtonIconResource(R.drawable.BundlesManager);
         localAPButton.setVisibility(0);
       }
       localAPButton.setOnClickListener(this.f);

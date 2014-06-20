@@ -19,10 +19,10 @@ final class ChanganTong extends PbocCard
 
   static final ChanganTong a(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).c())
+    if (paramTag.b(c).getBundleName())
     {
       paramTag.a(5);
-      if (paramTag.b(t).c())
+      if (paramTag.b(t).getBundleName())
       {
         Iso7816.Response localResponse1 = paramTag.a(21);
         Iso7816.Response localResponse2 = paramTag.a(true);

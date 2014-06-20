@@ -23,12 +23,12 @@ class j
     a();
   }
 
-  private a e()
+  private AppBundle e()
   {
-    a locala = null;
+    AppBundle locala = null;
     while (!this.f)
     {
-      locala = (a)this.e.poll();
+      locala = (AppBundle)this.e.poll();
       if (locala != null)
         break;
       try
@@ -36,7 +36,7 @@ class j
         synchronized (this.e)
         {
           this.e.wait();
-          c.a(4, a, "nextPacket queue len=" + this.e.size());
+          c.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
         }
       }
       catch (InterruptedException localInterruptedException)
@@ -56,7 +56,7 @@ class j
   }
 
   // ERROR //
-  public final void a(a parama)
+  public final void a(AppBundle parama)
   {
     // Byte code:
     //   0: iconst_4
@@ -121,7 +121,7 @@ class j
     this.b.start();
   }
 
-  public final void c()
+  public final void getBundleName()
   {
     this.f = true;
     synchronized (this.e)

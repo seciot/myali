@@ -158,7 +158,7 @@ public class AppDetailActivity extends BaseActivity
     this.j = ((APTextView)findViewById(R.id.d));
     this.k = ((APTextView)findViewById(R.id.g));
     this.l = ((APTextView)findViewById(R.id.e));
-    this.m = ((APTextView)findViewById(R.id.b));
+    this.m = ((APTextView)findViewById(R.id.BundlesManager));
     this.i = ((APButton)findViewById(R.id.h));
     this.n = ((APImageView)findViewById(R.id.c));
     if ((this.a == null) || ("".equals(this.a.trim())))

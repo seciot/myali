@@ -17,19 +17,19 @@ final class BeijingMunicipal extends PbocCard
 
   static final BeijingMunicipal a(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).c())
+    if (paramTag.b(c).getBundleName())
     {
       Iso7816.Response localResponse1 = paramTag.a(4);
-      if (localResponse1.c())
+      if (localResponse1.getBundleName())
       {
         Iso7816.Response localResponse2 = paramTag.a(5);
-        if (paramTag.a(b).c())
+        if (paramTag.a(b).getBundleName())
         {
           Iso7816.Response localResponse3 = paramTag.a(true);
           ArrayList localArrayList = b(paramTag);
           BeijingMunicipal localBeijingMunicipal = new BeijingMunicipal(paramTag);
           localBeijingMunicipal.a(localResponse3);
-          if ((!localResponse1.c()) || (localResponse1.a() < 32))
+          if ((!localResponse1.getBundleName()) || (localResponse1.a() < 32))
           {
             localBeijingMunicipal.j = null;
             localBeijingMunicipal.i = null;
@@ -58,7 +58,7 @@ final class BeijingMunicipal extends PbocCard
             arrayOfObject2[7] = Byte.valueOf(arrayOfByte1[31]);
             localBeijingMunicipal.i = String.format("%02X%02X.%02X.%02X - %02X%02X.%02X.%02X", arrayOfObject2);
             localBeijingMunicipal.j = null;
-            if ((localResponse2 != null) && (localResponse2.c()) && (localResponse2.a() > 4))
+            if ((localResponse2 != null) && (localResponse2.getBundleName()) && (localResponse2.a() > 4))
             {
               byte[] arrayOfByte2 = localResponse2.b();
               int i = Util.a(arrayOfByte2, 1, 4);

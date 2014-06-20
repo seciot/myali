@@ -96,7 +96,7 @@ public abstract class a
 
   public abstract void b(byte[] paramArrayOfByte);
 
-  public final int c()
+  public final int getBundleName()
   {
     return this.e;
   }
@@ -153,7 +153,7 @@ public abstract class a
     return this.j;
   }
 
-  public final int i()
+  public final int getAllBundles()
   {
     return this.c;
   }

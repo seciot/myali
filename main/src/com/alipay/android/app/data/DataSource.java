@@ -211,7 +211,7 @@ public class DataSource
       for (int i = -1 + this.a.size(); i >= 0; i--)
       {
         localWindowData = (WindowData)this.a.get(i);
-        if ((localWindowData.c() == 4) || (localWindowData.c() == 9))
+        if ((localWindowData.getBundleName() == 4) || (localWindowData.getBundleName() == 9))
           break label61;
       }
     WindowData localWindowData = null;

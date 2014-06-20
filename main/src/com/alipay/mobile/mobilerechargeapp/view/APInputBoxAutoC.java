@@ -181,7 +181,7 @@ public class APInputBoxAutoC extends APRelativeLayout
 
   protected void inflateLayout(Context paramContext)
   {
-    LayoutInflater.from(paramContext).inflate(R.layout.a, this, true);
+    LayoutInflater.from(paramContext).inflate(R.layout.AppBundle, this, true);
   }
 
   public boolean isNeedShowClearButton()

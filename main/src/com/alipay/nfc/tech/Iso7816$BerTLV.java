@@ -26,7 +26,7 @@ public final class Iso7816$BerTLV extends Iso7816
     int i = paramInt + localBerT.a();
     Iso7816.BerL localBerL = Iso7816.BerL.d(paramArrayOfByte, i);
     int j = i + localBerL.a();
-    Iso7816.BerV localBerV = Iso7816.BerV.a(paramArrayOfByte, j, localBerL.c());
+    Iso7816.BerV localBerV = Iso7816.BerV.a(paramArrayOfByte, j, localBerL.getBundleName());
     int k = j + localBerV.a();
     BerTLV localBerTLV = new BerTLV(localBerT, localBerL, localBerV);
     localBerTLV.b = Arrays.copyOfRange(paramArrayOfByte, paramInt, k);
@@ -35,7 +35,7 @@ public final class Iso7816$BerTLV extends Iso7816
 
   public final BerTLV a(Iso7816.BerT paramBerT)
   {
-    if (this.c.c())
+    if (this.c.getBundleName())
     {
       byte[] arrayOfByte = this.e.b();
       int i = 0;

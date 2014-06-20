@@ -1,6 +1,6 @@
 package a.a.a.a;
 
-public abstract interface c extends a
+public abstract interface c extends AppBundle
 {
 }
 

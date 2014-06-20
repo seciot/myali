@@ -10,7 +10,7 @@ class SecurityExaminationActivity$1 extends TimerTask
 
   public void run()
   {
-    this.a.c();
+    this.a.getBundleName();
   }
 }
 

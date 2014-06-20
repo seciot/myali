@@ -16,8 +16,8 @@ public final class WapForgotPayPwdActivity_ extends WapForgotPayPwdActivity
 
   private void e()
   {
-    this.b = ((APProgressBar)findViewById(R.id.b));
-    this.a = ((APWebView)findViewById(R.id.a));
+    this.b = ((APProgressBar)findViewById(R.id.BundlesManager));
+    this.a = ((APWebView)findViewById(R.id.AppBundle));
     a();
   }
 

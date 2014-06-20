@@ -5,7 +5,7 @@ import com.alipay.mobile.framework.lbsinfo.LBSInfoGather;
 import com.alipay.mobile.onsitepay.a.b.b;
 
 public final class a
-  implements b
+  implements BundlesManager
 {
   c a = null;
   Context b = null;

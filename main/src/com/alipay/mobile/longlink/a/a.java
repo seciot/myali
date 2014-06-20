@@ -31,7 +31,7 @@ public class a
     this.d = paramString;
   }
 
-  public String c()
+  public String getBundleName()
   {
     return this.a;
   }

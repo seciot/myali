@@ -115,10 +115,10 @@ public class WithdrawActivity extends BaseActivity
   @AfterViews
   final void a()
   {
-    this.a.setTitleText(getString(R.string.a));
+    this.a.setTitleText(getString(R.string.AppBundle));
     if (this.v)
     {
-      new a(this, this, this.a).showWarningTip(getString(R.string.b), null, null);
+      new a(this, this, this.a).showWarningTip(getString(R.string.BundlesManager), null, null);
       return;
     }
     i();
@@ -128,7 +128,7 @@ public class WithdrawActivity extends BaseActivity
     this.b = ((APInputBox)findViewById(R.id.e));
     this.b.setTextFormatter(new APMoneyFormatter());
     this.f.addNeedCheckView(this.b.getEtContent());
-    this.c = ((TextView)findViewById(R.id.a));
+    this.c = ((TextView)findViewById(R.id.AppBundle));
     this.e = ((TextView)findViewById(R.id.d));
     this.m = ((APMultiTextTableView)findViewById(R.id.l));
     this.m.setOnClickListener(new f(this));
@@ -387,7 +387,7 @@ public class WithdrawActivity extends BaseActivity
 
   protected final void f()
   {
-    ListView localListView = (ListView)LayoutInflater.from(this).inflate(R.layout.b, null);
+    ListView localListView = (ListView)LayoutInflater.from(this).inflate(R.layout.BundlesManager, null);
     localListView.addStatesFromChildren();
     localListView.setAdapter(this.s);
     localListView.setOnItemClickListener(new n(this));

@@ -6,7 +6,7 @@ public abstract interface d
 {
   public abstract void a();
 
-  public abstract void a(AlipayApplication paramAlipayApplication, String paramString, a parama);
+  public abstract void a(AlipayApplication paramAlipayApplication, String paramString, AppBundle parama);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

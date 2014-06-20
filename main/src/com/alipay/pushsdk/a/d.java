@@ -17,21 +17,21 @@ final class d
 
   public final void a()
   {
-    com.alipay.pushsdk.c.a.c.a(3, c.b(), "UpdateUserListener onFail.");
+    com.alipay.pushsdk.c.AppBundle.c.a(3, c.b(), "UpdateUserListener onFail.");
   }
 
-  public final void a(com.alipay.pushsdk.b.b paramb)
+  public final void a(com.alipay.pushsdk.BundlesManager.b paramb)
   {
     try
     {
-      JSONObject localJSONObject = new JSONObject(paramb.c().toString());
-      com.alipay.pushsdk.c.a.c.a(3, c.b(), "ConfigListener onComplete jsonResponse:" + localJSONObject.toString());
+      JSONObject localJSONObject = new JSONObject(paramb.getBundleName().toString());
+      com.alipay.pushsdk.c.AppBundle.c.a(3, c.b(), "ConfigListener onComplete jsonResponse:" + localJSONObject.toString());
       if (localJSONObject.getInt("resultStatus") == 100)
       {
         c.a(this.a, localJSONObject);
         long l = System.currentTimeMillis();
         c.a(this.a).a("LAST_CONFIG_TIME", l);
-        com.alipay.pushsdk.c.a.c.a(3, c.b(), "onComplete() saveCfgPolicy Time is:" + j.a(l));
+        com.alipay.pushsdk.c.AppBundle.c.a(3, c.b(), "onComplete() saveCfgPolicy Time is:" + j.a(l));
         Thread.sleep(1000L);
         if (c.b(this.a).a().length() == 0)
           c.c(this.a).stopService(new Intent(c.c(this.a), NotificationService.class));

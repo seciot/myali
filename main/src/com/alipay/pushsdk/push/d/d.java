@@ -18,7 +18,7 @@ public final class d
     this.a = paramj;
   }
 
-  public final void a(a parama)
+  public final void a(AppBundle parama)
   {
     String str;
     if (new f(2).a(parama))
@@ -30,7 +30,7 @@ public final class d
     try
     {
       o.b(new JSONObject(str).optInt("reconnectTime"));
-      this.a.c();
+      this.a.getBundleName();
       return;
     }
     catch (JSONException localJSONException)

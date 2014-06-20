@@ -9,21 +9,21 @@ public class APViewEventHelper
 
   public static void setWrapper(APViewEventHelper.ClickListenerWrapper paramClickListenerWrapper)
   {
-    a = paramClickListenerWrapper;
+    AppBundle = paramClickListenerWrapper;
   }
 
   public static View.OnClickListener wrapClickListener(View.OnClickListener paramOnClickListener)
   {
-    if (a == null)
+    if (AppBundle == null)
       return paramOnClickListener;
-    return a.wrap(paramOnClickListener);
+    return AppBundle.wrap(paramOnClickListener);
   }
 
   public static AdapterView.OnItemClickListener wrapItemClickListener(AdapterView.OnItemClickListener paramOnItemClickListener)
   {
-    if (a == null)
+    if (AppBundle == null)
       return paramOnItemClickListener;
-    return a.wrap(paramOnItemClickListener);
+    return AppBundle.wrap(paramOnItemClickListener);
   }
 }
 

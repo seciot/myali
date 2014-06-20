@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 final class b
   implements Runnable
 {
-  b(a parama)
+  b(AppBundle parama)
   {
   }
 
@@ -21,10 +21,10 @@ final class b
       synchronized (f.k)
       {
         this.a.a.flush();
-        a.a(this.a).set(false);
+        AppBundle.a(this.a).set(false);
         return;
         localInterruptedException = localInterruptedException;
-        c.a(2, a.a(), localInterruptedException);
+        c.a(2, AppBundle.a(), localInterruptedException);
       }
     }
   }

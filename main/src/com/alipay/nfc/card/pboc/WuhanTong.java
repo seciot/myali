@@ -18,18 +18,18 @@ final class WuhanTong extends PbocCard
 
   static final WuhanTong a(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).c())
+    if (paramTag.b(c).getBundleName())
     {
       Iso7816.Response localResponse1 = paramTag.a(10);
-      if (!localResponse1.c())
+      if (!localResponse1.getBundleName())
         return null;
       Iso7816.Response localResponse2 = paramTag.a(5);
-      if (!localResponse2.c())
+      if (!localResponse2.getBundleName())
         return null;
       Iso7816.Response localResponse3 = paramTag.a(true);
-      if (paramTag.b(t).c())
+      if (paramTag.b(t).getBundleName())
       {
-        if (!localResponse3.c())
+        if (!localResponse3.getBundleName())
           localResponse3 = paramTag.a(true);
         ArrayList localArrayList = b(paramTag);
         WuhanTong localWuhanTong = new WuhanTong(paramTag);

@@ -71,14 +71,14 @@ public class SecurityWidgetGroupAcitivity extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.a);
+    setContentView(R.layout.AppBundle);
     this.d = ((SchemeService)AlipayApplication.getInstance().getMicroApplicationContext().findServiceByInterface(SchemeService.class.getName()));
     this.e = ((AuthService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(AuthService.class.getName()));
     this.h = ((NFCService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(NFCService.class.getName()));
     this.b = ((APTitleBar)findViewById(R.id.c));
-    this.c = ((APScrollView)findViewById(R.id.b));
+    this.c = ((APScrollView)findViewById(R.id.BundlesManager));
     this.f = ((WidgetListContainer)findViewById(R.id.d));
-    this.g = ((APButton)findViewById(R.id.a));
+    this.g = ((APButton)findViewById(R.id.AppBundle));
     this.f.setAdapter(this);
     this.g.setOnClickListener(new a(this));
   }

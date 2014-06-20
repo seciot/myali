@@ -14,7 +14,7 @@ final class l extends TimerTask
 
   public final void run()
   {
-    a.a(3, k.h(), "reConnTask() curMsgId=" + k.a(this.a));
+    AppBundle.a(3, k.h(), "reConnTask() curMsgId=" + k.a(this.a));
     Iterator localIterator = this.a.b().iterator();
     while (localIterator.hasNext())
     {
@@ -30,7 +30,7 @@ final class l extends TimerTask
         localException.printStackTrace();
       }
     }
-    a.a(2, k.h(), "reConnTask() connectionClosedOnError has been notify!");
+    AppBundle.a(2, k.h(), "reConnTask() connectionClosedOnError has been notify!");
   }
 }
 

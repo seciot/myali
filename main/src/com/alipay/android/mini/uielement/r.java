@@ -16,7 +16,7 @@ final class r
   public final void a(boolean paramBoolean)
   {
     if ((paramBoolean) && (UIInput.a(this.a) != null) && (UIInput.c(this.a) != null))
-      UIInput.a(this.a).setTextColor(UIInput.c(this.a).getResources().getColor(R.color.b));
+      UIInput.a(this.a).setTextColor(UIInput.c(this.a).getResources().getColor(R.color.BundlesManager));
   }
 }
 

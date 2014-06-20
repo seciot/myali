@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.c;
 
 public class c
 {
-  private static final String a = a.a(c.class);
+  private static final String a = AppBundle.a(c.class);
 
   // ERROR //
   public static byte[] a(byte[] paramArrayOfByte)

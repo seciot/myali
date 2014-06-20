@@ -35,7 +35,7 @@ public class OldDataTransferUtil
     if (localCacheSet.getBoolean("isNeedOldDataToNewTable", true))
     {
       SecurityDbHelper localSecurityDbHelper = SecurityDbHelper.getInstance(AlipayApplication.getInstance());
-      b localb = new b(AlipayApplication.getInstance());
+      BundlesManager localb = new BundlesManager(AlipayApplication.getInstance());
       try
       {
         if (localb.a(AlipayApplication.getInstance()))
@@ -52,7 +52,7 @@ public class OldDataTransferUtil
               if (!"taobao".equalsIgnoreCase(localc.c))
                 break;
               TaoBaoUserInfo localTaoBaoUserInfo = new TaoBaoUserInfo();
-              localTaoBaoUserInfo.setTaoBaoUserId(localc.a);
+              localTaoBaoUserInfo.setTaoBaoUserId(localc.AppBundle);
               localSecurityDbHelper.addTaobaoUserInfo(localTaoBaoUserInfo);
             }
           }

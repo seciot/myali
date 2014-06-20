@@ -17,7 +17,7 @@ final class ac
     Context localContext = GlobalContext.a().b();
     String str1 = localContext.getString(R.string.h);
     String str2 = localContext.getString(R.string.i);
-    String str3 = localContext.getString(R.string.b);
+    String str3 = localContext.getString(R.string.BundlesManager);
     IFormShower localIFormShower = MiniWindowManager.a(this.a);
     ActionType[] arrayOfActionType1 = new ActionType[1];
     arrayOfActionType1[0] = ActionType.b;

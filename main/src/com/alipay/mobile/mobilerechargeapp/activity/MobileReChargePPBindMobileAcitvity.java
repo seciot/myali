@@ -96,7 +96,7 @@ public class MobileReChargePPBindMobileAcitvity extends BaseActivity
       AddMobileAccountRes localAddMobileAccountRes1;
       while (true)
         localAddMobileAccountRes1 = null;
-      alert("", localAddMobileAccountRes1.getMemo(), getResources().getString(R.string.b), null, null, null);
+      alert("", localAddMobileAccountRes1.getMemo(), getResources().getString(R.string.BundlesManager), null, null, null);
     }
   }
 
@@ -116,7 +116,7 @@ public class MobileReChargePPBindMobileAcitvity extends BaseActivity
     {
       return;
     }
-    alert("", getResources().getString(R.string.j), getResources().getString(R.string.b), null, null, null);
+    alert("", getResources().getString(R.string.j), getResources().getString(R.string.BundlesManager), null, null, null);
   }
 }
 

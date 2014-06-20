@@ -13,7 +13,7 @@ final class ac
   public final void onClick(View paramView)
   {
     this.a.setWavingState(false);
-    this.a.waveButtonListener.c();
+    this.a.waveButtonListener.getBundleName();
   }
 }
 

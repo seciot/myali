@@ -7,24 +7,24 @@ import com.alipay.mobile.longlink.b.c.f;
 public class a
   implements c
 {
-  private static final String a = com.alipay.mobile.longlink.c.a.a(a.class);
-  private final com.alipay.mobile.longlink.service.a b;
+  private static final String a = com.alipay.mobile.longlink.c.AppBundle.a(AppBundle.class);
+  private final com.alipay.mobile.longlink.service.AppBundle b;
 
-  public a(com.alipay.mobile.longlink.service.a parama)
+  public a(com.alipay.mobile.longlink.service.AppBundle parama)
   {
     this.b = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.b.c.a parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
   {
     if (new f(3).a(parama))
     {
-      com.alipay.mobile.longlink.c.a.a(3, a, "processPacket() got one HeartBeatPacket from Server!");
+      com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
       if (parama.b() != 0);
     }
     try
     {
-      com.alipay.mobile.longlink.b.c.a locala = com.alipay.mobile.longlink.b.c.c.a(this.b.g());
+      com.alipay.mobile.longlink.BundlesManager.c.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.c.c.a(this.b.g());
       locala.a(3);
       locala.b(1);
       locala.a("");

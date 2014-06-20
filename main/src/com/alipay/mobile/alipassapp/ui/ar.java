@@ -11,7 +11,7 @@ final class ar
   {
     AlipassListActivity.d(this.a.a);
     AlipassListActivity.e(this.a.a);
-    AlipassListActivity.a(this.a.a, this.a.a.i());
+    AlipassListActivity.a(this.a.a, this.a.a.getAllBundles());
   }
 }
 

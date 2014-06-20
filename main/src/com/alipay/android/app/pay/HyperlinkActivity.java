@@ -132,7 +132,7 @@ public class HyperlinkActivity extends AbsActivity
         if (TextUtils.equals(str, "text"))
         {
           this.f = localIntent.getStringArrayExtra("param");
-          this.g = ((CustomListView)findViewById(R.id.a));
+          this.g = ((CustomListView)findViewById(R.id.AppBundle));
           this.g.setVisibility(0);
           a(this.f);
           if (!GlobalContext.a().c().c())
@@ -155,7 +155,7 @@ public class HyperlinkActivity extends AbsActivity
           localMap4.put("title_img", arrayOfInt4);
           Map localMap5 = this.n;
           int[] arrayOfInt5 = new int[1];
-          arrayOfInt5[0] = R.id.a;
+          arrayOfInt5[0] = R.id.AppBundle;
           localMap5.put("agreement_list", arrayOfInt5);
           DefaultMesssageHandler localDefaultMesssageHandler = DefaultMesssageHandler.getInstance();
           EventObject localEventObject = EventObject.OnResume;

@@ -1,7 +1,7 @@
 package a.a.b.b;
 
 abstract class a extends e
-  implements a.a.a.a.a
+  implements AppBundle.a.a.a.a
 {
   Class[] a;
   String[] b;

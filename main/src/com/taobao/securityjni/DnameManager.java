@@ -4,7 +4,7 @@ import com.taobao.securityjni.tools.d;
 
 public class DnameManager
 {
-  private static final DnameManager.a AHICK = new DnameManager.a((byte)0);
+  private static final DnameManager.AppBundle AHICK = new DnameManager.AppBundle((byte)0);
 
   public static void RegisterConfig(String paramString)
   {

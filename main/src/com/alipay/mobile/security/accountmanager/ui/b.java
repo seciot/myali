@@ -29,7 +29,7 @@ final class b
         new StringBuilder("click position: ").append(paramInt).append(" size: ").append(this.a.g.size()).toString();
         return;
       }
-      ((a.a)paramView.getTag()).c.setVisibility(0);
+      ((AppBundle.a)paramView.getTag()).c.setVisibility(0);
       this.a.c.notifyDataSetChanged();
       localUserInfo = (UserInfo)this.a.g.get(paramInt);
       Object localObject = "";

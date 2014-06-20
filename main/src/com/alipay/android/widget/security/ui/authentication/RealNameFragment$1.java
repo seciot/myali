@@ -12,7 +12,7 @@ class RealNameFragment$1
 
   public void onClick(View paramView)
   {
-    this.a.c();
+    this.a.getBundleName();
   }
 }
 

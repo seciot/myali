@@ -8,7 +8,7 @@ public final class b
   public static int d = 14;
   public static int e = 2;
   public static int f = c;
-  public static int g = a;
+  public static int g = AppBundle;
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

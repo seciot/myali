@@ -20,7 +20,7 @@ public final class BalancesVerifySmsActivity_ extends BalancesVerifySmsActivity
   {
     this.d = ((APTextView)findViewById(R.id.r));
     this.e = ((APButton)findViewById(R.id.M));
-    this.f = ((APCheckCodeHorizontalView)findViewById(R.id.b));
+    this.f = ((APCheckCodeHorizontalView)findViewById(R.id.BundlesManager));
     a();
   }
 

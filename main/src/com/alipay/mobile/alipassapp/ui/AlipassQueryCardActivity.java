@@ -60,7 +60,7 @@ public class AlipassQueryCardActivity extends BaseActivity
   private static final String d = AlipassQueryCardActivity.class.getSimpleName();
   private View e;
   private Boolean f;
-  private com.alipay.mobile.alipassapp.biz.a.a g;
+  private com.alipay.mobile.alipassapp.biz.Bundle.AppBundle g;
   private com.alipay.mobile.alipassapp.biz.a h;
   private k i;
   private RpcException j = null;
@@ -201,7 +201,7 @@ public class AlipassQueryCardActivity extends BaseActivity
   {
     try
     {
-      com.alipay.mobile.alipassapp.biz.a.a locala = this.g;
+      com.alipay.mobile.alipassapp.biz.AppBundle.a locala = this.g;
       Object localObject = null;
       if (locala != null)
       {
@@ -546,7 +546,7 @@ public class AlipassQueryCardActivity extends BaseActivity
         this.k.setVisibility(8);
       setContentView(this.e);
     }
-    this.g = new com.alipay.mobile.alipassapp.biz.a.a.a(this.mApp, getApplicationContext());
+    this.g = new com.alipay.mobile.alipassapp.biz.AppBundle.a.a(this.mApp, getApplicationContext());
     this.h = new com.alipay.mobile.alipassapp.biz.c.a(AlipayApplication.getInstance().getMicroApplicationContext());
     Intent localIntent = getIntent();
     Bundle localBundle;

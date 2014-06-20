@@ -1,8 +1,5 @@
 package com.alipay.mobile.quinox.classloader;
 
-import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import dalvik.system.PathClassLoader;
 import java.io.File;
 import java.util.Collection;
 import java.util.Iterator;
@@ -12,16 +9,22 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
+import android.content.Context;
+
+import com.alipay.mobile.quinox.bundle.AppBundle;
+
+import dalvik.system.PathClassLoader;
+
 public final class a extends PathClassLoader
 {
   private static final ThreadFactory f = new b();
   private Context a;
-  private com.alipay.mobile.quinox.bundle.b b;
+  private com.alipay.mobile.quinox.bundle.BundlesManager b;
   private Map c;
   private InitExecutor d;
   private e e;
 
-  public a(Context paramContext, PathClassLoader paramPathClassLoader, com.alipay.mobile.quinox.bundle.b paramb)
+  public a(Context paramContext, PathClassLoader paramPathClassLoader, com.alipay.mobile.quinox.bundle.BundlesManager paramb)
   {
     super(paramContext.getApplicationInfo().sourceDir, paramContext.getApplicationInfo().dataDir + File.separator + "lib", a(ClassLoader.getSystemClassLoader()));
     this.a = paramContext;
@@ -80,7 +83,7 @@ public final class a extends PathClassLoader
     Iterator localIterator = this.b.b();
     while (localIterator.hasNext())
     {
-      com.alipay.mobile.quinox.bundle.a locala = (com.alipay.mobile.quinox.bundle.a)localIterator.next();
+      AppBundle locala = (AppBundle)localIterator.next();
       if ((locala.i()) && (locala.d() != 11110000))
         this.d.a(locala);
     }
@@ -110,7 +113,7 @@ public final class a extends PathClassLoader
     return this.a;
   }
 
-  public final void a(com.alipay.mobile.quinox.bundle.a parama)
+  public final void a(AppBundle parama)
   {
     this.d.a();
     this.d.a(parama);
@@ -139,7 +142,7 @@ public final class a extends PathClassLoader
   {
     if (!d(paramString))
     {
-      com.alipay.mobile.quinox.bundle.a locala = this.b.a(paramString);
+      AppBundle locala = this.b.a(paramString);
       if (this.b.b(paramString))
       {
         com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getQuinoxClassLoader static link ->bundle: " + paramString);
@@ -160,7 +163,7 @@ public final class a extends PathClassLoader
     return this.b.d() + File.pathSeparator + this.a.getApplicationInfo().dataDir + File.separator + "lib";
   }
 
-  public final void b(com.alipay.mobile.quinox.bundle.a parama)
+  public final void b(AppBundle parama)
   {
     this.d.b(parama);
   }
@@ -169,7 +172,7 @@ public final class a extends PathClassLoader
   {
     if (!d(paramString))
     {
-      com.alipay.mobile.quinox.bundle.a locala = this.b.a(paramString);
+      AppBundle locala = this.b.a(paramString);
       if (locala == null)
         com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getBundleClassLoader can't find bundle: " + paramString);
       while (!locala.i())
@@ -182,14 +185,14 @@ public final class a extends PathClassLoader
   protected final Class findClass(String paramString)
   {
     com.alipay.mobile.quinox.utils.d.c("BootstrapClassloader", Thread.currentThread().getName() + ":" + this + " findClass: " + paramString);
-    com.alipay.mobile.quinox.bundle.a locala = this.b.c(paramString);
+    AppBundle locala = this.b.c(paramString);
     if (locala != null)
     {
-      h localh = b(locala.c());
+      h localh = b(locala.getBundleName());
       if ((localh == null) && (locala.d() == 11110000))
       {
         a(locala);
-        localh = b(locala.c());
+        localh = b(locala.getBundleName());
       }
       if ((localh != null) && (localh != this.e))
         return localh.loadClassFromCurrent(paramString);

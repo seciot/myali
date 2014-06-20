@@ -9,15 +9,15 @@ import org.json.JSONObject;
 public class e
   implements c
 {
-  private static final String a = com.alipay.mobile.longlink.c.a.a(e.class);
-  private final com.alipay.mobile.longlink.service.a b;
+  private static final String a = com.alipay.mobile.longlink.c.AppBundle.a(e.class);
+  private final com.alipay.mobile.longlink.service.AppBundle b;
 
-  public e(com.alipay.mobile.longlink.service.a parama)
+  public e(com.alipay.mobile.longlink.service.AppBundle parama)
   {
     this.b = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.b.c.a parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
   {
     String str;
     if (new f(0).a(parama))
@@ -30,8 +30,8 @@ public class e
       JSONObject localJSONObject = new JSONObject(str);
       m.c(localJSONObject.optInt("keepLiveTime"));
       m.a(localJSONObject.optInt("heartTimeOut"));
-      com.alipay.mobile.longlink.service.a.n();
-      com.alipay.mobile.longlink.c.a.a(3, a, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.c());
+      com.alipay.mobile.longlink.service.AppBundle.n();
+      com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.getBundleName());
       this.b.t();
       return;
     }

@@ -26,11 +26,11 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
     this.g = ((ImageView)findViewById(R.id.e));
     this.h = ((ImageView)findViewById(R.id.f));
     this.f = ((TextView)findViewById(R.id.c));
-    this.c = ((ViewGroup)findViewById(R.id.a));
+    this.c = ((ViewGroup)findViewById(R.id.AppBundle));
     this.k = ((LinearLayout)findViewById(R.id.g));
     this.j = ((TextView)findViewById(R.id.i));
     this.i = ((TextView)findViewById(R.id.h));
-    this.d = ((ViewGroup)findViewById(R.id.b));
+    this.d = ((ViewGroup)findViewById(R.id.BundlesManager));
     this.e = ((Button)findViewById(R.id.d));
     b();
   }
@@ -51,11 +51,11 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
     this.p = AnimationUtils.loadAnimation(this, R.anim.e);
     this.m = AnimationUtils.loadAnimation(this, R.anim.c);
     this.o = AnimationUtils.loadAnimation(this, R.anim.d);
-    this.n = AnimationUtils.loadAnimation(this, R.anim.b);
-    this.l = AnimationUtils.loadAnimation(this, R.anim.a);
+    this.n = AnimationUtils.loadAnimation(this, R.anim.BundlesManager);
+    this.l = AnimationUtils.loadAnimation(this, R.anim.AppBundle);
     a();
     super.onCreate(paramBundle);
-    setContentView(R.layout.a);
+    setContentView(R.layout.AppBundle);
   }
 
   public final boolean onKeyDown(int paramInt, KeyEvent paramKeyEvent)

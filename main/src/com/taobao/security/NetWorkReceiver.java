@@ -38,7 +38,7 @@ public class NetWorkReceiver extends BroadcastReceiver
           boolean bool = a;
           if (bool)
             break;
-          new Thread(new NetWorkReceiver.a(this, paramContext)).start();
+          new Thread(new NetWorkReceiver.AppBundle(this, paramContext)).start();
           return;
         }
       }

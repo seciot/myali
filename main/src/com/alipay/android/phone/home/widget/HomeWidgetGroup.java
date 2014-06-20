@@ -110,11 +110,11 @@ public class HomeWidgetGroup
 
   public View getIndicator()
   {
-    RelativeLayout localRelativeLayout = (RelativeLayout)LayoutInflater.from(this.fragmentContext).inflate(R.layout.b, null);
+    RelativeLayout localRelativeLayout = (RelativeLayout)LayoutInflater.from(this.fragmentContext).inflate(R.layout.BundlesManager, null);
     TextView localTextView = (TextView)localRelativeLayout.findViewById(R.id.v);
-    Drawable localDrawable = this.fragmentContext.getResources().getDrawable(R.drawable.a);
+    Drawable localDrawable = this.fragmentContext.getResources().getDrawable(R.drawable.AppBundle);
     localDrawable.setBounds(0, 0, localDrawable.getMinimumWidth(), localDrawable.getMinimumHeight());
-    localTextView.setText(this.fragmentContext.getText(R.string.a));
+    localTextView.setText(this.fragmentContext.getText(R.string.AppBundle));
     localTextView.setCompoundDrawables(null, localDrawable, null, null);
     return localRelativeLayout;
   }
@@ -233,12 +233,12 @@ public class HomeWidgetGroup
     if (j <= 0)
     {
       n = this.context.getResources().getDimensionPixelOffset(R.dimen.c);
-      k = this.context.getResources().getDimensionPixelSize(R.dimen.b);
+      k = this.context.getResources().getDimensionPixelSize(R.dimen.BundlesManager);
     }
     for (int m = n; ; m = i)
     {
       RelativeLayout.LayoutParams localLayoutParams = (RelativeLayout.LayoutParams)((ImageView)localView.findViewById(R.id.m)).getLayoutParams();
-      localLayoutParams.topMargin = ((int)(this.context.getResources().getDimensionPixelSize(R.dimen.a) + (m + k)));
+      localLayoutParams.topMargin = ((int)(this.context.getResources().getDimensionPixelSize(R.dimen.AppBundle) + (m + k)));
       DisplayMetrics localDisplayMetrics = new DisplayMetrics();
       this.fragmentContext.getWindowManager().getDefaultDisplay().getMetrics(localDisplayMetrics);
       localLayoutParams.rightMargin = (localDisplayMetrics.widthPixels / 4 - localLayoutParams.width / 2);

@@ -6,7 +6,7 @@ import javax.net.SocketFactory;
 public final class c
   implements Cloneable
 {
-  protected com.alipay.pushsdk.push.a.a.c a;
+  protected com.alipay.pushsdk.push.AppBundle.a.c a;
   private String b;
   private String c;
   private int d;
@@ -23,13 +23,13 @@ public final class c
   private boolean o = false;
   private boolean p = false;
   private boolean q = true;
-  private boolean r = a.a;
+  private boolean r = AppBundle.a;
   private boolean s = true;
   private SocketFactory t;
   private boolean u = true;
-  private d v = d.b;
+  private d v = d.BundlesManager;
 
-  public c(String paramString, int paramInt, com.alipay.pushsdk.push.a.a.c paramc)
+  public c(String paramString, int paramInt, com.alipay.pushsdk.push.AppBundle.a.c paramc)
   {
     this.c = paramString;
     this.d = paramInt;
@@ -64,7 +64,7 @@ public final class c
     return this.d;
   }
 
-  public final com.alipay.pushsdk.push.a.a.c c()
+  public final com.alipay.pushsdk.push.AppBundle.a.c getBundleName()
   {
     return this.a;
   }

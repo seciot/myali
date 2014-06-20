@@ -20,7 +20,7 @@ public final class e
 
   public final void a(String paramString, Object paramObject)
   {
-    b localb = new b(new Messenger(this.b));
+    BundlesManager localb = new BundlesManager(new Messenger(this.b));
     localb.a(paramString);
     localb.a(paramObject);
     this.c.a(localb);

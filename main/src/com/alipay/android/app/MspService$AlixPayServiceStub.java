@@ -24,7 +24,7 @@ public class MspService$AlixPayServiceStub extends IAlixPay.Stub
   public String prePay(String paramString)
   {
     this.b.get();
-    return MspService.c();
+    return MspService.getBundleName();
   }
 
   public void registerCallback(IRemoteServiceCallback paramIRemoteServiceCallback)

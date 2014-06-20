@@ -15,7 +15,7 @@ final class d
 
   public final void onAuthFailed()
   {
-    AppUtils.showToastCenter(R.string.b);
+    AppUtils.showToastCenter(R.string.BundlesManager);
   }
 
   public final void onAuthSuccess(String paramString1, String paramString2)

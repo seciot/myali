@@ -49,7 +49,7 @@ public class PbocCard
     if (localIsoDep != null)
     {
       Iso7816.Tag localTag = new Iso7816.Tag(localIsoDep);
-      localTag.c();
+      localTag.getBundleName();
       Object localObject;
       if (!localTag.d())
       {
@@ -129,7 +129,7 @@ public class PbocCard
 
   private static boolean a(Iso7816.Response paramResponse, ArrayList<byte[]> paramArrayList)
   {
-    if (!paramResponse.c());
+    if (!paramResponse.getBundleName());
     byte[] arrayOfByte;
     int i1;
     int i2;
@@ -154,7 +154,7 @@ public class PbocCard
   {
     ArrayList localArrayList = new ArrayList(10);
     Iso7816.Response localResponse = paramTag.b();
-    if (localResponse.c())
+    if (localResponse.getBundleName())
       a(localResponse, localArrayList);
     while (true)
     {
@@ -206,7 +206,7 @@ public class PbocCard
 
   protected final void a(Iso7816.Response paramResponse)
   {
-    if ((!paramResponse.c()) || (paramResponse.a() < 4))
+    if ((!paramResponse.getBundleName()) || (paramResponse.a() < 4))
     {
       this.k = null;
       return;
@@ -219,7 +219,7 @@ public class PbocCard
 
   protected final void a(Iso7816.Response paramResponse, int paramInt, boolean paramBoolean)
   {
-    if ((!paramResponse.c()) || (paramResponse.a() < 30))
+    if ((!paramResponse.getBundleName()) || (paramResponse.a() < 30))
     {
       this.j = null;
       this.i = null;

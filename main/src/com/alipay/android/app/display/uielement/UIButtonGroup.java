@@ -54,7 +54,7 @@ public class UIButtonGroup extends BaseElement
     return null;
   }
 
-  public final UIButtonGroup.UIButtonItem[] i()
+  public final UIButtonGroup.UIButtonItem[] getAllBundles()
   {
     return this.a;
   }

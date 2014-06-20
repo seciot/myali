@@ -23,7 +23,7 @@ public class ArriveDateListAdapter extends BaseAdapter
   {
     this.a = paramContext;
     this.b = paramList;
-    this.c = R.layout.a;
+    this.c = R.layout.AppBundle;
   }
 
   public final WithdrawArriveDate a(int paramInt)
@@ -51,7 +51,7 @@ public class ArriveDateListAdapter extends BaseAdapter
       localViewHolder2.a = ((TextView)paramView.findViewById(R.id.h));
       localViewHolder2.b = ((RadioButton)paramView.findViewById(R.id.k));
       localViewHolder2.b.setClickable(false);
-      paramView.setBackgroundResource(R.drawable.a);
+      paramView.setBackgroundResource(R.drawable.AppBundle);
       paramView.setTag(localViewHolder2);
     }
     for (ArriveDateListAdapter.ViewHolder localViewHolder1 = localViewHolder2; ; localViewHolder1 = (ArriveDateListAdapter.ViewHolder)paramView.getTag())

@@ -1,7 +1,7 @@
 package com.alipay.mobile.quinox.classloader;
 
 import com.alipay.mobile.quinox.LauncherApplication;
-import com.alipay.mobile.quinox.bundle.b;
+import com.alipay.mobile.quinox.bundle.BundlesManager;
 import com.alipay.mobile.quinox.utils.d;
 import dalvik.system.PathClassLoader;
 import java.lang.reflect.Method;
@@ -17,7 +17,7 @@ public final class e extends PathClassLoader
   private String[] d;
   private String[] e;
 
-  public e(a parama, String paramString1, String paramString2, ClassLoader paramClassLoader, PathClassLoader paramPathClassLoader, b paramb)
+  public e(a parama, String paramString1, String paramString2, ClassLoader paramClassLoader, PathClassLoader paramPathClassLoader, BundlesManager paramb)
   {
     super(paramString1, paramString2, paramClassLoader);
     this.c = paramPathClassLoader;

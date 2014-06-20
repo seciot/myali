@@ -19,7 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.zip.ZipFile;
 
 public final class c
-  implements b
+  implements BundlesManager
 {
   private Context a;
   private String b;
@@ -192,11 +192,11 @@ public final class c
     }
     while (true)
     {
-      a locala = new a(str);
+      AppBundle locala = new AppBundle(str);
       locala.a(paramArrayOfString, paramZipFile);
       synchronized (this.h)
       {
-        this.h.put(locala.c(), locala);
+        this.h.put(locala.getBundleName(), locala);
         return;
         label64: str = paramZipFile.getName();
       }
@@ -298,7 +298,7 @@ public final class c
     com.alipay.mobile.quinox.classloader.a locala = j();
     Iterator localIterator = paramMap.values().iterator();
     while (localIterator.hasNext())
-      locala.b((a)localIterator.next());
+      locala.b((AppBundle)localIterator.next());
   }
 
   private void a(ZipFile paramZipFile)
@@ -459,17 +459,17 @@ public final class c
     Iterator localIterator = paramMap.values().iterator();
     while (localIterator.hasNext())
     {
-      a locala1 = (a)localIterator.next();
-      String str1 = locala1.c();
+      AppBundle locala1 = (AppBundle)localIterator.next();
+      String str1 = locala1.getBundleName();
       String str2 = locala1.f();
-      a locala2 = h(str1);
+      AppBundle locala2 = h(str1);
       if (locala2 != null)
       {
         com.alipay.mobile.quinox.utils.c.a(com.alipay.mobile.quinox.utils.b.a(locala2.f(), this.c));
         com.alipay.mobile.quinox.utils.c.a(locala2.f());
       }
       com.alipay.mobile.quinox.utils.c.a(com.alipay.mobile.quinox.utils.b.a(str2, this.c));
-      locala1.a(a(str2, locala1.c() + "-" + locala1.k() + ".jar").getAbsolutePath());
+      locala1.a(a(str2, locala1.getBundleName() + "-" + locala1.k() + ".jar").getAbsolutePath());
     }
   }
 
@@ -482,7 +482,7 @@ public final class c
       for (int k = 0; k < j; k++)
       {
         String str = paramArrayOfString[k];
-        a locala = h(str);
+        AppBundle locala = h(str);
         if (locala != null)
         {
           localArrayList.add(str);
@@ -514,18 +514,18 @@ public final class c
     }
   }
 
-  private static a g(String paramString)
+  private static AppBundle g(String paramString)
   {
-    a locala = new a(paramString);
+    AppBundle locala = new AppBundle(paramString);
     locala.a();
     return locala;
   }
 
-  private a h(String paramString)
+  private AppBundle h(String paramString)
   {
     synchronized (this.h)
     {
-      a locala = (a)this.h.get(paramString);
+      AppBundle locala = (AppBundle)this.h.get(paramString);
       return locala;
     }
   }
@@ -774,7 +774,7 @@ public final class c
     }
   }
 
-  public final a a(String paramString)
+  public final AppBundle a(String paramString)
   {
     return h(paramString);
   }
@@ -971,8 +971,8 @@ public final class c
     Iterator localIterator = paramList.iterator();
     while (localIterator.hasNext())
     {
-      a locala = g((String)localIterator.next());
-      localHashMap2.put(locala.c(), locala);
+      AppBundle locala = g((String)localIterator.next());
+      localHashMap2.put(locala.getBundleName(), locala);
     }
     localHashMap1.putAll(f());
     localHashMap1.putAll(localHashMap2);
@@ -1003,7 +1003,7 @@ public final class c
       int n = paramArrayOfString.length;
       while (j < n)
       {
-        a locala = h(paramArrayOfString[j]);
+        AppBundle locala = h(paramArrayOfString[j]);
         if (locala != null)
           localArrayList.add(locala.e());
         j++;
@@ -1037,12 +1037,12 @@ public final class c
     }
   }
 
-  public final a c(String paramString)
+  public final AppBundle c(String paramString)
   {
     Iterator localIterator = b();
     while (localIterator.hasNext())
     {
-      a locala = (a)localIterator.next();
+      AppBundle locala = (AppBundle)localIterator.next();
       String[] arrayOfString = locala.n();
       int j = arrayOfString.length;
       for (int k = 0; k < j; k++)
@@ -1066,14 +1066,14 @@ public final class c
   {
     while (true)
     {
-      a locala;
+      AppBundle locala;
       String str1;
       HashMap localHashMap2;
       String str2;
       try
       {
         locala = g(paramString);
-        str1 = locala.c();
+        str1 = locala.getBundleName();
         HashMap localHashMap1 = new HashMap();
         localHashMap2 = new HashMap();
         localHashMap2.put(str1, locala);
@@ -1144,11 +1144,11 @@ public final class c
   {
     try
     {
-      a locala = g(paramString);
+      AppBundle locala = g(paramString);
       synchronized (this.h)
       {
-        this.h.remove(locala.c());
-        j().a(locala.c());
+        this.h.remove(locala.getBundleName());
+        j().a(locala.getBundleName());
         return;
       }
     }
@@ -1176,7 +1176,7 @@ public final class c
     return this.f;
   }
 
-  public final Set i()
+  public final Set getAllBundles()
   {
     return new HashSet(l());
   }

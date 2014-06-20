@@ -24,7 +24,7 @@ public final class BalancesWarnCmsActivity_ extends BalancesWarnCmsActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.b);
+    setContentView(R.layout.BundlesManager);
   }
 
   public final void setContentView(int paramInt)

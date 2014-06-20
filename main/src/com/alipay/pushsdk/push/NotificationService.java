@@ -162,7 +162,7 @@ public class NotificationService extends Service
           {
             unregisterReceiver(this.f);
             this.f = null;
-            com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.g, com.alipay.pushsdk.c.a.d.z, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.w, System.currentTimeMillis() + 1000 * com.alipay.pushsdk.push.a.o.c(), "NotificationService_stop:reconnectInterval=" + com.alipay.pushsdk.push.a.o.c() + " lostedTime=" + System.currentTimeMillis());
+            com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.g, com.alipay.pushsdk.c.a.d.z, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.w, System.currentTimeMillis() + 1000 * com.alipay.pushsdk.push.a.o.getBundleName(), "NotificationService_stop:reconnectInterval=" + com.alipay.pushsdk.push.a.o.getBundleName() + " lostedTime=" + System.currentTimeMillis());
             this.b.c();
             com.alipay.pushsdk.c.a.c.a(5, a, "stop() executorService will be shutdown!");
             this.g.shutdown();

@@ -7,9 +7,9 @@ import java.util.List;
 public abstract class a extends BaseAdapter
 {
   protected Context a;
-  protected List<com.alipay.mobile.about.ui.b.a> b;
+  protected List<com.alipay.mobile.about.ui.BundlesManager.AppBundle> b;
 
-  public a(Context paramContext, List<com.alipay.mobile.about.ui.b.a> paramList)
+  public a(Context paramContext, List<com.alipay.mobile.about.ui.BundlesManager.AppBundle> paramList)
   {
     this.a = paramContext;
     this.b = paramList;
@@ -31,7 +31,7 @@ public abstract class a extends BaseAdapter
   {
     if (this.b.isEmpty())
       return 0L;
-    return ((com.alipay.mobile.about.ui.b.a)this.b.get(paramInt)).b;
+    return ((com.alipay.mobile.about.ui.BundlesManager.AppBundle)this.b.get(paramInt)).b;
   }
 }
 

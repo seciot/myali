@@ -8,9 +8,9 @@ import java.util.Map;
 final class h
   implements Runnable
 {
-  private a b;
+  private AppBundle b;
 
-  public h(e parame, a parama)
+  public h(e parame, AppBundle parama)
   {
     this.b = parama;
   }
@@ -19,7 +19,7 @@ final class h
   {
     Iterator localIterator = e.a(this.a).c.values().iterator();
     while (localIterator.hasNext())
-      ((b)localIterator.next()).a(this.b);
+      ((BundlesManager)localIterator.next()).a(this.b);
   }
 }
 

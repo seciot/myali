@@ -24,14 +24,14 @@ public final class e
       }
       else if ((paramString.equalsIgnoreCase("11")) || (paramString.equalsIgnoreCase("12")) || (paramString.equalsIgnoreCase("13")) || (paramString.equalsIgnoreCase("15")))
       {
-        localObject = new a(paramj);
+        localObject = new AppBundle(paramj);
       }
       else
       {
         boolean bool = paramString.equalsIgnoreCase("14");
         localObject = null;
         if (bool)
-          localObject = new b(paramj);
+          localObject = new BundlesManager(paramj);
       }
     }
   }

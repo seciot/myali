@@ -118,7 +118,7 @@ public class RechargeAmountAdapter extends BaseAdapter
     {
       String str2 = str1 + localEcardVOWrapper.j();
       SpannableStringBuilder localSpannableStringBuilder = new SpannableStringBuilder(str2);
-      localSpannableStringBuilder.setSpan(new ForegroundColorSpan(this.a.getResources().getColor(R.color.b)), str1.length(), str2.length(), 18);
+      localSpannableStringBuilder.setSpan(new ForegroundColorSpan(this.a.getResources().getColor(R.color.BundlesManager)), str1.length(), str2.length(), 18);
       localAPTextView2.setText(localSpannableStringBuilder);
       localAPImageView.setVisibility(0);
       return paramView;

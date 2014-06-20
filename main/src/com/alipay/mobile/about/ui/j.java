@@ -15,7 +15,7 @@ final class j
 
   public final void onClick(View paramView)
   {
-    this.a.c();
+    this.a.getBundleName();
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, AboutMainActivity.d(this.a).getAppId(), "-", "aboutIndex", "releaseNotes");
   }
 }

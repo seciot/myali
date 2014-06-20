@@ -18,7 +18,7 @@ final class a
   public final void onClick(View paramView)
   {
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "20000057", "-", "-", "securityHome", "securityQuitButton");
-    SecurityWidgetGroupAcitivity.b(this.a).getMicroApplicationContext().Alert(null, SecurityWidgetGroupAcitivity.a(this.a, R.string.c), SecurityWidgetGroupAcitivity.a(this.a, R.string.b), new b(this), SecurityWidgetGroupAcitivity.a(this.a, R.string.a), new c(this));
+    SecurityWidgetGroupAcitivity.b(this.a).getMicroApplicationContext().Alert(null, SecurityWidgetGroupAcitivity.a(this.a, R.string.c), SecurityWidgetGroupAcitivity.a(this.a, R.string.BundlesManager), new b(this), SecurityWidgetGroupAcitivity.a(this.a, R.string.AppBundle), new c(this));
   }
 }
 

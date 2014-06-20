@@ -25,11 +25,11 @@ public final class d
 {
   private static final X500Principal a = new X500Principal("CN=Android Debug,O=Android,C=US");
   private Context b;
-  private b c;
+  private BundlesManager c;
   private Signature[] d;
   private boolean e;
 
-  public d(Context paramContext, b paramb)
+  public d(Context paramContext, BundlesManager paramb)
   {
     this.b = paramContext;
     this.c = paramb;
@@ -40,21 +40,21 @@ public final class d
     Iterator localIterator = paramSet.iterator();
     while (localIterator.hasNext())
     {
-      a locala = (a)localIterator.next();
-      paramMap.remove(locala.c());
+      AppBundle locala = (AppBundle)localIterator.next();
+      paramMap.remove(locala.getBundleName());
       locala.m();
       if (paramBoolean)
       {
         c.a(locala.f());
         c.a(com.alipay.mobile.quinox.utils.b.a(locala.f(), this.c.c()));
-        Log.e("BundleVerifier", locala.c() + "deleted jar.");
+        Log.e("BundleVerifier", locala.getBundleName() + "deleted jar.");
         try
         {
-          this.c.j().a(locala.c());
+          this.c.j().a(locala.getBundleName());
         }
         catch (Exception localException)
         {
-          Log.e("BundleVerifier", locala.c() + " delete ", localException);
+          Log.e("BundleVerifier", locala.getBundleName() + " delete ", localException);
         }
       }
     }
@@ -66,22 +66,22 @@ public final class d
     HashSet localHashSet = new HashSet();
     while (localIterator.hasNext())
     {
-      a locala = (a)localIterator.next();
+      AppBundle locala = (AppBundle)localIterator.next();
       if (locala.f() == null);
       for (boolean bool = false; ; bool = new File(locala.f()).exists())
       {
-        if ((this.c.b(locala.c())) && (!bool))
+        if ((this.c.b(locala.getBundleName())) && (!bool))
           break label126;
         if (bool)
           break label128;
-        Log.e("BundleVerifier", "jar file deleted: " + locala.c());
+        Log.e("BundleVerifier", "jar file deleted: " + locala.getBundleName());
         localHashSet.add(locala);
         break;
       }
       label126: continue;
       label128: if ((!this.e) && (!locala.a(this.d)))
       {
-        Log.e("BundleVerifier", "verify sign error: " + locala.c());
+        Log.e("BundleVerifier", "verify sign error: " + locala.getBundleName());
         localHashSet.add(locala);
       }
     }
@@ -139,7 +139,7 @@ public final class d
     label268: label342: label346: 
     while (localIterator.hasNext())
     {
-      a locala1 = (a)localIterator.next();
+      AppBundle locala1 = (AppBundle)localIterator.next();
       if (locala1.j() != null)
       {
         String[] arrayOfString1 = locala1.j();
@@ -148,7 +148,7 @@ public final class d
         {
           String str1;
           String str3;
-          a locala2;
+          AppBundle locala2;
           while (true)
           {
             if (j >= i)
@@ -163,7 +163,7 @@ public final class d
               str3 = arrayOfString2[1];
               if ((this.c.b(str2)) || (str1.contains("-quinox")))
                 break label342;
-              locala2 = (a)paramMap.get(str2);
+              locala2 = (AppBundle)paramMap.get(str2);
               if ((locala2 != null) && (!localHashSet.contains(locala2)))
                 break label268;
               Log.e("BundleVerifier", locala1.e() + "'s dependencies error: can't find" + str1);

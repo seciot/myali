@@ -25,15 +25,15 @@ public final class c
     return this.a;
   }
 
-  public final int c()
+  public final int getBundleName()
   {
     return this.b;
   }
 
   public final SocketFactory d()
   {
-    if (this.c == d.a)
-      return new a();
+    if (this.c == d.AppBundle)
+      return new AppBundle();
     if (this.c == d.c)
       return new e(this);
     return null;

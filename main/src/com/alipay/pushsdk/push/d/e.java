@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class e
   implements c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(e.class);
+  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(e.class);
   private final j b;
 
   public e(j paramj)
@@ -19,7 +19,7 @@ public class e
     this.b = paramj;
   }
 
-  public final void a(a parama)
+  public final void a(AppBundle parama)
   {
     String str1;
     if (new f(0).a(parama))
@@ -43,17 +43,17 @@ public class e
         o.a(false);
       while (true)
       {
-        com.alipay.pushsdk.c.a.c.a(3, a, "processPacket ctrlSelf=" + o.g());
+        com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "processPacket ctrlSelf=" + o.g());
         String str4 = localJSONObject.optString("ctrlAlways");
         if ((str4 == null) || (!str4.equalsIgnoreCase("false")))
           break;
         o.b(false);
-        com.alipay.pushsdk.c.a.c.a(3, a, "processPacket ctrlAlways=" + o.h());
+        com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "processPacket ctrlAlways=" + o.h());
         j.q();
-        com.alipay.pushsdk.c.a.c.a(3, a, "processPacket() reconnectTime=" + o.c() + "s, keepLiveTime=" + o.l() + "s, updateLBSInfo=" + o.j());
-        d.a(d.s, d.y, System.currentTimeMillis(), d.y, 1000L + System.currentTimeMillis(), "RegisterPacketListener_processPacket:reconnectTime=" + o.c() + " keepLiveTime=" + o.l());
+        com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "processPacket() reconnectTime=" + o.getBundleName() + "s, keepLiveTime=" + o.l() + "s, updateLBSInfo=" + o.j());
+        d.a(d.s, d.y, System.currentTimeMillis(), d.y, 1000L + System.currentTimeMillis(), "RegisterPacketListener_processPacket:reconnectTime=" + o.getBundleName() + " keepLiveTime=" + o.l());
         this.b.v();
-        com.alipay.pushsdk.c.a.e.a("32", "01", "3");
+        com.alipay.pushsdk.c.AppBundle.e.a("32", "01", "3");
         return;
         o.a(true);
       }

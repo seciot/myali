@@ -24,7 +24,7 @@ final class g extends BroadcastReceiver
     try
     {
       JSONObject localJSONObject = new JSONObject(str);
-      this.a.i();
+      this.a.getAllBundles();
       this.a.d(localJSONObject, "pushorder");
       return;
     }

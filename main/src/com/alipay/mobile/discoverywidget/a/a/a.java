@@ -8,7 +8,7 @@ import com.alipay.mobile.framework.MicroApplicationContext;
 import com.alipay.mobile.framework.service.common.RpcService;
 
 public final class a
-  implements b
+  implements BundlesManager
 {
   PassManager a;
 

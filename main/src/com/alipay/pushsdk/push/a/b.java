@@ -14,7 +14,7 @@ public final class b
     this.b = null;
   }
 
-  public final void a(a parama)
+  public final void a(AppBundle parama)
   {
     if ((this.b == null) || (this.b.a(parama)))
       this.a.a(parama);

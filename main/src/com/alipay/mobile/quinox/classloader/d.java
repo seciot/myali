@@ -1,9 +1,5 @@
 package com.alipay.mobile.quinox.classloader;
 
-import android.os.Build;
-import com.alipay.mobile.quinox.utils.b;
-import com.alipay.mobile.quinox.utils.c;
-import dalvik.system.DexFile;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,17 +14,23 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.zip.ZipFile;
 
+import android.os.Build;
+
+import com.alipay.mobile.quinox.bundle.AppBundle;
+
+import dalvik.system.DexFile;
+
 public final class d extends ClassLoader
   implements h
 {
-  private com.alipay.mobile.quinox.bundle.a a;
+  private AppBundle a;
   private a b;
   private DexFile c;
   private File[] d;
   private ZipFile e;
   private File f;
 
-  public d(a parama, com.alipay.mobile.quinox.bundle.a parama1, String paramString1, String paramString2, ClassLoader paramClassLoader)
+  public d(a parama, AppBundle parama1, String paramString1, String paramString2, ClassLoader paramClassLoader)
   {
     super(paramClassLoader);
     this.a = parama1;

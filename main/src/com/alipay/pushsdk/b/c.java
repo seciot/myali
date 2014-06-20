@@ -22,9 +22,9 @@ public final class c
   {
     try
     {
-      if (a == null)
-        a = new c(paramContext);
-      c localc = a;
+      if (AppBundle == null)
+        AppBundle = new c(paramContext);
+      c localc = AppBundle;
       return localc;
     }
     finally
@@ -37,7 +37,7 @@ public final class c
     return this.c;
   }
 
-  public final void a(b paramb)
+  public final void a(BundlesManager paramb)
   {
     Message localMessage = this.b.obtainMessage(0, paramb);
     this.b.sendMessage(localMessage);

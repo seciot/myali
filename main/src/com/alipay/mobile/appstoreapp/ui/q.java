@@ -24,7 +24,7 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
       {
         Page localPage = FastLoginAppActivity.c(this.a).a(FastLoginAppActivity.a(this.a), FastLoginAppActivity.b(this.a));
         if (this.a.a)
-          FastLoginAppActivity.c();
+          FastLoginAppActivity.getBundleName();
         return new QueryResult(1000, "", localPage);
         FastLoginAppActivity.a(this.a, 20);
       }

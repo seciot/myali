@@ -35,7 +35,7 @@ public final class MobileRechargeActivity_ extends MobileRechargeActivity
     this.i = ((APButton)findViewById(R.id.z));
     this.e = ((APSpinner)findViewById(R.id.G));
     this.g = ((APButton)findViewById(R.id.d));
-    this.j = ((APButton)findViewById(R.id.a));
+    this.j = ((APButton)findViewById(R.id.AppBundle));
     this.h = ((APTextView)findViewById(R.id.e));
     a();
   }

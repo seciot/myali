@@ -45,7 +45,7 @@ final class f
         if (AppItemView.access$000(this.d).getInstallerType() != AppInstallerTypeEnum.independantApp)
         {
           this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.c));
-          this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.a));
+          this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.AppBundle));
           this.b.e.setVisibility(0);
         }
         this.b.c.setVisibility(4);
@@ -65,7 +65,7 @@ final class f
         if (AppItemView.access$000(this.d).getInstallerType() != AppInstallerTypeEnum.independantApp)
         {
           this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.c));
-          this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.a));
+          this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.AppBundle));
           this.b.e.setVisibility(0);
         }
         this.b.c.setVisibility(4);

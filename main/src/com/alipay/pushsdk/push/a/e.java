@@ -4,7 +4,7 @@ import com.alipay.pushsdk.push.c.a;
 
 public abstract interface e
 {
-  public abstract boolean a(a parama);
+  public abstract boolean a(AppBundle parama);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

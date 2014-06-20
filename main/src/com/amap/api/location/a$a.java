@@ -8,20 +8,20 @@ import java.util.Vector;
 
 class a$a extends Handler
 {
-  a$a(a parama)
+  a$a(AppBundle parama)
   {
   }
 
   public void handleMessage(Message paramMessage)
   {
-    if (paramMessage.what == a.a)
+    if (paramMessage.what == AppBundle.a)
     {
-      Iterator localIterator = a.d().iterator();
+      Iterator localIterator = AppBundle.d().iterator();
       while (localIterator.hasNext())
         ((f)localIterator.next()).c.onLocationChanged((AMapLocation)paramMessage.obj);
-      a.a(this.a, (AMapLocation)paramMessage.obj);
-      if (a.a(this.a) != null)
-        c.a(a.b(this.a), a.a(this.a));
+      AppBundle.a(this.a, (AMapLocation)paramMessage.obj);
+      if (AppBundle.a(this.a) != null)
+        c.a(AppBundle.b(this.a), AppBundle.a(this.a));
     }
   }
 }

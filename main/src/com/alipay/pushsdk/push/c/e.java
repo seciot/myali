@@ -2,16 +2,16 @@ package com.alipay.pushsdk.push.c;
 
 import com.alipay.pushsdk.c.a.c;
 
-public class e extends a
+public class e extends AppBundle
 {
   private static final String c = c.a(e.class);
-  private int d = b.c;
-  private int e = b.d;
+  private int d = BundlesManager.c;
+  private int e = BundlesManager.d;
 
   public e()
   {
-    f(b.c);
-    g(b.d);
+    f(BundlesManager.c);
+    g(BundlesManager.d);
     f();
   }
 
@@ -56,7 +56,7 @@ public class e extends a
       i = 2;
     byte[] arrayOfByte = new byte[i];
     arrayOfByte[0] = ((byte)(this.d << 4 | a()));
-    arrayOfByte[1] = ((byte)(b() << 7 | c() << 6 | d() << 5 | e() << 4));
+    arrayOfByte[1] = ((byte)(b() << 7 | getBundleName() << 6 | d() << 5 | e() << 4));
     c.a(4, c, "getHdrbufforWrite() the 1st buffer:" + arrayOfByte[0]);
     c.a(4, c, "getHdrbufforWrite() the 2nd buffer:" + arrayOfByte[1]);
     if (a() != 3)

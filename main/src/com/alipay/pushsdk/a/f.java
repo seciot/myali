@@ -13,7 +13,7 @@ public final class f extends Handler
   public final void handleMessage(Message paramMessage)
   {
     super.handleMessage(paramMessage);
-    b localb = (b)paramMessage.obj;
+    BundlesManager localb = (BundlesManager)paramMessage.obj;
     switch (localb.d())
     {
     default:

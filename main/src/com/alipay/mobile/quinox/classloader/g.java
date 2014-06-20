@@ -1,12 +1,12 @@
 package com.alipay.mobile.quinox.classloader;
 
-import com.alipay.mobile.quinox.bundle.a;
+import com.alipay.mobile.quinox.bundle.AppBundle;
 import java.util.concurrent.Callable;
 
 final class g
   implements Callable
 {
-  g(InitExecutor paramInitExecutor, a parama)
+  g(InitExecutor paramInitExecutor, AppBundle parama)
   {
   }
 }

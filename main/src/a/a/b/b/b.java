@@ -38,22 +38,22 @@ public final class b
     this.b = paramClass.getClassLoader();
   }
 
-  public static a a(a.a.a.b paramb, Object paramObject1, Object paramObject2)
+  public static a a(AppBundle.a.a.BundlesManager paramb, Object paramObject1, Object paramObject2)
   {
     return new c(paramb, paramObject1, paramObject2, g);
   }
 
-  public static a a(a.a.a.b paramb, Object paramObject1, Object paramObject2, Object paramObject3)
+  public static a a(AppBundle.a.a.BundlesManager paramb, Object paramObject1, Object paramObject2, Object paramObject3)
   {
     return new c(paramb, paramObject1, paramObject2, new Object[] { paramObject3 });
   }
 
-  public static a a(a.a.a.b paramb, Object paramObject1, Object paramObject2, Object paramObject3, Object paramObject4)
+  public static a a(AppBundle.a.a.BundlesManager paramb, Object paramObject1, Object paramObject2, Object paramObject3, Object paramObject4)
   {
     return new c(paramb, paramObject1, paramObject2, new Object[] { paramObject3, paramObject4 });
   }
 
-  public static a a(a.a.a.b paramb, Object paramObject1, Object paramObject2, Object[] paramArrayOfObject)
+  public static a a(AppBundle.a.a.BundlesManager paramb, Object paramObject1, Object paramObject2, Object[] paramArrayOfObject)
   {
     return new c(paramb, paramObject1, paramObject2, paramArrayOfObject);
   }
@@ -101,7 +101,7 @@ public final class b
     return f;
   }
 
-  public final a.a.a.a.c a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, String paramString7)
+  public final AppBundle.a.a.a.c a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, String paramString7)
   {
     int i = Integer.parseInt(paramString1, 16);
     Class localClass = a(paramString3, this.b);
@@ -123,7 +123,7 @@ public final class b
     return new f(i, paramString2, localClass, arrayOfClass1, arrayOfString, arrayOfClass2, a(paramString7, this.b));
   }
 
-  public final a.a.a.b a(String paramString, e parame, int paramInt)
+  public final AppBundle.a.a.BundlesManager a(String paramString, e parame, int paramInt)
   {
     int i = this.d;
     this.d = (i + 1);

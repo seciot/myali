@@ -12,7 +12,7 @@ class ActivityWindowScriptable$7
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.this$0.c();
+    this.this$0.getBundleName();
   }
 }
 

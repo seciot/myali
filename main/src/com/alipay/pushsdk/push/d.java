@@ -12,10 +12,10 @@ public final class d
 
   public final void a()
   {
-    synchronized (this.b.c())
+    synchronized (this.b.getBundleName())
     {
-      d locald2 = this.b.c();
-      locald2.a = (-1 + locald2.a);
+      d locald2 = this.b.getBundleName();
+      locald2.AppBundle = (-1 + locald2.AppBundle);
       c.a(4, NotificationService.e(), "Decremented task count to " + this.a);
       return;
     }

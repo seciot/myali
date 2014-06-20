@@ -24,7 +24,7 @@ final class er
     do
     {
       return;
-      if ((!this.a.e.d()) && (!this.a.e.c()))
+      if ((!this.a.e.d()) && (!this.a.e.getBundleName()))
       {
         MemberCardObtainableListActivity.e(this.a);
         return;

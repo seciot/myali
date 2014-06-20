@@ -69,8 +69,8 @@ public class a
         i = c.g;
       if (i < c.c)
         i = c.c;
-      if (i > c.b)
-        c.b = i;
+      if (i > c.BundlesManager)
+        c.BundlesManager = i;
       return i;
     }
     catch (Exception localException)

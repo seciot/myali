@@ -27,7 +27,7 @@ final class ak
       JSONObject localJSONObject = new JSONObject(str1);
       String str2 = localJSONObject.optString("appId");
       String str3 = localJSONObject.optString("actionType");
-      if (this.a.b.i().equalsIgnoreCase("TRAVEL"));
+      if (this.a.b.getAllBundles().equalsIgnoreCase("TRAVEL"));
       for (String str4 = "20000021"; StringUtils.isNotBlank(str2); str4 = "20000030")
       {
         Bundle localBundle = new Bundle();

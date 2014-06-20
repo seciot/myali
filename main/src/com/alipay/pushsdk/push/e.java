@@ -18,7 +18,7 @@ final class e
     {
       d locald = com.alipay.pushsdk.push.e.e.a(NotificationService.b(this.a), this.b);
       if (locald != null)
-        locald.c();
+        locald.getBundleName();
       return;
     }
     catch (Exception localException)

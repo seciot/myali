@@ -45,11 +45,11 @@ public class AuthAdminActivity extends BaseActivity
 
   public boolean onItemLongClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    com.alipay.mobile.deviceAuthorization.a.a locala = (com.alipay.mobile.deviceAuthorization.a.a)paramAdapterView.getAdapter();
+    com.alipay.mobile.deviceAuthorization.AppBundle.a locala = (com.alipay.mobile.deviceAuthorization.AppBundle.a)paramAdapterView.getAdapter();
     if (paramInt >= locala.getCount())
       return false;
     AuthInfo localAuthInfo = locala.a(paramInt);
-    AlertDialog localAlertDialog = new AlertDialog.Builder((Context)AlipayApplication.getInstance().getMicroApplicationContext().getTopActivity().get()).setTitle(localAuthInfo.getTitle()).setCancelable(true).setItems(R.array.a, new a(this, localAuthInfo)).create();
+    AlertDialog localAlertDialog = new AlertDialog.Builder((Context)AlipayApplication.getInstance().getMicroApplicationContext().getTopActivity().get()).setTitle(localAuthInfo.getTitle()).setCancelable(true).setItems(R.array.AppBundle, new a(this, localAuthInfo)).create();
     localAlertDialog.setCanceledOnTouchOutside(true);
     localAlertDialog.show();
     return true;

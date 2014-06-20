@@ -8,10 +8,10 @@ final class d
 {
   String a;
   e b;
-  a.a.a.a.d c;
+  AppBundle.a.a.a.d c;
   private int d;
 
-  public d(int paramInt, String paramString, e parame, a.a.a.a.d paramd)
+  public d(int paramInt, String paramString, e parame, AppBundle.a.a.a.d paramd)
   {
     this.a = paramString;
     this.b = parame;

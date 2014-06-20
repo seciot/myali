@@ -19,7 +19,7 @@ final class a
     {
       d locald = e.a(ClientActionReceiver.a(this.a).d(), this.b);
       if (locald != null)
-        locald.c();
+        locald.getBundleName();
       return;
     }
     catch (Exception localException)

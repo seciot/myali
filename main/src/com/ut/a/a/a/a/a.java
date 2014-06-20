@@ -1,6 +1,6 @@
 package com.ut.a.a.a.a;
 
-public class a extends b
+public class a extends BundlesManager
 {
   static final byte[] b = { 13, 10 };
   private static final byte[] c = { 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47 };
@@ -20,7 +20,7 @@ public class a extends b
 
   public a(int paramInt)
   {
-    this(paramInt, b);
+    this(paramInt, BundlesManager);
   }
 
   public a(int paramInt, byte[] paramArrayOfByte)
@@ -34,7 +34,7 @@ public class a extends b
 
   public a(boolean paramBoolean)
   {
-    this(76, b, paramBoolean);
+    this(76, BundlesManager, paramBoolean);
   }
 
   public static String a(byte[] paramArrayOfByte)
@@ -57,7 +57,7 @@ public class a extends b
     if ((paramArrayOfByte == null) || (paramArrayOfByte.length == 0))
       return paramArrayOfByte;
     if (paramBoolean1);
-    for (a locala = new a(paramBoolean2); ; locala = new a(0, b, paramBoolean2))
+    for (AppBundle locala = new AppBundle(paramBoolean2); ; locala = new AppBundle(0, BundlesManager, paramBoolean2))
     {
       long l = locala.d(paramArrayOfByte);
       if (l <= paramInt)

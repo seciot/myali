@@ -12,22 +12,22 @@ public final class b
   public final long getDelay(TimeUnit paramTimeUnit)
   {
     long l = System.currentTimeMillis();
-    return 30000L + a - l;
+    return 30000L + AppBundle - l;
   }
 
   public final void run()
   {
-    a locala = new a();
-    com.taobao.securityjni.connector.a locala1 = new com.taobao.securityjni.connector.a();
+    AppBundle locala = new AppBundle();
+    com.taobao.securityjni.connector.AppBundle locala1 = new com.taobao.securityjni.connector.AppBundle();
     locala1.a(locala);
     Object localObject = locala;
     for (int i = 0; i < 2; i++)
     {
-      localObject = (com.taobao.securityjni.connector.b)locala1.a();
-      if (((com.taobao.securityjni.connector.b)localObject).a == 0)
+      localObject = (com.taobao.securityjni.connector.BundlesManager)locala1.a();
+      if (((com.taobao.securityjni.connector.BundlesManager)localObject).a == 0)
         break;
     }
-    DnameManager.RegisterConfig((String)((com.taobao.securityjni.connector.b)localObject).d);
+    DnameManager.RegisterConfig((String)((com.taobao.securityjni.connector.BundlesManager)localObject).d);
   }
 }
 

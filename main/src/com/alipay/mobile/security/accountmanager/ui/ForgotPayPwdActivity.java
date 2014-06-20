@@ -401,7 +401,7 @@ public class ForgotPayPwdActivity extends BaseActivity
           bool = true;
           if (Boolean.valueOf(bool).booleanValue())
             break label143;
-          toast(getResources().getString(R.string.b), 1);
+          toast(getResources().getString(R.string.BundlesManager), 1);
         }
     }
     label143: 
@@ -413,7 +413,7 @@ public class ForgotPayPwdActivity extends BaseActivity
       showProgressDialog(null, true, this.t);
       new Thread(new a(1, (byte)0)).start();
       return;
-      toast(getResources().getString(R.string.b), 1);
+      toast(getResources().getString(R.string.BundlesManager), 1);
       return;
       if (i1 == R.id.fj)
       {

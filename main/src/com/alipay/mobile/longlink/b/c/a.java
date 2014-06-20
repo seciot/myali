@@ -86,7 +86,7 @@ public abstract class a
 
   public abstract void b(byte[] paramArrayOfByte);
 
-  public final int c()
+  public final int getBundleName()
   {
     return this.e;
   }

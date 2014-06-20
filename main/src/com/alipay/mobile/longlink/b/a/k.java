@@ -6,16 +6,16 @@ import java.io.DataOutputStream;
 import java.net.Socket;
 import java.util.Timer;
 
-public class k extends a
+public class k extends AppBundle
 {
-  private static final String m = com.alipay.mobile.longlink.c.a.a(k.class);
+  private static final String m = com.alipay.mobile.longlink.c.AppBundle.a(k.class);
   protected Socket i;
   String j = null;
   i k;
   e l;
   private String n = null;
   private boolean o = false;
-  private int p = b.a;
+  private int p = BundlesManager.AppBundle;
   private int q = 0;
   private Timer r = null;
   private int s = -1;
@@ -32,7 +32,7 @@ public class k extends a
   }
 
   // ERROR //
-  public final void a(com.alipay.mobile.longlink.b.b.a parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.b.AppBundle parama)
   {
     // Byte code:
     //   0: aload_0
@@ -431,9 +431,9 @@ public class k extends a
     //   709	723	726	com/alipay/mobile/longlink/b/a/n
   }
 
-  public final void a(com.alipay.mobile.longlink.b.c.a parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
   {
-    com.alipay.mobile.longlink.c.a.a(4, m, "sendPacket()... isConnected=" + a());
+    com.alipay.mobile.longlink.c.AppBundle.a(4, m, "sendPacket()... isConnected=" + a());
     try
     {
       if (!a())
@@ -446,14 +446,14 @@ public class k extends a
     }
     if (parama == null)
       throw new NullPointerException("Packet is null.");
-    com.alipay.mobile.longlink.c.a.a(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
-    com.alipay.mobile.longlink.c.a.a(3, m, "sendPacket()... packet.id=" + parama.a());
+    com.alipay.mobile.longlink.c.AppBundle.a(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
+    com.alipay.mobile.longlink.c.AppBundle.a(3, m, "sendPacket()... packet.id=" + parama.a());
     this.k.a(parama);
   }
 
   public final boolean a()
   {
-    com.alipay.mobile.longlink.c.a.a(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
+    com.alipay.mobile.longlink.c.AppBundle.a(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
     return this.o;
   }
 
@@ -470,9 +470,9 @@ public class k extends a
     }
   }
 
-  public final void c()
+  public final void getBundleName()
   {
-    com.alipay.mobile.longlink.c.a.a(4, m, "setConnected()...isConnected=true");
+    com.alipay.mobile.longlink.c.AppBundle.a(4, m, "setConnected()...isConnected=true");
     this.o = true;
   }
 
@@ -483,17 +483,17 @@ public class k extends a
 
   public final void e()
   {
-    com.alipay.mobile.longlink.c.a.a(3, m, "disconnect()... called!");
+    com.alipay.mobile.longlink.c.AppBundle.a(3, m, "disconnect()... called!");
     if ((this.l == null) || (this.k == null))
       return;
-    com.alipay.mobile.longlink.c.a.a(2, m, "shutdown() called...");
+    com.alipay.mobile.longlink.c.AppBundle.a(2, m, "shutdown() called...");
     this.o = false;
     this.q = 0;
     g();
     if (this.l != null)
-      this.l.c();
+      this.l.getBundleName();
     if (this.k != null)
-      this.k.c();
+      this.k.getBundleName();
     try
     {
       Thread.sleep(150L);
@@ -515,12 +515,12 @@ public class k extends a
             try
             {
               this.i.close();
-              label128: com.alipay.mobile.longlink.c.a.a(3, m, "shutdown()... Done!");
+              label128: com.alipay.mobile.longlink.c.AppBundle.a(3, m, "shutdown()... Done!");
               this.k.d();
               this.k = null;
               this.l.d();
               this.l = null;
-              com.alipay.mobile.longlink.c.a.a(3, m, "disconnect()... done!");
+              com.alipay.mobile.longlink.c.AppBundle.a(3, m, "disconnect()... done!");
               return;
               localException1 = localException1;
             }
@@ -544,18 +544,18 @@ public class k extends a
 
   public final void f()
   {
-    com.alipay.mobile.longlink.c.a.a(4, m, "resetConnection()...");
+    com.alipay.mobile.longlink.c.AppBundle.a(4, m, "resetConnection()...");
     if (this.r != null)
       g();
     if (this.k != null);
     try
     {
-      this.k.c();
+      this.k.getBundleName();
       label35: this.k = null;
       if (this.l != null);
       try
       {
-        this.l.c();
+        this.l.getBundleName();
         label54: this.l = null;
         if (this.e != null);
         try

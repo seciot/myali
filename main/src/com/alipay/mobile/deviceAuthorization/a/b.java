@@ -8,7 +8,7 @@ import com.alipay.mobile.framework.service.common.ImageLoaderListener;
 final class b
   implements ImageLoaderListener
 {
-  b(a parama, View paramView)
+  b(AppBundle parama, View paramView)
   {
   }
 
@@ -23,7 +23,7 @@ final class b
 
   public final void onPostLoad(String paramString, Bitmap paramBitmap)
   {
-    ((Activity)a.a(this.b)).runOnUiThread(new c(this, paramBitmap));
+    ((Activity)AppBundle.a(this.b)).runOnUiThread(new c(this, paramBitmap));
   }
 
   public final void onPreLoad(String paramString)

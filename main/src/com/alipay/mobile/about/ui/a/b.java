@@ -12,12 +12,12 @@ import com.alipay.mobile.clientsecurity.R.layout;
 import com.alipay.mobile.commonui.widget.APTextView;
 import java.util.List;
 
-public final class b extends a
+public final class b extends AppBundle
 {
-  private com.alipay.mobile.about.b.b c;
+  private com.alipay.mobile.about.BundlesManager.b c;
   private Bitmap d;
 
-  public b(Context paramContext, List<com.alipay.mobile.about.ui.b.a> paramList, com.alipay.mobile.about.b.b paramb)
+  public b(Context paramContext, List<com.alipay.mobile.about.ui.BundlesManager.AppBundle> paramList, com.alipay.mobile.about.BundlesManager.b paramb)
   {
     super(paramContext, paramList);
     this.c = paramb;
@@ -35,24 +35,24 @@ public final class b extends a
 
   public final View getView(int paramInt, View paramView, ViewGroup paramViewGroup)
   {
-    a locala;
+    AppBundle locala;
     if (paramView == null)
     {
       paramView = View.inflate(this.a, R.layout.Z, null);
-      locala = new a();
-      locala.a = ((ImageView)paramView.findViewById(R.id.cr));
-      locala.b = ((APTextView)paramView.findViewById(R.id.cq));
+      locala = new AppBundle();
+      locala.AppBundle = ((ImageView)paramView.findViewById(R.id.cr));
+      locala.BundlesManager = ((APTextView)paramView.findViewById(R.id.cq));
       locala.c = ((APTextView)paramView.findViewById(R.id.cp));
       paramView.setTag(locala);
     }
     while (true)
     {
-      com.alipay.mobile.about.ui.b.a locala1 = (com.alipay.mobile.about.ui.b.a)this.b.get(paramInt);
-      locala.b.setText(locala1.e);
-      locala.c.setText(locala1.a);
-      this.c.a(locala.a, locala1.d, this.d);
+      com.alipay.mobile.about.ui.BundlesManager.AppBundle locala1 = (com.alipay.mobile.about.ui.BundlesManager.AppBundle)this.b.get(paramInt);
+      locala.BundlesManager.setText(locala1.e);
+      locala.c.setText(locala1.AppBundle);
+      this.c.a(locala.AppBundle, locala1.d, this.d);
       return paramView;
-      locala = (a)paramView.getTag();
+      locala = (AppBundle)paramView.getTag();
     }
   }
 

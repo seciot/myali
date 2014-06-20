@@ -8,7 +8,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class c
 {
-  public static a f = null;
+  public static AppBundle f = null;
   private String a;
   Context e;
 

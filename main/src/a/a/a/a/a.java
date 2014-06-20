@@ -1,6 +1,6 @@
 package a.a.a.a;
 
-public abstract interface a extends b
+public abstract interface a extends BundlesManager
 {
 }
 

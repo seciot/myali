@@ -17,9 +17,9 @@ final class av
   public final void run()
   {
     int i;
-    if (this.a.c())
+    if (this.a.getBundleName())
     {
-      PassListResult localPassListResult3 = AlipassListActivity.f(this.a).a(this.a.i());
+      PassListResult localPassListResult3 = AlipassListActivity.f(this.a).a(this.a.getAllBundles());
       this.a.b(new a(localPassListResult3, 0));
       if ((localPassListResult3 == null) || (localPassListResult3.getHasCurrent() != 1))
         i = 1;
@@ -29,7 +29,7 @@ final class av
       int k;
       if (this.a.d())
       {
-        PassListResult localPassListResult2 = AlipassListActivity.f(this.a).c(this.a.i());
+        PassListResult localPassListResult2 = AlipassListActivity.f(this.a).c(this.a.getAllBundles());
         this.a.b(new a(localPassListResult2, 1));
         if (i != 0)
           if ((localPassListResult2 == null) || (localPassListResult2.getHasCurrent() != 1))
@@ -61,9 +61,9 @@ final class av
           break;
           k = 0;
           break label129;
-          if (this.a.c())
+          if (this.a.getBundleName())
           {
-            PassListResult localPassListResult1 = AlipassListActivity.f(this.a).a(this.a.i());
+            PassListResult localPassListResult1 = AlipassListActivity.f(this.a).a(this.a.getAllBundles());
             this.a.b(new a(localPassListResult1, 0));
           }
           this.a.b(locala1);
@@ -72,7 +72,7 @@ final class av
             this.a.dismissProgressDialog();
           while (this.a.d())
           {
-            AlipassListActivity.a(this.a, this.a.i());
+            AlipassListActivity.a(this.a, this.a.getAllBundles());
             return;
             this.a.a(true);
             AlipassListActivity.d(this.a);

@@ -12,7 +12,7 @@ public final class f
     this.a = paramInt;
   }
 
-  public final boolean a(a parama)
+  public final boolean a(AppBundle parama)
   {
     return (parama != null) && (parama.a() == this.a);
   }

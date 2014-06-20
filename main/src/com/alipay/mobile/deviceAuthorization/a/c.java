@@ -8,7 +8,7 @@ import com.alipay.mobile.clientsecurity.R.id;
 final class c
   implements Runnable
 {
-  c(b paramb, Bitmap paramBitmap)
+  c(BundlesManager paramb, Bitmap paramBitmap)
   {
   }
 

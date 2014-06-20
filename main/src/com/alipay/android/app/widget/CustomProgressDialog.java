@@ -15,7 +15,7 @@ public class CustomProgressDialog extends Dialog
 
   public CustomProgressDialog(Context paramContext)
   {
-    super(paramContext, R.style.b);
+    super(paramContext, R.style.BundlesManager);
   }
 
   public final CustomProgressDialog a(CharSequence paramCharSequence)

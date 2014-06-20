@@ -16,7 +16,7 @@ final class d extends Handler
 
   public final void handleMessage(Message paramMessage)
   {
-    b localb = (b)paramMessage.obj;
+    BundlesManager localb = (BundlesManager)paramMessage.obj;
     this.a.a().a(localb);
   }
 }

@@ -1,6 +1,5 @@
 package com.alipay.mobile.quinox.classloader;
 
-import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -8,17 +7,19 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
 
+import com.alipay.mobile.quinox.bundle.AppBundle;
+
 public class InitExecutor
 {
   private static final ThreadFactory f = new f();
   private ExecutorService a;
   private a b;
-  private com.alipay.mobile.quinox.bundle.b c;
+  private com.alipay.mobile.quinox.bundle.BundlesManager c;
   private Map d;
   private String e;
 
   // ERROR //
-  public InitExecutor(a parama, com.alipay.mobile.quinox.bundle.b paramb)
+  public InitExecutor(a parama, com.alipay.mobile.quinox.bundle.BundlesManager paramb)
   {
     // Byte code:
     //   0: aload_0
@@ -210,10 +211,10 @@ public class InitExecutor
     this.a = Executors.newFixedThreadPool(5, f);
   }
 
-  public final void a(com.alipay.mobile.quinox.bundle.a parama)
+  public final void a(AppBundle parama)
   {
     Future localFuture = this.a.submit(new g(this, parama));
-    this.d.put(parama.c(), localFuture);
+    this.d.put(parama.getBundleName(), localFuture);
   }
 
   public final void b()
@@ -221,7 +222,7 @@ public class InitExecutor
     this.a.shutdown();
   }
 
-  public final void b(com.alipay.mobile.quinox.bundle.a parama)
+  public final void b(AppBundle parama)
   {
     dexopt(parama.f(), com.alipay.mobile.quinox.utils.b.a(parama.f(), this.c.c()), this.e);
   }
