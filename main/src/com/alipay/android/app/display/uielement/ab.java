@@ -29,7 +29,7 @@ final class ab
     }
     this.a.a("checked", Boolean.valueOf(paramBoolean));
     UICheckBox.d(this.a);
-    UICheckBox.e(this.a);
+    UICheckBox.removeBundle(this.a);
   }
 }
 

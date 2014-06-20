@@ -88,7 +88,7 @@ public class PublicHomeWidgetGroupReceiver extends BroadcastReceiver
           {
             com.alipay.mobile.publicsvc.home.proguard.h.a.a().removeLocalFollow(localUserInfo2.getUserId(), str8);
             if (PublicHomeWidgetGroup.publicHomeViewHolder != null)
-              PublicHomeWidgetGroup.publicHomeViewHolder.remove(str8);
+              PublicHomeWidgetGroup.publicHomeViewHolder.removeBundle(str8);
           }
         }
         else

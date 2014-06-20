@@ -11,8 +11,8 @@ final class g
 
   public final void run()
   {
-    if (HeaderAreaLayout.e(this.a) != null)
-      HeaderAreaLayout.e(this.a).setText("支付宝");
+    if (HeaderAreaLayout.removeBundle(this.a) != null)
+      HeaderAreaLayout.removeBundle(this.a).setText("支付宝");
   }
 }
 

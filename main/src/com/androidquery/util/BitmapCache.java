@@ -78,7 +78,7 @@ public class BitmapCache extends LinkedHashMap<String, Bitmap>
   public boolean removeEldestEntry(Map.Entry<String, Bitmap> paramEntry)
   {
     if ((this.d > this.c) || (size() > this.a))
-      remove(paramEntry.getKey());
+      removeBundle(paramEntry.getKey());
     shrink();
     return false;
   }

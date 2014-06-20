@@ -28,9 +28,9 @@ final class l
       j.c(this.b);
       com.alipay.pushsdk.push.BundlesManagerImpl.a.c localc;
       com.alipay.pushsdk.push.BundlesManagerImpl.c localc1;
-      if ((j.d(this.b) != null) && (j.d(this.b).length() > 0) && (j.e(this.b) != 0))
+      if ((j.d(this.b) != null) && (j.d(this.b).length() > 0) && (j.removeBundle(this.b) != 0))
       {
-        localc = new com.alipay.pushsdk.push.BundlesManagerImpl.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.e(this.b));
+        localc = new com.alipay.pushsdk.push.BundlesManagerImpl.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.removeBundle(this.b));
         localc1 = new com.alipay.pushsdk.push.BundlesManagerImpl.c(j.f(this.b), j.g(this.b), localc);
         if ((j.h(this.b) == null) || (!j.h(this.b).equals("1")))
           break label282;

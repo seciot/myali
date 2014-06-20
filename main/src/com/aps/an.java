@@ -4,7 +4,7 @@ public final class an extends Thread
 {
   public final void run()
   {
-    while (s.e(this.a))
+    while (s.removeBundle(this.a))
       try
       {
         Thread.sleep(s.h(this.a));

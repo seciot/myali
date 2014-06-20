@@ -18,7 +18,7 @@ public class ActivityFlow
     int i = this.a.size();
     if (i > 0)
     {
-      Activity localActivity = ((ActivityFlow.ActivityItem)this.a.remove(i - 1)).getActivity();
+      Activity localActivity = ((ActivityFlow.ActivityItem)this.a.removeBundle(i - 1)).getActivity();
       if (localActivity != null)
         localActivity.finish();
       return localActivity;
@@ -41,7 +41,7 @@ public class ActivityFlow
   {
     for (int i = -1 + this.a.size(); i >= 0; i--)
     {
-      ActivityFlow.ActivityItem localActivityItem = (ActivityFlow.ActivityItem)this.a.remove(i);
+      ActivityFlow.ActivityItem localActivityItem = (ActivityFlow.ActivityItem)this.a.removeBundle(i);
       Activity localActivity = localActivityItem.getActivity();
       if (localActivity != null)
         localActivity.finish();

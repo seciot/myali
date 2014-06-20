@@ -114,7 +114,7 @@ final class n
       localLayoutParams = HeaderAreaLayout.j(this.b).getLayoutParams();
       if (localLayoutParams != null)
         break label474;
-      localLayoutParams = new ViewGroup.LayoutParams(HeaderAreaLayout.e(this.b).getWidth(), HeaderAreaLayout.m(this.b).getHeight());
+      localLayoutParams = new ViewGroup.LayoutParams(HeaderAreaLayout.removeBundle(this.b).getWidth(), HeaderAreaLayout.m(this.b).getHeight());
     }
     while (true)
     {
@@ -123,7 +123,7 @@ final class n
       HeaderAreaLayout.l(this.b).a(HeaderAreaLayout.m(this.b).getBottom(), true);
       break;
       label474: localLayoutParams.height = HeaderAreaLayout.m(this.b).getHeight();
-      localLayoutParams.width = HeaderAreaLayout.e(this.b).getWidth();
+      localLayoutParams.width = HeaderAreaLayout.removeBundle(this.b).getWidth();
     }
   }
 

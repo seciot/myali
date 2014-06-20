@@ -12,7 +12,7 @@ class IdCardVerifyActivity$3
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    IdCardVerifyActivity.e(this.a);
+    IdCardVerifyActivity.removeBundle(this.a);
   }
 }
 

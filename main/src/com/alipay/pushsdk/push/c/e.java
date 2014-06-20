@@ -22,7 +22,7 @@ public class e extends AppBundle
       byte[] arrayOfByte = new byte[4];
       System.arraycopy(paramArrayOfByte, 0, arrayOfByte, 0, 4);
       int i = d(arrayOfByte);
-      e(i);
+      removeBundle(i);
       BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + i);
     }
   }

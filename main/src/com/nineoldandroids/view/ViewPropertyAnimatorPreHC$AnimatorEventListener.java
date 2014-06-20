@@ -26,7 +26,7 @@ class ViewPropertyAnimatorPreHC$AnimatorEventListener
   {
     if (ViewPropertyAnimatorPreHC.access$200(this.this$0) != null)
       ViewPropertyAnimatorPreHC.access$200(this.this$0).onAnimationEnd(paramAnimator);
-    ViewPropertyAnimatorPreHC.access$300(this.this$0).remove(paramAnimator);
+    ViewPropertyAnimatorPreHC.access$300(this.this$0).removeBundle(paramAnimator);
     if (ViewPropertyAnimatorPreHC.access$300(this.this$0).isEmpty())
       ViewPropertyAnimatorPreHC.access$202(this.this$0, null);
   }

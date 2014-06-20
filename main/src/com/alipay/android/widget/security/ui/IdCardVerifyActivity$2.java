@@ -44,7 +44,7 @@ class IdCardVerifyActivity$2
     while (!"700".equals(this.a));
     Intent localIntent = new Intent("android.intent.action.DIAL", Uri.parse("tel:95188"));
     this.b.startActivity(localIntent);
-    IdCardVerifyActivity.e(this.b);
+    IdCardVerifyActivity.removeBundle(this.b);
   }
 }
 

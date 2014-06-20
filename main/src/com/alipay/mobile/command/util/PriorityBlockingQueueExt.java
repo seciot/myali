@@ -52,14 +52,14 @@ public class PriorityBlockingQueueExt<TaskMetaWrap> extends PriorityBlockingQueu
   {
     if (paramTaskMetaWrap == null)
       return;
-    this.addedElement.remove(paramTaskMetaWrap.toString());
+    this.addedElement.removeBundle(paramTaskMetaWrap.toString());
   }
 
   public TaskMetaWrap take()
   {
     Object localObject = super.take();
     if (this.addedElement.size() > 1000)
-      this.addedElement.remove(localObject.toString());
+      this.addedElement.removeBundle(localObject.toString());
     return localObject;
   }
 }

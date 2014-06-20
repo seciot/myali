@@ -26,7 +26,7 @@ class AnimatorSet$AnimatorSetListener
   public void onAnimationEnd(Animator paramAnimator)
   {
     paramAnimator.removeListener(this);
-    AnimatorSet.access$000(this.this$0).remove(paramAnimator);
+    AnimatorSet.access$000(this.this$0).removeBundle(paramAnimator);
     ((AnimatorSet.Node)AnimatorSet.access$100(this.a).get(paramAnimator)).done = true;
     int j;
     if (!this.this$0.mTerminated)

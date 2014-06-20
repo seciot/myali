@@ -25,7 +25,7 @@ final class al
       paramLocation.setTime(System.currentTimeMillis());
       s.a(this.a, System.currentTimeMillis());
       s.a(this.a, paramLocation);
-      if (s.e(this.a) != true)
+      if (s.removeBundle(this.a) != true)
         s.b(this.a, paramLocation);
     }
     else

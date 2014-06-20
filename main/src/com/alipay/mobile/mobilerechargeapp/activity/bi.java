@@ -27,8 +27,8 @@ final class bi
       Toast.makeText(this.a, "请选择正确的充值面额", 1).show();
       return;
     }
-    MobileRechargeActivity.a(this.a, new RechargeHistoryInfo(MobileRechargeActivity.e(this.a), MobileRechargeActivity.f(this.a), this.a.d.getText().toString(), localEcardVOWrapper.a()));
-    this.a.a(MobileRechargeActivity.e(this.a), localEcardVOWrapper);
+    MobileRechargeActivity.a(this.a, new RechargeHistoryInfo(MobileRechargeActivity.removeBundle(this.a), MobileRechargeActivity.f(this.a), this.a.d.getText().toString(), localEcardVOWrapper.a()));
+    this.a.a(MobileRechargeActivity.removeBundle(this.a), localEcardVOWrapper);
   }
 }
 

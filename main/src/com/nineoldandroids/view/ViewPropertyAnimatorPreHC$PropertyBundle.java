@@ -21,7 +21,7 @@ class ViewPropertyAnimatorPreHC$PropertyBundle
       for (int j = 0; j < i; j++)
         if (((ViewPropertyAnimatorPreHC.NameValuesHolder)this.mNameValuesHolder.get(j)).mNameConstant == paramInt)
         {
-          this.mNameValuesHolder.remove(j);
+          this.mNameValuesHolder.removeBundle(j);
           this.mPropertyMask &= (paramInt ^ 0xFFFFFFFF);
           return true;
         }

@@ -18,7 +18,7 @@ final class g
   public final void run()
   {
     a.d(this.a.a).setVisibility(8);
-    a.e(this.a.a).setVisibility(8);
+    a.removeBundle(this.a.a).setVisibility(8);
     ((APListView)a.b(this.a.a).findViewById(R.id.backview_list)).setSelection(0);
     a.b(this.a.a).setVisibility(0);
     Animation localAnimation = AnimationUtils.loadAnimation(this.a.a.a, R.anim.alipass_detail_backview_top_show);

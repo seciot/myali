@@ -14,7 +14,7 @@ final class ba
   {
     try
     {
-      AlipassListActivity.e(this.b.a);
+      AlipassListActivity.removeBundle(this.b.a);
       if (this.a == null)
         return;
       String str = new String(this.a);

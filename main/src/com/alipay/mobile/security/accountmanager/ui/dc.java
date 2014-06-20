@@ -18,7 +18,7 @@ final class dc
     {
       ModifyPayPwdActivity.b(this.a).interrupt();
       this.a.dismissProgressDialog();
-      ModifyPayPwdActivity.e(this.a).getMicroApplicationContext().finishApp(ModifyPayPwdActivity.c(this.a).getAppId(), ModifyPayPwdActivity.d(this.a).getAppId(), null);
+      ModifyPayPwdActivity.removeBundle(this.a).getMicroApplicationContext().finishApp(ModifyPayPwdActivity.c(this.a).getAppId(), ModifyPayPwdActivity.d(this.a).getAppId(), null);
     }
     do
     {

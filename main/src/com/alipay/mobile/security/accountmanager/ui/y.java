@@ -40,8 +40,8 @@ final class y
         return;
       }
     }
-    while ((BindPhoneActivity.e(this.a) == null) || (!BindPhoneActivity.e(this.a).isAlive()));
-    BindPhoneActivity.e(this.a).interrupt();
+    while ((BindPhoneActivity.removeBundle(this.a) == null) || (!BindPhoneActivity.removeBundle(this.a).isAlive()));
+    BindPhoneActivity.removeBundle(this.a).interrupt();
     this.a.dismissProgressDialog();
   }
 }

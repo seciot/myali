@@ -41,8 +41,8 @@ final class a
     {
       FileDownloader.c(this.a);
     }
-    FileDownloader.a(this.a, new c(FileDownloader.d(this.a), FileDownloader.e(this.a), this.a));
-    a(FileDownloader.e(this.a));
+    FileDownloader.a(this.a, new c(FileDownloader.d(this.a), FileDownloader.removeBundle(this.a), this.a));
+    a(FileDownloader.removeBundle(this.a));
     a(FileDownloader.f(this.a));
     if (FileDownloader.a(this.a))
     {

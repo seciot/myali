@@ -28,7 +28,7 @@ class MediaLoadManager$1
   public void onPostExecute(Request paramRequest, Response paramResponse)
   {
     DownloadRequest localDownloadRequest = (DownloadRequest)paramRequest;
-    MediaLoadManager.access$000(this.this$0).remove(localDownloadRequest.getUrl());
+    MediaLoadManager.access$000(this.this$0).removeBundle(localDownloadRequest.getUrl());
     if (new File(localDownloadRequest.getPath()).exists())
     {
       MediaLoadManager.access$100(this.this$0, localDownloadRequest.getUrl(), localDownloadRequest.getPath());

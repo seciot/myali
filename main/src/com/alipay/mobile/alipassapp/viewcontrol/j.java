@@ -14,7 +14,7 @@ final class j
   public final void run()
   {
     a.d(this.a.a).setVisibility(8);
-    a.e(this.a.a).setVisibility(8);
+    a.removeBundle(this.a.a).setVisibility(8);
     a.f(this.a.a).setVisibility(0);
     a.b(this.a.a).setVisibility(4);
   }

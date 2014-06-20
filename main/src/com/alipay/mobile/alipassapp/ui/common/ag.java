@@ -22,9 +22,9 @@ final class ag
       while (true)
       {
         String str;
-        synchronized (ae.e(this.c))
+        synchronized (ae.removeBundle(this.c))
         {
-          if (ae.e(this.c).booleanValue())
+          if (ae.removeBundle(this.c).booleanValue())
             return;
           if ("DELSEED".equals(this.a.optString("attachAction")))
             ae.b().deleteSeed();

@@ -10,7 +10,7 @@ final class e
   public final void run()
   {
     WealthHomeBroadcastReciever.d(this.a);
-    new StringBuilder("设置RPC为可以请求,doRpc=").append(WealthHomeBroadcastReciever.e(this.a)).toString();
+    new StringBuilder("设置RPC为可以请求,doRpc=").append(WealthHomeBroadcastReciever.removeBundle(this.a)).toString();
   }
 }
 

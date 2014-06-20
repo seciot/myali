@@ -25,9 +25,9 @@ final class c
       a.c(this.b);
       com.alipay.mobile.longlink.b.a.a.c localc;
       com.alipay.mobile.longlink.b.a.c localc1;
-      if ((a.d(this.b) != null) && (a.d(this.b).length() > 0) && (a.e(this.b) != 0))
+      if ((a.d(this.b) != null) && (a.d(this.b).length() > 0) && (a.removeBundle(this.b) != 0))
       {
-        localc = new com.alipay.mobile.longlink.b.a.a.c(com.alipay.mobile.longlink.b.a.a.d.c, a.d(this.b), a.e(this.b));
+        localc = new com.alipay.mobile.longlink.b.a.a.c(com.alipay.mobile.longlink.b.a.a.d.c, a.d(this.b), a.removeBundle(this.b));
         localc1 = new com.alipay.mobile.longlink.b.a.c(a.f(this.b), a.g(this.b), localc);
         if ((a.h(this.b) == null) || (!a.h(this.b).equals("1")))
           break label244;

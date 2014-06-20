@@ -13,7 +13,7 @@ final class h
   public final void a()
   {
     if (StringUtils.isNotEmpty(BarcodePayActivity.d(this.a)))
-      j.a(BarcodePayActivity.e(this.a), "CODE_128", this.a.l, false);
+      j.a(BarcodePayActivity.removeBundle(this.a), "CODE_128", this.a.l, false);
   }
 }
 

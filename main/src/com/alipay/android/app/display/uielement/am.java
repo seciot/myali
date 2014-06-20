@@ -16,7 +16,7 @@ final class am
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     UICombobox.a(this.c, paramInt);
-    this.a.setText((CharSequence)this.b.getItem(UICombobox.e(this.c)));
+    this.a.setText((CharSequence)this.b.getItem(UICombobox.removeBundle(this.c)));
     paramDialogInterface.dismiss();
     UICombobox.Option localOption = (UICombobox.Option)UICombobox.d(this.c).get(paramInt);
     UICombobox.a(this.c, localOption);

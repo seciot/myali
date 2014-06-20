@@ -28,8 +28,8 @@ final class d extends Handler
       label58: SyncAnimatingHelper.d(this.b);
       SyncAnimatingHelper.a(this.b, true);
       SyncAnimatingHelper.b(this.b);
-      if (SyncAnimatingHelper.e(this.b) != null)
-        SyncAnimatingHelper.e(this.b).a();
+      if (SyncAnimatingHelper.removeBundle(this.b) != null)
+        SyncAnimatingHelper.removeBundle(this.b).a();
     }
   }
 }

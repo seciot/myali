@@ -13,7 +13,7 @@ class NFCAppDetailActivity$3
   public void run()
   {
     NFCAppDetailActivity.d(this.a).setEnabled(true);
-    switch (NFCAppDetailActivity.e(this.a))
+    switch (NFCAppDetailActivity.removeBundle(this.a))
     {
     default:
       NFCAppDetailActivity.d(this.a).setText(this.a.getString(R.string.BundlesManagerImpl));

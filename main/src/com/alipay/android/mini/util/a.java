@@ -22,8 +22,8 @@ final class a
     CardValidateInputUtil.a(this.a, CardValidateInputUtil.a(this.a).b.getMonthStr(true));
     CardValidateInputUtil.b(this.a, String.valueOf(i));
     CardValidateInputUtil.c(this.a, CardValidateInputUtil.b(this.a).substring(2, 4));
-    CardValidateInputUtil.e(this.a).setText(CardValidateInputUtil.c(this.a) + "/" + CardValidateInputUtil.d(this.a));
-    CardValidateInputUtil.f(this.a).a(CardValidateInputUtil.e(this.a), new MiniEventArgs(ActionType.t));
+    CardValidateInputUtil.removeBundle(this.a).setText(CardValidateInputUtil.c(this.a) + "/" + CardValidateInputUtil.d(this.a));
+    CardValidateInputUtil.f(this.a).a(CardValidateInputUtil.removeBundle(this.a), new MiniEventArgs(ActionType.t));
     paramDialogInterface.dismiss();
   }
 }

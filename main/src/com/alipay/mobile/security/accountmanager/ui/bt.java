@@ -35,7 +35,7 @@ final class bt
     while (true)
     {
       ForgotPayPwdActivity.c(this.a, this.a.m.getInputedText());
-      if ((ForgotPayPwdActivity.e(this.a) == null) || ("".equals(ForgotPayPwdActivity.e(this.a).trim())))
+      if ((ForgotPayPwdActivity.removeBundle(this.a) == null) || ("".equals(ForgotPayPwdActivity.removeBundle(this.a).trim())))
         break label213;
       this.a.n.setEnabled(true);
       return;

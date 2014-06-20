@@ -40,7 +40,7 @@ public final class d
 
   public final void a(String paramString)
   {
-    this.a.remove(paramString);
+    this.a.removeBundle(paramString);
   }
 
   public final void a(String paramString1, String paramString2)

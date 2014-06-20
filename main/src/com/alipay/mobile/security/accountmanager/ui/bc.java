@@ -33,7 +33,7 @@ final class bc
     {
       this.a.k.setEnabled(true);
       ForgotLoginPwdActivity.c(this.a, this.a.m.getText().toString());
-      if ((ForgotLoginPwdActivity.e(this.a) == null) || ("".equals(ForgotLoginPwdActivity.e(this.a).trim())))
+      if ((ForgotLoginPwdActivity.removeBundle(this.a) == null) || ("".equals(ForgotLoginPwdActivity.removeBundle(this.a).trim())))
         break label323;
       this.a.n.setEnabled(true);
       label188: ForgotLoginPwdActivity.d(this.a, this.a.o.getInputedText().toString());

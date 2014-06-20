@@ -15,7 +15,7 @@ final class ez
   {
     MemberChargeOffActivity.a();
     this.b.b.setImageBitmap(this.a);
-    this.b.b.setOnClickListener(new au(MemberChargeOffActivity.e(this.b.d), this.b.c, true));
+    this.b.b.setOnClickListener(new au(MemberChargeOffActivity.removeBundle(this.b.d), this.b.c, true));
   }
 }
 

@@ -66,7 +66,7 @@ public abstract interface a
 
   public abstract PassListResult e();
 
-  public abstract AlipassListCache e(String paramString);
+  public abstract AlipassListCache removeBundle(String paramString);
 
   public abstract void e(String paramString1, String paramString2);
 }

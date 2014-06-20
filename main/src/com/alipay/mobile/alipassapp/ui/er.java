@@ -26,7 +26,7 @@ final class er
       return;
       if ((!this.a.e.d()) && (!this.a.e.getBundleName()))
       {
-        MemberCardObtainableListActivity.e(this.a);
+        MemberCardObtainableListActivity.removeBundle(this.a);
         return;
       }
     }

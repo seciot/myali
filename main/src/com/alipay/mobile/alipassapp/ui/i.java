@@ -22,7 +22,7 @@ final class i
       AlipayApplication localAlipayApplication = AlipayApplication.getInstance();
       BehaviourIdEnum localBehaviourIdEnum = BehaviourIdEnum.CLICKED;
       String[] arrayOfString = new String[2];
-      arrayOfString[0] = AlipassDetailActivity.e(this.a);
+      arrayOfString[0] = AlipassDetailActivity.removeBundle(this.a);
       arrayOfString[1] = AlipassDetailActivity.f(this.a);
       AlipayLogAgent.writeLog(localAlipayApplication, localBehaviourIdEnum, "", "", "20000030", "", "", "couponDetails", "refresh", "", "", "", arrayOfString);
     }

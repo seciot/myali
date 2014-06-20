@@ -46,10 +46,10 @@ final class dp extends Handler
           break label335;
         localAPImageView.setVisibility(i);
         MemberCardDetailActivity.a(this.a).setImageBitmap(MemberCardDetailActivity.d(this.a).getBitmap(MemberCardDetailActivity.a(this.a).getTag()));
-        if (MemberCardDetailActivity.e(this.a) != null)
+        if (MemberCardDetailActivity.removeBundle(this.a) != null)
           break label340;
         MemberCardDetailActivity.a(this.a, new au(this.a, MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()), true));
-        MemberCardDetailActivity.a(this.a).setOnClickListener(MemberCardDetailActivity.e(this.a));
+        MemberCardDetailActivity.a(this.a).setOnClickListener(MemberCardDetailActivity.removeBundle(this.a));
       }
       while (true)
       {
@@ -61,7 +61,7 @@ final class dp extends Handler
         break;
         i = 0;
         break label185;
-        MemberCardDetailActivity.e(this.a).a(MemberCardDetailActivity.a(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()));
+        MemberCardDetailActivity.removeBundle(this.a).a(MemberCardDetailActivity.a(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()));
       }
     }
   }

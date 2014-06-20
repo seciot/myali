@@ -11,7 +11,7 @@ final class f extends Thread
 
   public final void run()
   {
-    AppDetailActivity.e(this.a).downloadApp();
+    AppDetailActivity.removeBundle(this.a).downloadApp();
     AppDetailActivity.j(this.a).postDelayed(new g(this), 500L);
   }
 }

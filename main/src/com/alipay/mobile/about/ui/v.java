@@ -21,7 +21,7 @@ final class v
     while (i < m)
     {
       Bitmap localBitmap = arrayOfBitmap[i];
-      FeedAssistantActivity.e(this.a.d).add(localBitmap);
+      FeedAssistantActivity.removeBundle(this.a.d).add(localBitmap);
       i++;
     }
     FeedAssistantActivity.f(this.a.d);

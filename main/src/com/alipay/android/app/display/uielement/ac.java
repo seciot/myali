@@ -24,7 +24,7 @@ final class ac
     {
       this.a.a("checked", Boolean.valueOf(bool));
       UICheckBox.c(this.a).setChecked(bool);
-      UICheckBox.e(this.a);
+      UICheckBox.removeBundle(this.a);
       return;
     }
   }

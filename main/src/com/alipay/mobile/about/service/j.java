@@ -20,7 +20,7 @@ final class j
     Activity localActivity = UpdateServicesImpl.access$200(this.h);
     if (localActivity == null)
     {
-      UpdateServicesImpl.access$300(this.h).getDiskCacheService().remove("about_ignore_update_version");
+      UpdateServicesImpl.access$300(this.h).getDiskCacheService().removeBundle("about_ignore_update_version");
       return;
     }
     AlertDialog.Builder localBuilder = new AlertDialog.Builder(localActivity);

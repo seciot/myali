@@ -56,7 +56,7 @@ public class a
     return this.c;
   }
 
-  public void e(String paramString)
+  public void removeBundle(String paramString)
   {
     this.c = paramString;
   }

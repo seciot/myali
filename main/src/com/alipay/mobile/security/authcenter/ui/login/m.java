@@ -17,7 +17,7 @@ final class m
   public final void onClick(View paramView)
   {
     TaobaoUserLoginFragment_ localTaobaoUserLoginFragment_ = new TaobaoUserLoginFragment_();
-    localTaobaoUserLoginFragment_.a(BaseLoginFragment.e(this.a));
+    localTaobaoUserLoginFragment_.a(BaseLoginFragment.removeBundle(this.a));
     this.a.getActivity().getSupportFragmentManager().beginTransaction().add(R.id.bR, localTaobaoUserLoginFragment_).setTransition(4097).addToBackStack(null).commit();
   }
 }

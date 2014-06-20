@@ -9,7 +9,7 @@ final class bp
 
   public final void run()
   {
-    AlipassPreviewActivity_.e(this.a);
+    AlipassPreviewActivity_.removeBundle(this.a);
   }
 }
 

@@ -23,7 +23,7 @@ final class r
   public final void onPostExecute(Request paramRequest, Response paramResponse)
   {
     byte[] arrayOfByte = paramResponse.getResData();
-    BalancesWarnInputActivity.e(this.a).post(new s(this, arrayOfByte));
+    BalancesWarnInputActivity.removeBundle(this.a).post(new s(this, arrayOfByte));
   }
 
   public final void onPreExecute(Request paramRequest)

@@ -14,7 +14,7 @@ class IndependentPwdSettingActivity$5
   {
     if (IndependentPwdSettingActivity.b(this.a))
     {
-      IndependentPwdSettingActivity.e(this.b);
+      IndependentPwdSettingActivity.removeBundle(this.b);
       return;
     }
     IndependentPwdSettingActivity.a(this.b, false);

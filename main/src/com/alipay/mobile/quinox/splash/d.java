@@ -13,7 +13,7 @@ final class d
   {
     try
     {
-      c.e(this.a);
+      c.removeBundle(this.a);
       int i = Integer.parseInt(c.f(this.a));
       if (i > 0);
       for (int j = -500 + i * 1000; ; j = i * 1000)

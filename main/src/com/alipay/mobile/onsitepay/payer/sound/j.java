@@ -19,7 +19,7 @@ final class j
   {
     Intent localIntent = new Intent();
     localIntent.setClass(this.a, FacePayeeActivity_.class);
-    SendSoundViewActivity.e(this.a).stopSendData();
+    SendSoundViewActivity.removeBundle(this.a).stopSendData();
     SendSoundViewActivity.g(this.a).getMicroApplicationContext().startActivity(SendSoundViewActivity.f(this.a), localIntent);
     this.a.finish();
     this.a.overridePendingTransition(17432578, 17432579);

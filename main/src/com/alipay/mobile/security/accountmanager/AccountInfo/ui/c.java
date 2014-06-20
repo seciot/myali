@@ -17,7 +17,7 @@ final class c
   {
     Intent localIntent = new Intent();
     localIntent.setClass(this.a, SecurityBindPhoneActivity_.class);
-    AccountInfoActivity.f(this.a).getMicroApplicationContext().startActivity(AccountInfoActivity.e(this.a), localIntent);
+    AccountInfoActivity.f(this.a).getMicroApplicationContext().startActivity(AccountInfoActivity.removeBundle(this.a), localIntent);
   }
 }
 

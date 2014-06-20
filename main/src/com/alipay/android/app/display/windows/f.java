@@ -20,7 +20,7 @@ final class f
       MspWindow.c(this.a);
     }
     MspWindow.d(this.a);
-    MspWindow.e(this.a);
+    MspWindow.removeBundle(this.a);
     MspWindow.f(this.a);
     MspWindow.g(this.a);
     MspWindow.h(this.a);

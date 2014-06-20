@@ -23,7 +23,7 @@ public class d extends AppBundle
     int j = d(arrayOfByte);
     BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
     b(i);
-    e(j);
+    removeBundle(j);
   }
 
   public final void c(byte[] paramArrayOfByte)

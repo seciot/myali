@@ -26,7 +26,7 @@ final class b
       this.a.moveToHome();
       this.b.a(this.a);
     }
-    HomeLogAgentUtil.e(this.a.getAppId());
+    HomeLogAgentUtil.removeBundle(this.a.getAppId());
     AppCenterOnItemLongClickListener.a(this.c, this.a);
   }
 }

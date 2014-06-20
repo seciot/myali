@@ -9,7 +9,7 @@ class SecurityPasswordManagerActivity_$14
 
   public void run()
   {
-    SecurityPasswordManagerActivity_.e(this.a);
+    SecurityPasswordManagerActivity_.removeBundle(this.a);
   }
 }
 

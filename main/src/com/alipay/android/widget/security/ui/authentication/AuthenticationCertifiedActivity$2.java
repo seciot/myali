@@ -15,7 +15,7 @@ class AuthenticationCertifiedActivity$2
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     AuthenticationCertifiedActivity.a(false);
-    AuthenticationCertifiedActivity.d(this.a).finishApp(AuthenticationCertifiedActivity.e(this.a).getAppId(), AuthenticationCertifiedActivity.f(this.a).getAppId(), null);
+    AuthenticationCertifiedActivity.d(this.a).finishApp(AuthenticationCertifiedActivity.removeBundle(this.a).getAppId(), AuthenticationCertifiedActivity.f(this.a).getAppId(), null);
   }
 }
 

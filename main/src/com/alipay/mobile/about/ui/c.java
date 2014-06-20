@@ -13,7 +13,7 @@ final class c
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    AboutFeedbackActivity.e(this.a).setEnabled(AboutFeedbackActivity.d(this.a));
+    AboutFeedbackActivity.removeBundle(this.a).setEnabled(AboutFeedbackActivity.d(this.a));
   }
 
   public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

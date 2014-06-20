@@ -85,7 +85,7 @@ class EagerForeignCollection$1
       throw new IllegalStateException("next() must be called before remove()");
     if (this.a >= EagerForeignCollection.access$000(this.this$0).size())
       throw new IllegalStateException("current results position (" + this.a + ") is out of bounds");
-    Object localObject = EagerForeignCollection.access$000(this.this$0).remove(this.a);
+    Object localObject = EagerForeignCollection.access$000(this.this$0).removeBundle(this.a);
     if (this.this$0.dao != null);
     try
     {

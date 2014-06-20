@@ -30,7 +30,7 @@ final class bh extends AsyncTask<String, Object, Object>
     {
       while (true)
       {
-        AlipassPreviewActivity.e(this.a);
+        AlipassPreviewActivity.removeBundle(this.a);
         this.a.a(102, this.a.getResources().getString(R.string.alipass_add_failed));
       }
     }

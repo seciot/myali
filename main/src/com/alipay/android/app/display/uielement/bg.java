@@ -9,9 +9,9 @@ final class bg
 
   public final void run()
   {
-    if (UILabel.e(this.b) != null)
+    if (UILabel.removeBundle(this.b) != null)
     {
-      this.b.a(UILabel.e(this.b), this.a);
+      this.b.a(UILabel.removeBundle(this.b), this.a);
       UILabel.f(this.b);
     }
   }

@@ -14,7 +14,7 @@ final class w
     MiniWindowManager.b(this.a);
     MiniWindowManager.c(this.a);
     MiniWindowManager.d(this.a);
-    MiniWindowManager.e(this.a);
+    MiniWindowManager.removeBundle(this.a);
     MiniWindowManager.f(this.a);
     MiniWindowManager.g(this.a);
   }

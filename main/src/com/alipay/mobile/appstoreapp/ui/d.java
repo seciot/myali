@@ -14,12 +14,12 @@ final class d
   public final void run()
   {
     AppDetailActivity.g(this.a).setEnabled(true);
-    if (!AppDetailActivity.e(this.a).isInstalled())
+    if (!AppDetailActivity.removeBundle(this.a).isInstalled())
     {
       AppDetailActivity.g(this.a).setText(this.a.getString(R.string.BundlesManagerImpl));
       AppDetailActivity.a(this.a, "main_button_style");
     }
-    while (!AppDetailActivity.e(this.a).isNeedUpgrade())
+    while (!AppDetailActivity.removeBundle(this.a).isNeedUpgrade())
       return;
     AppDetailActivity.g(this.a).setText(this.a.getString(R.string.j));
     AppDetailActivity.a(this.a, "main_button_style");

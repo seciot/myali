@@ -147,7 +147,7 @@ public class RequestParams
   public void remove(String paramString)
   {
     this.urlParams.remove(paramString);
-    this.fileParams.remove(paramString);
+    this.fileParams.removeBundle(paramString);
   }
 
   public String toString()

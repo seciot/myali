@@ -8,7 +8,7 @@ public class e extends AppBundle
 
   public e()
   {
-    e(BundlesManager.AppBundle);
+    removeBundle(BundlesManager.AppBundle);
     f(BundlesManager.b);
   }
 

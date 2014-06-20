@@ -30,7 +30,7 @@ class SecurityExaminationActivity$5
       arrayOfString[3] = "-";
       arrayOfString[4] = SecurityExaminationActivity.b(this.a).getLastTagId();
       AlipayLogAgent.writeLog(localSecurityExaminationActivity, localBehaviourIdEnum, "-", "-", "20000043", "-", "realNameCheckView", "securityCheckUpIndex", "checkUp", "-", "u", "c", arrayOfString);
-      if (!SecurityExaminationActivity.e(this.a))
+      if (!SecurityExaminationActivity.removeBundle(this.a))
       {
         this.a.b("com.alipay.security.namecertified");
         SecurityExaminationActivity.f(this.a);

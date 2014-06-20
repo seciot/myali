@@ -26,7 +26,7 @@ final class h
     if (!WithdrawActivity.a(this.a, str1))
       return;
     String str2 = MoneyUtil.formatMoney(str1) + this.a.getResources().getString(R.string.o);
-    if (StringUtils.equalsIgnoreCase("2", WithdrawActivity.e(this.a)))
+    if (StringUtils.equalsIgnoreCase("2", WithdrawActivity.removeBundle(this.a)))
     {
       new SixNoPwdInputDialog(this.a, new i(this), this.a.getString(R.string.i), str2).show();
       return;

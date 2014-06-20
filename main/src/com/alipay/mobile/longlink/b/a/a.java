@@ -67,7 +67,7 @@ public abstract class a
 
   public final void b(com.alipay.mobile.longlink.BundlesManager.d.BundlesManagerImpl paramc)
   {
-    this.c.remove(paramc);
+    this.c.removeBundle(paramc);
   }
 }
 

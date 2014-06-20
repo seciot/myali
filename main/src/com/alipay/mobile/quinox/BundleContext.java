@@ -72,8 +72,8 @@ public class BundleContext {
 		}
 	}
 
-	public void removeExternelBundle(String paramString) {
-		app.getBundlesManager().e(paramString);
+	public void removeExternelBundle(String bundleName) {
+		app.getBundlesManager().removeBundle(bundleName);
 	}
 
 	public void updateBundles(List paramList1, List paramList2) {

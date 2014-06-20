@@ -17,7 +17,7 @@ final class bz
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     paramDialogInterface.dismiss();
-    AlipayApplication.getInstance().getMicroApplicationContext().finishApp(AlipassQueryCardActivity.e(this.a).getSourceId(), AlipassQueryCardActivity.f(this.a).getAppId(), null);
+    AlipayApplication.getInstance().getMicroApplicationContext().finishApp(AlipassQueryCardActivity.removeBundle(this.a).getSourceId(), AlipassQueryCardActivity.f(this.a).getAppId(), null);
     g.a();
   }
 }

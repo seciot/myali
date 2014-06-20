@@ -1391,9 +1391,10 @@ public final class BundlesManagerImpl implements BundlesManager {
 				"An error occurred while decompiling this method.");
 	}
 
+	//#e
 	@Override
-	public final void e(final String s) {
-		// TODO appbundle加载
+	public final void removeBundle(final String s) {
+		// TODO appbundle卸载
 		synchronized (this) {
 			final AppBundle g = g(s);
 			synchronized (this.h) {

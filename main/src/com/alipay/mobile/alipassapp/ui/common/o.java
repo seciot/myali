@@ -13,9 +13,9 @@ final class o
 
   public final void onClick(View paramView)
   {
-    if (k.e(this.a) != null)
+    if (k.removeBundle(this.a) != null)
     {
-      k.c(this.a).removeView(k.e(this.a));
+      k.c(this.a).removeView(k.removeBundle(this.a));
       k.f(this.a);
     }
     if (k.g(this.a) != null)

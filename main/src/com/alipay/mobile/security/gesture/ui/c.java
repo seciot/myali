@@ -20,7 +20,7 @@ final class c
       this.a.b.setHasGestureView(false);
       if ((!paramBoolean1) && (!paramBoolean2))
       {
-        GestureActivity.e(this.a);
+        GestureActivity.removeBundle(this.a);
         return;
       }
       if (paramBoolean2)

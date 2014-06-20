@@ -67,7 +67,7 @@ public abstract class a
 
   public final void b(com.alipay.pushsdk.push.d.BundlesManagerImpl paramc)
   {
-    this.c.remove(paramc);
+    this.c.removeBundle(paramc);
   }
 }
 

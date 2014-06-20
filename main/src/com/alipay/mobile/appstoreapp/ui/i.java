@@ -13,8 +13,8 @@ final class i
 
   public final void run()
   {
-    if (AppInstallerTypeEnum.getEnum(AppDetailActivity.e(this.a.a).getInstallerType().toString()) == AppInstallerTypeEnum.independantApp);
-    while ((AppDetailActivity.e(this.a.a).getInstallStatus().getStatus() == 4) || (AppDetailActivity.e(this.a.a).getInstallStatus().getStatus() == 7) || (AppDetailActivity.k(this.a.a) == null))
+    if (AppInstallerTypeEnum.getEnum(AppDetailActivity.removeBundle(this.a.a).getInstallerType().toString()) == AppInstallerTypeEnum.independantApp);
+    while ((AppDetailActivity.removeBundle(this.a.a).getInstallStatus().getStatus() == 4) || (AppDetailActivity.removeBundle(this.a.a).getInstallStatus().getStatus() == 7) || (AppDetailActivity.k(this.a.a) == null))
       return;
     this.a.a.finish();
   }

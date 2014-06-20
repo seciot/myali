@@ -76,7 +76,7 @@ public abstract class Animator
     do
     {
       return;
-      this.mListeners.remove(paramAnimatorListener);
+      this.mListeners.removeBundle(paramAnimatorListener);
     }
     while (this.mListeners.size() != 0);
     this.mListeners = null;

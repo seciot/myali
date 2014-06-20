@@ -12,8 +12,8 @@ class SecurityDribbletActivity$8
 
   public void onCancel(DialogInterface paramDialogInterface)
   {
-    if ((SecurityDribbletActivity.e(this.a) != null) && (SecurityDribbletActivity.e(this.a).isAlive()))
-      SecurityDribbletActivity.e(this.a).interrupt();
+    if ((SecurityDribbletActivity.removeBundle(this.a) != null) && (SecurityDribbletActivity.removeBundle(this.a).isAlive()))
+      SecurityDribbletActivity.removeBundle(this.a).interrupt();
     paramDialogInterface.cancel();
     this.a.a(Boolean.valueOf(true));
   }

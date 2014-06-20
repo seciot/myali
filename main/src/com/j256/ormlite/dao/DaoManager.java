@@ -358,7 +358,7 @@ public class DaoManager
       }
     DaoManager.ClassConnectionSource localClassConnectionSource = new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass());
     if (BundlesManager != null)
-      BundlesManager.remove(localClassConnectionSource);
+      BundlesManager.removeBundle(localClassConnectionSource);
   }
 }
 

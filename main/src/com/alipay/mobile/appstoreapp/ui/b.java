@@ -14,7 +14,7 @@ final class b
 
   public final void run()
   {
-    StateListDrawable localStateListDrawable = IconLoadHelper.a(AppDetailActivity.e(this.a.a).getIcon(), AppDetailActivity.e(this.a.a).isAlipayApp());
+    StateListDrawable localStateListDrawable = IconLoadHelper.a(AppDetailActivity.removeBundle(this.a.a).getIcon(), AppDetailActivity.removeBundle(this.a.a).isAlipayApp());
     AppDetailActivity.f(this.a.a).setImageDrawable(localStateListDrawable);
   }
 }

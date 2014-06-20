@@ -18,7 +18,7 @@ final class f
     if ((localActivity != null) && ((localActivity instanceof WifiConnectingActivity)))
     {
       ((WifiConnectingActivity)localActivity).finish();
-      WifiConnectingActivity.e(this.b.a);
+      WifiConnectingActivity.removeBundle(this.b.a);
     }
   }
 }

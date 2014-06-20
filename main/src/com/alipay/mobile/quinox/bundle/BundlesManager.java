@@ -29,7 +29,8 @@ public interface BundlesManager {
 
 	 void e();
 
-	 void e(String paramString);
+	 //#e
+	 void removeBundle(String paramString);
 
 	 Map f();
 

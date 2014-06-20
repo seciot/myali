@@ -267,7 +267,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       View localView2 = localb.getBundleName();
       this.g.removeView(localView2);
       localb.a(null);
-      this.l.remove(localb.a());
+      this.l.removeBundle(localb.a());
       this.n = (-1 + this.n);
       APTextView localAPTextView = this.j;
       Object[] arrayOfObject = new Object[2];
@@ -417,14 +417,14 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
         View localView2 = localb.getBundleName();
         MultiPictureSelectorActivity.j(MultiPictureSelectorActivity.this).removeView(localView2);
         localb.a(null);
-        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).remove(localb.a());
+        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).removeBundle(localb.a());
         MultiPictureSelectorActivity.l(MultiPictureSelectorActivity.this);
         APTextView localAPTextView = MultiPictureSelectorActivity.r(MultiPictureSelectorActivity.this);
         Object[] arrayOfObject = new Object[2];
         arrayOfObject[0] = Integer.valueOf(MultiPictureSelectorActivity.m(MultiPictureSelectorActivity.this));
         arrayOfObject[1] = Integer.valueOf(MultiPictureSelectorActivity.n(MultiPictureSelectorActivity.this) - MultiPictureSelectorActivity.m(MultiPictureSelectorActivity.this) - MultiPictureSelectorActivity.o(MultiPictureSelectorActivity.this));
         localAPTextView.setText(String.format("已选择%d张，还可以选择%d张", arrayOfObject));
-        MultiPictureSelectorActivity.e(MultiPictureSelectorActivity.this).postDelayed(new ao(this), 30L);
+        MultiPictureSelectorActivity.removeBundle(MultiPictureSelectorActivity.this).postDelayed(new ao(this), 30L);
         localMultiPictureSelectorActivity = MultiPictureSelectorActivity.this;
         if (MultiPictureSelectorActivity.m(MultiPictureSelectorActivity.this) <= 0)
           break label360;

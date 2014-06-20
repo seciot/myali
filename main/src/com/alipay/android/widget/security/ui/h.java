@@ -14,7 +14,7 @@ final class h
   {
     if ((!this.a.e.isLogin()) && (!this.a.e.auth(new Bundle())))
       return;
-    SecurityWidgetGroupAcitivity.e(this.a);
+    SecurityWidgetGroupAcitivity.removeBundle(this.a);
   }
 }
 

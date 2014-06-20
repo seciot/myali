@@ -27,7 +27,7 @@ final class ad extends Thread
     ac.a(this.a, ac.c(this.a), 0L, 2.0F);
     ac.a(this.a, new ai(this.a, (byte)0));
     ac.a(this.a, ac.d(this.a));
-    ac.e(this.a);
+    ac.removeBundle(this.a);
     Looper.loop();
   }
 }

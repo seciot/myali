@@ -16,7 +16,7 @@ final class fb
     MemberChargeOffActivity.a();
     this.b.c.setVisibility(0);
     this.b.c.setImageBitmap(this.a);
-    this.b.c.setOnClickListener(new au(MemberChargeOffActivity.e(this.b.d)));
+    this.b.c.setOnClickListener(new au(MemberChargeOffActivity.removeBundle(this.b.d)));
   }
 }
 

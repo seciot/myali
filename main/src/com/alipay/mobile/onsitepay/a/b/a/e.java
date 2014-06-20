@@ -56,7 +56,7 @@ final class e
       }
       catch (Exception localException)
       {
-        d.e(this.a);
+        d.removeBundle(this.a);
         localException.printStackTrace();
       }
       continue;
@@ -68,7 +68,7 @@ final class e
         if ((localList != null) && (localList.size() > 0))
           d.d(this.a).a(localList);
       }
-      d.e(this.a);
+      d.removeBundle(this.a);
     }
     d.f(this.a);
   }

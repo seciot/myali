@@ -9,8 +9,8 @@ final class bi
 
   public final void run()
   {
-    if (UILabel.e(this.a) != null)
-      this.a.a(UILabel.e(this.a), null);
+    if (UILabel.removeBundle(this.a) != null)
+      this.a.a(UILabel.removeBundle(this.a), null);
   }
 }
 

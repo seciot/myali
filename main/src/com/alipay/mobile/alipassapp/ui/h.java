@@ -28,14 +28,14 @@ final class h
       AlipayApplication localAlipayApplication = AlipayApplication.getInstance();
       BehaviourIdEnum localBehaviourIdEnum = BehaviourIdEnum.CLICKED;
       String[] arrayOfString = new String[2];
-      arrayOfString[0] = AlipassDetailActivity.e(this.a);
+      arrayOfString[0] = AlipassDetailActivity.removeBundle(this.a);
       arrayOfString[1] = AlipassDetailActivity.f(this.a);
       AlipayLogAgent.writeLog(localAlipayApplication, localBehaviourIdEnum, "", "", "20000030", "", "", "couponDetails", "remind", "", "", "", arrayOfString);
     }
     while (true)
     {
       Bundle localBundle = new Bundle();
-      localBundle.putString("p", AlipassDetailActivity.e(this.a));
+      localBundle.putString("p", AlipassDetailActivity.removeBundle(this.a));
       localBundle.putString("pass_enddate", AlipassDetailActivity.g(this.a).getPassBaseInfo().getEndDate());
       localBundle.putString("b", AlipassDetailActivity.d(this.a));
       Intent localIntent = new Intent(this.a, AlipassRemindActivity_.class);

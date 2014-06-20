@@ -34,7 +34,7 @@ final class ai
           localArrayList.add(new b(l, str));
       }
       localCursor.close();
-      MultiPictureSelectorActivity.e(this.a).post(new aj(this, localArrayList));
+      MultiPictureSelectorActivity.removeBundle(this.a).post(new aj(this, localArrayList));
     }
   }
 }

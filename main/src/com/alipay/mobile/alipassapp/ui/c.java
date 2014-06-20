@@ -28,7 +28,7 @@ final class c
       AlipayApplication localAlipayApplication2 = AlipayApplication.getInstance();
       BehaviourIdEnum localBehaviourIdEnum2 = BehaviourIdEnum.CLICKED;
       String[] arrayOfString2 = new String[2];
-      arrayOfString2[0] = AlipassDetailActivity.e(this.a);
+      arrayOfString2[0] = AlipassDetailActivity.removeBundle(this.a);
       arrayOfString2[1] = AlipassDetailActivity.f(this.a);
       AlipayLogAgent.writeLog(localAlipayApplication2, localBehaviourIdEnum2, "", "", "20000030", "", "", "couponDetails", "operate", "", "", "", arrayOfString2);
     }
@@ -40,7 +40,7 @@ final class c
         AlipayApplication localAlipayApplication1 = AlipayApplication.getInstance();
         BehaviourIdEnum localBehaviourIdEnum1 = BehaviourIdEnum.CLICKED;
         String[] arrayOfString1 = new String[2];
-        arrayOfString1[0] = AlipassDetailActivity.e(this.a);
+        arrayOfString1[0] = AlipassDetailActivity.removeBundle(this.a);
         arrayOfString1[1] = AlipassDetailActivity.f(this.a);
         AlipayLogAgent.writeLog(localAlipayApplication1, localBehaviourIdEnum1, "", "", "20000021", "", "", "travelItineraryDetails", "operate", "", "", "", arrayOfString1);
       }

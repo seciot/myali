@@ -17,14 +17,14 @@ final class h
     new StringBuilder("收到声波,sonicId1:").append(paramString).toString();
     FacePayeeActivity.a(this.a, 1);
     long l = System.currentTimeMillis();
-    Long localLong = (Long)FacePayeeActivity.e(this.a).get(paramString);
+    Long localLong = (Long)FacePayeeActivity.removeBundle(this.a).get(paramString);
     new StringBuilder("sonicId:").append(paramString).toString();
     new StringBuilder("currentTimeMillis:").append(l).toString();
     new StringBuilder("mLastTime:").append(localLong).toString();
     if ((localLong == null) || (l - localLong.longValue() > 5000L))
     {
       AlipayLogAgent.writeLog(this.a.getApplicationContext(), BehaviourIdEnum.MONITOR, "kf", null, null, null, null, null, "C2C", paramString, "", "-", new String[] { "kf", "receivewave", "", "y", "alipayclient" });
-      FacePayeeActivity.e(this.a).put(paramString, Long.valueOf(l));
+      FacePayeeActivity.removeBundle(this.a).put(paramString, Long.valueOf(l));
       FacePayeeActivity.f(this.a);
       this.a.b(paramString);
     }

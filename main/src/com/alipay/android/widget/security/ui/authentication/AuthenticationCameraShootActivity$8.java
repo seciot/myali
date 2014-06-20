@@ -13,7 +13,7 @@ class AuthenticationCameraShootActivity$8 extends GestureDetector.SimpleOnGestur
   {
     try
     {
-      AuthenticationCameraShootActivity.e(this.a).handleTouchFocus();
+      AuthenticationCameraShootActivity.removeBundle(this.a).handleTouchFocus();
       return super.onDown(paramMotionEvent);
     }
     catch (Exception localException)

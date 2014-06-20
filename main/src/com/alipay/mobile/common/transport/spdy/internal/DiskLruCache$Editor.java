@@ -49,7 +49,7 @@ public final class DiskLruCache$Editor
     if (this.c)
     {
       DiskLruCache.access$2200(this.this$0, this, false);
-      this.this$0.remove(DiskLruCache.Entry.access$1100(this.a));
+      this.this$0.removeBundle(DiskLruCache.Entry.access$1100(this.a));
     }
     while (true)
     {

@@ -30,7 +30,7 @@ final class aa
   public final void a(int paramInt)
   {
     new StringBuilder("onStartCmsListener =").append(paramInt).toString();
-    MicroApplicationContext localMicroApplicationContext = MobileBalancesWarnActivity.e(this.a).getMicroApplicationContext();
+    MicroApplicationContext localMicroApplicationContext = MobileBalancesWarnActivity.removeBundle(this.a).getMicroApplicationContext();
     Intent localIntent = new Intent(this.a, BalancesWarnCmsActivity_.class);
     localIntent.setFlags(67108864);
     localMicroApplicationContext.startActivityForResult(MobileBalancesWarnActivity.f(this.a), localIntent, 10);

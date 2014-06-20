@@ -26,7 +26,7 @@ final class d extends MiniReadSmsArgs
 
   public final void reSendSuccess()
   {
-    BaseElement localBaseElement = MiniSmsReader.f(this.a).d(MiniSmsReader.e(this.a));
+    BaseElement localBaseElement = MiniSmsReader.f(this.a).d(MiniSmsReader.removeBundle(this.a));
     if ((localBaseElement instanceof UIInput))
       ((UIInput)localBaseElement).a(null, false);
     this.a.b();
@@ -34,7 +34,7 @@ final class d extends MiniReadSmsArgs
 
   public final void readSuccess(String paramString)
   {
-    BaseElement localBaseElement = MiniSmsReader.f(this.a).d(MiniSmsReader.e(this.a));
+    BaseElement localBaseElement = MiniSmsReader.f(this.a).d(MiniSmsReader.removeBundle(this.a));
     if ((localBaseElement instanceof UIInput))
       ((UIInput)localBaseElement).a(paramString, true);
   }

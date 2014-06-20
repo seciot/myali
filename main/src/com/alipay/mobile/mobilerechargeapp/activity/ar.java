@@ -12,7 +12,7 @@ final class ar
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    String str = MobileRechargeActivity.e(this.a);
+    String str = MobileRechargeActivity.removeBundle(this.a);
     this.a.b(str);
   }
 }
