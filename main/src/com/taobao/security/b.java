@@ -13,7 +13,7 @@ public final class b
     a = localArrayList;
     localArrayList.add(new AppBundle.a((byte)0));
     a.add(new BundlesManager.b((byte)0));
-    a.add(new BundlesManager.c((byte)0));
+    a.add(new BundlesManagerImpl.c((byte)0));
   }
 
   public static void a()

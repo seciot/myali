@@ -13,12 +13,12 @@ final class n extends TimerTask
 
   public final void run()
   {
-    com.alipay.pushsdk.c.AppBundle.c.a(3, m.h(), "reConnTask() curMsgId=" + m.a(this.a));
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, m.h(), "reConnTask() curMsgId=" + m.a(this.a));
     d.a(d.k, d.B, System.currentTimeMillis(), d.E, 0L, "PushConnection_reConnTask:TimerTask timeout. lastMsgId=" + m.a(this.a));
     Iterator localIterator = this.a.b().iterator();
     while (localIterator.hasNext())
     {
-      com.alipay.pushsdk.push.BundlesManager.c localc = (com.alipay.pushsdk.push.BundlesManager.c)localIterator.next();
+      com.alipay.pushsdk.push.BundlesManager.BundlesManagerImpl localc = (com.alipay.pushsdk.push.BundlesManager.BundlesManagerImpl)localIterator.next();
       try
       {
         d.a(d.k, d.z, System.currentTimeMillis(), d.E, 0L, "PushConnection_reConnTask:TimerTask timeout and connectionClosedOnError. lastMsgId=" + m.a(this.a));
@@ -31,7 +31,7 @@ final class n extends TimerTask
         localException.printStackTrace();
       }
     }
-    com.alipay.pushsdk.c.AppBundle.c.a(2, m.h(), "reConnTask() connectionClosedOnError has been notify!");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(2, m.h(), "reConnTask() connectionClosedOnError has been notify!");
   }
 }
 

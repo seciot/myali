@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public abstract class a
 {
-  private static final String c = c.a(AppBundle.class);
+  private static final String c = BundlesManagerImpl.a(AppBundle.class);
   protected PrintWriter a;
   protected String b;
   private e d = new e("BaseLogger");

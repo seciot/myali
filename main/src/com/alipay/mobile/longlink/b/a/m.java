@@ -27,7 +27,7 @@ public final class m
 
   public static void b(int paramInt)
   {
-    c = paramInt;
+    BundlesManagerImpl = paramInt;
   }
 
   public static int getBundleName()

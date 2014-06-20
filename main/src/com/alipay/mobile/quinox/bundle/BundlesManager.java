@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+//b.java
 public interface BundlesManager {
 	 AppBundle a(String paramString);
 

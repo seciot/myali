@@ -111,7 +111,7 @@ public final class o
 
   public static int k()
   {
-    return c;
+    return BundlesManagerImpl;
   }
 
   public static int l()

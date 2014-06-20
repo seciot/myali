@@ -160,7 +160,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
     {
       paramView = LayoutInflater.from(this.mContext).inflate(com.alipay.mobile.openplatform.R.layout.f, null);
       localViewHolder = new FastLoginAppAdapter.ViewHolder(this);
-      localViewHolder.b = ((APImageView)paramView.findViewById(R.id.c));
+      localViewHolder.b = ((APImageView)paramView.findViewById(R.id.BundlesManagerImpl));
       localViewHolder.a = ((APTextView)paramView.findViewById(R.id.d));
       localViewHolder.c = ((APTextView)paramView.findViewById(R.id.f));
       localViewHolder.d = ((APImageView)paramView.findViewById(R.id.n));
@@ -205,7 +205,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       }
       else
       {
-        localViewHolder.e.setBackgroundResource(R.drawable.c);
+        localViewHolder.e.setBackgroundResource(R.drawable.BundlesManagerImpl);
         localViewHolder.e.setText(R.string.h);
         localViewHolder.e.setTextColor(-1);
         localViewHolder.e.setEnabled(true);

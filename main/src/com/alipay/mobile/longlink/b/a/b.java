@@ -6,10 +6,10 @@ import com.alipay.mobile.longlink.b.d.c;
 
 public final class b
 {
-  private c a;
+  private BundlesManagerImpl a;
   private d b;
 
-  public b(c paramc)
+  public b(BundlesManagerImpl paramc)
   {
     this.a = paramc;
     this.b = null;

@@ -6,10 +6,10 @@ import javax.net.SocketFactory;
 
 public class e extends SocketFactory
 {
-  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(e.class);
-  private c b;
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(e.class);
+  private BundlesManagerImpl b;
 
-  public e(c paramc)
+  public e(BundlesManagerImpl paramc)
   {
     this.b = paramc;
   }

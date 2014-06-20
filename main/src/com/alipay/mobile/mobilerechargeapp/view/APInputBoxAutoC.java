@@ -61,7 +61,7 @@ public class APInputBoxAutoC extends APRelativeLayout
     inflateLayout(paramContext);
     this.mInputContent = ((APEditText)findViewById(R.id.j));
     this.mInputName = ((APTextView)findViewById(R.id.k));
-    this.mClearButton = ((APImageButton)findViewById(R.id.c));
+    this.mClearButton = ((APImageButton)findViewById(R.id.BundlesManagerImpl));
     this.m_right_text = ((APTextView)findViewById(R.id.F));
     float f1 = paramContext.getResources().getDimension(R.dimen.defaultFontSize);
     int i = -16777216;

@@ -64,7 +64,7 @@ public class WealthAccountInfoView extends APFrameLayout
     this.a = ((APImageView)findViewById(R.id.f));
     this.b = ((APTextView)findViewById(R.id.g));
     this.c = ((APTextView)findViewById(R.id.h));
-    this.e = ((APImageView)findViewById(R.id.c));
+    this.e = ((APImageView)findViewById(R.id.BundlesManagerImpl));
   }
 
   public void bindWidgetFlagView(WealthWidgetMsgFlag paramWealthWidgetMsgFlag)

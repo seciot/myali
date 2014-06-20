@@ -18,7 +18,7 @@ public abstract class a
   protected DataInputStream e;
   protected DataOutputStream f;
   protected final int g = i.getAndIncrement();
-  protected final c h;
+  protected final BundlesManagerImpl h;
 
   static
   {
@@ -34,12 +34,12 @@ public abstract class a
     }
   }
 
-  protected a(c paramc)
+  protected a(BundlesManagerImpl paramc)
   {
     this.h = paramc;
   }
 
-  public final void a(com.alipay.pushsdk.push.BundlesManager.c paramc)
+  public final void a(com.alipay.pushsdk.push.BundlesManager.BundlesManagerImpl paramc)
   {
     if (!a())
       throw new IllegalStateException("Not connected to server.");
@@ -49,13 +49,13 @@ public abstract class a
     this.b.add(paramc);
   }
 
-  public final void a(com.alipay.pushsdk.push.d.c paramc)
+  public final void a(com.alipay.pushsdk.push.d.BundlesManagerImpl paramc)
   {
     if (paramc == null)
       throw new NullPointerException("Packet listener is null.");
     BundlesManager localb = new BundlesManager(paramc);
     this.c.put(paramc, localb);
-    com.alipay.pushsdk.c.AppBundle.c.a(5, "Connection", "packageListener in the list is " + this.c.size());
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
   public abstract boolean a();
@@ -65,7 +65,7 @@ public abstract class a
     return this.b;
   }
 
-  public final void b(com.alipay.pushsdk.push.d.c paramc)
+  public final void b(com.alipay.pushsdk.push.d.BundlesManagerImpl paramc)
   {
     this.c.remove(paramc);
   }

@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 public class k
 {
-  private static final String a = c.a(k.class);
+  private static final String a = BundlesManagerImpl.a(k.class);
   private static ExecutorService b = Executors.newFixedThreadPool(10);
   private String c;
   private String d;
@@ -20,7 +20,7 @@ public class k
 
   public final void a()
   {
-    c.a(4, AppBundle, "put writeLog into thread pool");
+    BundlesManagerImpl.a(4, AppBundle, "put writeLog into thread pool");
     BundlesManager.execute(new l(this, (byte)0));
   }
 }

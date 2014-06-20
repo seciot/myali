@@ -29,7 +29,7 @@ final class h extends CountDownTimer
     if (UIButton.a(this.a) == null)
       return;
     Context localContext = UIButton.a(this.a).getContext();
-    UIButton.a(this.a).setText(paramLong / 1000L + localContext.getString(R.string.c));
+    UIButton.a(this.a).setText(paramLong / 1000L + localContext.getString(R.string.BundlesManagerImpl));
   }
 }
 

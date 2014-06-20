@@ -25,7 +25,7 @@ final class i extends Handler
           return;
         case 1:
           h localh9 = this.a;
-          localh9.c = (1L + localh9.c);
+          localh9.BundlesManagerImpl = (1L + localh9.BundlesManagerImpl);
         case 2:
         case 3:
         case 4:

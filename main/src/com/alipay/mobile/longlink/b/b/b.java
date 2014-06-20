@@ -5,7 +5,7 @@ import com.alipay.mobile.longlink.b.a.k;
 public class b
   implements AppBundle
 {
-  private static final String b = com.alipay.mobile.longlink.c.AppBundle.a(BundlesManager.class);
+  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(BundlesManager.class);
   com.alipay.mobile.longlink.service.AppBundle a;
 
   public b(com.alipay.mobile.longlink.service.AppBundle parama)
@@ -16,15 +16,15 @@ public class b
   public final void a()
   {
     this.a.d().getBundleName();
-    com.alipay.mobile.longlink.c.AppBundle.a(5, BundlesManager, "getConnection=" + this.a.d().hashCode());
-    com.alipay.mobile.longlink.c.AppBundle.a(3, BundlesManager, "===== Connected onSuccess()=====");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, BundlesManager, "getConnection=" + this.a.d().hashCode());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "===== Connected onSuccess()=====");
     this.a.d().a(this.a.h());
     this.a.r();
   }
 
   public final void b()
   {
-    com.alipay.mobile.longlink.c.AppBundle.a(2, BundlesManager, "===== Connected onFail()=====");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(2, BundlesManager, "===== Connected onFail()=====");
     this.a.m();
   }
 }

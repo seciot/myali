@@ -46,7 +46,7 @@ public class AppCenterOnItemLongClickListener
       if (AppUtils.checkCanAddShortcut(localApp))
         break label206;
     }
-    label206: for (int j = R.array.c; ; j = i)
+    label206: for (int j = R.array.BundlesManagerImpl; ; j = i)
     {
       AlertDialog localAlertDialog = new AlertDialog.Builder((Context)AlipayApplication.getInstance().getMicroApplicationContext().getTopActivity().get()).setTitle(localApp.getAppName()).setCancelable(true).setItems(j, new b(this, localApp, localAppCenterItemAdapter)).create();
       localAlertDialog.setCanceledOnTouchOutside(true);

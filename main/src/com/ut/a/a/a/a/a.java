@@ -39,7 +39,7 @@ public class a extends BundlesManager
 
   public static String a(byte[] paramArrayOfByte)
   {
-    return c.e(a(paramArrayOfByte, false));
+    return BundlesManagerImpl.e(a(paramArrayOfByte, false));
   }
 
   public static byte[] a(byte[] paramArrayOfByte, boolean paramBoolean)
@@ -102,7 +102,7 @@ public class a extends BundlesManager
             int i12 = this.pos;
             this.pos = (i12 + 1);
             arrayOfByte10[i12] = this.f[(0x3F & this.k << 4)];
-            if (this.f == c)
+            if (this.f == BundlesManagerImpl)
             {
               byte[] arrayOfByte11 = this.buffer;
               int i13 = this.pos;
@@ -125,7 +125,7 @@ public class a extends BundlesManager
               int i9 = this.pos;
               this.pos = (i9 + 1);
               arrayOfByte7[i9] = this.f[(0x3F & this.k << 2)];
-              if (this.f == c)
+              if (this.f == BundlesManagerImpl)
               {
                 byte[] arrayOfByte8 = this.buffer;
                 int i10 = this.pos;

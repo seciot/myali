@@ -5,10 +5,10 @@ import com.alipay.pushsdk.push.d.c;
 
 public final class b
 {
-  private c a;
+  private BundlesManagerImpl a;
   private e b;
 
-  public b(c paramc)
+  public b(BundlesManagerImpl paramc)
   {
     this.a = paramc;
     this.b = null;

@@ -33,9 +33,9 @@ public class DaoManager
 
   private static <T> Dao<?, ?> a(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource)
   {
-    if (c == null)
-      c = new HashMap();
-    Dao localDao = (Dao)c.get(paramTableConfigConnectionSource);
+    if (BundlesManagerImpl == null)
+      BundlesManagerImpl = new HashMap();
+    Dao localDao = (Dao)BundlesManagerImpl.get(paramTableConfigConnectionSource);
     if (localDao == null)
       localDao = null;
     return localDao;
@@ -124,9 +124,9 @@ public class DaoManager
 
   private static void a(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource, Dao<?, ?> paramDao)
   {
-    if (c == null)
-      c = new HashMap();
-    c.put(paramTableConfigConnectionSource, paramDao);
+    if (BundlesManagerImpl == null)
+      BundlesManagerImpl = new HashMap();
+    BundlesManagerImpl.put(paramTableConfigConnectionSource, paramDao);
   }
 
   public static void addCachedDatabaseConfigs(Collection<DatabaseTableConfig<?>> paramCollection)
@@ -182,10 +182,10 @@ public class DaoManager
         BundlesManager.clear();
         BundlesManager = null;
       }
-      if (c != null)
+      if (BundlesManagerImpl != null)
       {
-        c.clear();
-        c = null;
+        BundlesManagerImpl.clear();
+        BundlesManagerImpl = null;
       }
       return;
     }

@@ -29,7 +29,7 @@ public final class AccountSwitchActivity_ extends AccountSwitchActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.c);
+    setContentView(R.layout.BundlesManagerImpl);
   }
 
   public final boolean onKeyDown(int paramInt, KeyEvent paramKeyEvent)

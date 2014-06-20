@@ -26,12 +26,12 @@ final class l
       this.b.d(System.currentTimeMillis());
       j.b(this.b);
       j.c(this.b);
-      com.alipay.pushsdk.push.AppBundle.a.c localc;
-      com.alipay.pushsdk.push.AppBundle.c localc1;
+      com.alipay.pushsdk.push.BundlesManagerImpl.a.c localc;
+      com.alipay.pushsdk.push.BundlesManagerImpl.c localc1;
       if ((j.d(this.b) != null) && (j.d(this.b).length() > 0) && (j.e(this.b) != 0))
       {
-        localc = new com.alipay.pushsdk.push.AppBundle.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.e(this.b));
-        localc1 = new com.alipay.pushsdk.push.AppBundle.c(j.f(this.b), j.g(this.b), localc);
+        localc = new com.alipay.pushsdk.push.BundlesManagerImpl.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.e(this.b));
+        localc1 = new com.alipay.pushsdk.push.BundlesManagerImpl.c(j.f(this.b), j.g(this.b), localc);
         if ((j.h(this.b) == null) || (!j.h(this.b).equals("1")))
           break label282;
         localc1.a(com.alipay.pushsdk.push.a.d.a);
@@ -46,7 +46,7 @@ final class l
         this.a.d().a(j.j(this.b));
         this.a.d().a(this.c);
         return;
-        localc = new com.alipay.pushsdk.push.AppBundle.a.c(com.alipay.pushsdk.push.a.a.d.a, null, 0);
+        localc = new com.alipay.pushsdk.push.BundlesManagerImpl.a.c(com.alipay.pushsdk.push.a.a.d.a, null, 0);
         break;
         label282: localc1.a(com.alipay.pushsdk.push.a.d.c);
       }

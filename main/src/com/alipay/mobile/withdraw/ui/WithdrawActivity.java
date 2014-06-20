@@ -104,7 +104,7 @@ public class WithdrawActivity extends BaseActivity
 
   private void h()
   {
-    alert(null, getString(R.string.m), getString(R.string.n), new o(this), getString(R.string.c), new b(this), Boolean.valueOf(false));
+    alert(null, getString(R.string.m), getString(R.string.n), new o(this), getString(R.string.BundlesManagerImpl), new b(this), Boolean.valueOf(false));
   }
 
   private void i()
@@ -305,12 +305,12 @@ public class WithdrawActivity extends BaseActivity
     }
     if ("192".equals(str1))
     {
-      alert(null, str2, getString(R.string.g), new d(this), getString(R.string.c), null);
+      alert(null, str2, getString(R.string.g), new d(this), getString(R.string.BundlesManagerImpl), null);
       return;
     }
     if (str1.equals("1832"))
     {
-      alert(null, str2, getString(R.string.g), new l(this), getString(R.string.c), null);
+      alert(null, str2, getString(R.string.g), new l(this), getString(R.string.BundlesManagerImpl), null);
       return;
     }
     toast(str2, 0);

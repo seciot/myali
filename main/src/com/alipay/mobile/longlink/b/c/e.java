@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.b.c;
 
 public class e extends AppBundle
 {
-  private static final String c = com.alipay.mobile.longlink.c.AppBundle.a(e.class);
+  private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(e.class);
   private int d = BundlesManager.AppBundle;
   private int e = BundlesManager.b;
 
@@ -15,13 +15,13 @@ public class e extends AppBundle
   public final void b(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
-    com.alipay.mobile.longlink.c.AppBundle.a(5, c, "getHdrfromRead() got valid packet! msgType=" + i);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
     byte[] arrayOfByte = new byte[4];
     System.arraycopy(paramArrayOfByte, 1, arrayOfByte, 0, 4);
     int j = d(arrayOfByte);
-    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! msgLen=" + j);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
     int k = paramArrayOfByte[5];
-    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! isGziped=" + k);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! isGziped=" + k);
     d(k);
     b(i);
     c(j);
@@ -30,7 +30,7 @@ public class e extends AppBundle
   public final void c(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
-    com.alipay.mobile.longlink.c.AppBundle.a(4, c, "getHdrfromRead() got valid packet! msgId=" + i);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
     a(i);
   }
 

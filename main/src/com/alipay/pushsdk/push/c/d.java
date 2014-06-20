@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 
 public class d extends AppBundle
 {
-  private static final String c = c.a(d.class);
+  private static final String c = BundlesManagerImpl.a(d.class);
   private int d = BundlesManager.AppBundle;
   private int e = BundlesManager.b;
 
@@ -17,11 +17,11 @@ public class d extends AppBundle
   public final void b(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
-    c.a(5, c, "getHdrfromRead() got valid packet! msgType=" + i);
+    BundlesManagerImpl.a(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
     byte[] arrayOfByte = new byte[4];
     System.arraycopy(paramArrayOfByte, 1, arrayOfByte, 0, 4);
     int j = d(arrayOfByte);
-    c.a(4, c, "getHdrfromRead() got valid packet! msgLen=" + j);
+    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
     b(i);
     e(j);
   }
@@ -29,7 +29,7 @@ public class d extends AppBundle
   public final void c(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
-    c.a(4, c, "getHdrfromRead() got valid packet! msgId=" + i);
+    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
     a(i);
   }
 

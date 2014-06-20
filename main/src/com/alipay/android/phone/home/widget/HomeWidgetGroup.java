@@ -232,7 +232,7 @@ public class HomeWidgetGroup
     int k;
     if (j <= 0)
     {
-      n = this.context.getResources().getDimensionPixelOffset(R.dimen.c);
+      n = this.context.getResources().getDimensionPixelOffset(R.dimen.BundlesManagerImpl);
       k = this.context.getResources().getDimensionPixelSize(R.dimen.BundlesManager);
     }
     for (int m = n; ; m = i)

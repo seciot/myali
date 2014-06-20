@@ -47,7 +47,7 @@ public final class d
 
   public static void a()
   {
-    if (c.BundlesManager > 3)
+    if (BundlesManagerImpl.BundlesManager > 3)
     {
       String str = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(System.currentTimeMillis()));
       Log.d("RecordtoFile", "curTime=" + str);
@@ -88,7 +88,7 @@ public final class d
 
   public static void a(String paramString1, String paramString2, long paramLong1, String paramString3, long paramLong2, String paramString4)
   {
-    if (c.BundlesManager > 3)
+    if (BundlesManagerImpl.BundlesManager > 3)
     {
       String str1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(paramLong1));
       String str2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(paramLong2));
@@ -114,7 +114,7 @@ public final class d
       return null;
     }
     String str1 = DateFormat.getDateInstance().format(new Date());
-    c.a(3, "RecordtoFile", "checkFileOfSD date=" + str1);
+    BundlesManagerImpl.a(3, "RecordtoFile", "checkFileOfSD date=" + str1);
     try
     {
       String str2 = Environment.getExternalStorageDirectory() + "/" + F;

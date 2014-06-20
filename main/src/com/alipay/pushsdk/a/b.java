@@ -9,8 +9,8 @@ final class b
 
   public final void run()
   {
-    com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle.a(), "sendConfigReq doing...");
-    new c(AppBundle.a(this.a)).a();
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle.a(), "sendConfigReq doing...");
+    new BundlesManagerImpl(AppBundle.a(this.a)).a();
   }
 }
 

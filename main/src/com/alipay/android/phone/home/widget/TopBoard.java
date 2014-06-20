@@ -32,7 +32,7 @@ public class TopBoard extends RelativeLayout
 
   private void a(Context paramContext)
   {
-    LayoutInflater.from(paramContext).inflate(R.layout.c, this, true);
+    LayoutInflater.from(paramContext).inflate(R.layout.BundlesManagerImpl, this, true);
     this.a = ((ImageView)findViewById(R.id.l));
     this.b = ((TextView)findViewById(R.id.A));
     this.c = ((TextView)findViewById(R.id.z));

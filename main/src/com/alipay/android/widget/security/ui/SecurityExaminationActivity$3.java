@@ -19,14 +19,14 @@ class SecurityExaminationActivity$3
     if (100 == this.a)
     {
       this.b.n.setVisibility(0);
-      this.b.n.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.c));
+      this.b.n.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.BundlesManagerImpl));
       return;
     }
     this.b.l.setVisibility(0);
     this.b.m.setVisibility(0);
     this.b.l.setText(Integer.toString(this.a));
-    this.b.l.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.c));
-    this.b.m.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.c));
+    this.b.l.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.BundlesManagerImpl));
+    this.b.m.startAnimation(AnimationUtils.loadAnimation(this.b, R.anim.BundlesManagerImpl));
   }
 
   public void onAnimationRepeat(Animation paramAnimation)

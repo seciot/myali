@@ -16,7 +16,7 @@ final class d
     AppDetailActivity.g(this.a).setEnabled(true);
     if (!AppDetailActivity.e(this.a).isInstalled())
     {
-      AppDetailActivity.g(this.a).setText(this.a.getString(R.string.c));
+      AppDetailActivity.g(this.a).setText(this.a.getString(R.string.BundlesManagerImpl));
       AppDetailActivity.a(this.a, "main_button_style");
     }
     while (!AppDetailActivity.e(this.a).isNeedUpgrade())

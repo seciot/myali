@@ -8,9 +8,9 @@ import javax.net.SocketFactory;
 public class e extends SocketFactory
 {
   private static final String a = AppBundle.a(e.class);
-  private c b;
+  private BundlesManagerImpl b;
 
-  public e(c paramc)
+  public e(BundlesManagerImpl paramc)
   {
     this.b = paramc;
   }

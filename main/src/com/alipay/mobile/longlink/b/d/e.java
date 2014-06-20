@@ -7,9 +7,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class e
-  implements c
+  implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.mobile.longlink.c.AppBundle.a(e.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(e.class);
   private final com.alipay.mobile.longlink.service.AppBundle b;
 
   public e(com.alipay.mobile.longlink.service.AppBundle parama)
@@ -17,7 +17,7 @@ public class e
     this.b = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
     if (new f(0).a(parama))
@@ -31,7 +31,7 @@ public class e
       m.c(localJSONObject.optInt("keepLiveTime"));
       m.a(localJSONObject.optInt("heartTimeOut"));
       com.alipay.mobile.longlink.service.AppBundle.n();
-      com.alipay.mobile.longlink.c.AppBundle.a(3, AppBundle, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.getBundleName());
+      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.getBundleName());
       this.b.t();
       return;
     }

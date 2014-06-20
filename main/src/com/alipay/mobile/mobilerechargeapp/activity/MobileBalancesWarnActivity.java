@@ -97,7 +97,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
       this.a.addHeaderView(localAPRelativeLayout1, null, false);
     if ((paramBoolean) && (paramAlertSignQueryRes.addSwitch))
     {
-      APRelativeLayout localAPRelativeLayout2 = (APRelativeLayout)LayoutInflater.from(this).inflate(R.layout.c, null);
+      APRelativeLayout localAPRelativeLayout2 = (APRelativeLayout)LayoutInflater.from(this).inflate(R.layout.BundlesManagerImpl, null);
       if (this.a.getFooterViewsCount() == 0)
         this.a.addFooterView(localAPRelativeLayout2, null, false);
     }

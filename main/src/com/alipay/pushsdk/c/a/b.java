@@ -24,7 +24,7 @@ final class b
         AppBundle.a(this.a).set(false);
         return;
         localInterruptedException = localInterruptedException;
-        c.a(2, AppBundle.a(), localInterruptedException);
+        BundlesManagerImpl.a(2, AppBundle.a(), localInterruptedException);
       }
     }
   }

@@ -67,7 +67,7 @@ public class HeaderAreaLayout
     this.e = this.h.getTitleTextView();
     this.f = this.h.getGenericButton();
     this.n = new WidgetMsgFlag(paramActivity);
-    this.p = ((WidgetMsgFlag)paramActivity.findViewById(R.id.c));
+    this.p = ((WidgetMsgFlag)paramActivity.findViewById(R.id.BundlesManagerImpl));
     this.h.attachNewFlagView(this.n);
     IntentFilter localIntentFilter = new IntentFilter();
     localIntentFilter.addAction("com.alipay.security.login");

@@ -17,7 +17,7 @@ public final class AliPushInterface
     localIntent.putExtra("k", paramString1);
     localIntent.putExtra("ext", paramString2);
     paramContext.startService(localIntent);
-    c.a(3, "AliPushInterface", "activeReport() startService!");
+    BundlesManagerImpl.a(3, "AliPushInterface", "activeReport() startService!");
   }
 
   public static void checkDevice(Context paramContext)
@@ -57,8 +57,8 @@ public final class AliPushInterface
 
   public static void setDebugMode(boolean paramBoolean)
   {
-    c.AppBundle = paramBoolean;
-    c.a();
+    BundlesManagerImpl.AppBundle = paramBoolean;
+    BundlesManagerImpl.a();
   }
 
   public static void setMsptid(Context paramContext, String paramString)

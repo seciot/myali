@@ -8,9 +8,9 @@ import com.alipay.pushsdk.push.f;
 import com.alipay.pushsdk.push.j;
 
 public class a
-  implements c
+  implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(AppBundle.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(AppBundle.class);
   private final j b;
 
   public a(j paramj)
@@ -18,19 +18,19 @@ public class a
     this.b = paramj;
   }
 
-  public final void a(com.alipay.pushsdk.push.c.AppBundle parama)
+  public final void a(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
   {
     if (new f(3).a(parama))
     {
       o.a(System.currentTimeMillis());
       this.b.b(System.currentTimeMillis());
-      com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
       d.a(d.u, d.y, System.currentTimeMillis(), d.y, System.currentTimeMillis() + 1000 * o.l(), "HeartBeatPacketListener_processPacket:keepLiveTime=" + o.l());
       if (parama.b() != 0);
     }
     try
     {
-      com.alipay.pushsdk.push.c.AppBundle locala = com.alipay.pushsdk.push.c.c.a(this.b.j());
+      com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle locala = com.alipay.pushsdk.push.BundlesManagerImpl.c.a(this.b.j());
       locala.a(3);
       locala.b(1);
       locala.a("");

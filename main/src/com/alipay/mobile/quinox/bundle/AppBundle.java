@@ -14,6 +14,7 @@ import java.util.zip.ZipFile;
 import android.content.pm.Signature;
 
 @SuppressWarnings("rawtypes")
+//a.java
 public final class AppBundle implements Comparable {
 	private String a;
 	private String b;
@@ -275,6 +276,7 @@ public final class AppBundle implements Comparable {
 		}
 	}
 
+	//#c
 	public final String getBundleName() {
 		return this.a;
 	}

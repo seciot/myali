@@ -44,7 +44,7 @@ final class f
       {
         if (AppItemView.access$000(this.d).getInstallerType() != AppInstallerTypeEnum.independantApp)
         {
-          this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.c));
+          this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.BundlesManagerImpl));
           this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.AppBundle));
           this.b.e.setVisibility(0);
         }
@@ -64,7 +64,7 @@ final class f
           break label414;
         if (AppItemView.access$000(this.d).getInstallerType() != AppInstallerTypeEnum.independantApp)
         {
-          this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.c));
+          this.b.f.setText(AlipayApplication.getInstance().getResources().getString(R.string.BundlesManagerImpl));
           this.b.f.setBackgroundColor(AlipayApplication.getInstance().getResources().getColor(R.color.AppBundle));
           this.b.e.setVisibility(0);
         }

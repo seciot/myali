@@ -34,7 +34,7 @@ public final class g
     this.b.put(f.d, paramString1);
     this.b.put(f.f, paramString2);
     this.b.put(f.e, paramString3);
-    this.b.put(f.c, paramString4);
+    this.b.put(f.BundlesManagerImpl, paramString4);
     this.b.put(f.g, paramString5);
   }
 

@@ -76,7 +76,7 @@ public class AppDetailActivity extends BaseActivity
     if (!this.c.isInstalled())
     {
       this.i.setEnabled(true);
-      this.i.setText(getString(R.string.c));
+      this.i.setText(getString(R.string.BundlesManagerImpl));
       a("main_button_style");
       return;
     }
@@ -139,7 +139,7 @@ public class AppDetailActivity extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.c);
+    setContentView(R.layout.BundlesManagerImpl);
     this.a = getIntent().getStringExtra("APP_ID");
     if ((this.a == null) && (this.mApp != null) && ((this.mApp instanceof AppStoreApp)))
     {
@@ -160,7 +160,7 @@ public class AppDetailActivity extends BaseActivity
     this.l = ((APTextView)findViewById(R.id.e));
     this.m = ((APTextView)findViewById(R.id.BundlesManager));
     this.i = ((APButton)findViewById(R.id.h));
-    this.n = ((APImageView)findViewById(R.id.c));
+    this.n = ((APImageView)findViewById(R.id.BundlesManagerImpl));
     if ((this.a == null) || ("".equals(this.a.trim())))
       finish();
     do
@@ -235,7 +235,7 @@ public class AppDetailActivity extends BaseActivity
             this.i.setEnabled(true);
             if (!this.c.isInstalled())
             {
-              this.i.setText(getString(R.string.c));
+              this.i.setText(getString(R.string.BundlesManagerImpl));
               a("main_button_style");
               return;
             }

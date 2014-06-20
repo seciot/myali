@@ -48,8 +48,8 @@ public class OldDataTransferUtil
             {
               if (!localIterator.hasNext())
                 break label238;
-              localc = (c)localIterator.next();
-              if (!"taobao".equalsIgnoreCase(localc.c))
+              localc = (BundlesManagerImpl)localIterator.next();
+              if (!"taobao".equalsIgnoreCase(localc.BundlesManagerImpl))
                 break;
               TaoBaoUserInfo localTaoBaoUserInfo = new TaoBaoUserInfo();
               localTaoBaoUserInfo.setTaoBaoUserId(localc.AppBundle);
@@ -62,7 +62,7 @@ public class OldDataTransferUtil
       {
         while (true)
         {
-          c localc;
+          BundlesManagerImpl localc;
           localException.printStackTrace();
           return false;
           if ("alipay".equalsIgnoreCase(localc.c))

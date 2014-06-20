@@ -101,7 +101,7 @@ public final class b
     return f;
   }
 
-  public final AppBundle.a.a.a.c a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, String paramString7)
+  public final AppBundle.a.a.a.BundlesManagerImpl a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, String paramString7)
   {
     int i = Integer.parseInt(paramString1, 16);
     Class localClass = a(paramString3, this.b);

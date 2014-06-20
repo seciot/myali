@@ -7,7 +7,7 @@ import com.googlecode.androidannotations.api.BackgroundExecutor;
 import java.util.HashMap;
 
 public final class d
-  implements c
+  implements BundlesManagerImpl
 {
   HashMap<String, String> a = new HashMap();
   private boolean b = true;

@@ -23,7 +23,7 @@ final class b
 
   public final void onPostLoad(String paramString, Bitmap paramBitmap)
   {
-    ((Activity)AppBundle.a(this.b)).runOnUiThread(new c(this, paramBitmap));
+    ((Activity)AppBundle.a(this.b)).runOnUiThread(new BundlesManagerImpl(this, paramBitmap));
   }
 
   public final void onPreLoad(String paramString)

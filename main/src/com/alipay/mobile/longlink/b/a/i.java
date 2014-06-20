@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 
 class i
 {
-  private static final String a = com.alipay.mobile.longlink.c.AppBundle.a(i.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(i.class);
   private Thread b;
   private DataOutputStream c;
   private k d;
@@ -21,12 +21,12 @@ class i
     a();
   }
 
-  private com.alipay.mobile.longlink.BundlesManager.c.AppBundle e()
+  private com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle e()
   {
-    com.alipay.mobile.longlink.BundlesManager.c.AppBundle locala = null;
+    com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = null;
     while (!this.f)
     {
-      locala = (com.alipay.mobile.longlink.BundlesManager.c.AppBundle)this.e.poll();
+      locala = (com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle)this.e.poll();
       if (locala != null)
         break;
       try
@@ -34,7 +34,7 @@ class i
         synchronized (this.e)
         {
           this.e.wait();
-          com.alipay.mobile.longlink.c.AppBundle.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
+          com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
         }
       }
       catch (InterruptedException localInterruptedException)
@@ -54,7 +54,7 @@ class i
   }
 
   // ERROR //
-  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     // Byte code:
     //   0: iconst_4

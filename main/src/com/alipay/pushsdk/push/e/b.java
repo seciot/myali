@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.a.o;
 
 public class b extends d
 {
-  private static final String c = c.a(BundlesManager.class);
+  private static final String c = BundlesManagerImpl.a(BundlesManager.class);
 
   public b(com.alipay.pushsdk.push.j paramj)
   {
@@ -17,8 +17,8 @@ public class b extends d
   {
     long l1 = o.d();
     long l2 = System.currentTimeMillis() - l1;
-    c.a(3, c, "netTriggerEvent_onExecute lostedTime=isConnected=" + this.a.r() + l2 + ", lastConnectedTime=" + com.alipay.pushsdk.c.j.a(l1));
-    com.alipay.pushsdk.c.AppBundle.d.a(com.alipay.pushsdk.c.AppBundle.d.h, com.alipay.pushsdk.c.AppBundle.d.w, System.currentTimeMillis(), com.alipay.pushsdk.c.AppBundle.d.E, 0L + System.currentTimeMillis(), "osTriggerNetChange_onExecute:lastConnectedTime=" + com.alipay.pushsdk.c.j.a(l1) + " trigger=14");
+    BundlesManagerImpl.a(3, BundlesManagerImpl, "netTriggerEvent_onExecute lostedTime=isConnected=" + this.a.r() + l2 + ", lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.a(l1));
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.h, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.E, 0L + System.currentTimeMillis(), "osTriggerNetChange_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.a(l1) + " trigger=14");
     if (this.a.r())
     {
       this.a.u();

@@ -18,7 +18,7 @@ public abstract class a
   protected DataInputStream e;
   protected DataOutputStream f;
   protected final int g = i.getAndIncrement();
-  protected final c h;
+  protected final BundlesManagerImpl h;
 
   static
   {
@@ -34,12 +34,12 @@ public abstract class a
     }
   }
 
-  protected a(c paramc)
+  protected a(BundlesManagerImpl paramc)
   {
     this.h = paramc;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.b.c paramc)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl paramc)
   {
     if (!a())
       throw new IllegalStateException("Not connected to server.");
@@ -49,13 +49,13 @@ public abstract class a
     this.b.add(paramc);
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.d.c paramc)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.d.BundlesManagerImpl paramc)
   {
     if (paramc == null)
       throw new NullPointerException("Packet listener is null.");
     BundlesManager localb = new BundlesManager(paramc);
     this.c.put(paramc, localb);
-    com.alipay.mobile.longlink.c.AppBundle.a(5, "Connection", "packageListener in the list is " + this.c.size());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
   public abstract boolean a();
@@ -65,7 +65,7 @@ public abstract class a
     return this.b;
   }
 
-  public final void b(com.alipay.mobile.longlink.BundlesManager.d.c paramc)
+  public final void b(com.alipay.mobile.longlink.BundlesManager.d.BundlesManagerImpl paramc)
   {
     this.c.remove(paramc);
   }

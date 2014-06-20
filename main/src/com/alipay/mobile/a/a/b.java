@@ -15,7 +15,7 @@ public final class b
     this.b = paramContext;
   }
 
-  public final ArrayList<c> a()
+  public final ArrayList<BundlesManagerImpl> a()
   {
     ArrayList localArrayList = new ArrayList();
     Cursor localCursor = this.a.query("RecentTable2", new String[] { "ID", "NAME", "PASSWORD", "TYPE", "LOGINTIME", "USERID", "RSAPASSWORD", "RANDOMNUM", "REALNAME", "PHONENO", "USERAVTARPATH" }, null, null, null, null, "ID desc");
@@ -23,10 +23,10 @@ public final class b
       return null;
     while (localCursor.moveToNext())
     {
-      c localc = new c();
+      BundlesManagerImpl localc = new BundlesManagerImpl();
       localc.AppBundle = localCursor.getString(localCursor.getColumnIndex("NAME"));
       localc.BundlesManager = localCursor.getString(localCursor.getColumnIndex("PASSWORD"));
-      localc.c = localCursor.getString(localCursor.getColumnIndex("TYPE"));
+      localc.BundlesManagerImpl = localCursor.getString(localCursor.getColumnIndex("TYPE"));
       localc.d = localCursor.getString(localCursor.getColumnIndex("USERID"));
       localc.e = localCursor.getString(localCursor.getColumnIndex("RSAPASSWORD"));
       localc.f = localCursor.getString(localCursor.getColumnIndex("RANDOMNUM"));

@@ -7,7 +7,7 @@ import com.alipay.mobile.onsitepay.a.b.b;
 public final class a
   implements BundlesManager
 {
-  c a = null;
+  BundlesManagerImpl a = null;
   Context b = null;
 
   public a(Context paramContext)
@@ -17,7 +17,7 @@ public final class a
 
   public final void a(String paramString)
   {
-    this.a = new c(this, paramString);
+    this.a = new BundlesManagerImpl(this, paramString);
     LBSInfoGather.getInstance(this.b).requestLBSInfoUpdates(this.a);
   }
 }

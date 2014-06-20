@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.a.o;
 
 public class e
 {
-  private static final String a = c.a(e.class);
+  private static final String a = BundlesManagerImpl.a(e.class);
 
   public static void a()
   {
@@ -29,7 +29,7 @@ public class e
   {
     try
     {
-      c.a(3, AppBundle, "writeLog start...");
+      BundlesManagerImpl.a(3, AppBundle, "writeLog start...");
       if (!o.getAllBundles())
         return;
       new k(paramString1, paramString2, paramString3).a();

@@ -9,13 +9,13 @@ public final class e
 {
   private g a;
   private f b;
-  private c c;
+  private BundlesManagerImpl c;
 
   public e(Context paramContext, g paramg)
   {
     this.a = paramg;
     this.b = new f(this);
-    this.c = c.a(paramContext);
+    this.c = BundlesManagerImpl.a(paramContext);
   }
 
   public final void a(String paramString, Object paramObject)

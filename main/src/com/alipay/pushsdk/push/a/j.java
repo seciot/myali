@@ -9,7 +9,7 @@ import java.util.concurrent.BlockingQueue;
 
 class j
 {
-  private static final String a = c.a(j.class);
+  private static final String a = BundlesManagerImpl.a(j.class);
   private Thread b;
   private DataOutputStream c;
   private m d;
@@ -36,7 +36,7 @@ class j
         synchronized (this.e)
         {
           this.e.wait();
-          c.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
+          BundlesManagerImpl.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
         }
       }
       catch (InterruptedException localInterruptedException)

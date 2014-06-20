@@ -10,7 +10,7 @@ import com.alipay.pushsdk.push.j;
 public class b
   implements AppBundle
 {
-  private static final String b = c.a(BundlesManager.class);
+  private static final String b = BundlesManagerImpl.a(BundlesManager.class);
   j a;
 
   public b(j paramj)
@@ -21,27 +21,27 @@ public class b
   public final void a()
   {
     this.a.d().getBundleName();
-    c.a(5, BundlesManager, "getConnection=" + this.a.d().hashCode());
+    BundlesManagerImpl.a(5, BundlesManager, "getConnection=" + this.a.d().hashCode());
     d.a(d.r, d.x, System.currentTimeMillis(), d.y, 10000L + System.currentTimeMillis(), "ConnectInitListener_onSuccess:setConnected");
-    c.a(3, BundlesManager, "===== Connected onSuccess()=====");
+    BundlesManagerImpl.a(3, BundlesManager, "===== Connected onSuccess()=====");
     this.a.y();
     this.a.d().a(this.a.k());
     this.a.t();
     long l = System.currentTimeMillis();
     o.a(l);
     this.a.b(l);
-    c.a(3, BundlesManager, "onSuccess setLastConnectedTime.");
+    BundlesManagerImpl.a(3, BundlesManager, "onSuccess setLastConnectedTime.");
     e.a("31", "01", "2");
   }
 
   public final void b()
   {
     d.a(d.r, d.A, System.currentTimeMillis(), d.w, 10000L + System.currentTimeMillis(), "ConnectInitListener_onFail");
-    c.a(2, BundlesManager, "===== Connected onFail()=====");
+    BundlesManagerImpl.a(2, BundlesManager, "===== Connected onFail()=====");
     this.a.y();
     if ((this.a.w()) || (o.h()))
     {
-      c.a(3, BundlesManager, "onFail() isFrontPolicy and then to startReconnectionThread...");
+      BundlesManagerImpl.a(3, BundlesManager, "onFail() isFrontPolicy and then to startReconnectionThread...");
       this.a.p();
       e.a("50", "80", "8");
       return;

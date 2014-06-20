@@ -6,7 +6,7 @@ import android.os.Message;
 
 public final class c
 {
-  private static c a;
+  private static BundlesManagerImpl a;
   private d b;
   private e c;
 
@@ -18,13 +18,13 @@ public final class c
     this.b = new d(localHandlerThread.getLooper(), this);
   }
 
-  public static c a(Context paramContext)
+  public static BundlesManagerImpl a(Context paramContext)
   {
     try
     {
       if (AppBundle == null)
-        AppBundle = new c(paramContext);
-      c localc = AppBundle;
+        AppBundle = new BundlesManagerImpl(paramContext);
+      BundlesManagerImpl localc = AppBundle;
       return localc;
     }
     finally

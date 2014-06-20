@@ -6,7 +6,7 @@ public final class c
   {
     if (BundlesManager.AppBundle == paramInt)
       return new d();
-    if (BundlesManager.c == paramInt)
+    if (BundlesManager.BundlesManagerImpl == paramInt)
       return new e();
     throw new Exception("Don't support this protovern:" + paramInt);
   }

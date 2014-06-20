@@ -79,7 +79,7 @@ public class MobileReChargePPBindMobileAcitvity extends BaseActivity
       {
         if (100 == localAddMobileAccountRes1.getResultStatus())
         {
-          toast(getResources().getString(R.string.c), 0);
+          toast(getResources().getString(R.string.BundlesManagerImpl), 0);
           this.mApp.getMicroApplicationContext().finishApp("10000003", "10000003", null);
         }
       }

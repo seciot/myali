@@ -6,9 +6,9 @@ import android.os.Message;
 
 final class d extends Handler
 {
-  private c a;
+  private BundlesManagerImpl a;
 
-  public d(Looper paramLooper, c paramc)
+  public d(Looper paramLooper, BundlesManagerImpl paramc)
   {
     super(paramLooper);
     this.a = paramc;

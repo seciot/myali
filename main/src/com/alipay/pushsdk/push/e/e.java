@@ -20,7 +20,7 @@ public final class e
       return localObject;
       label53: if (paramString.equalsIgnoreCase("10"))
       {
-        localObject = new c(paramj);
+        localObject = new BundlesManagerImpl(paramj);
       }
       else if ((paramString.equalsIgnoreCase("11")) || (paramString.equalsIgnoreCase("12")) || (paramString.equalsIgnoreCase("13")) || (paramString.equalsIgnoreCase("15")))
       {

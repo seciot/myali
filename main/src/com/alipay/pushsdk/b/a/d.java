@@ -6,7 +6,7 @@ import javax.net.ssl.SSLSession;
 final class d
   implements HostnameVerifier
 {
-  d(c paramc)
+  d(BundlesManagerImpl paramc)
   {
   }
 

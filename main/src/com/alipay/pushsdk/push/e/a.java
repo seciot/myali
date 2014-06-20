@@ -7,7 +7,7 @@ import com.alipay.pushsdk.push.p;
 
 public class a extends d
 {
-  private static final String c = c.a(AppBundle.class);
+  private static final String c = BundlesManagerImpl.a(AppBundle.class);
 
   public a(com.alipay.pushsdk.push.j paramj)
   {
@@ -19,8 +19,8 @@ public class a extends d
     long l1 = this.a.h();
     long l2 = o.d();
     long l3 = System.currentTimeMillis() - l2;
-    c.a(3, c, "osTriggerEvent_onExecute isConnected=" + this.a.r() + ", lostedTime=" + l3 + ", lastConnectedTime=" + com.alipay.pushsdk.c.j.a(l2) + ", lastCreateConnectTime=" + com.alipay.pushsdk.c.j.a(l1));
-    com.alipay.pushsdk.c.AppBundle.d.a(com.alipay.pushsdk.c.AppBundle.d.h, com.alipay.pushsdk.c.AppBundle.d.w, System.currentTimeMillis(), com.alipay.pushsdk.c.AppBundle.d.E, 0L + System.currentTimeMillis(), "osTriggerEvent_onExecute:lastConnectedTime=" + com.alipay.pushsdk.c.j.a(l2) + " trigger=" + b());
+    BundlesManagerImpl.a(3, BundlesManagerImpl, "osTriggerEvent_onExecute isConnected=" + this.a.r() + ", lostedTime=" + l3 + ", lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.a(l2) + ", lastCreateConnectTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.a(l1));
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.h, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.d.E, 0L + System.currentTimeMillis(), "osTriggerEvent_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.a(l2) + " trigger=" + b());
     if (l1 == 0L)
     {
       this.a.b();

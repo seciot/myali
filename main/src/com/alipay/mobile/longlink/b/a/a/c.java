@@ -34,7 +34,7 @@ public final class c
   {
     if (this.c == d.AppBundle)
       return new AppBundle();
-    if (this.c == d.c)
+    if (this.c == d.BundlesManagerImpl)
       return new e(this);
     return null;
   }

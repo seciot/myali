@@ -33,7 +33,7 @@ final class u
       new Thread(new BindPhoneActivity.b(this.a, 1, (byte)0)).start();
       return;
     }
-    this.a.a(this.a.getResources().getString(R.string.c));
+    this.a.a(this.a.getResources().getString(R.string.BundlesManagerImpl));
   }
 }
 

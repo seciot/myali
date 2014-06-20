@@ -114,7 +114,7 @@ public class AboutMainActivity extends BaseActivity
     this.a = ((APTextView)findViewById(R.id.k));
     this.b = ((APTextView)findViewById(R.id.d));
     this.c = ((APTableView)findViewById(R.id.h));
-    this.d = ((APExtTableView)findViewById(R.id.c));
+    this.d = ((APExtTableView)findViewById(R.id.BundlesManagerImpl));
     this.e = ((APTableView)findViewById(R.id.g));
     this.f = ((APTableView)findViewById(R.id.i));
     this.g = new WidgetMsgFlag(this);

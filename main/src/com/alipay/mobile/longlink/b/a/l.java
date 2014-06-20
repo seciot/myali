@@ -18,7 +18,7 @@ final class l extends TimerTask
     Iterator localIterator = this.a.b().iterator();
     while (localIterator.hasNext())
     {
-      c localc = (c)localIterator.next();
+      BundlesManagerImpl localc = (BundlesManagerImpl)localIterator.next();
       try
       {
         n localn = new n("The reps of heart timeout.", new Exception("timeout : heart"));

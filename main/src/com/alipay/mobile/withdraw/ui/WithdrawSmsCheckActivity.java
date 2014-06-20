@@ -174,7 +174,7 @@ public class WithdrawSmsCheckActivity extends BaseActivity
         str = localBundle.getString("smscheck_memo_key");
     }
     this.c.setText(str);
-    this.d = ((Button)findViewById(R.id.c));
+    this.d = ((Button)findViewById(R.id.BundlesManagerImpl));
     this.d.setEnabled(false);
     this.e.addNeedEnabledButton(this.d);
     this.d.setOnClickListener(new ab(this));

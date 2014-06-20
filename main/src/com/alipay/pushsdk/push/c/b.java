@@ -7,7 +7,7 @@ public final class b
   public static int c = 3;
   public static int d = 14;
   public static int e = 2;
-  public static int f = c;
+  public static int f = BundlesManagerImpl;
   public static int g = AppBundle;
 }
 

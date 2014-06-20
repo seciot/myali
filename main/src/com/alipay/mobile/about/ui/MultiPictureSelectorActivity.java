@@ -402,7 +402,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
         break;
       }
       label417: localb1.d.setVisibility(8);
-      localb1.c.setVisibility(8);
+      localb1.BundlesManagerImpl.setVisibility(8);
       return paramView;
     }
 

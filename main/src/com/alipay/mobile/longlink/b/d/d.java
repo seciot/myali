@@ -6,7 +6,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public final class d
-  implements c
+  implements BundlesManagerImpl
 {
   private final com.alipay.mobile.longlink.service.AppBundle a;
 
@@ -15,7 +15,7 @@ public final class d
     this.a = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.c.AppBundle parama)
+  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
     if (new f(2).a(parama))

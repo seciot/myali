@@ -112,7 +112,7 @@ public class BaseAppsItemAdapter extends BaseAdapter
               break;
           }
           while (paramApp.getInstallerType() == AppInstallerTypeEnum.independantApp);
-          localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.c));
+          localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.BundlesManagerImpl));
           localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.AppBundle));
           localViewHolder2.e.setVisibility(0);
           return localObject;

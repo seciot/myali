@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 
 public class c extends BundlesManager
 {
-  private static final String b = com.alipay.mobile.longlink.c.AppBundle.a(c.class);
+  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(BundlesManagerImpl.class);
 
   public c(Context paramContext)
   {
@@ -136,7 +136,7 @@ public class c extends BundlesManager
       if (localObject1.length >= 50)
       {
         localObject1[0] = paramString;
-        com.alipay.mobile.longlink.c.AppBundle.a(3, BundlesManager, "updatePerMsgList() perMsgId=" + paramString + ", newPubList:" + localObject1.toString());
+        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "updatePerMsgList() perMsgId=" + paramString + ", newPubList:" + localObject1.toString());
         return localObject1;
       }
       if (localObject1 != null)
@@ -171,22 +171,22 @@ public class c extends BundlesManager
 
   public final boolean a(AppBundle parama)
   {
-    com.alipay.mobile.longlink.c.AppBundle.a(3, BundlesManager, "isContainMsg() newPerMsgId=" + parama.e());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "isContainMsg() newPerMsgId=" + parama.e());
     String[] arrayOfString = b();
     boolean bool = false;
     if (arrayOfString != null)
-      bool = com.alipay.mobile.longlink.c.BundlesManager.a(arrayOfString, parama.e());
+      bool = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.a(arrayOfString, parama.e());
     return bool;
   }
 
   public final void b(AppBundle parama)
   {
     String str1 = parama.e();
-    com.alipay.mobile.longlink.c.AppBundle.a(3, BundlesManager, "saveMsgRecord() perMsgId=" + str1);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "saveMsgRecord() perMsgId=" + str1);
     if ((str1 != null) && (str1.length() > 0))
     {
-      String str2 = com.alipay.mobile.longlink.c.BundlesManager.a(b(str1));
-      com.alipay.mobile.longlink.c.AppBundle.a(4, BundlesManager, "saveMsgRecord() listMsgId:" + str2);
+      String str2 = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.a(b(str1));
+      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManager, "saveMsgRecord() listMsgId:" + str2);
       try
       {
         File localFile = new File(a() + this.a);
@@ -201,11 +201,11 @@ public class c extends BundlesManager
       catch (Exception localException)
       {
         localException.printStackTrace();
-        com.alipay.mobile.longlink.c.AppBundle.a(3, BundlesManager, "saveMsgRecord() encounter exception!");
+        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "saveMsgRecord() encounter exception!");
         return;
       }
     }
-    com.alipay.mobile.longlink.c.AppBundle.a(2, BundlesManager, "saveMsgRecord() perMsgId is invalid!");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(2, BundlesManager, "saveMsgRecord() perMsgId is invalid!");
   }
 }
 

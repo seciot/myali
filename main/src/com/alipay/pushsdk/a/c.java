@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 public class c
 {
-  private static final String a = com.alipay.pushsdk.c.AppBundle.c.a(c.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(BundlesManagerImpl.class);
   private Context b;
   private BundlesManager c;
   private h d;
@@ -23,15 +23,15 @@ public class c
   public final void a()
   {
     String str1 = this.d.a();
-    String str2 = com.alipay.pushsdk.c.AppBundle.b();
-    com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "request() getConfigURL=" + str2);
+    String str2 = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.b();
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "request() getConfigURL=" + str2);
     try
     {
       JSONObject localJSONObject = this.c.b();
       localJSONObject.put("userId", str1);
       localJSONObject.put("lastPubMsgId", new f(this.b).a());
       localJSONObject.put("pushCfgId", this.c.a().a);
-      com.alipay.pushsdk.c.AppBundle.c.a(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
       d locald = new d(this);
       new e(this.b, locald).a(str2, localJSONObject);
       return;

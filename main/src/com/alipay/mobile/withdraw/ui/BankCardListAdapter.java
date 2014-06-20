@@ -27,7 +27,7 @@ public class BankCardListAdapter extends BaseAdapter
   {
     this.a = paramContext;
     this.b = paramArrayList;
-    this.c = R.layout.c;
+    this.c = R.layout.BundlesManagerImpl;
   }
 
   public final WithdrawBankInfo a(int paramInt)

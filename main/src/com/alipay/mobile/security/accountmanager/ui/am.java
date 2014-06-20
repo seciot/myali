@@ -26,7 +26,7 @@ final class am
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=onPostCheckUserAccountAndSendSms],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(this.a.getResources().getString(R.string.c));
+      this.a.a(this.a.getResources().getString(R.string.BundlesManagerImpl));
     }
   }
 }

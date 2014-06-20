@@ -97,7 +97,7 @@ public class GuideWindow
           LayoutInflater localLayoutInflater = LayoutInflater.from(paramActivity);
           if (this.c != null)
             break;
-          this.c = localLayoutInflater.inflate(R.layout.c, null);
+          this.c = localLayoutInflater.inflate(R.layout.BundlesManagerImpl, null);
           ((ImageView)this.c.findViewById(R.id.w)).setOnClickListener(new h(this, localEditText, localViewGroup, localView));
           localViewGroup.addView(this.c);
           return;

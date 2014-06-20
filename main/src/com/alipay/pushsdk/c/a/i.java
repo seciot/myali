@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class i
 {
-  private static final String a = c.a(i.class);
+  private static final String a = BundlesManagerImpl.a(i.class);
   private static AtomicBoolean b = new AtomicBoolean(false);
 
   public static void a(Context paramContext)
@@ -17,10 +17,10 @@ public class i
       {
         f.i = 1 + f.i;
         long l = System.currentTimeMillis() - f.j;
-        c.a(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
+        BundlesManagerImpl.a(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
         if ((!o.getAllBundles()) || (f.i < 30) || (l < 1800000L))
         {
-          c.a(4, AppBundle, "checkAndSend is not ready.");
+          BundlesManagerImpl.a(4, AppBundle, "checkAndSend is not ready.");
           return;
         }
         if (BundlesManager.get())

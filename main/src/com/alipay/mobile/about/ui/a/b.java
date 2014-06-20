@@ -42,14 +42,14 @@ public final class b extends AppBundle
       locala = new AppBundle();
       locala.AppBundle = ((ImageView)paramView.findViewById(R.id.cr));
       locala.BundlesManager = ((APTextView)paramView.findViewById(R.id.cq));
-      locala.c = ((APTextView)paramView.findViewById(R.id.cp));
+      locala.BundlesManagerImpl = ((APTextView)paramView.findViewById(R.id.cp));
       paramView.setTag(locala);
     }
     while (true)
     {
       com.alipay.mobile.about.ui.BundlesManager.AppBundle locala1 = (com.alipay.mobile.about.ui.BundlesManager.AppBundle)this.b.get(paramInt);
       locala.BundlesManager.setText(locala1.e);
-      locala.c.setText(locala1.AppBundle);
+      locala.BundlesManagerImpl.setText(locala1.AppBundle);
       this.c.a(locala.AppBundle, locala1.d, this.d);
       return paramView;
       locala = (AppBundle)paramView.getTag();

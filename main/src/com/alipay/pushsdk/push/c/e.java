@@ -4,13 +4,13 @@ import com.alipay.pushsdk.c.a.c;
 
 public class e extends AppBundle
 {
-  private static final String c = c.a(e.class);
-  private int d = BundlesManager.c;
+  private static final String c = BundlesManagerImpl.a(e.class);
+  private int d = BundlesManager.BundlesManagerImpl;
   private int e = BundlesManager.d;
 
   public e()
   {
-    f(BundlesManager.c);
+    f(BundlesManager.BundlesManagerImpl);
     g(BundlesManager.d);
     f();
   }
@@ -23,7 +23,7 @@ public class e extends AppBundle
       System.arraycopy(paramArrayOfByte, 0, arrayOfByte, 0, 4);
       int i = d(arrayOfByte);
       e(i);
-      c.a(4, c, "getHdrfromRead() got valid packet! msgLen=" + i);
+      BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + i);
     }
   }
 
@@ -38,8 +38,8 @@ public class e extends AppBundle
     b(k);
     c(m);
     d(n);
-    c.a(4, c, "getHdrfromRead() got valid packet! msgId=" + i);
-    c.a(5, c, "getHdrfromRead() got valid packet! msgType=" + k);
+    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
+    BundlesManagerImpl.a(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + k);
   }
 
   public final int j()
@@ -57,13 +57,13 @@ public class e extends AppBundle
     byte[] arrayOfByte = new byte[i];
     arrayOfByte[0] = ((byte)(this.d << 4 | a()));
     arrayOfByte[1] = ((byte)(b() << 7 | getBundleName() << 6 | d() << 5 | e() << 4));
-    c.a(4, c, "getHdrbufforWrite() the 1st buffer:" + arrayOfByte[0]);
-    c.a(4, c, "getHdrbufforWrite() the 2nd buffer:" + arrayOfByte[1]);
+    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrbufforWrite() the 1st buffer:" + arrayOfByte[0]);
+    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrbufforWrite() the 2nd buffer:" + arrayOfByte[1]);
     if (a() != 3)
     {
       System.arraycopy(h(g()), 0, arrayOfByte, 2, 4);
       System.arraycopy(new byte[8], 0, arrayOfByte, 6, 8);
-      c.a(4, c, "getHdrbufforWrite() all len=6");
+      BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrbufforWrite() all len=6");
     }
     return arrayOfByte;
   }

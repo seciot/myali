@@ -24,7 +24,7 @@ public final class c
       BundlesManager = e;
       return;
     }
-    BundlesManager = c;
+    BundlesManager = BundlesManagerImpl;
   }
 
   public static void a(int paramInt, String paramString1, String paramString2)

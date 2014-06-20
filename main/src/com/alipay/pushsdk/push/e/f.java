@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.j;
 
 public class f extends d
 {
-  private static final String c = c.a(f.class);
+  private static final String c = BundlesManagerImpl.a(f.class);
 
   public f(j paramj)
   {
@@ -20,7 +20,7 @@ public class f extends d
       {
         this.a.b(0L);
         this.a.d(0L);
-        c.a(4, c, "clearLastConnInfo done!");
+        BundlesManagerImpl.a(4, BundlesManagerImpl, "clearLastConnInfo done!");
         this.a.a(System.currentTimeMillis());
       }
     while (this.a.r())
@@ -28,7 +28,7 @@ public class f extends d
       this.a.u();
       e.a(b(), "41", "3");
       return;
-      c.a(3, c, "onPreExecute Connected is true.");
+      BundlesManagerImpl.a(3, BundlesManagerImpl, "onPreExecute Connected is true.");
       this.a.a(System.currentTimeMillis());
     }
     this.a.b();
@@ -45,7 +45,7 @@ public class f extends d
     }
     while (true)
     {
-      c.a(3, c, "UserTrigger checkState is " + bool);
+      BundlesManagerImpl.a(3, BundlesManagerImpl, "UserTrigger checkState is " + bool);
       return bool;
       bool = true;
     }

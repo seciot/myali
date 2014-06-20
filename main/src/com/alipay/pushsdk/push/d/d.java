@@ -9,7 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public final class d
-  implements c
+  implements BundlesManagerImpl
 {
   private final j a;
 

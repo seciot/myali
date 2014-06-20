@@ -25,7 +25,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
   {
     this.g = ((ImageView)findViewById(R.id.e));
     this.h = ((ImageView)findViewById(R.id.f));
-    this.f = ((TextView)findViewById(R.id.c));
+    this.f = ((TextView)findViewById(R.id.BundlesManagerImpl));
     this.c = ((ViewGroup)findViewById(R.id.AppBundle));
     this.k = ((LinearLayout)findViewById(R.id.g));
     this.j = ((TextView)findViewById(R.id.i));
@@ -49,7 +49,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
   {
     this.q = AnimationUtils.loadAnimation(this, R.anim.f);
     this.p = AnimationUtils.loadAnimation(this, R.anim.e);
-    this.m = AnimationUtils.loadAnimation(this, R.anim.c);
+    this.m = AnimationUtils.loadAnimation(this, R.anim.BundlesManagerImpl);
     this.o = AnimationUtils.loadAnimation(this, R.anim.d);
     this.n = AnimationUtils.loadAnimation(this, R.anim.BundlesManager);
     this.l = AnimationUtils.loadAnimation(this, R.anim.AppBundle);
