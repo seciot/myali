@@ -1,13 +1,5 @@
 package com.alipay.mobile.quinox.engine;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.Signature;
-import android.content.res.AssetManager;
-import android.util.Log;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,502 +17,475 @@ import java.util.HashSet;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-public class MiscUtils
-{
-  public static final String TAG = "MiscUtils";
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.content.res.AssetManager;
+import android.util.Log;
 
-  private static Method a(Object paramObject, String paramString, Class[] paramArrayOfClass)
-  {
-    Object localObject1 = null;
-    Class localClass = paramObject.getClass();
-    while (localClass != null)
-    {
-      if (paramArrayOfClass == null);
-      try
-      {
-        Method localMethod;
-        for (localObject1 = localClass.getDeclaredMethod(paramString, new Class[0]); ; localObject1 = localMethod)
-        {
-          ((Method)localObject1).setAccessible(true);
-          return localObject1;
-          localMethod = localClass.getDeclaredMethod(paramString, paramArrayOfClass);
-        }
-      }
-      catch (NoSuchMethodException localNoSuchMethodException)
-      {
-        Object localObject2 = localObject1;
-        localNoSuchMethodException.printStackTrace();
-        localClass = localClass.getSuperclass();
-        localObject1 = localObject2;
-      }
-    }
-    return localObject1;
-  }
+public class MiscUtils {
+	public static final String TAG = "MiscUtils";
 
-  // ERROR //
-  private static boolean a(InputStream paramInputStream, OutputStream paramOutputStream)
-  {
-    // Byte code:
-    //   0: new 45	java/io/BufferedOutputStream
-    //   3: dup
-    //   4: aload_1
-    //   5: invokespecial 48	java/io/BufferedOutputStream:<init>	(Ljava/io/OutputStream;)V
-    //   8: astore_2
-    //   9: new 50	java/io/BufferedInputStream
-    //   12: dup
-    //   13: aload_0
-    //   14: invokespecial 53	java/io/BufferedInputStream:<init>	(Ljava/io/InputStream;)V
-    //   17: astore_3
-    //   18: sipush 4096
-    //   21: newarray byte
-    //   23: astore 8
-    //   25: aload_0
-    //   26: aload 8
-    //   28: invokevirtual 59	java/io/InputStream:read	([B)I
-    //   31: istore 9
-    //   33: iload 9
-    //   35: iflt +36 -> 71
-    //   38: aload_2
-    //   39: aload 8
-    //   41: iconst_0
-    //   42: iload 9
-    //   44: invokevirtual 63	java/io/BufferedOutputStream:write	([BII)V
-    //   47: goto -22 -> 25
-    //   50: astore 6
-    //   52: aload_2
-    //   53: astore 7
-    //   55: aload 6
-    //   57: invokevirtual 64	java/io/FileNotFoundException:printStackTrace	()V
-    //   60: aload 7
-    //   62: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   65: aload_3
-    //   66: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   69: iconst_0
-    //   70: ireturn
-    //   71: aload_2
-    //   72: invokevirtual 71	java/io/BufferedOutputStream:flush	()V
-    //   75: aload_3
-    //   76: invokevirtual 74	java/io/BufferedInputStream:close	()V
-    //   79: aload_2
-    //   80: invokevirtual 75	java/io/BufferedOutputStream:close	()V
-    //   83: aload_2
-    //   84: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   87: aload_3
-    //   88: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   91: iconst_1
-    //   92: ireturn
-    //   93: astore 4
-    //   95: aconst_null
-    //   96: astore_3
-    //   97: aconst_null
-    //   98: astore_2
-    //   99: aload 4
-    //   101: invokevirtual 76	java/io/IOException:printStackTrace	()V
-    //   104: aload_2
-    //   105: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   108: aload_3
-    //   109: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   112: iconst_0
-    //   113: ireturn
-    //   114: astore 5
-    //   116: aconst_null
-    //   117: astore_3
-    //   118: aconst_null
-    //   119: astore_2
-    //   120: aload_2
-    //   121: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   124: aload_3
-    //   125: invokestatic 68	com/alipay/mobile/quinox/engine/MiscUtils:closeStream	(Ljava/io/Closeable;)V
-    //   128: aload 5
-    //   130: athrow
-    //   131: astore 5
-    //   133: aconst_null
-    //   134: astore_3
-    //   135: goto -15 -> 120
-    //   138: astore 5
-    //   140: goto -20 -> 120
-    //   143: astore 5
-    //   145: aload 7
-    //   147: astore_2
-    //   148: goto -28 -> 120
-    //   151: astore 4
-    //   153: aconst_null
-    //   154: astore_3
-    //   155: goto -56 -> 99
-    //   158: astore 4
-    //   160: goto -61 -> 99
-    //   163: astore 6
-    //   165: aconst_null
-    //   166: astore_3
-    //   167: aconst_null
-    //   168: astore 7
-    //   170: goto -115 -> 55
-    //   173: astore 6
-    //   175: aload_2
-    //   176: astore 7
-    //   178: aconst_null
-    //   179: astore_3
-    //   180: goto -125 -> 55
-    //
-    // Exception table:
-    //   from	to	target	type
-    //   18	25	50	java/io/FileNotFoundException
-    //   25	33	50	java/io/FileNotFoundException
-    //   38	47	50	java/io/FileNotFoundException
-    //   71	83	50	java/io/FileNotFoundException
-    //   0	9	93	java/io/IOException
-    //   0	9	114	finally
-    //   9	18	131	finally
-    //   18	25	138	finally
-    //   25	33	138	finally
-    //   38	47	138	finally
-    //   71	83	138	finally
-    //   99	104	138	finally
-    //   55	60	143	finally
-    //   9	18	151	java/io/IOException
-    //   18	25	158	java/io/IOException
-    //   25	33	158	java/io/IOException
-    //   38	47	158	java/io/IOException
-    //   71	83	158	java/io/IOException
-    //   0	9	163	java/io/FileNotFoundException
-    //   9	18	173	java/io/FileNotFoundException
-  }
+	private static Method getMethod(Object instance, String name,
+			Class<?>[] parameterTypes) {
+		Class<?> clazz = instance.getClass();
+		while (clazz != null) {
+			try {
+				Method method = clazz.getDeclaredMethod(name, parameterTypes);
+				method.setAccessible(true);
+				return method;
+			} catch (NoSuchMethodException localNoSuchMethodException) {
+				localNoSuchMethodException.printStackTrace();
+				clazz = clazz.getSuperclass();
+			}
+		}
+		return null;
+	}
 
-  private static boolean a(Signature[] paramArrayOfSignature1, Signature[] paramArrayOfSignature2)
-  {
-    if ((paramArrayOfSignature1 == null) || (paramArrayOfSignature2 == null));
-    HashSet localHashSet1;
-    HashSet localHashSet2;
-    do
-    {
-      return false;
-      localHashSet1 = new HashSet();
-      int i = paramArrayOfSignature1.length;
-      for (int j = 0; j < i; j++)
-        localHashSet1.add(paramArrayOfSignature1[j]);
-      localHashSet2 = new HashSet();
-      int k = paramArrayOfSignature2.length;
-      for (int m = 0; m < k; m++)
-        localHashSet2.add(paramArrayOfSignature2[m]);
-    }
-    while (!localHashSet1.equals(localHashSet2));
-    return true;
-  }
+	// ERROR //
+	private static boolean a(InputStream paramInputStream,
+			OutputStream paramOutputStream) {
+		return false;
+		// Byte code:
+		// 0: new 45 java/io/BufferedOutputStream
+		// 3: dup
+		// 4: aload_1
+		// 5: invokespecial 48 java/io/BufferedOutputStream:<init>
+		// (Ljava/io/OutputStream;)V
+		// 8: astore_2
+		// 9: new 50 java/io/BufferedInputStream
+		// 12: dup
+		// 13: aload_0
+		// 14: invokespecial 53 java/io/BufferedInputStream:<init>
+		// (Ljava/io/InputStream;)V
+		// 17: astore_3
+		// 18: sipush 4096
+		// 21: newarray byte
+		// 23: astore 8
+		// 25: aload_0
+		// 26: aload 8
+		// 28: invokevirtual 59 java/io/InputStream:read ([B)I
+		// 31: istore 9
+		// 33: iload 9
+		// 35: iflt +36 -> 71
+		// 38: aload_2
+		// 39: aload 8
+		// 41: iconst_0
+		// 42: iload 9
+		// 44: invokevirtual 63 java/io/BufferedOutputStream:write ([BII)V
+		// 47: goto -22 -> 25
+		// 50: astore 6
+		// 52: aload_2
+		// 53: astore 7
+		// 55: aload 6
+		// 57: invokevirtual 64 java/io/FileNotFoundException:printStackTrace
+		// ()V
+		// 60: aload 7
+		// 62: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 65: aload_3
+		// 66: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 69: iconst_0
+		// 70: ireturn
+		// 71: aload_2
+		// 72: invokevirtual 71 java/io/BufferedOutputStream:flush ()V
+		// 75: aload_3
+		// 76: invokevirtual 74 java/io/BufferedInputStream:close ()V
+		// 79: aload_2
+		// 80: invokevirtual 75 java/io/BufferedOutputStream:close ()V
+		// 83: aload_2
+		// 84: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 87: aload_3
+		// 88: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 91: iconst_1
+		// 92: ireturn
+		// 93: astore 4
+		// 95: aconst_null
+		// 96: astore_3
+		// 97: aconst_null
+		// 98: astore_2
+		// 99: aload 4
+		// 101: invokevirtual 76 java/io/IOException:printStackTrace ()V
+		// 104: aload_2
+		// 105: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 108: aload_3
+		// 109: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 112: iconst_0
+		// 113: ireturn
+		// 114: astore 5
+		// 116: aconst_null
+		// 117: astore_3
+		// 118: aconst_null
+		// 119: astore_2
+		// 120: aload_2
+		// 121: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 124: aload_3
+		// 125: invokestatic 68
+		// com/alipay/mobile/quinox/engine/MiscUtils:closeStream
+		// (Ljava/io/Closeable;)V
+		// 128: aload 5
+		// 130: athrow
+		// 131: astore 5
+		// 133: aconst_null
+		// 134: astore_3
+		// 135: goto -15 -> 120
+		// 138: astore 5
+		// 140: goto -20 -> 120
+		// 143: astore 5
+		// 145: aload 7
+		// 147: astore_2
+		// 148: goto -28 -> 120
+		// 151: astore 4
+		// 153: aconst_null
+		// 154: astore_3
+		// 155: goto -56 -> 99
+		// 158: astore 4
+		// 160: goto -61 -> 99
+		// 163: astore 6
+		// 165: aconst_null
+		// 166: astore_3
+		// 167: aconst_null
+		// 168: astore 7
+		// 170: goto -115 -> 55
+		// 173: astore 6
+		// 175: aload_2
+		// 176: astore 7
+		// 178: aconst_null
+		// 179: astore_3
+		// 180: goto -125 -> 55
+		//
+		// Exception table:
+		// from to target type
+		// 18 25 50 java/io/FileNotFoundException
+		// 25 33 50 java/io/FileNotFoundException
+		// 38 47 50 java/io/FileNotFoundException
+		// 71 83 50 java/io/FileNotFoundException
+		// 0 9 93 java/io/IOException
+		// 0 9 114 finally
+		// 9 18 131 finally
+		// 18 25 138 finally
+		// 25 33 138 finally
+		// 38 47 138 finally
+		// 71 83 138 finally
+		// 99 104 138 finally
+		// 55 60 143 finally
+		// 9 18 151 java/io/IOException
+		// 18 25 158 java/io/IOException
+		// 25 33 158 java/io/IOException
+		// 38 47 158 java/io/IOException
+		// 71 83 158 java/io/IOException
+		// 0 9 163 java/io/FileNotFoundException
+		// 9 18 173 java/io/FileNotFoundException
+	}
 
-  private static Certificate[] a(JarFile paramJarFile, JarEntry paramJarEntry, byte[] paramArrayOfByte)
-  {
-    try
-    {
-      InputStream localInputStream = paramJarFile.getInputStream(paramJarEntry);
-      while (localInputStream.read(paramArrayOfByte, 0, paramArrayOfByte.length) != -1);
-      localInputStream.close();
-      Object localObject = null;
-      if (paramJarEntry != null)
-      {
-        Certificate[] arrayOfCertificate = paramJarEntry.getCertificates();
-        localObject = arrayOfCertificate;
-      }
-      return localObject;
-    }
-    catch (IOException localIOException)
-    {
-      Log.w("MiscUtils", "Exception reading " + paramJarEntry.getName() + " in " + paramJarFile.getName(), localIOException);
-      return null;
-    }
-    catch (RuntimeException localRuntimeException)
-    {
-      Log.w("MiscUtils", "Exception reading " + paramJarEntry.getName() + " in " + paramJarFile.getName(), localRuntimeException);
-    }
-    return null;
-  }
+	private static boolean a(final Signature[] array, final Signature[] array2) {
+		if (array != null && array2 != null) {
+			final HashSet<Signature> set = new HashSet<Signature>();
+			for (int length = array.length, i = 0; i < length; ++i) {
+				set.add(array[i]);
+			}
+			final HashSet<Signature> set2 = new HashSet<Signature>();
+			for (int length2 = array2.length, j = 0; j < length2; ++j) {
+				set2.add(array2[j]);
+			}
+			if (set.equals(set2)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-  public static Object callActivityOnMethod(Activity paramActivity, String paramString, Class[] paramArrayOfClass, Object[] paramArrayOfObject)
-  {
-    if (paramActivity == null);
-    while (true)
-    {
-      return null;
-      try
-      {
-        Method localMethod = a(paramActivity, paramString, paramArrayOfClass);
-        if (localMethod != null)
-        {
-          if (paramArrayOfObject == null)
-            return localMethod.invoke(paramActivity, new Object[0]);
-          Object localObject = localMethod.invoke(paramActivity, paramArrayOfObject);
-          return localObject;
-        }
-      }
-      catch (IllegalArgumentException localIllegalArgumentException)
-      {
-        localIllegalArgumentException.printStackTrace();
-        return null;
-      }
-      catch (IllegalAccessException localIllegalAccessException)
-      {
-        localIllegalAccessException.printStackTrace();
-        return null;
-      }
-      catch (InvocationTargetException localInvocationTargetException)
-      {
-        localInvocationTargetException.printStackTrace();
-      }
-    }
-    return null;
-  }
+	@SuppressWarnings("unused")
+	private static Certificate[] a(final JarFile jarFile,
+			final JarEntry jarEntry, final byte[] array) {
+		try {
+			final InputStream inputStream = jarFile.getInputStream(jarEntry);
+			while (inputStream.read(array, 0, array.length) != -1) {
+			}
+			inputStream.close();
+			Certificate[] certificates = null;
+			if (jarEntry != null) {
+				certificates = jarEntry.getCertificates();
+			}
+			return certificates;
+		} catch (IOException ex) {
+			Log.w("MiscUtils", "Exception reading " + jarEntry.getName()
+					+ " in " + jarFile.getName(), (Throwable) ex);
+			return null;
+		} catch (RuntimeException ex2) {
+			Log.w("MiscUtils", "Exception reading " + jarEntry.getName()
+					+ " in " + jarFile.getName(), (Throwable) ex2);
+			return null;
+		}
+	}
 
-  public static void closeStream(Closeable paramCloseable)
-  {
-    if (paramCloseable != null);
-    try
-    {
-      paramCloseable.close();
-      return;
-    }
-    catch (IOException localIOException)
-    {
-      Log.e("IOUtil", localIOException);
-    }
-  }
+	public static Object callActivityOnMethod(final Activity activity,
+			final String methodName, final Class<?>[] parameterTypes,
+			final Object[] args) {
+		if (activity != null) {
+			try {
+				final Method method = getMethod(activity, methodName,
+						parameterTypes);
+				if (method != null) {
+					if (args == null) {
+						return method.invoke(activity, new Object[0]);
+					}
+					return method.invoke(activity, args);
+				}
+			} catch (IllegalArgumentException ex) {
+				ex.printStackTrace();
+				return null;
+			} catch (IllegalAccessException ex2) {
+				ex2.printStackTrace();
+				return null;
+			} catch (InvocationTargetException ex3) {
+				ex3.printStackTrace();
+				return null;
+			}
+		}
+		return null;
+	}
 
-  public static boolean copyFile(String paramString1, String paramString2)
-  {
-    if ((paramString1 == null) || (paramString2 == null));
-    File localFile1;
-    do
-    {
-      return false;
-      localFile1 = new File(paramString1);
-    }
-    while (!localFile1.exists());
-    try
-    {
-      File localFile2 = new File(paramString2);
-      if (!localFile2.exists())
-        localFile2.createNewFile();
-      boolean bool = a(new FileInputStream(localFile1), new FileOutputStream(localFile2));
-      return bool;
-    }
-    catch (IOException localIOException)
-    {
-      localIOException.printStackTrace();
-    }
-    return false;
-  }
+	public static void closeStream(final Closeable closeable) {
+		if (closeable == null) {
+			return;
+		}
+		try {
+			closeable.close();
+		} catch (IOException ex) {
+			Log.e("IOUtil", new StringBuilder().append(ex).toString());
+		}
+	}
 
-  public static boolean copyToFile(InputStream paramInputStream, File paramFile)
-  {
-    try
-    {
-      if (paramFile.exists())
-        paramFile.delete();
-      FileOutputStream localFileOutputStream = new FileOutputStream(paramFile);
-      try
-      {
-        byte[] arrayOfByte = new byte[4096];
-        while (true)
-        {
-          int i = paramInputStream.read(arrayOfByte);
-          if (i < 0)
-            break;
-          localFileOutputStream.write(arrayOfByte, 0, i);
-        }
-      }
-      finally
-      {
-        localFileOutputStream.close();
-      }
-      localFileOutputStream.close();
-      return true;
-    }
-    catch (IOException localIOException)
-    {
-    }
-    return false;
-  }
+	public static boolean copyFile(final String s, final String s2) {
+		if (s != null && s2 != null) {
+			final File file = new File(s);
+			if (file.exists()) {
+				try {
+					final File file2 = new File(s2);
+					if (!file2.exists()) {
+						file2.createNewFile();
+					}
+					return a(new FileInputStream(file), new FileOutputStream(
+							file2));
+				} catch (IOException ex) {
+					ex.printStackTrace();
+					return false;
+				}
+			}
+		}
+		return false;
+	}
 
-  public static boolean fileFromAssets(String paramString1, AssetManager paramAssetManager, String paramString2)
-  {
-    if ((paramString1 == null) || (paramAssetManager == null) || (paramString2 == null))
-      return false;
-    try
-    {
-      File localFile = new File(paramString2);
-      if (!localFile.exists())
-        localFile.createNewFile();
-      boolean bool = a(paramAssetManager.open(paramString1), new FileOutputStream(localFile));
-      return bool;
-    }
-    catch (IOException localIOException)
-    {
-      localIOException.printStackTrace();
-    }
-    return false;
-  }
+	public static boolean copyToFile(final InputStream inputStream,
+			final File file) {
+		try {
+			if (file.exists()) {
+				file.delete();
+			}
+			final FileOutputStream fileOutputStream = new FileOutputStream(file);
+			try {
+				final byte[] array = new byte[4096];
+				while (true) {
+					final int read = inputStream.read(array);
+					if (read < 0) {
+						break;
+					}
+					fileOutputStream.write(array, 0, read);
+				}
+			} finally {
+				fileOutputStream.close();
+			}
+			return true;
+		} catch (IOException ex) {
+			return false;
+		}
+	}
 
-  public static ClassLoader getBootClassLoader(ClassLoader paramClassLoader)
-  {
-    while (!paramClassLoader.getClass().getSimpleName().equalsIgnoreCase("BootClassLoader"))
-      paramClassLoader = paramClassLoader.getParent();
-    return paramClassLoader;
-  }
+	public static boolean fileFromAssets(final String s,
+			final AssetManager assetManager, final String s2) {
+		if (s == null || assetManager == null || s2 == null) {
+			return false;
+		}
+		try {
+			final File file = new File(s2);
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			return a(assetManager.open(s), new FileOutputStream(file));
+		} catch (IOException ex) {
+			ex.printStackTrace();
+			return false;
+		}
+	}
 
-  public static Signature[] getPackageSignatures(Context paramContext, String paramString)
-  {
-    try
-    {
-      Signature[] arrayOfSignature = paramContext.getPackageManager().getPackageInfo(paramString, 64).signatures;
-      return arrayOfSignature;
-    }
-    catch (PackageManager.NameNotFoundException localNameNotFoundException)
-    {
-      localNameNotFoundException.printStackTrace();
-    }
-    return null;
-  }
+	public static ClassLoader getBootClassLoader(ClassLoader parent) {
+		while (!parent.getClass().getSimpleName()
+				.equalsIgnoreCase("BootClassLoader")) {
+			parent = parent.getParent();
+		}
+		return parent;
+	}
 
-  public static Object newInstance(String paramString, ClassLoader paramClassLoader)
-  {
-    try
-    {
-      Object localObject = paramClassLoader.loadClass(paramString).newInstance();
-      return localObject;
-    }
-    catch (ClassNotFoundException localClassNotFoundException)
-    {
-      localClassNotFoundException.printStackTrace();
-      return null;
-    }
-    catch (InstantiationException localInstantiationException)
-    {
-      while (true)
-        localInstantiationException.printStackTrace();
-    }
-    catch (IllegalAccessException localIllegalAccessException)
-    {
-      while (true)
-        localIllegalAccessException.printStackTrace();
-    }
-  }
+	public static Signature[] getPackageSignatures(final Context context,
+			final String s) {
+		try {
+			return context.getPackageManager().getPackageInfo(s, 64).signatures;
+		} catch (PackageManager.NameNotFoundException ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public static void reportFail(Context paramContext, Throwable paramThrowable)
-  {
-    if (paramThrowable == null);
-    StringWriter localStringWriter;
-    for (String str = null; ; str = localStringWriter.toString())
-    {
-      if (str != null)
-        paramThrowable.printStackTrace();
-      return;
-      localStringWriter = new StringWriter();
-      PrintWriter localPrintWriter = new PrintWriter(localStringWriter);
-      Throwable localThrowable = paramThrowable.getCause();
-      if (localThrowable == null)
-        paramThrowable.printStackTrace(localPrintWriter);
-      while (localThrowable != null)
-      {
-        localThrowable.printStackTrace(localPrintWriter);
-        localThrowable = localThrowable.getCause();
-      }
-      localPrintWriter.close();
-    }
-  }
+	public static Object newInstance(String className, ClassLoader classLoader) {
+		try {
+			Object localObject = classLoader.loadClass(className).newInstance();
+			return localObject;
+		} catch (ClassNotFoundException localClassNotFoundException) {
+			localClassNotFoundException.printStackTrace();
+			return null;
+		} catch (InstantiationException localInstantiationException) {
+			localInstantiationException.printStackTrace();
+			return null;
+		} catch (IllegalAccessException localIllegalAccessException) {
+			localIllegalAccessException.printStackTrace();
+			return null;
+		}
+	}
 
-  public static boolean verifyApk(Signature[] paramArrayOfSignature, String paramString)
-  {
-    Certificate[] arrayOfCertificate = verifyMD5AndLoadCertificates(paramString);
-    if (arrayOfCertificate == null)
-      return false;
-    Signature[] arrayOfSignature = null;
-    if (arrayOfCertificate != null)
-    {
-      int i = arrayOfCertificate.length;
-      arrayOfSignature = null;
-      if (i > 0)
-      {
-        int j = arrayOfCertificate.length;
-        arrayOfSignature = new Signature[arrayOfCertificate.length];
-        int k = 0;
-        while (true)
-          if (k < j)
-            try
-            {
-              arrayOfSignature[k] = new Signature(arrayOfCertificate[k].getEncoded());
-              k++;
-            }
-            catch (CertificateEncodingException localCertificateEncodingException)
-            {
-              while (true)
-                localCertificateEncodingException.printStackTrace();
-            }
-      }
-    }
-    return a(paramArrayOfSignature, arrayOfSignature);
-  }
+	public static void reportFail(final Context context, final Throwable t) {
+		String string;
+		if (t == null) {
+			string = null;
+		} else {
+			final StringWriter stringWriter = new StringWriter();
+			final PrintWriter printWriter = new PrintWriter(stringWriter);
+			Throwable t2 = t.getCause();
+			if (t2 == null) {
+				t.printStackTrace(printWriter);
+			}
+			while (t2 != null) {
+				t2.printStackTrace(printWriter);
+				t2 = t2.getCause();
+			}
+			printWriter.close();
+			string = stringWriter.toString();
+		}
+		if (string != null) {
+			t.printStackTrace();
+		}
+	}
 
-  // ERROR //
-  public static Certificate[] verifyMD5AndLoadCertificates(String paramString)
-  {
-    // Byte code:
-    //   0: new 92	java/util/jar/JarFile
-    //   3: dup
-    //   4: aload_0
-    //   5: invokespecial 304	java/util/jar/JarFile:<init>	(Ljava/lang/String;)V
-    //   8: astore_1
-    //   9: sipush 8192
-    //   12: newarray byte
-    //   14: astore 5
-    //   16: aload_1
-    //   17: ldc_w 306
-    //   20: invokevirtual 310	java/util/jar/JarFile:getJarEntry	(Ljava/lang/String;)Ljava/util/jar/JarEntry;
-    //   23: astore 6
-    //   25: aload_1
-    //   26: aload 6
-    //   28: aload 5
-    //   30: invokestatic 312	com/alipay/mobile/quinox/engine/MiscUtils:a	(Ljava/util/jar/JarFile;Ljava/util/jar/JarEntry;[B)[Ljava/security/cert/Certificate;
-    //   33: astore 7
-    //   35: aload 7
-    //   37: astore_3
-    //   38: aload_3
-    //   39: ifnonnull +36 -> 75
-    //   42: ldc 8
-    //   44: new 108	java/lang/StringBuilder
-    //   47: dup
-    //   48: ldc_w 314
-    //   51: invokespecial 113	java/lang/StringBuilder:<init>	(Ljava/lang/String;)V
-    //   54: aload 6
-    //   56: invokevirtual 117	java/util/jar/JarEntry:getName	()Ljava/lang/String;
-    //   59: invokevirtual 121	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   62: ldc_w 316
-    //   65: invokevirtual 121	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   68: invokevirtual 127	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   71: invokestatic 163	android/util/Log:e	(Ljava/lang/String;Ljava/lang/String;)I
-    //   74: pop
-    //   75: aload_1
-    //   76: invokevirtual 317	java/util/jar/JarFile:close	()V
-    //   79: aload_3
-    //   80: areturn
-    //   81: astore_2
-    //   82: aconst_null
-    //   83: astore_3
-    //   84: aload_2
-    //   85: astore 4
-    //   87: aload 4
-    //   89: invokevirtual 76	java/io/IOException:printStackTrace	()V
-    //   92: aload_3
-    //   93: areturn
-    //   94: astore 4
-    //   96: goto -9 -> 87
-    //
-    // Exception table:
-    //   from	to	target	type
-    //   0	35	81	java/io/IOException
-    //   42	75	94	java/io/IOException
-    //   75	79	94	java/io/IOException
-  }
+	public static boolean verifyApk(Signature[] paramArrayOfSignature,
+			String paramString) {
+		Certificate[] arrayOfCertificate = verifyMD5AndLoadCertificates(paramString);
+		if (arrayOfCertificate == null)
+			return false;
+		Signature[] arrayOfSignature = null;
+		if (arrayOfCertificate != null) {
+			int i = arrayOfCertificate.length;
+			arrayOfSignature = null;
+			if (i > 0) {
+				int j = arrayOfCertificate.length;
+				arrayOfSignature = new Signature[arrayOfCertificate.length];
+				int k = 0;
+				while (true)
+					if (k < j)
+						try {
+							arrayOfSignature[k] = new Signature(
+									arrayOfCertificate[k].getEncoded());
+							k++;
+						} catch (CertificateEncodingException localCertificateEncodingException) {
+							while (true)
+								localCertificateEncodingException
+										.printStackTrace();
+						}
+			}
+		}
+		return a(paramArrayOfSignature, arrayOfSignature);
+	}
+
+	// ERROR //
+	public static Certificate[] verifyMD5AndLoadCertificates(String paramString) {
+		return null;
+		// Byte code:
+		// 0: new 92 java/util/jar/JarFile
+		// 3: dup
+		// 4: aload_0
+		// 5: invokespecial 304 java/util/jar/JarFile:<init>
+		// (Ljava/lang/String;)V
+		// 8: astore_1
+		// 9: sipush 8192
+		// 12: newarray byte
+		// 14: astore 5
+		// 16: aload_1
+		// 17: ldc_w 306
+		// 20: invokevirtual 310 java/util/jar/JarFile:getJarEntry
+		// (Ljava/lang/String;)Ljava/util/jar/JarEntry;
+		// 23: astore 6
+		// 25: aload_1
+		// 26: aload 6
+		// 28: aload 5
+		// 30: invokestatic 312 com/alipay/mobile/quinox/engine/MiscUtils:a
+		// (Ljava/util/jar/JarFile;Ljava/util/jar/JarEntry;[B)[Ljava/security/cert/Certificate;
+		// 33: astore 7
+		// 35: aload 7
+		// 37: astore_3
+		// 38: aload_3
+		// 39: ifnonnull +36 -> 75
+		// 42: ldc 8
+		// 44: new 108 java/lang/StringBuilder
+		// 47: dup
+		// 48: ldc_w 314
+		// 51: invokespecial 113 java/lang/StringBuilder:<init>
+		// (Ljava/lang/String;)V
+		// 54: aload 6
+		// 56: invokevirtual 117 java/util/jar/JarEntry:getName
+		// ()Ljava/lang/String;
+		// 59: invokevirtual 121 java/lang/StringBuilder:append
+		// (Ljava/lang/String;)Ljava/lang/StringBuilder;
+		// 62: ldc_w 316
+		// 65: invokevirtual 121 java/lang/StringBuilder:append
+		// (Ljava/lang/String;)Ljava/lang/StringBuilder;
+		// 68: invokevirtual 127 java/lang/StringBuilder:toString
+		// ()Ljava/lang/String;
+		// 71: invokestatic 163 android/util/Log:e
+		// (Ljava/lang/String;Ljava/lang/String;)I
+		// 74: pop
+		// 75: aload_1
+		// 76: invokevirtual 317 java/util/jar/JarFile:close ()V
+		// 79: aload_3
+		// 80: areturn
+		// 81: astore_2
+		// 82: aconst_null
+		// 83: astore_3
+		// 84: aload_2
+		// 85: astore 4
+		// 87: aload 4
+		// 89: invokevirtual 76 java/io/IOException:printStackTrace ()V
+		// 92: aload_3
+		// 93: areturn
+		// 94: astore 4
+		// 96: goto -9 -> 87
+		//
+		// Exception table:
+		// from to target type
+		// 0 35 81 java/io/IOException
+		// 42 75 94 java/io/IOException
+		// 75 79 94 java/io/IOException
+	}
 }
-
-/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
- * Qualified Name:     com.alipay.mobile.quinox.engine.MiscUtils
- * JD-Core Version:    0.6.2
- */

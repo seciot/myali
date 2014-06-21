@@ -9,10 +9,10 @@ import android.text.TextUtils;
 import android.util.Log;
 
 public class BundleEngine {
-	public static Object SBundleContext;
+	public static Object app;
 
 	public static BundleContext getBundleContext() {
-		return new BundleContext(SBundleContext);
+		return new BundleContext(app);
 	}
 
 	public static Class<?> getProxyClazz(String className,
