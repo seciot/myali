@@ -109,7 +109,7 @@ public class CanNotCertifiedFragment extends BaseAuthenticationFragment
           this.j.setVisibility(8);
           this.i.setType(16);
           this.i.setLeftText(getString(R.string.aN));
-          this.f.setImageResource(R.drawable.e);
+          this.f.setImageResource(R.drawable.HostClassLoader);
           if (localRealNameCertifyResult.certifyReturnInfo != null)
           {
             String str3 = (String)localRealNameCertifyResult.certifyReturnInfo.get("realName");

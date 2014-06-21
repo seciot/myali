@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 final class c
   implements Runnable
 {
-  c(BootstrapClassloader parama, ExecutorService paramExecutorService)
+  c(BootstrapClassLoader parama, ExecutorService paramExecutorService)
   {
   }
 
@@ -15,7 +15,7 @@ final class c
     try
     {
       Thread.sleep(10000L);
-      BootstrapClassloader.getBundle(this.b).getFullBundleName();
+      BootstrapClassLoader.getBundle(this.b).getFullBundleName();
       this.a.shutdown();
       return;
     }

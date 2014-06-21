@@ -26,13 +26,13 @@ public class f extends ZLog
     while (this.a.r())
     {
       this.a.u();
-      e.e(stop(), "41", "3");
+      HostClassLoader.e(stop(), "41", "3");
       return;
       BundlesManagerImpl.e(3, BundlesManagerImpl, "onPreExecute Connected is true.");
       this.a.getBundle(System.currentTimeMillis());
     }
     this.a.stop();
-    e.e(stop(), "40", "6");
+    HostClassLoader.e(stop(), "40", "6");
   }
 
   public final boolean getInitLevel()
@@ -41,7 +41,7 @@ public class f extends ZLog
     if (!getFullBundleName())
     {
       bool = false;
-      e.e(stop(), "10", "6");
+      HostClassLoader.e(stop(), "10", "6");
     }
     while (true)
     {

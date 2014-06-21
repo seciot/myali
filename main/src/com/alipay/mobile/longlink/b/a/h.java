@@ -10,14 +10,14 @@ final class h
 {
   private AppBundle b;
 
-  public h(e parame, AppBundle parama)
+  public h(HostClassLoader parame, AppBundle parama)
   {
     this.b = parama;
   }
 
   public final void run()
   {
-    Iterator localIterator = e.getBundle(this.a).c.values().iterator();
+    Iterator localIterator = HostClassLoader.getBundle(this.a).c.values().iterator();
     while (localIterator.hasNext())
       ((BundlesManager)localIterator.next()).getBundle(this.b);
   }

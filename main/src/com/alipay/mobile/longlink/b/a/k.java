@@ -12,7 +12,7 @@ public class k extends AppBundle
   protected Socket i;
   String j = null;
   i k;
-  e l;
+  HostClassLoader l;
   private String n = null;
   private boolean o = false;
   private int p = BundlesManager.AppBundle;

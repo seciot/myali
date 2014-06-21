@@ -143,7 +143,7 @@ public abstract class BaseComponent extends IUIComponet
         int i11 = localView1.getPaddingBottom();
         if (i3 > 1)
           if (i4 == 0)
-            localView1.setBackgroundResource(R.drawable.Dependable);
+            localView1.setBackgroundResource(R.drawable.Loadable);
         while (true)
         {
           localView1.setPadding(i8, i9, i10, i11);

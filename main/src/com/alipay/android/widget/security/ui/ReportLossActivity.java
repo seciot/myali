@@ -131,7 +131,7 @@ public class ReportLossActivity extends BaseActivity
       this.f.setVisibility(0);
       return;
       this.c.setOnClickListener(this);
-      this.c.setLeftImage(R.drawable.Dependable);
+      this.c.setLeftImage(R.drawable.Loadable);
       this.c.setRightText("立即认证");
       this.c.setLeftText(getText(R.string.aM));
       c();
@@ -140,7 +140,7 @@ public class ReportLossActivity extends BaseActivity
         this.j = new SimplePwdOpenReceiver((byte)0);
       this.l.registerReceiver(this.j, new IntentFilter("com.alipay.mobile.simplepwd.open"));
       this.d.setLeftText(getText(R.string.bA));
-      this.d.setLeftImage(R.drawable.Dependable);
+      this.d.setLeftImage(R.drawable.Loadable);
       this.d.setRightText("立即开启");
       this.d.setOnClickListener(this);
     }

@@ -57,7 +57,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
     while (true)
     {
       LogAgentWriteLog.f(this);
-      this.d.setGenericButtonText(getResources().getString(R.string.Dependable));
+      this.d.setGenericButtonText(getResources().getString(R.string.Loadable));
       this.d.setGenericButtonVisiable(true);
       this.d.setGenericButtonListener(new bv(this));
       this.c.setVisibility(8);

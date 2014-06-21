@@ -95,7 +95,7 @@ public class WealthWidgetFlagAdapter
       WealthWidgetMsgFlag localWealthWidgetMsgFlag = (WealthWidgetMsgFlag)this.e.get(str);
       if (localWealthWidgetMsgFlag == null)
       {
-        localWealthWidgetMsgFlag = (WealthWidgetMsgFlag)LayoutInflater.from(this.c).inflate(R.layout.e, null, false);
+        localWealthWidgetMsgFlag = (WealthWidgetMsgFlag)LayoutInflater.from(this.c).inflate(R.layout.HostClassLoader, null, false);
         this.e.put(str, localWealthWidgetMsgFlag);
         localWealthWidgetMsgFlag.setBindingWidget(str);
         this.f.addChild(localWealthWidgetMsgFlag);

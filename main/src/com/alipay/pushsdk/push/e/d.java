@@ -9,7 +9,7 @@ import com.alipay.pushsdk.push.p;
 
 public abstract class d
 {
-  private static final String c = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(ZLog.class);
+  private static final String c = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.getBundle(ZLog.class);
   public j a;
   public Context b;
   private String d;
@@ -44,14 +44,14 @@ public abstract class d
     boolean bool1 = true;
     if (!getFullBundleName())
     {
-      e.e(this.d, "40", "6");
+      HostClassLoader.e(this.d, "40", "6");
       if (p.a() < 0)
-        e.e(this.d, "70", "8");
+        HostClassLoader.e(this.d, "70", "8");
     }
     label118: 
     while (true)
     {
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, BundlesManagerImpl, "checkState is " + bool1);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, BundlesManagerImpl, "checkState is " + bool1);
       return bool1;
       bool1 = false;
       continue;
@@ -61,7 +61,7 @@ public abstract class d
       {
         if (bool2)
           break label118;
-        e.e(this.d, "20", "6");
+        HostClassLoader.e(this.d, "20", "6");
         bool1 = false;
         break;
       }
@@ -73,12 +73,12 @@ public abstract class d
     NetworkInfo localNetworkInfo = ((ConnectivityManager)this.b.getSystemService("connectivity")).getActiveNetworkInfo();
     if (localNetworkInfo != null)
     {
-      boolean bool = com.alipay.pushsdk.BundlesManagerImpl.c.b(this.b);
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.Dependable, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.C, 10000L + System.currentTimeMillis(), "Trigger_checkNetworkState: Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State=" + localNetworkInfo.getState());
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(4, BundlesManagerImpl, "Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State = " + localNetworkInfo.getState() + ", net=" + bool + ", isconnected=" + localNetworkInfo.isConnected());
+      boolean bool = com.alipay.pushsdk.BundlesManagerImpl.FileUitl.b(this.b);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.Loadable, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.C, 10000L + System.currentTimeMillis(), "Trigger_checkNetworkState: Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State=" + localNetworkInfo.getState());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(4, BundlesManagerImpl, "Network_Type=" + localNetworkInfo.getTypeName() + ", Network_State = " + localNetworkInfo.getState() + ", net=" + bool + ", isconnected=" + localNetworkInfo.isConnected());
       return bool;
     }
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(2, BundlesManagerImpl, "Network unavailable");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(2, BundlesManagerImpl, "Network unavailable");
     this.a.r();
     return false;
   }

@@ -5,13 +5,13 @@ import java.util.concurrent.ThreadFactory;
 final class g
   implements ThreadFactory
 {
-  g(e parame)
+  g(HostClassLoader parame)
   {
   }
 
   public final Thread newThread(Runnable paramRunnable)
   {
-    Thread localThread = new Thread(paramRunnable, "Push Listener Processor (" + e.getBundle(this.a).g + ")");
+    Thread localThread = new Thread(paramRunnable, "Push Listener Processor (" + HostClassLoader.getBundle(this.a).g + ")");
     localThread.setDaemon(true);
     return localThread;
   }

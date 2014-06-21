@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public class e
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(HostClassLoader.class);
   private final com.alipay.mobile.longlink.service.AppBundle b;
 
   public e(com.alipay.mobile.longlink.service.AppBundle parama)

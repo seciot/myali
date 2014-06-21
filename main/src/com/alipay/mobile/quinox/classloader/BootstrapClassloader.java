@@ -18,22 +18,22 @@ import com.alipay.mobile.quinox.bundle.BundlesManager;
 
 import dalvik.system.PathClassLoader;
 
-public final class BootstrapClassloader extends PathClassLoader {
+public final class BootstrapClassLoader extends PathClassLoader {
 	private static final ThreadFactory threadFactory = new MinPriorityThreadFactory();
 	private Context ctx;
 	private BundlesManager bundlesManager;
 	private Map map;
 	private InitExecutor initExecutor;
-	private e e;
+	private HostClassLoader e;
 
-	public BootstrapClassloader(Context context, PathClassLoader pathClassLoader,
+	public BootstrapClassLoader(Context context, PathClassLoader pathClassLoader,
 			BundlesManager bundlesManager) {
 		super(context.getApplicationInfo().sourceDir, context
 				.getApplicationInfo().dataDir + File.separator + "lib",
 				a(ClassLoader.getSystemClassLoader()));
 		this.ctx = context;
 		this.bundlesManager = bundlesManager;
-		this.e = new e(this, this.ctx.getApplicationInfo().sourceDir, b(),
+		this.e = new HostClassLoader(this, this.ctx.getApplicationInfo().sourceDir, b(),
 				a(ClassLoader.getSystemClassLoader()), pathClassLoader,
 				this.bundlesManager);
 		this.map = new ConcurrentHashMap(10);
@@ -134,7 +134,7 @@ public final class BootstrapClassloader extends PathClassLoader {
 		}
 	}
 
-	public final Dependable b(String paramString) {
+	public final Loadable b(String paramString) {
 		if (!d(paramString)) {
 			AppBundle locala = this.bundlesManager.getBundle(paramString);
 			if (this.bundlesManager.b(paramString)) {
@@ -163,7 +163,7 @@ public final class BootstrapClassloader extends PathClassLoader {
 		this.initExecutor.b(parama);
 	}
 
-	public final Dependable c(String paramString) {
+	public final Loadable c(String paramString) {
 		if (!d(paramString)) {
 			AppBundle locala = this.bundlesManager.getBundle(paramString);
 			if (locala == null)
@@ -187,7 +187,7 @@ public final class BootstrapClassloader extends PathClassLoader {
 				+ paramString);
 		AppBundle locala = this.bundlesManager.c(paramString);
 		if (locala != null) {
-			Dependable localh = b(locala.getBundleName());
+			Loadable localh = b(locala.getBundleName());
 			if ((localh == null) && (locala.getInitLevel() == 11110000)) {
 				a(locala);
 				localh = b(locala.getBundleName());

@@ -137,7 +137,7 @@ public class AboutFeedbackActivity extends BaseActivity
     super.onCreate(paramBundle);
     setContentView(R.layout.T);
     this.d = ((APTextView)findViewById(R.id.aV));
-    this.b = ((APEditText)findViewById(R.id.e));
+    this.b = ((APEditText)findViewById(R.id.HostClassLoader));
     this.f = ((APTitleBar)findViewById(R.id.ge));
     this.f.setGenericButtonListener(new a(this));
     this.e = this.f.getGenericButton();

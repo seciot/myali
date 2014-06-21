@@ -12,7 +12,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
 {
   public static int b = 1;
   public static int c = 2;
-  private static final String g = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(AppBundle.class);
+  private static final String g = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.getBundle(AppBundle.class);
   public int a = 0;
   Context d;
 
@@ -31,13 +31,13 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
       ArrayList localArrayList2 = new ArrayList();
       localArrayList2.add(new BasicNameValuePair("requestData", paramString));
       URL localURL = a();
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, "HttpClient", "Request" + paramString);
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, "HttpClient", "Dest url:  " + localURL.toString());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, "HttpClient", "Request" + paramString);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, "HttpClient", "Dest url:  " + localURL.toString());
       HttpResponse localHttpResponse = v(localArrayList2, localArrayList1);
       if (localHttpResponse == null)
         return null;
       str = URLDecoder.decode(EntityUtils.toString(localHttpResponse.getEntity()), "UTF-8");
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, g, "Response " + str.toString());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, g, "Response " + str.toString());
       return str;
     }
     catch (Exception localException)

@@ -31,7 +31,7 @@ public class b
     o.getBundle(l);
     this.a.b(l);
     BundlesManagerImpl.e(3, BundlesManager, "onSuccess setLastConnectedTime.");
-    e.e("31", "01", "2");
+    HostClassLoader.e("31", "01", "2");
   }
 
   public final void stop()
@@ -43,10 +43,10 @@ public class b
     {
       BundlesManagerImpl.e(3, BundlesManager, "onFail() isFrontPolicy and then to startReconnectionThread...");
       this.a.p();
-      e.e("50", "80", "8");
+      HostClassLoader.e("50", "80", "8");
       return;
     }
-    e.e("50", "81", "6");
+    HostClassLoader.e("50", "81", "6");
   }
 }
 

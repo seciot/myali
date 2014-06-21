@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.b.c;
 
 public class e extends AppBundle
 {
-  private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
+  private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(HostClassLoader.class);
   private int d = BundlesManager.AppBundle;
   private int e = BundlesManager.MinPriorityThreadFactory;
 

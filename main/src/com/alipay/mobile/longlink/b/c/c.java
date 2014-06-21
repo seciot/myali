@@ -5,7 +5,7 @@ public final class c
   public static AppBundle setBundlePath(int paramInt)
   {
     if (BundlesManager.AppBundle == paramInt)
-      return new e();
+      return new HostClassLoader();
     throw new Exception("Don't support this protovern:" + paramInt);
   }
 }

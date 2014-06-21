@@ -7,7 +7,7 @@ public final class c
     if (BundlesManager.AppBundle == paramInt)
       return new ZLog();
     if (BundlesManager.BundlesManagerImpl == paramInt)
-      return new e();
+      return new HostClassLoader();
     throw new Exception("Don't support this protovern:" + paramInt);
   }
 }

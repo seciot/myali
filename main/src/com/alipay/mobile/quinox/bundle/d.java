@@ -44,7 +44,7 @@ public final class d
       if (paramBoolean)
       {
         c.getBundle(appBundle.getBundlePath());
-        c.getBundle(com.alipay.mobile.quinox.utils.b.a(appBundle.getBundlePath(), this.c.c()));
+        c.getBundle(com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(appBundle.getBundlePath(), this.c.c()));
         Log.e("BundleVerifier", appBundle.getBundleName() + "deleted jar.");
         try
         {

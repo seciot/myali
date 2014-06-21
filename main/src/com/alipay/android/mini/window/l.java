@@ -16,7 +16,7 @@ final class l
   {
     MiniPayActivity.getBundle(this.g);
     if (TextUtils.isEmpty(this.a))
-      this.g.getString(R.string.e);
+      this.g.getString(R.string.HostClassLoader);
     if (this.b != null);
     for (m localm = new m(this); ; localm = null)
     {

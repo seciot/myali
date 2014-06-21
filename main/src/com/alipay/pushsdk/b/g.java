@@ -3,7 +3,7 @@ package com.alipay.pushsdk.b;
 final class g
   implements Runnable
 {
-  g(e parame, BundlesManager paramb)
+  g(HostClassLoader parame, BundlesManager paramb)
   {
   }
 
@@ -11,7 +11,7 @@ final class g
   {
     try
     {
-      String str = new AppBundle(this.a.a(), e.getBundle(this.b)).b(this.a.stop().toString());
+      String str = new AppBundle(this.a.a(), HostClassLoader.getBundle(this.b)).b(this.a.stop().toString());
       if ((str != null) && (((String)str).length() > 0))
       {
         this.a.b(str);

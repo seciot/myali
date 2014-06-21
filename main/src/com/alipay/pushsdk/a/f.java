@@ -6,7 +6,7 @@ import com.alipay.pushsdk.b.b;
 
 public final class f extends Handler
 {
-  public f(e parame)
+  public f(HostClassLoader parame)
   {
   }
 
@@ -19,11 +19,11 @@ public final class f extends Handler
     default:
       return;
     case 3:
-      e.getBundle(this.a).getBundle(localb);
+      HostClassLoader.getBundle(this.a).getBundle(localb);
       return;
     case 4:
     }
-    e.getBundle(this.a).a();
+    HostClassLoader.getBundle(this.a).a();
   }
 }
 

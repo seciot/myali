@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 
 public class e extends AppBundle
 {
-  private static final String c = BundlesManagerImpl.getBundle(e.class);
+  private static final String c = BundlesManagerImpl.getBundle(HostClassLoader.class);
   private int d = BundlesManager.BundlesManagerImpl;
   private int e = BundlesManager.ZLog;
 

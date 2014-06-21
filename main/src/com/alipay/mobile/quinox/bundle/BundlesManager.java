@@ -41,5 +41,5 @@ public interface BundlesManager {
 
 	 Set<AppBundle> getAllBundles();
 
-	 com.alipay.mobile.quinox.classloader.BootstrapClassloader j();
+	 com.alipay.mobile.quinox.classloader.BootstrapClassLoader j();
 }

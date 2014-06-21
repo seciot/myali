@@ -31,7 +31,7 @@ public final class LayoutRow extends LinearLayout
   {
     if (GlobalConstant.DEBUG)
     {
-      int i = getResources().getColor(R.color.e);
+      int i = getResources().getColor(R.color.HostClassLoader);
       this.a = new Paint();
       this.a.setStyle(Paint.Style.STROKE);
       this.a.setColor(i);

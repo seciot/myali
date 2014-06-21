@@ -8,11 +8,11 @@ public final class c
 {
   private static BundlesManagerImpl a;
   private ZLog b;
-  private e c;
+  private HostClassLoader c;
 
   private c(Context paramContext)
   {
-    this.c = new e(paramContext);
+    this.c = new HostClassLoader(paramContext);
     HandlerThread localHandlerThread = new HandlerThread("controller");
     localHandlerThread.start();
     this.b = new ZLog(localHandlerThread.getLooper(), this);
@@ -32,7 +32,7 @@ public final class c
     }
   }
 
-  public final e a()
+  public final HostClassLoader a()
   {
     return this.c;
   }

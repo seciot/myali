@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 class e
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(HostClassLoader.class);
   private Thread b;
   private ExecutorService c;
   private k d;
@@ -38,7 +38,7 @@ class e
     {
       try
       {
-        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.c.getBundle(i);
+        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.FileUitl.getBundle(i);
         int m = BundlesManager.BundlesManagerImpl;
         byte[] arrayOfByte1 = new byte[m];
         int n = localByteArrayInputStream.read(arrayOfByte1, 0, m);
@@ -69,7 +69,7 @@ class e
         int i3 = locala.getBundleName() + locala.g();
         if (locala.getBundlePath() == 1)
         {
-          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.c.b(arrayOfByte3);
+          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUitl.b(arrayOfByte3);
           locala.c(arrayOfByte3.length);
         }
         locala.getBundle(arrayOfByte3);
@@ -90,7 +90,7 @@ class e
           continue;
         com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, AppBundle, "processPacket() are processing one valid packet!");
         this.d.g();
-        this.c.submit(new Dependable(this, locala));
+        this.c.submit(new Loadable(this, locala));
         continue;
       }
       catch (Exception localException)

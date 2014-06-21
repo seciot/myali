@@ -65,7 +65,7 @@ public final class d extends BaseAdapter
       if (localAuthOption2.forceChecked)
         break label177;
       localView.setClickable(true);
-      localView.setOnClickListener(new e(this, localCheckBox));
+      localView.setOnClickListener(new HostClassLoader(this, localCheckBox));
     }
     while (true)
     {

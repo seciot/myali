@@ -33,14 +33,14 @@ public class a
   private com.alipay.mobile.discoverywidget.Bundle.AppBundle f;
   private com.alipay.mobile.discoverywidget.Bundle.AppBundle g = null;
   private d h;
-  private HashMap<String, com.alipay.mobile.discoverywidget.BootstrapClassloader.a> i;
+  private HashMap<String, com.alipay.mobile.discoverywidget.IOUtil.a> i;
   private CacheManagerService j;
   private String k = "_DiscoveryWidgetHomeData";
 
   private void a()
   {
     this.j = ((CacheManagerService)this.b.findServiceByInterface(CacheManagerService.class.getName()));
-    this.g = new com.alipay.mobile.discoverywidget.BootstrapClassloader.a.a(this.b);
+    this.g = new com.alipay.mobile.discoverywidget.IOUtil.a.a(this.b);
     this.d = UserInfoHelper.getInstance().getUserInfo(this.b);
     if (this.d != null)
     {
@@ -50,7 +50,7 @@ public class a
     DiscoveryWidgetGroup.class.getName();
   }
 
-  private HashMap<String, com.alipay.mobile.discoverywidget.BootstrapClassloader.a> b()
+  private HashMap<String, com.alipay.mobile.discoverywidget.IOUtil.a> b()
   {
     try
     {
@@ -92,7 +92,7 @@ public class a
         Object localObject = this.i.get(this.e);
         localIndexWidgetResult = null;
         if (localObject != null)
-          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.BootstrapClassloader.a)this.i.get(this.e)).a();
+          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.IOUtil.a)this.i.get(this.e)).a();
       }
     }
   }
@@ -107,9 +107,9 @@ public class a
     {
       this.f.discoveryNotify(paramIndexWidgetResult);
       this.i = this.h.b();
-      com.alipay.mobile.discoverywidget.BootstrapClassloader.a locala = (com.alipay.mobile.discoverywidget.BootstrapClassloader.a)this.i.get(this.e);
+      com.alipay.mobile.discoverywidget.IOUtil.a locala = (com.alipay.mobile.discoverywidget.IOUtil.a)this.i.get(this.e);
       if (locala == null)
-        locala = new com.alipay.mobile.discoverywidget.BootstrapClassloader.a();
+        locala = new com.alipay.mobile.discoverywidget.IOUtil.a();
       locala.getBundle(paramIndexWidgetResult);
       this.i.put(this.e, locala);
       if ((!paramIndexWidgetResult.redMark) || (paramIndexWidgetResult.tabRedMarkTip == null))
@@ -153,7 +153,7 @@ public class a
     a();
   }
 
-  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.BundlesManagerImpl.c paramc)
+  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.FileUitl.c paramc)
   {
     this.b = paramMicroApplicationContext;
     this.c = paramMicroApplicationContext.getApplicationContext();

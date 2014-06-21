@@ -64,7 +64,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final File file = new File(s6);
 			final BufferedInputStream bufferedInputStream2 = bufferedInputStream;
 			final File file2 = file;
-			com.alipay.mobile.quinox.utils.c.a(bufferedInputStream2, file2);
+			com.alipay.mobile.quinox.utils.FileUitl.saveInputStreamToFile(bufferedInputStream2, file2);
 			final BundlesManagerImpl c2 = this;
 			final File file3 = file;
 			final ZipFile zipFile = new ZipFile(file3);
@@ -139,7 +139,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final File file = new File(s6);
 			final BufferedInputStream bufferedInputStream2 = bufferedInputStream;
 			final File file2 = file;
-			com.alipay.mobile.quinox.utils.c.a(bufferedInputStream2, file2);
+			com.alipay.mobile.quinox.utils.FileUitl.saveInputStreamToFile(bufferedInputStream2, file2);
 			final File file3 = file;
 			final ZipFile zipFile = new ZipFile(file3);
 			final BundlesManagerImpl c2 = this;
@@ -322,7 +322,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	private void a(Map paramMap) {
-		com.alipay.mobile.quinox.classloader.BootstrapClassloader locala = j();
+		com.alipay.mobile.quinox.classloader.BootstrapClassLoader locala = j();
 		Iterator localIterator = paramMap.values().iterator();
 		while (localIterator.hasNext())
 			locala.b((AppBundle) localIterator.next());
@@ -502,12 +502,12 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final String f = a.getBundlePath();
 			final AppBundle h = this.h(c);
 			if (h != null) {
-				com.alipay.mobile.quinox.utils.c
-						.a(com.alipay.mobile.quinox.utils.b.a(h.getBundlePath(), this.c));
-				com.alipay.mobile.quinox.utils.c.a(h.getBundlePath());
+				com.alipay.mobile.quinox.utils.FileUitl
+						.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(h.getBundlePath(), this.c));
+				com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(h.getBundlePath());
 			}
-			com.alipay.mobile.quinox.utils.c.a(com.alipay.mobile.quinox.utils.b
-					.a(f, this.c));
+			com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
+					.getDexFullPath(f, this.c));
 			// TODO
 			// a.a(this.a(f, a.getBundleName() + "-" + a.k() +
 			// ".jar").getAbsolutePath());
@@ -1176,7 +1176,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 				try {
 					this.i.a(hashMap, false);
 					if (this.i(c)) {
-						if (com.alipay.mobile.quinox.utils.e.a(g.getBundleVersion(), this.h(c)
+						if (com.alipay.mobile.quinox.utils.StringUtil.a(g.getBundleVersion(), this.h(c)
 								.getBundleVersion())) {
 							this.b(hashMap2);
 						}
@@ -1190,8 +1190,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 				}
 			}
 			this.b(hashMap2);
-			com.alipay.mobile.quinox.utils.c.a(com.alipay.mobile.quinox.utils.b
-					.a(s, this.c));
+			com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
+					.getDexFullPath(s, this.c));
 			this.j().a(g);
 			synchronized (this.h) {
 				this.h.putAll(hashMap2);
@@ -1427,10 +1427,10 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	@Override
-	public final com.alipay.mobile.quinox.classloader.BootstrapClassloader j() {
+	public final com.alipay.mobile.quinox.classloader.BootstrapClassLoader j() {
 		final ClassLoader classLoader = this.a.getClassLoader();
-		if (classLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassloader) {
-			return (com.alipay.mobile.quinox.classloader.BootstrapClassloader) classLoader;
+		if (classLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassLoader) {
+			return (com.alipay.mobile.quinox.classloader.BootstrapClassLoader) classLoader;
 		}
 		throw new RuntimeException("classloader error");
 	}

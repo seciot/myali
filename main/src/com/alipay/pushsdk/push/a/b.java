@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.d.c;
 public final class b
 {
   private BundlesManagerImpl a;
-  private e b;
+  private HostClassLoader b;
 
   public b(BundlesManagerImpl paramc)
   {

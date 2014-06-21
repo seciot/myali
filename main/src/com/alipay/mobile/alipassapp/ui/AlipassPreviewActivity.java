@@ -481,7 +481,7 @@ public class AlipassPreviewActivity extends BaseActivity
       this.k = ((APTitleBar)findViewById(R.id.titlebar));
       this.k.setTitleText(getResources().getString(R.string.alipass_preview_title));
       this.j = new com.alipay.mobile.alipassapp.biz.c.a(this.mApp);
-      this.n = new com.alipay.mobile.alipassapp.biz.BootstrapClassloader.a.a(this);
+      this.n = new com.alipay.mobile.alipassapp.biz.IOUtil.a.a(this);
       showProgressDialog("加载中...");
       f();
       return;

@@ -22,7 +22,7 @@ public class LauncherApplication extends Application {
 	private static final String[] a = { "mobile-base-commonbiz",
 			"mobile-framework-framework" };
 	private Object b;
-	private com.alipay.mobile.quinox.classloader.BootstrapClassloader c;
+	private com.alipay.mobile.quinox.classloader.BootstrapClassLoader c;
 	private Resources d;
 	private BundlesManager bundlesManager;
 	private BundleContext f;

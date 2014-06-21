@@ -2,13 +2,13 @@ package com.alipay.mobile.longlink.b.a;
 
 final class f extends Thread
 {
-  f(e parame)
+  f(HostClassLoader parame)
   {
   }
 
   public final void run()
   {
-    e.v(this.a, this);
+    HostClassLoader.v(this.a, this);
   }
 }
 

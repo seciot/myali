@@ -34,7 +34,7 @@ public final class o
 
   public static void setBundlePath(boolean paramBoolean)
   {
-    Dependable = paramBoolean;
+    Loadable = paramBoolean;
   }
 
   public static int stop()
@@ -86,12 +86,12 @@ public final class o
 
   public static long getBundlePath()
   {
-    return e;
+    return HostClassLoader;
   }
 
   public static boolean g()
   {
-    return Dependable;
+    return Loadable;
   }
 
   public static boolean hasResource()

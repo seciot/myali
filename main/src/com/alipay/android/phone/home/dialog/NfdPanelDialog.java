@@ -44,7 +44,7 @@ public class NfdPanelDialog extends Dialog
     setContentView(R.layout.k);
     this.c = ((NfdPanelView)findViewById(R.id.o));
     this.d = findViewById(R.id.y);
-    this.e = findViewById(R.id.e);
+    this.e = findViewById(R.id.HostClassLoader);
     this.f = findViewById(R.id.n);
     try
     {

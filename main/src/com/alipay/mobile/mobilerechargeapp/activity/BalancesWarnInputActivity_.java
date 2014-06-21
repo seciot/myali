@@ -19,7 +19,7 @@ public final class BalancesWarnInputActivity_ extends BalancesWarnInputActivity
   private void d()
   {
     this.b = ((APTextView)findViewById(R.id.q));
-    this.c = ((APButton)findViewById(R.id.Dependable));
+    this.c = ((APButton)findViewById(R.id.Loadable));
     this.d = ((APTextView)findViewById(R.id.DefaultThreadFactory));
     this.a = ((APButtonInputBox)findViewById(R.id.N));
     a();
@@ -53,7 +53,7 @@ public final class BalancesWarnInputActivity_ extends BalancesWarnInputActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.e);
+    setContentView(R.layout.HostClassLoader);
   }
 
   public final void setContentView(int paramInt)

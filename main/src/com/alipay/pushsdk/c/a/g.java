@@ -33,7 +33,7 @@ public final class g
   {
     this.b.put(DefaultThreadFactory.ZLog, paramString1);
     this.b.put(DefaultThreadFactory.f, paramString2);
-    this.b.put(DefaultThreadFactory.e, paramString3);
+    this.b.put(DefaultThreadFactory.HostClassLoader, paramString3);
     this.b.put(DefaultThreadFactory.BundlesManagerImpl, paramString4);
     this.b.put(DefaultThreadFactory.g, paramString5);
   }

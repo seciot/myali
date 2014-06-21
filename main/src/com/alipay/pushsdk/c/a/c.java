@@ -21,7 +21,7 @@ public final class c
   {
     if (AppBundle == true)
     {
-      BundlesManager = e;
+      BundlesManager = HostClassLoader;
       return;
     }
     BundlesManager = BundlesManagerImpl;

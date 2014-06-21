@@ -71,7 +71,7 @@ public final class WithdrawActivity_ extends WithdrawActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.e);
+    setContentView(R.layout.HostClassLoader);
   }
 
   public final boolean onKeyDown(int paramInt, KeyEvent paramKeyEvent)

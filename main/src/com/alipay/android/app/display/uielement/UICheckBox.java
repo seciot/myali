@@ -38,7 +38,7 @@ public class UICheckBox extends BaseElement
     this.b = ((CheckBox)paramView.findViewById(R.id.ZLog));
     if (this.g)
     {
-      this.c = ((TextView)paramView.findViewById(R.id.e));
+      this.c = ((TextView)paramView.findViewById(R.id.HostClassLoader));
       if (!TextUtils.isEmpty(d()))
       {
         this.c.setVisibility(0);

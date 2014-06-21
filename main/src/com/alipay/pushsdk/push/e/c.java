@@ -16,11 +16,11 @@ public final class c extends ZLog
     if ((this.a.w()) || (o.hasResource()))
     {
       this.a.stop();
-      e.e(stop(), "80", "1");
+      HostClassLoader.e(stop(), "80", "1");
       return;
     }
     this.a.p();
-    e.e(stop(), "81", "8");
+    HostClassLoader.e(stop(), "81", "8");
   }
 }
 

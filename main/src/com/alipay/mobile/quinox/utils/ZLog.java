@@ -3,7 +3,7 @@ package com.alipay.mobile.quinox.utils;
 import android.util.Log;
 
 public final class ZLog {
-	private static boolean debug = false;
+	private static boolean debug = true;
 
 	//#a
 	public static void v(String paramString1, String paramString2) {

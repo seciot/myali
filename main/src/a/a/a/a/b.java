@@ -2,7 +2,7 @@ package a.a.a.a;
 
 import a.a.a.e;
 
-public abstract interface b extends e
+public abstract interface b extends HostClassLoader
 {
 }
 

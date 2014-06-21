@@ -23,7 +23,7 @@ final class e
       UserProposalRes localUserProposalRes = localUserProposalFacade.saveUserProposalInfo(localUserProposalReq);
       if ((localUserProposalRes != null) && ((localUserProposalRes.resultStatus == 1000) || (localUserProposalRes.resultStatus == 5002)))
       {
-        this.a.alert(null, this.a.getText(R.string.V).toString(), this.a.getText(R.string.e).toString(), new f(this), null, null);
+        this.a.alert(null, this.a.getText(R.string.V).toString(), this.a.getText(R.string.HostClassLoader).toString(), new f(this), null, null);
         return;
       }
       this.a.toast("提交失败，请稍候再试", 1);

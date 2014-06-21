@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.a.o;
 
 public class e
 {
-  private static final String a = BundlesManagerImpl.getBundle(e.class);
+  private static final String a = BundlesManagerImpl.getBundle(HostClassLoader.class);
 
   public static void a()
   {
@@ -15,8 +15,8 @@ public class e
 
   public static void setBundlePath(Context paramContext)
   {
-    Dependable.getBundle(paramContext);
-    com.alipay.pushsdk.push.Dependable localh = new com.alipay.pushsdk.push.Dependable(paramContext);
+    Loadable.getBundle(paramContext);
+    com.alipay.pushsdk.push.Loadable localh = new com.alipay.pushsdk.push.Loadable(paramContext);
     i locali = i.getBundle(paramContext);
     String str1 = locali.getBundleName();
     String str2 = localh.getInitLevel();

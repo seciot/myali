@@ -50,7 +50,7 @@ public final class d
     this.a.put(paramString2, paramString1);
     if (this.b)
     {
-      BackgroundExecutor.execute(new e(this));
+      BackgroundExecutor.execute(new HostClassLoader(this));
       this.b = false;
     }
   }

@@ -47,7 +47,7 @@ public final class a extends BaseAdapter
   public final View getView(int paramInt, View paramView, ViewGroup paramViewGroup)
   {
     if (paramView == null)
-      paramView = this.c.inflate(R.layout.Dependable, null);
+      paramView = this.c.inflate(R.layout.Loadable, null);
     ((TextView)paramView.findViewById(R.id.aU)).setText(((AuthInfo)this.b.get(paramInt)).getTitle());
     ((TextView)paramView.findViewById(R.id.aS)).setText(((AuthInfo)this.b.get(paramInt)).getContent());
     this.d.startLoad("owner", "group", ((AuthInfo)this.b.get(paramInt)).getTargetLogo(), new BundlesManager(this, paramView), 0, 0);

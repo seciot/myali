@@ -9,7 +9,7 @@ public class AppsCenterActivity extends BaseFragmentActivity
   public void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.e);
+    setContentView(R.layout.HostClassLoader);
   }
 }
 

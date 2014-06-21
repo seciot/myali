@@ -35,7 +35,7 @@ public final class c
     if (this.c == ZLog.AppBundle)
       return new AppBundle();
     if (this.c == ZLog.BundlesManagerImpl)
-      return new e(this);
+      return new HostClassLoader(this);
     return null;
   }
 }

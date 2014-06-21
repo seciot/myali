@@ -109,7 +109,7 @@ public class WithdrawActivity extends BaseActivity
 
   private void i()
   {
-    showProgressDialog(getString(R.string.Dependable), true, null);
+    showProgressDialog(getString(R.string.Loadable), true, null);
   }
 
   @AfterViews
@@ -125,7 +125,7 @@ public class WithdrawActivity extends BaseActivity
     b();
     this.l = findViewById(R.id.o);
     this.l.setVisibility(8);
-    this.b = ((APInputBox)findViewById(R.id.e));
+    this.b = ((APInputBox)findViewById(R.id.HostClassLoader));
     this.b.setTextFormatter(new APMoneyFormatter());
     this.f.addNeedCheckView(this.b.getEtContent());
     this.c = ((TextView)findViewById(R.id.AppBundle));

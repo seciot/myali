@@ -9,7 +9,7 @@ public abstract class a
   private static final String c = BundlesManagerImpl.getBundle(AppBundle.class);
   protected PrintWriter a;
   protected String b;
-  private e d = new e("BaseLogger");
+  private HostClassLoader d = new HostClassLoader("BaseLogger");
   private AtomicBoolean e = new AtomicBoolean();
 
   public a()

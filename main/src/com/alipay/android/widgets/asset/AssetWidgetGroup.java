@@ -123,7 +123,7 @@ public class AssetWidgetGroup
   public View getIndicator()
   {
     this.o = ((RelativeLayout)LayoutInflater.from(this.c).inflate(R.layout.BundlesManagerImpl, null));
-    this.h = ((WealthWidgetMsgFlag)this.o.findViewById(R.id.e));
+    this.h = ((WealthWidgetMsgFlag)this.o.findViewById(R.id.HostClassLoader));
     this.h.setBindingWidget("50000003");
     this.n = new WealthWidgetMsgFlag(this.c);
     this.n.setWidgetType(WealthWidgetMsgFlag.MSG_WIDGET_TYPE_SDK);

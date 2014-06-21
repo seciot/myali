@@ -11,7 +11,7 @@ public class StartupFragment extends Fragment
 {
   public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
   {
-    return paramLayoutInflater.inflate(R.layout.e, paramViewGroup, false);
+    return paramLayoutInflater.inflate(R.layout.HostClassLoader, paramViewGroup, false);
   }
 }
 

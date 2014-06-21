@@ -5,7 +5,7 @@ import com.alipay.pushsdk.push.j;
 public class b
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(BundlesManager.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.getBundle(BundlesManager.class);
   private final j b;
 
   public b(j paramj)

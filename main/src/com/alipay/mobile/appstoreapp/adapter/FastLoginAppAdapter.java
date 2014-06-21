@@ -199,14 +199,14 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       label322: if (localApp.isDownloading())
       {
         localViewHolder.e.setBackgroundResource(R.drawable.AppBundle);
-        localViewHolder.e.setText(R.string.e);
+        localViewHolder.e.setText(R.string.HostClassLoader);
         localViewHolder.e.setTextColor(-7829368);
         localViewHolder.e.setEnabled(false);
       }
       else
       {
         localViewHolder.e.setBackgroundResource(R.drawable.BundlesManagerImpl);
-        localViewHolder.e.setText(R.string.Dependable);
+        localViewHolder.e.setText(R.string.Loadable);
         localViewHolder.e.setTextColor(-1);
         localViewHolder.e.setEnabled(true);
       }

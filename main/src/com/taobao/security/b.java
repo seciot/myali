@@ -12,8 +12,8 @@ public final class b
     ArrayList localArrayList = new ArrayList();
     a = localArrayList;
     localArrayList.add(new AppBundle.ExceptionHandler((byte)0));
-    a.add(new MinPriorityThreadFactory.b((byte)0));
-    a.add(new BundlesManagerImpl.c((byte)0));
+    a.add(new DexUtil.b((byte)0));
+    a.add(new FileUitl.c((byte)0));
   }
 
   public static void a()

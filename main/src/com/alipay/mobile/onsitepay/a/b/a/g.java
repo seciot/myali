@@ -18,7 +18,7 @@ final class g extends BroadcastReceiver
       String str = paramIntent.getStringExtra("payload");
       new StringBuilder("payLoadData=").append(str).toString();
       if (str != null)
-        BackgroundExecutor.execute(new Dependable(this.a, str));
+        BackgroundExecutor.execute(new Loadable(this.a, str));
     }
   }
 }

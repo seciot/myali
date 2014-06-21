@@ -18,15 +18,15 @@ public class b extends ZLog
     long l1 = o.getInitLevel();
     long l2 = System.currentTimeMillis() - l1;
     BundlesManagerImpl.e(3, BundlesManagerImpl, "netTriggerEvent_onExecute lostedTime=isConnected=" + this.a.r() + l2 + ", lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l1));
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.Dependable, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, 0L + System.currentTimeMillis(), "osTriggerNetChange_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l1) + " trigger=14");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.Loadable, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, 0L + System.currentTimeMillis(), "osTriggerNetChange_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l1) + " trigger=14");
     if (this.a.r())
     {
       this.a.u();
-      e.e(stop(), "41", "3");
+      HostClassLoader.e(stop(), "41", "3");
       return;
     }
     this.a.stop();
-    e.e(stop(), "40", "1");
+    HostClassLoader.e(stop(), "40", "1");
   }
 }
 
