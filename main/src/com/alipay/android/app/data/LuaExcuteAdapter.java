@@ -59,13 +59,13 @@ public class LuaExcuteAdapter
       if (this.mLuaHelper == null)
       {
         this.mLuaHelper = new LuaNativeHelper();
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
-        this.mLuaHelper.a(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
+        this.mLuaHelper.getBundle(this);
       }
       return;
       this.mData = null;

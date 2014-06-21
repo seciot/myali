@@ -326,7 +326,7 @@ public class AlipassQueryCardActivity extends BaseActivity
       dismissProgressDialog();
       if (!k())
       {
-        a(null);
+        getBundle(null);
         return;
         if ((localKabaoCommonResult != null) && ("1911".equalsIgnoreCase(localKabaoCommonResult.resultCode)) && (StringUtils.isNotBlank(localKabaoCommonResult.resultDesc)))
         {
@@ -481,7 +481,7 @@ public class AlipassQueryCardActivity extends BaseActivity
         dismissProgressDialog();
       }
       while (k());
-      a(null);
+      getBundle(null);
     }
   }
 
@@ -562,7 +562,7 @@ public class AlipassQueryCardActivity extends BaseActivity
       {
         if (i2 == 0)
           break label350;
-        a(null);
+        getBundle(null);
         i1 = 0;
         if (i1 != 0)
           a();
@@ -635,7 +635,7 @@ public class AlipassQueryCardActivity extends BaseActivity
       }
       if (!b)
       {
-        a(null);
+        getBundle(null);
         b = true;
       }
     }

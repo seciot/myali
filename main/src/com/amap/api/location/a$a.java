@@ -16,12 +16,12 @@ class a$a extends Handler
   {
     if (paramMessage.what == AppBundle.a)
     {
-      Iterator localIterator = AppBundle.d().iterator();
+      Iterator localIterator = AppBundle.getInitLevel().iterator();
       while (localIterator.hasNext())
         ((f)localIterator.next()).c.onLocationChanged((AMapLocation)paramMessage.obj);
       AppBundle.a(this.a, (AMapLocation)paramMessage.obj);
-      if (AppBundle.a(this.a) != null)
-        c.a(AppBundle.b(this.a), AppBundle.a(this.a));
+      if (AppBundle.getBundle(this.a) != null)
+        c.a(AppBundle.b(this.a), AppBundle.getBundle(this.a));
     }
   }
 }

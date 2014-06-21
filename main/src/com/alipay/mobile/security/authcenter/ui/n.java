@@ -9,7 +9,7 @@ final class n
 
   public final void run()
   {
-    CompleteUserInfoActivity_.a(this.a);
+    CompleteUserInfoActivity_.getBundle(this.a);
   }
 }
 

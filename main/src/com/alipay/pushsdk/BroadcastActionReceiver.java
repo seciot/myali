@@ -9,7 +9,7 @@ import com.alipay.pushsdk.c.a.d;
 
 public class BroadcastActionReceiver extends BroadcastReceiver
 {
-  private static final String a = BundlesManagerImpl.a(BroadcastActionReceiver.class);
+  private static final String a = BundlesManagerImpl.getBundle(BroadcastActionReceiver.class);
 
   private static void a(Context paramContext, String paramString)
   {

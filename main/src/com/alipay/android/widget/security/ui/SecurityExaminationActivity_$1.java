@@ -9,7 +9,7 @@ class SecurityExaminationActivity_$1
 
   public void run()
   {
-    SecurityExaminationActivity_.a(this.a);
+    SecurityExaminationActivity_.getBundle(this.a);
   }
 }
 

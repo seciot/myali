@@ -14,7 +14,7 @@ final class SecurityMatrix$a
 
   public final void run()
   {
-    SecurityMatrix.a(this.a);
+    SecurityMatrix.getBundle(this.a);
   }
 }
 

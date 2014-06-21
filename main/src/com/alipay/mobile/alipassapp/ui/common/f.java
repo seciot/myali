@@ -17,7 +17,7 @@ final class f extends Handler
       return;
     case 2001:
     }
-    a.a(this.a);
+    a.getBundle(this.a);
   }
 }
 

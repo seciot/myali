@@ -19,7 +19,7 @@ final class av
     int i;
     if (this.a.getBundleName())
     {
-      PassListResult localPassListResult3 = AlipassListActivity.f(this.a).a(this.a.getAllBundles());
+      PassListResult localPassListResult3 = AlipassListActivity.f(this.a).getBundle(this.a.getAllBundles());
       this.a.b(new a(localPassListResult3, 0));
       if ((localPassListResult3 == null) || (localPassListResult3.getHasCurrent() != 1))
         i = 1;
@@ -27,7 +27,7 @@ final class av
     while (true)
     {
       int k;
-      if (this.a.d())
+      if (this.a.getInitLevel())
       {
         PassListResult localPassListResult2 = AlipassListActivity.f(this.a).c(this.a.getAllBundles());
         this.a.b(new a(localPassListResult2, 1));
@@ -41,10 +41,10 @@ final class av
         if (j != 0)
         {
           this.a.showProgressDialog("加载中", true, AlipassListActivity.c(this.a));
-          AlipassListActivity.a(this.a).set(false);
+          AlipassListActivity.getBundle(this.a).set(false);
           locala1.d = true;
           AlipassListActivity.b(this.a).set(true);
-          a locala2 = AlipassListActivity.f(this.a).a(this.a.j(), this.a.d());
+          a locala2 = AlipassListActivity.f(this.a).a(this.a.getRequireBundleName(), this.a.getInitLevel());
           locala1.e = locala2.e;
           locala1.a = locala2.a;
           if ((locala1.e != null) && ((locala1.e instanceof RpcException)) && (locala1.d) && (((RpcException)locala1.e).getCode() == 2))
@@ -63,20 +63,20 @@ final class av
           break label129;
           if (this.a.getBundleName())
           {
-            PassListResult localPassListResult1 = AlipassListActivity.f(this.a).a(this.a.getAllBundles());
+            PassListResult localPassListResult1 = AlipassListActivity.f(this.a).getBundle(this.a.getAllBundles());
             this.a.b(new a(localPassListResult1, 0));
           }
           this.a.b(locala1);
           AlipassListActivity.b(this.a).set(false);
           if (j != 0)
             this.a.dismissProgressDialog();
-          while (this.a.d())
+          while (this.a.getInitLevel())
           {
             AlipassListActivity.a(this.a, this.a.getAllBundles());
             return;
-            this.a.a(true);
+            this.a.getBundle(true);
             AlipassListActivity.d(this.a);
-            this.a.a(false);
+            this.a.getBundle(false);
           }
         }
       }

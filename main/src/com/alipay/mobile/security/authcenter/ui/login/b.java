@@ -14,12 +14,12 @@ final class b
 
   public final void onFocusChange(View paramView, boolean paramBoolean)
   {
-    if ((a.a(this.a).getText().length() > 0) && (paramBoolean))
+    if ((a.getBundle(this.a).getText().length() > 0) && (paramBoolean))
     {
-      this.a.a(true);
+      this.a.getBundle(true);
       return;
     }
-    this.a.a(false);
+    this.a.getBundle(false);
   }
 }
 

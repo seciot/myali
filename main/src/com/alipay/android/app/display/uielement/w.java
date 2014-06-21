@@ -14,7 +14,7 @@ final class w
   public final void onClick(View paramView)
   {
     x localx = new x(this, EventType.b);
-    this.a.a(localx);
+    this.a.getBundle(localx);
   }
 }
 

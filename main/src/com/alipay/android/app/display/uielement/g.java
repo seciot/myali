@@ -13,11 +13,11 @@ final class g
 
   public final void onFocusChange(View paramView, boolean paramBoolean)
   {
-    BaseEditElement.a(this.a);
+    BaseEditElement.getBundle(this.a);
     if (!paramBoolean)
       BaseEditElement.b(this.a);
     h localh = new h(this, EventType.d, paramBoolean);
-    this.a.a(localh);
+    this.a.getBundle(localh);
   }
 }
 

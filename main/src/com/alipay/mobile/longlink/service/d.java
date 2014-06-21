@@ -19,12 +19,12 @@ final class d
     if (this.a.p())
       try
       {
-        com.alipay.mobile.longlink.b.c.a locala = c.a(a.i(this.b));
-        locala.a(3);
+        com.alipay.mobile.longlink.b.c.a locala = c.getBundle(a.i(this.b));
+        locala.getBundle(3);
         locala.b(0);
-        locala.a("");
+        locala.getBundle("");
         com.alipay.mobile.longlink.c.a.a(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.getBundleName());
-        this.a.d().a(locala);
+        this.a.d().getBundle(locala);
         return;
       }
       catch (Exception localException)

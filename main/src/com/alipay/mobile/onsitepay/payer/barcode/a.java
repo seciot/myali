@@ -20,7 +20,7 @@ final class a extends Handler
       if (this.b > 0)
       {
         this.a.n.setMax(1440);
-        if (StringUtils.isNotBlank(BarcodePayActivity.a(this.a)))
+        if (StringUtils.isNotBlank(BarcodePayActivity.getBundle(this.a)))
         {
           this.a.n.setProgress(this.b);
           this.b = (-1 + this.b);

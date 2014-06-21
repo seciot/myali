@@ -15,9 +15,9 @@ final class cn
 
   public final void onClick(View paramView)
   {
-    if ((AlipassRemindActivity.a(this.a) == null) || (!AlipassRemindActivity.b(this.a)) || ((StringUtils.equalsIgnoreCase(AlipassRemindActivity.c(this.a), "COUPON")) && (StringUtils.equals(AlipassRemindActivity.a(this.a).getRemindSwitch(), "1")) && (!AlipassRemindActivity.a(this.a, AlipassRemindActivity.d(this.a).getTime()))))
+    if ((AlipassRemindActivity.getBundle(this.a) == null) || (!AlipassRemindActivity.b(this.a)) || ((StringUtils.equalsIgnoreCase(AlipassRemindActivity.c(this.a), "COUPON")) && (StringUtils.equals(AlipassRemindActivity.getBundle(this.a).getRemindSwitch(), "1")) && (!AlipassRemindActivity.a(this.a, AlipassRemindActivity.d(this.a).getTime()))))
       return;
-    this.a.a(AlipassRemindActivity.a(this.a));
+    this.a.getBundle(AlipassRemindActivity.getBundle(this.a));
   }
 }
 

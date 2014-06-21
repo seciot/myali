@@ -13,7 +13,7 @@ final class bc
   public final void afterTextChanged(Editable paramEditable)
   {
     new StringBuilder("@ afterTextChanged : s=").append(paramEditable).append("-").toString();
-    this.a.a(paramEditable);
+    this.a.getBundle(paramEditable);
   }
 
   public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

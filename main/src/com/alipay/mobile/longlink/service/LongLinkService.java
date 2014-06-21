@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 public class LongLinkService extends Service
 {
   public static a a = null;
-  private static final String b = com.alipay.mobile.longlink.c.a.a(LongLinkService.class);
+  private static final String b = com.alipay.mobile.longlink.c.a.getBundle(LongLinkService.class);
   private ExecutorService c = Executors.newSingleThreadExecutor();
   private o d = new o(this);
   private p e = new p(this);

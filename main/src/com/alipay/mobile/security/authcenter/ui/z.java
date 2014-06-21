@@ -23,7 +23,7 @@ final class z
       return;
     }
     localLoginInfo.d("T");
-    this.a.a(localLoginInfo);
+    this.a.getBundle(localLoginInfo);
   }
 }
 

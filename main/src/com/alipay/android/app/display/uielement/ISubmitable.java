@@ -2,7 +2,7 @@ package com.alipay.android.app.display.uielement;
 
 public abstract interface ISubmitable
 {
-  public abstract ISubmitable.SubmitValue j();
+  public abstract ISubmitable.SubmitValue getRequireBundleName();
 
   public abstract boolean k();
 }

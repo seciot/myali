@@ -14,7 +14,7 @@ class SecurityCertifiedResultActivity$1
 
   public void onClick(View paramView)
   {
-    SecurityCertifiedResultActivity.a(SecurityCertifiedResultActivity.a(this.a));
+    SecurityCertifiedResultActivity.getBundle(SecurityCertifiedResultActivity.getBundle(this.a));
     this.a.finish();
     SecurityCertifiedResultActivity.d(this.a).getMicroApplicationContext().finishApp(SecurityCertifiedResultActivity.b(this.a).getAppId(), SecurityCertifiedResultActivity.c(this.a).getAppId(), null);
   }

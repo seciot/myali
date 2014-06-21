@@ -16,9 +16,9 @@ final class e
     {
       a.a();
       Process.setThreadPriority(10);
-      this.a.f();
-      TaskManager.a().a(this.a);
-      synchronized (SystemTimeTask.a(this.a))
+      this.a.getBundlePath();
+      TaskManager.a().getBundle(this.a);
+      synchronized (SystemTimeTask.getBundle(this.a))
       {
         SystemTimeTask.b(this.a);
         return;
@@ -27,7 +27,7 @@ final class e
     catch (Exception localException)
     {
       LogUtils.a(localException);
-      synchronized (SystemTimeTask.a(this.a))
+      synchronized (SystemTimeTask.getBundle(this.a))
       {
         SystemTimeTask.b(this.a);
         return;
@@ -35,7 +35,7 @@ final class e
     }
     finally
     {
-      synchronized (SystemTimeTask.a(this.a))
+      synchronized (SystemTimeTask.getBundle(this.a))
       {
         SystemTimeTask.b(this.a);
         throw localObject1;

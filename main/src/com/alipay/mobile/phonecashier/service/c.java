@@ -12,7 +12,7 @@ final class c
 
   public final void run()
   {
-    PayHelper.a(this.a.getMicroApplicationContext().getApplicationContext()).a();
+    PayHelper.getBundle(this.a.getMicroApplicationContext().getApplicationContext()).a();
   }
 }
 

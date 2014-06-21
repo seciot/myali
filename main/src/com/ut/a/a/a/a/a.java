@@ -37,7 +37,7 @@ public class a extends BundlesManager
     this(76, BundlesManager, paramBoolean);
   }
 
-  public static String a(byte[] paramArrayOfByte)
+  public static String setBundlePath(byte[] paramArrayOfByte)
   {
     return BundlesManagerImpl.removeBundle(a(paramArrayOfByte, false));
   }
@@ -78,7 +78,7 @@ public class a extends BundlesManager
         this.eof = true;
         if ((this.s != 0) || (this.o != 0))
         {
-          a(this.j);
+          getBundle(this.j);
           int i6 = this.pos;
           switch (this.s)
           {
@@ -141,7 +141,7 @@ public class a extends BundlesManager
         int m = 0;
         while (m < paramInt2)
         {
-          a(this.j);
+          getBundle(this.j);
           this.s = ((1 + this.s) % 3);
           int n = paramInt1 + 1;
           int i1 = paramArrayOfByte[paramInt1];
@@ -181,7 +181,7 @@ public class a extends BundlesManager
     }
   }
 
-  protected boolean a(byte paramByte)
+  protected boolean setBundlePath(byte paramByte)
   {
     return (paramByte >= 0) && (paramByte < this.g.length) && (this.g[paramByte] != -1);
   }

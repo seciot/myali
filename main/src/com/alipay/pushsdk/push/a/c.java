@@ -46,7 +46,7 @@ public final class c
     this.h = System.getProperty("javax.net.ssl.keyStore");
     this.i = "jks";
     this.j = "pkcs11.config";
-    this.t = paramc.d();
+    this.t = paramc.getInitLevel();
   }
 
   public final String a()
@@ -54,7 +54,7 @@ public final class c
     return this.c;
   }
 
-  public final void a(d paramd)
+  public final void setBundlePath(d paramd)
   {
     this.v = paramd;
   }
@@ -69,17 +69,17 @@ public final class c
     return this.a;
   }
 
-  public final d d()
+  public final d getInitLevel()
   {
     return this.v;
   }
 
-  public final void e()
+  public final void getFullBundleName()
   {
     this.p = false;
   }
 
-  public final void f()
+  public final void getBundlePath()
   {
     this.q = false;
   }

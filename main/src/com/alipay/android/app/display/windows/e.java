@@ -11,8 +11,8 @@ final class e
 
   public final void run()
   {
-    if (MspWindow.a(this.a) != null)
-      MspWindow.a(this.a).loading(0);
+    if (MspWindow.getBundle(this.a) != null)
+      MspWindow.getBundle(this.a).loading(0);
   }
 }
 

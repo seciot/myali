@@ -9,7 +9,7 @@ final class k
 
   public final void run()
   {
-    BalancesWarnCmsActivity_.a(this.a);
+    BalancesWarnCmsActivity_.getBundle(this.a);
   }
 }
 

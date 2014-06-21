@@ -51,10 +51,10 @@ public class PbocCard
       Iso7816.Tag localTag = new Iso7816.Tag(localIsoDep);
       localTag.getBundleName();
       Object localObject;
-      if (!localTag.d())
+      if (!localTag.getInitLevel())
       {
         localObject = new LeavedCard(localTag);
-        localTag.e();
+        localTag.getFullBundleName();
         if (localObject == null)
           break label294;
       }
@@ -63,58 +63,58 @@ public class PbocCard
         if (localObject == null)
           break label307;
         return ((PbocCard)localObject).a();
-        localObject = MyBankCard.a(localTag);
+        localObject = MyBankCard.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = ShenzhenTong.a(localTag);
+        localObject = ShenzhenTong.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = BeijingMunicipal.a(localTag);
+        localObject = BeijingMunicipal.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = ChanganTong.a(localTag);
+        localObject = ChanganTong.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = WuhanTong.a(localTag);
+        localObject = WuhanTong.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = YangchengTong.a(localTag);
+        localObject = YangchengTong.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = SuzhouTong.a(localTag);
+        localObject = SuzhouTong.getBundle(localTag);
         if (localObject != null)
           break;
-        if (!localTag.d())
+        if (!localTag.getInitLevel())
         {
           localObject = new LeavedCard(localTag);
           break;
@@ -204,7 +204,7 @@ public class PbocCard
     return localCardInfo;
   }
 
-  protected final void a(Iso7816.Response paramResponse)
+  protected final void setBundlePath(Iso7816.Response paramResponse)
   {
     if ((!paramResponse.getBundleName()) || (paramResponse.a() < 4))
     {

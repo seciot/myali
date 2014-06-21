@@ -17,8 +17,8 @@ final class fd
     try
     {
       MemberFirstDetailActivity.a();
-      Bitmap localBitmap = i.a(this.a);
-      if (MemberFirstDetailActivity.a(this.d) == null)
+      Bitmap localBitmap = i.getBundle(this.a);
+      if (MemberFirstDetailActivity.getBundle(this.d) == null)
       {
         MemberFirstDetailActivity.a();
         return;

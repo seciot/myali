@@ -16,7 +16,7 @@ final class a extends Handler
     String str = (String)paramMessage.obj;
     if (!StringUtils.isBlank(str))
     {
-      str = com.alipay.mobile.alipassnfcapp.a.a.a(str + AlipassSendDynmicSoundViewController.access$000(this.a));
+      str = com.alipay.mobile.alipassnfcapp.a.a.getBundle(str + AlipassSendDynmicSoundViewController.access$000(this.a));
       AlipassSendDynmicSoundViewController.access$100(this.a).startPayBridge(str);
     }
     this.a.getRootController().dismissProgressDialog();

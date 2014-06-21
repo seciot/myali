@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class e
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(e.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(e.class);
   private final j b;
 
   public e(j paramj)
@@ -19,15 +19,15 @@ public class e
     this.b = paramj;
   }
 
-  public final void a(AppBundle parama)
+  public final void setBundlePath(AppBundle parama)
   {
     String str1;
-    if (new f(0).a(parama))
+    if (new f(0).getBundle(parama))
     {
-      this.b.a(true);
-      o.a(System.currentTimeMillis());
+      this.b.getBundle(true);
+      o.getBundle(System.currentTimeMillis());
       this.b.b(System.currentTimeMillis());
-      str1 = parama.h();
+      str1 = parama.hasResource();
     }
     try
     {
@@ -37,10 +37,10 @@ public class e
       o.d(localJSONObject.optBoolean("updateLBSInfo"));
       String str2 = localJSONObject.optString("heartTimeout");
       if ((str2 != null) && (str2.length() > 0))
-        o.a(Integer.parseInt(str2));
+        o.getBundle(Integer.parseInt(str2));
       String str3 = localJSONObject.optString("ctrlSelf");
       if ((str3 != null) && (str3.equalsIgnoreCase("false")))
-        o.a(false);
+        o.getBundle(false);
       while (true)
       {
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket ctrlSelf=" + o.g());
@@ -48,21 +48,21 @@ public class e
         if ((str4 == null) || (!str4.equalsIgnoreCase("false")))
           break;
         o.b(false);
-        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket ctrlAlways=" + o.h());
+        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket ctrlAlways=" + o.hasResource());
         j.q();
-        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket() reconnectTime=" + o.getBundleName() + "s, keepLiveTime=" + o.l() + "s, updateLBSInfo=" + o.j());
+        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket() reconnectTime=" + o.getBundleName() + "s, keepLiveTime=" + o.l() + "s, updateLBSInfo=" + o.getRequireBundleName());
         d.a(d.s, d.y, System.currentTimeMillis(), d.y, 1000L + System.currentTimeMillis(), "RegisterPacketListener_processPacket:reconnectTime=" + o.getBundleName() + " keepLiveTime=" + o.l());
         this.b.v();
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.e.a("32", "01", "3");
         return;
-        o.a(true);
+        o.getBundle(true);
       }
     }
     catch (JSONException localJSONException)
     {
       while (true)
       {
-        this.b.a(false);
+        this.b.getBundle(false);
         localJSONException.printStackTrace();
         continue;
         o.b(true);

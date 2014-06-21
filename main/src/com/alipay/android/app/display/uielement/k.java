@@ -13,7 +13,7 @@ final class k
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    BaseEditElement.a(this.a);
+    BaseEditElement.getBundle(this.a);
     if (this.a.b == null)
     {
       BaseEditElement.a(this.a, paramEditable.toString());

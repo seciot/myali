@@ -20,8 +20,8 @@ final class al
     c localc = (c)paramView.getTag();
     int i = localc.a;
     b localb = (b)MultiPictureSelectorActivity.c(this.a).get(i);
-    localb.a(false);
-    localb.a(null);
+    localb.getBundle(false);
+    localb.getBundle(null);
     MultiPictureSelectorActivity.l(this.a);
     MultiPictureSelectorActivity.k(this.a).removeBundle(localb.a());
     MultiPictureSelectorActivity.j(this.a).removeView(paramView);

@@ -14,10 +14,10 @@ final class e
 
   public final void a()
   {
-    if (TextUtils.isEmpty(this.a.e()))
+    if (TextUtils.isEmpty(this.a.getFullBundleName()))
       return;
     MspEventArgs localMspEventArgs = new MspEventArgs(EventType.z);
-    this.a.a(localMspEventArgs);
+    this.a.getBundle(localMspEventArgs);
   }
 }
 

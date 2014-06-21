@@ -69,7 +69,7 @@ public class CouponPrimaryFieldLayout extends FrameLayout
           localAPTextView2.setText(localEinfoFields.getValue());
           if ((localEinfoFields.getValue() != null) && (localEinfoFields.getValue().length() > 0))
           {
-            int j = a.a(localEinfoFields.getType());
+            int j = a.getBundle(localEinfoFields.getType());
             if (j > 0)
             {
               localAPTextView2.setCompoundDrawablesWithIntrinsicBounds(this.mContext.getResources().getDrawable(j), null, null, null);

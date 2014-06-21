@@ -12,7 +12,7 @@ final class d
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    if (AlipayUserLoginFragment.a(this.a))
+    if (AlipayUserLoginFragment.getBundle(this.a))
     {
       AlipayUserLoginFragment.b(this.a);
       paramEditable.clear();

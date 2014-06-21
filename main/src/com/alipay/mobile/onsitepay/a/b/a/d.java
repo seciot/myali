@@ -38,7 +38,7 @@ public final class d
     this.c = true;
   }
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.a.removeBundle(paramString);
   }

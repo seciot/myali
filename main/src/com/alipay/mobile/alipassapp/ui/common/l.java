@@ -11,7 +11,7 @@ final class l
 
   public final void run()
   {
-    k.c(this.b).addView(k.a(this.b, k.a(this.b), k.b(this.b), this.a), -1, -1);
+    k.c(this.b).addView(k.a(this.b, k.getBundle(this.b), k.b(this.b), this.a), -1, -1);
   }
 }
 

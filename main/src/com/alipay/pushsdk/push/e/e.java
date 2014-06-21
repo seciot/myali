@@ -16,7 +16,7 @@ public final class e
     while (true)
     {
       if (localObject != null)
-        ((d)localObject).a(paramString);
+        ((d)localObject).getBundle(paramString);
       return localObject;
       label53: if (paramString.equalsIgnoreCase("10"))
       {

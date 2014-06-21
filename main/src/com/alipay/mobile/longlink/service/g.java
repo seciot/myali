@@ -17,11 +17,11 @@ final class g
     com.alipay.mobile.longlink.c.a.a(4, a.x(), "===== ReconnectTask() Runnable=====");
     synchronized (this.b)
     {
-      if (this.a.d() != null)
-        this.b.d().f();
+      if (this.a.getInitLevel() != null)
+        this.b.getInitLevel().getBundlePath();
       this.a.w();
       this.a.u();
-      this.a.a(false);
+      this.a.getBundle(false);
       if (this.a.q())
       {
         com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle.x(), "ReconnectTask() return because of flag(forcestopped).");

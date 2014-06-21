@@ -15,11 +15,11 @@ public final class d
     this.a = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
-    if (new f(2).a(parama))
-      str = parama.d();
+    if (new f(2).getBundle(parama))
+      str = parama.getInitLevel();
     try
     {
       m.b(new JSONObject(str).optInt("reconnectTime"));

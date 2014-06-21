@@ -9,7 +9,7 @@ final class z
 
   public final void run()
   {
-    FeedAssistantActivity_.a(this.a);
+    FeedAssistantActivity_.getBundle(this.a);
   }
 }
 

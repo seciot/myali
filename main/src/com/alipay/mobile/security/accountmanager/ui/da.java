@@ -30,7 +30,7 @@ final class da
     while (true)
     {
       ModifyPayPwdActivity.a(this.a, this.a.j.getText().toString());
-      if ((ModifyPayPwdActivity.a(this.a) == null) || ("".equals(ModifyPayPwdActivity.a(this.a))))
+      if ((ModifyPayPwdActivity.getBundle(this.a) == null) || ("".equals(ModifyPayPwdActivity.getBundle(this.a))))
         break;
       this.a.d.setEnabled(true);
       return;

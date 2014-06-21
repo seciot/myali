@@ -5,7 +5,7 @@ import com.alipay.kabaoprod.biz.mwallet.pass.result.IndexWidgetResult;
 
 public abstract interface b
 {
-  public abstract IndexWidgetResult a(HomePageWidgetReq paramHomePageWidgetReq);
+  public abstract IndexWidgetResult setBundlePath(HomePageWidgetReq paramHomePageWidgetReq);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

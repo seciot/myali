@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.j;
 
 public class f extends d
 {
-  private static final String c = BundlesManagerImpl.a(f.class);
+  private static final String c = BundlesManagerImpl.getBundle(f.class);
 
   public f(j paramj)
   {
@@ -21,7 +21,7 @@ public class f extends d
         this.a.b(0L);
         this.a.d(0L);
         BundlesManagerImpl.a(4, BundlesManagerImpl, "clearLastConnInfo done!");
-        this.a.a(System.currentTimeMillis());
+        this.a.getBundle(System.currentTimeMillis());
       }
     while (this.a.r())
     {
@@ -29,16 +29,16 @@ public class f extends d
       e.a(b(), "41", "3");
       return;
       BundlesManagerImpl.a(3, BundlesManagerImpl, "onPreExecute Connected is true.");
-      this.a.a(System.currentTimeMillis());
+      this.a.getBundle(System.currentTimeMillis());
     }
     this.a.b();
     e.a(b(), "40", "6");
   }
 
-  public final boolean d()
+  public final boolean getInitLevel()
   {
     boolean bool;
-    if (!e())
+    if (!getFullBundleName())
     {
       bool = false;
       e.a(b(), "10", "6");

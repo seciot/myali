@@ -63,17 +63,17 @@ public final class UserLoginFragment_ extends UserLoginFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.l = ((KeyboardHiddenAwareLayout)a(R.id.bQ));
-    this.m = ((APScrollView)a(R.id.ce));
-    this.d = ((CircularImageView)a(R.id.gn));
-    this.j = ((APButton)a(R.id.Y));
-    this.e = ((APSixNumberPwdInputBox)a(R.id.cj));
-    this.g = ((APButton)a(R.id.fQ));
-    this.h = ((APTextView)a(R.id.gk));
-    this.k = ((APButton)a(R.id.bi));
-    this.i = ((APButton)a(R.id.X));
-    this.f = ((APInputBox)a(R.id.bl));
-    this.r = ((APCheckCodeGetter)a(R.id.aB));
+    this.l = ((KeyboardHiddenAwareLayout)getBundle(R.id.bQ));
+    this.m = ((APScrollView)getBundle(R.id.ce));
+    this.d = ((CircularImageView)getBundle(R.id.gn));
+    this.j = ((APButton)getBundle(R.id.Y));
+    this.e = ((APSixNumberPwdInputBox)getBundle(R.id.cj));
+    this.g = ((APButton)getBundle(R.id.fQ));
+    this.h = ((APTextView)getBundle(R.id.gk));
+    this.k = ((APButton)getBundle(R.id.bi));
+    this.i = ((APButton)getBundle(R.id.X));
+    this.f = ((APInputBox)getBundle(R.id.bl));
+    this.r = ((APCheckCodeGetter)getBundle(R.id.aB));
     f();
   }
 }

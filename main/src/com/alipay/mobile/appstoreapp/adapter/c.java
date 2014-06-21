@@ -14,7 +14,7 @@ final class c
 
   public final void run()
   {
-    StateListDrawable localStateListDrawable = IconLoadHelper.a(this.a);
+    StateListDrawable localStateListDrawable = IconLoadHelper.getBundle(this.a);
     this.b.a.b.setImageDrawable(localStateListDrawable);
   }
 }

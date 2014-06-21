@@ -10,7 +10,7 @@ final class f
   public final void run()
   {
     this.a.c.f = false;
-    this.a.c.d();
+    this.a.c.getInitLevel();
   }
 }
 

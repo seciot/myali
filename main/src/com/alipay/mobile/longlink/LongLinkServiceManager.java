@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public final class LongLinkServiceManager
 {
-  private static final String LOGTAG = a.a(LongLinkServiceManager.class);
+  private static final String LOGTAG = a.getBundle(LongLinkServiceManager.class);
   private static LongLinkServiceManager instance;
   private ConcurrentHashMap mAppPktHanlderMap;
   private PacketHanlder mComPktHanlder;

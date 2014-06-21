@@ -23,7 +23,7 @@ final class i
     Message localMessage2 = Message.obtain(localMessage1);
     if (localMessage2 != null)
       localMessage2.sendToTarget();
-    CustomAlertDialog.b(this.a).obtainMessage(1, CustomAlertDialog.a(this.a)).sendToTarget();
+    CustomAlertDialog.b(this.a).obtainMessage(1, CustomAlertDialog.getBundle(this.a)).sendToTarget();
   }
 }
 

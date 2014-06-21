@@ -9,7 +9,7 @@ final class i
 
   public final void run()
   {
-    CompletePhoneUserInfoActivity_.a(this.a);
+    CompletePhoneUserInfoActivity_.getBundle(this.a);
   }
 }
 

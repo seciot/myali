@@ -12,7 +12,7 @@ final class k
 
   public final void onClick(View paramView)
   {
-    this.a.a(SecurityAccountQrCodeActivity.a(this.a));
+    this.a.getBundle(SecurityAccountQrCodeActivity.getBundle(this.a));
   }
 }
 

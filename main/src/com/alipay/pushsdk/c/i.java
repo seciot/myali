@@ -30,7 +30,7 @@ public final class i
         if (str3 != null)
           str3 = (str3 + "123456789012345").substring(0, 15);
         this.b = str3;
-        String str1 = d.a(paramContext).a("clientId");
+        String str1 = d.getBundle(paramContext).getBundle("clientId");
         if ((str1 != null) && (str1.length() > 0))
           this.d = str1;
         return;

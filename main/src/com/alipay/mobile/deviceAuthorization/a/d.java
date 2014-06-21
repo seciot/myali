@@ -29,7 +29,7 @@ public final class d extends BaseAdapter
     this.b = paramList;
   }
 
-  public final AuthOption a(int paramInt)
+  public final AuthOption setBundlePath(int paramInt)
   {
     return (AuthOption)this.b.get(paramInt);
   }

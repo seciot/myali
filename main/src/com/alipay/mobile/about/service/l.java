@@ -48,7 +48,7 @@ final class l
   public final void onFailed(DownloadRequest paramDownloadRequest, int paramInt, String paramString)
   {
     a.a = false;
-    a(this.b);
+    getBundle(this.b);
   }
 
   public final void onFinish(DownloadRequest paramDownloadRequest, String paramString)
@@ -62,7 +62,7 @@ final class l
       AlipayApplication.getInstance().getApplicationContext().startActivity(localIntent);
     }
     a(this.a, this.b);
-    a(this.b);
+    getBundle(this.b);
   }
 
   public final void onPrepare(DownloadRequest paramDownloadRequest)

@@ -15,7 +15,7 @@ final class au extends MspEventArgs
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.b.a(getEventType()));
+    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.b.getBundle(getEventType()));
   }
 }
 

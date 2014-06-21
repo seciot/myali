@@ -14,10 +14,10 @@ final class s
 
   public final void onSelect(int paramInt)
   {
-    if ((this.a != null) && (AlipassForShareActivity.a(this.b) != null))
+    if ((this.a != null) && (AlipassForShareActivity.getBundle(this.b) != null))
     {
-      ShareContent localShareContent = (ShareContent)AlipassForShareActivity.a(this.b).get(Integer.valueOf(paramInt));
-      AlipassForShareActivity.d();
+      ShareContent localShareContent = (ShareContent)AlipassForShareActivity.getBundle(this.b).get(Integer.valueOf(paramInt));
+      AlipassForShareActivity.getInitLevel();
       new StringBuilder("content=").append(localShareContent.toString()).append(";type=").append(paramInt).toString();
       this.a.silentShare(localShareContent, paramInt, AlipassForShareActivity.b(this.b));
     }

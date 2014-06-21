@@ -9,7 +9,7 @@ final class ae
 
   public final void run()
   {
-    TaobaoUserLoginFragment_.a(this.a);
+    TaobaoUserLoginFragment_.getBundle(this.a);
   }
 }
 

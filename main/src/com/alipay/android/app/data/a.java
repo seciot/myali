@@ -29,7 +29,7 @@ final class a
 
   public final Pair onExecutionAround(String paramString, Object paramObject, Object[] paramArrayOfObject)
   {
-    BizDataSource.a(this.a);
+    BizDataSource.getBundle(this.a);
     return null;
   }
 

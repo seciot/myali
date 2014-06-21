@@ -33,7 +33,7 @@ public class UICombobox extends BaseElement
     UIUtils.a(paramOption.c, new al(this, paramOption, paramTextView));
   }
 
-  private void a(UICombobox.Option paramOption)
+  private void setBundlePath(UICombobox.Option paramOption)
   {
     if (paramOption != null)
     {
@@ -153,7 +153,7 @@ public class UICombobox extends BaseElement
     return null;
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if (!super.s());
     while (TextUtils.isEmpty(this.a))

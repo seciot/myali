@@ -9,7 +9,7 @@ final class p
 
   public final void run()
   {
-    SecurityAccountQrCodeActivity_.a(this.a);
+    SecurityAccountQrCodeActivity_.getBundle(this.a);
   }
 }
 

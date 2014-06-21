@@ -20,11 +20,11 @@ final class j
     LogUtils.g();
     synchronized (PageForBrowser.c(this.a))
     {
-      PageForBrowser.a(this.a, IAlixPay.Stub.a(paramIBinder));
+      PageForBrowser.a(this.a, IAlixPay.Stub.getBundle(paramIBinder));
       try
       {
         LogUtils.g();
-        PageForBrowser.b(this.a).registerCallback(PageForBrowser.a(this.a));
+        PageForBrowser.b(this.a).registerCallback(PageForBrowser.getBundle(this.a));
         PageForBrowser.c(this.a).notify();
         return;
       }
@@ -41,7 +41,7 @@ final class j
     LogUtils.g();
     try
     {
-      PageForBrowser.b(this.a).unregisterCallback(PageForBrowser.a(this.a));
+      PageForBrowser.b(this.a).unregisterCallback(PageForBrowser.getBundle(this.a));
       return;
     }
     catch (RemoteException localRemoteException)

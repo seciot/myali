@@ -15,7 +15,7 @@ final class j extends BroadcastReceiver
   public final void onReceive(Context paramContext, Intent paramIntent)
   {
     if (!paramIntent.getBooleanExtra("isCertified", false))
-      this.a.getBundleName().j();
+      this.a.getBundleName().getRequireBundleName();
   }
 }
 

@@ -19,8 +19,8 @@ final class m
     new StringBuilder("afterTextChanged s = -").append(paramEditable.toString()).append("-").toString();
     if ((paramEditable != null) && (BalancesWarnInputActivity.a(paramEditable.toString()).length() >= 11))
     {
-      BalancesWarnInputActivity.a(this.a);
-      if (!Validator.a(BalancesWarnInputActivity.a(this.a.a.getInputedText())))
+      BalancesWarnInputActivity.getBundle(this.a);
+      if (!Validator.getBundle(BalancesWarnInputActivity.getBundle(this.a.a.getInputedText())))
       {
         this.a.b.setVisibility(0);
         this.a.c.setEnabled(false);

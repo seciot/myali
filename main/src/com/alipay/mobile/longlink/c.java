@@ -14,7 +14,7 @@ final class c
 
   public final void onServiceConnected(ComponentName paramComponentName, IBinder paramIBinder)
   {
-    LongLinkServiceManager.access$002(this.a, ILongLinkService.Stub.a(paramIBinder));
+    LongLinkServiceManager.access$002(this.a, ILongLinkService.Stub.getBundle(paramIBinder));
     if (LongLinkServiceManager.access$000(this.a) != null)
       LongLinkServiceManager.access$102(this.a, true);
     a.a(3, LongLinkServiceManager.access$200(), "onServiceConnected");

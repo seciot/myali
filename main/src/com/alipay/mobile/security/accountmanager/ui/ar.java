@@ -16,7 +16,7 @@ final class ar
   {
     ForgotLoginPwdActivity.D(this.b);
     ForgotLoginPwdActivity.i(this.b, ((VerifyCertifyByMspUserInfo)this.a.get(paramInt)).getLogonId());
-    this.b.a(((VerifyCertifyByMspUserInfo)this.a.get(paramInt)).isCertified());
+    this.b.getBundle(((VerifyCertifyByMspUserInfo)this.a.get(paramInt)).isCertified());
   }
 }
 

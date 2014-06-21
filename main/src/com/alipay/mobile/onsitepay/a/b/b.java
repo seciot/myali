@@ -2,7 +2,7 @@ package com.alipay.mobile.onsitepay.a.b;
 
 public abstract interface b
 {
-  public abstract void a(String paramString);
+  public abstract void getBundle(String paramString);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

@@ -12,9 +12,9 @@ final class r extends WebChromeClient
 
   public final void onProgressChanged(WebView paramWebView, int paramInt)
   {
-    MiniWebActivity.a(this.a).setSecondaryProgress(paramInt);
+    MiniWebActivity.getBundle(this.a).setSecondaryProgress(paramInt);
     if (paramInt == 100)
-      MiniWebActivity.a(this.a).setVisibility(8);
+      MiniWebActivity.getBundle(this.a).setVisibility(8);
   }
 }
 

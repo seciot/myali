@@ -20,7 +20,7 @@ final class a extends BroadcastReceiver
       if ((str2 != null) && (str2.equalsIgnoreCase("package:" + this.a.getPackageName())))
       {
         this.a.onInstallComplete(true);
-        ApkApp.a(this.a);
+        ApkApp.getBundle(this.a);
         AppDao.getDao().saveOrUpdateAppEntity(ApkApp.b(this.a));
       }
     }

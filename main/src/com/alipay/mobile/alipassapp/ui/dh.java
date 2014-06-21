@@ -9,7 +9,7 @@ final class dh
 
   public final void run()
   {
-    C2BConfirmActivity_.a(this.a);
+    C2BConfirmActivity_.getBundle(this.a);
   }
 }
 

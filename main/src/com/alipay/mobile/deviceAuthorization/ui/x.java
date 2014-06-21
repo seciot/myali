@@ -12,7 +12,7 @@ final class x
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a.a(BaseAuthActivity.b.a(this.a));
+    this.a.a.getBundle(BaseAuthActivity.b.getBundle(this.a));
   }
 }
 

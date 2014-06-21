@@ -19,12 +19,12 @@ final class c
 
   public final void run()
   {
-    Request localRequest = new Request(HyperlinkActivity.a(this.c), this.a, null, ProtocolType.a);
+    Request localRequest = new Request(HyperlinkActivity.getBundle(this.c), this.a, null, ProtocolType.a);
     new StringBuilder("agreementRequset : ").append(this.a.toString()).toString();
     LogUtils.g();
     try
     {
-      String str1 = new JSONObject(RequestUtils.a(RequestUtils.a(this.c.getApplicationContext(), localRequest.a(), localRequest.a(this.b).toString()))).optJSONObject("data").optJSONObject("params").optString("res_data", "");
+      String str1 = new JSONObject(RequestUtils.getBundle(RequestUtils.a(this.c.getApplicationContext(), localRequest.a(), localRequest.getBundle(this.b).toString()))).optJSONObject("data").optJSONObject("params").optString("res_data", "");
       String str2 = TriDes.b(this.b, str1);
       new StringBuilder("agreement:").append(str2).toString();
       LogUtils.i();

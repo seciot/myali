@@ -18,11 +18,11 @@ final class n
     int i = WithdrawActivity.m(this.a).getCount();
     for (int j = 0; j < i; j++)
       if (j != paramLong)
-        WithdrawActivity.m(this.a).a(j).a(false);
+        WithdrawActivity.m(this.a).getBundle(j).getBundle(false);
     WithdrawActivity.a(this.a, (WithdrawArriveDate)paramAdapterView.getItemAtPosition((int)paramLong));
-    WithdrawActivity.n(this.a).a(true);
+    WithdrawActivity.n(this.a).getBundle(true);
     WithdrawActivity.m(this.a).notifyDataSetChanged();
-    this.a.e();
+    this.a.getFullBundleName();
     WithdrawActivity.c(this.a).dismiss();
   }
 }

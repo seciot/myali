@@ -23,7 +23,7 @@ final class m
   {
     FrameLayout localFrameLayout = (FrameLayout)this.a.findViewById(16908290);
     if (k.d(this.d) == null)
-      k.a(this.d, View.inflate(k.a(this.d), R.layout.alipass_network_error_view, null));
+      k.a(this.d, View.inflate(k.getBundle(this.d), R.layout.alipass_network_error_view, null));
     APFlowTipView localAPFlowTipView = (APFlowTipView)k.d(this.d).findViewById(R.id.asset_flowtipview);
     localAPFlowTipView.resetFlowTipType(16);
     localAPFlowTipView.setTips(AlipayApplication.getInstance().getResources().getString(R.string.flow_network_error));

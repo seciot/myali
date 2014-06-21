@@ -12,7 +12,7 @@ final class p
 
   public final void run()
   {
-    MiniPayActivity.a(this.c);
+    MiniPayActivity.getBundle(this.c);
     CustomToast.a(this.a, this.b);
   }
 }

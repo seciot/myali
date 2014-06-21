@@ -23,7 +23,7 @@ final class b
     ViewPagerScrollView localViewPagerScrollView = (ViewPagerScrollView)AlipassDetailActivity.c(this.a).findViewById(R.id.alipass_scrollview);
     if ((localViewPagerScrollView != null) && (localViewPagerScrollView.getScrollY() > 0) && (localViewPagerScrollView.isClick()))
     {
-      LogCatLog.v(AlipassDetailActivity.f(), "########get touch event ,the reuslt is v.isClick()=true");
+      LogCatLog.v(AlipassDetailActivity.getBundlePath(), "########get touch event ,the reuslt is v.isClick()=true");
       return false;
     }
     return true;
@@ -36,9 +36,9 @@ final class b
 
   public final void onRefresh()
   {
-    AlipassDetailActivity.a(this.a).onRefresh();
+    AlipassDetailActivity.getBundle(this.a).onRefresh();
     AlipassDetailActivity.b(this.a);
-    this.a.a(false);
+    this.a.getBundle(false);
   }
 }
 

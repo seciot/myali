@@ -18,13 +18,13 @@ final class b
     {
       HomeLogAgentUtil.i(this.a.getAppId());
       if (AppCenterOnItemLongClickListener.a())
-        AppCenterOnItemLongClickListener.a(this.c);
+        AppCenterOnItemLongClickListener.getBundle(this.c);
     }
     while (paramInt != 1)
     {
       return;
       this.a.moveToHome();
-      this.b.a(this.a);
+      this.b.getBundle(this.a);
     }
     HomeLogAgentUtil.removeBundle(this.a.getAppId());
     AppCenterOnItemLongClickListener.a(this.c, this.a);

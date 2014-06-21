@@ -18,7 +18,7 @@ final class bq
 
   public final void run()
   {
-    new AlertDialog.Builder(this.c).setMessage(AlipassQueryCardActivity.d(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.mFundCard_bind_phone)).setPositiveButton(AlipassQueryCardActivity.b(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.alipass_ok), new br(this)).setNegativeButton(AlipassQueryCardActivity.a(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.alipass_cancel), null).create().show();
+    new AlertDialog.Builder(this.c).setMessage(AlipassQueryCardActivity.d(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.mFundCard_bind_phone)).setPositiveButton(AlipassQueryCardActivity.b(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.alipass_ok), new br(this)).setNegativeButton(AlipassQueryCardActivity.getBundle(this.c).getMicroApplicationContext().getApplicationContext().getResources().getString(R.string.alipass_cancel), null).create().show();
   }
 }
 

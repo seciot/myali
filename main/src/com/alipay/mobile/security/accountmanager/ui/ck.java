@@ -30,7 +30,7 @@ final class ck
     while (true)
     {
       ModifyLoginPwdActivity.a(this.a, this.a.i.getText().toString());
-      if ((ModifyLoginPwdActivity.a(this.a) == null) || ("".equals(ModifyLoginPwdActivity.a(this.a))))
+      if ((ModifyLoginPwdActivity.getBundle(this.a) == null) || ("".equals(ModifyLoginPwdActivity.getBundle(this.a))))
         break;
       this.a.d.setEnabled(true);
       return;

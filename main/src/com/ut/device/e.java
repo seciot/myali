@@ -17,7 +17,7 @@ public class e
 
   public String g(byte[] paramArrayOfByte)
   {
-    String str = com.ut.a.a.a.a.a.a(paramArrayOfByte);
+    String str = com.ut.a.a.a.a.a.getBundle(paramArrayOfByte);
     return com.ut.c.a.b(this.ab, str);
   }
 

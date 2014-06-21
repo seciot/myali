@@ -40,12 +40,12 @@ public abstract class IAliPay$Stub extends Binder
       return true;
     case 3:
       paramParcel1.enforceInterface("com.alipay.android.app.IAliPay");
-      registerCallback(IRemoteServiceCallback.Stub.a(paramParcel1.readStrongBinder()));
+      registerCallback(IRemoteServiceCallback.Stub.getBundle(paramParcel1.readStrongBinder()));
       paramParcel2.writeNoException();
       return true;
     case 4:
       paramParcel1.enforceInterface("com.alipay.android.app.IAliPay");
-      unregisterCallback(IRemoteServiceCallback.Stub.a(paramParcel1.readStrongBinder()));
+      unregisterCallback(IRemoteServiceCallback.Stub.getBundle(paramParcel1.readStrongBinder()));
       paramParcel2.writeNoException();
       return true;
     case 5:

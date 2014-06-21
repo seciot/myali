@@ -16,7 +16,7 @@ final class j extends AsyncTask<String, Integer, App>
     String str = paramArrayOfString[0];
     try
     {
-      App localApp = AppDetailActivity.a(this.a).syncOneAppInfo(str);
+      App localApp = AppDetailActivity.getBundle(this.a).syncOneAppInfo(str);
       return localApp;
     }
     catch (AppStoreException localAppStoreException)

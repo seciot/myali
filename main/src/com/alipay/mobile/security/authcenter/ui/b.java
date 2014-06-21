@@ -15,13 +15,13 @@ final class b
 
   public final Object a(SmsCheckResultCallBack paramSmsCheckResultCallBack)
   {
-    String str = CompletePhoneUserInfoActivity.a(this.a);
+    String str = CompletePhoneUserInfoActivity.getBundle(this.a);
     SmsCodeRes localSmsCodeRes = null;
     if (str != null);
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).a(CompletePhoneUserInfoActivity.a(this.a));
+      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).getBundle(CompletePhoneUserInfoActivity.getBundle(this.a));
       this.a.dismissProgressDialog();
       return localSmsCodeRes;
     }
@@ -35,14 +35,14 @@ final class b
 
   public final Object a(String paramString1, String paramString2, SmsCheckResultCallBack paramSmsCheckResultCallBack)
   {
-    String str = CompletePhoneUserInfoActivity.a(this.a);
+    String str = CompletePhoneUserInfoActivity.getBundle(this.a);
     SmsCodeRes localSmsCodeRes = null;
     if (str != null);
     try
     {
       CompletePhoneUserInfoActivity.a(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
-      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).a(CompletePhoneUserInfoActivity.a(this.a), paramString1, CompletePhoneUserInfoActivity.c(this.a));
+      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).a(CompletePhoneUserInfoActivity.getBundle(this.a), paramString1, CompletePhoneUserInfoActivity.c(this.a));
       this.a.dismissProgressDialog();
       return localSmsCodeRes;
     }
@@ -72,7 +72,7 @@ final class b
         SmsCodeRes localSmsCodeRes2 = (SmsCodeRes)paramObject;
         if (localSmsCodeRes2.succ)
         {
-          this.a.a(CompletePhoneUserInfoActivity.FragId.SetPwd);
+          this.a.getBundle(CompletePhoneUserInfoActivity.FragId.SetPwd);
           return;
         }
         this.a.toast(localSmsCodeRes2.msg, 0);

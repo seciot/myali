@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 class e
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(e.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
   private Thread b;
   private ExecutorService c;
   private k d;
@@ -28,7 +28,7 @@ class e
 
   private int a(byte[] paramArrayOfByte, int paramInt)
   {
-    int i = this.d.d();
+    int i = this.d.getInitLevel();
     ByteArrayInputStream localByteArrayInputStream = new ByteArrayInputStream(paramArrayOfByte);
     int j = 0;
     int k = paramInt;
@@ -38,7 +38,7 @@ class e
     {
       try
       {
-        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.c.a(i);
+        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.c.getBundle(i);
         int m = BundlesManager.BundlesManagerImpl;
         byte[] arrayOfByte1 = new byte[m];
         int n = localByteArrayInputStream.read(arrayOfByte1, 0, m);
@@ -67,15 +67,15 @@ class e
         byte[] arrayOfByte3 = new byte[i2];
         localByteArrayInputStream.read(arrayOfByte3, 0, i2);
         int i3 = locala.getBundleName() + locala.g();
-        if (locala.f() == 1)
+        if (locala.getBundlePath() == 1)
         {
           arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.c.b(arrayOfByte3);
           locala.c(arrayOfByte3.length);
         }
-        locala.a(arrayOfByte3);
-        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, AppBundle, "handleRecvMsg() got valid packet! rawData=" + locala.d());
+        locala.getBundle(arrayOfByte3);
+        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, AppBundle, "handleRecvMsg() got valid packet! rawData=" + locala.getInitLevel());
         int i4 = 1;
-        if (locala.e() != BundlesManager.AppBundle)
+        if (locala.getFullBundleName() != BundlesManager.AppBundle)
           i4 = 0;
         if (i4 == 0)
         {
@@ -112,7 +112,7 @@ class e
     this.c = Executors.newSingleThreadExecutor(new g(this));
   }
 
-  final void a(n paramn)
+  final void setBundlePath(n paramn)
   {
     if (paramn != null)
       paramn.printStackTrace();
@@ -123,7 +123,7 @@ class e
       com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl)localIterator.next();
       try
       {
-        localc.a(paramn);
+        localc.getBundle(paramn);
       }
       catch (Exception localException)
       {
@@ -170,7 +170,7 @@ class e
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "shutdown()...listenerExecutor.shutdown!");
   }
 
-  final void d()
+  final void getInitLevel()
   {
     this.d.c.clear();
   }

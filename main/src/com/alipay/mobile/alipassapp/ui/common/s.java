@@ -18,7 +18,7 @@ final class s
     try
     {
       AlipassOperationViewPager.access$800();
-      Bitmap localBitmap = i.a(this.a.getMessage());
+      Bitmap localBitmap = i.getBundle(this.a.getMessage());
       if (this.b == null)
       {
         AlipassOperationViewPager.access$800();

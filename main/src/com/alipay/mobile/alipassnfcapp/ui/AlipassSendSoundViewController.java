@@ -127,7 +127,7 @@ public class AlipassSendSoundViewController extends h
     if (str != null)
     {
       new StringBuilder("加密前的code=[").append(str).append("]").toString();
-      str = a.a(str);
+      str = a.getBundle(str);
       new StringBuilder("加密后的code=[").append(str).append("]").toString();
     }
     return str;

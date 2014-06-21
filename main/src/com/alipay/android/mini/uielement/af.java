@@ -13,7 +13,7 @@ final class af
 
   public final void onClick(View paramView)
   {
-    UIPropUtil.a(UISimplePassword.a(this.a));
+    UIPropUtil.getBundle(UISimplePassword.getBundle(this.a));
   }
 }
 

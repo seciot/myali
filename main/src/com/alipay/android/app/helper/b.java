@@ -12,65 +12,65 @@ final class b
 
   public final void run()
   {
-    TidHelper.d();
+    TidHelper.getInitLevel();
     try
     {
       TidInfo localTidInfo1 = TidInfo.g();
       TidInfo localTidInfo2 = TidHelper.g(this.a);
       if ((localTidInfo2 == null) || (localTidInfo2.e()))
       {
-        TidHelper.a(localTidInfo1);
-        TidHelper.e();
-        synchronized (TidHelper.f())
+        TidHelper.getBundle(localTidInfo1);
+        TidHelper.getFullBundleName();
+        synchronized (TidHelper.getBundlePath())
         {
-          TidHelper.f().notify();
+          TidHelper.getBundlePath().notify();
           return;
         }
       }
       if ((localTidInfo1 == null) || (localTidInfo1.e()))
       {
-        TidHelper.a(localTidInfo2);
-        TidHelper.e();
-        synchronized (TidHelper.f())
+        TidHelper.getBundle(localTidInfo2);
+        TidHelper.getFullBundleName();
+        synchronized (TidHelper.getBundlePath())
         {
-          TidHelper.f().notify();
+          TidHelper.getBundlePath().notify();
           return;
         }
       }
       if (localTidInfo1.c() <= localTidInfo2.c())
       {
-        TidHelper.a(localTidInfo2);
-        TidHelper.e();
-        synchronized (TidHelper.f())
+        TidHelper.getBundle(localTidInfo2);
+        TidHelper.getFullBundleName();
+        synchronized (TidHelper.getBundlePath())
         {
-          TidHelper.f().notify();
+          TidHelper.getBundlePath().notify();
           return;
         }
       }
-      TidHelper.a(localTidInfo1);
-      TidHelper.e();
-      synchronized (TidHelper.f())
+      TidHelper.getBundle(localTidInfo1);
+      TidHelper.getFullBundleName();
+      synchronized (TidHelper.getBundlePath())
       {
-        TidHelper.f().notify();
+        TidHelper.getBundlePath().notify();
         return;
       }
     }
     catch (Exception localException)
     {
       localException.printStackTrace();
-      TidHelper.e();
-      synchronized (TidHelper.f())
+      TidHelper.getFullBundleName();
+      synchronized (TidHelper.getBundlePath())
       {
-        TidHelper.f().notify();
+        TidHelper.getBundlePath().notify();
         return;
       }
     }
     finally
     {
-      TidHelper.e();
-      synchronized (TidHelper.f())
+      TidHelper.getFullBundleName();
+      synchronized (TidHelper.getBundlePath())
       {
-        TidHelper.f().notify();
+        TidHelper.getBundlePath().notify();
         throw localObject1;
       }
     }

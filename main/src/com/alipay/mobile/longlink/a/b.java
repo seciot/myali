@@ -5,7 +5,7 @@ import java.io.File;
 
 public abstract class b
 {
-  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(BundlesManager.class);
+  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(BundlesManager.class);
   private static String c = "longlink";
   protected String a = "";
   private Context d;
@@ -25,9 +25,9 @@ public abstract class b
     return str2;
   }
 
-  public abstract void a(String paramString);
+  public abstract void getBundle(String paramString);
 
-  public abstract boolean a(AppBundle parama);
+  public abstract boolean setBundlePath(AppBundle parama);
 
   public abstract void b(AppBundle parama);
 }

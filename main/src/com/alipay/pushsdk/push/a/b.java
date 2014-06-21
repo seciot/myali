@@ -14,10 +14,10 @@ public final class b
     this.b = null;
   }
 
-  public final void a(AppBundle parama)
+  public final void setBundlePath(AppBundle parama)
   {
-    if ((this.b == null) || (this.b.a(parama)))
-      this.a.a(parama);
+    if ((this.b == null) || (this.b.getBundle(parama)))
+      this.a.getBundle(parama);
   }
 }
 

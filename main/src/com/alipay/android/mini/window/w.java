@@ -9,8 +9,8 @@ final class w
 
   public final void run()
   {
-    if (MiniWindowManager.a(this.a) != null)
-      MiniWindowManager.a(this.a).dispose();
+    if (MiniWindowManager.getBundle(this.a) != null)
+      MiniWindowManager.getBundle(this.a).dispose();
     MiniWindowManager.b(this.a);
     MiniWindowManager.c(this.a);
     MiniWindowManager.d(this.a);

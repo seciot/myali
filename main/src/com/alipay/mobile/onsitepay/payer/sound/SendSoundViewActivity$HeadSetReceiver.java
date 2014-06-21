@@ -19,7 +19,7 @@ public class SendSoundViewActivity$HeadSetReceiver extends BroadcastReceiver
       new StringBuilder("接收耳机拨插时的广播1　misHeadSetOn").append(SendSoundViewActivity.m(this.a)).toString();
       SendSoundViewActivity.a(this.a, false);
       if (!SendSoundViewActivity.m(this.a))
-        this.a.a("点击重试");
+        this.a.getBundle("点击重试");
     }
     return;
     label74: SendSoundViewActivity.a(this.a, true);

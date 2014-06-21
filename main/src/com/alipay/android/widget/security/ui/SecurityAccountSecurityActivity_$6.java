@@ -9,7 +9,7 @@ class SecurityAccountSecurityActivity_$6
 
   public void run()
   {
-    SecurityAccountSecurityActivity_.a(this.a);
+    SecurityAccountSecurityActivity_.getBundle(this.a);
   }
 }
 

@@ -12,9 +12,9 @@ final class y
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    if ((BindPhoneActivity.a(this.a) != null) && (BindPhoneActivity.a(this.a).isAlive()))
+    if ((BindPhoneActivity.getBundle(this.a) != null) && (BindPhoneActivity.getBundle(this.a).isAlive()))
     {
-      BindPhoneActivity.a(this.a).interrupt();
+      BindPhoneActivity.getBundle(this.a).interrupt();
       this.a.dismissProgressDialog();
     }
     do

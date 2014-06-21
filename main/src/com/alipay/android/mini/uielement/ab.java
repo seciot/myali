@@ -14,10 +14,10 @@ final class ab
 
   public final void onScroll(AbsListView paramAbsListView, int paramInt1, int paramInt2, int paramInt3)
   {
-    int i = UISelectButton.a(this.b).getChildCount();
-    if (UISelectButton.a(this.b).getChildAt(i - 1) == null)
+    int i = UISelectButton.getBundle(this.b).getChildCount();
+    if (UISelectButton.getBundle(this.b).getChildAt(i - 1) == null)
       return;
-    if ((UISelectButton.a(this.b).getChildAt(i - 1).getBottom() - (UISelectButton.a(this.b).getScrollY() + UISelectButton.a(this.b).getHeight() - UISelectButton.a(this.b).getPaddingBottom()) < 5) && (paramInt1 == paramInt3 - paramInt2))
+    if ((UISelectButton.getBundle(this.b).getChildAt(i - 1).getBottom() - (UISelectButton.getBundle(this.b).getScrollY() + UISelectButton.getBundle(this.b).getHeight() - UISelectButton.getBundle(this.b).getPaddingBottom()) < 5) && (paramInt1 == paramInt3 - paramInt2))
     {
       this.a.setVisibility(8);
       return;

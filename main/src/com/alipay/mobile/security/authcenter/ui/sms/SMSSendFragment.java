@@ -51,7 +51,7 @@ public class SMSSendFragment extends SmsBaseFragment
   {
     this.f = ((LoginInfo)getArguments().getParcelable("loginInfo"));
     String str = this.f.a();
-    this.d.setText(a.a(str));
+    this.d.setText(a.getBundle(str));
     this.e.setOnClickListener(new i(this, str));
   }
 }

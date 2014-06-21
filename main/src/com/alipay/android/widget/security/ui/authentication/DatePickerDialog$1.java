@@ -12,9 +12,9 @@ class DatePickerDialog$1
 
   public void onClick(View paramView)
   {
-    if (DatePickerDialog.a(this.a) != null)
+    if (DatePickerDialog.getBundle(this.a) != null)
     {
-      DatePickerDialog.a(this.a).a();
+      DatePickerDialog.getBundle(this.a).a();
       this.a.cancel();
     }
   }

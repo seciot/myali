@@ -15,7 +15,7 @@ final class bf extends MspEventArgs
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.b, this.a.a.a(getEventType()));
+    return new IEventArgs.EventScript(EventScriptOperation.b, this.a.a.getBundle(getEventType()));
   }
 }
 

@@ -23,7 +23,7 @@ final class q
         this.c.b(this.b);
       }
     while (!this.b);
-    BaseLoginFragment.a(this.c);
+    BaseLoginFragment.getBundle(this.c);
   }
 }
 

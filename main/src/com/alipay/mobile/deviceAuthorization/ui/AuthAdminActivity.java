@@ -48,7 +48,7 @@ public class AuthAdminActivity extends BaseActivity
     com.alipay.mobile.deviceAuthorization.AppBundle.a locala = (com.alipay.mobile.deviceAuthorization.AppBundle.a)paramAdapterView.getAdapter();
     if (paramInt >= locala.getCount())
       return false;
-    AuthInfo localAuthInfo = locala.a(paramInt);
+    AuthInfo localAuthInfo = locala.getBundle(paramInt);
     AlertDialog localAlertDialog = new AlertDialog.Builder((Context)AlipayApplication.getInstance().getMicroApplicationContext().getTopActivity().get()).setTitle(localAuthInfo.getTitle()).setCancelable(true).setItems(R.array.AppBundle, new a(this, localAuthInfo)).create();
     localAlertDialog.setCanceledOnTouchOutside(true);
     localAlertDialog.show();
@@ -71,7 +71,7 @@ public class AuthAdminActivity extends BaseActivity
       String str = paramArrayOfString[0];
       try
       {
-        AuthBaseResult localAuthBaseResult = AuthAdminActivity.a(AuthAdminActivity.this).removeAuth(str);
+        AuthBaseResult localAuthBaseResult = AuthAdminActivity.getBundle(AuthAdminActivity.this).removeAuth(str);
         return localAuthBaseResult;
       }
       catch (RpcException localRpcException)
@@ -98,9 +98,9 @@ public class AuthAdminActivity extends BaseActivity
       AuthAdminActivity.c localc = new AuthAdminActivity.c(AuthAdminActivity.this);
       try
       {
-        AuthListResult localAuthListResult2 = AuthAdminActivity.a(AuthAdminActivity.this).getAllValidAuth();
+        AuthListResult localAuthListResult2 = AuthAdminActivity.getBundle(AuthAdminActivity.this).getAllValidAuth();
         localAuthListResult1 = localAuthListResult2;
-        localc.a(localAuthListResult1);
+        localc.getBundle(localAuthListResult1);
         return localc;
       }
       catch (RpcException localRpcException)

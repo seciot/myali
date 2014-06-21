@@ -19,7 +19,7 @@ import org.json.JSONObject;
 
 public class b
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(b.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(b.class);
   private Context b;
 
   public b(Context paramContext)

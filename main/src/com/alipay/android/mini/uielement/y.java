@@ -16,12 +16,12 @@ final class y extends BaseTarget
 
   public final void a(int paramInt)
   {
-    UILabel.a(this.a).setBackgroundResource(paramInt);
+    UILabel.getBundle(this.a).setBackgroundResource(paramInt);
   }
 
   public final void a(Drawable paramDrawable)
   {
-    UILabel.a(this.a).setBackgroundDrawable(paramDrawable);
+    UILabel.getBundle(this.a).setBackgroundDrawable(paramDrawable);
   }
 }
 

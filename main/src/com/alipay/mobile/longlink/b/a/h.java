@@ -17,9 +17,9 @@ final class h
 
   public final void run()
   {
-    Iterator localIterator = e.a(this.a).c.values().iterator();
+    Iterator localIterator = e.getBundle(this.a).c.values().iterator();
     while (localIterator.hasNext())
-      ((BundlesManager)localIterator.next()).a(this.b);
+      ((BundlesManager)localIterator.next()).getBundle(this.b);
   }
 }
 

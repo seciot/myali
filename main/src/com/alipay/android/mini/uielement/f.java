@@ -16,12 +16,12 @@ final class f extends BaseTarget
 
   public final void a(int paramInt)
   {
-    UIButton.a(this.a).setBackgroundResource(paramInt);
+    UIButton.getBundle(this.a).setBackgroundResource(paramInt);
   }
 
   public final void a(Drawable paramDrawable)
   {
-    UIButton.a(this.a).setBackgroundDrawable(paramDrawable);
+    UIButton.getBundle(this.a).setBackgroundDrawable(paramDrawable);
   }
 }
 

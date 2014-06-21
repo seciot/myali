@@ -13,8 +13,8 @@ final class cr
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    AlipassRemindActivity.a(this.a.a).setRemindSet(paramInt + 1);
-    AlipassRemindActivity.a(this.a.a, AlipassRemindActivity.a(this.a.a));
+    AlipassRemindActivity.getBundle(this.a.a).setRemindSet(paramInt + 1);
+    AlipassRemindActivity.a(this.a.a, AlipassRemindActivity.getBundle(this.a.a));
     paramDialogInterface.dismiss();
   }
 }

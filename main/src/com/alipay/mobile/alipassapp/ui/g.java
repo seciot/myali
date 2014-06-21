@@ -14,7 +14,7 @@ final class g
   {
     if (AlipassDetailActivity.p(this.a.a))
     {
-      this.a.a.a(AlipassDetailActivity.removeBundle(this.a.a));
+      this.a.a.getBundle(AlipassDetailActivity.removeBundle(this.a.a));
       return;
     }
     if (AlipassDetailActivity.q(this.a.a))

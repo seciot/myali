@@ -15,7 +15,7 @@ final class bl extends MspEventArgs
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.a(EventType.b));
+    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.getBundle(EventType.b));
   }
 }
 

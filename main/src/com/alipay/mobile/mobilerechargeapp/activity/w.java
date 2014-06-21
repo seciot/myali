@@ -9,7 +9,7 @@ final class w
 
   public final void run()
   {
-    BalancesWarnInputActivity_.a(this.a);
+    BalancesWarnInputActivity_.getBundle(this.a);
   }
 }
 

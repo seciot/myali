@@ -11,7 +11,7 @@ final class ac
 
   public final void OnAutoReadSms(String paramString)
   {
-    this.a.a(paramString);
+    this.a.getBundle(paramString);
   }
 }
 

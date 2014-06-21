@@ -14,7 +14,7 @@ final class bu
   public final void onClick(View paramView)
   {
     boolean bool1 = true;
-    UISwitcher.a(this.a).toggle();
+    UISwitcher.getBundle(this.a).toggle();
     boolean bool2;
     UISwitcher localUISwitcher;
     if (!this.a.getBundleName())

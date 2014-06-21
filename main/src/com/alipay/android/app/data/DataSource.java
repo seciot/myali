@@ -121,7 +121,7 @@ public class DataSource
           catch (EmptyStackException localEmptyStackException2)
           {
           }
-          LogUtils.a(localEmptyStackException2);
+          LogUtils.getBundle(localEmptyStackException2);
         }
         label117: return false;
       }
@@ -168,13 +168,13 @@ public class DataSource
         if (this.a.isEmpty())
           break label89;
         WindowData localWindowData2 = (WindowData)this.a.peek();
-        if (!localObject1.d())
+        if (!localObject1.getInitLevel())
           break;
         bool = localWindowData2.d();
       }
       while (!bool);
       localObject2 = localObject1;
-      if (localObject2.d())
+      if (localObject2.getInitLevel())
       {
         j();
         return this.a.isEmpty();

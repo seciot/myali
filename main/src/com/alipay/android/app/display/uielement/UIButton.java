@@ -46,7 +46,7 @@ public class UIButton extends UILabel
     this.a = null;
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if (TextUtils.isEmpty(this.a));
     while (!super.s())

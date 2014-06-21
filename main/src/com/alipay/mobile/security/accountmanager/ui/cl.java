@@ -16,7 +16,7 @@ final class cl
 
   public final void onClick(View paramView)
   {
-    if (!SecurityPwdUtil.a(this.a.b.getInputedText().toString()).booleanValue())
+    if (!SecurityPwdUtil.getBundle(this.a.b.getInputedText().toString()).booleanValue())
     {
       this.a.toast(this.a.getResources().getString(R.string.cc), 1);
       return;

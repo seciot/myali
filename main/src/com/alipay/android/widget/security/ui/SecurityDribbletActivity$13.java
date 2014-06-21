@@ -13,7 +13,7 @@ class SecurityDribbletActivity$13
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     paramDialogInterface.cancel();
-    this.a.a(Boolean.valueOf(false));
+    this.a.getBundle(Boolean.valueOf(false));
   }
 }
 

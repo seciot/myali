@@ -9,7 +9,7 @@ class SecurityCertifiedResultActivity_$3
 
   public void run()
   {
-    SecurityCertifiedResultActivity_.a(this.a);
+    SecurityCertifiedResultActivity_.getBundle(this.a);
   }
 }
 

@@ -30,7 +30,7 @@ public class UIList
       this.b = ((ViewGroup)LayoutInflater.from(paramContext).inflate(R.layout.N, paramViewGroup, false));
       ViewGroup.LayoutParams localLayoutParams = this.b.getLayoutParams();
       ElementFactory.a(this.b);
-      this.e.a(localLayoutParams);
+      this.e.getBundle(localLayoutParams);
       this.e.c(this.b);
       if (this.a.size() > 0)
       {

@@ -12,14 +12,14 @@ final class b extends i
   public final void onAnimationEnd(Animation paramAnimation)
   {
     this.a.j.setVisibility(8);
-    if (WifiConnectingActivity.a(this.a) == true)
+    if (WifiConnectingActivity.getBundle(this.a) == true)
     {
       if ((WifiConnectingActivity.b(this.a) != null) && (WifiConnectingActivity.b(this.a).a))
       {
         WifiConnectingActivity.c(this.a);
         return;
       }
-      this.a.f();
+      this.a.getBundlePath();
       return;
     }
     WifiConnectingActivity.d(this.a);

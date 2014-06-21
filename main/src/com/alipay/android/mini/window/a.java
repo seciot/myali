@@ -12,7 +12,7 @@ final class a
 
   public final void run()
   {
-    if (AbsActivity.a(this.a))
+    if (AbsActivity.getBundle(this.a))
       LocalBroadcastManager.getInstance(this.a).sendBroadcast(new Intent("com.alipay.mobile.framework.USERLEAVEHINT"));
   }
 }

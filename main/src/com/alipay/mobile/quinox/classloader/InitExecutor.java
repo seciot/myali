@@ -224,7 +224,7 @@ public class InitExecutor
 
   public final void b(AppBundle parama)
   {
-    dexopt(parama.f(), com.alipay.mobile.quinox.utils.b.a(parama.f(), this.c.c()), this.e);
+    dexopt(parama.getBundlePath(), com.alipay.mobile.quinox.utils.b.a(parama.getBundlePath(), this.c.c()), this.e);
   }
 }
 

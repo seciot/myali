@@ -26,7 +26,7 @@ class SecurityDribbletActivity$1 extends Handler
     case 0:
       JSON.parseObject(localBundle.get("rs").toString(), SetFreePwdSwitchRes.class);
       this.a.b.setText(R.string.bt);
-      SecurityDribbletActivity.a(this.a);
+      SecurityDribbletActivity.getBundle(this.a);
       return;
     case 1:
       this.a.dismissProgressDialog();

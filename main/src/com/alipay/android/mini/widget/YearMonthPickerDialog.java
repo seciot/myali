@@ -37,7 +37,7 @@ public class YearMonthPickerDialog
     this.b.setYearMonth(paramInt1, paramInt2);
   }
 
-  public final void a(DialogInterface.OnClickListener paramOnClickListener)
+  public final void setBundlePath(DialogInterface.OnClickListener paramOnClickListener)
   {
     this.a.setPositiveButton(this.c, paramOnClickListener);
   }

@@ -12,7 +12,7 @@ final class dy
 
   public final void onClick(View paramView)
   {
-    this.a.a(true);
+    this.a.getBundle(true);
   }
 }
 

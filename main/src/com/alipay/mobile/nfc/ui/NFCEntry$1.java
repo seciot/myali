@@ -10,7 +10,7 @@ class NFCEntry$1
   public void run()
   {
     NFCEntry localNFCEntry = this.a;
-    NFCEntry.a(this.a);
+    NFCEntry.getBundle(this.a);
     NFCEntry.b(localNFCEntry);
   }
 }

@@ -13,7 +13,7 @@ final class f
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     this.a.d = true;
-    b.a(this.a);
+    b.getBundle(this.a);
   }
 }
 

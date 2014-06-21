@@ -25,7 +25,7 @@ public final class b
     return this.b;
   }
 
-  public final void a(int paramInt)
+  public final void setBundlePath(int paramInt)
   {
     try
     {
@@ -50,12 +50,12 @@ public final class b
     }
   }
 
-  public final void a(Object paramObject)
+  public final void setBundlePath(Object paramObject)
   {
     this.c = paramObject;
   }
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.b = paramString;
   }
@@ -89,7 +89,7 @@ public final class b
     return null;
   }
 
-  public final int d()
+  public final int getInitLevel()
   {
     return this.e;
   }

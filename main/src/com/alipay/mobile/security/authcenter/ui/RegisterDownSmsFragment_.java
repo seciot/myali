@@ -51,9 +51,9 @@ public final class RegisterDownSmsFragment_ extends RegisterDownSmsFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.f = ((APButton)a(R.id.dm));
-    this.e = ((APCheckboxWithLinkText)a(R.id.di));
-    this.d = ((APInputBox)a(R.id.dn));
+    this.f = ((APButton)getBundle(R.id.dm));
+    this.e = ((APCheckboxWithLinkText)getBundle(R.id.di));
+    this.d = ((APInputBox)getBundle(R.id.dn));
     a();
   }
 }

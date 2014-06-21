@@ -18,7 +18,7 @@ public final class c
     this.b = new d(localHandlerThread.getLooper(), this);
   }
 
-  public static BundlesManagerImpl a(Context paramContext)
+  public static BundlesManagerImpl setBundlePath(Context paramContext)
   {
     try
     {
@@ -37,7 +37,7 @@ public final class c
     return this.c;
   }
 
-  public final void a(BundlesManager paramb)
+  public final void setBundlePath(BundlesManager paramb)
   {
     Message localMessage = this.b.obtainMessage(0, paramb);
     this.b.sendMessage(localMessage);

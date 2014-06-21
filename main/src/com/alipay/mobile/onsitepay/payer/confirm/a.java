@@ -22,7 +22,7 @@ final class a
 
   public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)
   {
-    this.b.a(this.a);
+    this.b.getBundle(this.a);
   }
 }
 

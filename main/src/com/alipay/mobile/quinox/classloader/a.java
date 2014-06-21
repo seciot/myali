@@ -84,7 +84,7 @@ public final class a extends PathClassLoader
     while (localIterator.hasNext())
     {
       AppBundle locala = (AppBundle)localIterator.next();
-      if ((locala.i()) && (locala.d() != 11110000))
+      if ((locala.hasClass()) && (locala.getInitLevel() != 11110000))
         this.d.a(locala);
     }
     this.d.b();
@@ -142,7 +142,7 @@ public final class a extends PathClassLoader
   {
     if (!d(paramString))
     {
-      AppBundle locala = this.b.a(paramString);
+      AppBundle locala = this.b.getBundle(paramString);
       if (this.b.b(paramString))
       {
         com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getQuinoxClassLoader static link ->bundle: " + paramString);
@@ -172,10 +172,10 @@ public final class a extends PathClassLoader
   {
     if (!d(paramString))
     {
-      AppBundle locala = this.b.a(paramString);
+      AppBundle locala = this.b.getBundle(paramString);
       if (locala == null)
         com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getBundleClassLoader can't find bundle: " + paramString);
-      while (!locala.i())
+      while (!locala.hasClass())
         return null;
       this.d.a(paramString);
     }
@@ -189,7 +189,7 @@ public final class a extends PathClassLoader
     if (locala != null)
     {
       h localh = b(locala.getBundleName());
-      if ((localh == null) && (locala.d() == 11110000))
+      if ((localh == null) && (locala.getInitLevel() == 11110000))
       {
         a(locala);
         localh = b(locala.getBundleName());

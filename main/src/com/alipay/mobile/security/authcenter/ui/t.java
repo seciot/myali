@@ -9,7 +9,7 @@ final class t
 
   public final void run()
   {
-    ExternalLoginActivity_.a(this.a);
+    ExternalLoginActivity_.getBundle(this.a);
   }
 }
 

@@ -15,12 +15,12 @@ final class x extends MspEventArgs
 
   public final String getDataByKey(String paramString)
   {
-    return UIButton.a(this.a.a);
+    return UIButton.getBundle(this.a.a);
   }
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.a(getEventType()));
+    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.getBundle(getEventType()));
   }
 }
 

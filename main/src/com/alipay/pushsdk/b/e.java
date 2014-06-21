@@ -18,7 +18,7 @@ public final class e
     this.b = new ThreadPoolExecutor(3, 4, 5L, TimeUnit.SECONDS, new ArrayBlockingQueue(128));
   }
 
-  public final void a(BundlesManager paramb)
+  public final void setBundlePath(BundlesManager paramb)
   {
     this.b.execute(new g(this, paramb));
   }

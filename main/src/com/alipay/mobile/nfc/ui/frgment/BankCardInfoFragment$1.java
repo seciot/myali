@@ -21,7 +21,7 @@ class BankCardInfoFragment$1 extends Handler
     }
     BankCardInfoFragment.a();
     OfficialAccountLinkResult localOfficialAccountLinkResult = (OfficialAccountLinkResult)paramMessage.obj;
-    Toast.makeText(BankCardInfoFragment.a(this.a), localOfficialAccountLinkResult.getErrMsg(), 1).show();
+    Toast.makeText(BankCardInfoFragment.getBundle(this.a), localOfficialAccountLinkResult.getErrMsg(), 1).show();
   }
 }
 

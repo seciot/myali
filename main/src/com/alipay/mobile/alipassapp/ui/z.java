@@ -13,7 +13,7 @@ final class z
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    AlipassListActivity.a(this.a).set(true);
+    AlipassListActivity.getBundle(this.a).set(true);
   }
 }
 

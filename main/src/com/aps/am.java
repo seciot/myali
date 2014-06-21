@@ -24,8 +24,8 @@ final class am extends BroadcastReceiver
           String str2 = localUri.getPath();
           if (str2 != null)
           {
-            s.f(this.a).a(str2);
-            s.g(this.a).a(str2);
+            s.f(this.a).getBundle(str2);
+            s.g(this.a).getBundle(str2);
           }
         }
       }

@@ -157,8 +157,8 @@ final class DecodedBitStreamParser
       j = paramBitSource.readBits(7);
       if (j >= 100)
         throw FormatException.getFormatInstance();
-      paramStringBuffer.append(a(j / 10));
-      paramStringBuffer.append(a(j % 10));
+      paramStringBuffer.append(getBundle(j / 10));
+      paramStringBuffer.append(getBundle(j % 10));
     }
     while (paramInt != 1)
     {

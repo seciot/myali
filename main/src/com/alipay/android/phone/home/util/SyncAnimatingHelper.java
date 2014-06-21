@@ -30,7 +30,7 @@ public class SyncAnimatingHelper
     if (paramView == null)
       return;
     SyncAnimatingHelper.TransInfo localTransInfo = new SyncAnimatingHelper.TransInfo(this, paramView, paramInt);
-    localTransInfo.a(paramInt);
+    localTransInfo.getBundle(paramInt);
     if (SyncAnimatingHelper.TYPE.b == paramTYPE)
       SyncAnimatingHelper.TransInfo.a(localTransInfo, ViewHelper.getAlpha(paramView));
     while (true)
@@ -43,7 +43,7 @@ public class SyncAnimatingHelper
     }
   }
 
-  public final void a(SyncAnimatingHelper.AnimationListener paramAnimationListener)
+  public final void setBundlePath(SyncAnimatingHelper.AnimationListener paramAnimationListener)
   {
     this.i = paramAnimationListener;
   }

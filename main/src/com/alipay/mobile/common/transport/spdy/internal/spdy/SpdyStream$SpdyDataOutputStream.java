@@ -86,7 +86,7 @@ final class SpdyStream$SpdyDataOutputStream extends OutputStream
         return;
       this.c = true;
       if (!SpdyStream.access$1200(this.this$0).d)
-        a(true);
+        getBundle(true);
       SpdyStream.access$800(this.this$0).flush();
       SpdyStream.access$1100(this.this$0);
       return;

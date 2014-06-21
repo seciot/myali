@@ -18,7 +18,7 @@ final class ds
       this.a.a.b(MemberCardDetailActivity.t(this.a.a));
       return;
     }
-    this.a.a.a(MemberCardDetailActivity.t(this.a.a));
+    this.a.a.getBundle(MemberCardDetailActivity.t(this.a.a));
   }
 }
 

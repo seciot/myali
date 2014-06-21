@@ -35,7 +35,7 @@ public class PushReportIntentService extends IntentService
         localJSONObject1.put("userId", str4);
         localJSONObject1.put("k", str2);
         localJSONObject1.put("ext", str3);
-        String str7 = new com.alipay.pushsdk.b.a(str6, this).a(localJSONObject1.toString());
+        String str7 = new com.alipay.pushsdk.b.a(str6, this).getBundle(localJSONObject1.toString());
         if (str7 != null)
         {
           JSONObject localJSONObject2 = new JSONObject(str7);

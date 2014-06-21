@@ -9,7 +9,7 @@ final class f
 
   public final void run()
   {
-    ShareSavePicThireBtnActivity_.a(this.a);
+    ShareSavePicThireBtnActivity_.getBundle(this.a);
   }
 }
 

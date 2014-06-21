@@ -228,9 +228,9 @@ public class LauncherApplication extends Application {
 			while (localIterator.hasNext()) {
 				AppBundle locala = (AppBundle) localIterator
 						.next();
-				if (locala.h()) {
+				if (locala.hasResource()) {
 					Object[] arrayOfObject2 = new Object[1];
-					arrayOfObject2[0] = locala.f();
+					arrayOfObject2[0] = locala.getBundlePath();
 					localMethod.invoke(localAssetManager, arrayOfObject2);
 				}
 			}

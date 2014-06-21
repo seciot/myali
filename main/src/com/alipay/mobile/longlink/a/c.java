@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 
 public class c extends BundlesManager
 {
-  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(BundlesManagerImpl.class);
+  private static final String b = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(BundlesManagerImpl.class);
 
   public c(Context paramContext)
   {
@@ -164,28 +164,28 @@ public class c extends BundlesManager
     }
   }
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.a = paramString;
   }
 
-  public final boolean a(AppBundle parama)
+  public final boolean setBundlePath(AppBundle parama)
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "isContainMsg() newPerMsgId=" + parama.e());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "isContainMsg() newPerMsgId=" + parama.getFullBundleName());
     String[] arrayOfString = b();
     boolean bool = false;
     if (arrayOfString != null)
-      bool = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.a(arrayOfString, parama.e());
+      bool = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.a(arrayOfString, parama.getFullBundleName());
     return bool;
   }
 
   public final void b(AppBundle parama)
   {
-    String str1 = parama.e();
+    String str1 = parama.getFullBundleName();
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "saveMsgRecord() perMsgId=" + str1);
     if ((str1 != null) && (str1.length() > 0))
     {
-      String str2 = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.a(b(str1));
+      String str2 = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.getBundle(b(str1));
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManager, "saveMsgRecord() listMsgId:" + str2);
       try
       {

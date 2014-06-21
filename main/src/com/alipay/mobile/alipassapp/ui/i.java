@@ -26,7 +26,7 @@ final class i
       arrayOfString[1] = AlipassDetailActivity.f(this.a);
       AlipayLogAgent.writeLog(localAlipayApplication, localBehaviourIdEnum, "", "", "20000030", "", "", "couponDetails", "refresh", "", "", "", arrayOfString);
     }
-    this.a.a(true);
+    this.a.getBundle(true);
   }
 }
 

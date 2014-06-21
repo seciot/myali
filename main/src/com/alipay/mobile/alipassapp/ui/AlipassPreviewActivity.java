@@ -342,7 +342,7 @@ public class AlipassPreviewActivity extends BaseActivity
     Bundle localBundle = new Bundle();
     localBundle.putString("userId", paramString);
     localBundle.putInt("action", 1);
-    g.a(localBundle);
+    g.getBundle(localBundle);
   }
 
   @UiThread

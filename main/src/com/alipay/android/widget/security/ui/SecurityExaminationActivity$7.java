@@ -37,7 +37,7 @@ class SecurityExaminationActivity$7
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=doGestureSet],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(localAppLoadException.getMessage());
+      this.a.getBundle(localAppLoadException.getMessage());
     }
   }
 }

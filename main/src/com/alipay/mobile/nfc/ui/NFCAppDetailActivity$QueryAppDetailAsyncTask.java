@@ -16,7 +16,7 @@ class NFCAppDetailActivity$QueryAppDetailAsyncTask extends AsyncTask<String, Int
     String str = paramArrayOfString[0];
     try
     {
-      App localApp = NFCAppDetailActivity.a(this.a).syncOneAppInfo(str);
+      App localApp = NFCAppDetailActivity.getBundle(this.a).syncOneAppInfo(str);
       return localApp;
     }
     catch (AppStoreException localAppStoreException)

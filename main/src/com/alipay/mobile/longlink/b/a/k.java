@@ -8,7 +8,7 @@ import java.util.Timer;
 
 public class k extends AppBundle
 {
-  private static final String m = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(k.class);
+  private static final String m = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(k.class);
   protected Socket i;
   String j = null;
   i k;
@@ -26,13 +26,13 @@ public class k extends AppBundle
     super(paramc);
   }
 
-  public final void a(int paramInt)
+  public final void setBundlePath(int paramInt)
   {
     this.p = paramInt;
   }
 
   // ERROR //
-  public final void a(com.alipay.mobile.longlink.BundlesManager.b.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.b.AppBundle parama)
   {
     // Byte code:
     //   0: aload_0
@@ -431,7 +431,7 @@ public class k extends AppBundle
     //   709	723	726	com/alipay/mobile/longlink/b/a/n
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "sendPacket()... isConnected=" + a());
     try
@@ -448,7 +448,7 @@ public class k extends AppBundle
       throw new NullPointerException("Packet is null.");
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "sendPacket()... packet.id=" + parama.a());
-    this.k.a(parama);
+    this.k.getBundle(parama);
   }
 
   public final boolean a()
@@ -476,12 +476,12 @@ public class k extends AppBundle
     this.o = true;
   }
 
-  public final int d()
+  public final int getInitLevel()
   {
     return this.p;
   }
 
-  public final void e()
+  public final void getFullBundleName()
   {
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "disconnect()... called!");
     if ((this.l == null) || (this.k == null))
@@ -516,9 +516,9 @@ public class k extends AppBundle
             {
               this.i.close();
               label128: com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "shutdown()... Done!");
-              this.k.d();
+              this.k.getInitLevel();
               this.k = null;
-              this.l.d();
+              this.l.getInitLevel();
               this.l = null;
               com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "disconnect()... done!");
               return;
@@ -542,7 +542,7 @@ public class k extends AppBundle
     }
   }
 
-  public final void f()
+  public final void getBundlePath()
   {
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "resetConnection()...");
     if (this.r != null)

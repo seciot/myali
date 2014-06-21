@@ -25,14 +25,14 @@ final class e
 
   public final void run()
   {
-    new StringBuilder("startPollingQuery loopNum=").append(d.a(this.a)).toString();
-    while (d.a(this.a) > 0)
+    new StringBuilder("startPollingQuery loopNum=").append(d.getBundle(this.a)).toString();
+    while (d.getBundle(this.a) > 0)
     {
       SystemClock.sleep(d.b(this.a));
-      new StringBuilder("startPollingQuery loopNum=").append(d.a(this.a)).append(" isLoopFinish=").append(d.c(this.a)).append(" sonicHashMap.size=").append(this.a.a.size()).toString();
+      new StringBuilder("startPollingQuery loopNum=").append(d.getBundle(this.a)).append(" isLoopFinish=").append(d.c(this.a)).append(" sonicHashMap.size=").append(this.a.a.size()).toString();
       if ((d.c(this.a)) || (this.a.a.size() <= 0))
         break;
-      new StringBuilder("loopQueryPayThread loopNum=").append(d.a(this.a)).toString();
+      new StringBuilder("loopQueryPayThread loopNum=").append(d.getBundle(this.a)).toString();
       SoundWavePayRpcFacade localSoundWavePayRpcFacade;
       QuerySellerReq localQuerySellerReq;
       ArrayList localArrayList;
@@ -66,7 +66,7 @@ final class e
       {
         List localList = localQuerySellerRes.tradeInfo;
         if ((localList != null) && (localList.size() > 0))
-          d.d(this.a).a(localList);
+          d.d(this.a).getBundle(localList);
       }
       d.removeBundle(this.a);
     }

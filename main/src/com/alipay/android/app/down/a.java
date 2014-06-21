@@ -31,7 +31,7 @@ final class a
   {
     b localb = new b(this.a);
     long l = -1L;
-    if (FileDownloader.a(this.a))
+    if (FileDownloader.getBundle(this.a))
     {
       l = FileDownloader.b(this.a);
       if (l <= 0L)
@@ -42,15 +42,15 @@ final class a
       FileDownloader.c(this.a);
     }
     FileDownloader.a(this.a, new c(FileDownloader.d(this.a), FileDownloader.removeBundle(this.a), this.a));
-    a(FileDownloader.removeBundle(this.a));
-    a(FileDownloader.f(this.a));
-    if (FileDownloader.a(this.a))
+    getBundle(FileDownloader.removeBundle(this.a));
+    getBundle(FileDownloader.f(this.a));
+    if (FileDownloader.getBundle(this.a))
     {
       FileDownloader.g(this.a);
       if (FileDownloader.h(this.a).b() != l)
       {
         FileDownloader.c(this.a);
-        FileDownloader.h(this.a).a(0L);
+        FileDownloader.h(this.a).getBundle(0L);
         FileDownloader.h(this.a).b(l);
       }
     }

@@ -40,12 +40,12 @@ public abstract class a
     return this.a;
   }
 
-  public final void a(int paramInt)
+  public final void setBundlePath(int paramInt)
   {
     this.a = paramInt;
   }
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.j = paramString;
     if (paramString != null);
@@ -66,7 +66,7 @@ public abstract class a
     }
   }
 
-  public final void a(byte[] paramArrayOfByte)
+  public final void setBundlePath(byte[] paramArrayOfByte)
   {
     try
     {
@@ -108,7 +108,7 @@ public abstract class a
 
   public abstract void c(byte[] paramArrayOfByte);
 
-  public final int d()
+  public final int getInitLevel()
   {
     return this.f;
   }
@@ -118,7 +118,7 @@ public abstract class a
     this.f = paramInt;
   }
 
-  public final int e()
+  public final int getFullBundleName()
   {
     return this.g;
   }
@@ -128,7 +128,7 @@ public abstract class a
     this.h = paramInt;
   }
 
-  public final void f()
+  public final void getBundlePath()
   {
     this.g = 1;
   }
@@ -148,7 +148,7 @@ public abstract class a
     this.b = paramInt;
   }
 
-  public final String h()
+  public final String hasResource()
   {
     return this.j;
   }
@@ -158,12 +158,12 @@ public abstract class a
     return this.c;
   }
 
-  public int j()
+  public int getRequireBundleName()
   {
     return this.b;
   }
 
-  public abstract byte[] k();
+  public abstract byte[] getBundleVersion();
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

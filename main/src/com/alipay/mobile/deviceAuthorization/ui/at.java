@@ -17,13 +17,13 @@ final class at
 
   public final Object a(SmsCheckResultCallBack paramSmsCheckResultCallBack)
   {
-    String str = SmsCheckActivity.a(this.a).getLogonId();
+    String str = SmsCheckActivity.getBundle(this.a).getLogonId();
     SendSmsResp localSendSmsResp = null;
     if (str != null);
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localSendSmsResp = SmsCheckActivity.b(this.a).a(SmsCheckActivity.a(this.a).getLogonId());
+      localSendSmsResp = SmsCheckActivity.b(this.a).getBundle(SmsCheckActivity.getBundle(this.a).getLogonId());
       this.a.dismissProgressDialog();
       return localSendSmsResp;
     }
@@ -38,14 +38,14 @@ final class at
 
   public final Object a(String paramString1, String paramString2, SmsCheckResultCallBack paramSmsCheckResultCallBack)
   {
-    String str = SmsCheckActivity.a(this.a).getLogonId();
+    String str = SmsCheckActivity.getBundle(this.a).getLogonId();
     VerifyAuthCodeResp localVerifyAuthCodeResp = null;
     if (str != null);
     try
     {
       SmsCheckActivity.a(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
-      localVerifyAuthCodeResp = SmsCheckActivity.b(this.a).a(SmsCheckActivity.a(this.a).getLogonId(), SmsCheckActivity.a(this.a).getMobileNumber(), paramString1, SmsCheckActivity.d(this.a));
+      localVerifyAuthCodeResp = SmsCheckActivity.b(this.a).a(SmsCheckActivity.getBundle(this.a).getLogonId(), SmsCheckActivity.getBundle(this.a).getMobileNumber(), paramString1, SmsCheckActivity.d(this.a));
       this.a.dismissProgressDialog();
       return localVerifyAuthCodeResp;
     }

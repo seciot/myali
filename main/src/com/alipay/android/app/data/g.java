@@ -20,26 +20,26 @@ final class g
   {
     Object localObject;
     String str;
-    if ((f.a(this.g) == null) || (this.a == null) || (this.a.length % 2 != 0))
+    if ((f.getBundle(this.g) == null) || (this.a == null) || (this.a.length % 2 != 0))
     {
       localObject = null;
       str = "false";
     }
     while (true)
     {
-      if ((f.a(this.g) != null) && (f.a(this.g).get() != null))
-        ((ValidatedFrameData)f.a(this.g).get()).a(this.f, new Object[] { str, localObject });
+      if ((f.getBundle(this.g) != null) && (f.getBundle(this.g).get() != null))
+        ((ValidatedFrameData)f.getBundle(this.g).get()).a(this.f, new Object[] { str, localObject });
       return;
       try
       {
         Request localRequest = f.a(this.g, this.b, this.c, this.d, this.e, this.a);
-        Response localResponse1 = ((ValidatedFrameData)f.a(this.g).get()).e();
+        Response localResponse1 = ((ValidatedFrameData)f.getBundle(this.g).get()).e();
         if ((localResponse1 != null) && (localResponse1.e() != null))
           localRequest.a(localResponse1.e());
         localRequest.a((InteractionData)f.b(this.g).get());
         Response localResponse2 = new Response();
         RequestWrapper localRequestWrapper = new RequestWrapper();
-        ((ValidatedFrameData)f.a(this.g).get()).f();
+        ((ValidatedFrameData)f.getBundle(this.g).get()).f();
         JSONObject localJSONObject = localRequestWrapper.a(GlobalContext.a().b(), localRequest, localResponse2);
         if (localJSONObject != null)
         {

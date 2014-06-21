@@ -9,7 +9,7 @@ class AuthenticationCertifiedActivity_$3
 
   public void run()
   {
-    AuthenticationCertifiedActivity_.a(this.a);
+    AuthenticationCertifiedActivity_.getBundle(this.a);
   }
 }
 

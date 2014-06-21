@@ -9,9 +9,9 @@ final class aa
 
   public final void run()
   {
-    this.a.a(true);
+    this.a.getBundle(true);
     AlipassListActivity.d(this.a);
-    this.a.a(false);
+    this.a.getBundle(false);
   }
 }
 

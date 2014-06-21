@@ -9,7 +9,7 @@ final class h
 
   public final void run()
   {
-    AccountManagerActivity_.a(this.a);
+    AccountManagerActivity_.getBundle(this.a);
   }
 }
 

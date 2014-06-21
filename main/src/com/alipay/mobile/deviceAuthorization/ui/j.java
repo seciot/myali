@@ -9,7 +9,7 @@ final class j
 
   public final void run()
   {
-    AuthorizeLogsActivity_.a(this.a);
+    AuthorizeLogsActivity_.getBundle(this.a);
   }
 }
 

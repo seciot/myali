@@ -9,7 +9,7 @@ class SecurityCertifiedBankActivity_$3
 
   public void run()
   {
-    SecurityCertifiedBankActivity_.a(this.a);
+    SecurityCertifiedBankActivity_.getBundle(this.a);
   }
 }
 

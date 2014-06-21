@@ -31,19 +31,19 @@ final class c
         localc1 = new com.alipay.mobile.longlink.b.a.c(a.f(this.b), a.g(this.b), localc);
         if ((a.h(this.b) == null) || (!a.h(this.b).equals("1")))
           break label244;
-        localc1.a(com.alipay.mobile.longlink.b.a.d.a);
+        localc1.getBundle(com.alipay.mobile.longlink.b.a.d.a);
       }
       while (true)
       {
-        localc1.e();
+        localc1.getFullBundleName();
         k localk = new k(localc1);
         this.a.a(localk);
-        this.a.d().a(a.i(this.b));
-        this.a.d().a(this.c);
+        this.a.d().getBundle(a.i(this.b));
+        this.a.d().getBundle(this.c);
         return;
         localc = new com.alipay.mobile.longlink.b.a.a.c(com.alipay.mobile.longlink.b.a.a.d.a, null, 0);
         break;
-        label244: localc1.a(com.alipay.mobile.longlink.b.a.d.c);
+        label244: localc1.getBundle(com.alipay.mobile.longlink.b.a.d.c);
       }
     }
     com.alipay.mobile.longlink.c.a.a(3, a.x(), "The connManager is connected now.");

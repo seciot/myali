@@ -9,7 +9,7 @@ final class cc
 
   public final void run()
   {
-    AlipassQueryCardActivity_.a(this.a);
+    AlipassQueryCardActivity_.getBundle(this.a);
   }
 }
 

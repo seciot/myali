@@ -14,9 +14,9 @@ final class g
 
   public final Thread newThread(Runnable paramRunnable)
   {
-    if (e.a(this.a) == null)
+    if (e.getBundle(this.a) == null)
       e.a(this.a, "SerialExecutor");
-    return new Thread(paramRunnable, e.a(this.a) + "  #" + this.b.incrementAndGet());
+    return new Thread(paramRunnable, e.getBundle(this.a) + "  #" + this.b.incrementAndGet());
   }
 }
 

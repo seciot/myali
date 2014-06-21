@@ -430,7 +430,7 @@ public abstract class BaseAuthActivity extends BaseActivity
       {
         ConfirmApproveReq localConfirmApproveReq = new ConfirmApproveReq();
         localConfirmApproveReq.mobileOperationEnvironment = BaseAuthActivity.n(BaseAuthActivity.this);
-        MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.a(BaseAuthActivity.this).queryCertification();
+        MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.getBundle(BaseAuthActivity.this).queryCertification();
         localConfirmApproveReq.password = BaseAuthActivity.c(BaseAuthActivity.this, (String)paramArrayOfObject[0]);
         localConfirmApproveReq.approveId = BaseAuthActivity.b(BaseAuthActivity.this);
         localConfirmApproveReq.approveType = BaseAuthActivity.c(BaseAuthActivity.this);
@@ -483,7 +483,7 @@ public abstract class BaseAuthActivity extends BaseActivity
       BaseAuthActivity.d locald = new BaseAuthActivity.d(BaseAuthActivity.this);
       PrepareApproveReq localPrepareApproveReq = new PrepareApproveReq();
       Tid localTid = new Tid();
-      MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.a(BaseAuthActivity.this).queryCertification();
+      MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.getBundle(BaseAuthActivity.this).queryCertification();
       if (localMspDeviceInfoBean != null)
       {
         localTid.tid = localMspDeviceInfoBean.getTid();
@@ -501,7 +501,7 @@ public abstract class BaseAuthActivity extends BaseActivity
       localPrepareApproveReq.partnerId = BaseAuthActivity.f(BaseAuthActivity.this);
       try
       {
-        locald.a(BaseAuthActivity.g(BaseAuthActivity.this).prepareApprove(localPrepareApproveReq));
+        locald.getBundle(BaseAuthActivity.g(BaseAuthActivity.this).prepareApprove(localPrepareApproveReq));
         return locald;
       }
       catch (RpcException localRpcException)

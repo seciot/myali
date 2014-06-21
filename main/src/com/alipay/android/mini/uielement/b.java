@@ -14,7 +14,7 @@ final class b
   public final void onClick(View paramView)
   {
     if (this.a.c != null);
-    for (ElementAction localElementAction = this.a.c; ; localElementAction = this.a.n())
+    for (ElementAction localElementAction = this.a.c; ; localElementAction = this.a.getAllComponentNames())
     {
       if (localElementAction != null)
       {

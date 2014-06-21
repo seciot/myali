@@ -14,7 +14,7 @@ final class g
   public final void onClick(View paramView)
   {
     if (this.a.c != null);
-    for (ActionType[] arrayOfActionType = ActionType.a(this.a.c); ; arrayOfActionType = ActionType.a(this.a.n()))
+    for (ActionType[] arrayOfActionType = ActionType.getBundle(this.a.c); ; arrayOfActionType = ActionType.getBundle(this.a.getAllComponentNames()))
     {
       this.a.a(this.a, arrayOfActionType);
       return;

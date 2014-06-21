@@ -15,15 +15,15 @@ public final class e
   {
     this.a = paramg;
     this.b = new f(this);
-    this.c = BundlesManagerImpl.a(paramContext);
+    this.c = BundlesManagerImpl.getBundle(paramContext);
   }
 
   public final void a(String paramString, Object paramObject)
   {
     BundlesManager localb = new BundlesManager(new Messenger(this.b));
-    localb.a(paramString);
-    localb.a(paramObject);
-    this.c.a(localb);
+    localb.getBundle(paramString);
+    localb.getBundle(paramObject);
+    this.c.getBundle(localb);
   }
 }
 

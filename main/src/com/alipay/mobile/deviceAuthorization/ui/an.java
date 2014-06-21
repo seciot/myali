@@ -9,7 +9,7 @@ final class an
 
   public final void run()
   {
-    LoginLogsWelcomeActivity_.a(this.a);
+    LoginLogsWelcomeActivity_.getBundle(this.a);
   }
 }
 

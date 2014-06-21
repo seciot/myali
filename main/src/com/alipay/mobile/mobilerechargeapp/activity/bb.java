@@ -14,7 +14,7 @@ final class bb
 
   public final void onClick(View paramView)
   {
-    MobileRechargeActivity.a(this.a.c.getEtContent());
+    MobileRechargeActivity.getBundle(this.a.c.getEtContent());
     MobileRechargeActivity.b(this.a);
     this.a.c.showLastImgBtn(false);
     ((InputMethodManager)this.a.getSystemService("input_method")).showSoftInput(this.a.c.getEtContent(), 1);

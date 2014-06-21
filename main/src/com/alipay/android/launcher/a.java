@@ -9,7 +9,7 @@ final class a
 
   public final void run()
   {
-    TabLauncher.a(this.a);
+    TabLauncher.getBundle(this.a);
   }
 }
 

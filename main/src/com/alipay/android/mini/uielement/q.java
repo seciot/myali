@@ -13,7 +13,7 @@ final class q
 
   public final void onClick(View paramView)
   {
-    UIPropUtil.a(UIInput.a(this.a));
+    UIPropUtil.getBundle(UIInput.getBundle(this.a));
   }
 }
 

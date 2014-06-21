@@ -13,7 +13,7 @@ final class aw
   public final void run()
   {
     if ((!MobileRechargeActivity.i(this.a.a)) && (MobileRechargeActivity.j(this.a.a)))
-      ((MobileRechargeApp)MobileRechargeActivity.l(this.a.a)).mHistoryManager.a(MobileRechargeActivity.k(this.a.a));
+      ((MobileRechargeApp)MobileRechargeActivity.l(this.a.a)).mHistoryManager.getBundle(MobileRechargeActivity.k(this.a.a));
     MobileRechargeActivity.m(this.a.a);
   }
 }

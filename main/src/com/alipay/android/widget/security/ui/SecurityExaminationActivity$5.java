@@ -41,7 +41,7 @@ class SecurityExaminationActivity$5
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=doNameCertified],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(localAppLoadException.getMessage());
+      this.a.getBundle(localAppLoadException.getMessage());
     }
   }
 }

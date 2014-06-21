@@ -11,7 +11,7 @@ final class b
 
   public final void run()
   {
-    WealthHomeRpcExcutor.a(this.b).a(this.a, true);
+    WealthHomeRpcExcutor.getBundle(this.b).a(this.a, true);
   }
 }
 

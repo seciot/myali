@@ -14,7 +14,7 @@ final class y
   public final void onClick(View paramView)
   {
     String str = this.a.b.getInputedText().trim();
-    this.a.a(str);
+    this.a.getBundle(str);
   }
 }
 

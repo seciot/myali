@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 public class c
 {
-  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(BundlesManagerImpl.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(BundlesManagerImpl.class);
   private Context b;
   private BundlesManager c;
   private h d;

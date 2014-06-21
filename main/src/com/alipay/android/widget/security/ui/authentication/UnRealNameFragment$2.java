@@ -16,7 +16,7 @@ class UnRealNameFragment$2
   {
     AlipayLogAgent.writeLog(this.a.getActivity(), BehaviourIdEnum.CLICKED, "-", "-", "20000038", "-", "noRealNameEditView", "noRealNameDetail", "checkUp");
     InputUserInfoFragment_ localInputUserInfoFragment_ = new InputUserInfoFragment_();
-    localInputUserInfoFragment_.a(this.a.a);
+    localInputUserInfoFragment_.getBundle(this.a.a);
     ((AuthenticationCertifiedActivity)this.a.a()).a(localInputUserInfoFragment_, true);
   }
 }

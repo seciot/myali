@@ -11,7 +11,7 @@ public final class a
     return this.a;
   }
 
-  public final void a(IndexWidgetResult paramIndexWidgetResult)
+  public final void setBundlePath(IndexWidgetResult paramIndexWidgetResult)
   {
     this.a = paramIndexWidgetResult;
   }

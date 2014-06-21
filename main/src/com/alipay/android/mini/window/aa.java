@@ -31,7 +31,7 @@ final class aa
       while (true)
       {
         String str3 = localContext.getString(17039370);
-        IFormShower localIFormShower = MiniWindowManager.a(this.b);
+        IFormShower localIFormShower = MiniWindowManager.getBundle(this.b);
         ActionType[] arrayOfActionType = new ActionType[1];
         arrayOfActionType[0] = ActionType.d;
         localIFormShower.a(null, str2, str3, arrayOfActionType, null, null);

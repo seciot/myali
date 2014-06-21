@@ -9,7 +9,7 @@ class IdCardVerifyActivity_$1
 
   public void run()
   {
-    IdCardVerifyActivity_.a(this.a);
+    IdCardVerifyActivity_.getBundle(this.a);
   }
 }
 

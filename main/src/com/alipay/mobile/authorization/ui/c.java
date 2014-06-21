@@ -20,7 +20,7 @@ final class c extends ClickableSpan
   public final void onClick(View paramView)
   {
     Intent localIntent = new Intent(this.c.getApplicationContext(), AuthorizationCheckProtocol.class);
-    localIntent.putExtra("protocol_url", AuthorizationActivity.a(this.a));
+    localIntent.putExtra("protocol_url", AuthorizationActivity.getBundle(this.a));
     this.c.startActivity(AuthorizationActivity.b(this.a), localIntent);
   }
 

@@ -13,7 +13,7 @@ final class z
 
   public final void onSend(SendResultCallback paramSendResultCallback)
   {
-    WithdrawSmsCheckActivity.a(this.a).dispose();
+    WithdrawSmsCheckActivity.getBundle(this.a).dispose();
     this.a.a();
     WithdrawSmsCheckActivity.a(this.a, paramSendResultCallback);
   }

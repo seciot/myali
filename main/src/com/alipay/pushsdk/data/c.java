@@ -5,7 +5,7 @@ import java.io.File;
 
 public abstract class c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(c.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(c.class);
   private static String b = "push/";
   private static String c = "msg/";
   private Context d;

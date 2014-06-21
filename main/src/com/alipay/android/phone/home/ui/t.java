@@ -13,7 +13,7 @@ final class t
   public final void run()
   {
     if ((HomeFragment.access$300(this.a) != null) && (HomeFragment.access$400(this.a) != null))
-      HomeFragment.access$300(this.a).a(HomeFragment.access$400(this.a).getHomeAppsFromLocal());
+      HomeFragment.access$300(this.a).getBundle(HomeFragment.access$400(this.a).getHomeAppsFromLocal());
   }
 }
 

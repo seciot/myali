@@ -20,7 +20,7 @@ final class aq
     {
       MicroApplicationContext localMicroApplicationContext = AlipayApplication.getInstance().getMicroApplicationContext();
       localMicroApplicationContext.startApp("20000055", "10000007", null);
-      localMicroApplicationContext.finishApp(ScanErrorActivity.a(this.a).getAppId(), ScanErrorActivity.b(this.a).getAppId(), null);
+      localMicroApplicationContext.finishApp(ScanErrorActivity.getBundle(this.a).getAppId(), ScanErrorActivity.b(this.a).getAppId(), null);
       return;
     }
     catch (AppLoadException localAppLoadException)

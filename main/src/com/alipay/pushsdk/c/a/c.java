@@ -12,7 +12,7 @@ public final class c
   public static int f = 4;
   public static int g = 5;
 
-  public static String a(Class paramClass)
+  public static String setBundlePath(Class paramClass)
   {
     return "AlipayPush_" + paramClass.getSimpleName();
   }

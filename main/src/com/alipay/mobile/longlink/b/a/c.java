@@ -17,7 +17,7 @@ public final class c
     this.b = paramString;
     this.c = paramInt;
     this.a = paramc;
-    this.f = paramc.d();
+    this.f = paramc.getInitLevel();
   }
 
   public final String a()
@@ -25,7 +25,7 @@ public final class c
     return this.b;
   }
 
-  public final void a(d paramd)
+  public final void setBundlePath(d paramd)
   {
     this.e = paramd;
   }
@@ -40,17 +40,17 @@ public final class c
     return this.a;
   }
 
-  public final d d()
+  public final d getInitLevel()
   {
     return this.e;
   }
 
-  public final void e()
+  public final void getFullBundleName()
   {
     this.d = false;
   }
 
-  public final SocketFactory f()
+  public final SocketFactory getBundlePath()
   {
     return this.f;
   }

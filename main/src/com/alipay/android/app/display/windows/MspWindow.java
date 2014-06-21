@@ -73,7 +73,7 @@ public class MspWindow
         IUIElement localIUIElement = arrayOfIUIElement[i2];
         if (((localIUIElement.a() != ElementType.b) || ((!TextUtils.isEmpty(paramString)) && (paramString.equals(localIUIElement.n())))) && ((localIUIElement instanceof ISubmitable)))
         {
-          localSubmitValue = ((ISubmitable)localIUIElement).j();
+          localSubmitValue = ((ISubmitable)localIUIElement).getRequireBundleName();
           if ((localSubmitValue == null) || (TextUtils.isEmpty(localSubmitValue.a())));
         }
       }
@@ -268,7 +268,7 @@ public class MspWindow
           LogUtils.g();
           localUIWindow.a(localJSONObject1.optJSONObject(ElementType.t.a()), localJSONObject2);
           localUIWindow.c(localJSONObject1.optJSONObject(ElementType.s.a()), localJSONObject2);
-          localUIWindow.a(localJSONObject1.optJSONArray(ElementType.w.a()));
+          localUIWindow.getBundle(localJSONObject1.optJSONArray(ElementType.w.a()));
           localUIWindow.b(localJSONObject1.optJSONObject(ElementType.x.a()), localJSONObject2);
         }
       }
@@ -314,11 +314,11 @@ public class MspWindow
         if ((!this.f.n()) && (!this.n))
         {
           this.n = true;
-          a(EventType.l);
+          getBundle(EventType.l);
         }
         while (!this.f.n())
           return localUIWindow;
-        a(EventType.j);
+        getBundle(EventType.j);
       }
     }
     return localUIWindow;
@@ -410,7 +410,7 @@ public class MspWindow
         ISubmitable localISubmitable = (ISubmitable)localIUIElement;
         if (!localISubmitable.k())
         {
-          new StringBuilder("submit verify false ! : at").append(localISubmitable.j()).toString();
+          new StringBuilder("submit verify false ! : at").append(localISubmitable.getRequireBundleName()).toString();
           LogUtils.c();
         }
       }

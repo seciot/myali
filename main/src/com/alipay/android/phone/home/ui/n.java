@@ -135,13 +135,13 @@ final class n
   public final void setOnBoardCLickListener(View.OnClickListener paramOnClickListener)
   {
     if (HeaderAreaLayout.l(this.b) != null)
-      HeaderAreaLayout.l(this.b).a(paramOnClickListener);
+      HeaderAreaLayout.l(this.b).getBundle(paramOnClickListener);
   }
 
   public final void setOnStateChangeListener(ITopBoardStateCallBack paramITopBoardStateCallBack)
   {
     if (HeaderAreaLayout.l(this.b) != null)
-      HeaderAreaLayout.l(this.b).a(paramITopBoardStateCallBack);
+      HeaderAreaLayout.l(this.b).getBundle(paramITopBoardStateCallBack);
   }
 
   public final void setOnVisibleChangeListener(IOnActiveBoardVisibleChange paramIOnActiveBoardVisibleChange)

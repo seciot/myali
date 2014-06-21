@@ -37,14 +37,14 @@ public final class c
       arrayOfString = this.g.split("\\|");
     }
     while (arrayOfString.length < 5);
-    int[] arrayOfInt = f.a(arrayOfString[0]);
+    int[] arrayOfInt = f.getBundle(arrayOfString[0]);
     if ((arrayOfInt != null) && (arrayOfInt.length >= 2))
     {
       this.a = (1000 * arrayOfInt[0]);
       this.b = (1000 * arrayOfInt[1]);
     }
     this.d = arrayOfString[1];
-    this.c = f.a(arrayOfString[2]);
+    this.c = f.getBundle(arrayOfString[2]);
     this.e = arrayOfString[3];
     this.f = arrayOfString[4];
   }

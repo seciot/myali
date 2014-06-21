@@ -12,9 +12,9 @@ final class l
   public final void run()
   {
     WindowsManager.a(this.c, System.currentTimeMillis());
-    if (WindowsManager.a(this.c) != null)
+    if (WindowsManager.getBundle(this.c) != null)
     {
-      IContainer localIContainer = WindowsManager.a(this.c);
+      IContainer localIContainer = WindowsManager.getBundle(this.c);
       UIWindow localUIWindow = this.a;
       localIContainer.a(localUIWindow);
     }

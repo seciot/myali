@@ -16,7 +16,7 @@ final class ad extends Thread
     ac.a(this.a, Looper.myLooper());
     ac.a(this.a, new Timer());
     ac.a(this.a, new af(this.a, (byte)0));
-    ac.a(this.a, ac.a(this.a));
+    ac.a(this.a, ac.getBundle(this.a));
     if (ac.b(this.a) == null)
     {
       ac.a(this.a, true);

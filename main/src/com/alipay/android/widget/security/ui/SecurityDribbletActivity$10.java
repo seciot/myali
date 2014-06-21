@@ -24,10 +24,10 @@ class SecurityDribbletActivity$10
       new Thread(new SecurityDribbletActivity.ListenerThread(this.a, 1, (byte)0)).start();
       return;
     }
-    this.a.a(Boolean.valueOf(false));
+    this.a.getBundle(Boolean.valueOf(false));
     this.a.toast(this.a.getResources().getString(R.string.by), 1);
     this.a.dismissProgressDialog();
-    this.a.d();
+    this.a.getInitLevel();
   }
 }
 

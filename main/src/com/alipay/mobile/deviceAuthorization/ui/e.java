@@ -17,7 +17,7 @@ final class e
 
   public final APOverView getOverView()
   {
-    return AuthorizeLogsActivity.a(this.a);
+    return AuthorizeLogsActivity.getBundle(this.a);
   }
 
   public final void onRefresh()

@@ -16,21 +16,21 @@ import android.content.pm.Signature;
 @SuppressWarnings("rawtypes")
 //a.java
 public final class AppBundle implements Comparable {
-	private String a;
-	private String b;
-	private String c;
-	private int d;
-	private String e;
-	private String[] f;
-	private String[] g;
-	private String h;
-	private boolean i;
-	private boolean j;
-	private String[] k;
+	private String bundleName;
+	private String bundleVersion;
+	private String fullBundleName;
+	private int initLevel;
+	private String bundlePath;
+	private String[] packageNames;
+	private String[] allComponentNames;
+	private String packageId;
+	private boolean hasResource;
+	private boolean hasClass;
+	private String[] requireBundleNames;
 	private boolean l;
 
 	public AppBundle(String paramString) {
-		this.e = paramString;
+		this.bundlePath = paramString;
 	}
 
 	private static boolean a(Signature[] array, Signature[] array2) {
@@ -116,69 +116,70 @@ public final class AppBundle implements Comparable {
 	}
 
 	public final void a() throws IOException {
-		final JarFile jarFile = new JarFile(this.e);
+		final JarFile jarFile = new JarFile(this.bundlePath );
 		if (jarFile.getEntry("resources.arsc") != null) {
-			this.i = true;
+			this.hasResource = true;
 		}
 		if (jarFile.getEntry("classes.dex") != null) {
-			this.j = true;
+			this.hasClass = true;
 		}
 		final Attributes mainAttributes = new Manifest(
 				jarFile.getInputStream(jarFile
 						.getJarEntry("META-INF/BUNDLE.MF")))
 				.getMainAttributes();
-		this.a = mainAttributes.getValue("Bundle-Name");
-		this.b = mainAttributes.getValue("Bundle-Version");
-		this.d = Integer.parseInt(mainAttributes.getValue("Init-Level"));
-		this.c = this.a.concat("@").concat(this.b);
-		this.f = mainAttributes.getValue("Package-Name").split(",");
-		final ArrayList list = new ArrayList();
-		final String value = mainAttributes.getValue("Activity-Name");
-		if (value != null) {
-			list.addAll(Arrays.asList(value.split(",")));
+		this.bundleName = mainAttributes.getValue("Bundle-Name");
+		this.bundleVersion = mainAttributes.getValue("Bundle-Version");
+		this.initLevel = Integer.parseInt(mainAttributes.getValue("Init-Level"));
+		this.fullBundleName = this.bundleName.concat("@").concat(this.bundleVersion);
+		this.packageNames = mainAttributes.getValue("Package-Name").split(",");
+		final ArrayList<String> appComponentNames = new ArrayList<String>();
+		final String activityNames = mainAttributes.getValue("Activity-Name");
+		if (activityNames != null) {
+			appComponentNames.addAll(Arrays.asList(activityNames.split(",")));
 		}
-		final String value2 = mainAttributes.getValue("Service-Name");
-		if (value2 != null) {
-			list.addAll(Arrays.asList(value2.split(",")));
+		final String serviceNames = mainAttributes.getValue("Service-Name");
+		if (serviceNames != null) {
+			appComponentNames.addAll(Arrays.asList(serviceNames.split(",")));
 		}
-		final String value3 = mainAttributes.getValue("Receiver-Name");
-		if (value3 != null) {
-			list.addAll(Arrays.asList(value3.split(",")));
+		final String receiverNames = mainAttributes.getValue("Receiver-Name");
+		if (receiverNames != null) {
+			appComponentNames.addAll(Arrays.asList(receiverNames.split(",")));
 		}
-		final String value4 = mainAttributes.getValue("Provider-Name");
-		if (value4 != null) {
-			list.addAll(Arrays.asList(value4.split(",")));
+		final String providerNames = mainAttributes.getValue("Provider-Name");
+		if (providerNames != null) {
+			appComponentNames.addAll(Arrays.asList(providerNames.split(",")));
 		}
-		this.g = (String[]) list.toArray(new String[list.size()]);
-		this.h = mainAttributes.getValue("Package-Id");
-		final String value5 = mainAttributes.getValue("Require-Bundle");
-		if (value5 != null) {
-			this.k = value5.split(",");
+		this.allComponentNames = (String[]) appComponentNames.toArray(new String[appComponentNames.size()]);
+		this.packageId = mainAttributes.getValue("Package-Id");
+		final String requireBundle = mainAttributes.getValue("Require-Bundle");
+		if (requireBundle != null) {
+			this.requireBundleNames = requireBundle.split(",");
 		}
 	}
 
-	public final void a(final String e) {
+	//#a
+	public final void setBundlePath(final String path) {
 		synchronized (this) {
-			this.e = e;
+			this.bundlePath = path;
 		}
 	}
 
 	public final void a(String[] array, ZipFile zipFile) {
 		if (zipFile != null && zipFile.getEntry("resources.arsc") != null) {
-			this.i = true;
+			this.hasResource = true;
 		}
 		if (zipFile != null && zipFile.getEntry("classes.dex") != null) {
-			this.j = true;
+			this.hasClass = true;
 		}
-		this.a = array[1];
-		this.b = array[2];
-		this.d = Integer.parseInt(array[3]);
-		this.c = this.a.concat("@").concat(this.b);
-		this.f = array[4].split(",");
-		this.g = array[5].split(",");
-		this.h = array[6];
+		this.bundleName = array[1];
+		this.bundleVersion = array[2];
+		this.initLevel = Integer.parseInt(array[3]);
+		this.fullBundleName = this.bundleName.concat("@").concat(this.bundleVersion);
+		this.packageNames = array[4].split(",");
+		this.allComponentNames = array[5].split(",");
+		this.packageId = array[6];
 		if (array.length >= 8) {
-			this.k = array[7].split(",");
+			this.requireBundleNames = array[7].split(",");
 		}
 	}
 
@@ -240,12 +241,12 @@ public final class AppBundle implements Comparable {
 		int i = 0;
 		synchronized (this) {
 			final StringBuffer sb = new StringBuffer();
-			sb.append(this.e).append("|");
-			sb.append(this.a).append("|");
-			sb.append(this.b).append("|");
-			sb.append(this.d).append("|");
+			sb.append(this.bundlePath).append("|");
+			sb.append(this.bundleName).append("|");
+			sb.append(this.bundleVersion).append("|");
+			sb.append(this.initLevel).append("|");
 			final StringBuffer sb2 = new StringBuffer();
-			for (final String s : this.f) {
+			for (final String s : this.packageNames) {
 				if (s.length() > 0) {
 					sb2.append(",");
 				}
@@ -253,17 +254,17 @@ public final class AppBundle implements Comparable {
 			}
 			sb.append(sb2.toString()).append("|");
 			final StringBuffer sb3 = new StringBuffer();
-			for (final String s2 : this.g) {
+			for (final String s2 : this.allComponentNames) {
 				if (s2.length() > 0) {
 					sb3.append(",");
 				}
 				sb3.append(s2);
 			}
 			sb.append(sb3.toString()).append("|");
-			sb.append(this.h).append("|");
+			sb.append(this.packageId).append("|");
 			final StringBuffer sb4 = new StringBuffer("");
-			if (this.k != null) {
-				for (String[] l = this.k; i < l.length; ++i) {
+			if (this.requireBundleNames != null) {
+				for (String[] l = this.requireBundleNames; i < l.length; ++i) {
 					final String s3 = l[i];
 					if (sb4.length() > 0) {
 						sb4.append(",");
@@ -278,41 +279,49 @@ public final class AppBundle implements Comparable {
 
 	//#c
 	public final String getBundleName() {
-		return this.a;
+		return this.bundleName;
 	}
 
-	public final int d() {
-		return this.d;
+	//#d
+	public final int getInitLevel() {
+		return this.initLevel;
 	}
 
-	public final String e() {
-		return this.c;
+	//#e
+	public final String getFullBundleName() {
+		return this.fullBundleName;
 	}
 
-	public final String f() {
+	//#f
+	public final String getBundlePath() {
 		synchronized (this) {
-			return this.e;
+			return this.bundlePath;
 		}
 	}
 
+	//#g
 	public final String[] g() {
-		return this.f;
+		return this.packageNames;
 	}
 
-	public final boolean h() {
-		return this.i;
+	//#h
+	public final boolean hasResource() {
+		return this.hasResource;
 	}
 
-	public final boolean i() {
-		return this.j;
+	//#i
+	public final boolean hasClass() {
+		return this.hasClass;
 	}
 
-	public final String[] j() {
-		return this.k;
+	//#j
+	public final String[] getRequireBundleName() {
+		return this.requireBundleNames;
 	}
 
-	public final String k() {
-		return this.b;
+	//#k
+	public final String getBundleVersion() {
+		return this.bundleVersion;
 	}
 
 	public final boolean l() {
@@ -327,15 +336,16 @@ public final class AppBundle implements Comparable {
 		}
 	}
 
-	public final String[] n() {
-		return this.g;
+	//#n
+	public final String[] getAllComponentNames() {
+		return this.allComponentNames;
 	}
 
 	@Override
 	public final String toString() {
 		int i = 0;
-		final Object[] array = { this.e, this.a, this.b, null };
-		final String[] k = this.k;
+		final Object[] array = { this.bundlePath, this.bundleName, this.bundleVersion, null };
+		final String[] k = this.requireBundleNames;
 		final StringBuilder sb = new StringBuilder();
 		while (i < k.length) {
 			final String s = k[i];

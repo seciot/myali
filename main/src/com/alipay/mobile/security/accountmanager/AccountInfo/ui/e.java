@@ -21,7 +21,7 @@ final class e
     {
       if (!AccountInfoActivity.h(this.a))
       {
-        this.a.a("com.alipay.security.namecertified");
+        this.a.getBundle("com.alipay.security.namecertified");
         AccountInfoActivity.i(this.a);
         AccountInfoActivity.d(this.a);
       }

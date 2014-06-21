@@ -9,7 +9,7 @@ final class u
 
   public final void run()
   {
-    AlipassForShareActivity_.a(this.a);
+    AlipassForShareActivity_.getBundle(this.a);
   }
 }
 

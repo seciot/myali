@@ -39,7 +39,7 @@ public abstract class a
     this.h = paramc;
   }
 
-  public final void a(com.alipay.pushsdk.push.BundlesManager.BundlesManagerImpl paramc)
+  public final void setBundlePath(com.alipay.pushsdk.push.BundlesManager.BundlesManagerImpl paramc)
   {
     if (!a())
       throw new IllegalStateException("Not connected to server.");
@@ -49,7 +49,7 @@ public abstract class a
     this.b.add(paramc);
   }
 
-  public final void a(com.alipay.pushsdk.push.d.BundlesManagerImpl paramc)
+  public final void setBundlePath(com.alipay.pushsdk.push.d.BundlesManagerImpl paramc)
   {
     if (paramc == null)
       throw new NullPointerException("Packet listener is null.");

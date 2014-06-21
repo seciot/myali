@@ -18,7 +18,7 @@ final class ff
     {
       MemberFirstDetailActivity.a();
       Bitmap localBitmap = i.a(this.a, this.b);
-      if (MemberFirstDetailActivity.a(this.d) == null)
+      if (MemberFirstDetailActivity.getBundle(this.d) == null)
         return;
       MemberFirstDetailActivity.a();
       MemberFirstDetailActivity.b().post(new fg(this, localBitmap));

@@ -7,7 +7,7 @@ import com.alipay.mobile.longlink.b.c.f;
 public class a
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(AppBundle.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(AppBundle.class);
   private final com.alipay.mobile.longlink.service.AppBundle b;
 
   public a(com.alipay.mobile.longlink.service.AppBundle parama)
@@ -15,20 +15,20 @@ public class a
     this.b = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
-    if (new f(3).a(parama))
+    if (new f(3).getBundle(parama))
     {
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
       if (parama.b() != 0);
     }
     try
     {
-      com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.c.a(this.b.g());
-      locala.a(3);
+      com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.c.getBundle(this.b.g());
+      locala.getBundle(3);
       locala.b(1);
-      locala.a("");
-      this.b.d().a(locala);
+      locala.getBundle("");
+      this.b.getInitLevel().getBundle(locala);
       this.b.t();
       return;
     }

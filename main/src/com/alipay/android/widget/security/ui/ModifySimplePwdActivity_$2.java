@@ -9,7 +9,7 @@ class ModifySimplePwdActivity_$2
 
   public void run()
   {
-    ModifySimplePwdActivity_.a(this.a);
+    ModifySimplePwdActivity_.getBundle(this.a);
   }
 }
 

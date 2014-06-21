@@ -19,7 +19,7 @@ final class ap
   {
     if (UICombobox.f(this.b) != null)
     {
-      if ((!TextUtils.isEmpty(this.b.a("toast_message"))) && (TextUtils.equals(this.b.a("show_toast"), "true")))
+      if ((!TextUtils.isEmpty(this.b.getBundle("toast_message"))) && (TextUtils.equals(this.b.getBundle("show_toast"), "true")))
         UICombobox.a(this.b, this.a);
     }
     else

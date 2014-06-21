@@ -36,12 +36,12 @@ final class aj extends Handler
     case 2:
       this.a.dismissProgressDialog();
       ApplyModifyPwdResult localApplyModifyPwdResult1 = (ApplyModifyPwdResult)JSON.parseObject(localBundle.get("rs").toString(), ApplyModifyPwdResult.class);
-      this.a.a(localApplyModifyPwdResult1);
+      this.a.getBundle(localApplyModifyPwdResult1);
       return;
     case 7:
       this.a.dismissProgressDialog();
       VerifySmsAndUserStatusResp localVerifySmsAndUserStatusResp = (VerifySmsAndUserStatusResp)JSON.parseObject(localBundle.get("rs").toString(), VerifySmsAndUserStatusResp.class);
-      this.a.a(localVerifySmsAndUserStatusResp);
+      this.a.getBundle(localVerifySmsAndUserStatusResp);
       return;
     case 3:
       this.a.dismissProgressDialog();

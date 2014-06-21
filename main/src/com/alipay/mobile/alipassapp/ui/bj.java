@@ -9,7 +9,7 @@ final class bj
 
   public final void run()
   {
-    AlipassPreviewActivity_.a(this.a);
+    AlipassPreviewActivity_.getBundle(this.a);
   }
 }
 

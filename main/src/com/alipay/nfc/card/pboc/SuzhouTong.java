@@ -16,16 +16,16 @@ public class SuzhouTong extends PbocCard
     this.o = "苏州市民卡";
   }
 
-  static final SuzhouTong a(Iso7816.Tag paramTag)
+  static final SuzhouTong setBundlePath(Iso7816.Tag paramTag)
   {
     if (paramTag.b(t).getBundleName())
       if (new Iso7816.Response(paramTag.c(new byte[] { 0, 32, 0, 0, 3, 18, 52, 86 })).getBundleName())
       {
-        Iso7816.Response localResponse1 = paramTag.a(21);
-        Iso7816.Response localResponse2 = paramTag.a(true);
+        Iso7816.Response localResponse1 = paramTag.getBundle(21);
+        Iso7816.Response localResponse2 = paramTag.getBundle(true);
         ArrayList localArrayList = b(paramTag);
         SuzhouTong localSuzhouTong = new SuzhouTong(paramTag);
-        localSuzhouTong.a(localResponse2);
+        localSuzhouTong.getBundle(localResponse2);
         localSuzhouTong.a(localResponse1, 0, false);
         localSuzhouTong.a(new ArrayList[] { localArrayList });
         return localSuzhouTong;

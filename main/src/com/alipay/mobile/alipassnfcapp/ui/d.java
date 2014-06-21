@@ -41,7 +41,7 @@ final class d extends Handler
     do
     {
       return;
-      this.a.canvasSector.a(this.a.loopNum);
+      this.a.canvasSector.getBundle(this.a.loopNum);
       this.a.canvasSector.invalidate();
       return;
       this.a.stopAnim = true;

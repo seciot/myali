@@ -12,8 +12,8 @@ final class t
 
   public final void a()
   {
-    UIInput.a(this.a.a).setText(null);
-    UIInput.a(this.a.a, UIInput.a(this.a.a));
+    UIInput.getBundle(this.a.a).setText(null);
+    UIInput.a(this.a.a, UIInput.getBundle(this.a.a));
   }
 }
 

@@ -12,12 +12,12 @@ class AuthenticationCameraShootActivity$7
 
   public void onClick(View paramView)
   {
-    if (AuthenticationCameraShootActivity.a(this.a).a == 1)
+    if (AuthenticationCameraShootActivity.getBundle(this.a).a == 1)
     {
       AuthenticationCameraShootActivity.a(this.a, AuthenticationCameraShootActivity.g(this.a), 0);
-      AuthenticationCameraShootActivity.a(this.a).a(2);
+      AuthenticationCameraShootActivity.getBundle(this.a).getBundle(2);
     }
-    while (AuthenticationCameraShootActivity.a(this.a).a != 3)
+    while (AuthenticationCameraShootActivity.getBundle(this.a).a != 3)
       return;
     AuthenticationCameraShootActivity.a(this.a, AuthenticationCameraShootActivity.h(this.a), 1);
   }

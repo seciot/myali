@@ -30,7 +30,7 @@ public final class c
     return this.b;
   }
 
-  public final SocketFactory d()
+  public final SocketFactory getInitLevel()
   {
     if (this.c == d.AppBundle)
       return new AppBundle();

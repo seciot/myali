@@ -15,14 +15,14 @@ final class bd extends CountDownTimer
     UILabel.a(this.a, 0);
     UILabel.d(this.a);
     bf localbf = new bf(this, EventType.n);
-    this.a.a(localbf);
+    this.a.getBundle(localbf);
   }
 
   public final void onTick(long paramLong)
   {
     UILabel.a(this.a, (int)paramLong - UILabel.b(this.a));
     be localbe = new be(this, EventType.o);
-    this.a.a(localbe);
+    this.a.getBundle(localbe);
   }
 }
 

@@ -65,7 +65,7 @@ public abstract class FaultRecoveringOutputStream extends AbstractOutputStream
       catch (IOException localIOException)
       {
       }
-    while (a(localIOException));
+    while (getBundle(localIOException));
     throw localIOException;
   }
 
@@ -82,7 +82,7 @@ public abstract class FaultRecoveringOutputStream extends AbstractOutputStream
       catch (IOException localIOException)
       {
       }
-    while (a(localIOException));
+    while (getBundle(localIOException));
     throw localIOException;
   }
 
@@ -127,7 +127,7 @@ public abstract class FaultRecoveringOutputStream extends AbstractOutputStream
       catch (IOException localIOException)
       {
       }
-      if (!a(localIOException))
+      if (!getBundle(localIOException))
         throw localIOException;
     }
   }

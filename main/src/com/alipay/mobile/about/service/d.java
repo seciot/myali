@@ -11,7 +11,7 @@ final class d
 
   public final void run()
   {
-    ag.a().a(this.a.a);
+    ag.a().getBundle(this.a.a);
   }
 }
 

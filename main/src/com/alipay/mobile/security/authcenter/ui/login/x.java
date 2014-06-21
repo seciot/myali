@@ -9,7 +9,7 @@ final class x
 
   public final void run()
   {
-    LoginActivity.a(this.a);
+    LoginActivity.getBundle(this.a);
   }
 }
 

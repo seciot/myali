@@ -17,7 +17,7 @@ public final class a
     this.a = ((PassManager)((RpcService)paramMicroApplicationContext.findServiceByInterface(RpcService.class.getName())).getRpcProxy(PassManager.class));
   }
 
-  public final IndexWidgetResult a(HomePageWidgetReq paramHomePageWidgetReq)
+  public final IndexWidgetResult setBundlePath(HomePageWidgetReq paramHomePageWidgetReq)
   {
     return this.a.getHomePageWidgetInfo(paramHomePageWidgetReq);
   }

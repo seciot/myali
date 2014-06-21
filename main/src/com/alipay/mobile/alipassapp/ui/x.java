@@ -13,7 +13,7 @@ final class x
 
   public final void onClick(View paramView)
   {
-    AlipassHtmlActivity.b(this.a).loadUrl(AlipassHtmlActivity.a(this.a));
+    AlipassHtmlActivity.b(this.a).loadUrl(AlipassHtmlActivity.getBundle(this.a));
   }
 }
 

@@ -7,7 +7,8 @@ import java.util.Set;
 
 //b.java
 public interface BundlesManager {
-	 AppBundle a(String paramString);
+	//#a
+	 AppBundle getBundle(String paramString);
 
 	 void a();
 

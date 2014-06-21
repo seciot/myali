@@ -9,7 +9,7 @@ final class b
 
   public final void run()
   {
-    BizDataSource.a(this.a);
+    BizDataSource.getBundle(this.a);
   }
 }
 

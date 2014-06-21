@@ -113,7 +113,7 @@ public abstract class AliUserLoginFragment<T> extends BaseLoginFragment
   @UiThread
   void h()
   {
-    d();
+    getInitLevel();
     this.d.setDropDownHeight(-2);
     this.d.setAdapter(this.j);
     APImageView localAPImageView = this.f;
@@ -137,7 +137,7 @@ public abstract class AliUserLoginFragment<T> extends BaseLoginFragment
     if (i1 == R.id.Z)
     {
       b();
-      j();
+      getRequireBundleName();
     }
     while (i1 != R.id.bN)
       return;

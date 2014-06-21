@@ -13,7 +13,7 @@ class NFCServiceImpl$1
 
   public NdefMessage createNdefMessage(NfcEvent paramNfcEvent)
   {
-    return NFCServiceImpl.a(this.a);
+    return NFCServiceImpl.getBundle(this.a);
   }
 }
 

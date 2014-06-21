@@ -28,7 +28,7 @@ final class bx
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=onPostResetPassword],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(this.a.getResources().getString(R.string.BundlesManagerImpl));
+      this.a.getBundle(this.a.getResources().getString(R.string.BundlesManagerImpl));
     }
   }
 }

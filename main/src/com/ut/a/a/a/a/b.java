@@ -56,7 +56,7 @@ public abstract class b
     return 8192;
   }
 
-  protected void a(int paramInt)
+  protected void setBundlePath(int paramInt)
   {
     if ((this.buffer == null) || (this.buffer.length < paramInt + this.pos))
       b();
@@ -64,7 +64,7 @@ public abstract class b
 
   abstract void a(byte[] paramArrayOfByte, int paramInt1, int paramInt2);
 
-  protected abstract boolean a(byte paramByte);
+  protected abstract boolean setBundlePath(byte paramByte);
 
   int available()
   {
@@ -111,7 +111,7 @@ public abstract class b
       for (int j = 0; j < i; j++)
       {
         byte b = paramArrayOfByte[j];
-        if ((61 == BundlesManager) || (a(BundlesManager)))
+        if ((61 == BundlesManager) || (getBundle(BundlesManager)))
           return true;
       }
     }

@@ -43,7 +43,7 @@ final class h
     this.a.t();
     SendSoundViewActivity.c(this.a);
     this.a.l.setVisibility(8);
-    if (!this.a.a(this.a.getApplicationContext()))
+    if (!this.a.getBundle(this.a.getApplicationContext()))
     {
       this.a.m.waveRetry();
       SendSoundViewActivity.d(this.a);

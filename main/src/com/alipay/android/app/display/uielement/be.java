@@ -15,10 +15,10 @@ final class be extends MspEventArgs
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    IEventArgs.EventScript localEventScript = new IEventArgs.EventScript(EventScriptOperation.b, this.a.a.a(getEventType()));
+    IEventArgs.EventScript localEventScript = new IEventArgs.EventScript(EventScriptOperation.b, this.a.a.getBundle(getEventType()));
     Object[] arrayOfObject = new Object[1];
     arrayOfObject[0] = Integer.valueOf(UILabel.c(this.a.a));
-    localEventScript.a(arrayOfObject);
+    localEventScript.getBundle(arrayOfObject);
     return localEventScript;
   }
 }

@@ -11,7 +11,7 @@ final class c
 
   public final void onGlobalLayout()
   {
-    if (!BaseElement.a(this.a))
+    if (!BaseElement.getBundle(this.a))
     {
       BaseElement.b(this.a);
       this.a.u();

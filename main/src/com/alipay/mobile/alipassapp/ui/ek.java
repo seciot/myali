@@ -13,7 +13,7 @@ final class ek
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    MemberCardObtainableListActivity.a(this.a).set(true);
+    MemberCardObtainableListActivity.getBundle(this.a).set(true);
   }
 }
 

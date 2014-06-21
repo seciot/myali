@@ -17,7 +17,7 @@ final class p
   {
     String str = this.a.f.getInputedText().toString().replace(" ", "");
     if ((!paramBoolean) && (!FeedAssistantActivity.a.matcher(str).find()))
-      FeedAssistantActivity.a(this.a);
+      FeedAssistantActivity.getBundle(this.a);
   }
 }
 

@@ -213,7 +213,7 @@ public class ExternalLoginActivity extends BaseActivity
     this.b = ((AccountImportService)this.mMicroApplicationContext.getExtServiceByInterface(AccountImportService.class.getName()));
     this.c = ((LoginService)this.mMicroApplicationContext.getExtServiceByInterface(LoginService.class.getName()));
     this.d = ((AccountService)this.mMicroApplicationContext.getExtServiceByInterface(AccountService.class.getName()));
-    a(getIntent());
+    getBundle(getIntent());
   }
 
   protected void onNewIntent(Intent paramIntent)

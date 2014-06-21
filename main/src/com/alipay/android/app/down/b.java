@@ -22,7 +22,7 @@ final class b extends Handler
     {
       try
       {
-        if (FileDownloader.a(this.a))
+        if (FileDownloader.getBundle(this.a))
         {
           f = (float)(100L * FileDownloader.h(this.a).a() / FileDownloader.h(this.a).b());
           if (!FileDownloader.h(this.a).getBundleName())
@@ -38,7 +38,7 @@ final class b extends Handler
       }
       catch (Exception localException)
       {
-        FileDownloader.i(this.a).d();
+        FileDownloader.i(this.a).getInitLevel();
         AppErrorException.a(FileDownloader.class, null, localException);
         return;
       }
@@ -47,9 +47,9 @@ final class b extends Handler
     }
     label153: if (f > 100.0F)
       FileDownloader.c(this.a);
-    FileDownloader.i(this.a).d();
+    FileDownloader.i(this.a).getInitLevel();
     return;
-    label180: FileDownloader.i(this.a).a(f);
+    label180: FileDownloader.i(this.a).getBundle(f);
   }
 }
 

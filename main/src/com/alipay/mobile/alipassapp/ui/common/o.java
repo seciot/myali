@@ -19,7 +19,7 @@ final class o
       k.f(this.a);
     }
     if (k.g(this.a) != null)
-      k.g(this.a).e();
+      k.g(this.a).getFullBundleName();
   }
 }
 

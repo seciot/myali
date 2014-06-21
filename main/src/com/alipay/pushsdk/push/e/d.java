@@ -9,7 +9,7 @@ import com.alipay.pushsdk.push.p;
 
 public abstract class d
 {
-  private static final String c = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(d.class);
+  private static final String c = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(d.class);
   public j a;
   public Context b;
   private String d;
@@ -18,12 +18,12 @@ public abstract class d
   {
     this.a = paramj;
     this.b = this.a.a();
-    com.alipay.pushsdk.push.AppBundle.o.a(this.a.f());
+    com.alipay.pushsdk.push.AppBundle.o.getBundle(this.a.getBundlePath());
   }
 
   public abstract void a();
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.d = paramString;
   }
@@ -35,14 +35,14 @@ public abstract class d
 
   public final void getBundleName()
   {
-    if (d())
+    if (getInitLevel())
       a();
   }
 
-  public boolean d()
+  public boolean getInitLevel()
   {
     boolean bool1 = true;
-    if (!e())
+    if (!getFullBundleName())
     {
       e.a(this.d, "40", "6");
       if (p.a() < 0)
@@ -56,7 +56,7 @@ public abstract class d
       bool1 = false;
       continue;
       com.alipay.pushsdk.push.o localo = new com.alipay.pushsdk.push.o(this.b);
-      if ((localo.a()) && (localo.f()));
+      if ((localo.a()) && (localo.getBundlePath()));
       for (boolean bool2 = bool1; ; bool2 = false)
       {
         if (bool2)
@@ -68,7 +68,7 @@ public abstract class d
     }
   }
 
-  public final boolean e()
+  public final boolean getFullBundleName()
   {
     NetworkInfo localNetworkInfo = ((ConnectivityManager)this.b.getSystemService("connectivity")).getActiveNetworkInfo();
     if (localNetworkInfo != null)

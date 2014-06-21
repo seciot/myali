@@ -127,7 +127,7 @@ public class UICheckBox extends BaseElement
     return null;
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if (!super.s());
     while (!c())

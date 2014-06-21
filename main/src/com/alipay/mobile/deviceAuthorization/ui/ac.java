@@ -17,7 +17,7 @@ final class ac
   {
     try
     {
-      LoginLogsActivity.a(this.a).getMicroApplicationContext().startApp("20000055", "20000011", null);
+      LoginLogsActivity.getBundle(this.a).getMicroApplicationContext().startApp("20000055", "20000011", null);
       return;
     }
     catch (AppLoadException localAppLoadException)

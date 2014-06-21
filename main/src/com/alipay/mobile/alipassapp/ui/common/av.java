@@ -14,7 +14,7 @@ final class av
 
   public final void onClick(View paramView)
   {
-    this.c.b.a(this.a);
+    this.c.b.getBundle(this.a);
     this.b.dismiss();
   }
 }

@@ -138,7 +138,7 @@ public abstract class BaseEditElement extends BaseElement
     this.a.removeIcon();
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if (TextUtils.isEmpty(this.c));
     String str;

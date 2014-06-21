@@ -17,11 +17,11 @@ class NFCBeamActivity$1
   public final void a()
   {
     Bundle localBundle;
-    if (!TextUtils.isEmpty(NFCBeamActivity.a(this.a)))
+    if (!TextUtils.isEmpty(NFCBeamActivity.getBundle(this.a)))
     {
       localBundle = new Bundle();
       localBundle.putString("actionType", "toAccount");
-      localBundle.putString("account", NFCBeamActivity.a(this.a));
+      localBundle.putString("account", NFCBeamActivity.getBundle(this.a));
     }
     try
     {

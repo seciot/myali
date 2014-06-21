@@ -14,7 +14,7 @@ final class de
   public final void onClick(View paramView)
   {
     ModifyPayPwdActivity.a(this.a, this.a.j.getText().toString());
-    if ((ModifyPayPwdActivity.a(this.a) != null) && (!"".equals(ModifyPayPwdActivity.a(this.a).trim())))
+    if ((ModifyPayPwdActivity.getBundle(this.a) != null) && (!"".equals(ModifyPayPwdActivity.getBundle(this.a).trim())))
     {
       this.a.showProgressDialog(null, true, this.a.m);
       new Thread(new ModifyPayPwdActivity.a(this.a, 2, (byte)0)).start();

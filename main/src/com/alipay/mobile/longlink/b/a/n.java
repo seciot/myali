@@ -23,7 +23,7 @@ public class n extends Exception
     return this.b;
   }
 
-  public void a(String paramString)
+  public void getBundle(String paramString)
   {
     this.b = paramString;
   }

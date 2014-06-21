@@ -9,7 +9,7 @@ final class b
 
   public final void run()
   {
-    EditAvatarActivity_.a(this.a);
+    EditAvatarActivity_.getBundle(this.a);
   }
 }
 

@@ -5,7 +5,7 @@ import com.alipay.pushsdk.push.j;
 public class b
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(BundlesManager.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(BundlesManager.class);
   private final j b;
 
   public b(j paramj)
@@ -14,7 +14,7 @@ public class b
   }
 
   // ERROR //
-  public final void a(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
   {
     // Byte code:
     //   0: new 32	com/alipay/pushsdk/push/f

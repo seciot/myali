@@ -27,7 +27,7 @@ final class b extends AsyncTask<String, String, AuthSignRes>
     localAuthSignReq.setTid(((DeviceService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(DeviceService.class.getName())).queryDeviceInfo().getWalletTid());
     try
     {
-      AuthSignRes localAuthSignRes = AuthorizationActivity.removeBundle(this.a).a(localAuthSignReq);
+      AuthSignRes localAuthSignRes = AuthorizationActivity.removeBundle(this.a).getBundle(localAuthSignReq);
       return localAuthSignRes;
     }
     catch (RpcException localRpcException)

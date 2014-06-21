@@ -21,7 +21,7 @@ final class w
   {
     Bundle localBundle = new Bundle();
     localBundle.putString("URL", ReadSettingServerUrl.getPoliceCenterUrl(AlipayApplication.getInstance()) + "?serviceId=wallet_0003&context=changeBindPhoneNum");
-    SecurityBindPhoneActivity.a(this.a).getMicroApplicationContext().startApp(null, "20000111", localBundle);
+    SecurityBindPhoneActivity.getBundle(this.a).getMicroApplicationContext().startApp(null, "20000111", localBundle);
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "20000070", "-", "-", "bindingMobileView", "changeMobile");
   }
 }

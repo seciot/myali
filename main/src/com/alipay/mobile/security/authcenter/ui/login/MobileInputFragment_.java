@@ -61,10 +61,10 @@ public final class MobileInputFragment_ extends MobileInputFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.d = ((APButton)a(R.id.fQ));
-    this.f = ((APButton)a(R.id.cw));
-    this.e = ((APButton)a(R.id.dh));
-    this.g = ((APInputBox)a(R.id.cg));
+    this.d = ((APButton)getBundle(R.id.fQ));
+    this.f = ((APButton)getBundle(R.id.cw));
+    this.e = ((APButton)getBundle(R.id.dh));
+    this.g = ((APInputBox)getBundle(R.id.cg));
     c();
   }
 }

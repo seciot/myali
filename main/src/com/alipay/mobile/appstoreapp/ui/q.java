@@ -22,7 +22,7 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
         FastLoginAppActivity.a(this.a, 2048);
       while (true)
       {
-        Page localPage = FastLoginAppActivity.c(this.a).a(FastLoginAppActivity.a(this.a), FastLoginAppActivity.b(this.a));
+        Page localPage = FastLoginAppActivity.c(this.a).a(FastLoginAppActivity.getBundle(this.a), FastLoginAppActivity.b(this.a));
         if (this.a.a)
           FastLoginAppActivity.getBundleName();
         return new QueryResult(1000, "", localPage);
@@ -31,13 +31,13 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
     }
     catch (AppStoreException localAppStoreException)
     {
-      FastLoginAppActivity.d();
+      FastLoginAppActivity.getInitLevel();
       localAppStoreException.getMessage();
       return new QueryResult(localAppStoreException.getResultStatus(), localAppStoreException.getMemo(), null);
     }
     catch (RpcException localRpcException)
     {
-      FastLoginAppActivity.d();
+      FastLoginAppActivity.getInitLevel();
       if ((localRpcException.getCode() == 7) || (localRpcException.getCode() == 2) || (localRpcException.getCode() == 4))
         return new QueryResult(9999, "网络异常", null);
       this.a.runOnUiThread(new r(this));
@@ -45,7 +45,7 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
     }
     catch (Exception localException)
     {
-      FastLoginAppActivity.d();
+      FastLoginAppActivity.getInitLevel();
       localException.getMessage();
     }
     return new QueryResult(9999, "系统发生异常", null);

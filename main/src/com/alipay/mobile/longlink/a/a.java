@@ -16,7 +16,7 @@ public class a
     return this.e;
   }
 
-  public void a(String paramString)
+  public void getBundle(String paramString)
   {
     this.e = paramString;
   }
@@ -41,7 +41,7 @@ public class a
     this.a = paramString;
   }
 
-  public String d()
+  public String getInitLevel()
   {
     return this.b;
   }
@@ -51,7 +51,7 @@ public class a
     this.b = paramString;
   }
 
-  public String e()
+  public String getFullBundleName()
   {
     return this.c;
   }

@@ -15,7 +15,7 @@ final class b
 
   public final void onFocusChange(View paramView, boolean paramBoolean)
   {
-    String str = AboutFeedbackActivity.a(this.a).getInputedText().replace(" ", "");
+    String str = AboutFeedbackActivity.getBundle(this.a).getInputedText().replace(" ", "");
     if ((!paramBoolean) && (!AboutFeedbackActivity.a.matcher(str).find()))
       AboutFeedbackActivity.b(this.a);
   }

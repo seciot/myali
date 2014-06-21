@@ -15,7 +15,7 @@ final class x
   {
     try
     {
-      MiniWindowManager.a(this.c).a(this.a, this.b);
+      MiniWindowManager.getBundle(this.c).a(this.a, this.b);
       return;
     }
     catch (AppErrorException localAppErrorException)

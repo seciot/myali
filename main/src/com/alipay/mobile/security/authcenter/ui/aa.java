@@ -24,14 +24,14 @@ final class aa
     try
     {
       y.a(this.b, paramString);
-      y.a(this.b).showProgressDialog(null, true, null);
+      y.getBundle(this.b).showProgressDialog(null, true, null);
       localSetMobilePayPwdRes = y.b(this.b).b(this.a, paramString, "");
-      y.a(this.b).dismissProgressDialog();
+      y.getBundle(this.b).dismissProgressDialog();
       return localSetMobilePayPwdRes;
     }
     catch (RpcException localRpcException)
     {
-      y.a(this.b).dismissProgressDialog();
+      y.getBundle(this.b).dismissProgressDialog();
       localRpcException.getMessage();
       throw localRpcException;
     }
@@ -43,16 +43,16 @@ final class aa
 
   public final void a(Object paramObject, PwdHistoryClearCallBack paramPwdHistoryClearCallBack)
   {
-    if ((y.a(this.b) == null) || (y.a(this.b).isFinishing()));
+    if ((y.getBundle(this.b) == null) || (y.getBundle(this.b).isFinishing()));
     while ((paramObject == null) || (!(paramObject instanceof SetMobilePayPwdRes)))
       return;
     SetMobilePayPwdRes localSetMobilePayPwdRes = (SetMobilePayPwdRes)paramObject;
     if ((1000 == localSetMobilePayPwdRes.resultStatus) || (1103 == localSetMobilePayPwdRes.resultStatus))
     {
-      y.a(this.b).alert(y.a(this.b).getResources().getString(R.string.cM), y.a(this.b).getResources().getString(R.string.cN), "我知道了", new ab(this), null, null);
+      y.getBundle(this.b).alert(y.getBundle(this.b).getResources().getString(R.string.cM), y.getBundle(this.b).getResources().getString(R.string.cN), "我知道了", new ab(this), null, null);
       return;
     }
-    y.a(this.b).alert(null, localSetMobilePayPwdRes.memo, "确定", new ac(this, paramPwdHistoryClearCallBack), null, null);
+    y.getBundle(this.b).alert(null, localSetMobilePayPwdRes.memo, "确定", new ac(this, paramPwdHistoryClearCallBack), null, null);
   }
 }
 

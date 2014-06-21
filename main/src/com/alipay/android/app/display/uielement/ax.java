@@ -11,10 +11,10 @@ final class ax
 
   public final void run()
   {
-    if (UIDatePicker.a(this.b) != null)
+    if (UIDatePicker.getBundle(this.b) != null)
     {
-      UIDatePicker.a(this.b).setEnabled(this.a);
-      UIDatePicker.a(this.b).setFocusable(this.a);
+      UIDatePicker.getBundle(this.b).setEnabled(this.a);
+      UIDatePicker.getBundle(this.b).setFocusable(this.a);
     }
   }
 }

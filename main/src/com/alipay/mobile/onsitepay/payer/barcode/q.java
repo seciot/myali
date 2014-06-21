@@ -9,7 +9,7 @@ final class q
 
   public final void run()
   {
-    BarcodePayActivity_.a(this.a);
+    BarcodePayActivity_.getBundle(this.a);
   }
 }
 

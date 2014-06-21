@@ -14,7 +14,7 @@ final class i
   {
     if (paramBoolean)
     {
-      this.a.a.a(paramString);
+      this.a.a.getBundle(paramString);
       return;
     }
     ExtViewUtil.closeSoftInputWindow(this.a.a);

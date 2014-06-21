@@ -14,7 +14,7 @@ final class e
 
   public final void onClick(View paramView)
   {
-    HeaderAreaLayout.a(this.a).setVisibility(8);
+    HeaderAreaLayout.getBundle(this.a).setVisibility(8);
     HeaderAreaLayout.b(this.a).setVisibility(8);
     HeaderAreaLayout.c(this.a);
     HomeLogAgentUtil.a();

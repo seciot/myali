@@ -12,7 +12,7 @@ final class a
 
   public final void run()
   {
-    SecurityUtil.c(AlipayApplication.getInstance(), SMSReceiveFragment.a(this.a));
+    SecurityUtil.c(AlipayApplication.getInstance(), SMSReceiveFragment.getBundle(this.a));
   }
 }
 

@@ -82,7 +82,7 @@ public class d
     System.arraycopy(arrayOfByte2, 0, arrayOfByte5, 4, 4);
     System.arraycopy(arrayOfByte3, 0, arrayOfByte5, 8, 4);
     System.arraycopy(arrayOfByte4, 0, arrayOfByte5, 12, 4);
-    return a.a(arrayOfByte5);
+    return a.getBundle(arrayOfByte5);
   }
 }
 

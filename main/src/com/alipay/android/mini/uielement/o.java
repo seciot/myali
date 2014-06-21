@@ -11,8 +11,8 @@ final class o extends MiniReadBankCardArgs
 
   public final void onReadSuccess(String paramString)
   {
-    if (UIInput.a(this.a) != null)
-      UIInput.a(this.a).setText(paramString);
+    if (UIInput.getBundle(this.a) != null)
+      UIInput.getBundle(this.a).setText(paramString);
   }
 }
 

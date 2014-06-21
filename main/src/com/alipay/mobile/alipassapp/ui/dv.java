@@ -30,7 +30,7 @@ final class dv
       return;
     MemberCardDetailActivity.d(this.a).onRefresh();
     MemberCardDetailActivity.h(this.a);
-    this.a.a(false);
+    this.a.getBundle(false);
   }
 }
 

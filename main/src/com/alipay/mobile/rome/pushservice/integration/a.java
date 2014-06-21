@@ -12,7 +12,7 @@ final class a
 
   public final void onClick(View paramView)
   {
-    PushDialogActivity.a(this.a);
+    PushDialogActivity.getBundle(this.a);
     PushDialogActivity.b(this.a);
   }
 }

@@ -12,21 +12,21 @@ final class n
 
   public final void onInstallFailed()
   {
-    this.a.a.n();
+    this.a.a.getAllComponentNames();
     this.a.a.toast("设备认证失败", 0);
   }
 
   public final void onPayFailed(int paramInt, String paramString)
   {
     BarcodePayActivity.i(this.a.a);
-    this.a.a.n();
+    this.a.a.getAllComponentNames();
     this.a.a.toast("设备认证失败", 0);
   }
 
   public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)
   {
     BarcodePayActivity.j(this.a.a);
-    this.a.a.n();
+    this.a.a.getAllComponentNames();
     this.a.a.toast("设备认证成功", 0);
   }
 }

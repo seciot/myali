@@ -33,7 +33,7 @@ public final class Iso7816$BerTLV extends Iso7816
     return localBerTLV;
   }
 
-  public final BerTLV a(Iso7816.BerT paramBerT)
+  public final BerTLV setBundlePath(Iso7816.BerT paramBerT)
   {
     if (this.c.getBundleName())
     {

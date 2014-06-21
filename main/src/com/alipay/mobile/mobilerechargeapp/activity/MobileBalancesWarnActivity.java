@@ -103,7 +103,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
     }
     this.d = new WarnManagerListAdapter(this, this.b, paramAlertSignQueryRes.addSwitch);
     this.a.setAdapter(this.d);
-    this.d.a(this.m);
+    this.d.getBundle(this.m);
   }
 
   protected void a(AlertSignRes paramAlertSignRes, int paramInt1, int paramInt2)

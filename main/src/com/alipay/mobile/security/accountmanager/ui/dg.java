@@ -9,7 +9,7 @@ final class dg
 
   public final void run()
   {
-    ModifyPayPwdActivity_.a(this.a);
+    ModifyPayPwdActivity_.getBundle(this.a);
   }
 }
 

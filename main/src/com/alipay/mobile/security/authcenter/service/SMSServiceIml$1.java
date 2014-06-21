@@ -17,14 +17,14 @@ class SMSServiceIml$1 extends BroadcastReceiver
     {
     default:
       if (SMSServiceIml.access$000(this.a) != null)
-        SMSServiceIml.access$000(this.a).a(false);
+        SMSServiceIml.access$000(this.a).getBundle(false);
       break;
     case -1:
     }
     do
       return;
     while (SMSServiceIml.access$000(this.a) == null);
-    SMSServiceIml.access$000(this.a).a(true);
+    SMSServiceIml.access$000(this.a).getBundle(true);
   }
 }
 

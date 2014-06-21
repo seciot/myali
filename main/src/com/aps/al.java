@@ -20,7 +20,7 @@ final class al
   {
     s.d(this.a).a();
     a(paramLocation);
-    if (((this.a.e()) || (s.d(this.a).a())) && (a(paramLocation)))
+    if (((this.a.getFullBundleName()) || (s.d(this.a).a())) && (a(paramLocation)))
     {
       paramLocation.setTime(System.currentTimeMillis());
       s.a(this.a, System.currentTimeMillis());

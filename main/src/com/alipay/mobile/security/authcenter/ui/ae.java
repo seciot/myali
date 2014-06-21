@@ -16,7 +16,7 @@ final class ae
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     AlipayApplication.getInstance().getMicroApplicationContext().showProgressDialog("");
-    this.a.a.a(this.a.a.d.getInputedText().replace(" ", ""));
+    this.a.a.getBundle(this.a.a.d.getInputedText().replace(" ", ""));
   }
 }
 

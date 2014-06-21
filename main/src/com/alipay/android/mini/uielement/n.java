@@ -15,9 +15,9 @@ final class n
 
   public final void onClick(View paramView)
   {
-    UIInput.a(this.a).requestFocus();
+    UIInput.getBundle(this.a).requestFocus();
     UIInput.b(this.a).a();
-    UIPropUtil.a(UIInput.a(this.a).getWindowToken(), UIInput.c(this.a));
+    UIPropUtil.a(UIInput.getBundle(this.a).getWindowToken(), UIInput.c(this.a));
   }
 }
 

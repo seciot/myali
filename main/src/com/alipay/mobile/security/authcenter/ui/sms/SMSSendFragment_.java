@@ -50,8 +50,8 @@ public final class SMSSendFragment_ extends SMSSendFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.d = ((APTextView)a(R.id.cF));
-    this.e = ((APButton)a(R.id.aE));
+    this.d = ((APTextView)getBundle(R.id.cF));
+    this.e = ((APButton)getBundle(R.id.aE));
     c();
   }
 }

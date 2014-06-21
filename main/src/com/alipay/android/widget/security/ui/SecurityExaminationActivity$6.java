@@ -41,7 +41,7 @@ class SecurityExaminationActivity$6
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=doPortraitSet],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(localAppLoadException.getMessage());
+      this.a.getBundle(localAppLoadException.getMessage());
     }
   }
 }

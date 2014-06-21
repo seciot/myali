@@ -14,7 +14,7 @@ class AuthenticationCameraShootActivity$4
   {
     try
     {
-      AuthenticationCameraShootActivity.b(this.a).h();
+      AuthenticationCameraShootActivity.b(this.a).hasResource();
       AuthenticationCameraShootActivity.c(this.a);
       return;
     }

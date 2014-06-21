@@ -12,7 +12,7 @@ final class t
 
   public final void onClick(View paramView)
   {
-    this.a.e();
+    this.a.getFullBundleName();
   }
 }
 

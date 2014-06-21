@@ -77,9 +77,9 @@ public final class SMSReceiveFragment_ extends SMSReceiveFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.e = ((APCheckCodeHorizontalView)a(R.id.aC));
-    this.d = ((APTextView)a(R.id.aD));
-    this.f = ((APButton)a(R.id.fM));
+    this.e = ((APCheckCodeHorizontalView)getBundle(R.id.aC));
+    this.d = ((APTextView)getBundle(R.id.aD));
+    this.f = ((APButton)getBundle(R.id.fM));
     c();
   }
 }

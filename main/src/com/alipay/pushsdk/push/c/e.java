@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 
 public class e extends AppBundle
 {
-  private static final String c = BundlesManagerImpl.a(e.class);
+  private static final String c = BundlesManagerImpl.getBundle(e.class);
   private int d = BundlesManager.BundlesManagerImpl;
   private int e = BundlesManager.d;
 
@@ -12,7 +12,7 @@ public class e extends AppBundle
   {
     f(BundlesManager.BundlesManagerImpl);
     g(BundlesManager.d);
-    f();
+    getBundlePath();
   }
 
   public final void b(byte[] paramArrayOfByte)
@@ -34,7 +34,7 @@ public class e extends AppBundle
     int k = 0x1 & j >>> 7;
     int m = 0x1 & j >>> 6;
     int n = 0x1 & j >>> 5;
-    a(i);
+    getBundle(i);
     b(k);
     c(m);
     d(n);
@@ -42,21 +42,21 @@ public class e extends AppBundle
     BundlesManagerImpl.a(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + k);
   }
 
-  public final int j()
+  public final int getRequireBundleName()
   {
     if (a() == 3)
       g(2);
     return this.b;
   }
 
-  public final byte[] k()
+  public final byte[] getBundleVersion()
   {
     int i = this.e;
     if (a() == 3)
       i = 2;
     byte[] arrayOfByte = new byte[i];
     arrayOfByte[0] = ((byte)(this.d << 4 | a()));
-    arrayOfByte[1] = ((byte)(b() << 7 | getBundleName() << 6 | d() << 5 | e() << 4));
+    arrayOfByte[1] = ((byte)(b() << 7 | getBundleName() << 6 | getInitLevel() << 5 | getFullBundleName() << 4));
     BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrbufforWrite() the 1st buffer:" + arrayOfByte[0]);
     BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrbufforWrite() the 2nd buffer:" + arrayOfByte[1]);
     if (a() != 3)

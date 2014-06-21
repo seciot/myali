@@ -18,11 +18,11 @@ final class o
       str = this.a[0];
     if ((MiniPayActivity.b(this.b) != null) && (MiniPayActivity.b(this.b).isShowing()) && (TextUtils.equals(MiniPayActivity.b(this.b).a(), str)))
       return;
-    MiniPayActivity.a(this.b);
+    MiniPayActivity.getBundle(this.b);
     if (MiniPayActivity.b(this.b) == null)
       MiniPayActivity.a(this.b, new MiniProgressDialog(this.b));
     MiniPayActivity.b(this.b).setCancelable(false);
-    MiniPayActivity.b(this.b).a(str);
+    MiniPayActivity.b(this.b).getBundle(str);
     MiniPayActivity.b(this.b).show();
   }
 }

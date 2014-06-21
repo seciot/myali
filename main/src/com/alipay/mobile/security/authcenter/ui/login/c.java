@@ -14,7 +14,7 @@ final class c
 
   public final void onClick(View paramView)
   {
-    a.a(this.a).setText("");
+    a.getBundle(this.a).setText("");
     a.b(this.a).setText("");
   }
 }

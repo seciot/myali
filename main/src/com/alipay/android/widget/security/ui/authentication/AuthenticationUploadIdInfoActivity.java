@@ -27,7 +27,7 @@ public class AuthenticationUploadIdInfoActivity extends BaseAuthenticationActivi
       this.c = getSupportFragmentManager();
       UploadIdImgFragment_ localUploadIdImgFragment_ = new UploadIdImgFragment_();
       localUploadIdImgFragment_.setArguments(localBundle);
-      localUploadIdImgFragment_.a(this.mApp);
+      localUploadIdImgFragment_.getBundle(this.mApp);
       a(localUploadIdImgFragment_, false);
     }
   }

@@ -16,7 +16,7 @@ public class a
 
   public void a()
   {
-    this.d = com.taobao.dp.a.a.a(this.c);
+    this.d = com.taobao.dp.a.a.getBundle(this.c);
   }
 }
 

@@ -15,8 +15,8 @@ final class h extends MspEventArgs
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    IEventArgs.EventScript localEventScript = new IEventArgs.EventScript(EventScriptOperation.b, MainActivity.a(this.a));
-    localEventScript.a(new Object[] { "close" });
+    IEventArgs.EventScript localEventScript = new IEventArgs.EventScript(EventScriptOperation.b, MainActivity.getBundle(this.a));
+    localEventScript.getBundle(new Object[] { "close" });
     return localEventScript;
   }
 }

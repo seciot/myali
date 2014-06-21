@@ -14,16 +14,16 @@ public final class f extends Handler
   {
     super.handleMessage(paramMessage);
     BundlesManager localb = (BundlesManager)paramMessage.obj;
-    switch (localb.d())
+    switch (localb.getInitLevel())
     {
     default:
       return;
     case 3:
-      e.a(this.a).a(localb);
+      e.getBundle(this.a).getBundle(localb);
       return;
     case 4:
     }
-    e.a(this.a).a();
+    e.getBundle(this.a).a();
   }
 }
 

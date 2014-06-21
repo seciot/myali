@@ -15,7 +15,7 @@ class NFCMainActivity$2
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    NFCMainActivity.b(this.a).getMicroApplicationContext().startActivity(NFCMainActivity.a(this.a), new Intent(this.a, NFCFeedBackActivity.class));
+    NFCMainActivity.b(this.a).getMicroApplicationContext().startActivity(NFCMainActivity.getBundle(this.a), new Intent(this.a, NFCFeedBackActivity.class));
     paramDialogInterface.dismiss();
   }
 }

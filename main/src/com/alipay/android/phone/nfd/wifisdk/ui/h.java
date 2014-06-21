@@ -12,7 +12,7 @@ final class h
 
   public final void onClick(View paramView)
   {
-    this.a.h();
+    this.a.hasResource();
   }
 }
 

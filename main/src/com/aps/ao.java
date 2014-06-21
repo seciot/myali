@@ -8,7 +8,7 @@ public class ao
 
   public void a()
   {
-    s.a(this.a);
+    s.getBundle(this.a);
   }
 }
 

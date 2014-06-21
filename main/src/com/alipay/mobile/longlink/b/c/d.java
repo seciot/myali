@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.b.c;
 
 public abstract interface d
 {
-  public abstract boolean a(AppBundle parama);
+  public abstract boolean setBundlePath(AppBundle parama);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

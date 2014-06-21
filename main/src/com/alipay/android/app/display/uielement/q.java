@@ -13,12 +13,12 @@ final class q extends ToastEventArgs
 
   public final String getDataByKey(String paramString)
   {
-    return this.a.a("toast_message");
+    return this.a.getBundle("toast_message");
   }
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a(getEventType()));
+    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.getBundle(getEventType()));
   }
 }
 

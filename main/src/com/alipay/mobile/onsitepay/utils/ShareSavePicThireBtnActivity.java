@@ -100,7 +100,7 @@ public class ShareSavePicThireBtnActivity extends BaseActivity
   {
     try
     {
-      int m = a.a(this.g);
+      int m = a.getBundle(this.g);
       new StringBuilder("shareType=").append(m).toString();
       if (this.g != null)
       {

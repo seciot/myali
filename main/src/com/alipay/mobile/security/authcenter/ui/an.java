@@ -12,7 +12,7 @@ final class an
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.a(this.a.b(), RegisterNewActivity.a(this.a), true, true, true);
+    RegisterNewActivity.a(this.a.b(), RegisterNewActivity.getBundle(this.a), true, true, true);
     RegisterNewActivity.a(this.a, "");
   }
 }

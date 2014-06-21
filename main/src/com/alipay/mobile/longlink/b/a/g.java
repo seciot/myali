@@ -11,7 +11,7 @@ final class g
 
   public final Thread newThread(Runnable paramRunnable)
   {
-    Thread localThread = new Thread(paramRunnable, "Push Listener Processor (" + e.a(this.a).g + ")");
+    Thread localThread = new Thread(paramRunnable, "Push Listener Processor (" + e.getBundle(this.a).g + ")");
     localThread.setDaemon(true);
     return localThread;
   }

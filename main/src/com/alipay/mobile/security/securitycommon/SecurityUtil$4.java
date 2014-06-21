@@ -13,8 +13,8 @@ class SecurityUtil$4
 
   public void onClick(View paramView)
   {
-    if (SecurityUtil.a(this.b) != null)
-      SecurityUtil.a(this.b).dismiss();
+    if (SecurityUtil.getBundle(this.b) != null)
+      SecurityUtil.getBundle(this.b).dismiss();
     if (this.a != null)
       this.a.onClick(paramView);
   }

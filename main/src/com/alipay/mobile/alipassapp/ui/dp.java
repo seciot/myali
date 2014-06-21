@@ -18,7 +18,7 @@ final class dp extends Handler
   public final void handleMessage(Message paramMessage)
   {
     int i = 8;
-    if ((MemberCardDetailActivity.a(this.a) == null) || (MemberCardDetailActivity.a(this.a).getTag() == null) || (!MemberCardDetailActivity.a(this.a).getTag().equals(paramMessage.obj)));
+    if ((MemberCardDetailActivity.getBundle(this.a) == null) || (MemberCardDetailActivity.getBundle(this.a).getTag() == null) || (!MemberCardDetailActivity.getBundle(this.a).getTag().equals(paramMessage.obj)));
     label185: label335: label340: label378: 
     while (true)
     {
@@ -32,36 +32,36 @@ final class dp extends Handler
       if (!StringUtils.equalsIgnoreCase(MemberCardDetailActivity.b(this.a), "dbarcode"))
       {
         MemberCardDetailActivity.c(this.a).setVisibility(i);
-        MemberCardDetailActivity.a(this.a).setVisibility(i);
+        MemberCardDetailActivity.getBundle(this.a).setVisibility(i);
         return;
       }
       APTextView localAPTextView = MemberCardDetailActivity.c(this.a);
       int j;
-      if (StringUtils.isBlank(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag())))
+      if (StringUtils.isBlank(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag())))
       {
         j = 0;
         localAPTextView.setVisibility(j);
-        APImageView localAPImageView = MemberCardDetailActivity.a(this.a);
-        if (!StringUtils.isBlank(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag())))
+        APImageView localAPImageView = MemberCardDetailActivity.getBundle(this.a);
+        if (!StringUtils.isBlank(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag())))
           break label335;
         localAPImageView.setVisibility(i);
-        MemberCardDetailActivity.a(this.a).setImageBitmap(MemberCardDetailActivity.d(this.a).getBitmap(MemberCardDetailActivity.a(this.a).getTag()));
+        MemberCardDetailActivity.getBundle(this.a).setImageBitmap(MemberCardDetailActivity.d(this.a).getBitmap(MemberCardDetailActivity.getBundle(this.a).getTag()));
         if (MemberCardDetailActivity.removeBundle(this.a) != null)
           break label340;
-        MemberCardDetailActivity.a(this.a, new au(this.a, MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()), true));
-        MemberCardDetailActivity.a(this.a).setOnClickListener(MemberCardDetailActivity.removeBundle(this.a));
+        MemberCardDetailActivity.a(this.a, new au(this.a, MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()), true));
+        MemberCardDetailActivity.getBundle(this.a).setOnClickListener(MemberCardDetailActivity.removeBundle(this.a));
       }
       while (true)
       {
         if (MemberCardDetailActivity.f(this.a) == null)
           break label378;
-        MemberCardDetailActivity.f(this.a).startPayBridge(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()));
+        MemberCardDetailActivity.f(this.a).startPayBridge(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()));
         return;
         j = i;
         break;
         i = 0;
         break label185;
-        MemberCardDetailActivity.removeBundle(this.a).a(MemberCardDetailActivity.a(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.a(this.a).getTag()));
+        MemberCardDetailActivity.removeBundle(this.a).a(MemberCardDetailActivity.getBundle(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()));
       }
     }
   }

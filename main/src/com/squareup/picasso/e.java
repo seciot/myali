@@ -44,7 +44,7 @@ class e
     this.i = 0;
     this.j = null;
     this.o = 2;
-    this.k = l.a(this);
+    this.k = l.getBundle(this);
   }
 
   private String d()

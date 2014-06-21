@@ -20,7 +20,7 @@ final class h
     if (paramBoolean)
     {
       NoPasswordActivity.a(this.a, this.a.a.f);
-      NoPasswordActivity.a(this.a).setVisibility(0);
+      NoPasswordActivity.getBundle(this.a).setVisibility(0);
       NoPasswordActivity.b(this.a).setVisibility(0);
       NoPasswordActivity.c(this.a).setType(17);
       LogAgent.j("SPSafePay");
@@ -28,7 +28,7 @@ final class h
     }
     LogAgent.k("SPSafePay");
     NoPasswordActivity.a(this.a, 0);
-    NoPasswordActivity.a(this.a).setVisibility(8);
+    NoPasswordActivity.getBundle(this.a).setVisibility(8);
     NoPasswordActivity.b(this.a).setVisibility(8);
     NoPasswordActivity.c(this.a).setType(16);
   }

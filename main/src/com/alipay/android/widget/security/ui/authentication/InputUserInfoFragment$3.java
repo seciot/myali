@@ -12,7 +12,7 @@ class InputUserInfoFragment$3
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    InputUserInfoFragment.a(this.a);
+    InputUserInfoFragment.getBundle(this.a);
   }
 }
 

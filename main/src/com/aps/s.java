@@ -55,7 +55,7 @@ public class s
     for (boolean bool = true; ; bool = false)
     {
       this.t = bool;
-      p.a(paramContext);
+      p.getBundle(paramContext);
       return;
     }
   }
@@ -108,7 +108,7 @@ public class s
     }
     this.n = new ak(this, "");
     this.n.start();
-    this.f.a(null);
+    this.f.getBundle(null);
     a = true;
   }
 

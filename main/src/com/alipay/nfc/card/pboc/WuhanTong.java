@@ -16,24 +16,24 @@ final class WuhanTong extends PbocCard
     this.o = "武汉城市一卡通";
   }
 
-  static final WuhanTong a(Iso7816.Tag paramTag)
+  static final WuhanTong setBundlePath(Iso7816.Tag paramTag)
   {
     if (paramTag.b(c).getBundleName())
     {
-      Iso7816.Response localResponse1 = paramTag.a(10);
+      Iso7816.Response localResponse1 = paramTag.getBundle(10);
       if (!localResponse1.getBundleName())
         return null;
-      Iso7816.Response localResponse2 = paramTag.a(5);
+      Iso7816.Response localResponse2 = paramTag.getBundle(5);
       if (!localResponse2.getBundleName())
         return null;
-      Iso7816.Response localResponse3 = paramTag.a(true);
+      Iso7816.Response localResponse3 = paramTag.getBundle(true);
       if (paramTag.b(t).getBundleName())
       {
         if (!localResponse3.getBundleName())
-          localResponse3 = paramTag.a(true);
+          localResponse3 = paramTag.getBundle(true);
         ArrayList localArrayList = b(paramTag);
         WuhanTong localWuhanTong = new WuhanTong(paramTag);
-        localWuhanTong.a(localResponse3);
+        localWuhanTong.getBundle(localResponse3);
         if ((localResponse1.a() < 27) || (localResponse2.a() < 27))
         {
           localWuhanTong.j = null;

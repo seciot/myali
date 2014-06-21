@@ -15,7 +15,7 @@ final class b
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    ((UpdateServices)a.a(this.b).getExtServiceByInterface(UpdateServices.class.getName())).update(this.a.getDownloadURL());
+    ((UpdateServices)a.getBundle(this.b).getExtServiceByInterface(UpdateServices.class.getName())).update(this.a.getDownloadURL());
   }
 }
 

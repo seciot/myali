@@ -12,7 +12,7 @@ class AuthenticationCameraShootActivity$1
 
   public void onClick(View paramView)
   {
-    AuthenticationCameraShootActivity.a(this.a).a(1);
+    AuthenticationCameraShootActivity.getBundle(this.a).getBundle(1);
   }
 }
 

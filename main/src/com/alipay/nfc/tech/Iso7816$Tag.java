@@ -20,7 +20,7 @@ public final class Iso7816$Tag
     return this.b;
   }
 
-  public final Iso7816.Response a(int paramInt)
+  public final Iso7816.Response setBundlePath(int paramInt)
   {
     byte[] arrayOfByte = new byte[5];
     arrayOfByte[0] = 0;
@@ -42,7 +42,7 @@ public final class Iso7816$Tag
     return new Iso7816.Response(c(arrayOfByte));
   }
 
-  public final Iso7816.Response a(boolean paramBoolean)
+  public final Iso7816.Response setBundlePath(boolean paramBoolean)
   {
     int i = 2;
     byte[] arrayOfByte = new byte[5];
@@ -59,7 +59,7 @@ public final class Iso7816$Tag
     }
   }
 
-  public final Iso7816.Response a(byte[] paramArrayOfByte)
+  public final Iso7816.Response setBundlePath(byte[] paramArrayOfByte)
   {
     ByteBuffer localByteBuffer = ByteBuffer.allocate(6 + paramArrayOfByte.length);
     localByteBuffer.put((byte)0).put((byte)-92).put((byte)0).put((byte)0).put((byte)paramArrayOfByte.length).put(paramArrayOfByte).put((byte)0);

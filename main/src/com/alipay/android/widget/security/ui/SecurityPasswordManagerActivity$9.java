@@ -24,7 +24,7 @@ class SecurityPasswordManagerActivity$9
     }
     while (this.c.k == null);
     this.c.j = this.c.k.getLogonId();
-    this.c.a(this.c.k);
+    this.c.getBundle(this.c.k);
   }
 }
 

@@ -499,12 +499,12 @@ public final class BundlesManagerImpl implements BundlesManager {
 	private void b(Map<String, AppBundle> map) {
 		for (final AppBundle a : map.values()) {
 			final String c = a.getBundleName();
-			final String f = a.f();
+			final String f = a.getBundlePath();
 			final AppBundle h = this.h(c);
 			if (h != null) {
 				com.alipay.mobile.quinox.utils.c
-						.a(com.alipay.mobile.quinox.utils.b.a(h.f(), this.c));
-				com.alipay.mobile.quinox.utils.c.a(h.f());
+						.a(com.alipay.mobile.quinox.utils.b.a(h.getBundlePath(), this.c));
+				com.alipay.mobile.quinox.utils.c.a(h.getBundlePath());
 			}
 			com.alipay.mobile.quinox.utils.c.a(com.alipay.mobile.quinox.utils.b
 					.a(f, this.c));
@@ -523,7 +523,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 				AppBundle locala = h(str);
 				if (locala != null) {
 					localArrayList.add(str);
-					String[] arrayOfString1 = locala.j();
+					String[] arrayOfString1 = locala.getRequireBundleName();
 					if (arrayOfString1 != null) {
 						String[] arrayOfString2 = new String[this.f.length
 								+ arrayOfString1.length];
@@ -854,8 +854,9 @@ public final class BundlesManagerImpl implements BundlesManager {
 		}
 	}
 
-	public final AppBundle a(String paramString) {
-		return h(paramString);
+	//#a
+	public final AppBundle getBundle(String bundleName) {
+		return h(bundleName);
 	}
 
 	// ERROR //
@@ -1109,7 +1110,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			while (i < array.length) {
 				final AppBundle h = this.h(array[i]);
 				if (h != null) {
-					list.add(h.e());
+					list.add(h.getFullBundleName());
 				}
 				++i;
 			}
@@ -1142,7 +1143,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 		Iterator localIterator = b();
 		while (localIterator.hasNext()) {
 			AppBundle locala = (AppBundle) localIterator.next();
-			String[] arrayOfString = locala.n();
+			String[] arrayOfString = locala.getAllComponentNames();
 			int j = arrayOfString.length;
 			for (int k = 0; k < j; k++)
 				if (paramString.equalsIgnoreCase(arrayOfString[k]))
@@ -1175,8 +1176,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 				try {
 					this.i.a(hashMap, false);
 					if (this.i(c)) {
-						if (com.alipay.mobile.quinox.utils.e.a(g.k(), this.h(c)
-								.k())) {
+						if (com.alipay.mobile.quinox.utils.e.a(g.getBundleVersion(), this.h(c)
+								.getBundleVersion())) {
 							this.b(hashMap2);
 						}
 						return c;
@@ -1184,8 +1185,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 				} catch (Exception ex) {
 					((LauncherApplication) this.a).LogError((Throwable) ex,
 							"MonitorPoint_DynamicLoad_addExternalErr");
-					throw new RuntimeException(g.e() + "'s dependencies error:"
-							+ g.j());
+					throw new RuntimeException(g.getFullBundleName() + "'s dependencies error:"
+							+ g.getRequireBundleName());
 				}
 			}
 			this.b(hashMap2);

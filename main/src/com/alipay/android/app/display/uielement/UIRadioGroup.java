@@ -80,7 +80,7 @@ public class UIRadioGroup extends BaseElement
     return null;
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if (!super.s())
       return null;

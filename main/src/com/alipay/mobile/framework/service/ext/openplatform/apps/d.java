@@ -18,13 +18,13 @@ final class d
       try
       {
         AlipayApplication.getInstance().getBundleContext().addExternelBundle(this.a.a());
-        InnerApp.a(this.a).post(new e(this));
+        InnerApp.getBundle(this.a).post(new e(this));
         return;
       }
       catch (Exception localException)
       {
         localException.printStackTrace();
-        InnerApp.a(this.a).post(new f(this));
+        InnerApp.getBundle(this.a).post(new f(this));
         return;
       }
     this.a.onInstallComplete(true);

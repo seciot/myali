@@ -12,7 +12,7 @@ final class al
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a(20);
+    this.a.getBundle(20);
   }
 }
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract interface a
 {
-  public abstract void a(List<OnsiteTradeInfo> paramList);
+  public abstract void setBundlePath(List<OnsiteTradeInfo> paramList);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

@@ -15,8 +15,8 @@ final class g
 
   public final void onClick(View paramView)
   {
-    this.a.e();
-    AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, AboutMainActivity.a(this.a).getAppId(), "-", "aboutIndex", "toScore");
+    this.a.getFullBundleName();
+    AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, AboutMainActivity.getBundle(this.a).getAppId(), "-", "aboutIndex", "toScore");
   }
 }
 

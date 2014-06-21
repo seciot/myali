@@ -25,10 +25,10 @@ final class ao
   {
     String str1;
     Object localObject;
-    if ((PermAuthActivity.a(this.b) != null) && (PermAuthActivity.a(this.b).getVisibility() == 0))
+    if ((PermAuthActivity.getBundle(this.b) != null) && (PermAuthActivity.getBundle(this.b).getVisibility() == 0))
     {
-      String str3 = PermAuthActivity.a(this.b).getInputedText();
-      PermAuthActivity.a(this.b, PermAuthActivity.a(this.b));
+      String str3 = PermAuthActivity.getBundle(this.b).getInputedText();
+      PermAuthActivity.a(this.b, PermAuthActivity.getBundle(this.b));
       str1 = "PAYMENTPASSWORD";
       localObject = str3;
     }
@@ -41,7 +41,7 @@ final class ao
         if (i < PermAuthActivity.c(this.b).getChildCount())
         {
           if (((CheckBox)((LinearLayout)PermAuthActivity.c(this.b).getChildAt(i)).findViewById(R.id.y)).isChecked())
-            localArrayList.add(locald.a(i).optionKey);
+            localArrayList.add(locald.getBundle(i).optionKey);
           i++;
           continue;
           if ((PermAuthActivity.b(this.b) == null) || (PermAuthActivity.b(this.b).getVisibility() != 0))

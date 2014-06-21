@@ -11,7 +11,7 @@ final class a
 
   public final void run()
   {
-    this.b.a(this.a);
+    this.b.getBundle(this.a);
   }
 }
 

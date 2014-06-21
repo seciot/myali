@@ -344,7 +344,7 @@ public class TabLauncher extends BaseFragmentActivity
         {
           if ((i1 == 0) && (TextUtils.isEmpty(str)))
           {
-            a(null);
+            getBundle(null);
             bool2 = true;
           }
           this.a = ((TabHost)findViewById(16908306));
@@ -442,8 +442,8 @@ public class TabLauncher extends BaseFragmentActivity
     if (this.m != null)
     {
       if (TextUtils.isEmpty(this.m.getCurrentLoginLogonId()))
-        a(null);
-      a(getIntent());
+        getBundle(null);
+      getBundle(getIntent());
       a(paramIntent, false);
       a();
     }

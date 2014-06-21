@@ -17,7 +17,7 @@ final class r
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     MobileInputFragment_ localMobileInputFragment_ = new MobileInputFragment_();
-    localMobileInputFragment_.a(BaseLoginFragment.d(this.a));
+    localMobileInputFragment_.getBundle(BaseLoginFragment.d(this.a));
     this.a.getActivity().getSupportFragmentManager().beginTransaction().setTransition(4097).add(R.id.bR, localMobileInputFragment_).addToBackStack(null).commitAllowingStateLoss();
   }
 }

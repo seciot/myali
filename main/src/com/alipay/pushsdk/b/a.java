@@ -12,7 +12,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
 {
   public static int b = 1;
   public static int c = 2;
-  private static final String g = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(AppBundle.class);
+  private static final String g = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(AppBundle.class);
   public int a = 0;
   Context d;
 
@@ -22,7 +22,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
     this.d = paramContext;
   }
 
-  public final String a(String paramString)
+  public final String getBundle(String paramString)
   {
     String str = null;
     try
@@ -49,7 +49,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
 
   public final String b(String paramString)
   {
-    return a(paramString);
+    return getBundle(paramString);
   }
 }
 

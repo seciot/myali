@@ -55,7 +55,7 @@ final class s extends WebViewClient
 
   public final boolean shouldOverrideUrlLoading(WebView paramWebView, String paramString)
   {
-    MiniWebActivity.a(this.a).setVisibility(0);
+    MiniWebActivity.getBundle(this.a).setVisibility(0);
     paramWebView.loadUrl(paramString);
     return true;
   }

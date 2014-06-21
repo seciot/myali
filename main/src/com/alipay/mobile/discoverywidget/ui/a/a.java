@@ -110,7 +110,7 @@ public class a
       com.alipay.mobile.discoverywidget.AppBundle.a locala = (com.alipay.mobile.discoverywidget.AppBundle.a)this.i.get(this.e);
       if (locala == null)
         locala = new com.alipay.mobile.discoverywidget.AppBundle.a();
-      locala.a(paramIndexWidgetResult);
+      locala.getBundle(paramIndexWidgetResult);
       this.i.put(this.e, locala);
       if ((!paramIndexWidgetResult.redMark) || (paramIndexWidgetResult.tabRedMarkTip == null))
         break label307;
@@ -178,7 +178,7 @@ public class a
       new IndexWidgetResult();
       try
       {
-        IndexWidgetResult localIndexWidgetResult = this.g.a(paramHomePageWidgetReq);
+        IndexWidgetResult localIndexWidgetResult = this.g.getBundle(paramHomePageWidgetReq);
         a(localIndexWidgetResult);
         long l4 = System.currentTimeMillis() - l2;
         DiscoveryWidgetGroup.class.getName();
@@ -232,7 +232,7 @@ public class a
     new IndexWidgetResult();
     try
     {
-      IndexWidgetResult localIndexWidgetResult = this.g.a(paramHomePageWidgetReq);
+      IndexWidgetResult localIndexWidgetResult = this.g.getBundle(paramHomePageWidgetReq);
       if ((localIndexWidgetResult != null) && (localIndexWidgetResult.success))
       {
         b(localIndexWidgetResult);

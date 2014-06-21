@@ -19,16 +19,16 @@ final class BeijingMunicipal extends PbocCard
   {
     if (paramTag.b(c).getBundleName())
     {
-      Iso7816.Response localResponse1 = paramTag.a(4);
+      Iso7816.Response localResponse1 = paramTag.getBundle(4);
       if (localResponse1.getBundleName())
       {
-        Iso7816.Response localResponse2 = paramTag.a(5);
-        if (paramTag.a(b).getBundleName())
+        Iso7816.Response localResponse2 = paramTag.getBundle(5);
+        if (paramTag.getBundle(b).getBundleName())
         {
-          Iso7816.Response localResponse3 = paramTag.a(true);
+          Iso7816.Response localResponse3 = paramTag.getBundle(true);
           ArrayList localArrayList = b(paramTag);
           BeijingMunicipal localBeijingMunicipal = new BeijingMunicipal(paramTag);
-          localBeijingMunicipal.a(localResponse3);
+          localBeijingMunicipal.getBundle(localResponse3);
           if ((!localResponse1.getBundleName()) || (localResponse1.a() < 32))
           {
             localBeijingMunicipal.j = null;

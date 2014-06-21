@@ -13,8 +13,8 @@ final class b
 
   public final void onAnimationEnd(Animation paramAnimation)
   {
-    if (NfdPanelDialog.a(this.a) != null)
-      NfdPanelDialog.a(this.a).onShowFinish();
+    if (NfdPanelDialog.getBundle(this.a) != null)
+      NfdPanelDialog.getBundle(this.a).onShowFinish();
   }
 
   public final void onAnimationRepeat(Animation paramAnimation)
@@ -23,8 +23,8 @@ final class b
 
   public final void onAnimationStart(Animation paramAnimation)
   {
-    if (NfdPanelDialog.a(this.a) != null)
-      NfdPanelDialog.a(this.a).onShowStart();
+    if (NfdPanelDialog.getBundle(this.a) != null)
+      NfdPanelDialog.getBundle(this.a).onShowStart();
   }
 }
 

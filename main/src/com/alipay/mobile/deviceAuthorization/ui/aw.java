@@ -17,9 +17,9 @@ final class aw
   {
     String str2;
     String str1;
-    if ((TempAuthActivity.a(this.b) != null) && (TempAuthActivity.a(this.b).getVisibility() == 0))
+    if ((TempAuthActivity.getBundle(this.b) != null) && (TempAuthActivity.getBundle(this.b).getVisibility() == 0))
     {
-      str2 = TempAuthActivity.a(this.b).getInputedText();
+      str2 = TempAuthActivity.getBundle(this.b).getInputedText();
       str1 = "PAYMENTPASSWORD";
     }
     while (true)

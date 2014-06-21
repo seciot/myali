@@ -49,7 +49,7 @@ final class h
           ((APLinearLayout)localAPLinearLayout.findViewById(R.id.layout_vtwo)).setLayoutParams((ViewGroup.LayoutParams)localList.get(j));
         if ((localEinfoFields.getValue() != null) && (localEinfoFields.getValue().length() > 0))
         {
-          int k = a.a(localEinfoFields.getType());
+          int k = a.getBundle(localEinfoFields.getType());
           if (k > 0)
             localAPTextView2.setCompoundDrawablesWithIntrinsicBounds(this.c.mContext.getResources().getDrawable(k), null, null, null);
           localAPTextView2.setTextColor(a.a(this.c.mContext, localEinfoFields));

@@ -11,10 +11,10 @@ final class bo
 
   public final void run()
   {
-    if (bn.a(this.b) != null)
+    if (bn.getBundle(this.b) != null)
     {
-      bn.a(this.b).setFocusable(this.a);
-      bn.a(this.b).setClickable(this.a);
+      bn.getBundle(this.b).setFocusable(this.a);
+      bn.getBundle(this.b).setClickable(this.a);
     }
   }
 }

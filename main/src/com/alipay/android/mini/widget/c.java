@@ -87,7 +87,7 @@ final class c
   {
     this.b = paramCharSequence.length();
     this.h.append(paramCharSequence.toString());
-    if ((this.b == this.a) || (this.b <= -1 + FormatPhoneNO.a(this.f)) || (this.c))
+    if ((this.b == this.a) || (this.b <= -1 + FormatPhoneNO.getBundle(this.f)) || (this.c))
     {
       this.c = false;
       return;

@@ -15,7 +15,7 @@ final class d extends Handler
   {
     if (paramMessage.what == 4097)
     {
-      if (SyncAnimatingHelper.a(this.b))
+      if (SyncAnimatingHelper.getBundle(this.b))
         break label58;
       SyncAnimatingHelper.a(this.b, false);
       SyncAnimatingHelper.b(this.b);

@@ -9,7 +9,7 @@ final class bk
 
   public final void run()
   {
-    MobileRechargeActivity_.a(this.a);
+    MobileRechargeActivity_.getBundle(this.a);
   }
 }
 

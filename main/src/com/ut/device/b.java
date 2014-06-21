@@ -203,7 +203,7 @@ public class b
       str = new Random().nextInt();
     localByteArrayOutputStream.write(com.ut.c.b.getBytes(s(str)), 0, 4);
     localByteArrayOutputStream.write(com.ut.c.b.getBytes(s(f(localByteArrayOutputStream.toByteArray()))));
-    return com.ut.a.a.a.a.a.a(localByteArrayOutputStream.toByteArray());
+    return com.ut.a.a.a.a.a.getBundle(localByteArrayOutputStream.toByteArray());
   }
 
   private static String f(byte[] paramArrayOfByte)
@@ -211,7 +211,7 @@ public class b
     String str = R;
     Mac localMac = Mac.getInstance("HmacSHA1");
     localMac.init(new SecretKeySpec(str.getBytes(), localMac.getAlgorithm()));
-    return com.ut.a.a.a.a.a.a(localMac.doFinal(paramArrayOfByte));
+    return com.ut.a.a.a.a.a.getBundle(localMac.doFinal(paramArrayOfByte));
   }
 
   // ERROR //

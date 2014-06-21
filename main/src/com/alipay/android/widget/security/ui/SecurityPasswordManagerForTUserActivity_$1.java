@@ -9,7 +9,7 @@ class SecurityPasswordManagerForTUserActivity_$1
 
   public void run()
   {
-    SecurityPasswordManagerForTUserActivity_.a(this.a);
+    SecurityPasswordManagerForTUserActivity_.getBundle(this.a);
   }
 }
 

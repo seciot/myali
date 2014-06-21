@@ -17,9 +17,9 @@ class LocationManagerProxy$a
 
   public void onLocationChanged(Location paramLocation)
   {
-    if ((LocationManagerProxy.a(this.a) != null) && (LocationManagerProxy.a(this.a).size() > 0))
+    if ((LocationManagerProxy.getBundle(this.a) != null) && (LocationManagerProxy.getBundle(this.a).size() > 0))
     {
-      Iterator localIterator = LocationManagerProxy.a(this.a).iterator();
+      Iterator localIterator = LocationManagerProxy.getBundle(this.a).iterator();
       while (localIterator.hasNext())
       {
         PendingIntent localPendingIntent = (PendingIntent)localIterator.next();
@@ -41,9 +41,9 @@ class LocationManagerProxy$a
 
   public void onLocationChanged(AMapLocation paramAMapLocation)
   {
-    if ((LocationManagerProxy.a(this.a) != null) && (LocationManagerProxy.a(this.a).size() > 0))
+    if ((LocationManagerProxy.getBundle(this.a) != null) && (LocationManagerProxy.getBundle(this.a).size() > 0))
     {
-      Iterator localIterator = LocationManagerProxy.a(this.a).iterator();
+      Iterator localIterator = LocationManagerProxy.getBundle(this.a).iterator();
       while (localIterator.hasNext())
       {
         PendingIntent localPendingIntent = (PendingIntent)localIterator.next();

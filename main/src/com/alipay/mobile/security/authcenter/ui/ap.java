@@ -13,7 +13,7 @@ final class ap
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.a(this.b.b(), RegisterNewActivity.a(this.b), false, false, this.a.isMobileUser());
+    RegisterNewActivity.a(this.b.b(), RegisterNewActivity.getBundle(this.b), false, false, this.a.isMobileUser());
   }
 }
 

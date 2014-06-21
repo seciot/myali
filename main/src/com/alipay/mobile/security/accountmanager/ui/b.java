@@ -47,7 +47,7 @@ final class b
         return;
       if ((localUserInfo != null) && (localUserInfo.isAutoLogin()) && (!TextUtils.isEmpty(localUserInfo.getGesturePwd())))
       {
-        this.a.a(localUserInfo);
+        this.a.getBundle(localUserInfo);
         return;
       }
     }

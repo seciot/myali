@@ -4,7 +4,7 @@ import com.alipay.mobile.longlink.c.a;
 
 public class q
 {
-  private static final String a = a.a(q.class);
+  private static final String a = a.getBundle(q.class);
   private static int b = 0;
   private static int c = 1;
 

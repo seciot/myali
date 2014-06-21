@@ -20,7 +20,7 @@ final class ba
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "security", "-", "-", "alipayBindingView", "registerButton");
     try
     {
-      TaobaoBindingAlipayUserActivity.b(this.a).getMicroApplicationContext().startApp(TaobaoBindingAlipayUserActivity.a(this.a).getAppId(), "20000009", null);
+      TaobaoBindingAlipayUserActivity.b(this.a).getMicroApplicationContext().startApp(TaobaoBindingAlipayUserActivity.getBundle(this.a).getAppId(), "20000009", null);
       return;
     }
     catch (AppLoadException localAppLoadException)

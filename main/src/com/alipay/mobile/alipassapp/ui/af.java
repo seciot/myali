@@ -14,7 +14,7 @@ final class af
     this.d.dismissProgressDialog();
     if ((this.a != null) && (this.a.success))
     {
-      this.d.c.a(this.b);
+      this.d.c.getBundle(this.b);
       AlipassListActivity.l(this.d);
       if (this.c)
         AlipassListActivity.o();

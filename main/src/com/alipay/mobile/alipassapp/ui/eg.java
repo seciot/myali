@@ -9,7 +9,7 @@ final class eg
 
   public final void run()
   {
-    MemberCardDetailActivity_.a(this.a);
+    MemberCardDetailActivity_.getBundle(this.a);
   }
 }
 

@@ -12,7 +12,7 @@ final class a
 
   public final void onClick(View paramView)
   {
-    FacePayeeActivity.a(this.a);
+    FacePayeeActivity.getBundle(this.a);
   }
 }
 

@@ -9,7 +9,7 @@ final class k
 
   public final void run()
   {
-    AppLaunchFromShortcutActivity.a(this.a);
+    AppLaunchFromShortcutActivity.getBundle(this.a);
   }
 }
 

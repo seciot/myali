@@ -174,7 +174,7 @@ public class SendSoundViewActivity extends BasicFacePayerActivity
 
   private void y()
   {
-    if (a(this))
+    if (getBundle(this))
     {
       r();
       return;
@@ -505,7 +505,7 @@ public class SendSoundViewActivity extends BasicFacePayerActivity
   public void onPause()
   {
     s();
-    if (a(this))
+    if (getBundle(this))
       r();
     super.onPause();
   }
@@ -581,7 +581,7 @@ public class SendSoundViewActivity extends BasicFacePayerActivity
   {
     i();
     a("点击重试");
-    if (a(getApplicationContext()))
+    if (getBundle(getApplicationContext()))
       a("请拔下耳机后，点击重试");
     m();
     this.m.pause();

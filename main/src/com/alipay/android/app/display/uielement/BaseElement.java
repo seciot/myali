@@ -46,7 +46,7 @@ public abstract class BaseElement extends BaseAttrScriptable
         localLayoutParams.width = this.h;
         localLayoutParams.height = this.i;
         this.c.setLayoutParams(localLayoutParams);
-        this.d.a(localLayoutParams);
+        this.d.getBundle(localLayoutParams);
       }
       this.d.a(this.c);
       this.d.c(this.c);

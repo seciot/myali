@@ -9,7 +9,7 @@ final class k
 
   public final void run()
   {
-    WifiConnectingActivity_.a(this.a);
+    WifiConnectingActivity_.getBundle(this.a);
   }
 }
 

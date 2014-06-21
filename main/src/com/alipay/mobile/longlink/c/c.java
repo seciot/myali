@@ -2,10 +2,10 @@ package com.alipay.mobile.longlink.c;
 
 public class c
 {
-  private static final String a = AppBundle.a(BundlesManagerImpl.class);
+  private static final String a = AppBundle.getBundle(BundlesManagerImpl.class);
 
   // ERROR //
-  public static byte[] a(byte[] paramArrayOfByte)
+  public static byte[] setBundlePath(byte[] paramArrayOfByte)
   {
     // Byte code:
     //   0: aload_0

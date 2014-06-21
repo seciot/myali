@@ -17,9 +17,9 @@ final class e extends BaseTarget
 
   public final void a(int paramInt)
   {
-    if (UIBlock.a(this.b) != null)
+    if (UIBlock.getBundle(this.b) != null)
     {
-      UIBlock.a(this.b).setBackgroundResource(paramInt);
+      UIBlock.getBundle(this.b).setBackgroundResource(paramInt);
       return;
     }
     this.a.setBackgroundResource(paramInt);
@@ -27,9 +27,9 @@ final class e extends BaseTarget
 
   public final void a(Drawable paramDrawable)
   {
-    if (UIBlock.a(this.b) != null)
+    if (UIBlock.getBundle(this.b) != null)
     {
-      UIBlock.a(this.b).setBackgroundDrawable(paramDrawable);
+      UIBlock.getBundle(this.b).setBackgroundDrawable(paramDrawable);
       return;
     }
     this.a.setBackgroundDrawable(paramDrawable);

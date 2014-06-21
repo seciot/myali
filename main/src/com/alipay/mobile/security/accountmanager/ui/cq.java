@@ -9,7 +9,7 @@ final class cq
 
   public final void run()
   {
-    ModifyLoginPwdActivity_.a(this.a);
+    ModifyLoginPwdActivity_.getBundle(this.a);
   }
 }
 

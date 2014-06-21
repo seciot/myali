@@ -108,7 +108,7 @@ public class AlipayUserLoginFragment extends AliUserLoginFragment<UserInfo>
   {
     super.onClick(paramView);
     if (paramView.getId() == R.id.bi)
-      a("");
+      getBundle("");
   }
 
   public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)

@@ -15,12 +15,12 @@ final class j extends MspEventArgs
 
   public final String getDataByKey(String paramString)
   {
-    return this.a.a.e();
+    return this.a.a.getFullBundleName();
   }
 
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
-    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.a(getEventType()));
+    return new IEventArgs.EventScript(EventScriptOperation.a, this.a.a.getBundle(getEventType()));
   }
 }
 

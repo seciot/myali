@@ -14,7 +14,7 @@ final class l
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a(this.b.b);
+    this.a.getBundle(this.b.b);
   }
 }
 

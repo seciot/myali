@@ -17,7 +17,7 @@ class HasCertifiedFragment$2
 
   public void onClick(View paramView)
   {
-    if (HasCertifiedFragment.a(this.a))
+    if (HasCertifiedFragment.getBundle(this.a))
       AlipayLogAgent.writeLog(this.a.getActivity(), BehaviourIdEnum.CLICKED, "-", "-", "20000038", "-", "uploadPaperView", "attestationDetail", "reUpload");
     while (true)
     {

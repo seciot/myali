@@ -15,7 +15,7 @@ final class b
   public final void run()
   {
     String str = GlobalContext.a().b().getString(R.string.l);
-    MspWindow.a(this.b).alert(str, this.a.getMessage());
+    MspWindow.getBundle(this.b).alert(str, this.a.getMessage());
   }
 }
 

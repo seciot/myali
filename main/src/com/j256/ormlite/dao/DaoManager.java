@@ -21,7 +21,7 @@ public class DaoManager
   private static Map<DaoManager.TableConfigConnectionSource, Dao<?, ?>> c = null;
   private static Logger d = LoggerFactory.getLogger(DaoManager.class);
 
-  private static <T> Dao<?, ?> a(DaoManager.ClassConnectionSource paramClassConnectionSource)
+  private static <T> Dao<?, ?> setBundlePath(DaoManager.ClassConnectionSource paramClassConnectionSource)
   {
     if (BundlesManager == null)
       BundlesManager = new HashMap();
@@ -31,7 +31,7 @@ public class DaoManager
     return localDao;
   }
 
-  private static <T> Dao<?, ?> a(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource)
+  private static <T> Dao<?, ?> setBundlePath(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource)
   {
     if (BundlesManagerImpl == null)
       BundlesManagerImpl = new HashMap();
@@ -44,12 +44,12 @@ public class DaoManager
   private static <D extends Dao<T, ?>, T> D a(ConnectionSource paramConnectionSource, DatabaseTableConfig<T> paramDatabaseTableConfig)
   {
     DaoManager.TableConfigConnectionSource localTableConfigConnectionSource = new DaoManager.TableConfigConnectionSource(paramConnectionSource, paramDatabaseTableConfig);
-    Dao localDao1 = a(localTableConfigConnectionSource);
+    Dao localDao1 = getBundle(localTableConfigConnectionSource);
     if (localDao1 != null)
       return localDao1;
     Class localClass1 = paramDatabaseTableConfig.getDataClass();
     DaoManager.ClassConnectionSource localClassConnectionSource = new DaoManager.ClassConnectionSource(paramConnectionSource, localClass1);
-    Dao localDao2 = a(localClassConnectionSource);
+    Dao localDao2 = getBundle(localClassConnectionSource);
     if (localDao2 != null)
     {
       a(localTableConfigConnectionSource, localDao2);
@@ -62,7 +62,7 @@ public class DaoManager
     {
       a(localTableConfigConnectionSource, localDao1);
       d.debug("created dao for class {} from table config", localClass1);
-      if (a(localClassConnectionSource) != null)
+      if (getBundle(localClassConnectionSource) != null)
         break;
       a(localClassConnectionSource, localDao1);
       return localDao1;
@@ -218,7 +218,7 @@ public class DaoManager
       finally
       {
       }
-    Dao localDao1 = a(new DaoManager.ClassConnectionSource(paramConnectionSource, paramClass));
+    Dao localDao1 = getBundle(new DaoManager.ClassConnectionSource(paramConnectionSource, paramClass));
     Dao localDao2 = localDao1;
     if (localDao2 != null);
     Dao localDao3;
@@ -289,7 +289,7 @@ public class DaoManager
       finally
       {
       }
-    Dao localDao1 = a(new DaoManager.TableConfigConnectionSource(paramConnectionSource, paramDatabaseTableConfig));
+    Dao localDao1 = getBundle(new DaoManager.TableConfigConnectionSource(paramConnectionSource, paramDatabaseTableConfig));
     Dao localDao2 = localDao1;
     if (localDao2 == null)
       localDao2 = null;
@@ -306,7 +306,7 @@ public class DaoManager
       finally
       {
       }
-    Dao localDao = a(new DaoManager.ClassConnectionSource(paramConnectionSource, paramClass));
+    Dao localDao = getBundle(new DaoManager.ClassConnectionSource(paramConnectionSource, paramClass));
     return localDao;
   }
 

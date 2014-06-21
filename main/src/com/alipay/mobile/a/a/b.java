@@ -39,7 +39,7 @@ public final class b
     return localArrayList;
   }
 
-  public final boolean a(Context paramContext)
+  public final boolean setBundlePath(Context paramContext)
   {
     if ((this.a == null) || (!this.a.isOpen()))
     {

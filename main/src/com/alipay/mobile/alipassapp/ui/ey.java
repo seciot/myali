@@ -17,7 +17,7 @@ final class ey
     try
     {
       MemberChargeOffActivity.a();
-      Bitmap localBitmap = i.a(this.a);
+      Bitmap localBitmap = i.getBundle(this.a);
       if (this.b == null)
       {
         MemberChargeOffActivity.a();

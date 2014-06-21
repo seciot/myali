@@ -13,7 +13,7 @@ final class a
   public final void run()
   {
     if ((AppsCenterFragment.access$000(this.a) != null) && (AppsCenterFragment.access$100(this.a) != null))
-      AppsCenterFragment.access$000(this.a).a(AppsCenterFragment.access$100(this.a).getAppCenterAppsFromLocal());
+      AppsCenterFragment.access$000(this.a).getBundle(AppsCenterFragment.access$100(this.a).getAppCenterAppsFromLocal());
   }
 }
 

@@ -21,13 +21,13 @@ class SecurityPasswordManagerActivity$8
     {
       if (paramResultBean.isSuccess())
       {
-        this.b.d();
+        this.b.getInitLevel();
         return;
       }
       this.b.a(paramResultBean, this.a);
       return;
     }
-    this.b.a(this.a);
+    this.b.getBundle(this.a);
     this.b.toast("网络无法连接，请检查您的网络", 0);
   }
 }

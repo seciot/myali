@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 
 public class NotificationService extends Service
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(NotificationService.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(NotificationService.class);
   private j b = null;
   private AlarmManager c = null;
   private PendingIntent d = null;
@@ -82,7 +82,7 @@ public class NotificationService extends Service
     this.g = Executors.newSingleThreadExecutor();
     this.h = new c(this);
     this.i = new d(this);
-    com.alipay.pushsdk.c.a.e.a(this.l);
+    com.alipay.pushsdk.c.a.e.getBundle(this.l);
     try
     {
       if ((0x2 & this.l.getPackageManager().getApplicationInfo(this.l.getPackageName(), 16384).flags) != 0);

@@ -32,7 +32,7 @@ public final class a
     this.a = new BundlesManager(paramClientConnectionManager, paramHttpParams, (byte)0);
   }
 
-  public static AppBundle a(String paramString)
+  public static AppBundle getBundle(String paramString)
   {
     BasicHttpParams localBasicHttpParams = new BasicHttpParams();
     HttpConnectionParams.setStaleCheckingEnabled(localBasicHttpParams, true);

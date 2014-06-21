@@ -14,8 +14,8 @@ final class bt
   public final void run()
   {
     if (UIRadioGroup.b(this.b) != null)
-      for (int i = 0; i < UIRadioGroup.a(this.b).size(); i++)
-        if (((bn)UIRadioGroup.a(this.b).get(i)).e().equals(this.a))
+      for (int i = 0; i < UIRadioGroup.getBundle(this.b).size(); i++)
+        if (((bn)UIRadioGroup.getBundle(this.b).get(i)).e().equals(this.a))
           UIRadioGroup.b(this.b).getChildAt(i).setSelected(true);
   }
 }

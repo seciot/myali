@@ -13,7 +13,7 @@ final class ai
 
   public final boolean onTouch(View paramView, MotionEvent paramMotionEvent)
   {
-    UserLoginFragment.a(this.a);
+    UserLoginFragment.getBundle(this.a);
     return false;
   }
 }

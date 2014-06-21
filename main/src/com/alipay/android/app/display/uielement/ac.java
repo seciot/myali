@@ -14,7 +14,7 @@ final class ac
 
   public final void onClick(View paramView)
   {
-    if ((!UICheckBox.b(this.a)) && (TextUtils.equals(this.a.a("show_toast"), "true")) && (!TextUtils.isEmpty(this.a.a("toast_message"))))
+    if ((!UICheckBox.b(this.a)) && (TextUtils.equals(this.a.getBundle("show_toast"), "true")) && (!TextUtils.isEmpty(this.a.getBundle("toast_message"))))
     {
       this.a.t();
       return;

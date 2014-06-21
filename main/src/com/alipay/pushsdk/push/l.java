@@ -34,21 +34,21 @@ final class l
         localc1 = new com.alipay.pushsdk.push.BundlesManagerImpl.c(j.f(this.b), j.g(this.b), localc);
         if ((j.h(this.b) == null) || (!j.h(this.b).equals("1")))
           break label282;
-        localc1.a(com.alipay.pushsdk.push.a.d.a);
+        localc1.getBundle(com.alipay.pushsdk.push.a.d.a);
       }
       while (true)
       {
-        localc1.f();
-        localc1.e();
+        localc1.getBundlePath();
+        localc1.getFullBundleName();
         m localm = new m(localc1);
         this.a.a(localm);
-        this.a.d().b(j.i(this.b));
-        this.a.d().a(j.j(this.b));
-        this.a.d().a(this.c);
+        this.a.getInitLevel().b(j.i(this.b));
+        this.a.getInitLevel().getBundle(j.j(this.b));
+        this.a.getInitLevel().getBundle(this.c);
         return;
         localc = new com.alipay.pushsdk.push.BundlesManagerImpl.a.c(com.alipay.pushsdk.push.a.a.d.a, null, 0);
         break;
-        label282: localc1.a(com.alipay.pushsdk.push.a.d.c);
+        label282: localc1.getBundle(com.alipay.pushsdk.push.a.d.c);
       }
     }
     this.a.y();

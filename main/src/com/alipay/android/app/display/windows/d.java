@@ -26,7 +26,7 @@ final class d
         if (localEventScript != null)
         {
           str = localEventScript.b();
-          EventType localEventType2 = EventType.a(str);
+          EventType localEventType2 = EventType.getBundle(str);
           if (localEventType2 != null)
           {
             MspWindow.a(this.c, this.b, this.a, localEventType2);

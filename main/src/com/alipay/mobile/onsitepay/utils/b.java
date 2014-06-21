@@ -46,7 +46,7 @@ final class b
                 do
                 {
                   return;
-                  localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+                  localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
                 }
                 while (this.b.get("SMS") == null);
                 ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity7 = this.c;
@@ -55,7 +55,7 @@ final class b
                 localShareContent.setContent(((SecurityShareInfo)this.b.get("SMS")).getContent());
                 this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
                 return;
-                localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+                localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
               }
               while (this.b.get("SINA_WEIBO") == null);
               ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity6 = this.c;
@@ -64,25 +64,25 @@ final class b
               localShareContent.setContent(((SecurityShareInfo)this.b.get("SINA_WEIBO")).getContent());
               this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
               return;
-              localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+              localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
             }
             while (this.b.get("LAIWANG") == null);
             ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity5 = this.c;
             ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity5, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 1048576));
             localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
-            localShareContent.setContent(ShareSavePicThireBtnActivity.a(this.c));
+            localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
             this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
             return;
-            localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+            localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
           }
           while (this.b.get("LAIWANG_FEED") == null);
           ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity4 = this.c;
           ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity4, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 16777216));
           localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
-          localShareContent.setContent(ShareSavePicThireBtnActivity.a(this.c));
+          localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
           this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
           return;
-          localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+          localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
         }
         while (this.b.get("WEIXIN_FRIEND") == null);
         ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity3 = this.c;
@@ -91,7 +91,7 @@ final class b
         localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND")).getContent());
         this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
         return;
-        localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+        localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
       }
       while (this.b.get("WEIXIN_FRIEND_CIRCLE") == null);
       ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity2 = this.c;
@@ -100,7 +100,7 @@ final class b
       localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND_CIRCLE")).getContent());
       this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
       return;
-      localShareContent.setUrl(ShareSavePicThireBtnActivity.a(this.c));
+      localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
     }
     while (this.b.get("COPY_LINK") == null);
     ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity1 = this.c;

@@ -9,7 +9,7 @@ final class l
 
   public final void run()
   {
-    k.a(this.a);
+    k.getBundle(this.a);
   }
 }
 

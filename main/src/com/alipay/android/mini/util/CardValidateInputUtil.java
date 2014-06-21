@@ -25,7 +25,7 @@ public class CardValidateInputUtil
   public final void a()
   {
     this.a = new YearMonthPickerDialog("有效期", this.e);
-    this.a.a(new a(this));
+    this.a.getBundle(new a(this));
     this.a.b(new b(this));
     if ((this.c == null) || (this.c.length() <= 0))
       this.a.a();

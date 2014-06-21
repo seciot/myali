@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class g
 {
-  private static final String a = c.a(g.class);
+  private static final String a = c.getBundle(g.class);
   private Context b;
   private String c;
   private String d;

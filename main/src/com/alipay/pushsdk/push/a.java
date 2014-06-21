@@ -17,7 +17,7 @@ final class a
   {
     try
     {
-      d locald = e.a(ClientActionReceiver.a(this.a).d(), this.b);
+      d locald = e.a(ClientActionReceiver.getBundle(this.a).getInitLevel(), this.b);
       if (locald != null)
         locald.getBundleName();
       return;

@@ -14,7 +14,7 @@ final class l
 
   public final void run()
   {
-    MiniPayActivity.a(this.g);
+    MiniPayActivity.getBundle(this.g);
     if (TextUtils.isEmpty(this.a))
       this.g.getString(R.string.e);
     if (this.b != null);

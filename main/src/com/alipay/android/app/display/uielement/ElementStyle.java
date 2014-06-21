@@ -35,7 +35,7 @@ public class ElementStyle
 
   public ElementStyle()
   {
-    a(null);
+    getBundle(null);
     b("medium");
     c(null);
     d(null);
@@ -103,7 +103,7 @@ public class ElementStyle
           if ((localLayoutParams instanceof LinearLayout.LayoutParams))
           {
             ((LinearLayout.LayoutParams)localLayoutParams).weight = i4;
-            a(localLayoutParams);
+            getBundle(localLayoutParams);
           }
           paramView.setLayoutParams(localLayoutParams);
         }

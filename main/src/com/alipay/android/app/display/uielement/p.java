@@ -12,10 +12,10 @@ final class p
 
   public final void run()
   {
-    if (BaseElement.a(this.c) != null)
+    if (BaseElement.getBundle(this.c) != null)
     {
-      BaseElement.a(this.c).setVisibility(this.a);
-      this.c.a(this.b);
+      BaseElement.getBundle(this.c).setVisibility(this.a);
+      this.c.getBundle(this.b);
     }
   }
 }

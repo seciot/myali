@@ -18,7 +18,7 @@ class SecurityPasswordManagerForTUserActivity$3
     if (this.a.i != null)
     {
       this.a.h = this.a.i.getLogonId();
-      this.a.a(this.a.i);
+      this.a.getBundle(this.a.i);
     }
   }
 }

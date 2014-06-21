@@ -9,7 +9,7 @@ final class bz
 
   public final void run()
   {
-    ForgotPayPwdActivity_.a(this.a);
+    ForgotPayPwdActivity_.getBundle(this.a);
   }
 }
 

@@ -16,7 +16,7 @@ final class fh
   public final void onClick(View paramView)
   {
     AlipayLogAgent.writeLog(AlipayApplication.getInstance(), BehaviourIdEnum.CLICKED, "20000021", "", "myTravelList", "addTravelItinerary");
-    TravelCurrentListActivity.a("/pages/travel.html?isFrom=travelList", TravelCurrentListActivity.a(this.a));
+    TravelCurrentListActivity.a("/pages/travel.html?isFrom=travelList", TravelCurrentListActivity.getBundle(this.a));
   }
 }
 

@@ -18,7 +18,7 @@ public class MspService$AlixPayServiceStub extends IAlixPay.Stub
 
   public void deployFastConnect()
   {
-    MspService.a((MspService)this.b.get());
+    MspService.getBundle((MspService)this.b.get());
   }
 
   public String prePay(String paramString)

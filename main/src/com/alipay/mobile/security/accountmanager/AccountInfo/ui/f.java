@@ -21,7 +21,7 @@ final class f
     {
       if (!AccountInfoActivity.l(this.a))
       {
-        this.a.a("com.alipay.mobile.android.main.avatar.action.changed");
+        this.a.getBundle("com.alipay.mobile.android.main.avatar.action.changed");
         AccountInfoActivity.m(this.a);
         AccountInfoActivity.d(this.a);
       }

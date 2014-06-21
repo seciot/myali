@@ -13,7 +13,7 @@ final class a
 
   public final void onClick(View paramView)
   {
-    AssetWidgetGroup.a(this.a).startApp("20000066", "20000113", null);
+    AssetWidgetGroup.getBundle(this.a).startApp("20000066", "20000113", null);
   }
 }
 

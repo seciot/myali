@@ -95,7 +95,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
     if ((paramAlertSignRes.resultStatus == 2013) || (paramAlertSignRes.resultStatus == 2102))
     {
       a(false);
-      a(getResources().getString(R.string.x));
+      getBundle(getResources().getString(R.string.x));
       return;
     }
     a(false);
@@ -152,7 +152,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
     if (paramAlertSignRes == null)
     {
       a(true);
-      a(getString(R.string.s));
+      getBundle(getString(R.string.s));
       return;
     }
     new StringBuilder("cancelalertSign Status = ").append(paramAlertSignRes.resultStatus).toString();
@@ -164,7 +164,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
     if ((paramAlertSignRes.resultStatus == 2013) || (paramAlertSignRes.resultStatus == 2102))
     {
       a(true);
-      a(getResources().getString(R.string.x));
+      getBundle(getResources().getString(R.string.x));
       return;
     }
     a(true);

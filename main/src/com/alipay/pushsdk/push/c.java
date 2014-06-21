@@ -11,9 +11,9 @@ public final class c
 
   public final Future a(Runnable paramRunnable)
   {
-    com.alipay.pushsdk.c.a.c.a(5, NotificationService.e(), "submit(runnable)...getExecutorService:" + this.a.a().hashCode());
-    com.alipay.pushsdk.c.a.c.a(5, NotificationService.e(), "isTerminated=" + this.a.a().isTerminated());
-    com.alipay.pushsdk.c.a.c.a(5, NotificationService.e(), "isShutdown=" + this.a.a().isShutdown());
+    com.alipay.pushsdk.c.a.c.a(5, NotificationService.getFullBundleName(), "submit(runnable)...getExecutorService:" + this.a.a().hashCode());
+    com.alipay.pushsdk.c.a.c.a(5, NotificationService.getFullBundleName(), "isTerminated=" + this.a.a().isTerminated());
+    com.alipay.pushsdk.c.a.c.a(5, NotificationService.getFullBundleName(), "isShutdown=" + this.a.a().isShutdown());
     boolean bool1 = this.a.a().isTerminated();
     Future localFuture = null;
     if (!bool1)
@@ -26,8 +26,8 @@ public final class c
         if (paramRunnable != null)
         {
           localFuture = this.a.a().submit(paramRunnable);
-          com.alipay.pushsdk.c.a.c.a(5, NotificationService.e(), "Future result is " + localFuture.getClass().getName().toString());
-          com.alipay.pushsdk.c.a.c.a(5, NotificationService.e(), "Future result isCancelled=" + localFuture.isCancelled() + ", isDone=" + localFuture.isDone());
+          com.alipay.pushsdk.c.a.c.a(5, NotificationService.getFullBundleName(), "Future result is " + localFuture.getClass().getName().toString());
+          com.alipay.pushsdk.c.a.c.a(5, NotificationService.getFullBundleName(), "Future result isCancelled=" + localFuture.isCancelled() + ", isDone=" + localFuture.isDone());
         }
       }
     }

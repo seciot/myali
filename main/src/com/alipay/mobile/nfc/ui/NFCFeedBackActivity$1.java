@@ -12,7 +12,7 @@ class NFCFeedBackActivity$1
 
   public void onClick(View paramView)
   {
-    NFCFeedBackActivity.a(this.a);
+    NFCFeedBackActivity.getBundle(this.a);
   }
 }
 

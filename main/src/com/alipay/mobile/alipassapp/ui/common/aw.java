@@ -13,7 +13,7 @@ final class aw
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    this.b.b.a(this.a);
+    this.b.b.getBundle(this.a);
     paramDialogInterface.dismiss();
   }
 }

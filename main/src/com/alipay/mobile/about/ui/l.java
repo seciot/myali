@@ -9,7 +9,7 @@ final class l
 
   public final void run()
   {
-    AboutMainActivity_.a(this.a);
+    AboutMainActivity_.getBundle(this.a);
   }
 }
 

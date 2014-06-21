@@ -13,7 +13,7 @@ class SmsCheckFragment$2
 
   public void run()
   {
-    SecurityUtil.c(AlipayApplication.getInstance(), SmsCheckFragment.a(this.a).getEtContent());
+    SecurityUtil.c(AlipayApplication.getInstance(), SmsCheckFragment.getBundle(this.a).getEtContent());
   }
 }
 

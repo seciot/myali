@@ -34,7 +34,7 @@ public class BundleContext {
 	}
 
 	public Set<String> findPackagesByBundleName(String bundleName) {
-		String[] arrayOfString = app.getBundlesManager().a(bundleName).g();
+		String[] arrayOfString = app.getBundlesManager().getBundle(bundleName).g();
 		if (TextUtils.isEmpty(bundleName))
 			return new HashSet<String>();
 
@@ -64,7 +64,7 @@ public class BundleContext {
 
 	public void init(String paramString) {
 		BundlesManager manager = app.getBundlesManager();
-		AppBundle locala = manager.a(paramString);
+		AppBundle locala = manager.getBundle(paramString);
 		com.alipay.mobile.quinox.classloader.a locala1 = manager.j();
 		if (locala1.b(paramString) == null) {
 			locala1.a(locala);

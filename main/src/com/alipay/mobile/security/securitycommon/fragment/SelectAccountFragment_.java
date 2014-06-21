@@ -39,11 +39,11 @@ public final class SelectAccountFragment_ extends SelectAccountFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.b = ((APTableView)a(R.id.gi));
-    this.a = ((APListView)a(R.id.cY));
-    this.d = ((APTextView)a(R.id.cL));
-    this.c = ((APLinearLayout)a(R.id.df));
-    this.e = ((APView)a(R.id.fB));
+    this.b = ((APTableView)getBundle(R.id.gi));
+    this.a = ((APListView)getBundle(R.id.cY));
+    this.d = ((APTextView)getBundle(R.id.cL));
+    this.c = ((APLinearLayout)getBundle(R.id.df));
+    this.e = ((APView)getBundle(R.id.fB));
   }
 }
 

@@ -551,7 +551,7 @@ public class Parser extends DefaultHandler
     {
       if (!this.I.l())
       {
-        a(null);
+        getBundle(null);
         return;
         while (this.I != localElement2)
           e();

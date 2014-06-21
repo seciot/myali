@@ -15,7 +15,7 @@ class SecurityDribbletActivity$8
     if ((SecurityDribbletActivity.removeBundle(this.a) != null) && (SecurityDribbletActivity.removeBundle(this.a).isAlive()))
       SecurityDribbletActivity.removeBundle(this.a).interrupt();
     paramDialogInterface.cancel();
-    this.a.a(Boolean.valueOf(true));
+    this.a.getBundle(Boolean.valueOf(true));
   }
 }
 

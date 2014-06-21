@@ -18,7 +18,7 @@ public class c
   {
     this.a = paramLocationManager;
     this.c = parama;
-    this.d = b.a(paramContext);
+    this.d = b.getBundle(paramContext);
     this.e = this.d.c(paramContext);
   }
 

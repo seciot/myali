@@ -9,7 +9,7 @@ final class af
 
   public final void run()
   {
-    WithdrawSmsCheckActivity_.a(this.a);
+    WithdrawSmsCheckActivity_.getBundle(this.a);
   }
 }
 

@@ -13,7 +13,7 @@ class CheckUserIdFragment$2
   {
     if (this.a.isVisible())
     {
-      SecurityUtil.c(this.a.getActivity(), CheckUserIdFragment.a(this.a));
+      SecurityUtil.c(this.a.getActivity(), CheckUserIdFragment.getBundle(this.a));
       return;
     }
   }

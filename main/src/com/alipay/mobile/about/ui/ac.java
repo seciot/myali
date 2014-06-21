@@ -14,7 +14,7 @@ final class ac
   public final void onClick(View paramView)
   {
     ag.a().d(this.a);
-    ag.a().a(this.a);
+    ag.a().getBundle(this.a);
   }
 }
 

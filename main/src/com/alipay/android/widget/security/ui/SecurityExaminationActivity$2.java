@@ -12,7 +12,7 @@ class SecurityExaminationActivity$2
 
   public void onClick(View paramView)
   {
-    this.a.e();
+    this.a.getFullBundleName();
   }
 }
 

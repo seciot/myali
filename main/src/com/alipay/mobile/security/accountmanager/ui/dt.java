@@ -9,7 +9,7 @@ final class dt
 
   public final void run()
   {
-    WapForgotPayPwdActivity_.a(this.a);
+    WapForgotPayPwdActivity_.getBundle(this.a);
   }
 }
 

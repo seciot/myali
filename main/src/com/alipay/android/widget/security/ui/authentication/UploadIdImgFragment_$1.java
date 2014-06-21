@@ -9,7 +9,7 @@ class UploadIdImgFragment_$1
 
   public void run()
   {
-    UploadIdImgFragment_.a(this.a);
+    UploadIdImgFragment_.getBundle(this.a);
   }
 }
 

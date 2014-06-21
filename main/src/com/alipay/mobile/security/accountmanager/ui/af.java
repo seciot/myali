@@ -9,7 +9,7 @@ final class af
 
   public final void run()
   {
-    BindPhoneActivity_.a(this.a);
+    BindPhoneActivity_.getBundle(this.a);
   }
 }
 

@@ -16,7 +16,7 @@ final class g
     WithdrawActivity.a(this.a, "withdraw", "selectFinishTime");
     if (WithdrawActivity.c(this.a) == null)
     {
-      this.a.f();
+      this.a.getBundlePath();
       return;
     }
     WithdrawActivity.c(this.a).show();

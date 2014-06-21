@@ -21,7 +21,7 @@ public final class g
     }
   }
 
-  public final String a(String paramString)
+  public final String getBundle(String paramString)
   {
     String str = (String)this.b.get(paramString);
     if (str == null)

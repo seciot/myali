@@ -13,7 +13,7 @@ final class d
 
   public final void onClick(View paramView)
   {
-    UIPropUtil.a(MiniLabelInput.access$000(this.a));
+    UIPropUtil.getBundle(MiniLabelInput.access$000(this.a));
   }
 }
 

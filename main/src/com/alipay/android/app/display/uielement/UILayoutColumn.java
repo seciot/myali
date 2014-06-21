@@ -227,10 +227,10 @@ public class UILayoutColumn extends r
     return false;
   }
 
-  public final ISubmitable.SubmitValue j()
+  public final ISubmitable.SubmitValue getRequireBundleName()
   {
     if ((this.a != null) && ((this.a instanceof ISubmitable)))
-      return ((ISubmitable)this.a).j();
+      return ((ISubmitable)this.a).getRequireBundleName();
     return null;
   }
 

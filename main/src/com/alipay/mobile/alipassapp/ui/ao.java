@@ -15,7 +15,7 @@ final class ao
 
   public final boolean onItemLongClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    if (!this.a.h())
+    if (!this.a.hasResource())
       return true;
     Object localObject = paramAdapterView.getItemAtPosition(paramInt);
     if ((localObject != null) && ((localObject instanceof BaseAlipassInfoItem.AlipassInfoItem)))

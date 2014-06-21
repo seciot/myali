@@ -9,7 +9,7 @@ class ValidatePayPwdAcitivyt_$1
 
   public void run()
   {
-    ValidatePayPwdAcitivyt_.a(this.a);
+    ValidatePayPwdAcitivyt_.getBundle(this.a);
   }
 }
 

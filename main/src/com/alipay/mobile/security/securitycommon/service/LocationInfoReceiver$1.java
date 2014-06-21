@@ -11,7 +11,7 @@ class LocationInfoReceiver$1
 
   public void run()
   {
-    LocationInfoReceiver.a(this.a).putCacheLocationInfo();
+    LocationInfoReceiver.getBundle(this.a).putCacheLocationInfo();
   }
 }
 

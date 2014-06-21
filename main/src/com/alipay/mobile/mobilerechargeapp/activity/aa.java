@@ -17,7 +17,7 @@ final class aa
 
   public final void a()
   {
-    if (!MobileBalancesWarnActivity.a(this.a))
+    if (!MobileBalancesWarnActivity.getBundle(this.a))
       return;
     MobileBalancesWarnActivity.b(this.a);
     LogAgentWriteLog.c(this.a);

@@ -14,7 +14,7 @@ final class b extends BroadcastReceiver
   public final void onReceive(Context paramContext, Intent paramIntent)
   {
     LongLinkServiceManager localLongLinkServiceManager = LongLinkServiceManager.getInstance(this.a.b);
-    LongLinkScreenOffService.a(this.a);
+    LongLinkScreenOffService.getBundle(this.a);
     localLongLinkServiceManager.stopLink();
   }
 }

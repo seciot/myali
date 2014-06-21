@@ -13,7 +13,7 @@ final class aa
 
   public final void onClick(View paramView)
   {
-    ElementAction localElementAction = this.a.n();
+    ElementAction localElementAction = this.a.getAllComponentNames();
     if (localElementAction != null)
     {
       ActionType[] arrayOfActionType = ActionType.a(localElementAction);

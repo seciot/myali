@@ -12,7 +12,7 @@ final class an
 
   public final void onClick(View paramView)
   {
-    MobileRechargeActivity.a(this.a);
+    MobileRechargeActivity.getBundle(this.a);
   }
 }
 

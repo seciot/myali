@@ -19,14 +19,14 @@ final class am
   {
     try
     {
-      this.a.e();
+      this.a.getFullBundleName();
       ForgotLoginPwdActivity.t(this.a).getMicroApplicationContext().startApp(ForgotLoginPwdActivity.s(this.a).getAppId(), "20000008", null);
       return;
     }
     catch (AppLoadException localAppLoadException)
     {
       new StringBuilder("{[info=onPostCheckUserAccountAndSendSms],[msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-      this.a.a(this.a.getResources().getString(R.string.BundlesManagerImpl));
+      this.a.getBundle(this.a.getResources().getString(R.string.BundlesManagerImpl));
     }
   }
 }

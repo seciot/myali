@@ -34,7 +34,7 @@ final class ag
           if ("soundWavePaySuccessPush".equalsIgnoreCase(str))
           {
             JSONObject localJSONObject2 = this.a;
-            ae.a(localJSONObject2);
+            ae.getBundle(localJSONObject2);
             ae.a(this.c, Boolean.valueOf(true));
             return;
           }

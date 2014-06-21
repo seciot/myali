@@ -12,7 +12,7 @@ final class e
 
   public final void onClick(View paramView)
   {
-    SendSoundViewActivity.a(this.a);
+    SendSoundViewActivity.getBundle(this.a);
     this.a.s();
   }
 }

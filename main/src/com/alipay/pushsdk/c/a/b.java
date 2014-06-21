@@ -21,7 +21,7 @@ final class b
       synchronized (f.k)
       {
         this.a.a.flush();
-        AppBundle.a(this.a).set(false);
+        AppBundle.getBundle(this.a).set(false);
         return;
         localInterruptedException = localInterruptedException;
         BundlesManagerImpl.a(2, AppBundle.a(), localInterruptedException);

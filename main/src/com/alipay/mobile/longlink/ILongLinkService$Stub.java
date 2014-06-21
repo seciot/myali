@@ -64,7 +64,7 @@ public abstract class ILongLinkService$Stub extends Binder
       return true;
     case 5:
       paramParcel1.enforceInterface("com.alipay.mobile.longlink.ILongLinkService");
-      a(ILongLinkPacketNotifer.Stub.a(paramParcel1.readStrongBinder()));
+      getBundle(ILongLinkPacketNotifer.Stub.getBundle(paramParcel1.readStrongBinder()));
       paramParcel2.writeNoException();
       return true;
     case 6:

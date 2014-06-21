@@ -72,13 +72,13 @@ public final class AlipayUserLoginFragment_ extends AlipayUserLoginFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.n = ((APTextView)a(R.id.bi));
-    this.d = ((SmartInputTextView)a(R.id.bO));
-    this.f = ((APImageView)a(R.id.bN));
-    this.e = ((APImageButton)a(R.id.l));
-    this.r = ((APCheckCodeGetter)a(R.id.aB));
-    this.h = ((APButton)a(R.id.Z));
-    this.g = ((APInputBox)a(R.id.v));
+    this.n = ((APTextView)getBundle(R.id.bi));
+    this.d = ((SmartInputTextView)getBundle(R.id.bO));
+    this.f = ((APImageView)getBundle(R.id.bN));
+    this.e = ((APImageButton)getBundle(R.id.l));
+    this.r = ((APCheckCodeGetter)getBundle(R.id.aB));
+    this.h = ((APButton)getBundle(R.id.Z));
+    this.g = ((APInputBox)getBundle(R.id.v));
     f();
   }
 }

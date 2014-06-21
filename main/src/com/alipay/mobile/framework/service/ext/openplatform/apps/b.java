@@ -17,7 +17,7 @@ final class b
     try
     {
       AlipayApplication.getInstance().getBundleContext().addExternelBundle(this.d.a());
-      InnerApp.a(this.d).post(new c(this));
+      InnerApp.getBundle(this.d).post(new c(this));
       return;
     }
     catch (Exception localException)

@@ -13,7 +13,7 @@ class SecurityWebviewActivity$4 extends WebViewClient
 
   public void onReceivedSslError(WebView paramWebView, SslErrorHandler paramSslErrorHandler, SslError paramSslError)
   {
-    SecurityWebviewActivity.a(this.a);
+    SecurityWebviewActivity.getBundle(this.a);
     paramSslErrorHandler.proceed();
   }
 
@@ -27,7 +27,7 @@ class SecurityWebviewActivity$4 extends WebViewClient
     }
     catch (Exception localException)
     {
-      SecurityWebviewActivity.a(this.a);
+      SecurityWebviewActivity.getBundle(this.a);
       new StringBuilder("webview内跳转地址有问题").append(paramString).toString();
     }
     return false;

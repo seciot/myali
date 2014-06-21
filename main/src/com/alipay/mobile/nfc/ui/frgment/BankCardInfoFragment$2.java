@@ -20,10 +20,10 @@ class BankCardInfoFragment$2
     if (this.a != null)
     {
       localBundle.putString("cardNo", this.a.a());
-      if (this.a.e() != null)
+      if (this.a.getFullBundleName() != null)
       {
-        localBundle.putString("certNo", (String)this.a.e().get("idcard"));
-        localBundle.putString("inputName", (String)this.a.e().get("name"));
+        localBundle.putString("certNo", (String)this.a.getFullBundleName().get("idcard"));
+        localBundle.putString("inputName", (String)this.a.getFullBundleName().get("name"));
       }
     }
     try

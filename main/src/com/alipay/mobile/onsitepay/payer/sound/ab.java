@@ -51,11 +51,11 @@ final class ab extends Handler
       do
       {
         return;
-        this.a.canvasSector.a(this.a.loopNum);
+        this.a.canvasSector.getBundle(this.a.loopNum);
         this.a.canvasSector.invalidate();
       }
       while (this.a.loopNum % 18.0F != 0.0F);
-      this.a.waveButtonListener.a((int)(this.a.loopNum / 18.0F));
+      this.a.waveButtonListener.getBundle((int)(this.a.loopNum / 18.0F));
       return;
       new StringBuilder("  timeOut true loopNum=").append(this.a.loopNum).toString();
       this.a.timeOut = true;

@@ -20,7 +20,7 @@ final class h
 
   public final void onPostLoad(String paramString, Bitmap paramBitmap)
   {
-    this.a.a(paramBitmap);
+    this.a.getBundle(paramBitmap);
   }
 
   public final void onPreLoad(String paramString)

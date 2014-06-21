@@ -24,7 +24,7 @@ class LaunchRouter$1
       if (this.a.getCheckBoxState())
         this.b.edit().putBoolean("showTip", false).commit();
       localLaunchRouter = this.d;
-      LaunchRouter.a(this.d);
+      LaunchRouter.getBundle(this.d);
       LaunchRouter.b(localLaunchRouter);
     }
     while ((paramView.getId() != R.id.btn_user_tip_no) || (this.a == null) || (!this.a.isShowing()))

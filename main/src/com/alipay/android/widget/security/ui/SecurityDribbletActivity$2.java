@@ -13,7 +13,7 @@ class SecurityDribbletActivity$2
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     paramDialogInterface.cancel();
-    this.a.d();
+    this.a.getInitLevel();
   }
 }
 

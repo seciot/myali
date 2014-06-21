@@ -12,11 +12,11 @@ final class aw
 
   public final void run()
   {
-    if (UIDatePicker.a(this.b) != null);
+    if (UIDatePicker.getBundle(this.b) != null);
     try
     {
       Date localDate = UIDatePicker.b(this.b).parse(this.a);
-      UIDatePicker.a(this.b, UIDatePicker.a(this.b), localDate);
+      UIDatePicker.a(this.b, UIDatePicker.getBundle(this.b), localDate);
       return;
     }
     catch (Exception localException)

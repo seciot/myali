@@ -14,7 +14,7 @@ final class d extends MiniReadSmsArgs
   public final String getDataByKey(String paramString)
   {
     if ("temp".equals(paramString))
-      return MiniSmsReader.a(this.a);
+      return MiniSmsReader.getBundle(this.a);
     if ("rules".equals(paramString))
       return MiniSmsReader.b(this.a);
     if ("tmp_group".equals(paramString))

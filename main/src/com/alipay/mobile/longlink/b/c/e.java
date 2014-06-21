@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.b.c;
 
 public class e extends AppBundle
 {
-  private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(e.class);
+  private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
   private int d = BundlesManager.AppBundle;
   private int e = BundlesManager.b;
 
@@ -31,10 +31,10 @@ public class e extends AppBundle
   {
     int i = paramArrayOfByte[1];
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
-    a(i);
+    getBundle(i);
   }
 
-  public final byte[] h()
+  public final byte[] hasResource()
   {
     byte[] arrayOfByte1 = new byte[this.e];
     arrayOfByte1[0] = Integer.valueOf(this.d).byteValue();
@@ -45,7 +45,7 @@ public class e extends AppBundle
     for (int j = 0; j < 4; j++)
       arrayOfByte2[j] = ((byte)(i >> 24 - j * 8));
     System.arraycopy(arrayOfByte2, 0, arrayOfByte1, 3, 4);
-    arrayOfByte1[7] = Integer.valueOf(f()).byteValue();
+    arrayOfByte1[7] = Integer.valueOf(getBundlePath()).byteValue();
     System.arraycopy(new byte[3], 0, arrayOfByte1, 8, 3);
     System.arraycopy(new byte[4], 0, arrayOfByte1, 11, 4);
     return arrayOfByte1;

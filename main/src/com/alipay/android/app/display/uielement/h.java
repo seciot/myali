@@ -16,7 +16,7 @@ final class h extends MspEventArgs
   public final IEventArgs.EventScript getEventScript(EventScriptType paramEventScriptType)
   {
     if (this.a);
-    for (String str = this.b.a.a(EventType.d); ; str = this.b.a.a(EventType.e))
+    for (String str = this.b.a.getBundle(EventType.d); ; str = this.b.a.getBundle(EventType.e))
       return new IEventArgs.EventScript(EventScriptOperation.a, str);
   }
 }

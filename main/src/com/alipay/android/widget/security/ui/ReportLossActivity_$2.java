@@ -9,7 +9,7 @@ class ReportLossActivity_$2
 
   public void run()
   {
-    ReportLossActivity_.a(this.a);
+    ReportLossActivity_.getBundle(this.a);
   }
 }
 

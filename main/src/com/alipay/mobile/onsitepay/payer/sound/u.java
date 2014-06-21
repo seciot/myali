@@ -9,7 +9,7 @@ final class u
 
   public final void run()
   {
-    SendSoundViewActivity_.a(this.a);
+    SendSoundViewActivity_.getBundle(this.a);
   }
 }
 

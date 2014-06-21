@@ -8,7 +8,7 @@ import java.util.Locale;
 
 public class c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(c.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(c.class);
 
   public static String a(Context paramContext)
   {

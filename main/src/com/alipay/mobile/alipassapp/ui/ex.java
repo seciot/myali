@@ -19,7 +19,7 @@ final class ex extends Handler
 
   public final void handleMessage(Message paramMessage)
   {
-    if ((MemberChargeOffActivity.a(this.a) == null) || (MemberChargeOffActivity.a(this.a).getTag() == null) || (!MemberChargeOffActivity.a(this.a).getTag().equals(paramMessage.obj)));
+    if ((MemberChargeOffActivity.getBundle(this.a) == null) || (MemberChargeOffActivity.getBundle(this.a).getTag() == null) || (!MemberChargeOffActivity.getBundle(this.a).getTag().equals(paramMessage.obj)));
     label308: label352: 
     while (true)
     {
@@ -32,26 +32,26 @@ final class ex extends Handler
       }
       APTextView localAPTextView = (APTextView)this.a.findViewById(R.id.member_qrcode_msg);
       int i;
-      if (StringUtils.isBlank(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.a(this.a).getTag())))
+      if (StringUtils.isBlank(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag())))
       {
         i = 0;
         localAPTextView.setVisibility(i);
-        ((APTextView)this.a.findViewById(R.id.member_qrcode_altText)).setText(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.a(this.a).getTag()));
-        ((APImageView)this.a.findViewById(R.id.member_qrcode)).setImageBitmap(MemberChargeOffActivity.b(this.a).getBitmap(MemberChargeOffActivity.a(this.a).getTag()));
+        ((APTextView)this.a.findViewById(R.id.member_qrcode_altText)).setText(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        ((APImageView)this.a.findViewById(R.id.member_qrcode)).setImageBitmap(MemberChargeOffActivity.b(this.a).getBitmap(MemberChargeOffActivity.getBundle(this.a).getTag()));
         if (MemberChargeOffActivity.c(this.a) != null)
           break label308;
-        MemberChargeOffActivity.a(this.a, new au(this.a, MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.a(this.a).getTag()), false));
+        MemberChargeOffActivity.a(this.a, new au(this.a, MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()), false));
         ((APImageView)this.a.findViewById(R.id.member_qrcode)).setOnClickListener(MemberChargeOffActivity.c(this.a));
       }
       while (true)
       {
         if (MemberChargeOffActivity.d(this.a) == null)
           break label352;
-        MemberChargeOffActivity.d(this.a).startPayBridge(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.a(this.a).getTag()));
+        MemberChargeOffActivity.d(this.a).startPayBridge(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
         return;
         i = 8;
         break;
-        MemberChargeOffActivity.c(this.a).a((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.a(this.a).getTag()));
+        MemberChargeOffActivity.c(this.a).a((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
       }
     }
   }

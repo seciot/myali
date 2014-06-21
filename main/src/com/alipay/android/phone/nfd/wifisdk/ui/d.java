@@ -11,7 +11,7 @@ final class d extends i
   public final void onAnimationEnd(Animation paramAnimation)
   {
     super.onAnimationEnd(paramAnimation);
-    this.a.e();
+    this.a.getFullBundleName();
   }
 }
 

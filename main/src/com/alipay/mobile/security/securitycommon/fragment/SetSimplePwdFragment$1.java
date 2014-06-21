@@ -15,8 +15,8 @@ class SetSimplePwdFragment$1
   public void onClick(View paramView)
   {
     SecurityUtil.b(AlipayApplication.getInstance(), this.a.b);
-    if (SetSimplePwdFragment.a(this.a) != null)
-      this.a.a(SetSimplePwdFragment.a(this.a));
+    if (SetSimplePwdFragment.getBundle(this.a) != null)
+      this.a.getBundle(SetSimplePwdFragment.getBundle(this.a));
   }
 }
 

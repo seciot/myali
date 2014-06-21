@@ -15,9 +15,9 @@ final class a
 
   public final void onClick(View paramView)
   {
-    if (PreRegistFragment.a(this.a) != null)
+    if (PreRegistFragment.getBundle(this.a) != null)
     {
-      PreRegistFragment.a(this.a).a();
+      PreRegistFragment.getBundle(this.a).a();
       return;
     }
     Bundle localBundle = new Bundle();

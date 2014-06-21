@@ -9,7 +9,7 @@ final class w
 
   public final void run()
   {
-    C2CConfirmActivity_.a(this.a);
+    C2CConfirmActivity_.getBundle(this.a);
   }
 }
 

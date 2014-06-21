@@ -2,7 +2,7 @@ package com.alipay.pushsdk.push.c;
 
 public final class c
 {
-  public static AppBundle a(int paramInt)
+  public static AppBundle setBundlePath(int paramInt)
   {
     if (BundlesManager.AppBundle == paramInt)
       return new d();

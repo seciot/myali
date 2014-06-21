@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 
 public class p
 {
-  private static final String a = c.a(p.class);
+  private static final String a = c.getBundle(p.class);
   private static int b = 15;
   private static int c = -1;
 

@@ -75,7 +75,7 @@ class a$a extends BroadcastReceiver
         }
         if (str.equals("android.intent.action.AIRPLANE_MODE"))
         {
-          a.a(this.a, n.a(paramContext));
+          a.a(this.a, n.getBundle(paramContext));
           return;
         }
         if (!str.equals("android.intent.action.BATTERY_CHANGED"))
@@ -88,7 +88,7 @@ class a$a extends BroadcastReceiver
         arrayOfObject[0] = "batt is ";
         arrayOfObject[1] = Integer.valueOf(m);
         arrayOfObject[2] = "%";
-        n.a(arrayOfObject);
+        n.getBundle(arrayOfObject);
         switch (k)
         {
         default:

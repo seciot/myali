@@ -11,7 +11,7 @@ import com.alipay.pushsdk.push.o;
 
 public final class a
 {
-  private static final String a = BundlesManagerImpl.a(a.class);
+  private static final String a = BundlesManagerImpl.getBundle(a.class);
   private Context b;
 
   public a(Context paramContext)

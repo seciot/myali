@@ -71,12 +71,12 @@ public final class TaobaoUserLoginFragment_ extends TaobaoUserLoginFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.r = ((APCheckCodeGetter)a(R.id.aB));
-    this.e = ((APImageButton)a(R.id.l));
-    this.h = ((APButton)a(R.id.Z));
-    this.d = ((SmartInputTextView)a(R.id.bO));
-    this.g = ((APInputBox)a(R.id.v));
-    this.f = ((APImageView)a(R.id.bN));
+    this.r = ((APCheckCodeGetter)getBundle(R.id.aB));
+    this.e = ((APImageButton)getBundle(R.id.l));
+    this.h = ((APButton)getBundle(R.id.Z));
+    this.d = ((SmartInputTextView)getBundle(R.id.bO));
+    this.g = ((APInputBox)getBundle(R.id.v));
+    this.f = ((APImageView)getBundle(R.id.bN));
     f();
   }
 }

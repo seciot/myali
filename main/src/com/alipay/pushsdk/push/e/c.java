@@ -13,7 +13,7 @@ public final class c extends d
 
   public final void a()
   {
-    if ((this.a.w()) || (o.h()))
+    if ((this.a.w()) || (o.hasResource()))
     {
       this.a.b();
       e.a(b(), "80", "1");

@@ -12,8 +12,8 @@ final class k
   public final void run()
   {
     WindowsManager.a(this.c, System.currentTimeMillis());
-    if (WindowsManager.a(this.c) != null)
-      WindowsManager.a(this.c).a(this.a, this.b);
+    if (WindowsManager.getBundle(this.c) != null)
+      WindowsManager.getBundle(this.c).a(this.a, this.b);
   }
 }
 

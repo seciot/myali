@@ -27,7 +27,7 @@ final class j
     if (localObject == null)
       return;
     this.a.callBack((JSONObject)localObject);
-    LBSLocationManagerProxy.getInstance().removeUpdates(AlipassJsBridge.a(this.b), this);
+    LBSLocationManagerProxy.getInstance().removeUpdates(AlipassJsBridge.getBundle(this.b), this);
   }
 }
 

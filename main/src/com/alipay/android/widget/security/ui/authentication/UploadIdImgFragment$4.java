@@ -31,7 +31,7 @@ class UploadIdImgFragment$4
         this.a.a().toast("身份证照片异常，请重新拍摄", 0);
         return;
       }
-      this.a.d();
+      this.a.getInitLevel();
       return;
     }
     catch (Exception localException)

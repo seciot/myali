@@ -15,10 +15,10 @@ final class d
 
   public final void run()
   {
-    if ((GestureActivity.a(this.a) != null) && (GestureActivity.h(this.a) != null))
+    if ((GestureActivity.getBundle(this.a) != null) && (GestureActivity.h(this.a) != null))
     {
-      GestureActivity.a(GestureActivity.a(this.a), "", "true", "0");
-      GestureActivity.i(this.a).updateUserGesture(GestureActivity.a(this.a));
+      GestureActivity.a(GestureActivity.getBundle(this.a), "", "true", "0");
+      GestureActivity.i(this.a).updateUserGesture(GestureActivity.getBundle(this.a));
       GestureActivity.b(this.a, this.a.getResources().getString(f.d));
     }
     GestureActivity.a(this.a, BehaviourIdEnum.CLICKED, "setGestureView", "skipButton");

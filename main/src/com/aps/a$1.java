@@ -16,7 +16,7 @@ class a$1 extends PhoneStateListener
   public void onCellLocationChanged(CellLocation paramCellLocation)
   {
     if (paramCellLocation == null);
-    while (a.a(this.a))
+    while (a.getBundle(this.a))
       return;
     if (a.b(this.a) != null)
       a.a(this.a, a.b(this.a).getCellLocation());

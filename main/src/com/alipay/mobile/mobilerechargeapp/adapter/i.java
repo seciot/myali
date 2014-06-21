@@ -12,8 +12,8 @@ final class i
 
   public final void onSwitchListener(boolean paramBoolean, View paramView)
   {
-    if (WarnManagerListAdapter.a(this.b) != null)
-      WarnManagerListAdapter.a(this.b).a(this.a, paramBoolean);
+    if (WarnManagerListAdapter.getBundle(this.b) != null)
+      WarnManagerListAdapter.getBundle(this.b).a(this.a, paramBoolean);
   }
 }
 

@@ -9,7 +9,7 @@ import java.util.Timer;
 
 public class m extends AppBundle
 {
-  private static final String m = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(m.class);
+  private static final String m = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(m.class);
   protected Socket i;
   String j = null;
   j k;
@@ -28,7 +28,7 @@ public class m extends AppBundle
     super(paramc);
   }
 
-  public final void a(int paramInt)
+  public final void setBundlePath(int paramInt)
   {
     this.p = paramInt;
   }
@@ -39,7 +39,7 @@ public class m extends AppBundle
       g();
     this.s = paramInt;
     this.t = paramLong;
-    o.a(this.t);
+    o.getBundle(this.t);
     synchronized (this.u)
     {
       this.r = new Timer(true);
@@ -49,7 +49,7 @@ public class m extends AppBundle
   }
 
   // ERROR //
-  public final void a(com.alipay.pushsdk.push.BundlesManager.AppBundle parama)
+  public final void setBundlePath(com.alipay.pushsdk.push.BundlesManager.AppBundle parama)
   {
     // Byte code:
     //   0: aload_0
@@ -464,7 +464,7 @@ public class m extends AppBundle
     //   757	771	774	com/alipay/pushsdk/push/a/p
   }
 
-  public final void a(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(4, m, "sendPacket()... isConnected=" + a());
     try
@@ -481,7 +481,7 @@ public class m extends AppBundle
       throw new NullPointerException("Packet is null.");
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, m, "sendPacket()... packet.id=" + parama.a());
-    this.k.a(parama);
+    this.k.getBundle(parama);
   }
 
   public final boolean a()
@@ -501,12 +501,12 @@ public class m extends AppBundle
     this.o = true;
   }
 
-  public final int d()
+  public final int getInitLevel()
   {
     return this.p;
   }
 
-  public final void e()
+  public final void getFullBundleName()
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, m, "disconnect()... called!");
     d.a(d.v, d.z, System.currentTimeMillis(), d.E, 0L + System.currentTimeMillis(), "PushConnection_disconnect");
@@ -542,9 +542,9 @@ public class m extends AppBundle
             {
               this.i.close();
               label151: com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, m, "shutdown()... Done!");
-              this.k.d();
+              this.k.getInitLevel();
               this.k = null;
-              this.l.d();
+              this.l.getInitLevel();
               this.l = null;
               com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, m, "disconnect()... done!");
               return;
@@ -568,7 +568,7 @@ public class m extends AppBundle
     }
   }
 
-  public final void f()
+  public final void getBundlePath()
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(4, m, "resetConnection()...");
     if (this.r != null)

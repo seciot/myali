@@ -15,13 +15,13 @@ class ModifySimplePwdActivity$3
 
   public final Object a(String paramString)
   {
-    UserInfo localUserInfo = ModifySimplePwdActivity.a(this.a);
+    UserInfo localUserInfo = ModifySimplePwdActivity.getBundle(this.a);
     MobileSecurityResult localMobileSecurityResult = null;
     if (localUserInfo != null);
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localMobileSecurityResult = ModifySimplePwdActivity.b(this.a).b(ModifySimplePwdActivity.a(this.a).getLogonId(), paramString);
+      localMobileSecurityResult = ModifySimplePwdActivity.b(this.a).b(ModifySimplePwdActivity.getBundle(this.a).getLogonId(), paramString);
       this.a.dismissProgressDialog();
       ModifySimplePwdActivity.b(this.a, paramString);
       return localMobileSecurityResult;
@@ -43,7 +43,7 @@ class ModifySimplePwdActivity$3
       MobileSecurityResult localMobileSecurityResult = (MobileSecurityResult)paramObject;
       if (localMobileSecurityResult.isSuccess())
       {
-        this.a.a(ModifySimplePwdActivity.FragId.SetPwd);
+        this.a.getBundle(ModifySimplePwdActivity.FragId.SetPwd);
         return;
       }
       this.a.toast(localMobileSecurityResult.getMessage(), 0);

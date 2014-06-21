@@ -14,7 +14,7 @@ final class a
 
   public final void onServiceConnected(ComponentName paramComponentName, IBinder paramIBinder)
   {
-    PayHelper.a(this.a, IAlixPay.Stub.a(paramIBinder));
+    PayHelper.a(this.a, IAlixPay.Stub.getBundle(paramIBinder));
   }
 
   public final void onServiceDisconnected(ComponentName paramComponentName)

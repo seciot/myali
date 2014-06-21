@@ -19,7 +19,7 @@ public class MspService$AliPayServiceStub extends IAliPay.Stub
 
   public void deployFastConnect()
   {
-    MspService.a((MspService)this.b.get());
+    MspService.getBundle((MspService)this.b.get());
   }
 
   public void registerCallback(IRemoteServiceCallback paramIRemoteServiceCallback)

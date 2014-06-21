@@ -24,7 +24,7 @@ public final class o
         if (paramRunnable != null)
         {
           localFuture = this.a.a().submit(paramRunnable);
-          a.a(5, LongLinkService.e(), "Future result is " + localFuture.getClass().getName().toString());
+          a.a(5, LongLinkService.getFullBundleName(), "Future result is " + localFuture.getClass().getName().toString());
         }
       }
     }

@@ -13,7 +13,7 @@ class SecurityDribbletActivity$7
   public void onCancel(DialogInterface paramDialogInterface)
   {
     this.a.dismissProgressDialog();
-    this.a.a(Boolean.valueOf(false));
+    this.a.getBundle(Boolean.valueOf(false));
   }
 }
 

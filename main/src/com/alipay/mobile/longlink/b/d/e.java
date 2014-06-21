@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public class e
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(e.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
   private final com.alipay.mobile.longlink.service.AppBundle b;
 
   public e(com.alipay.mobile.longlink.service.AppBundle parama)
@@ -17,20 +17,20 @@ public class e
     this.b = parama;
   }
 
-  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
-    if (new f(0).a(parama))
+    if (new f(0).getBundle(parama))
     {
-      this.b.a(true);
-      str = parama.d();
+      this.b.getBundle(true);
+      str = parama.getInitLevel();
     }
     try
     {
       JSONObject localJSONObject = new JSONObject(str);
       m.c(localJSONObject.optInt("keepLiveTime"));
-      m.a(localJSONObject.optInt("heartTimeOut"));
-      com.alipay.mobile.longlink.service.AppBundle.n();
+      m.getBundle(localJSONObject.optInt("heartTimeOut"));
+      com.alipay.mobile.longlink.service.AppBundle.getAllComponentNames();
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.getBundleName());
       this.b.t();
       return;
@@ -39,7 +39,7 @@ public class e
     {
       while (true)
       {
-        this.b.a(false);
+        this.b.getBundle(false);
         localJSONException.printStackTrace();
       }
     }

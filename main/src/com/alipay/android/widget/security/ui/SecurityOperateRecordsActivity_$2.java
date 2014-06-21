@@ -9,7 +9,7 @@ class SecurityOperateRecordsActivity_$2
 
   public void run()
   {
-    SecurityOperateRecordsActivity_.a(this.a);
+    SecurityOperateRecordsActivity_.getBundle(this.a);
   }
 }
 

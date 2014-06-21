@@ -20,7 +20,7 @@ class IdCardVerifyActivity$2
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     if ("1801".equals(this.a))
-      ((BindPhoneService)IdCardVerifyActivity.a(this.b).getExtServiceByInterface(BindPhoneService.class.getName())).bindPhone(this.b);
+      ((BindPhoneService)IdCardVerifyActivity.getBundle(this.b).getExtServiceByInterface(BindPhoneService.class.getName())).bindPhone(this.b);
     do
     {
       return;
@@ -37,7 +37,7 @@ class IdCardVerifyActivity$2
         }
       if ("1803".equals(this.a))
       {
-        IdCardVerifyActivity.d(this.b).a(this.b);
+        IdCardVerifyActivity.d(this.b).getBundle(this.b);
         return;
       }
     }

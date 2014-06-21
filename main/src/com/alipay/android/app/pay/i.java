@@ -20,7 +20,7 @@ final class i
       MainActivity.b(this.b).getBundleName();
       MainActivity.b(this.b).b();
       this.c = true;
-      MainActivity.a(this.b, this.a.d());
+      MainActivity.a(this.b, this.a.getInitLevel());
       if (MainActivity.c(this.b) != null)
         MainActivity.c(this.b).a(this.b, MainActivity.d(this.b));
     }

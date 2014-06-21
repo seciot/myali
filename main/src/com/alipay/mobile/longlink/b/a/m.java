@@ -11,7 +11,7 @@ public final class m
     return "1.0.0";
   }
 
-  public static void a(int paramInt)
+  public static void setBundlePath(int paramInt)
   {
     if (paramInt <= 0)
       throw new IllegalArgumentException();

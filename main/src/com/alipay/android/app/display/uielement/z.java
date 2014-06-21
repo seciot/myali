@@ -16,14 +16,14 @@ final class z
 
   public final boolean onTouch(View paramView, MotionEvent paramMotionEvent)
   {
-    Drawable localDrawable = UICheckBox.a(this.a).getBackground();
+    Drawable localDrawable = UICheckBox.getBundle(this.a).getBackground();
     if (localDrawable == null);
     do
     {
       return false;
       int[] arrayOfInt = paramView.getDrawableState();
       if (this.b == null)
-        this.b = UICheckBox.a(this.a).getDrawableState();
+        this.b = UICheckBox.getBundle(this.a).getDrawableState();
       if (paramMotionEvent.getAction() != 1)
       {
         localDrawable.setState(arrayOfInt);

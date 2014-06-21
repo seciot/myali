@@ -9,7 +9,7 @@ class SmsCheckFragment_$4
 
   public void run()
   {
-    SmsCheckFragment_.a(this.a);
+    SmsCheckFragment_.getBundle(this.a);
   }
 }
 

@@ -6,20 +6,20 @@ import com.alipay.pushsdk.push.a.o;
 
 public class e
 {
-  private static final String a = BundlesManagerImpl.a(e.class);
+  private static final String a = BundlesManagerImpl.getBundle(e.class);
 
   public static void a()
   {
     g.a().b();
   }
 
-  public static void a(Context paramContext)
+  public static void setBundlePath(Context paramContext)
   {
-    h.a(paramContext);
+    h.getBundle(paramContext);
     com.alipay.pushsdk.push.h localh = new com.alipay.pushsdk.push.h(paramContext);
-    i locali = i.a(paramContext);
+    i locali = i.getBundle(paramContext);
     String str1 = locali.getBundleName();
-    String str2 = localh.d();
+    String str2 = localh.getInitLevel();
     String str3 = localh.a();
     String str4 = locali.b();
     g.a().a(str1, str2, "", str3, str4);

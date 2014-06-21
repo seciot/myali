@@ -17,14 +17,14 @@ final class d
 
   public final Object a(String paramString, PwdHistoryClearCallBack paramPwdHistoryClearCallBack)
   {
-    String str = CompletePhoneUserInfoActivity.a(this.a);
+    String str = CompletePhoneUserInfoActivity.getBundle(this.a);
     SetMobilePayPwdRes localSetMobilePayPwdRes = null;
     if (str != null);
     try
     {
       CompletePhoneUserInfoActivity.b(this.a, paramString);
       this.a.showProgressDialog(null, true, null);
-      localSetMobilePayPwdRes = CompletePhoneUserInfoActivity.b(this.a).b(CompletePhoneUserInfoActivity.a(this.a), paramString, CompletePhoneUserInfoActivity.c(this.a));
+      localSetMobilePayPwdRes = CompletePhoneUserInfoActivity.b(this.a).b(CompletePhoneUserInfoActivity.getBundle(this.a), paramString, CompletePhoneUserInfoActivity.c(this.a));
       this.a.dismissProgressDialog();
       return localSetMobilePayPwdRes;
     }

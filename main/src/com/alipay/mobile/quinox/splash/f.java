@@ -13,14 +13,14 @@ final class f extends WebViewClient
   public final void onPageFinished(WebView paramWebView, String paramString)
   {
     super.onPageFinished(paramWebView, paramString);
-    if ((c.a(this.a) != null) && (!c.b(this.a)))
+    if ((c.getBundle(this.a) != null) && (!c.b(this.a)))
       c.d(this.a).postDelayed(new g(this), 1000L);
   }
 
   public final boolean shouldOverrideUrlLoading(WebView paramWebView, String paramString)
   {
     if (paramString.startsWith("alipay"))
-      this.a.a(paramString);
+      this.a.getBundle(paramString);
     return true;
   }
 }

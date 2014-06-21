@@ -167,7 +167,7 @@ public class BindPhoneActivity extends BaseActivity
     }
     catch (Exception localException)
     {
-      a(getResources().getString(R.string.c));
+      getBundle(getResources().getString(R.string.c));
     }
   }
 
@@ -185,7 +185,7 @@ public class BindPhoneActivity extends BaseActivity
       catch (AppLoadException localAppLoadException)
       {
         new StringBuilder("{[info=backSourceApp], [msg=").append(localAppLoadException.getMessage()).append("]}").toString();
-        a(getResources().getString(R.string.c));
+        getBundle(getResources().getString(R.string.c));
         return;
       }
     ((BindPhoneServiceImpl)this.O).notifyCallback(paramBoolean.booleanValue());
@@ -440,11 +440,11 @@ public class BindPhoneActivity extends BaseActivity
         }
         showProgressDialog(getResources().getString(R.string.aB), true, this.t);
         this.h.setEnabled(false);
-        SecurityCommonDialogUtil.a(this);
+        SecurityCommonDialogUtil.getBundle(this);
         new Thread(new b(1, (byte)0)).start();
         return;
       }
-      a(getResources().getString(R.string.c));
+      getBundle(getResources().getString(R.string.c));
       return;
       toast(getResources().getString(R.string.by), 1);
       return;

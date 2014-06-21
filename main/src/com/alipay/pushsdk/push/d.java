@@ -16,7 +16,7 @@ public final class d
     {
       d locald2 = this.b.getBundleName();
       locald2.AppBundle = (-1 + locald2.AppBundle);
-      BundlesManagerImpl.a(4, NotificationService.e(), "Decremented task count to " + this.a);
+      BundlesManagerImpl.a(4, NotificationService.getFullBundleName(), "Decremented task count to " + this.a);
       return;
     }
   }

@@ -9,7 +9,7 @@ final class ai
 
   public final void run()
   {
-    LoginLogsActivity_.a(this.a);
+    LoginLogsActivity_.getBundle(this.a);
   }
 }
 

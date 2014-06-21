@@ -21,7 +21,7 @@ final class dk
     this.b.showProgressDialog("");
     if ((localUserInfo != null) && (localUserInfo.isAutoLogin()))
     {
-      this.b.a(localUserInfo);
+      this.b.getBundle(localUserInfo);
       return;
     }
     SelectAccountActivity.a(this.b, localUserInfo.getLogonId());

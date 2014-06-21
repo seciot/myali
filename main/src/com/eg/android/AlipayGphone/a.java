@@ -17,7 +17,7 @@ final class a extends Handler
       return;
     case 2:
     }
-    AlipayLogin.a(this.a);
+    AlipayLogin.getBundle(this.a);
     AlipayLogin.b(this.a);
   }
 }

@@ -14,7 +14,7 @@ final class bp
 
   public final void onCheckedChanged(RadioGroup paramRadioGroup, int paramInt)
   {
-    Iterator localIterator = UIRadioGroup.a(this.a).iterator();
+    Iterator localIterator = UIRadioGroup.getBundle(this.a).iterator();
     while (localIterator.hasNext())
     {
       bn localbn = (bn)localIterator.next();

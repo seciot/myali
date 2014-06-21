@@ -11,7 +11,7 @@ final class w
 
   public final void run()
   {
-    UIInput.a(this.b).setText(this.a);
+    UIInput.getBundle(this.b).setText(this.a);
   }
 }
 

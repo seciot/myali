@@ -2,7 +2,7 @@ package com.alipay.mobile.a.a;
 
 public final class a
 {
-  public static String a(String paramString)
+  public static String getBundle(String paramString)
   {
     if ((paramString != null) && (paramString.length() == 11))
       paramString = paramString.substring(0, 3) + " " + paramString.substring(3, 7) + " " + paramString.substring(7);

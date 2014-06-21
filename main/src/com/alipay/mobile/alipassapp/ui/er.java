@@ -12,9 +12,9 @@ final class er
 
   public final void run()
   {
-    if (this.a.e.d())
+    if (this.a.e.getInitLevel())
       this.a.d.getMoreFinish(true);
-    if (!this.a.e.f())
+    if (!this.a.e.getBundlePath())
     {
       if (this.a.e.a())
         break label58;
@@ -24,14 +24,14 @@ final class er
     do
     {
       return;
-      if ((!this.a.e.d()) && (!this.a.e.getBundleName()))
+      if ((!this.a.e.getInitLevel()) && (!this.a.e.getBundleName()))
       {
         MemberCardObtainableListActivity.removeBundle(this.a);
         return;
       }
     }
-    while (MemberCardObtainableListActivity.a(this.a).get());
-    this.a.d.a(this.a.e.b(), this.a.e.d());
+    while (MemberCardObtainableListActivity.getBundle(this.a).get());
+    this.a.d.a(this.a.e.b(), this.a.e.getInitLevel());
     long l = System.currentTimeMillis() - MemberCardObtainableListActivity.f(this.a);
     new StringBuilder("会员卡领卡列表加载时间").append(l).toString();
   }

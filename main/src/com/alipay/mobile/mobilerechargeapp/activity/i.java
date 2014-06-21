@@ -28,12 +28,12 @@ final class i
 
   public final void onPreExecute(Request paramRequest)
   {
-    BalancesWarnCmsActivity.a(this.a);
+    BalancesWarnCmsActivity.getBundle(this.a);
   }
 
   public final void onProgressUpdate(Request paramRequest, double paramDouble)
   {
-    BalancesWarnCmsActivity.a(this.a);
+    BalancesWarnCmsActivity.getBundle(this.a);
   }
 }
 

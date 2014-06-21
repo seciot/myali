@@ -13,7 +13,7 @@ class UserTipDialog$1
 
   public void onClick(View paramView)
   {
-    UserTipDialog.a(this.a);
+    UserTipDialog.getBundle(this.a);
     UserTipDialog.b(this.a).setClickable(false);
   }
 }

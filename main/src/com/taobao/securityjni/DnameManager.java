@@ -49,7 +49,7 @@ public class DnameManager
 
   public static void StartDsAHick()
   {
-    d.a(AHICK);
+    d.getBundle(AHICK);
   }
 }
 

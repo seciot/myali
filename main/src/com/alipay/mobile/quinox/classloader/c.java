@@ -15,7 +15,7 @@ final class c
     try
     {
       Thread.sleep(10000L);
-      a.a(this.b).e();
+      a.getBundle(this.b).getFullBundleName();
       this.a.shutdown();
       return;
     }

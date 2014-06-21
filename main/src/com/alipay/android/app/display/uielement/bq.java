@@ -14,7 +14,7 @@ final class bq
   public final void onClick(View paramView)
   {
     br localbr = new br(this, EventType.b);
-    this.a.a(localbr);
+    this.a.getBundle(localbr);
   }
 }
 

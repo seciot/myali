@@ -19,7 +19,7 @@ final class ad
   {
     new StringBuilder("appId: ").append(AlipayApplication.getInstance().getMicroApplicationContext().findTopRunningApp().getAppId()).toString();
     ag.a().d(this.a);
-    ag.a().a(this.a);
+    ag.a().getBundle(this.a);
     FloatWindowBigView.access$100(this.b).postDelayed(new ae(this), 500L);
   }
 }

@@ -14,7 +14,7 @@ final class aj
 
   public final void onClick(View paramView)
   {
-    if ((!UICombobox.a(this.b)) && (TextUtils.equals(this.b.a("show_toast"), "true")) && (!TextUtils.isEmpty(this.b.a("toast_message"))))
+    if ((!UICombobox.getBundle(this.b)) && (TextUtils.equals(this.b.getBundle("show_toast"), "true")) && (!TextUtils.isEmpty(this.b.getBundle("toast_message"))))
     {
       this.b.t();
       return;

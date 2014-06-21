@@ -24,7 +24,7 @@ final class bl extends Handler
     case 0:
       this.a.dismissProgressDialog();
       FoundPasswordResult localFoundPasswordResult2 = (FoundPasswordResult)JSON.parseObject(localBundle.get("rs").toString(), FoundPasswordResult.class);
-      this.a.a(localFoundPasswordResult2);
+      this.a.getBundle(localFoundPasswordResult2);
       return;
     case 1:
       this.a.dismissProgressDialog();
@@ -34,7 +34,7 @@ final class bl extends Handler
     case 21:
       this.a.dismissProgressDialog();
       MobileSecurityResult localMobileSecurityResult2 = (MobileSecurityResult)JSON.parseObject(localBundle.get("rs").toString(), MobileSecurityResult.class);
-      this.a.a(localMobileSecurityResult2);
+      this.a.getBundle(localMobileSecurityResult2);
       return;
     case 22:
       this.a.dismissProgressDialog();

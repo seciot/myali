@@ -15,7 +15,7 @@ final class c
     {
       this.b.a.setEnabled(this.a);
       this.b.a.setClickable(this.a);
-      BaseEditElement.a(this.b);
+      BaseEditElement.getBundle(this.b);
     }
   }
 }

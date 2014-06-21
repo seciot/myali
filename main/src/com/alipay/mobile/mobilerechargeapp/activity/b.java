@@ -12,7 +12,7 @@ final class b
 
   public final void run()
   {
-    Validator.b(this.a, BalancesVerifySmsActivity.a(this.a).getEtContent());
+    Validator.b(this.a, BalancesVerifySmsActivity.getBundle(this.a).getEtContent());
   }
 }
 

@@ -9,7 +9,7 @@ class NickNameImplementationActivity_$2
 
   public void run()
   {
-    NickNameImplementationActivity_.a(this.a);
+    NickNameImplementationActivity_.getBundle(this.a);
   }
 }
 

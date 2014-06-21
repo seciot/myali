@@ -15,10 +15,10 @@ final class ag
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    UISimplePassword.a(this.a, UISimplePassword.a(this.a).getText().toString());
+    UISimplePassword.a(this.a, UISimplePassword.getBundle(this.a).getText().toString());
     UISimplePassword.a(this.a, UISimplePassword.b(this.a).length());
     if ((UISimplePassword.b(this.a).length() == 6) && (UISimplePassword.c(this.a)))
-      this.a.a(this.a, ActionType.a(this.a.n()));
+      this.a.a(this.a, ActionType.getBundle(this.a.getAllComponentNames()));
     this.a.a(this, new MiniEventArgs(ActionType.t));
   }
 

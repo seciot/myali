@@ -11,20 +11,20 @@ final class g
   {
     try
     {
-      String str = new AppBundle(this.a.a(), e.a(this.b)).b(this.a.b().toString());
+      String str = new AppBundle(this.a.a(), e.getBundle(this.b)).b(this.a.b().toString());
       if ((str != null) && (((String)str).length() > 0))
       {
         this.a.b(str);
-        this.a.a(3);
+        this.a.getBundle(3);
         return;
       }
-      this.a.a(4);
+      this.a.getBundle(4);
       return;
     }
     catch (Exception localException)
     {
       localException.printStackTrace();
-      this.a.a(4);
+      this.a.getBundle(4);
     }
   }
 }

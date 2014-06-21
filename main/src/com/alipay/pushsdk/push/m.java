@@ -18,12 +18,12 @@ final class m
     if (this.a.s())
       try
       {
-        a locala = com.alipay.pushsdk.push.c.c.a(j.j(this.b));
-        locala.a(3);
+        a locala = com.alipay.pushsdk.push.c.c.getBundle(j.j(this.b));
+        locala.getBundle(3);
         locala.b(0);
-        locala.a("");
+        locala.getBundle("");
         com.alipay.pushsdk.c.a.c.a(4, j.z(), "HeartBeatTask() heartBeat will be sent! length=" + locala.g());
-        this.a.d().a(locala);
+        this.a.getInitLevel().getBundle(locala);
         return;
       }
       catch (Exception localException)

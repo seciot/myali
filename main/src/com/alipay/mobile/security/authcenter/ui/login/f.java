@@ -9,7 +9,7 @@ final class f
 
   public final void run()
   {
-    AlipayUserLoginFragment_.a(this.a);
+    AlipayUserLoginFragment_.getBundle(this.a);
   }
 }
 

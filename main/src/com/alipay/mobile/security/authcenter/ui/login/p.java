@@ -17,7 +17,7 @@ final class p
   {
     if (this.a)
     {
-      BaseLoginFragment.a(this.c);
+      BaseLoginFragment.getBundle(this.c);
       return;
     }
     BaseLoginFragment.c(this.c).process(this.b);

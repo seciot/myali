@@ -16,7 +16,7 @@ final class az
 
   public final void a(ArrayList paramArrayList)
   {
-    this.a.a(paramArrayList);
+    this.a.getBundle(paramArrayList);
   }
 }
 

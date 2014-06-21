@@ -8,7 +8,7 @@ import com.alipay.pushsdk.c.j;
 
 public class o
 {
-  private static final String a = c.a(o.class);
+  private static final String a = c.getBundle(o.class);
   private Context b;
 
   public o(Context paramContext)

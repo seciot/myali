@@ -16,7 +16,7 @@ final class at
   {
     this.a.show();
     au localau = new au(this, EventType.b);
-    this.b.a(localau);
+    this.b.getBundle(localau);
   }
 }
 

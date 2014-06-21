@@ -16,10 +16,10 @@ final class c
   {
     try
     {
-      AbstractUIForm.a(this.d, this.d.a(this.a));
+      AbstractUIForm.a(this.d, this.d.getBundle(this.a));
       if (AbstractUIForm.b(this.d) != null)
       {
-        AbstractUIForm.b(this.d).a(this.d.a.b());
+        AbstractUIForm.b(this.d).getBundle(this.d.a.b());
         AbstractUIForm.b(this.d).a(this.b, this.c);
       }
       return;

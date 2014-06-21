@@ -21,7 +21,7 @@ class SmsCheckFragment$1
 
   public void onClick(View paramView)
   {
-    String str = SmsCheckFragment.a(this.a).getInputedText();
+    String str = SmsCheckFragment.getBundle(this.a).getInputedText();
     if (StringUtils.isEmpty(str))
     {
       AlipayApplication.getInstance().getMicroApplicationContext().Toast(this.a.getResources().getString(R.string.bB), 1);
@@ -30,7 +30,7 @@ class SmsCheckFragment$1
     SmsCheckFragment.b(this.a).set(false);
     SmsCheckFragment.c(this.a).dispose();
     this.a.a(str, this.a);
-    SecurityUtil.b(AlipayApplication.getInstance(), SmsCheckFragment.a(this.a).getEtContent());
+    SecurityUtil.b(AlipayApplication.getInstance(), SmsCheckFragment.getBundle(this.a).getEtContent());
   }
 }
 

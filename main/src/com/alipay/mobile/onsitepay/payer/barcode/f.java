@@ -21,7 +21,7 @@ final class f extends BroadcastReceiver
       if (!bool1)
         bool2 = true;
       BarcodePayActivity.b(localBarcodePayActivity, bool2);
-      this.a.n();
+      this.a.getAllComponentNames();
     }
   }
 }

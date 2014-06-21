@@ -45,9 +45,9 @@ public final class PreRegistFragment_ extends PreRegistFragment
   public final void onViewCreated(View paramView, Bundle paramBundle)
   {
     super.onViewCreated(paramView, paramBundle);
-    this.f = ((APButton)a(R.id.ba));
-    this.d = ((APTextView)a(R.id.dg));
-    this.e = ((APCheckboxWithLinkText)a(R.id.cU));
+    this.f = ((APButton)getBundle(R.id.ba));
+    this.d = ((APTextView)getBundle(R.id.dg));
+    this.e = ((APCheckboxWithLinkText)getBundle(R.id.cU));
     c();
   }
 }

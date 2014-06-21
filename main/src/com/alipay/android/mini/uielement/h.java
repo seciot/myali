@@ -14,22 +14,22 @@ final class h extends CountDownTimer
 
   public final void onFinish()
   {
-    if (UIButton.a(this.a) == null);
+    if (UIButton.getBundle(this.a) == null);
     do
     {
       return;
-      UIButton.a(this.a).setEnabled(true);
+      UIButton.getBundle(this.a).setEnabled(true);
     }
-    while (this.a.k() == null);
-    UIButton.a(this.a).setText(this.a.k());
+    while (this.a.getBundleVersion() == null);
+    UIButton.getBundle(this.a).setText(this.a.getBundleVersion());
   }
 
   public final void onTick(long paramLong)
   {
-    if (UIButton.a(this.a) == null)
+    if (UIButton.getBundle(this.a) == null)
       return;
-    Context localContext = UIButton.a(this.a).getContext();
-    UIButton.a(this.a).setText(paramLong / 1000L + localContext.getString(R.string.BundlesManagerImpl));
+    Context localContext = UIButton.getBundle(this.a).getContext();
+    UIButton.getBundle(this.a).setText(paramLong / 1000L + localContext.getString(R.string.BundlesManagerImpl));
   }
 }
 

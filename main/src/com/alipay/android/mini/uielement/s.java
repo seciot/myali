@@ -13,8 +13,8 @@ final class s
 
   public final void onFocusChange(View paramView, boolean paramBoolean)
   {
-    UIInput.a(this.a).justInitIconListener(new t(this));
-    UIInput.a(this.a).onFocusChange(paramView, paramBoolean);
+    UIInput.getBundle(this.a).justInitIconListener(new t(this));
+    UIInput.getBundle(this.a).onFocusChange(paramView, paramBoolean);
   }
 }
 

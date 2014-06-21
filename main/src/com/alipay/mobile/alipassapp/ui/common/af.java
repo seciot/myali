@@ -23,7 +23,7 @@ final class af
       {
         return;
         new StringBuilder("loopQueryTask dynamicId=").append(this.a).toString();
-        ae.a(this.b);
+        ae.getBundle(this.b);
         ae.b(this.b);
         i = ae.c(this.b);
         j = 1;

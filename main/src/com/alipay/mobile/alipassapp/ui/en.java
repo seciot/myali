@@ -14,7 +14,7 @@ final class en
   {
     MemberCardObtainableListActivity.a(BehaviourIdEnum.SLIDED, "loadMore", null);
     MemberCardObtainableListActivity.b(this.a.a);
-    this.a.a.e.e();
+    this.a.a.e.getFullBundleName();
     this.a.a.a();
   }
 }

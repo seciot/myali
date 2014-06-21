@@ -15,7 +15,7 @@ final class c
     paramDialogInterface.dismiss();
     if (this.a)
     {
-      this.b.a(true);
+      this.b.getBundle(true);
       this.b.finish();
     }
   }

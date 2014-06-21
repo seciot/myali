@@ -16,8 +16,8 @@ final class h
   public final void onClick(View paramView)
   {
     if (this.a != null)
-      UIPropUtil.a(this.a);
-    GuideWindow.a(this.d);
+      UIPropUtil.getBundle(this.a);
+    GuideWindow.getBundle(this.d);
     this.b.removeView(GuideWindow.b(this.d));
     if (this.c != null)
       this.c.setVisibility(0);

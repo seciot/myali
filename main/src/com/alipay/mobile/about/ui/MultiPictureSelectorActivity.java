@@ -263,10 +263,10 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     if (localb.b())
     {
       a(paramView);
-      localb.a(false);
+      localb.getBundle(false);
       View localView2 = localb.getBundleName();
       this.g.removeView(localView2);
-      localb.a(null);
+      localb.getBundle(null);
       this.l.removeBundle(localb.a());
       this.n = (-1 + this.n);
       APTextView localAPTextView = this.j;
@@ -288,11 +288,11 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
         return;
       }
       a(paramView);
-      localb.a(true);
+      localb.getBundle(true);
       this.l.add(localb.a());
       View localView1 = a(paramInt);
       localView1.setTag(new c(paramInt, paramView));
-      localb.a(localView1);
+      localb.getBundle(localView1);
       this.g.addView(localView1);
       localView1.setOnClickListener(new al(this));
       this.n = (1 + this.n);
@@ -413,10 +413,10 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       MultiPictureSelectorActivity localMultiPictureSelectorActivity;
       if (localb.b())
       {
-        localb.a(false);
+        localb.getBundle(false);
         View localView2 = localb.getBundleName();
         MultiPictureSelectorActivity.j(MultiPictureSelectorActivity.this).removeView(localView2);
-        localb.a(null);
+        localb.getBundle(null);
         MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).removeBundle(localb.a());
         MultiPictureSelectorActivity.l(MultiPictureSelectorActivity.this);
         APTextView localAPTextView = MultiPictureSelectorActivity.r(MultiPictureSelectorActivity.this);
@@ -438,11 +438,11 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
           MultiPictureSelectorActivity.this.toast(MultiPictureSelectorActivity.this.getResources().getString(R.string.Y), 0);
           return;
         }
-        localb.a(true);
+        localb.getBundle(true);
         MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).add(localb.a());
         View localView1 = MultiPictureSelectorActivity.this.a(i);
         localView1.setTag(new c(i, paramView));
-        localb.a(localView1);
+        localb.getBundle(localView1);
         MultiPictureSelectorActivity.j(MultiPictureSelectorActivity.this).addView(localView1);
         localView1.setOnClickListener(new an(this));
         MultiPictureSelectorActivity.s(MultiPictureSelectorActivity.this);

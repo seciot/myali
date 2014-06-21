@@ -9,8 +9,8 @@ final class ay
 
   public final void run()
   {
-    if (UIDatePicker.a(this.a) != null)
-      this.a.a(UIDatePicker.a(this.a), null);
+    if (UIDatePicker.getBundle(this.a) != null)
+      this.a.a(UIDatePicker.getBundle(this.a), null);
   }
 }
 

@@ -120,7 +120,7 @@ public class ActiveTopBoardContainer extends FrameLayout
         if ((this.l != 0.0F) && (Math.round(this.l) > 0))
           i4 = (localView.getTop() - i2) / Math.round(this.l);
         this.e.a(i4);
-        this.e.a(new a(this));
+        this.e.getBundle(new a(this));
         this.e.c();
       }
       else
@@ -132,7 +132,7 @@ public class ActiveTopBoardContainer extends FrameLayout
           this.e.b();
           this.e.a(localView, i1, SyncAnimatingHelper.TYPE.a);
           this.e.a(200);
-          this.e.a(new b(this, localView, i2));
+          this.e.getBundle(new b(this, localView, i2));
           this.e.c();
           this.a.run();
         }
@@ -159,7 +159,7 @@ public class ActiveTopBoardContainer extends FrameLayout
               this.e.b();
               this.e.a(localView, 0, SyncAnimatingHelper.TYPE.a);
               this.e.a(200);
-              this.e.a(new c(this, localView));
+              this.e.getBundle(new c(this, localView));
               this.e.c();
             }
             else if (2 == c)
@@ -167,7 +167,7 @@ public class ActiveTopBoardContainer extends FrameLayout
               this.e.b();
               this.e.a(localView, 0, SyncAnimatingHelper.TYPE.a);
               this.e.a(200);
-              this.e.a(new d(this, localView));
+              this.e.getBundle(new d(this, localView));
               this.e.c();
             }
             else if (this.m != null)

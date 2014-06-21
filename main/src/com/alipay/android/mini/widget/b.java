@@ -32,10 +32,10 @@ final class b
           this.h.deleteCharAt(i);
         else
           i++;
-      int j = 1 + FormatBankcard.a(this.f);
+      int j = 1 + FormatBankcard.getBundle(this.f);
       int k = 0;
       for (int m = 0; m < this.h.length(); m++)
-        if ((m == FormatBankcard.a(this.f)) || ((m - FormatBankcard.a(this.f)) % j == 0))
+        if ((m == FormatBankcard.getBundle(this.f)) || ((m - FormatBankcard.getBundle(this.f)) % j == 0))
         {
           this.h.insert(m, ' ');
           k++;
@@ -79,7 +79,7 @@ final class b
   {
     this.b = paramCharSequence.length();
     this.h.append(paramCharSequence.toString());
-    if ((this.b == this.a) || (this.b <= -1 + FormatBankcard.a(this.f)) || (this.c))
+    if ((this.b == this.a) || (this.b <= -1 + FormatBankcard.getBundle(this.f)) || (this.c))
     {
       this.c = false;
       return;

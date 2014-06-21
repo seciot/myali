@@ -11,9 +11,9 @@ final class g
 
   public final void run()
   {
-    if ((c.a(this.a.a) != null) && (!c.b(this.a.a)))
+    if ((c.getBundle(this.a.a) != null) && (!c.b(this.a.a)))
     {
-      c.a(this.a.a).setVisibility(8);
+      c.getBundle(this.a.a).setVisibility(8);
       c.c(this.a.a).start();
     }
   }

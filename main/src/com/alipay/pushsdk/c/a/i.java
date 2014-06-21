@@ -6,10 +6,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class i
 {
-  private static final String a = BundlesManagerImpl.a(i.class);
+  private static final String a = BundlesManagerImpl.getBundle(i.class);
   private static AtomicBoolean b = new AtomicBoolean(false);
 
-  public static void a(Context paramContext)
+  public static void setBundlePath(Context paramContext)
   {
     while (true)
     {
@@ -32,7 +32,7 @@ public class i
   }
 
   // ERROR //
-  private static byte[] a(String paramString)
+  private static byte[] getBundle(String paramString)
   {
     // Byte code:
     //   0: new 106	java/io/ByteArrayOutputStream

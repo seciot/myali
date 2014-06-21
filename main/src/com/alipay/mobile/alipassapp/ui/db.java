@@ -9,7 +9,7 @@ final class db
 
   public final void run()
   {
-    AlipassShareActivity_.a(this.a);
+    AlipassShareActivity_.getBundle(this.a);
   }
 }
 

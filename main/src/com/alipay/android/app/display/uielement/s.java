@@ -11,8 +11,8 @@ final class s
 
   public final void run()
   {
-    if (r.a(this.b) != null)
-      r.a(this.b).setVisibility(this.a);
+    if (r.getBundle(this.b) != null)
+      r.getBundle(this.b).setVisibility(this.a);
   }
 }
 

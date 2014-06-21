@@ -20,19 +20,19 @@ public final class o
     return "1.1.0";
   }
 
-  public static void a(int paramInt)
+  public static void setBundlePath(int paramInt)
   {
     if (paramInt <= 0)
       throw new IllegalArgumentException();
     AppBundle = paramInt * 1000;
   }
 
-  public static void a(long paramLong)
+  public static void setBundlePath(long paramLong)
   {
     k = paramLong;
   }
 
-  public static void a(boolean paramBoolean)
+  public static void setBundlePath(boolean paramBoolean)
   {
     h = paramBoolean;
   }
@@ -69,7 +69,7 @@ public final class o
     j = paramBoolean;
   }
 
-  public static long d()
+  public static long getInitLevel()
   {
     return k;
   }
@@ -79,12 +79,12 @@ public final class o
     g = paramBoolean;
   }
 
-  public static long e()
+  public static long getFullBundleName()
   {
     return f;
   }
 
-  public static long f()
+  public static long getBundlePath()
   {
     return e;
   }
@@ -94,7 +94,7 @@ public final class o
     return h;
   }
 
-  public static boolean h()
+  public static boolean hasResource()
   {
     return i;
   }
@@ -104,12 +104,12 @@ public final class o
     return j;
   }
 
-  public static boolean j()
+  public static boolean getRequireBundleName()
   {
     return g;
   }
 
-  public static int k()
+  public static int getBundleVersion()
   {
     return BundlesManagerImpl;
   }

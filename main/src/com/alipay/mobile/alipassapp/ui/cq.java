@@ -18,7 +18,7 @@ final class cq
     {
       AlipassRemindActivity.a(this.b.a, this.a);
       AlipassRemindActivity.a(this.b.a, this.a.getTime());
-      AlipassRemindActivity.a(this.b.a, AlipassRemindActivity.a(this.b.a));
+      AlipassRemindActivity.a(this.b.a, AlipassRemindActivity.getBundle(this.b.a));
     }
   }
 }

@@ -38,7 +38,7 @@ public class OldDataTransferUtil
       BundlesManager localb = new BundlesManager(AlipayApplication.getInstance());
       try
       {
-        if (localb.a(AlipayApplication.getInstance()))
+        if (localb.getBundle(AlipayApplication.getInstance()))
         {
           ArrayList localArrayList = localb.a();
           if ((localArrayList != null) && (!localArrayList.isEmpty()))

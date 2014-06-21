@@ -21,7 +21,7 @@ final class bh extends AsyncTask<String, Object, Object>
         AlipassPreviewActivity.a(this.a, (AlipassInfo)paramObject);
         AlipassPreviewActivity.c(this.a);
         if (!AlipassPreviewActivity.d(this.a))
-          this.a.d();
+          this.a.getInitLevel();
       }
       super.onPostExecute(paramObject);
       return;

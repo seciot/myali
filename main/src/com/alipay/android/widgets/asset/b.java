@@ -19,7 +19,7 @@ final class b
     {
       Bundle localBundle = new Bundle();
       localBundle.putString("actionType", "20000002");
-      AssetWidgetGroup.a(this.b).startApp("20000004", "20000001", localBundle);
+      AssetWidgetGroup.getBundle(this.b).startApp("20000004", "20000001", localBundle);
       return;
     }
     catch (AppLoadException localAppLoadException)

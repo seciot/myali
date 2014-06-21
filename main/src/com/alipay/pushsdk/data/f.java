@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 
 public class f extends c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(f.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(f.class);
   private static String b = "pub_msg_list";
 
   public f(Context paramContext)

@@ -14,8 +14,8 @@ final class eb
 
   public final void run()
   {
-    MemberCardDetailActivity.a(this.c.a).setImageBitmap(this.a);
-    MemberCardDetailActivity.a(this.c.a).setOnClickListener(new au(this.c.a, this.b.getMessage(), true));
+    MemberCardDetailActivity.getBundle(this.c.a).setImageBitmap(this.a);
+    MemberCardDetailActivity.getBundle(this.c.a).setOnClickListener(new au(this.c.a, this.b.getMessage(), true));
   }
 }
 

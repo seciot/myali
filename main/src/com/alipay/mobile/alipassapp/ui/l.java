@@ -9,7 +9,7 @@ final class l
 
   public final void run()
   {
-    AlipassDetailActivity_.a(this.a);
+    AlipassDetailActivity_.getBundle(this.a);
   }
 }
 

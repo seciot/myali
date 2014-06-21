@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 
 class i
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(i.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(i.class);
   private Thread b;
   private DataOutputStream c;
   private k d;
@@ -21,7 +21,7 @@ class i
     a();
   }
 
-  private com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle e()
+  private com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle getFullBundleName()
   {
     com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = null;
     while (!this.f)
@@ -54,7 +54,7 @@ class i
   }
 
   // ERROR //
-  public final void a(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     // Byte code:
     //   0: iconst_4
@@ -129,7 +129,7 @@ class i
     }
   }
 
-  final void d()
+  final void getInitLevel()
   {
     this.d.d.clear();
   }

@@ -16,7 +16,7 @@ final class af
   public final void onClick(View paramView)
   {
     ag.a().d(this.a);
-    ag.a().a(this.a);
+    ag.a().getBundle(this.a);
     AlipayApplication.getInstance().getMicroApplicationContext().startActivity(AlipayApplication.getInstance().getMicroApplicationContext().findTopRunningApp(), FeedAssistantActivity_.class.getName());
   }
 }

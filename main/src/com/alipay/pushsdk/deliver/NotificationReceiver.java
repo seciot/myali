@@ -9,7 +9,7 @@ import com.alipay.pushsdk.data.b;
 
 public final class NotificationReceiver extends BroadcastReceiver
 {
-  private static final String a = BundlesManagerImpl.a(NotificationReceiver.class);
+  private static final String a = BundlesManagerImpl.getBundle(NotificationReceiver.class);
   private String b = "";
 
   public NotificationReceiver(String paramString)

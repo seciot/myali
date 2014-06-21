@@ -19,7 +19,7 @@ public final class b
   {
     AppBundle locala = new AppBundle();
     com.taobao.securityjni.connector.AppBundle locala1 = new com.taobao.securityjni.connector.AppBundle();
-    locala1.a(locala);
+    locala1.getBundle(locala);
     Object localObject = locala;
     for (int i = 0; i < 2; i++)
     {

@@ -12,8 +12,8 @@ final class h
 
   public final void onClick(View paramView)
   {
-    if (WarnManagerListAdapter.a(this.a) != null)
-      WarnManagerListAdapter.a(this.a).a();
+    if (WarnManagerListAdapter.getBundle(this.a) != null)
+      WarnManagerListAdapter.getBundle(this.a).a();
   }
 }
 

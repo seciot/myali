@@ -16,7 +16,7 @@ final class fj
   public final void onClick(View paramView)
   {
     AlipayLogAgent.writeLog(AlipayApplication.getInstance(), BehaviourIdEnum.CLICKED, "20000030", "", "myCouponList", "addCoupon");
-    VoucherCurrentListActivity.a("/pages/coupon.html?isFrom=couponList", VoucherCurrentListActivity.a(this.a));
+    VoucherCurrentListActivity.a("/pages/coupon.html?isFrom=couponList", VoucherCurrentListActivity.getBundle(this.a));
   }
 }
 

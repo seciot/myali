@@ -18,7 +18,7 @@ final class j
     }
     catch (JSONException localJSONException)
     {
-      BalancesWarnCmsActivity.a(this.b.a);
+      BalancesWarnCmsActivity.getBundle(this.b.a);
       new StringBuilder("parse json error:").append(localJSONException.getMessage()).toString();
     }
   }

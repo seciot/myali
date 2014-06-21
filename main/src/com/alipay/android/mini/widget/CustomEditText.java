@@ -117,7 +117,7 @@ public class CustomEditText extends EditText
     while (true)
     {
       if (this.l != null)
-        this.l.a(paramBoolean);
+        this.l.getBundle(paramBoolean);
       return;
       localCustomEditText.removeIcon();
     }

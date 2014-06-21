@@ -12,7 +12,7 @@ final class a
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    ExternalDownloadIntentService.a(this.a);
+    ExternalDownloadIntentService.getBundle(this.a);
   }
 }
 

@@ -11,7 +11,7 @@ import java.util.Properties;
 public class a
 {
   public static final int a = b.c;
-  private static final String b = c.a(a.class);
+  private static final String b = c.getBundle(a.class);
 
   public static final String a()
   {

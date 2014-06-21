@@ -25,7 +25,7 @@ final class b extends BroadcastReceiver
           DiscoveryWidgetGroup.access$100(this.a);
           new StringBuilder("{[info=registerLoginMsgService],[msg=消息接收为成功登陆,logonId=").append(str).append("]}").toString();
           d locald = d.a(paramContext);
-          locald.a(DiscoveryWidgetGroup.access$000(this.a));
+          locald.getBundle(DiscoveryWidgetGroup.access$000(this.a));
           locald.a = DiscoveryWidgetGroup.access$200(this.a);
           locald.c(DiscoveryWidgetGroup.access$300(this.a));
           return;

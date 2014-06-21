@@ -19,7 +19,7 @@ final class ap
       AlipassListActivity.a(this.b.a, this.a.getPartnerID(), this.a.getSerialNumber());
       return;
     }
-    this.b.a.a(this.a.getPassId(), this.b.a.d());
+    this.b.a.a(this.a.getPassId(), this.b.a.getInitLevel());
   }
 }
 

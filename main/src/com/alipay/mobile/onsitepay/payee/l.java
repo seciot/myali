@@ -9,7 +9,7 @@ final class l
 
   public final void run()
   {
-    FacePayeeActivity_.a(this.a);
+    FacePayeeActivity_.getBundle(this.a);
   }
 }
 

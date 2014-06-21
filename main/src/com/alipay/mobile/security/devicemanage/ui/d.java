@@ -9,7 +9,7 @@ final class d
 
   public final void run()
   {
-    DeviceManageActivity_.a(this.a);
+    DeviceManageActivity_.getBundle(this.a);
   }
 }
 

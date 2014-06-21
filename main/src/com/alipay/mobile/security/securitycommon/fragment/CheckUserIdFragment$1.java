@@ -17,10 +17,10 @@ class CheckUserIdFragment$1
 
   public void onClick(View paramView)
   {
-    String str = CheckUserIdFragment.a(this.a).getText().trim();
+    String str = CheckUserIdFragment.getBundle(this.a).getText().trim();
     if (FormatValidationUtil.a(str))
     {
-      this.a.a(str);
+      this.a.getBundle(str);
       return;
     }
     AlipayApplication.getInstance().getMicroApplicationContext().Toast(this.a.getText(R.string.cw), 0);

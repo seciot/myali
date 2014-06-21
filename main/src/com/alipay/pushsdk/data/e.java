@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 public class e extends c
 {
-  private static final String a = com.alipay.pushsdk.c.a.c.a(e.class);
+  private static final String a = com.alipay.pushsdk.c.a.c.getBundle(e.class);
   private String b = "private";
 
   public e(Context paramContext)

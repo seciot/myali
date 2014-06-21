@@ -15,7 +15,7 @@ final class a
 
   public final void run()
   {
-    LogCatLog.v(AppActiveMsgReceiver.a(this.b), "push-->");
+    LogCatLog.v(AppActiveMsgReceiver.getBundle(this.b), "push-->");
     DeviceInfo localDeviceInfo = DeviceInfo.createInstance(this.a);
     String str1 = localDeviceInfo.getClientId();
     AliPushInterface.setClientId(this.a, str1);
@@ -27,11 +27,11 @@ final class a
     String str4 = AppInfo.getInstance().getmProductVersion();
     if ((str4 != null) && (str4.length() > 0))
       AliPushInterface.setVersion(this.a, str4);
-    AppActiveMsgReceiver.a(this.b);
+    AppActiveMsgReceiver.getBundle(this.b);
     new StringBuilder("onReceive: utdid: ").append(str2).append(", clientId=").append(str1).append(", channel=").append(str3).append(", version=").append(str4).toString();
     AliPushInterface.init(this.a);
-    AppActiveMsgReceiver.a(this.b);
-    LogCatLog.v(AppActiveMsgReceiver.a(this.b), "push<--");
+    AppActiveMsgReceiver.getBundle(this.b);
+    LogCatLog.v(AppActiveMsgReceiver.getBundle(this.b), "push<--");
   }
 }
 

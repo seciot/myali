@@ -9,7 +9,7 @@ final class u
 
   public final void run()
   {
-    WithdrawActivity_.a(this.a);
+    WithdrawActivity_.getBundle(this.a);
   }
 }
 

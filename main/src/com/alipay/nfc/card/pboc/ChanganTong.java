@@ -17,18 +17,18 @@ final class ChanganTong extends PbocCard
     this.o = "城市一卡通";
   }
 
-  static final ChanganTong a(Iso7816.Tag paramTag)
+  static final ChanganTong setBundlePath(Iso7816.Tag paramTag)
   {
     if (paramTag.b(c).getBundleName())
     {
-      paramTag.a(5);
+      paramTag.getBundle(5);
       if (paramTag.b(t).getBundleName())
       {
-        Iso7816.Response localResponse1 = paramTag.a(21);
-        Iso7816.Response localResponse2 = paramTag.a(true);
+        Iso7816.Response localResponse1 = paramTag.getBundle(21);
+        Iso7816.Response localResponse2 = paramTag.getBundle(true);
         ArrayList localArrayList = b(paramTag);
         ChanganTong localChanganTong = new ChanganTong(paramTag);
-        localChanganTong.a(localResponse2);
+        localChanganTong.getBundle(localResponse2);
         localChanganTong.a(localResponse1, 4, false);
         String str = Util.b(localResponse1.b(), 2, 2);
         String[][] arrayOfString = u;

@@ -9,7 +9,7 @@ final class f
 
   public final void run()
   {
-    SMSReceiveFragment_.a(this.a);
+    SMSReceiveFragment_.getBundle(this.a);
   }
 }
 

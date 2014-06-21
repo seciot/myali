@@ -11,7 +11,7 @@ final class ae
 
   public final void run()
   {
-    UIPropUtil.a(UISimplePassword.a(this.a));
+    UIPropUtil.getBundle(UISimplePassword.getBundle(this.a));
   }
 }
 

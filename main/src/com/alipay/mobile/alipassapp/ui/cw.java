@@ -9,7 +9,7 @@ final class cw
 
   public final void run()
   {
-    AlipassRemindActivity_.a(this.a);
+    AlipassRemindActivity_.getBundle(this.a);
   }
 }
 

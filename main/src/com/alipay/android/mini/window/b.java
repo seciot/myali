@@ -11,7 +11,7 @@ final class b
 
   public final void onGlobalLayout()
   {
-    AbstractUIForm.a(this.a);
+    AbstractUIForm.getBundle(this.a);
   }
 }
 

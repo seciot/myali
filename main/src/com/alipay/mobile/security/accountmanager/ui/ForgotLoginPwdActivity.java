@@ -662,7 +662,7 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
           this.e.setVisibility(0);
           SecurityUtil.b(this, this.e);
           this.T = true;
-          this.R.a(this.mApp);
+          this.R.getBundle(this.mApp);
           this.R.a(this.mApp, this.Y, new aq(this, str1));
           return;
         }

@@ -41,7 +41,7 @@ public class TravelCurrentListActivity extends AlipassListActivity
   protected final void a(a parama)
   {
     if ((parama != null) && (parama.e != null) && ((parama.e instanceof RpcException)) && (!parama.d) && (((RpcException)parama.e).getCode() == 2))
-      a(R.string.alipass_travel_nonetwork_toast);
+      getBundle(R.string.alipass_travel_nonetwork_toast);
   }
 
   protected final View b()

@@ -9,7 +9,7 @@ import android.net.NetworkInfo.State;
 
 public class j extends BroadcastReceiver
 {
-  private static final String a = com.alipay.mobile.longlink.c.a.a(j.class);
+  private static final String a = com.alipay.mobile.longlink.c.a.getBundle(j.class);
   private LongLinkService b;
 
   public j(LongLinkService paramLongLinkService)

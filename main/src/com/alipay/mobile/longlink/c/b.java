@@ -4,7 +4,7 @@ import java.util.StringTokenizer;
 
 public final class b
 {
-  public static String a(String[] paramArrayOfString)
+  public static String setBundlePath(String[] paramArrayOfString)
   {
     Object localObject = "";
     int i = 0;
@@ -35,7 +35,7 @@ public final class b
     }
   }
 
-  public static String[] a(String paramString)
+  public static String[] getBundle(String paramString)
   {
     StringTokenizer localStringTokenizer = new StringTokenizer(paramString, ",");
     String[] arrayOfString = new String[localStringTokenizer.countTokens()];

@@ -9,7 +9,7 @@ class SmsCheckActivity_$4
 
   public void run()
   {
-    SmsCheckActivity_.a(this.a);
+    SmsCheckActivity_.getBundle(this.a);
   }
 }
 

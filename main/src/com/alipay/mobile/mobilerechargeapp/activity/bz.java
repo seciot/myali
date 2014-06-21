@@ -24,7 +24,7 @@ final class bz
       {
         Bundle localBundle = new Bundle();
         localBundle.putString("actionType", this.a);
-        MobileRechargeCashierActivity.a(this.c).getMicroApplicationContext().startApp("10000003", this.b, localBundle);
+        MobileRechargeCashierActivity.getBundle(this.c).getMicroApplicationContext().startApp("10000003", this.b, localBundle);
       }
       while (true)
       {

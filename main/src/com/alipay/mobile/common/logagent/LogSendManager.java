@@ -48,7 +48,7 @@ public class LogSendManager
       long l = System.currentTimeMillis() - Constants.LAST_SEND_TIME;
       new StringBuilder("logSwitch:").append(Constants.LOG_SWITCH).append(" log count:").append(Constants.LOG_ACCOUNT).append(" send log duration:").append(l).toString();
       if ((Constants.LOG_SWITCH) && (Constants.LOG_ACCOUNT >= 50) && (l >= 60000L))
-        a(paramContext);
+        getBundle(paramContext);
       return;
     }
   }

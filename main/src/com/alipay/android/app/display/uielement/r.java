@@ -47,7 +47,7 @@ abstract class r extends BaseAttrScriptable
       if (localLayoutParams != null)
         a(localLayoutParams, this.d, this.e);
       this.c.setGravity(UIUtils.a(this.f) | UIUtils.b(this.g));
-      this.h.a(localLayoutParams);
+      this.h.getBundle(localLayoutParams);
       this.h.c(this.c);
     }
     if (i())

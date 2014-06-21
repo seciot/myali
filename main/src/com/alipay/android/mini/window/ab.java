@@ -14,7 +14,7 @@ final class ab
   public final void run()
   {
     String str1 = GlobalContext.a().b().getString(17039370);
-    IFormShower localIFormShower = MiniWindowManager.a(this.b);
+    IFormShower localIFormShower = MiniWindowManager.getBundle(this.b);
     String str2 = this.a.getMessage();
     ActionType[] arrayOfActionType = new ActionType[1];
     arrayOfActionType[0] = ActionType.b;

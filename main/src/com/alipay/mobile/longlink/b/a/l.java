@@ -14,7 +14,7 @@ final class l extends TimerTask
 
   public final void run()
   {
-    AppBundle.a(3, k.h(), "reConnTask() curMsgId=" + k.a(this.a));
+    AppBundle.a(3, k.hasResource(), "reConnTask() curMsgId=" + k.getBundle(this.a));
     Iterator localIterator = this.a.b().iterator();
     while (localIterator.hasNext())
     {
@@ -22,15 +22,15 @@ final class l extends TimerTask
       try
       {
         n localn = new n("The reps of heart timeout.", new Exception("timeout : heart"));
-        localn.a("51");
-        localc.a(localn);
+        localn.getBundle("51");
+        localc.getBundle(localn);
       }
       catch (Exception localException)
       {
         localException.printStackTrace();
       }
     }
-    AppBundle.a(2, k.h(), "reConnTask() connectionClosedOnError has been notify!");
+    AppBundle.a(2, k.hasResource(), "reConnTask() connectionClosedOnError has been notify!");
   }
 }
 

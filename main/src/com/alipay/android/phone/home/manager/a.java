@@ -23,7 +23,7 @@ final class a
       localBundle.putString("TARGET", "DETAIL");
       localBundle.putString("APP_ID", this.a.getAppId());
       localBundle.putString("ACTION", "UPGRADE");
-      AppCenterOnItemClickListener.a(this.b).startApp("20000002", "10000111", localBundle);
+      AppCenterOnItemClickListener.getBundle(this.b).startApp("20000002", "10000111", localBundle);
       return;
     }
     catch (AppLoadException localAppLoadException)

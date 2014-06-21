@@ -9,7 +9,7 @@ class SetSimplePwdFragment_$2
 
   public void run()
   {
-    SetSimplePwdFragment_.a(this.a);
+    SetSimplePwdFragment_.getBundle(this.a);
   }
 }
 

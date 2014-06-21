@@ -14,7 +14,7 @@ final class ab
 
   public final void onClick(View paramView)
   {
-    WithdrawSmsCheckActivity.a(this.a).dispose();
+    WithdrawSmsCheckActivity.getBundle(this.a).dispose();
     ExtViewUtil.closeSoftInputWindow(this.a);
     WithdrawSmsCheckActivity.c(this.a);
   }

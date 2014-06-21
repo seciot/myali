@@ -14,12 +14,12 @@ final class f
   public final void onClick(View paramView)
   {
     WithdrawActivity.a(this.a, "withdraw", "selectCard");
-    if (WithdrawActivity.a(this.a) == null)
+    if (WithdrawActivity.getBundle(this.a) == null)
     {
       WithdrawActivity.b(this.a);
       return;
     }
-    WithdrawActivity.a(this.a).show();
+    WithdrawActivity.getBundle(this.a).show();
   }
 }
 

@@ -11,7 +11,7 @@ final class b
 
   public final void run()
   {
-    new a(NotificationService.a(this.a)).a("0");
+    new a(NotificationService.getBundle(this.a)).getBundle("0");
   }
 }
 

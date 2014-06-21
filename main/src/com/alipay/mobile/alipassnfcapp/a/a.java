@@ -3,7 +3,7 @@ package com.alipay.mobile.alipassnfcapp.a;
 public final class a
 {
   // ERROR //
-  public static String a(String paramString)
+  public static String getBundle(String paramString)
   {
     // Byte code:
     //   0: bipush 16

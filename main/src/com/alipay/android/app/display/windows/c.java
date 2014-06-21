@@ -20,7 +20,7 @@ final class c
     String str2 = localContext.getString(R.string.B);
     String str3 = localContext.getString(R.string.E);
     String str4 = localContext.getString(17039360);
-    MspWindow.a(this.a).confirm(EventType.p.a(), EventType.v.a(), str1, str2, null, str3, str4);
+    MspWindow.getBundle(this.a).confirm(EventType.p.a(), EventType.v.a(), str1, str2, null, str3, str4);
   }
 }
 

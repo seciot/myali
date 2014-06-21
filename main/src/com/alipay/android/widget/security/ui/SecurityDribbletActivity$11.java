@@ -16,7 +16,7 @@ class SecurityDribbletActivity$11
   {
     ((InputMethodManager)this.a.getSystemService("input_method")).hideSoftInputFromWindow(this.a.f.getWindowToken(), 2);
     paramDialogInterface.cancel();
-    this.a.a(Boolean.valueOf(false));
+    this.a.getBundle(Boolean.valueOf(false));
   }
 }
 

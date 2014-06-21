@@ -7,7 +7,7 @@ import javax.net.SocketFactory;
 
 public class e extends SocketFactory
 {
-  private static final String a = AppBundle.a(e.class);
+  private static final String a = AppBundle.getBundle(e.class);
   private BundlesManagerImpl b;
 
   public e(BundlesManagerImpl paramc)

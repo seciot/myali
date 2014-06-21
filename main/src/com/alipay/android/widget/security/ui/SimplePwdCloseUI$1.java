@@ -12,7 +12,7 @@ class SimplePwdCloseUI$1
 
   public void onCancel(DialogInterface paramDialogInterface)
   {
-    SimplePwdCloseUI.a(this.a);
+    SimplePwdCloseUI.getBundle(this.a);
   }
 }
 

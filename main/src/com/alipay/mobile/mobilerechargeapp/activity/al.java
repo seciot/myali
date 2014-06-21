@@ -9,7 +9,7 @@ final class al
 
   public final void run()
   {
-    MobileBalancesWarnActivity_.a(this.a);
+    MobileBalancesWarnActivity_.getBundle(this.a);
   }
 }
 

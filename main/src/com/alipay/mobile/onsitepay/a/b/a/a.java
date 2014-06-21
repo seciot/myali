@@ -15,7 +15,7 @@ public final class a
     this.b = paramContext;
   }
 
-  public final void a(String paramString)
+  public final void getBundle(String paramString)
   {
     this.a = new BundlesManagerImpl(this, paramString);
     LBSInfoGather.getInstance(this.b).requestLBSInfoUpdates(this.a);

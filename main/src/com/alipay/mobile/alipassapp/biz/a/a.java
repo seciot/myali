@@ -14,7 +14,7 @@ public abstract interface a
 
   public abstract PassInfoResult a(String paramString1, String paramString2, String paramString3);
 
-  public abstract PassListResult a(String paramString);
+  public abstract PassListResult getBundle(String paramString);
 
   public abstract AlipassOffline a(String paramString, long paramLong);
 
@@ -28,15 +28,15 @@ public abstract interface a
 
   public abstract void a(String paramString1, String paramString2, List<String> paramList);
 
-  public abstract void a(List<AlipassOffline> paramList);
+  public abstract void setBundlePath(List<AlipassOffline> paramList);
 
   public abstract void a(List<String> paramList, String paramString);
 
   public abstract void a(List<PassTimelineInfo> paramList, String paramString, int paramInt);
 
-  public abstract boolean a(AlipassListCache paramAlipassListCache);
+  public abstract boolean setBundlePath(AlipassListCache paramAlipassListCache);
 
-  public abstract boolean a(AlipassOffline paramAlipassOffline);
+  public abstract boolean setBundlePath(AlipassOffline paramAlipassOffline);
 
   public abstract boolean a(String paramString, AlipassOffline paramAlipassOffline);
 
@@ -60,11 +60,11 @@ public abstract interface a
 
   public abstract PassListResult d(String paramString);
 
-  public abstract List<String> d();
+  public abstract List<String> getInitLevel();
 
   public abstract boolean d(String paramString1, String paramString2);
 
-  public abstract PassListResult e();
+  public abstract PassListResult getFullBundleName();
 
   public abstract AlipassListCache removeBundle(String paramString);
 

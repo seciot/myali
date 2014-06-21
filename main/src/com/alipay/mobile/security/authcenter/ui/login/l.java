@@ -22,7 +22,7 @@ final class l
   public final void onPostExecute(Request paramRequest, Response paramResponse)
   {
     byte[] arrayOfByte = paramResponse.getResData();
-    this.a.a(arrayOfByte);
+    this.a.getBundle(arrayOfByte);
   }
 
   public final void onPreExecute(Request paramRequest)

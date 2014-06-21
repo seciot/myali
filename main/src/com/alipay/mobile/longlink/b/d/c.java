@@ -4,7 +4,7 @@ import com.alipay.mobile.longlink.b.c.a;
 
 public abstract interface c
 {
-  public abstract void a(AppBundle parama);
+  public abstract void setBundlePath(AppBundle parama);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

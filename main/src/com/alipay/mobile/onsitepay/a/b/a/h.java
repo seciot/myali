@@ -34,7 +34,7 @@ final class h
       localOnsiteTradeInfo.headImageUrl = str6;
       ArrayList localArrayList = new ArrayList();
       localArrayList.add(localOnsiteTradeInfo);
-      this.b.c.a(localArrayList);
+      this.b.c.getBundle(localArrayList);
       return;
     }
     catch (Exception localException)

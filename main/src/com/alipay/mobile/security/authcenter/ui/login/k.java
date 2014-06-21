@@ -13,7 +13,7 @@ final class k
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     if (this.a == 1033)
-      this.b.e();
+      this.b.getFullBundleName();
   }
 }
 

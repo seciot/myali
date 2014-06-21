@@ -69,7 +69,7 @@ public class AssetWidgetGroup
     }
     if (paramWealthHomeInfoResult == null)
     {
-      this.l.a(null);
+      this.l.getBundle(null);
       this.l.b(null);
       if (this.f != null)
         this.f.refresh();

@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class d
 {
-  private static final String a = c.a(d.class);
+  private static final String a = c.getBundle(d.class);
   private static d b = null;
   private Context c;
   private ConcurrentHashMap d;

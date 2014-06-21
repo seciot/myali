@@ -83,7 +83,7 @@ public class BoardingpassPrimaryFieldLayout extends AlipassInfoFieldLayout
       this.mLeftValueAPTextView.setTextSize(0, getTextSize(localEinfoFields2, localAPTextView2));
       if ((this.mLeftValue != null) && (this.mLeftValue.length() > 0))
       {
-        int j = a.a(localEinfoFields2.getType());
+        int j = a.getBundle(localEinfoFields2.getType());
         if (j > 0)
           this.mLeftValueAPTextView.setCompoundDrawablesWithIntrinsicBounds(localContext.getResources().getDrawable(j), null, null, null);
         this.mLeftValueAPTextView.setOnClickListener(new a(localContext, localEinfoFields2.getType(), localEinfoFields2.getValue(), paramActivityApplication));
@@ -103,7 +103,7 @@ public class BoardingpassPrimaryFieldLayout extends AlipassInfoFieldLayout
       this.mRightValueAPTextView.setTextSize(0, getTextSize(localEinfoFields1, localAPTextView1));
       if ((this.mRightValue != null) && (this.mRightValue.length() > 0))
       {
-        int i = a.a(localEinfoFields1.getType());
+        int i = a.getBundle(localEinfoFields1.getType());
         if (i > 0)
           this.mRightValueAPTextView.setCompoundDrawablesWithIntrinsicBounds(localContext.getResources().getDrawable(i), null, null, null);
         this.mRightValueAPTextView.setOnClickListener(new a(localContext, localEinfoFields1.getType(), localEinfoFields1.getValue(), paramActivityApplication));

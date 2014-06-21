@@ -18,7 +18,7 @@ final class ea
     try
     {
       AlipassInfo.Operation.OperationString localOperationString = (AlipassInfo.Operation.OperationString)MemberCardDetailActivity.j(this.a).getOperation().get(0);
-      Bitmap localBitmap = i.a(localOperationString.getMessage());
+      Bitmap localBitmap = i.getBundle(localOperationString.getMessage());
       this.a.runOnUiThread(new eb(this, localBitmap, localOperationString));
       return;
     }

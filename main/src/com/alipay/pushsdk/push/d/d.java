@@ -18,14 +18,14 @@ public final class d
     this.a = paramj;
   }
 
-  public final void a(AppBundle parama)
+  public final void setBundlePath(AppBundle parama)
   {
     String str;
-    if (new f(2).a(parama))
+    if (new f(2).getBundle(parama))
     {
-      o.a(System.currentTimeMillis());
+      o.getBundle(System.currentTimeMillis());
       this.a.b(System.currentTimeMillis());
-      str = parama.h();
+      str = parama.hasResource();
     }
     try
     {

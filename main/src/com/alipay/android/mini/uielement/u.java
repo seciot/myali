@@ -11,7 +11,7 @@ final class u
 
   public final void run()
   {
-    UIPropUtil.a(UIInput.a(this.a));
+    UIPropUtil.getBundle(UIInput.getBundle(this.a));
   }
 }
 

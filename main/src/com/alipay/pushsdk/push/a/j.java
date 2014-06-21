@@ -9,7 +9,7 @@ import java.util.concurrent.BlockingQueue;
 
 class j
 {
-  private static final String a = BundlesManagerImpl.a(j.class);
+  private static final String a = BundlesManagerImpl.getBundle(j.class);
   private Thread b;
   private DataOutputStream c;
   private m d;
@@ -23,7 +23,7 @@ class j
     a();
   }
 
-  private AppBundle e()
+  private AppBundle getFullBundleName()
   {
     AppBundle locala = null;
     while (!this.f)
@@ -56,7 +56,7 @@ class j
   }
 
   // ERROR //
-  public final void a(AppBundle parama)
+  public final void setBundlePath(AppBundle parama)
   {
     // Byte code:
     //   0: iconst_4
@@ -131,7 +131,7 @@ class j
     }
   }
 
-  final void d()
+  final void getInitLevel()
   {
     this.d.d.clear();
   }

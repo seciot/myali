@@ -12,7 +12,7 @@ final class z
 
   public final void onClick(View paramView)
   {
-    BaseListActivity.a(this.a);
+    BaseListActivity.getBundle(this.a);
   }
 }
 

@@ -53,10 +53,10 @@ class ConfigServiceImpl$ConfigLoaderTask extends Thread
           break;
         Map localMap = localSwitchInfoResp.switches;
         SharedSwitchUtil.refreshSharedSwitch(this.a.getMicroApplicationContext().getApplicationContext(), localMap);
-        ConfigServiceImpl.a(localMap);
+        ConfigServiceImpl.getBundle(localMap);
         String str3 = ConfigServiceImpl.b(localMap);
         ConfigServiceImpl localConfigServiceImpl = this.a;
-        ConfigServiceImpl.a(localConfigServiceImpl, ConfigServiceImpl.a(this.a.getMicroApplicationContext().getApplicationContext()), "Alipay", "CommonConfig.json", str3);
+        ConfigServiceImpl.a(localConfigServiceImpl, ConfigServiceImpl.getBundle(this.a.getMicroApplicationContext().getApplicationContext()), "Alipay", "CommonConfig.json", str3);
         ConfigServiceImpl.loadTime = System.currentTimeMillis();
         return;
         str4 = localAppInfo.getmProductVersion();

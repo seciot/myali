@@ -38,21 +38,21 @@ public final class d extends ClassLoader
     try
     {
       String str;
-      if ((Build.HARDWARE.toLowerCase().contains("mt6592")) && (parama1.f().endsWith(".so")))
+      if ((Build.HARDWARE.toLowerCase().contains("mt6592")) && (parama1.getBundlePath().endsWith(".so")))
       {
-        str = b.a(parama1.f(), paramString1).replace("plugins_opt", "plugins").replace(".dex", ".jar");
+        str = b.a(parama1.getBundlePath(), paramString1).replace("plugins_opt", "plugins").replace(".dex", ".jar");
         File localFile = new File(str);
         if (!localFile.exists())
         {
-          BufferedInputStream localBufferedInputStream = new BufferedInputStream(new FileInputStream(parama1.f()));
+          BufferedInputStream localBufferedInputStream = new BufferedInputStream(new FileInputStream(parama1.getBundlePath()));
           c.a(localBufferedInputStream, localFile);
           localBufferedInputStream.close();
         }
       }
-      for (this.c = DexFile.loadDex(str, b.a(parama1.f(), paramString1), 0); ; this.c = DexFile.loadDex(parama1.f(), b.a(parama1.f(), paramString1), 0))
+      for (this.c = DexFile.loadDex(str, b.a(parama1.getBundlePath(), paramString1), 0); ; this.c = DexFile.loadDex(parama1.getBundlePath(), b.a(parama1.getBundlePath(), paramString1), 0))
       {
-        this.e = new ZipFile(parama1.f());
-        this.f = new File(parama1.f());
+        this.e = new ZipFile(parama1.getBundlePath());
+        this.f = new File(parama1.getBundlePath());
         this.d = a(paramString2);
         return;
       }
@@ -110,7 +110,7 @@ public final class d extends ClassLoader
 
   public final Set getDepends()
   {
-    String[] arrayOfString = this.a.j();
+    String[] arrayOfString = this.a.getRequireBundleName();
     HashSet localHashSet = new HashSet();
     if (arrayOfString != null)
     {

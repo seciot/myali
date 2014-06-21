@@ -102,7 +102,7 @@ public class LoginActivity extends BaseFragmentActivity
       return;
     }
     MobileInputFragment_ localMobileInputFragment_ = new MobileInputFragment_();
-    localMobileInputFragment_.a(this.mApp);
+    localMobileInputFragment_.getBundle(this.mApp);
     this.b.beginTransaction().add(R.id.bR, localMobileInputFragment_).commit();
   }
 
@@ -110,7 +110,7 @@ public class LoginActivity extends BaseFragmentActivity
   {
     UserLoginFragment_ localUserLoginFragment_ = new UserLoginFragment_();
     localUserLoginFragment_.setArguments(paramBundle);
-    localUserLoginFragment_.a(this.mApp);
+    localUserLoginFragment_.getBundle(this.mApp);
     this.b.beginTransaction().add(R.id.bR, localUserLoginFragment_).commit();
   }
 

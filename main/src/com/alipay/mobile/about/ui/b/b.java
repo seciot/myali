@@ -20,12 +20,12 @@ public final class b
     return this.b;
   }
 
-  public final void a(View paramView)
+  public final void setBundlePath(View paramView)
   {
     this.d = paramView;
   }
 
-  public final void a(boolean paramBoolean)
+  public final void setBundlePath(boolean paramBoolean)
   {
     this.c = paramBoolean;
   }

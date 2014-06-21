@@ -18,7 +18,7 @@ final class i
       this.b.d(this.a);
       return;
     }
-    SMSSendFragment.a(this.b).toast("手机号格式不正确", 0);
+    SMSSendFragment.getBundle(this.b).toast("手机号格式不正确", 0);
   }
 }
 

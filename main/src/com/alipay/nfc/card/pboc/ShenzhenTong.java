@@ -15,15 +15,15 @@ final class ShenzhenTong extends PbocCard
     this.o = "深圳通卡";
   }
 
-  static final ShenzhenTong a(Iso7816.Tag paramTag)
+  static final ShenzhenTong setBundlePath(Iso7816.Tag paramTag)
   {
     if ((paramTag.b(c).getBundleName()) && (paramTag.b(t).getBundleName()))
     {
-      Iso7816.Response localResponse1 = paramTag.a(21);
-      Iso7816.Response localResponse2 = paramTag.a(true);
+      Iso7816.Response localResponse1 = paramTag.getBundle(21);
+      Iso7816.Response localResponse2 = paramTag.getBundle(true);
       ArrayList localArrayList = b(paramTag);
       ShenzhenTong localShenzhenTong = new ShenzhenTong(paramTag);
-      localShenzhenTong.a(localResponse2);
+      localShenzhenTong.getBundle(localResponse2);
       localShenzhenTong.a(localResponse1, 4, true);
       localShenzhenTong.a(new ArrayList[] { localArrayList });
       return localShenzhenTong;

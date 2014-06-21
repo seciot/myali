@@ -24,7 +24,7 @@ final class a
     int i = paramInt - 1;
     String str;
     DeviceInfo localDeviceInfo;
-    if (DeviceManageActivity.a(this.b).getClientTid() == null)
+    if (DeviceManageActivity.getBundle(this.b).getClientTid() == null)
     {
       str = "";
       localDeviceInfo = (DeviceInfo)DeviceManageActivity.b(this.b).getItem(i);
@@ -35,12 +35,12 @@ final class a
     while (str.equals(localDeviceInfo.tid))
     {
       return false;
-      if (DeviceManageActivity.a(this.b).getClientTid().tid == null)
+      if (DeviceManageActivity.getBundle(this.b).getClientTid().tid == null)
       {
         str = "";
         break;
       }
-      str = DeviceManageActivity.a(this.b).getClientTid().tid;
+      str = DeviceManageActivity.getBundle(this.b).getClientTid().tid;
       break;
     }
     AlertDialog.Builder localBuilder = new AlertDialog.Builder(this.b);

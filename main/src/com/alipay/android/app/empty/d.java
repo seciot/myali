@@ -20,9 +20,9 @@ final class d
 
   public final void run()
   {
-    if (WindowTemplateProvider.d())
+    if (WindowTemplateProvider.getInitLevel())
       return;
-    WindowTemplateProvider.a(true);
+    WindowTemplateProvider.getBundle(true);
     c localc = new c(this.a);
     try
     {
@@ -38,7 +38,7 @@ final class d
       MonitorThread.a().a(localException, "save window template error");
       localc.close();
       this.b.clear();
-      WindowTemplateProvider.a(false);
+      WindowTemplateProvider.getBundle(false);
     }
   }
 }

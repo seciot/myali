@@ -18,13 +18,13 @@ final class m
     int i = WithdrawActivity.j(this.a).getCount();
     for (int j = 0; j < i; j++)
       if (j != paramLong)
-        WithdrawActivity.j(this.a).a(j).a(false);
+        WithdrawActivity.j(this.a).getBundle(j).getBundle(false);
     WithdrawActivity.a(this.a, (WithdrawBankInfo)paramAdapterView.getItemAtPosition((int)paramLong));
-    WithdrawActivity.k(this.a).a(true);
-    this.a.d();
+    WithdrawActivity.k(this.a).getBundle(true);
+    this.a.getInitLevel();
     WithdrawActivity.j(this.a).notifyDataSetChanged();
     WithdrawActivity.l(this.a);
-    WithdrawActivity.a(this.a).dismiss();
+    WithdrawActivity.getBundle(this.a).dismiss();
   }
 }
 

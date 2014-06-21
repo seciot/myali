@@ -14,7 +14,7 @@ class NickNameImplementationActivity$1
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    NickNameImplementationActivity.a(this.b).bindingFinish(this.a, false);
+    NickNameImplementationActivity.getBundle(this.b).bindingFinish(this.a, false);
   }
 }
 

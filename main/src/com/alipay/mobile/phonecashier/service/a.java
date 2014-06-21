@@ -32,7 +32,7 @@ final class a extends IRemoteServiceCallback.Stub
       paramBundle.putInt("CallingPid", paramInt);
       localIntent.putExtras(paramBundle);
       label42: localIntent.setClassName(paramString1, paramString2);
-      Activity localActivity = (Activity)PhoneCashierBootManager.a(this.a).getTopActivity().get();
+      Activity localActivity = (Activity)PhoneCashierBootManager.getBundle(this.a).getTopActivity().get();
       if (localActivity != null)
         localActivity.startActivity(localIntent);
       return;

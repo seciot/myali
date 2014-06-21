@@ -18,8 +18,8 @@ final class a
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    int i = CardValidateInputUtil.a(this.a).b.getYear();
-    CardValidateInputUtil.a(this.a, CardValidateInputUtil.a(this.a).b.getMonthStr(true));
+    int i = CardValidateInputUtil.getBundle(this.a).b.getYear();
+    CardValidateInputUtil.a(this.a, CardValidateInputUtil.getBundle(this.a).b.getMonthStr(true));
     CardValidateInputUtil.b(this.a, String.valueOf(i));
     CardValidateInputUtil.c(this.a, CardValidateInputUtil.b(this.a).substring(2, 4));
     CardValidateInputUtil.removeBundle(this.a).setText(CardValidateInputUtil.c(this.a) + "/" + CardValidateInputUtil.d(this.a));

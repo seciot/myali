@@ -15,7 +15,7 @@ final class c
     try
     {
       this.b.b(this.a);
-      b.a(this.b);
+      b.getBundle(this.b);
       if ((this.b.d) && (this.b.f != null))
       {
         this.b.f.delete();
@@ -27,11 +27,11 @@ final class c
       while (true)
       {
         this.b.d = true;
-        this.b.a(d.e);
+        this.b.getBundle(d.e);
       }
       if ((this.b.e == true) || (this.b.g == null))
       {
-        this.b.a(d.e);
+        this.b.getBundle(d.e);
         return;
       }
       b.a(this.b, new File(this.b.g));

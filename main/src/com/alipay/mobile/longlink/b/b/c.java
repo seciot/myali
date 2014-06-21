@@ -6,7 +6,7 @@ public abstract interface c
 {
   public abstract void a();
 
-  public abstract void a(n paramn);
+  public abstract void setBundlePath(n paramn);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

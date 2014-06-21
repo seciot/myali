@@ -14,9 +14,9 @@ class AndroidHttpClientExt$CurlLogger
 
   public void process(HttpRequest paramHttpRequest, HttpContext paramHttpContext)
   {
-    AndroidHttpClientExt.LoggingConfiguration localLoggingConfiguration = AndroidHttpClientExt.a(this.a);
-    if ((localLoggingConfiguration != null) && (AndroidHttpClientExt.LoggingConfiguration.a(localLoggingConfiguration)) && ((paramHttpRequest instanceof HttpUriRequest)))
-      AndroidHttpClientExt.LoggingConfiguration.a(localLoggingConfiguration, AndroidHttpClientExt.a((HttpUriRequest)paramHttpRequest));
+    AndroidHttpClientExt.LoggingConfiguration localLoggingConfiguration = AndroidHttpClientExt.getBundle(this.a);
+    if ((localLoggingConfiguration != null) && (AndroidHttpClientExt.LoggingConfiguration.getBundle(localLoggingConfiguration)) && ((paramHttpRequest instanceof HttpUriRequest)))
+      AndroidHttpClientExt.LoggingConfiguration.a(localLoggingConfiguration, AndroidHttpClientExt.getBundle((HttpUriRequest)paramHttpRequest));
   }
 }
 

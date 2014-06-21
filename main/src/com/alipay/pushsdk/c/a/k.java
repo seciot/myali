@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 public class k
 {
-  private static final String a = BundlesManagerImpl.a(k.class);
+  private static final String a = BundlesManagerImpl.getBundle(k.class);
   private static ExecutorService b = Executors.newFixedThreadPool(10);
   private String c;
   private String d;

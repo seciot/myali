@@ -13,7 +13,7 @@ final class n
   {
     if (this.a)
     {
-      BaseLoginFragment.a(this.b);
+      BaseLoginFragment.getBundle(this.b);
       return;
     }
     BaseLoginFragment.b(this.b);

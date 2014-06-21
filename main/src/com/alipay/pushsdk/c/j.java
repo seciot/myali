@@ -7,7 +7,7 @@ import java.util.Locale;
 
 public class j
 {
-  private static final String a = c.a(j.class);
+  private static final String a = c.getBundle(j.class);
 
   public static String a()
   {

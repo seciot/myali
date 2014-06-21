@@ -16,12 +16,12 @@ final class ad extends BaseTarget
 
   public final void a(int paramInt)
   {
-    UICheckBox.a(this.a).setBackgroundResource(paramInt);
+    UICheckBox.getBundle(this.a).setBackgroundResource(paramInt);
   }
 
   public final void a(Drawable paramDrawable)
   {
-    UICheckBox.a(this.a).setBackgroundDrawable(paramDrawable);
+    UICheckBox.getBundle(this.a).setBackgroundDrawable(paramDrawable);
   }
 }
 

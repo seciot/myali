@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 
 public final class a
 {
-  public static String a(Context paramContext)
+  public static String setBundlePath(Context paramContext)
   {
     try
     {

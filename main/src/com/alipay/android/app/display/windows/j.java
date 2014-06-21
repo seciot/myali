@@ -20,7 +20,7 @@ final class j
     String str1 = localContext.getString(R.string.o);
     String str2 = localContext.getString(17039370);
     String str3 = localContext.getString(R.string.u);
-    if ("must".equals(i.a(this.a)));
+    if ("must".equals(i.getBundle(this.a)));
     for (String str4 = EventType.s.a(); ; str4 = EventType.t.a())
     {
       String str5 = localContext.getString(17039360);

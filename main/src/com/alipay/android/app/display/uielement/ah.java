@@ -17,7 +17,7 @@ final class ah
 
   public final void run()
   {
-    if ((!TextUtils.isEmpty(this.b.a("toast_message"))) && (TextUtils.equals(this.b.a("show_toast"), "true")))
+    if ((!TextUtils.isEmpty(this.b.getBundle("toast_message"))) && (TextUtils.equals(this.b.getBundle("show_toast"), "true")))
     {
       UICheckBox.a(this.b, this.a);
       return;
@@ -25,8 +25,8 @@ final class ah
     if (!this.a);
     for (int i = GlobalContext.a().b().getResources().getColor(R.color.j); ; i = this.b.o().g())
     {
-      if (UICheckBox.a(this.b) != null)
-        UICheckBox.a(this.b).setEnabled(this.a);
+      if (UICheckBox.getBundle(this.b) != null)
+        UICheckBox.getBundle(this.b).setEnabled(this.a);
       if (UICheckBox.f(this.b) == null)
         break;
       UICheckBox.f(this.b).setTextColor(i);

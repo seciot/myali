@@ -22,23 +22,23 @@ final class b extends com.alipay.mobile.alipassapp.ui.common.a
     super.onClick(paramView);
     try
     {
-      if (StringUtils.equalsIgnoreCase(a.a(this.a).getBizType(), "COUPON"))
+      if (StringUtils.equalsIgnoreCase(a.getBundle(this.a).getBizType(), "COUPON"))
       {
         AlipayApplication localAlipayApplication2 = AlipayApplication.getInstance();
         BehaviourIdEnum localBehaviourIdEnum2 = BehaviourIdEnum.CLICKED;
         String[] arrayOfString2 = new String[2];
-        arrayOfString2[0] = a.a(this.a).getPassBaseInfo().getPassId();
-        arrayOfString2[1] = a.a(this.a).getPassBaseInfo().getPartnerId();
+        arrayOfString2[0] = a.getBundle(this.a).getPassBaseInfo().getPassId();
+        arrayOfString2[1] = a.getBundle(this.a).getPassBaseInfo().getPartnerId();
         AlipayLogAgent.writeLog(localAlipayApplication2, localBehaviourIdEnum2, "", "", "20000030", "", "", "couponBackDetails", "open", "", "", "", arrayOfString2);
         return;
       }
-      if (StringUtils.equalsIgnoreCase(a.a(this.a).getBizType(), "TRAVEL"))
+      if (StringUtils.equalsIgnoreCase(a.getBundle(this.a).getBizType(), "TRAVEL"))
       {
         AlipayApplication localAlipayApplication1 = AlipayApplication.getInstance();
         BehaviourIdEnum localBehaviourIdEnum1 = BehaviourIdEnum.CLICKED;
         String[] arrayOfString1 = new String[2];
-        arrayOfString1[0] = a.a(this.a).getPassBaseInfo().getPassId();
-        arrayOfString1[1] = a.a(this.a).getPassBaseInfo().getPartnerId();
+        arrayOfString1[0] = a.getBundle(this.a).getPassBaseInfo().getPassId();
+        arrayOfString1[1] = a.getBundle(this.a).getPassBaseInfo().getPartnerId();
         AlipayLogAgent.writeLog(localAlipayApplication1, localBehaviourIdEnum1, "", "", "20000021", "", "", "travelItineraryBackDetails", "open", "", "", "", arrayOfString1);
         return;
       }

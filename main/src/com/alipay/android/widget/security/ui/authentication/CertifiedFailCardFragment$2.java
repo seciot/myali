@@ -14,7 +14,7 @@ class CertifiedFailCardFragment$2
   public void onClick(View paramView)
   {
     a locala = new a();
-    this.a.a(locala);
+    this.a.getBundle(locala);
   }
 }
 

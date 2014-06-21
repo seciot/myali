@@ -11,7 +11,7 @@ final class ds extends WebViewClient
 
   public final boolean shouldOverrideUrlLoading(WebView paramWebView, String paramString)
   {
-    if (this.a.a(paramString))
+    if (this.a.getBundle(paramString))
       return true;
     return super.shouldOverrideUrlLoading(paramWebView, paramString);
   }
