@@ -2,86 +2,98 @@ package com.alipay.mobile.quinox.engine;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
-public class BundleEngine
-{
-  public static Object SBundleContext;
+public class BundleEngine {
+	public static Object SBundleContext;
 
-  public static BundleContext getBundleContext()
-  {
-    return new BundleContext(SBundleContext);
-  }
+	public static BundleContext getBundleContext() {
+		return new BundleContext(SBundleContext);
+	}
 
-  public static Class getProxyClazz(String paramString, ClassLoader paramClassLoader)
-  {
-    try
-    {
-      Class localClass;
-      for (Object localObject = paramClassLoader.loadClass(paramString).getSuperclass(); localObject != null; localObject = localClass)
-      {
-        if (((Class)localObject).getName().startsWith("android."))
-          return localObject;
-        localClass = ((Class)localObject).getSuperclass();
-      }
-      return null;
-    }
-    catch (ClassNotFoundException localClassNotFoundException)
-    {
-      localClassNotFoundException.printStackTrace();
-    }
-    return null;
-  }
+	public static Class<?> getProxyClazz(String className,
+			ClassLoader classLoader) {
+		try {
+			for (Class<?> clazz = classLoader.loadClass(className)
+					.getSuperclass(); clazz != null; clazz = clazz
+					.getSuperclass()) {
+				if (clazz.getName().startsWith("android.")) {
+					return clazz;
+				}
+			}
+			return null;
+		} catch (ClassNotFoundException ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public static void startActivity(Context paramContext, Intent paramIntent)
-  {
-    if (paramIntent.getComponent() == null)
-      throw new ActivityNotFoundException("No Activity found to handle " + paramIntent);
-    Intent localIntent = new Intent(paramIntent);
-    localIntent.setComponent(null);
-    localIntent.setFlags(262144);
-    BundleContext localBundleContext = getBundleContext();
-    String str1 = paramIntent.getComponent().getClassName();
-    String str2 = localBundleContext.getBundleNameByComponent(str1);
-    if (TextUtils.isEmpty(str2))
-      Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:" + str1 + " canNot find bundleName:" + str2);
-    ClassLoader localClassLoader = localBundleContext.findClassLoaderByBundleName(str2);
-    if (localClassLoader == null)
-      Log.e("BundleEngine", "ClassLoaderError currentBunldleName:" + str2 + ",componetClassName:" + str1 + " canNot find bundleClassLoader");
-    Class localClass = getProxyClazz(str1, localClassLoader);
-    localIntent.setAction("android.intent.action.bundle." + localClass.getSimpleName() + "_SHELL");
-    localIntent.setData(Uri.parse("content://" + paramIntent.getComponent().getClassName()));
-    paramContext.startActivity(localIntent);
-  }
+	public static void startActivity(final Context context, final Intent intent) {
+		if (intent.getComponent() == null) {
+			throw new ActivityNotFoundException("No Activity found to handle "
+					+ intent);
+		}
+		final Intent intent2 = new Intent(intent);
+		intent2.setComponent(null);
+		intent2.setFlags(262144);
+		final BundleContext bundleContext = getBundleContext();
+		final String className = intent.getComponent().getClassName();
+		final String bundleNameByComponent = bundleContext
+				.getBundleNameByComponent(className);
+		if (TextUtils.isEmpty((CharSequence) bundleNameByComponent)) {
+			Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:"
+					+ className + " canNot find bundleName:"
+					+ bundleNameByComponent);
+		}
+		final ClassLoader classLoaderByBundleName = bundleContext
+				.findClassLoaderByBundleName(bundleNameByComponent);
+		if (classLoaderByBundleName == null) {
+			Log.e("BundleEngine", "ClassLoaderError currentBunldleName:"
+					+ bundleNameByComponent + ",componetClassName:" + className
+					+ " canNot find bundleClassLoader");
+		}
+		intent2.setAction("android.intent.action.bundle."
+				+ getProxyClazz(className, classLoaderByBundleName)
+						.getSimpleName() + "_SHELL");
+		intent2.setData(Uri.parse("content://"
+				+ intent.getComponent().getClassName()));
+		context.startActivity(intent2);
+	}
 
-  public static void startActivityForResult(Activity paramActivity, Intent paramIntent, int paramInt)
-  {
-    if (paramIntent.getComponent() == null)
-      throw new ActivityNotFoundException("No Activity found to handle " + paramIntent);
-    Intent localIntent = new Intent(paramIntent);
-    localIntent.setComponent(null);
-    localIntent.setFlags(262144);
-    BundleContext localBundleContext = getBundleContext();
-    String str1 = paramIntent.getComponent().getClassName();
-    String str2 = localBundleContext.getBundleNameByComponent(str1);
-    if (TextUtils.isEmpty(str2))
-      Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:" + str1 + " canNot find bundleName:" + str2);
-    ClassLoader localClassLoader = localBundleContext.findClassLoaderByBundleName(str2);
-    if (localClassLoader == null)
-      Log.e("BundleEngine", "ClassLoaderError currentBunldleName:" + str2 + ",componetClassName:" + str1 + " canNot find bundleClassLoader");
-    Class localClass = getProxyClazz(str1, localClassLoader);
-    localIntent.setAction("android.intent.action.bundle." + localClass.getSimpleName() + "_SHELL");
-    localIntent.setData(Uri.parse("content://" + paramIntent.getComponent().getClassName()));
-    paramActivity.startActivityForResult(localIntent, paramInt);
-  }
+	public static void startActivityForResult(final Activity activity,
+			final Intent intent, final int n) {
+		if (intent.getComponent() == null) {
+			throw new ActivityNotFoundException("No Activity found to handle "
+					+ intent);
+		}
+		final Intent intent2 = new Intent(intent);
+		intent2.setComponent(null);
+		intent2.setFlags(262144);
+		final BundleContext bundleContext = getBundleContext();
+		final String className = intent.getComponent().getClassName();
+		final String bundleNameByComponent = bundleContext
+				.getBundleNameByComponent(className);
+		if (TextUtils.isEmpty((CharSequence) bundleNameByComponent)) {
+			Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:"
+					+ className + " canNot find bundleName:"
+					+ bundleNameByComponent);
+		}
+		final ClassLoader classLoaderByBundleName = bundleContext
+				.findClassLoaderByBundleName(bundleNameByComponent);
+		if (classLoaderByBundleName == null) {
+			Log.e("BundleEngine", "ClassLoaderError currentBunldleName:"
+					+ bundleNameByComponent + ",componetClassName:" + className
+					+ " canNot find bundleClassLoader");
+		}
+		intent2.setAction("android.intent.action.bundle."
+				+ getProxyClazz(className, classLoaderByBundleName)
+						.getSimpleName() + "_SHELL");
+		intent2.setData(Uri.parse("content://"
+				+ intent.getComponent().getClassName()));
+		activity.startActivityForResult(intent2, n);
+	}
 }
-
-/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
- * Qualified Name:     com.alipay.mobile.quinox.engine.BundleEngine
- * JD-Core Version:    0.6.2
- */

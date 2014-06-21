@@ -12,7 +12,7 @@ public interface BundlesManager {
 
 	 void a();
 
-	 void a(List paramList);
+	 void a(List<String> paramList);
 
 	 void a(String[] paramArrayOfString);
 

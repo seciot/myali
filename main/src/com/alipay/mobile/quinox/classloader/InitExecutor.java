@@ -8,6 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
 
 import com.alipay.mobile.quinox.bundle.AppBundle;
+import com.alipay.mobile.quinox.bundle.BundlesManager;
 
 public class InitExecutor
 {
@@ -19,7 +20,7 @@ public class InitExecutor
   private String e;
 
   // ERROR //
-  public InitExecutor(a parama, com.alipay.mobile.quinox.bundle.BundlesManager paramb)
+  public InitExecutor(a parama, BundlesManager paramb)
   {
     // Byte code:
     //   0: aload_0

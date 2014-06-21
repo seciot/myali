@@ -1074,7 +1074,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	@Override
-	public final void a(final List list) {
+	public final void a(final List<String> list) {
 		((LauncherApplication) this.a).LogInfo("upgrade");
 		final HashMap hashMap = new HashMap();
 		final HashMap<String, AppBundle> hashMap2 = new HashMap<String, AppBundle>();

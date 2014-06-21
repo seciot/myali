@@ -1,29 +1,23 @@
 package com.alipay.mobile.quinox.bundle;
 
-import android.app.LocalActivityManager;
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.Signature;
-import android.util.Log;
-
-import com.alipay.mobile.quinox.LauncherApplication;
-import com.alipay.mobile.quinox.utils.c;
-import com.alipay.mobile.quinox.utils.e;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.util.Log;
+
+import com.alipay.mobile.quinox.LauncherApplication;
 
 public final class d
 {
@@ -39,26 +33,26 @@ public final class d
     this.c = paramb;
   }
 
-  private void a(Map paramMap, Set paramSet, boolean paramBoolean)
+  private void a(Map paramMap, Set<AppBundle> bundles, boolean paramBoolean)
   {
-    Iterator localIterator = paramSet.iterator();
-    while (localIterator.hasNext())
+    Iterator<AppBundle> appBundlesIte = bundles.iterator();
+    while (appBundlesIte.hasNext())
     {
-      AppBundle locala = (AppBundle)localIterator.next();
-      paramMap.remove(locala.getBundleName());
-      locala.m();
+      AppBundle appBundle = (AppBundle)appBundlesIte.next();
+      paramMap.remove(appBundle.getBundleName());
+      appBundle.m();
       if (paramBoolean)
       {
-        c.getBundle(locala.getBundlePath());
-        c.getBundle(com.alipay.mobile.quinox.utils.b.a(locala.getBundlePath(), this.c.c()));
-        Log.e("BundleVerifier", locala.getBundleName() + "deleted jar.");
+        c.getBundle(appBundle.getBundlePath());
+        c.getBundle(com.alipay.mobile.quinox.utils.b.a(appBundle.getBundlePath(), this.c.c()));
+        Log.e("BundleVerifier", appBundle.getBundleName() + "deleted jar.");
         try
         {
-          this.c.j().a(locala.getBundleName());
+          this.c.j().a(appBundle.getBundleName());
         }
         catch (Exception localException)
         {
-          Log.e("BundleVerifier", locala.getBundleName() + " delete ", localException);
+          Log.e("BundleVerifier", appBundle.getBundleName() + " delete ", localException);
         }
       }
     }

@@ -76,7 +76,7 @@ public class BundleContext {
 		app.getBundlesManager().removeBundle(bundleName);
 	}
 
-	public void updateBundles(List paramList1, List paramList2) {
+	public void updateBundles(List<String> paramList1, List<String> paramList2) {
 		if ((Looper.myLooper() != null)
 				&& (Looper.myLooper() == Looper.getMainLooper()))
 			throw new RuntimeException("can't in main thread");

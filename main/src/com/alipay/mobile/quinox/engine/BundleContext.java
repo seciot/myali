@@ -1,91 +1,86 @@
 package com.alipay.mobile.quinox.engine;
 
-import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import java.util.Set;
 
-public class BundleContext
-{
-  private Object a;
+public class BundleContext {
+	private Object app;
 
-  public BundleContext(Object paramObject)
-  {
-    this.a = paramObject;
-  }
+	public BundleContext(Object paramObject) {
+		app = paramObject;
+	}
 
-  public void addExternelBundle(String paramString)
-  {
-    this.a.getClass().getDeclaredMethod("addExternelBundle", new Class[] { String.class }).invoke(this.a, new Object[] { paramString });
-  }
+	public void addExternelBundle(final String s)
+			throws IllegalAccessException, IllegalArgumentException,
+			InvocationTargetException, NoSuchMethodException {
+		app.getClass().getDeclaredMethod("addExternelBundle", String.class)
+				.invoke(app, s);
+	}
 
-  public ClassLoader findClassLoaderByBundleName(String paramString)
-  {
-    try
-    {
-      ClassLoader localClassLoader = (ClassLoader)this.a.getClass().getDeclaredMethod("findClassLoaderByBundleName", new Class[] { String.class }).invoke(this.a, new Object[] { paramString });
-      return localClassLoader;
-    }
-    catch (Exception localException)
-    {
-      localException.printStackTrace();
-    }
-    return null;
-  }
+	public ClassLoader findClassLoaderByBundleName(final String bundleName) {
+		try {
+			return (ClassLoader) app
+					.getClass()
+					.getDeclaredMethod("findClassLoaderByBundleName",
+							String.class).invoke(app, bundleName);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public Set findPackagesByBundleName(String paramString)
-  {
-    try
-    {
-      Set localSet = (Set)this.a.getClass().getDeclaredMethod("findPackagesByBundleName", new Class[] { String.class }).invoke(this.a, new Object[] { paramString });
-      return localSet;
-    }
-    catch (Exception localException)
-    {
-      localException.printStackTrace();
-    }
-    return null;
-  }
+	@SuppressWarnings("unchecked")
+	public Set<String> findPackagesByBundleName(final String bundleName) {
+		try {
+			return (Set<String>) app
+					.getClass()
+					.getDeclaredMethod("findPackagesByBundleName", String.class)
+					.invoke(app, bundleName);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public Set getAllBundleNames()
-  {
-    try
-    {
-      Set localSet = (Set)this.a.getClass().getDeclaredMethod("getAllBundleNames", new Class[0]).invoke(this.a, new Object[0]);
-      return localSet;
-    }
-    catch (Exception localException)
-    {
-      localException.printStackTrace();
-    }
-    return null;
-  }
+	@SuppressWarnings("unchecked")
+	public Set<String> getAllBundleNames() {
+		try {
+			return (Set<String>) app
+					.getClass()
+					.getDeclaredMethod("getAllBundleNames",
+							(Class<?>[]) new Class[0])
+					.invoke(app, new Object[0]);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public String getBundleNameByComponent(String paramString)
-  {
-    try
-    {
-      String str = (String)this.a.getClass().getDeclaredMethod("getBundleNameByComponent", new Class[] { String.class }).invoke(this.a, new Object[] { paramString });
-      return str;
-    }
-    catch (Exception localException)
-    {
-      localException.printStackTrace();
-    }
-    return null;
-  }
+	public String getBundleNameByComponent(final String s) {
+		try {
+			return (String) app
+					.getClass()
+					.getDeclaredMethod("getBundleNameByComponent", String.class)
+					.invoke(app, s);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
 
-  public void removeExternelBundle(String paramString)
-  {
-    this.a.getClass().getDeclaredMethod("removeExternelBundle", new Class[] { String.class }).invoke(this.a, new Object[] { paramString });
-  }
+	public void removeExternelBundle(final String s)
+			throws IllegalAccessException, IllegalArgumentException,
+			InvocationTargetException, NoSuchMethodException {
+		app.getClass().getDeclaredMethod("removeExternelBundle", String.class)
+				.invoke(app, s);
+	}
 
-  public void updateBundles(List paramList1, List paramList2)
-  {
-    this.a.getClass().getDeclaredMethod("updateBundles", new Class[] { List.class, List.class }).invoke(this.a, new Object[] { paramList1, paramList2 });
-  }
+	public void updateBundles(final List<String> list, final List<String> list2)
+			throws IllegalAccessException, IllegalArgumentException,
+			InvocationTargetException, NoSuchMethodException {
+		app.getClass()
+				.getDeclaredMethod("updateBundles", List.class, List.class)
+				.invoke(app, list, list2);
+	}
 }
-
-/* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
- * Qualified Name:     com.alipay.mobile.quinox.engine.BundleContext
- * JD-Core Version:    0.6.2
- */
