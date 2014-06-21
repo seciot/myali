@@ -11,7 +11,7 @@ final class m
 
   public final void run()
   {
-    FacePayeeActivity_.a(this.c, this.a, this.b);
+    FacePayeeActivity_.e(this.c, this.a, this.b);
   }
 }
 

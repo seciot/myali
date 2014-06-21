@@ -9,7 +9,7 @@ final class ag
 
   public final void run()
   {
-    BindPhoneActivity_.a(this.b, this.a);
+    BindPhoneActivity_.v(this.b, this.a);
   }
 }
 

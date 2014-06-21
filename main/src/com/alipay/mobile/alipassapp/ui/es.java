@@ -13,7 +13,7 @@ final class es
   public final void run()
   {
     if (!this.a.isFinishing())
-      ai.a(this.a, new et(this), R.string.alipass_open_membercard_error_msg);
+      ai.e(this.a, new et(this), R.string.alipass_open_membercard_error_msg);
   }
 }
 

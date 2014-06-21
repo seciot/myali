@@ -9,7 +9,7 @@ final class ab
 
   public final void run()
   {
-    MobileInputFragment_.b(this.b, this.a);
+    MobileInputFragment_.d(this.b, this.a);
   }
 }
 

@@ -11,7 +11,7 @@ final class al
 
   public final void run()
   {
-    LoginLogsWelcomeActivity_.a(this.b, this.a);
+    LoginLogsWelcomeActivity_.v(this.b, this.a);
   }
 }
 

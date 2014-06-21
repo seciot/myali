@@ -40,7 +40,7 @@ final class ex extends Handler
         ((APImageView)this.a.findViewById(R.id.member_qrcode)).setImageBitmap(MemberChargeOffActivity.b(this.a).getBitmap(MemberChargeOffActivity.getBundle(this.a).getTag()));
         if (MemberChargeOffActivity.c(this.a) != null)
           break label308;
-        MemberChargeOffActivity.a(this.a, new au(this.a, MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()), false));
+        MemberChargeOffActivity.v(this.a, new au(this.a, MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()), false));
         ((APImageView)this.a.findViewById(R.id.member_qrcode)).setOnClickListener(MemberChargeOffActivity.c(this.a));
       }
       while (true)
@@ -51,7 +51,7 @@ final class ex extends Handler
         return;
         i = 8;
         break;
-        MemberChargeOffActivity.c(this.a).a((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        MemberChargeOffActivity.c(this.a).v((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
       }
     }
   }

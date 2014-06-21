@@ -16,7 +16,7 @@ final class aw
     try
     {
       Date localDate = UIDatePicker.b(this.b).parse(this.a);
-      UIDatePicker.a(this.b, UIDatePicker.getBundle(this.b), localDate);
+      UIDatePicker.e(this.b, UIDatePicker.getBundle(this.b), localDate);
       return;
     }
     catch (Exception localException)

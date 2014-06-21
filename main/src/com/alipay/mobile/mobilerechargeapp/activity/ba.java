@@ -14,7 +14,7 @@ final class ba
   public final void a()
   {
     MobileRechargeActivity.p(this.a);
-    this.a.a(40, null);
+    this.a.v(40, null);
   }
 
   public final void a(ItemData paramItemData, boolean paramBoolean)
@@ -24,13 +24,13 @@ final class ba
       MobileRechargeActivity.q(this.a);
       if (!paramBoolean)
         break label36;
-      MobileRechargeActivity.a(this.a, MobileSourceEnum.c);
+      MobileRechargeActivity.v(this.a, MobileSourceEnum.c);
     }
     while (true)
     {
-      this.a.a(0, paramItemData);
+      this.a.v(0, paramItemData);
       return;
-      label36: MobileRechargeActivity.a(this.a, MobileSourceEnum.b);
+      label36: MobileRechargeActivity.v(this.a, MobileSourceEnum.b);
     }
   }
 }

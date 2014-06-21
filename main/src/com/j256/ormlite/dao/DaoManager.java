@@ -52,7 +52,7 @@ public class DaoManager
     Dao localDao2 = getBundle(localClassConnectionSource);
     if (localDao2 != null)
     {
-      a(localTableConfigConnectionSource, localDao2);
+      v(localTableConfigConnectionSource, localDao2);
       return localDao2;
     }
     DatabaseTable localDatabaseTable = (DatabaseTable)paramDatabaseTableConfig.getDataClass().getAnnotation(DatabaseTable.class);
@@ -60,11 +60,11 @@ public class DaoManager
       localDao1 = BaseDaoImpl.createDao(paramConnectionSource, paramDatabaseTableConfig);
     while (true)
     {
-      a(localTableConfigConnectionSource, localDao1);
+      v(localTableConfigConnectionSource, localDao1);
       d.debug("created dao for class {} from table config", localClass1);
       if (getBundle(localClassConnectionSource) != null)
         break;
-      a(localClassConnectionSource, localDao1);
+      v(localClassConnectionSource, localDao1);
       return localDao1;
       Class localClass2 = localDatabaseTable.daoClass();
       Object[] arrayOfObject = { paramConnectionSource, paramDatabaseTableConfig };
@@ -320,7 +320,7 @@ public class DaoManager
       finally
       {
       }
-    a(new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass()), paramDao);
+    v(new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass()), paramDao);
   }
 
   public static void registerDaoWithTableConfig(ConnectionSource paramConnectionSource, Dao<?, ?> paramDao)
@@ -337,12 +337,12 @@ public class DaoManager
     {
       DatabaseTableConfig localDatabaseTableConfig = ((BaseDaoImpl)paramDao).getTableConfig();
       if (localDatabaseTableConfig != null)
-        a(new DaoManager.TableConfigConnectionSource(paramConnectionSource, localDatabaseTableConfig), paramDao);
+        v(new DaoManager.TableConfigConnectionSource(paramConnectionSource, localDatabaseTableConfig), paramDao);
     }
     while (true)
     {
       return;
-      a(new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass()), paramDao);
+      v(new DaoManager.ClassConnectionSource(paramConnectionSource, paramDao.getDataClass()), paramDao);
     }
   }
 

@@ -19,7 +19,7 @@ final class c
     String str = this.a.getInputedPwd(-1);
     if (TextUtils.isEmpty(str))
     {
-      CustomToast.a(this.b, R.string.N);
+      CustomToast.v(this.b, R.string.N);
       return;
     }
     paramDialogInterface.dismiss();

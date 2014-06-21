@@ -19,9 +19,9 @@ final class ai extends BroadcastReceiver
     if ((paramContext != null) && (paramIntent != null) && (ac.f(this.a) != null) && (ac.g(this.a) != null) && (ac.h(this.a) != null) && (paramIntent.getAction() != null) && ("android.net.wifi.SCAN_RESULTS".equals(paramIntent.getAction())))
     {
       List localList = ac.f(this.a).getScanResults();
-      ac.a(this.a, localList);
+      ac.v(this.a, localList);
       ac.h(this.a).clear();
-      ac.a(this.a, System.currentTimeMillis());
+      ac.v(this.a, System.currentTimeMillis());
       if ((localList != null) && (localList.size() > 0))
         for (int i = 0; i < localList.size(); i++)
         {
@@ -32,9 +32,9 @@ final class ai extends BroadcastReceiver
       if (ac.g(this.a) != null)
       {
         ac.g(this.a).cancel();
-        ac.a(this.a, null);
+        ac.v(this.a, null);
       }
-      ac.a(this.a, new Timer());
+      ac.v(this.a, new Timer());
       ac.g(this.a).schedule(localaj, ac.z());
     }
   }

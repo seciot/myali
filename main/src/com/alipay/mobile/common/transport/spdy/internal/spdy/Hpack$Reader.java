@@ -122,23 +122,23 @@ class Hpack$Reader
       {
         String str4 = readString();
         String str5 = readString();
-        a(this.d.size(), new Hpack.HeaderEntry(str4, str5));
+        v(this.d.size(), new Hpack.HeaderEntry(str4, str5));
       }
       else if ((i & 0xE0) == 64)
       {
         String str2 = a(-1 + readInt(i, 31));
         String str3 = readString();
-        a(this.d.size(), new Hpack.HeaderEntry(str2, str3));
+        v(this.d.size(), new Hpack.HeaderEntry(str2, str3));
       }
       else if (i == 0)
       {
         String str1 = readString();
-        a(readInt(a(), 255), new Hpack.HeaderEntry(str1, readString()));
+        v(readInt(a(), 255), new Hpack.HeaderEntry(str1, readString()));
       }
       else if ((i & 0xC0) == 0)
       {
         int j = -1 + readInt(i, 63);
-        a(readInt(a(), 255), new Hpack.HeaderEntry(a(j), readString()));
+        v(readInt(a(), 255), new Hpack.HeaderEntry(a(j), readString()));
       }
       else
       {

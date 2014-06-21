@@ -13,7 +13,7 @@ class NFCFeedBackActivity$4
 
   public void run()
   {
-    UserProposalRes localUserProposalRes = ((UserProposalFacade)((RpcService)NFCFeedBackActivity.b(this.a, RpcService.class.getName())).getRpcProxy(UserProposalFacade.class)).saveUserProposalInfo(NFCFeedBackActivity.h(this.a));
+    UserProposalRes localUserProposalRes = ((UserProposalFacade)((RpcService)NFCFeedBackActivity.d(this.a, RpcService.class.getName())).getRpcProxy(UserProposalFacade.class)).saveUserProposalInfo(NFCFeedBackActivity.h(this.a));
     if ((localUserProposalRes != null) && ((localUserProposalRes.resultStatus == 1000) || (localUserProposalRes.resultStatus == 5002)))
     {
       this.a.toast("提交成功，感谢您的反馈", 1);

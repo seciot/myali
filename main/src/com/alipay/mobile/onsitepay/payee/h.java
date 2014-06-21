@@ -15,7 +15,7 @@ final class h
   public final void onDataReceived(String paramString)
   {
     new StringBuilder("收到声波,sonicId1:").append(paramString).toString();
-    FacePayeeActivity.a(this.a, 1);
+    FacePayeeActivity.v(this.a, 1);
     long l = System.currentTimeMillis();
     Long localLong = (Long)FacePayeeActivity.removeBundle(this.a).get(paramString);
     new StringBuilder("sonicId:").append(paramString).toString();

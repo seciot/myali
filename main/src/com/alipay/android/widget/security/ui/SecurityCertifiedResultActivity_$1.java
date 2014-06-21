@@ -11,7 +11,7 @@ class SecurityCertifiedResultActivity_$1
 
   public void run()
   {
-    SecurityCertifiedResultActivity_.a(this.b, this.a);
+    SecurityCertifiedResultActivity_.v(this.b, this.a);
   }
 }
 

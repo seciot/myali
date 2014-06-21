@@ -27,7 +27,7 @@ final class ab
         return;
       }
     }
-    this.a.a("checked", Boolean.valueOf(paramBoolean));
+    this.a.v("checked", Boolean.valueOf(paramBoolean));
     UICheckBox.d(this.a);
     UICheckBox.removeBundle(this.a);
   }

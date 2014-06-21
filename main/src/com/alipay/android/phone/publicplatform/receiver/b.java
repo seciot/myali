@@ -9,7 +9,7 @@ final class b
 
   public final void run()
   {
-    PublicHomeWidgetGroupReceiver_.a(this.b, this.a);
+    PublicHomeWidgetGroupReceiver_.v(this.b, this.a);
   }
 }
 

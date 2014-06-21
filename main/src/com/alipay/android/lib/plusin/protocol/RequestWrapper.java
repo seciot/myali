@@ -165,7 +165,7 @@ public class RequestWrapper
       paramResponse.a(Calendar.getInstance().getTimeInMillis());
       if (paramRequest.c())
       {
-        localJSONObject2 = a(str2, paramResponse);
+        localJSONObject2 = v(str2, paramResponse);
         if ((paramResponse.j() == 1000) && (this.b < 3))
         {
           this.b = (1 + this.b);

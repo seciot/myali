@@ -15,7 +15,7 @@ final class ah
   public final void run()
   {
     this.b.hasResource();
-    CustomToast.a(this.a, this.a.getResources().getString(R.string.j));
+    CustomToast.v(this.a, this.a.getResources().getString(R.string.j));
   }
 }
 

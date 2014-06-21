@@ -15,7 +15,7 @@ final class a
   public final void onClick(View paramView)
   {
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "20000027", "-", "-", "accountManageView", "addAccount");
-    AccountManagerActivity.a(this.a, null);
+    AccountManagerActivity.v(this.a, null);
   }
 }
 

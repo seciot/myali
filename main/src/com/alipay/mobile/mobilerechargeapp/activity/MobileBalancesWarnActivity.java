@@ -91,7 +91,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
 
   protected void a(AlertSignQueryRes paramAlertSignQueryRes, boolean paramBoolean)
   {
-    APRelativeLayout localAPRelativeLayout1 = (APRelativeLayout)LayoutInflater.from(this).inflate(R.layout.d, null);
+    APRelativeLayout localAPRelativeLayout1 = (APRelativeLayout)LayoutInflater.from(this).inflate(R.layout.ZLog, null);
     this.a.setAdapter(null);
     if (this.a.getHeaderViewsCount() == 0)
       this.a.addHeaderView(localAPRelativeLayout1, null, false);
@@ -111,7 +111,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
     dismissProgressDialog();
     if (paramAlertSignRes == null)
     {
-      a(getResources().getString(R.string.w), true);
+      v(getResources().getString(R.string.w), true);
       return;
     }
     new StringBuilder("processAddalertSign Status = ").append(paramAlertSignRes.resultStatus).toString();
@@ -141,7 +141,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
 
   protected void a(String paramString, int paramInt1, int paramInt2)
   {
-    LogAgentWriteLog.a(this, true);
+    LogAgentWriteLog.v(this, true);
     c();
     try
     {
@@ -178,7 +178,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
       dismissProgressDialog();
       if (localAlertSignQueryRes == null)
       {
-        a(getString(R.string.w), true);
+        v(getString(R.string.w), true);
         return;
       }
       new StringBuilder("resultStatus ＝").append(localAlertSignQueryRes.resultStatus).toString();
@@ -187,11 +187,11 @@ public class MobileBalancesWarnActivity extends BaseActivity
         this.e = new WarnDisplayData(localAlertSignQueryRes, this.k, this.i);
         this.e.setContactList(this.j);
         if (localAlertSignQueryRes.bindingMobileAlertSign != null)
-          this.f.a(localAlertSignQueryRes.bindingMobileAlertSign.mobileNo, localAlertSignQueryRes.bindingMobileAlertSign.signStatus, localAlertSignQueryRes.bindingMobileAlertSign.valid);
+          this.f.e(localAlertSignQueryRes.bindingMobileAlertSign.mobileNo, localAlertSignQueryRes.bindingMobileAlertSign.signStatus, localAlertSignQueryRes.bindingMobileAlertSign.valid);
         this.b = this.e.getDisplayData();
         if (!this.e.isDisplayAddSwitch())
         {
-          a(localAlertSignQueryRes, bool);
+          v(localAlertSignQueryRes, bool);
           return;
         }
       }
@@ -219,7 +219,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
     dismissProgressDialog();
     if (paramAlertSignRes == null)
     {
-      a(getString(R.string.n), true);
+      v(getString(R.string.n), true);
       return;
     }
     new StringBuilder("cancelalertSign Status = ").append(paramAlertSignRes.resultStatus).toString();
@@ -247,7 +247,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
 
   protected void b(String paramString, int paramInt1, int paramInt2)
   {
-    LogAgentWriteLog.b(this, true);
+    LogAgentWriteLog.d(this, true);
     c();
     try
     {

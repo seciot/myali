@@ -1,7 +1,7 @@
 package com.alipay.mobile.quinox;
 
 import com.alipay.mobile.quinox.classloader.a;
-import com.alipay.mobile.quinox.utils.d;
+import com.alipay.mobile.quinox.utils.ZLog;
 
 final class c extends ClassLoader
 {
@@ -11,7 +11,7 @@ final class c extends ClassLoader
 
   public final Class findClass(String paramString)
   {
-    d.b("OriginClassLoader", this + "load class: " + paramString);
+    ZLog.d("OriginClassLoader", this + "load class: " + paramString);
     if ((this.a.pattern(paramString)) || (this.a.patternHost(paramString)))
       return super.findClass(paramString);
     while (!LauncherApplication.access$300(this.a))

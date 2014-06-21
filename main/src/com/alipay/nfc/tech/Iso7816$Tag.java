@@ -66,7 +66,7 @@ public final class Iso7816$Tag
     return new Iso7816.Response(c(localByteBuffer.array()));
   }
 
-  public final Iso7816.Response b()
+  public final Iso7816.Response stop()
   {
     return new Iso7816.Response(c(new byte[] { 0, -78, 1, -59, 0 }));
   }

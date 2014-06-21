@@ -13,7 +13,7 @@ class BaseAuthenticationFragment$3
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     BaseAuthenticationFragment.a(false);
-    this.a.b();
+    this.a.stop();
   }
 }
 

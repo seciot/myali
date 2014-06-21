@@ -19,7 +19,7 @@ final class n
     for (int j = 0; j < i; j++)
       if (j != paramLong)
         WithdrawActivity.m(this.a).getBundle(j).getBundle(false);
-    WithdrawActivity.a(this.a, (WithdrawArriveDate)paramAdapterView.getItemAtPosition((int)paramLong));
+    WithdrawActivity.v(this.a, (WithdrawArriveDate)paramAdapterView.getItemAtPosition((int)paramLong));
     WithdrawActivity.n(this.a).getBundle(true);
     WithdrawActivity.m(this.a).notifyDataSetChanged();
     this.a.getFullBundleName();

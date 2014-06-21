@@ -161,7 +161,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       paramView = LayoutInflater.from(this.mContext).inflate(com.alipay.mobile.openplatform.R.layout.f, null);
       localViewHolder = new FastLoginAppAdapter.ViewHolder(this);
       localViewHolder.b = ((APImageView)paramView.findViewById(R.id.BundlesManagerImpl));
-      localViewHolder.a = ((APTextView)paramView.findViewById(R.id.d));
+      localViewHolder.a = ((APTextView)paramView.findViewById(R.id.ZLog));
       localViewHolder.c = ((APTextView)paramView.findViewById(R.id.f));
       localViewHolder.d = ((APImageView)paramView.findViewById(R.id.n));
       localViewHolder.e = ((APButton)paramView.findViewById(R.id.AppBundle));

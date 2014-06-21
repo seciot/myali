@@ -14,10 +14,10 @@ final class ca
   {
     if (paramBoolean)
     {
-      this.a.a(MobileRechargeCashierActivity.removeBundle(this.a), MobileRechargeCashierActivity.f(this.a));
+      this.a.v(MobileRechargeCashierActivity.removeBundle(this.a), MobileRechargeCashierActivity.f(this.a));
       return;
     }
-    this.a.b(MobileRechargeCashierActivity.removeBundle(this.a), MobileRechargeCashierActivity.f(this.a));
+    this.a.d(MobileRechargeCashierActivity.removeBundle(this.a), MobileRechargeCashierActivity.f(this.a));
   }
 }
 

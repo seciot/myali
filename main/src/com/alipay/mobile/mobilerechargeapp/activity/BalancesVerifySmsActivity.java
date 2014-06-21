@@ -207,7 +207,7 @@ public class BalancesVerifySmsActivity extends BaseActivity
       if (this.b != null)
         this.b.dispose();
       a(this.i, str);
-      Validator.a(this, this.j.getEtContent());
+      Validator.v(this, this.j.getEtContent());
       return;
     }
     toast(getString(R.string.o), 0);

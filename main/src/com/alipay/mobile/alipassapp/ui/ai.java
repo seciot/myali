@@ -23,7 +23,7 @@ final class ai
       SimpleToast.makeToast(this.b.b, R.string.alipass_nonetwork_toast, 0).show();
       return;
     }
-    this.b.b.a(this.a, this.b.a.getTitle());
+    this.b.b.v(this.a, this.b.a.getTitle());
   }
 }
 

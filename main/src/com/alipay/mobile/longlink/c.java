@@ -17,13 +17,13 @@ final class c
     LongLinkServiceManager.access$002(this.a, ILongLinkService.Stub.getBundle(paramIBinder));
     if (LongLinkServiceManager.access$000(this.a) != null)
       LongLinkServiceManager.access$102(this.a, true);
-    a.a(3, LongLinkServiceManager.access$200(), "onServiceConnected");
+    a.e(3, LongLinkServiceManager.access$200(), "onServiceConnected");
   }
 
   public final void onServiceDisconnected(ComponentName paramComponentName)
   {
     LongLinkServiceManager.access$102(this.a, false);
-    a.a(3, LongLinkServiceManager.access$200(), "onServiceDisconnected");
+    a.e(3, LongLinkServiceManager.access$200(), "onServiceDisconnected");
   }
 }
 

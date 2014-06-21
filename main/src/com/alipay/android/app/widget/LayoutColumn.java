@@ -34,7 +34,7 @@ public final class LayoutColumn extends LinearLayout
   {
     if (GlobalConstant.DEBUG)
     {
-      int i = getResources().getColor(R.color.d);
+      int i = getResources().getColor(R.color.ZLog);
       this.c = new Paint();
       this.c.setStyle(Paint.Style.STROKE);
       this.c.setColor(i);

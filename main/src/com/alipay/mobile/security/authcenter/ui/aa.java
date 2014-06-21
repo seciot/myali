@@ -23,7 +23,7 @@ final class aa
     if (str != null);
     try
     {
-      y.a(this.b, paramString);
+      y.v(this.b, paramString);
       y.getBundle(this.b).showProgressDialog(null, true, null);
       localSetMobilePayPwdRes = y.b(this.b).b(this.a, paramString, "");
       y.getBundle(this.b).dismissProgressDialog();

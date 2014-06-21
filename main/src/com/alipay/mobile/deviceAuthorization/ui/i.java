@@ -11,7 +11,7 @@ final class i
 
   public final void run()
   {
-    AuthorizeLogsActivity_.b(this.b, this.a);
+    AuthorizeLogsActivity_.d(this.b, this.a);
   }
 }
 

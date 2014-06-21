@@ -14,7 +14,7 @@ public abstract class AbsAlbumListActivity<T extends ListAdapter> extends BaseAc
 {
   protected APListView a;
   protected b b;
-  protected List<com.alipay.mobile.about.ui.AppBundle.a> c = new ArrayList();
+  protected List<com.alipay.mobile.about.ui.ExceptionHandler.a> c = new ArrayList();
   protected AdapterView.OnItemClickListener d = new m(this);
 
   protected abstract void a();
@@ -34,7 +34,7 @@ public abstract class AbsAlbumListActivity<T extends ListAdapter> extends BaseAc
     this.a = ((APListView)findViewById(R.id.co));
     this.a.setAdapter(b());
     this.a.setOnItemClickListener(this.d);
-    com.alipay.mobile.about.b.a.a(this, this.c);
+    com.alipay.mobile.about.b.a.v(this, this.c);
   }
 }
 

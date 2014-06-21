@@ -20,8 +20,8 @@ final class NetWorkReceiver$a
     if ((localb != null) && (localb.a == 0) && (localb.d != null));
     synchronized (NetWorkReceiver.a())
     {
-      NetWorkReceiver.b();
-      ProtocolManager.a(localb, (ContextWrapper)this.b);
+      NetWorkReceiver.stop();
+      ProtocolManager.v(localb, (ContextWrapper)this.b);
       return;
     }
   }

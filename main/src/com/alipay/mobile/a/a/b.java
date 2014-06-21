@@ -27,7 +27,7 @@ public final class b
       localc.AppBundle = localCursor.getString(localCursor.getColumnIndex("NAME"));
       localc.BundlesManager = localCursor.getString(localCursor.getColumnIndex("PASSWORD"));
       localc.BundlesManagerImpl = localCursor.getString(localCursor.getColumnIndex("TYPE"));
-      localc.d = localCursor.getString(localCursor.getColumnIndex("USERID"));
+      localc.ZLog = localCursor.getString(localCursor.getColumnIndex("USERID"));
       localc.e = localCursor.getString(localCursor.getColumnIndex("RSAPASSWORD"));
       localc.f = localCursor.getString(localCursor.getColumnIndex("RANDOMNUM"));
       localc.g = localCursor.getString(localCursor.getColumnIndex("REALNAME"));
@@ -50,7 +50,7 @@ public final class b
     return true;
   }
 
-  public final void b()
+  public final void stop()
   {
     try
     {

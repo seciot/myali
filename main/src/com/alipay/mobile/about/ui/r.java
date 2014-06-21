@@ -24,8 +24,8 @@ final class r
     if (paramCharSequence.length() > 0);
     for (boolean bool = true; ; bool = false)
     {
-      FeedAssistantActivity.b(localFeedAssistantActivity, bool);
-      FeedAssistantActivity.a(this.a, paramCharSequence.length());
+      FeedAssistantActivity.d(localFeedAssistantActivity, bool);
+      FeedAssistantActivity.v(this.a, paramCharSequence.length());
       return;
     }
   }

@@ -29,7 +29,7 @@ public class UISubForm extends UIFormWindow
     this.B = true;
     this.z = paramActivity;
     this.A = paramViewGroup.getChildAt(0);
-    DisplayRotate3D.a((ViewGroup)this.z.findViewById(R.id.C), new ag(this, paramActivity, paramViewGroup));
+    DisplayRotate3D.v((ViewGroup)this.z.findViewById(R.id.C), new ag(this, paramActivity, paramViewGroup));
   }
 
   public final void a(BaseElement paramBaseElement)
@@ -62,7 +62,7 @@ public class UISubForm extends UIFormWindow
     super.dispose();
     this.B = false;
     ViewGroup localViewGroup = (ViewGroup)this.z.findViewById(R.id.C);
-    DisplayRotate3D.b(localViewGroup, new ah(this, localViewGroup));
+    DisplayRotate3D.d(localViewGroup, new ah(this, localViewGroup));
   }
 
   protected final boolean m()

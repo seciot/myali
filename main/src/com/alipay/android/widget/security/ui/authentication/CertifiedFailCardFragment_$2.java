@@ -11,7 +11,7 @@ class CertifiedFailCardFragment_$2
 
   public void run()
   {
-    CertifiedFailCardFragment_.a(this.b, this.a);
+    CertifiedFailCardFragment_.v(this.b, this.a);
   }
 }
 

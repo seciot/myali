@@ -433,7 +433,7 @@ public class k extends AppBundle
 
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "sendPacket()... isConnected=" + a());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "sendPacket()... isConnected=" + a());
     try
     {
       if (!a())
@@ -446,14 +446,14 @@ public class k extends AppBundle
     }
     if (parama == null)
       throw new NullPointerException("Packet is null.");
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "sendPacket()... packet.id=" + parama.a());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "sendPacket()... packet.id=" + parama.a());
     this.k.getBundle(parama);
   }
 
   public final boolean a()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
     return this.o;
   }
 
@@ -465,14 +465,14 @@ public class k extends AppBundle
     synchronized (this.t)
     {
       this.r = new Timer(true);
-      this.r.schedule(new l(this), m.b());
+      this.r.schedule(new l(this), m.stop());
       return;
     }
   }
 
   public final void getBundleName()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "setConnected()...isConnected=true");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "setConnected()...isConnected=true");
     this.o = true;
   }
 
@@ -483,10 +483,10 @@ public class k extends AppBundle
 
   public final void getFullBundleName()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "disconnect()... called!");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "disconnect()... called!");
     if ((this.l == null) || (this.k == null))
       return;
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(2, m, "shutdown() called...");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(2, m, "shutdown() called...");
     this.o = false;
     this.q = 0;
     g();
@@ -515,12 +515,12 @@ public class k extends AppBundle
             try
             {
               this.i.close();
-              label128: com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "shutdown()... Done!");
+              label128: com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "shutdown()... Done!");
               this.k.getInitLevel();
               this.k = null;
               this.l.getInitLevel();
               this.l = null;
-              com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, m, "disconnect()... done!");
+              com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "disconnect()... done!");
               return;
               localException1 = localException1;
             }
@@ -544,7 +544,7 @@ public class k extends AppBundle
 
   public final void getBundlePath()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, m, "resetConnection()...");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "resetConnection()...");
     if (this.r != null)
       g();
     if (this.k != null);

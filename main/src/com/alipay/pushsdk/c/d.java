@@ -134,12 +134,12 @@ public class d
     try
     {
       this.d.put(paramString1, paramString2);
-      c.a(5, a, "putString() cacheDataMap key=" + paramString1 + ", val=" + paramString2);
+      c.e(5, a, "putString() cacheDataMap key=" + paramString1 + ", val=" + paramString2);
       SharedPreferences localSharedPreferences = this.c.getSharedPreferences("push_pref", 0);
       synchronized (this.e)
       {
         localSharedPreferences.edit().putString(paramString1, paramString2).commit();
-        c.a(5, a, "putString() sharePrefs key=" + paramString1 + ", val=" + paramString2);
+        c.e(5, a, "putString() sharePrefs key=" + paramString1 + ", val=" + paramString2);
         return true;
       }
     }

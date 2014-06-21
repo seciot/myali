@@ -12,7 +12,7 @@ final class g
 
   public final void onClick(View paramView)
   {
-    AuthorizeLogsActivity.a(this.a, true);
+    AuthorizeLogsActivity.v(this.a, true);
   }
 }
 

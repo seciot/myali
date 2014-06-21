@@ -221,7 +221,7 @@ public class a
           Intent localIntent1 = this.a.getPackageManager().getLaunchIntentForPackage(str3);
           if (localIntent1 == null)
           {
-            ai.b(this.a, new b(this, str5));
+            ai.d(this.a, new b(this, str5));
             return;
           }
           if (str4 == null);
@@ -281,7 +281,7 @@ public class a
       String str2 = this.e;
       if (this.a.getPackageManager().getLaunchIntentForPackage(str1) == null)
       {
-        ai.b(this.a, new e(this, str2));
+        ai.d(this.a, new e(this, str2));
         return;
       }
       localAppManageService = (AppManageService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(AppManageService.class.getName());

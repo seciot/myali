@@ -14,11 +14,11 @@ final class cq
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    if (AlipassRemindActivity.a(this.b.a, this.a.getTime().getTime()))
+    if (AlipassRemindActivity.v(this.b.a, this.a.getTime().getTime()))
     {
-      AlipassRemindActivity.a(this.b.a, this.a);
-      AlipassRemindActivity.a(this.b.a, this.a.getTime());
-      AlipassRemindActivity.a(this.b.a, AlipassRemindActivity.getBundle(this.b.a));
+      AlipassRemindActivity.v(this.b.a, this.a);
+      AlipassRemindActivity.v(this.b.a, this.a.getTime());
+      AlipassRemindActivity.v(this.b.a, AlipassRemindActivity.getBundle(this.b.a));
     }
   }
 }

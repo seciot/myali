@@ -28,7 +28,7 @@ final class ba
         localCmsObject.setForwardOpt(localJSONObject2.optString("forwardOpt"));
         localCmsObject.setTitle(localJSONObject2.optString("title"));
         localCmsObject.setUri(localJSONObject2.optString("uri"));
-        AlipassListActivity.a(this.b.a, localCmsObject);
+        AlipassListActivity.v(this.b.a, localCmsObject);
         return;
       }
     }

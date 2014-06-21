@@ -44,7 +44,7 @@ public class c
     NetworkInfo[] arrayOfNetworkInfo = ((ConnectivityManager)paramContext.getSystemService("connectivity")).getAllNetworkInfo();
     if (arrayOfNetworkInfo == null)
     {
-      com.alipay.pushsdk.c.a.c.a(2, a, "isNetworkAvailable networkInfos Unavailable.");
+      com.alipay.pushsdk.c.a.c.e(2, a, "isNetworkAvailable networkInfos Unavailable.");
       return false;
     }
     int i = arrayOfNetworkInfo.length;
@@ -56,7 +56,7 @@ public class c
     }
     for (boolean bool = true; ; bool = false)
     {
-      com.alipay.pushsdk.c.a.c.a(4, a, "isNetworkAvailable=" + bool);
+      com.alipay.pushsdk.c.a.c.e(4, a, "isNetworkAvailable=" + bool);
       return bool;
       j++;
       break;

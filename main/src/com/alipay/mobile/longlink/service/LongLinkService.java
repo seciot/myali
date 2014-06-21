@@ -39,17 +39,17 @@ public class LongLinkService extends Service
 
   public IBinder onBind(Intent paramIntent)
   {
-    com.alipay.mobile.longlink.c.a.a(4, b, "onBind()...");
+    com.alipay.mobile.longlink.c.a.e(4, b, "onBind()...");
     return new n(this, null);
   }
 
   public void onCreate()
   {
     super.onCreate();
-    com.alipay.mobile.longlink.c.a.a(3, b, "onCreate()...");
+    com.alipay.mobile.longlink.c.a.e(3, b, "onCreate()...");
     l.b();
     a = new a(this);
-    com.alipay.mobile.longlink.c.a.a(5, b, "onCreate=" + a.hashCode());
+    com.alipay.mobile.longlink.c.a.e(5, b, "onCreate=" + a.hashCode());
     IntentFilter localIntentFilter = new IntentFilter();
     localIntentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
     registerReceiver(this.f, localIntentFilter);
@@ -61,13 +61,13 @@ public class LongLinkService extends Service
   public void onDestroy()
   {
     super.onDestroy();
-    com.alipay.mobile.longlink.c.a.a(4, b, "onDestroy()...");
+    com.alipay.mobile.longlink.c.a.e(4, b, "onDestroy()...");
     a.c();
     try
     {
       unregisterReceiver(this.f);
       this.f = null;
-      com.alipay.mobile.longlink.c.a.a(5, b, "onDestroy() executorService will be shutdown!");
+      com.alipay.mobile.longlink.c.a.e(5, b, "onDestroy() executorService will be shutdown!");
       this.c.shutdown();
       return;
     }
@@ -80,18 +80,18 @@ public class LongLinkService extends Service
 
   public void onRebind(Intent paramIntent)
   {
-    com.alipay.mobile.longlink.c.a.a(4, b, "onRebind()...");
+    com.alipay.mobile.longlink.c.a.e(4, b, "onRebind()...");
   }
 
   public int onStartCommand(Intent paramIntent, int paramInt1, int paramInt2)
   {
-    com.alipay.mobile.longlink.c.a.a(5, b, "onStartCommand Received start id " + paramInt2 + ", intent: " + paramIntent);
+    com.alipay.mobile.longlink.c.a.e(5, b, "onStartCommand Received start id " + paramInt2 + ", intent: " + paramIntent);
     return 2;
   }
 
   public boolean onUnbind(Intent paramIntent)
   {
-    com.alipay.mobile.longlink.c.a.a(4, b, "onUnbind()...");
+    com.alipay.mobile.longlink.c.a.e(4, b, "onUnbind()...");
     return true;
   }
 }

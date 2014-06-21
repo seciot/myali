@@ -17,7 +17,7 @@ final class d
 
   public final void a()
   {
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, BundlesManagerImpl.b(), "UpdateUserListener onFail.");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, BundlesManagerImpl.stop(), "UpdateUserListener onFail.");
   }
 
   public final void setBundlePath(com.alipay.pushsdk.BundlesManager.b paramb)
@@ -25,13 +25,13 @@ final class d
     try
     {
       JSONObject localJSONObject = new JSONObject(paramb.getBundleName().toString());
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, BundlesManagerImpl.b(), "ConfigListener onComplete jsonResponse:" + localJSONObject.toString());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, BundlesManagerImpl.stop(), "ConfigListener onComplete jsonResponse:" + localJSONObject.toString());
       if (localJSONObject.getInt("resultStatus") == 100)
       {
-        BundlesManagerImpl.a(this.a, localJSONObject);
+        BundlesManagerImpl.v(this.a, localJSONObject);
         long l = System.currentTimeMillis();
-        BundlesManagerImpl.getBundle(this.a).a("LAST_CONFIG_TIME", l);
-        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, BundlesManagerImpl.b(), "onComplete() saveCfgPolicy Time is:" + j.getBundle(l));
+        BundlesManagerImpl.getBundle(this.a).v("LAST_CONFIG_TIME", l);
+        com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, BundlesManagerImpl.stop(), "onComplete() saveCfgPolicy Time is:" + j.getBundle(l));
         Thread.sleep(1000L);
         if (BundlesManagerImpl.b(this.a).a().length() == 0)
           BundlesManagerImpl.c(this.a).stopService(new Intent(BundlesManagerImpl.c(this.a), NotificationService.class));

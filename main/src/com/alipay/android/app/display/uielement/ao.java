@@ -12,7 +12,7 @@ final class ao
   public final void run()
   {
     if (UICombobox.f(this.a) != null)
-      UICombobox.a(this.a, (UICombobox.Option)UICombobox.d(this.a).get(UICombobox.removeBundle(this.a)));
+      UICombobox.v(this.a, (UICombobox.Option)UICombobox.d(this.a).get(UICombobox.removeBundle(this.a)));
   }
 }
 

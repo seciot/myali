@@ -11,7 +11,7 @@ final class q
 
   public final void onGestureResult(boolean paramBoolean)
   {
-    ExternalLoginActivity.a(this.b, this.a);
+    ExternalLoginActivity.v(this.b, this.a);
   }
 }
 

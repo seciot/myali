@@ -11,7 +11,7 @@ class RealNameFragment_$1
 
   public void run()
   {
-    RealNameFragment_.a(this.b, this.a);
+    RealNameFragment_.v(this.b, this.a);
   }
 }
 

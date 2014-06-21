@@ -17,7 +17,7 @@ final class a
 
   public final void onPayFailed(int paramInt, String paramString)
   {
-    this.b.a(paramString, true, this.a);
+    this.b.e(paramString, true, this.a);
   }
 
   public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)

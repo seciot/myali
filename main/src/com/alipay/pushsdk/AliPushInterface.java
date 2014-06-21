@@ -17,7 +17,7 @@ public final class AliPushInterface
     localIntent.putExtra("k", paramString1);
     localIntent.putExtra("ext", paramString2);
     paramContext.startService(localIntent);
-    BundlesManagerImpl.a(3, "AliPushInterface", "activeReport() startService!");
+    BundlesManagerImpl.e(3, "AliPushInterface", "activeReport() startService!");
   }
 
   public static void checkDevice(Context paramContext)

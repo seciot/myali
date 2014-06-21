@@ -16,11 +16,11 @@ final class d
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    AccountManagerActivity.a(this.b.a, this.a);
+    AccountManagerActivity.v(this.b.a, this.a);
     this.b.a.showProgressDialog(this.b.a.getResources().getString(R.string.bl));
     String str1 = ((UserInfo)this.b.a.g.get(this.a)).getLogonId();
     String str2 = ((UserInfo)this.b.a.g.get(this.a)).getUserId();
-    this.b.a.a(str1, str2);
+    this.b.a.v(str1, str2);
   }
 }
 

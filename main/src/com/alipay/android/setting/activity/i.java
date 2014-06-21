@@ -13,7 +13,7 @@ final class i
 
   public final void onClick(View paramView)
   {
-    PaymentChannelActivity.a(this.b, this.a, this.b);
+    PaymentChannelActivity.e(this.b, this.a, this.b);
   }
 }
 

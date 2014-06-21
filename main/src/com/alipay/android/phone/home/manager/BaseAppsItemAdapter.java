@@ -89,7 +89,7 @@ public class BaseAppsItemAdapter extends BaseAdapter
             }
             while (paramApp.isOffline())
             {
-              localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.d));
+              localViewHolder2.f.setText(this.b.getContext().getResources().getString(R.string.ZLog));
               localViewHolder2.f.setBackgroundColor(this.b.getContext().getResources().getColor(R.color.BundlesManager));
               localViewHolder2.e.setVisibility(0);
               return localObject;

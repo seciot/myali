@@ -14,8 +14,8 @@ final class af extends PhoneStateListener
 
   public final void onCellLocationChanged(CellLocation paramCellLocation)
   {
-    ac.b(this.a, System.currentTimeMillis());
-    ac.a(this.a, paramCellLocation);
+    ac.d(this.a, System.currentTimeMillis());
+    ac.v(this.a, paramCellLocation);
     super.onCellLocationChanged(paramCellLocation);
   }
 
@@ -25,20 +25,20 @@ final class af extends PhoneStateListener
     int k;
     if (paramServiceState.getState() == 0)
     {
-      ac.b(this.a, true);
+      ac.d(this.a, true);
       if ((ac.i(this.a).getNetworkOperator() != null) && (ac.i(this.a).getNetworkOperator().length() > 0) && (ac.i(this.a).getNetworkOperator().getBytes()[0] >= 48) && (ac.i(this.a).getNetworkOperator().getBytes()[0] <= 57))
       {
         ac localac1 = this.a;
         if (ac.i(this.a).getNetworkOperator().length() >= 3)
           break label163;
         i = 0;
-        ac.a(localac1, i);
+        ac.v(localac1, i);
         ac localac2 = this.a;
         int j = ac.i(this.a).getNetworkOperator().length();
         k = 0;
         if (j >= 5)
           break label186;
-        label149: ac.b(localac2, k);
+        label149: ac.d(localac2, k);
       }
     }
     while (true)
@@ -49,23 +49,23 @@ final class af extends PhoneStateListener
       break;
       label186: k = Integer.parseInt(ac.i(this.a).getNetworkOperator().substring(3, 5));
       break label149;
-      ac.b(this.a, false);
+      ac.d(this.a, false);
     }
   }
 
   public final void onSignalStrengthsChanged(SignalStrength paramSignalStrength)
   {
     if (ac.j(this.a))
-      ac.c(this.a, paramSignalStrength.getCdmaDbm());
+      ac.i(this.a, paramSignalStrength.getCdmaDbm());
     while (true)
     {
       super.onSignalStrengthsChanged(paramSignalStrength);
       return;
-      ac.c(this.a, paramSignalStrength.getGsmSignalStrength());
+      ac.i(this.a, paramSignalStrength.getGsmSignalStrength());
       if (ac.k(this.a) == 99)
-        ac.c(this.a, -1);
+        ac.i(this.a, -1);
       else
-        ac.c(this.a, -113 + 2 * ac.k(this.a));
+        ac.i(this.a, -113 + 2 * ac.k(this.a));
     }
   }
 }

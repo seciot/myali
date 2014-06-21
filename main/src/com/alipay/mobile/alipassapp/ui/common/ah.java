@@ -25,7 +25,7 @@ final class ah extends BroadcastReceiver
     {
       JSONObject localJSONObject = new JSONObject(str);
       ae.f(this.a);
-      ae.a(this.a, localJSONObject, "pushorder");
+      ae.e(this.a, localJSONObject, "pushorder");
       return;
     }
     catch (JSONException localJSONException)

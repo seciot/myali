@@ -7,7 +7,7 @@ import com.alipay.mobile.longlink.b.d.c;
 public final class b
 {
   private BundlesManagerImpl a;
-  private d b;
+  private ZLog b;
 
   public b(BundlesManagerImpl paramc)
   {

@@ -104,7 +104,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
 
   protected void a(String paramString, int paramInt)
   {
-    LogAgentWriteLog.a(this, false);
+    LogAgentWriteLog.v(this, false);
     b();
     try
     {
@@ -173,7 +173,7 @@ public class MobileRechargeCashierActivity extends BaseActivity
 
   protected void b(String paramString, int paramInt)
   {
-    LogAgentWriteLog.b(this, false);
+    LogAgentWriteLog.d(this, false);
     b();
     try
     {

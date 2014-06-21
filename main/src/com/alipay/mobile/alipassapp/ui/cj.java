@@ -11,7 +11,7 @@ final class cj
 
   public final void run()
   {
-    AlipassQueryCardActivity_.a(this.b, this.a);
+    AlipassQueryCardActivity_.v(this.b, this.a);
   }
 }
 

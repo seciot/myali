@@ -13,7 +13,7 @@ final class ar
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.a(this.b.b(), "", false, false, this.a.isMobileUser());
+    RegisterNewActivity.a(this.b.stop(), "", false, false, this.a.isMobileUser());
   }
 }
 

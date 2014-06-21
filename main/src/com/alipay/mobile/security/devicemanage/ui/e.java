@@ -11,7 +11,7 @@ final class e
 
   public final void run()
   {
-    DeviceManageActivity_.a(this.b, this.a);
+    DeviceManageActivity_.v(this.b, this.a);
   }
 }
 

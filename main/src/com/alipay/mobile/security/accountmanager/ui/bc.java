@@ -27,12 +27,12 @@ final class bc
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
     if (this.a.b.getVisibility() == 0)
-      ForgotLoginPwdActivity.b(this.a, this.a.i.getInputedText().toString());
-    ForgotLoginPwdActivity.a(this.a, this.a.j.getCheckCodeInput().getEtContent().getText().toString());
+      ForgotLoginPwdActivity.d(this.a, this.a.i.getInputedText().toString());
+    ForgotLoginPwdActivity.v(this.a, this.a.j.getCheckCodeInput().getEtContent().getText().toString());
     if ((ForgotLoginPwdActivity.c(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.c(this.a).trim())) && (ForgotLoginPwdActivity.d(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.d(this.a).trim())))
     {
       this.a.k.setEnabled(true);
-      ForgotLoginPwdActivity.c(this.a, this.a.m.getText().toString());
+      ForgotLoginPwdActivity.i(this.a, this.a.m.getText().toString());
       if ((ForgotLoginPwdActivity.removeBundle(this.a) == null) || ("".equals(ForgotLoginPwdActivity.removeBundle(this.a).trim())))
         break label323;
       this.a.n.setEnabled(true);

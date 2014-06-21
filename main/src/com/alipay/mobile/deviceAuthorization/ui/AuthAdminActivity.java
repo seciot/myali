@@ -35,7 +35,7 @@ public class AuthAdminActivity extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.d);
+    setContentView(R.layout.ZLog);
     this.c = ((APFlowTipView)findViewById(R.id.aW));
     this.b = ((AuthServiceFacade)((RpcService)AlipayApplication.getInstance().getMicroApplicationContext().findServiceByInterface(RpcService.class.getName())).getRpcProxy(AuthServiceFacade.class));
     this.a = ((ListView)findViewById(R.id.z));
@@ -45,7 +45,7 @@ public class AuthAdminActivity extends BaseActivity
 
   public boolean onItemLongClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    com.alipay.mobile.deviceAuthorization.AppBundle.a locala = (com.alipay.mobile.deviceAuthorization.AppBundle.a)paramAdapterView.getAdapter();
+    com.alipay.mobile.deviceAuthorization.ExceptionHandler.a locala = (com.alipay.mobile.deviceAuthorization.ExceptionHandler.a)paramAdapterView.getAdapter();
     if (paramInt >= locala.getCount())
       return false;
     AuthInfo localAuthInfo = locala.getBundle(paramInt);

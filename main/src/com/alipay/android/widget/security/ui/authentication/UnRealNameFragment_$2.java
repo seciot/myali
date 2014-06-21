@@ -9,7 +9,7 @@ class UnRealNameFragment_$2
 
   public void run()
   {
-    UnRealNameFragment_.a(this.b, this.a);
+    UnRealNameFragment_.v(this.b, this.a);
   }
 }
 

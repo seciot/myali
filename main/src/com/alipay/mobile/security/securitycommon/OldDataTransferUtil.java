@@ -77,11 +77,11 @@ public class OldDataTransferUtil
       finally
       {
         localCacheSet.putBoolean("isNeedOldDataToNewTable", false);
-        localb.b();
+        localb.stop();
         AlipayApplication.getInstance().deleteDatabase("RecentDB");
       }
       label238: localCacheSet.putBoolean("isNeedOldDataToNewTable", false);
-      localb.b();
+      localb.stop();
       AlipayApplication.getInstance().deleteDatabase("RecentDB");
       return true;
     }

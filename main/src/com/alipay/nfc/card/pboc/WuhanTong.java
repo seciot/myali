@@ -45,8 +45,8 @@ final class WuhanTong extends PbocCard
         {
           localWuhanTong.a(new ArrayList[] { localArrayList });
           return localWuhanTong;
-          byte[] arrayOfByte = localResponse2.b();
-          localWuhanTong.g = Util.b(localResponse1.b(), 0, 5);
+          byte[] arrayOfByte = localResponse2.stop();
+          localWuhanTong.g = Util.b(localResponse1.stop(), 0, 5);
           Object[] arrayOfObject1 = new Object[1];
           arrayOfObject1[0] = Byte.valueOf(arrayOfByte[24]);
           localWuhanTong.h = String.format("%02d", arrayOfObject1);

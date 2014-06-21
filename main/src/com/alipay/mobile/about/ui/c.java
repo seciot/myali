@@ -31,7 +31,7 @@ final class c
     }
     label37: for (boolean bool = true; ; bool = false)
     {
-      AboutFeedbackActivity.a(localAboutFeedbackActivity, bool);
+      AboutFeedbackActivity.v(localAboutFeedbackActivity, bool);
       return;
     }
   }

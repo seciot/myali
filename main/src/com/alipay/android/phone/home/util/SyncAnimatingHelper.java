@@ -32,14 +32,14 @@ public class SyncAnimatingHelper
     SyncAnimatingHelper.TransInfo localTransInfo = new SyncAnimatingHelper.TransInfo(this, paramView, paramInt);
     localTransInfo.getBundle(paramInt);
     if (SyncAnimatingHelper.TYPE.b == paramTYPE)
-      SyncAnimatingHelper.TransInfo.a(localTransInfo, ViewHelper.getAlpha(paramView));
+      SyncAnimatingHelper.TransInfo.v(localTransInfo, ViewHelper.getAlpha(paramView));
     while (true)
     {
-      SyncAnimatingHelper.TransInfo.a(localTransInfo, paramTYPE);
+      SyncAnimatingHelper.TransInfo.v(localTransInfo, paramTYPE);
       this.b.add(localTransInfo);
       return;
       if (SyncAnimatingHelper.TYPE.a == paramTYPE)
-        SyncAnimatingHelper.TransInfo.a(localTransInfo, paramView.getTop());
+        SyncAnimatingHelper.TransInfo.v(localTransInfo, paramView.getTop());
     }
   }
 

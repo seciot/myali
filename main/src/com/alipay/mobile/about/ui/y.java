@@ -18,7 +18,7 @@ final class y
     {
       Bitmap localBitmap = (Bitmap)paramView.getTag();
       int i = FeedAssistantActivity.removeBundle(this.a).indexOf(localBitmap);
-      FeedAssistantActivity.b(this.a, i);
+      FeedAssistantActivity.d(this.a, i);
       return;
     }
     catch (Exception localException)

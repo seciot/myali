@@ -20,12 +20,12 @@ final class k
     LogAgent.d("SPSafePay", this.b.b);
     if (this.b.d)
     {
-      PaymentChannelActivity.a(this.c, this.b.e);
+      PaymentChannelActivity.v(this.c, this.b.e);
       PaymentChannelActivity.b(this.c).setVisibility(0);
       PaymentChannelActivity.c(this.c).setVisibility(0);
       return;
     }
-    PaymentChannelActivity.a(this.c, null);
+    PaymentChannelActivity.v(this.c, null);
     PaymentChannelActivity.b(this.c).setVisibility(8);
     PaymentChannelActivity.c(this.c).setVisibility(8);
   }

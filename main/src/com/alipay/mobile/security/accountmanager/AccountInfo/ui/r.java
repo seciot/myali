@@ -11,7 +11,7 @@ final class r
 
   public final void run()
   {
-    SecurityAccountQrCodeActivity_.a(this.c, this.a, this.b);
+    SecurityAccountQrCodeActivity_.e(this.c, this.a, this.b);
   }
 }
 

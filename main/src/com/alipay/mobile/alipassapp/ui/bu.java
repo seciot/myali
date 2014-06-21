@@ -13,7 +13,7 @@ final class bu
 
   public final void onClick(View paramView)
   {
-    this.c.a(this.a, this.b);
+    this.c.v(this.a, this.b);
   }
 }
 

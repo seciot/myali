@@ -23,16 +23,16 @@ final class al
     if (((this.a.getFullBundleName()) || (s.d(this.a).a())) && (a(paramLocation)))
     {
       paramLocation.setTime(System.currentTimeMillis());
-      s.a(this.a, System.currentTimeMillis());
-      s.a(this.a, paramLocation);
+      s.v(this.a, System.currentTimeMillis());
+      s.v(this.a, paramLocation);
       if (s.removeBundle(this.a) != true)
-        s.b(this.a, paramLocation);
+        s.d(this.a, paramLocation);
     }
     else
     {
       return;
     }
-    s.a(this.a, "new location in indoor collect");
+    s.v(this.a, "new location in indoor collect");
   }
 
   public final void onProviderDisabled(String paramString)

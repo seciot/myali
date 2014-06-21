@@ -86,7 +86,7 @@ public abstract class BaseSettingActivity extends BaseActivity
       b("请输入6位手机支付密码");
       return;
     }
-    a(R.string.O, null);
+    v(R.string.O, null);
   }
 
   protected void c(String paramString)

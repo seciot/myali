@@ -14,7 +14,7 @@ final class ag
     this.d.dismissProgressDialog();
     if ((this.a != null) && (this.a.success))
     {
-      this.d.c.a(this.b, this.c);
+      this.d.c.v(this.b, this.c);
       AlipassListActivity.o();
     }
   }

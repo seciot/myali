@@ -17,10 +17,10 @@ public class i
       {
         f.i = 1 + f.i;
         long l = System.currentTimeMillis() - f.j;
-        BundlesManagerImpl.a(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
+        BundlesManagerImpl.e(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
         if ((!o.getAllBundles()) || (f.i < 30) || (l < 1800000L))
         {
-          BundlesManagerImpl.a(4, AppBundle, "checkAndSend is not ready.");
+          BundlesManagerImpl.e(4, AppBundle, "checkAndSend is not ready.");
           return;
         }
         if (BundlesManager.get())

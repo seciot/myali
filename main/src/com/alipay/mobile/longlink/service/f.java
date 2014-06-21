@@ -10,8 +10,8 @@ final class f extends TimerTask
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(4, a.x(), "===== ReconnTimerTask() TimerTask=====");
-    this.a.b();
+    com.alipay.mobile.longlink.c.a.e(4, a.x(), "===== ReconnTimerTask() TimerTask=====");
+    this.a.stop();
   }
 }
 

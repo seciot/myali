@@ -9,12 +9,12 @@ public class c
 {
   private static c b = null;
   private LocationManager a = null;
-  private AppBundle.a c;
+  private AppBundle.ExceptionHandler c;
   private b d;
   private String e;
   private LocationListener f = new d(this);
 
-  private c(Context paramContext, LocationManager paramLocationManager, AppBundle.a parama)
+  private c(Context paramContext, LocationManager paramLocationManager, ExceptionHandler.a parama)
   {
     this.a = paramLocationManager;
     this.c = parama;
@@ -22,7 +22,7 @@ public class c
     this.e = this.d.c(paramContext);
   }
 
-  static c a(Context paramContext, LocationManager paramLocationManager, AppBundle.a parama)
+  static c a(Context paramContext, LocationManager paramLocationManager, ExceptionHandler.a parama)
   {
     if (b == null)
       b = new c(paramContext, paramLocationManager, parama);

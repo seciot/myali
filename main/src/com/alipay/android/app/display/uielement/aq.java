@@ -10,7 +10,7 @@ final class aq
   public final void run()
   {
     if (UICombobox.g(this.b) != null)
-      this.b.a(UICombobox.g(this.b), this.a);
+      this.b.v(UICombobox.g(this.b), this.a);
   }
 }
 

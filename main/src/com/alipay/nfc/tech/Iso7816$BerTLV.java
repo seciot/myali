@@ -22,11 +22,11 @@ public final class Iso7816$BerTLV extends Iso7816
 
   private static BerTLV b(byte[] paramArrayOfByte, int paramInt)
   {
-    Iso7816.BerT localBerT = Iso7816.BerT.c(paramArrayOfByte, paramInt);
+    Iso7816.BerT localBerT = Iso7816.BerT.i(paramArrayOfByte, paramInt);
     int i = paramInt + localBerT.a();
     Iso7816.BerL localBerL = Iso7816.BerL.d(paramArrayOfByte, i);
     int j = i + localBerL.a();
-    Iso7816.BerV localBerV = Iso7816.BerV.a(paramArrayOfByte, j, localBerL.getBundleName());
+    Iso7816.BerV localBerV = Iso7816.BerV.e(paramArrayOfByte, j, localBerL.getBundleName());
     int k = j + localBerV.a();
     BerTLV localBerTLV = new BerTLV(localBerT, localBerL, localBerV);
     localBerTLV.b = Arrays.copyOfRange(paramArrayOfByte, paramInt, k);
@@ -37,16 +37,16 @@ public final class Iso7816$BerTLV extends Iso7816
   {
     if (this.c.getBundleName())
     {
-      byte[] arrayOfByte = this.e.b();
+      byte[] arrayOfByte = this.e.stop();
       int i = 0;
       int j = arrayOfByte.length;
       while (i < j)
       {
-        if (paramBerT.a(arrayOfByte, i))
+        if (paramBerT.v(arrayOfByte, i))
           return b(arrayOfByte, i);
-        int k = Iso7816.BerT.b(arrayOfByte, i);
-        int m = Iso7816.BerL.b(arrayOfByte, i + k);
-        i += Iso7816.BerL.c(arrayOfByte, i + k) + (k + m);
+        int k = Iso7816.BerT.d(arrayOfByte, i);
+        int m = Iso7816.BerL.d(arrayOfByte, i + k);
+        i += Iso7816.BerL.i(arrayOfByte, i + k) + (k + m);
       }
     }
     return null;

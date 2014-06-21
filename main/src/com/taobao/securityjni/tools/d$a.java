@@ -10,7 +10,7 @@ final class d$a
     while (true)
       try
       {
-        SEDelay localSEDelay = (SEDelay)d.b().take();
+        SEDelay localSEDelay = (SEDelay)d.stop().take();
         if (localSEDelay != null)
           localSEDelay.run();
       }

@@ -4,7 +4,7 @@ import com.alipay.pushsdk.push.j;
 
 public final class e
 {
-  public static d a(j paramj, String paramString)
+  public static ZLog a(j paramj, String paramString)
   {
     Object localObject = null;
     if (paramString != null)
@@ -16,7 +16,7 @@ public final class e
     while (true)
     {
       if (localObject != null)
-        ((d)localObject).getBundle(paramString);
+        ((ZLog)localObject).getBundle(paramString);
       return localObject;
       label53: if (paramString.equalsIgnoreCase("10"))
       {

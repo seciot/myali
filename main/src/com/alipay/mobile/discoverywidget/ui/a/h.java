@@ -11,7 +11,7 @@ final class h
 
   public final void run()
   {
-    d.b(this.b, this.a);
+    d.d(this.b, this.a);
   }
 }
 

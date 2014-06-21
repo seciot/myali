@@ -13,13 +13,13 @@ final class ae
 
   public final void run()
   {
-    Object localObject = AlipassListActivity.f(this.c).a(this.a, this.b);
+    Object localObject = AlipassListActivity.f(this.c).v(this.a, this.b);
     if ((localObject instanceof DeletePassResult))
     {
-      this.c.a((DeletePassResult)localObject, this.a, this.b);
+      this.c.e((DeletePassResult)localObject, this.a, this.b);
       return;
     }
-    this.c.a(null, null, this.b);
+    this.c.e(null, null, this.b);
     throw ((RpcException)localObject);
   }
 }

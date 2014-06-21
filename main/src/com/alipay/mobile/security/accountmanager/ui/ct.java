@@ -23,18 +23,18 @@ final class ct extends Handler
     case 0:
       this.a.dismissProgressDialog();
       MobileBindQueryRes localMobileBindQueryRes = (MobileBindQueryRes)JSON.parseObject(localBundle.get("rs").toString(), MobileBindQueryRes.class);
-      ModifyPayPwdActivity.a(this.a, localMobileBindQueryRes);
+      ModifyPayPwdActivity.v(this.a, localMobileBindQueryRes);
       return;
     case 1:
       this.a.dismissProgressDialog();
       ApplyModifyPwdResult localApplyModifyPwdResult2 = (ApplyModifyPwdResult)JSON.parseObject(localBundle.get("rs").toString(), ApplyModifyPwdResult.class);
-      ModifyPayPwdActivity.a(this.a, localApplyModifyPwdResult2);
+      ModifyPayPwdActivity.v(this.a, localApplyModifyPwdResult2);
       return;
     case 2:
     }
     this.a.dismissProgressDialog();
     ApplyModifyPwdResult localApplyModifyPwdResult1 = (ApplyModifyPwdResult)JSON.parseObject(localBundle.get("rs").toString(), ApplyModifyPwdResult.class);
-    ModifyPayPwdActivity.b(this.a, localApplyModifyPwdResult1);
+    ModifyPayPwdActivity.d(this.a, localApplyModifyPwdResult1);
   }
 }
 

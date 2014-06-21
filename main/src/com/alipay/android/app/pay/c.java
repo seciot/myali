@@ -24,8 +24,8 @@ final class c
     LogUtils.g();
     try
     {
-      String str1 = new JSONObject(RequestUtils.getBundle(RequestUtils.a(this.c.getApplicationContext(), localRequest.a(), localRequest.getBundle(this.b).toString()))).optJSONObject("data").optJSONObject("params").optString("res_data", "");
-      String str2 = TriDes.b(this.b, str1);
+      String str1 = new JSONObject(RequestUtils.getBundle(RequestUtils.e(this.c.getApplicationContext(), localRequest.a(), localRequest.getBundle(this.b).toString()))).optJSONObject("data").optJSONObject("params").optString("res_data", "");
+      String str2 = TriDes.d(this.b, str1);
       new StringBuilder("agreement:").append(str2).toString();
       LogUtils.i();
       Message localMessage = new Message();

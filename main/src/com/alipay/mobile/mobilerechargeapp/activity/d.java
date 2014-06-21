@@ -11,7 +11,7 @@ final class d
 
   public final void run()
   {
-    BalancesVerifySmsActivity_.a(this.b, this.a);
+    BalancesVerifySmsActivity_.v(this.b, this.a);
   }
 }
 

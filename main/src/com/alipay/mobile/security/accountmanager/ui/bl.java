@@ -29,7 +29,7 @@ final class bl extends Handler
     case 1:
       this.a.dismissProgressDialog();
       FoundPasswordResult localFoundPasswordResult1 = (FoundPasswordResult)JSON.parseObject(localBundle.get("rs").toString(), FoundPasswordResult.class);
-      ForgotPayPwdActivity.a(this.a, localFoundPasswordResult1);
+      ForgotPayPwdActivity.v(this.a, localFoundPasswordResult1);
       return;
     case 21:
       this.a.dismissProgressDialog();
@@ -39,13 +39,13 @@ final class bl extends Handler
     case 22:
       this.a.dismissProgressDialog();
       ApplyModifyPwdResult localApplyModifyPwdResult = (ApplyModifyPwdResult)JSON.parseObject(localBundle.get("rs").toString(), ApplyModifyPwdResult.class);
-      ForgotPayPwdActivity.a(this.a, localApplyModifyPwdResult);
+      ForgotPayPwdActivity.v(this.a, localApplyModifyPwdResult);
       return;
     case 3:
     }
     this.a.dismissProgressDialog();
     MobileSecurityResult localMobileSecurityResult1 = (MobileSecurityResult)JSON.parseObject(localBundle.get("rs").toString(), MobileSecurityResult.class);
-    ForgotPayPwdActivity.a(this.a, localMobileSecurityResult1);
+    ForgotPayPwdActivity.v(this.a, localMobileSecurityResult1);
   }
 }
 

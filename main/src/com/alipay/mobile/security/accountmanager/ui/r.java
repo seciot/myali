@@ -21,7 +21,7 @@ final class r
       if (!BindPhoneActivity.p(this.a).booleanValue())
       {
         this.a.showProgressDialog(this.a.getResources().getString(R.string.aG), false, this.a.t);
-        BindPhoneActivity.a(this.a, new Timer());
+        BindPhoneActivity.v(this.a, new Timer());
         BindPhoneActivity.q(this.a).scheduleAtFixedRate(new BindPhoneActivity.a(this.a, (byte)0), 10000L, 5000L);
         return;
       }

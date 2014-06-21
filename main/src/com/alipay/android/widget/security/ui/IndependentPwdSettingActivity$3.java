@@ -16,7 +16,7 @@ class IndependentPwdSettingActivity$3
   {
     Intent localIntent = new Intent("android.intent.action.DIAL", Uri.parse("tel:95188"));
     this.a.startActivity(localIntent);
-    IndependentPwdSettingActivity.a(this.a, false);
+    IndependentPwdSettingActivity.v(this.a, false);
   }
 }
 

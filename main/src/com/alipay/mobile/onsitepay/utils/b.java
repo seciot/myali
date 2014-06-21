@@ -50,7 +50,7 @@ final class b
                 }
                 while (this.b.get("SMS") == null);
                 ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity7 = this.c;
-                ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity7, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 1));
+                ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity7, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 1));
                 localShareContent.setTitle(((SecurityShareInfo)this.b.get("SMS")).getTitle());
                 localShareContent.setContent(((SecurityShareInfo)this.b.get("SMS")).getContent());
                 this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -59,7 +59,7 @@ final class b
               }
               while (this.b.get("SINA_WEIBO") == null);
               ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity6 = this.c;
-              ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity6, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 16));
+              ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity6, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 16));
               localShareContent.setTitle(((SecurityShareInfo)this.b.get("SINA_WEIBO")).getTitle());
               localShareContent.setContent(((SecurityShareInfo)this.b.get("SINA_WEIBO")).getContent());
               this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -68,7 +68,7 @@ final class b
             }
             while (this.b.get("LAIWANG") == null);
             ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity5 = this.c;
-            ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity5, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 1048576));
+            ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity5, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 1048576));
             localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
             localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
             this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -77,7 +77,7 @@ final class b
           }
           while (this.b.get("LAIWANG_FEED") == null);
           ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity4 = this.c;
-          ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity4, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 16777216));
+          ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity4, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 16777216));
           localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
           localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
           this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -86,7 +86,7 @@ final class b
         }
         while (this.b.get("WEIXIN_FRIEND") == null);
         ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity3 = this.c;
-        ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity3, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 256));
+        ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity3, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 256));
         localShareContent.setTitle(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND")).getTitle());
         localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND")).getContent());
         this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -95,7 +95,7 @@ final class b
       }
       while (this.b.get("WEIXIN_FRIEND_CIRCLE") == null);
       ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity2 = this.c;
-      ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity2, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 4096));
+      ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity2, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 4096));
       localShareContent.setTitle(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND_CIRCLE")).getTitle());
       localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND_CIRCLE")).getContent());
       this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
@@ -104,7 +104,7 @@ final class b
     }
     while (this.b.get("COPY_LINK") == null);
     ShareSavePicThireBtnActivity localShareSavePicThireBtnActivity1 = this.c;
-    ShareSavePicThireBtnActivity.a(localShareSavePicThireBtnActivity1, ShareSavePicThireBtnActivity.a(ShareSavePicThireBtnActivity.b(this.c), 65536));
+    ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity1, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 65536));
     localShareContent.setTitle(((SecurityShareInfo)this.b.get("COPY_LINK")).getTitle());
     localShareContent.setContent(((SecurityShareInfo)this.b.get("COPY_LINK")).getContent());
     this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);

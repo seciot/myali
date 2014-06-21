@@ -29,7 +29,7 @@ final class da
       this.a.c.setEnabled(true);
     while (true)
     {
-      ModifyPayPwdActivity.a(this.a, this.a.j.getText().toString());
+      ModifyPayPwdActivity.v(this.a, this.a.j.getText().toString());
       if ((ModifyPayPwdActivity.getBundle(this.a) == null) || ("".equals(ModifyPayPwdActivity.getBundle(this.a))))
         break;
       this.a.d.setEnabled(true);

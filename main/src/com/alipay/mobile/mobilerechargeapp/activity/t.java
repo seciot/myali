@@ -11,7 +11,7 @@ final class t
 
   public final void run()
   {
-    BalancesWarnInputActivity_.a(this.c, this.a, this.b);
+    BalancesWarnInputActivity_.e(this.c, this.a, this.b);
   }
 }
 

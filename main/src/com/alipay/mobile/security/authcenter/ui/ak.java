@@ -9,7 +9,7 @@ final class ak
 
   public final void run()
   {
-    RegisterDownSmsFragment_.a(this.b, this.a);
+    RegisterDownSmsFragment_.v(this.b, this.a);
   }
 }
 

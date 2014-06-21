@@ -33,7 +33,7 @@ public class DefaultWidgetActionStrategy
     if (paramWealthHomeInfo == null)
       return null;
     paramMap.put("tips", paramWealthHomeInfo.opText);
-    WealthDynamicTableView localWealthDynamicTableView = (WealthDynamicTableView)LayoutInflater.from(this.b).inflate(R.layout.d, null);
+    WealthDynamicTableView localWealthDynamicTableView = (WealthDynamicTableView)LayoutInflater.from(this.b).inflate(R.layout.ZLog, null);
     localWealthDynamicTableView.setDisplayInfo(paramMap);
     localWealthDynamicTableView.setViewFlag(paramInt);
     return localWealthDynamicTableView;

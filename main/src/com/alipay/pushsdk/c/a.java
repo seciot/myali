@@ -47,7 +47,7 @@ public class a
     }
     catch (Exception localException)
     {
-      c.a(3, b, "getPushHost Exception:" + localException);
+      c.e(3, b, "getPushHost Exception:" + localException);
     }
     return localHashMap;
   }
@@ -62,7 +62,7 @@ public class a
     {
       localProperties.load(new FileInputStream(Environment.getExternalStorageDirectory() + "/push_config.txt"));
       String str = localProperties.getProperty("log", "1");
-      c.a(3, b, "getLogLevel=" + str);
+      c.e(3, b, "getLogLevel=" + str);
       int j = Integer.parseInt(str);
       i = j;
       if (i > c.g)
@@ -76,7 +76,7 @@ public class a
     catch (Exception localException)
     {
       while (true)
-        c.a(3, b, "getLogLevel Exception:" + localException);
+        c.e(3, b, "getLogLevel Exception:" + localException);
     }
   }
 
@@ -97,12 +97,12 @@ public class a
         localProperties.load(new FileInputStream(Environment.getExternalStorageDirectory() + "/push_config.txt"));
         String str = localProperties.getProperty("config", "");
         localObject = str;
-        c.a(2, b, "getCnsServer:" + (String)localObject);
+        c.e(2, b, "getCnsServer:" + (String)localObject);
         return localObject;
       }
       catch (Exception localException)
       {
-        c.a(3, b, "Could not find the file:push_config.txt. error:" + localException);
+        c.e(3, b, "Could not find the file:push_config.txt. error:" + localException);
         continue;
       }
       label118: localObject = "http://mobilecns.alipay.com";
@@ -113,7 +113,7 @@ public class a
   {
     if (new File(Environment.getExternalStorageDirectory() + "/push_config.txt").exists())
       return true;
-    c.a(3, b, "Could not find the file:push_config.txt");
+    c.e(3, b, "Could not find the file:push_config.txt");
     return false;
   }
 }

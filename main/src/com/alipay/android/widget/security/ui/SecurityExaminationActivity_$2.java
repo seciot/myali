@@ -11,7 +11,7 @@ class SecurityExaminationActivity_$2
 
   public void run()
   {
-    SecurityExaminationActivity_.a(this.b, this.a);
+    SecurityExaminationActivity_.v(this.b, this.a);
   }
 }
 

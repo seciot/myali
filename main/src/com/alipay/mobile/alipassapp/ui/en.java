@@ -12,7 +12,7 @@ final class en
 
   public final void run()
   {
-    MemberCardObtainableListActivity.a(BehaviourIdEnum.SLIDED, "loadMore", null);
+    MemberCardObtainableListActivity.e(BehaviourIdEnum.SLIDED, "loadMore", null);
     MemberCardObtainableListActivity.b(this.a.a);
     this.a.a.e.getFullBundleName();
     this.a.a.a();

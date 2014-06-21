@@ -13,7 +13,7 @@ final class s
   {
     try
     {
-      BalancesWarnInputActivity.a(this.b.a, this.a);
+      BalancesWarnInputActivity.v(this.b.a, this.a);
       return;
     }
     catch (JSONException localJSONException)

@@ -187,7 +187,7 @@ public class BarcodePayActivity extends BasicFacePayerActivity
   {
     try
     {
-      com.alipay.mobile.onsitepay.payer.sound.a.a(getApplicationContext(), "barcodePromptFlag", "true");
+      com.alipay.mobile.onsitepay.payer.sound.a.e(getApplicationContext(), "barcodePromptFlag", "true");
       View localView = LayoutInflater.from(this).inflate(com.alipay.mobile.onsitepay.e.d, null);
       this.x = new PopupWindow(localView, -1, -1, true);
       this.x.setFocusable(true);
@@ -205,7 +205,7 @@ public class BarcodePayActivity extends BasicFacePayerActivity
 
   private boolean s()
   {
-    String str = com.alipay.mobile.onsitepay.payer.sound.a.a(getApplicationContext(), "barcodePromptFlag");
+    String str = com.alipay.mobile.onsitepay.payer.sound.a.v(getApplicationContext(), "barcodePromptFlag");
     new StringBuilder("barcodePromptFlag=").append(str).toString();
     return "true".equals(str);
   }

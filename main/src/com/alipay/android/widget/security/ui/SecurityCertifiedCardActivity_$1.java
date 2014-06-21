@@ -11,7 +11,7 @@ class SecurityCertifiedCardActivity_$1
 
   public void run()
   {
-    SecurityCertifiedCardActivity_.a(this.b, this.a);
+    SecurityCertifiedCardActivity_.v(this.b, this.a);
   }
 }
 

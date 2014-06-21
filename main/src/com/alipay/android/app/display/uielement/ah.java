@@ -19,7 +19,7 @@ final class ah
   {
     if ((!TextUtils.isEmpty(this.b.getBundle("toast_message"))) && (TextUtils.equals(this.b.getBundle("show_toast"), "true")))
     {
-      UICheckBox.a(this.b, this.a);
+      UICheckBox.v(this.b, this.a);
       return;
     }
     if (!this.a);

@@ -67,7 +67,7 @@ public final class l extends BaseAdapter
       localEinfoFields = (AlipassInfo.EinfoFields)this.a.get(paramInt);
       if (localEinfoFields != null)
       {
-        localo1.b.setTextColor(com.alipay.mobile.alipassapp.ui.common.a.a(this.b.a, localEinfoFields));
+        localo1.b.setTextColor(com.alipay.mobile.alipassapp.ui.common.a.v(this.b.a, localEinfoFields));
         localo1.a.setText(localEinfoFields.getLabel());
         localo1.b.setText(localEinfoFields.getValue());
         i = com.alipay.mobile.alipassapp.ui.common.a.b(localEinfoFields.getType());

@@ -9,7 +9,7 @@ final class dq
 
   public final void run()
   {
-    SelectAccountActivity_.a(this.b, this.a);
+    SelectAccountActivity_.v(this.b, this.a);
   }
 }
 

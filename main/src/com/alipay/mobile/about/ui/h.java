@@ -15,7 +15,7 @@ final class h
 
   public final void onClick(View paramView)
   {
-    this.a.b();
+    this.a.stop();
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, AboutMainActivity.b(this.a).getAppId(), "-", "aboutIndex", "checkUpdates");
   }
 }

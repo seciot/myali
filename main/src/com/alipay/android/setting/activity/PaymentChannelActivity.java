@@ -86,10 +86,10 @@ public class PaymentChannelActivity extends BaseSettingActivity
 
   private void d()
   {
-    FrameLayout.LayoutParams localLayoutParams = new FrameLayout.LayoutParams(-1, UIPropUtil.a(this, 45.0F));
+    FrameLayout.LayoutParams localLayoutParams = new FrameLayout.LayoutParams(-1, UIPropUtil.v(this, 45.0F));
     localLayoutParams.gravity = 16;
-    int i1 = UIPropUtil.a(this, 10.0F);
-    int i2 = UIPropUtil.a(this, 16.0F);
+    int i1 = UIPropUtil.v(this, 10.0F);
+    int i2 = UIPropUtil.v(this, 16.0F);
     int i3 = this.s.size();
     if (i3 > 0)
     {

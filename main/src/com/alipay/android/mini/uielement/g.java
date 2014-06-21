@@ -16,7 +16,7 @@ final class g
     if (this.a.c != null);
     for (ActionType[] arrayOfActionType = ActionType.getBundle(this.a.c); ; arrayOfActionType = ActionType.getBundle(this.a.getAllComponentNames()))
     {
-      this.a.a(this.a, arrayOfActionType);
+      this.a.v(this.a, arrayOfActionType);
       return;
     }
   }

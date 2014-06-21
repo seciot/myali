@@ -21,7 +21,7 @@ class ReflectiveProperty<T, V> extends Property<T, V>
     {
       this.b = paramClass.getMethod(str3, null);
       localClass2 = this.b.getReturnType();
-      if (!a(paramClass1, localClass2))
+      if (!v(paramClass1, localClass2))
         throw new NoSuchPropertyException("Underlying type (" + localClass2 + ") does not match Property type (" + paramClass1 + ")");
     }
     catch (NoSuchMethodException localNoSuchMethodException1)
@@ -54,7 +54,7 @@ class ReflectiveProperty<T, V> extends Property<T, V>
               {
                 this.c = paramClass.getField(paramString);
                 Class localClass1 = this.c.getType();
-                if (a(paramClass1, localClass1))
+                if (v(paramClass1, localClass1))
                   break label355;
                 throw new NoSuchPropertyException("Underlying type (" + localClass1 + ") does not match Property type (" + paramClass1 + ")");
               }

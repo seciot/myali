@@ -12,7 +12,7 @@ final class dn
 
   public final void onClick(View paramView)
   {
-    SelectAccountActivity.a(this.a.c, null);
+    SelectAccountActivity.v(this.a.c, null);
   }
 }
 

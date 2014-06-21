@@ -27,7 +27,7 @@ final class b
       this.b.getBundle(this.a);
     }
     HomeLogAgentUtil.removeBundle(this.a.getAppId());
-    AppCenterOnItemLongClickListener.a(this.c, this.a);
+    AppCenterOnItemLongClickListener.v(this.c, this.a);
   }
 }
 

@@ -23,14 +23,14 @@ class NFCMainActivity$CardInfoTask extends AsyncTask<Intent, Void, Void>
     try
     {
       Tag localTag = (Tag)localIntent.getParcelableExtra("android.nfc.extra.TAG");
-      NFCMainActivity.a(this.a, IsoDep.get(localTag));
-      NFCMainActivity.a(this.a, PbocCard.a(localIntent, this.a.getResources()));
+      NFCMainActivity.v(this.a, IsoDep.get(localTag));
+      NFCMainActivity.v(this.a, PbocCard.v(localIntent, this.a.getResources()));
       NFCMainActivity localNFCMainActivity = this.a;
       CardInfo localCardInfo = NFCMainActivity.d(this.a);
       if ((localCardInfo == null) || (localCardInfo.f() == null) || (TextUtils.isEmpty(localCardInfo.a())))
       {
         bool = true;
-        NFCMainActivity.a(localNFCMainActivity, bool);
+        NFCMainActivity.v(localNFCMainActivity, bool);
         l = System.currentTimeMillis();
         if (l - this.b >= 1000L);
       }

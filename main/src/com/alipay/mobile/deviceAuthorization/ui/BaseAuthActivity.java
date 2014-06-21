@@ -431,7 +431,7 @@ public abstract class BaseAuthActivity extends BaseActivity
         ConfirmApproveReq localConfirmApproveReq = new ConfirmApproveReq();
         localConfirmApproveReq.mobileOperationEnvironment = BaseAuthActivity.n(BaseAuthActivity.this);
         MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.getBundle(BaseAuthActivity.this).queryCertification();
-        localConfirmApproveReq.password = BaseAuthActivity.c(BaseAuthActivity.this, (String)paramArrayOfObject[0]);
+        localConfirmApproveReq.password = BaseAuthActivity.i(BaseAuthActivity.this, (String)paramArrayOfObject[0]);
         localConfirmApproveReq.approveId = BaseAuthActivity.b(BaseAuthActivity.this);
         localConfirmApproveReq.approveType = BaseAuthActivity.c(BaseAuthActivity.this);
         localConfirmApproveReq.targetId = BaseAuthActivity.d(BaseAuthActivity.this);
@@ -467,7 +467,7 @@ public abstract class BaseAuthActivity extends BaseActivity
 
     protected final void onPreExecute()
     {
-      BaseAuthActivity.a(BaseAuthActivity.this, "Confirming");
+      BaseAuthActivity.v(BaseAuthActivity.this, "Confirming");
       BaseAuthActivity.this.showProgressDialog("", true, new v(this));
     }
   }
@@ -524,7 +524,7 @@ public abstract class BaseAuthActivity extends BaseActivity
 
     protected final void onPreExecute()
     {
-      BaseAuthActivity.a(BaseAuthActivity.this, "Preparing");
+      BaseAuthActivity.v(BaseAuthActivity.this, "Preparing");
       BaseAuthActivity.this.showProgressDialog("", true, new z(this));
     }
   }

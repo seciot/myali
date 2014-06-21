@@ -8,7 +8,7 @@ import com.alipay.mobile.onsitepay.a.b.a;
 import com.alipay.mobile.onsitepay.a.b.d;
 
 public final class f
-  implements d
+  implements ZLog
 {
   LocalBroadcastManager a = null;
   BroadcastReceiver b = null;

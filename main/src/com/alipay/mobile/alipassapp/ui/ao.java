@@ -23,7 +23,7 @@ final class ao
       if (AlipassListActivity.b(this.a).get())
         return true;
       BaseAlipassInfoItem.AlipassInfoItem localAlipassInfoItem = (BaseAlipassInfoItem.AlipassInfoItem)localObject;
-      ai.a(this.a, new ap(this, localAlipassInfoItem));
+      ai.v(this.a, new ap(this, localAlipassInfoItem));
       return true;
     }
     return false;

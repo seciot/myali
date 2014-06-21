@@ -23,19 +23,19 @@ final class z
 
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
-    BindPhoneActivity.a(this.a, this.a.g.getInputedText().toString());
+    BindPhoneActivity.v(this.a, this.a.g.getInputedText().toString());
     if ((BindPhoneActivity.f(this.a) != null) && (!"".equals(BindPhoneActivity.f(this.a))))
     {
       this.a.h.setEnabled(true);
-      BindPhoneActivity.b(this.a, this.a.i.getInputedText().toString());
+      BindPhoneActivity.d(this.a, this.a.i.getInputedText().toString());
       if ((BindPhoneActivity.g(this.a) == null) || ("".equals(BindPhoneActivity.g(this.a))))
         break label254;
-      BindPhoneActivity.b(this.a, BindPhoneActivity.g(this.a).replace(" ", ""));
+      BindPhoneActivity.d(this.a, BindPhoneActivity.g(this.a).replace(" ", ""));
       this.a.j.setEnabled(true);
     }
     while (true)
     {
-      BindPhoneActivity.c(this.a, this.a.l.getText().toString());
+      BindPhoneActivity.i(this.a, this.a.l.getText().toString());
       BindPhoneActivity.d(this.a, this.a.m.getInputedText().toString());
       if ((BindPhoneActivity.h(this.a) == null) || ("".equals(BindPhoneActivity.h(this.a))) || (BindPhoneActivity.i(this.a) == null) || ("".equals(BindPhoneActivity.i(this.a))))
         break label268;

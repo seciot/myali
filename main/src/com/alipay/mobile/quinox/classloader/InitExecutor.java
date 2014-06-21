@@ -178,7 +178,7 @@ public class InitExecutor
     }
     catch (Exception localException)
     {
-      com.alipay.mobile.quinox.utils.d.a("InitExecutor", "get dalvik.vm.dexopt-flags error", localException);
+      com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor", "get dalvik.vm.dexopt-flags error", localException);
     }
     return "m=y";
   }
@@ -197,13 +197,13 @@ public class InitExecutor
     }
     catch (InterruptedException localInterruptedException)
     {
-      com.alipay.mobile.quinox.utils.d.a("InitExecutor", "create classloader error", localInterruptedException);
+      com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor", "create classloader error", localInterruptedException);
       return null;
     }
     catch (ExecutionException localExecutionException)
     {
       while (true)
-        com.alipay.mobile.quinox.utils.d.a("InitExecutor", "create classloader error", localExecutionException);
+        com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor", "create classloader error", localExecutionException);
     }
   }
 

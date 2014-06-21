@@ -39,12 +39,12 @@ public class a extends BundlesManager
 
   public static String setBundlePath(byte[] paramArrayOfByte)
   {
-    return BundlesManagerImpl.removeBundle(a(paramArrayOfByte, false));
+    return BundlesManagerImpl.removeBundle(v(paramArrayOfByte, false));
   }
 
   public static byte[] a(byte[] paramArrayOfByte, boolean paramBoolean)
   {
-    return a(paramArrayOfByte, paramBoolean, false);
+    return e(paramArrayOfByte, paramBoolean, false);
   }
 
   public static byte[] a(byte[] paramArrayOfByte, boolean paramBoolean1, boolean paramBoolean2)

@@ -202,7 +202,7 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
   {
     this.S = true;
     this.d.setVisibility(0);
-    SecurityUtil.b(this, this.d);
+    SecurityUtil.d(this, this.d);
     ArrayList localArrayList = new ArrayList();
     if ((paramList != null) && (paramList.size() > 0))
       for (int i1 = 0; i1 < paramList.size(); i1++)
@@ -301,7 +301,7 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
   private void e(String paramString)
   {
     this.h.setVisibility(0);
-    this.V.a(this.Y, this.D, new an(this, paramString));
+    this.V.e(this.Y, this.D, new an(this, paramString));
     this.V.b();
   }
 
@@ -477,7 +477,7 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
     this.a.setVisibility(0);
     this.f.setVisibility(0);
     this.o.setText("");
-    SecurityUtil.c(this, this.o.getEtContent());
+    SecurityUtil.i(this, this.o.getEtContent());
     this.a.setTitleText(getResources().getString(R.string.ap).toString());
     this.o.getEtContent().requestFocus();
     this.H = Boolean.valueOf(true);
@@ -592,7 +592,7 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
     }
     else
       return;
-    SecurityCommonDialogUtil.a(this, this.mApp, paramApplyModifyPwdResult);
+    SecurityCommonDialogUtil.e(this, this.mApp, paramApplyModifyPwdResult);
   }
 
   public final void a(VerifySmsAndUserStatusResp paramVerifySmsAndUserStatusResp)
@@ -660,10 +660,10 @@ public class ForgotLoginPwdActivity extends BaseFragmentActivity
           this.Y = this.z;
           String str1 = paramVerifySmsAndUserStatusResp.getResultCode();
           this.e.setVisibility(0);
-          SecurityUtil.b(this, this.e);
+          SecurityUtil.d(this, this.e);
           this.T = true;
           this.R.getBundle(this.mApp);
-          this.R.a(this.mApp, this.Y, new aq(this, str1));
+          this.R.e(this.mApp, this.Y, new aq(this, str1));
           return;
         }
       }

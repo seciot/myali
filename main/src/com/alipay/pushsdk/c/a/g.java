@@ -31,14 +31,14 @@ public final class g
 
   public final void a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5)
   {
-    this.b.put(f.d, paramString1);
+    this.b.put(f.ZLog, paramString1);
     this.b.put(f.f, paramString2);
     this.b.put(f.e, paramString3);
     this.b.put(f.BundlesManagerImpl, paramString4);
     this.b.put(f.g, paramString5);
   }
 
-  public final void b()
+  public final void stop()
   {
     this.b.clear();
   }

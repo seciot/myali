@@ -9,7 +9,7 @@ class CanNotCertifiedFragment_$1
 
   public void run()
   {
-    CanNotCertifiedFragment_.a(this.b, this.a);
+    CanNotCertifiedFragment_.v(this.b, this.a);
   }
 }
 

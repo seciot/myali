@@ -12,7 +12,7 @@ final class af
 
   public final void onClick(View paramView)
   {
-    LoginLogsActivity.a(this.a, true);
+    LoginLogsActivity.v(this.a, true);
   }
 }
 

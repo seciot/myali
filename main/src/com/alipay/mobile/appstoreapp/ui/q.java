@@ -19,14 +19,14 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
     try
     {
       if (this.a.a)
-        FastLoginAppActivity.a(this.a, 2048);
+        FastLoginAppActivity.v(this.a, 2048);
       while (true)
       {
-        Page localPage = FastLoginAppActivity.c(this.a).a(FastLoginAppActivity.getBundle(this.a), FastLoginAppActivity.b(this.a));
+        Page localPage = FastLoginAppActivity.c(this.a).v(FastLoginAppActivity.getBundle(this.a), FastLoginAppActivity.b(this.a));
         if (this.a.a)
           FastLoginAppActivity.getBundleName();
         return new QueryResult(1000, "", localPage);
-        FastLoginAppActivity.a(this.a, 20);
+        FastLoginAppActivity.v(this.a, 20);
       }
     }
     catch (AppStoreException localAppStoreException)

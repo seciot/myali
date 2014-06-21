@@ -46,7 +46,7 @@ public class b
     while (true)
     {
       localNotifierInfo.a(localb);
-      com.alipay.pushsdk.c.a.c.a(3, a, "processMsgList() curPerMsgId=" + localb.c() + ", bizType=" + localNotifierInfo.f() + ", uri=" + localNotifierInfo.d() + ", title=" + localNotifierInfo.a() + ", content=" + localNotifierInfo.b());
+      com.alipay.pushsdk.c.a.c.e(3, a, "processMsgList() curPerMsgId=" + localb.c() + ", bizType=" + localNotifierInfo.f() + ", uri=" + localNotifierInfo.d() + ", title=" + localNotifierInfo.a() + ", content=" + localNotifierInfo.b());
       return localNotifierInfo;
       localb.d(paramJSONObject.optString("notificationMissionId"));
       localb.c(paramJSONObject.optString("notificationId"));
@@ -135,7 +135,7 @@ public class b
     String str6 = locald.a("ZIP_FLAG");
     if ((str6 != null) && (str6.length() > 0))
       locala.e = str6;
-    com.alipay.pushsdk.c.a.c.a(4, a, "cfgId:" + locala.a + ", domain:" + locala.b + ", port:" + locala.c + ", ssl:" + locala.d + ", protoVersion:" + locala.f);
+    com.alipay.pushsdk.c.a.c.e(4, a, "cfgId:" + locala.a + ", domain:" + locala.b + ", port:" + locala.c + ", ssl:" + locala.d + ", protoVersion:" + locala.f);
     return locala;
   }
 
@@ -149,17 +149,17 @@ public class b
       if (((com.alipay.pushsdk.data.c)localObject).a(paramNotifierInfo))
         break;
       ((com.alipay.pushsdk.data.c)localObject).b(paramNotifierInfo);
-      com.alipay.pushsdk.c.a.c.a(4, a, "processMsgList() will show msg.");
+      com.alipay.pushsdk.c.a.c.e(4, a, "processMsgList() will show msg.");
       Intent localIntent = new Intent(paramString);
       Bundle localBundle = new Bundle();
       localBundle.putParcelable("notifier_parcelable", paramNotifierInfo);
       localIntent.putExtras(localBundle);
       this.b.sendBroadcast(localIntent);
-      com.alipay.pushsdk.c.a.c.a(4, a, "showMsgDetail() sendBroadcast!");
+      com.alipay.pushsdk.c.a.c.e(4, a, "showMsgDetail() sendBroadcast!");
       return;
     }
-    com.alipay.pushsdk.c.a.c.a(2, a, "processMsgList() Drop the Packet!");
-    com.alipay.pushsdk.c.a.c.a(3, a, "processMsgList() curMissionId=" + localb.d() + ", curPerMsgId=" + localb.c() + ", curPubMsgId=" + localb.b());
+    com.alipay.pushsdk.c.a.c.e(2, a, "processMsgList() Drop the Packet!");
+    com.alipay.pushsdk.c.a.c.e(3, a, "processMsgList() curMissionId=" + localb.d() + ", curPerMsgId=" + localb.c() + ", curPubMsgId=" + localb.b());
   }
 
   public final void a(a parama)
@@ -193,7 +193,7 @@ public class b
         locala.f = localJSONObject.optInt("version");
         String str = localJSONObject.optString("ctrlTime", "true");
         new com.alipay.pushsdk.push.o(this.b).b(str);
-        com.alipay.pushsdk.c.a.c.a(3, a, "processCfgData() cfgId=" + paramString2 + ", domain=" + locala.b + ", port=" + locala.c + ", protoVersion=" + locala.f + ", encryptFlag=" + locala.d + ", zipFlag=" + locala.e + ", timeCtrl=" + str);
+        com.alipay.pushsdk.c.a.c.e(3, a, "processCfgData() cfgId=" + paramString2 + ", domain=" + locala.b + ", port=" + locala.c + ", protoVersion=" + locala.f + ", encryptFlag=" + locala.d + ", zipFlag=" + locala.e + ", timeCtrl=" + str);
         a(locala);
         return;
       }
@@ -202,7 +202,7 @@ public class b
         localJSONException.printStackTrace();
         return;
       }
-    com.alipay.pushsdk.c.a.c.a(2, a, "processCfgData() cfgData is null!");
+    com.alipay.pushsdk.c.a.c.e(2, a, "processCfgData() cfgData is null!");
   }
 
   public final void a(String paramString, boolean paramBoolean)
@@ -212,7 +212,7 @@ public class b
       try
       {
         JSONArray localJSONArray = new JSONArray(paramString);
-        com.alipay.pushsdk.c.a.c.a(3, a, "processMsgList() pubFlag:" + paramBoolean + ", msgLen=" + localJSONArray.length());
+        com.alipay.pushsdk.c.a.c.e(3, a, "processMsgList() pubFlag:" + paramBoolean + ", msgLen=" + localJSONArray.length());
         new JSONObject();
         for (int i = 0; i < localJSONArray.length(); i++)
           a(a(localJSONArray.getJSONObject(i), paramBoolean), this.b.getPackageName() + ".push.action.SHOW_NOTIFICATION");
@@ -223,7 +223,7 @@ public class b
       }
       return;
     }
-    com.alipay.pushsdk.c.a.c.a(2, a, "processMsgList() msgData is null!");
+    com.alipay.pushsdk.c.a.c.e(2, a, "processMsgList() msgData is null!");
   }
 
   public final JSONObject b()
@@ -255,7 +255,7 @@ public class b
         localJSONObject.put("connectType", c.a(this.b));
         localJSONObject.put("mobileStatus", a(this.b));
         localJSONObject.put("regionIP", h.a());
-        com.alipay.pushsdk.c.a.c.a(3, a, "getRequestObj() requestData=" + localJSONObject.toString());
+        com.alipay.pushsdk.c.a.c.e(3, a, "getRequestObj() requestData=" + localJSONObject.toString());
         return localJSONObject;
       }
       catch (IllegalAccessException localIllegalAccessException)

@@ -10,7 +10,7 @@ final class k extends Thread
 
   public final void run()
   {
-    HomeAppsOnItemLongClickListener.b(this.b, this.a);
+    HomeAppsOnItemLongClickListener.d(this.b, this.a);
   }
 }
 

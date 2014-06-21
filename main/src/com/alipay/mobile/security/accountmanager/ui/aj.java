@@ -26,12 +26,12 @@ final class aj extends Handler
     case 1:
       this.a.dismissProgressDialog();
       ApplyModifyPwdResult localApplyModifyPwdResult2 = (ApplyModifyPwdResult)JSON.parseObject(localBundle.get("rs").toString(), ApplyModifyPwdResult.class);
-      ForgotLoginPwdActivity.a(this.a, localApplyModifyPwdResult2);
+      ForgotLoginPwdActivity.v(this.a, localApplyModifyPwdResult2);
       return;
     case 5:
       this.a.dismissProgressDialog();
       PreCheckAndSendSmsResp localPreCheckAndSendSmsResp = (PreCheckAndSendSmsResp)JSON.parseObject(localBundle.get("rs").toString(), PreCheckAndSendSmsResp.class);
-      ForgotLoginPwdActivity.a(this.a, localPreCheckAndSendSmsResp);
+      ForgotLoginPwdActivity.v(this.a, localPreCheckAndSendSmsResp);
       return;
     case 2:
       this.a.dismissProgressDialog();
@@ -46,13 +46,13 @@ final class aj extends Handler
     case 3:
       this.a.dismissProgressDialog();
       MobileSecurityResult localMobileSecurityResult2 = (MobileSecurityResult)JSON.parseObject(localBundle.get("rs").toString(), MobileSecurityResult.class);
-      ForgotLoginPwdActivity.a(this.a, localMobileSecurityResult2);
+      ForgotLoginPwdActivity.v(this.a, localMobileSecurityResult2);
       return;
     case 4:
     }
     this.a.dismissProgressDialog();
     MobileSecurityResult localMobileSecurityResult1 = (MobileSecurityResult)JSON.parseObject(localBundle.get("rs").toString(), MobileSecurityResult.class);
-    ForgotLoginPwdActivity.b(this.a, localMobileSecurityResult1);
+    ForgotLoginPwdActivity.d(this.a, localMobileSecurityResult1);
   }
 }
 

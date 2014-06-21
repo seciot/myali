@@ -12,7 +12,7 @@ final class bb
 
   public final void onSend(SendResultCallback paramSendResultCallback)
   {
-    ForgotLoginPwdActivity.a(this.a, null);
+    ForgotLoginPwdActivity.v(this.a, null);
     ForgotLoginPwdActivity.getBundle(this.a);
     if (1 == ForgotLoginPwdActivity.b(this.a))
       new Thread(new ForgotLoginPwdActivity.a(this.a, 1, (byte)0)).start();

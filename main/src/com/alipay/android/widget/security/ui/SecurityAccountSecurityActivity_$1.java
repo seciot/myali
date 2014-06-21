@@ -11,7 +11,7 @@ class SecurityAccountSecurityActivity_$1
 
   public void run()
   {
-    SecurityAccountSecurityActivity_.a(this.b, this.a);
+    SecurityAccountSecurityActivity_.v(this.b, this.a);
   }
 }
 

@@ -254,7 +254,7 @@ public class AccountInfoActivity extends BaseActivity
     public final void onReceive(Context paramContext, Intent paramIntent)
     {
       String str = paramIntent.getAction();
-      AccountInfoActivity.a(AccountInfoActivity.this, AccountInfoActivity.p(AccountInfoActivity.this).getUserInfo());
+      AccountInfoActivity.v(AccountInfoActivity.this, AccountInfoActivity.p(AccountInfoActivity.this).getUserInfo());
       AccountInfoActivity.d(AccountInfoActivity.this);
       new StringBuilder("name certified receive action: ").append(str).toString();
       if ("com.alipay.mobile.android.main.avatar.action.changed".equalsIgnoreCase(str))

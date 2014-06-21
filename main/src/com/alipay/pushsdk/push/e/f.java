@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 import com.alipay.pushsdk.c.a.e;
 import com.alipay.pushsdk.push.j;
 
-public class f extends d
+public class f extends ZLog
 {
   private static final String c = BundlesManagerImpl.getBundle(f.class);
 
@@ -15,24 +15,24 @@ public class f extends d
 
   public final void a()
   {
-    if ((Integer.parseInt(b()) < Integer.parseInt("10")) && (!this.a.r()))
+    if ((Integer.parseInt(stop()) < Integer.parseInt("10")) && (!this.a.r()))
       if (this.a != null)
       {
         this.a.b(0L);
         this.a.d(0L);
-        BundlesManagerImpl.a(4, BundlesManagerImpl, "clearLastConnInfo done!");
+        BundlesManagerImpl.e(4, BundlesManagerImpl, "clearLastConnInfo done!");
         this.a.getBundle(System.currentTimeMillis());
       }
     while (this.a.r())
     {
       this.a.u();
-      e.a(b(), "41", "3");
+      e.e(stop(), "41", "3");
       return;
-      BundlesManagerImpl.a(3, BundlesManagerImpl, "onPreExecute Connected is true.");
+      BundlesManagerImpl.e(3, BundlesManagerImpl, "onPreExecute Connected is true.");
       this.a.getBundle(System.currentTimeMillis());
     }
-    this.a.b();
-    e.a(b(), "40", "6");
+    this.a.stop();
+    e.e(stop(), "40", "6");
   }
 
   public final boolean getInitLevel()
@@ -41,11 +41,11 @@ public class f extends d
     if (!getFullBundleName())
     {
       bool = false;
-      e.a(b(), "10", "6");
+      e.e(stop(), "10", "6");
     }
     while (true)
     {
-      BundlesManagerImpl.a(3, BundlesManagerImpl, "UserTrigger checkState is " + bool);
+      BundlesManagerImpl.e(3, BundlesManagerImpl, "UserTrigger checkState is " + bool);
       return bool;
       bool = true;
     }

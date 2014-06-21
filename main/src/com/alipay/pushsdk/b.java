@@ -28,7 +28,7 @@ final class b
       localIntent.putExtra("cur_userId", str2);
       localIntent.putExtra("cur_utdId", localh.d());
       localIntent.putExtra("cur_msptId", localh.e());
-      BundlesManagerImpl.a(3, a.getBundleName(), "action=" + localIntent.getAction() + ", userid=" + str2);
+      BundlesManagerImpl.e(3, a.getBundleName(), "action=" + localIntent.getAction() + ", userid=" + str2);
     }
     a.getBundle(this.a).startService(localIntent);
   }

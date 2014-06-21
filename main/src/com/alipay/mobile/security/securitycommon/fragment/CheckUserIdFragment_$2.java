@@ -9,7 +9,7 @@ class CheckUserIdFragment_$2
 
   public void run()
   {
-    CheckUserIdFragment_.a(this.b, this.a);
+    CheckUserIdFragment_.v(this.b, this.a);
   }
 }
 

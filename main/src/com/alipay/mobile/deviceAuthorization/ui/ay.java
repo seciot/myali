@@ -12,7 +12,7 @@ final class ay
 
   public final void run()
   {
-    TempAuthActivity_.a(this.c, this.a, this.b);
+    TempAuthActivity_.e(this.c, this.a, this.b);
   }
 }
 

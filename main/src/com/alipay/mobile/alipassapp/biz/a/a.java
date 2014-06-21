@@ -44,7 +44,7 @@ public abstract interface a
 
   public abstract PassInfoResult b(String paramString1, String paramString2);
 
-  public abstract List<AlipassOfflineV2> b();
+  public abstract List<AlipassOfflineV2> stop();
 
   public abstract void b(List<String> paramList, String paramString);
 

@@ -19,7 +19,7 @@ final class bp
     {
       bn localbn = (bn)localIterator.next();
       if (localbn.i() == paramInt)
-        UIRadioGroup.a(this.a, localbn.e());
+        UIRadioGroup.v(this.a, localbn.e());
     }
   }
 }

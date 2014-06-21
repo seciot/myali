@@ -12,7 +12,7 @@ final class bs
   public final void BindPhoneResult(boolean paramBoolean)
   {
     if (paramBoolean)
-      this.a.a.c.a(this.a.a.a, this.a.a.b);
+      this.a.a.c.v(this.a.a.a, this.a.a.b);
   }
 }
 

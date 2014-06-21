@@ -9,7 +9,7 @@ class SecurityPasswordManagerActivity_$2
 
   public void run()
   {
-    SecurityPasswordManagerActivity_.b(this.b, this.a);
+    SecurityPasswordManagerActivity_.d(this.b, this.a);
   }
 }
 

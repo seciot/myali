@@ -12,7 +12,7 @@ final class l
 
   public final void onClick(View paramView)
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

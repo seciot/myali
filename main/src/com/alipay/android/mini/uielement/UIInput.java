@@ -68,7 +68,7 @@ public class UIInput extends BaseElement
         break label151;
     label151: for (Object localObject = new o(this); ; localObject = null)
     {
-      Drawable localDrawable = UIPropUtil.a(R.drawable.x, localResources);
+      Drawable localDrawable = UIPropUtil.v(R.drawable.x, localResources);
       while (true)
       {
         if ((localObject != null) && (localDrawable != null))
@@ -76,7 +76,7 @@ public class UIInput extends BaseElement
         return;
         if (TextUtils.equals(this.m, "cvv"))
         {
-          localDrawable = UIPropUtil.a(R.drawable.G, localResources);
+          localDrawable = UIPropUtil.v(R.drawable.G, localResources);
           localObject = new MiniEventArgs(ActionType.J);
         }
         else

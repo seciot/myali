@@ -79,7 +79,7 @@ public class MspWindow
       }
       try
       {
-        localJSONObject.put(localSubmitValue.a(), localSubmitValue.b());
+        localJSONObject.put(localSubmitValue.a(), localSubmitValue.stop());
         label121: i2++;
         continue;
         if (this.g != null)
@@ -266,10 +266,10 @@ public class MspWindow
         {
           localJSONObject1.toString();
           LogUtils.g();
-          localUIWindow.a(localJSONObject1.optJSONObject(ElementType.t.a()), localJSONObject2);
-          localUIWindow.c(localJSONObject1.optJSONObject(ElementType.s.a()), localJSONObject2);
+          localUIWindow.v(localJSONObject1.optJSONObject(ElementType.t.a()), localJSONObject2);
+          localUIWindow.i(localJSONObject1.optJSONObject(ElementType.s.a()), localJSONObject2);
           localUIWindow.getBundle(localJSONObject1.optJSONArray(ElementType.w.a()));
-          localUIWindow.b(localJSONObject1.optJSONObject(ElementType.x.a()), localJSONObject2);
+          localUIWindow.d(localJSONObject1.optJSONObject(ElementType.x.a()), localJSONObject2);
         }
       }
       try

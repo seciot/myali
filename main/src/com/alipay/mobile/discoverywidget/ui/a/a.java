@@ -33,14 +33,14 @@ public class a
   private com.alipay.mobile.discoverywidget.Bundle.AppBundle f;
   private com.alipay.mobile.discoverywidget.Bundle.AppBundle g = null;
   private d h;
-  private HashMap<String, com.alipay.mobile.discoverywidget.AppBundle.a> i;
+  private HashMap<String, com.alipay.mobile.discoverywidget.ExceptionHandler.a> i;
   private CacheManagerService j;
   private String k = "_DiscoveryWidgetHomeData";
 
   private void a()
   {
     this.j = ((CacheManagerService)this.b.findServiceByInterface(CacheManagerService.class.getName()));
-    this.g = new com.alipay.mobile.discoverywidget.AppBundle.a.a(this.b);
+    this.g = new com.alipay.mobile.discoverywidget.ExceptionHandler.a.a(this.b);
     this.d = UserInfoHelper.getInstance().getUserInfo(this.b);
     if (this.d != null)
     {
@@ -50,7 +50,7 @@ public class a
     DiscoveryWidgetGroup.class.getName();
   }
 
-  private HashMap<String, com.alipay.mobile.discoverywidget.AppBundle.a> b()
+  private HashMap<String, com.alipay.mobile.discoverywidget.ExceptionHandler.a> b()
   {
     try
     {
@@ -92,7 +92,7 @@ public class a
         Object localObject = this.i.get(this.e);
         localIndexWidgetResult = null;
         if (localObject != null)
-          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.AppBundle.a)this.i.get(this.e)).a();
+          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.ExceptionHandler.a)this.i.get(this.e)).a();
       }
     }
   }
@@ -107,9 +107,9 @@ public class a
     {
       this.f.discoveryNotify(paramIndexWidgetResult);
       this.i = this.h.b();
-      com.alipay.mobile.discoverywidget.AppBundle.a locala = (com.alipay.mobile.discoverywidget.AppBundle.a)this.i.get(this.e);
+      com.alipay.mobile.discoverywidget.ExceptionHandler.a locala = (com.alipay.mobile.discoverywidget.ExceptionHandler.a)this.i.get(this.e);
       if (locala == null)
-        locala = new com.alipay.mobile.discoverywidget.AppBundle.a();
+        locala = new com.alipay.mobile.discoverywidget.ExceptionHandler.a();
       locala.getBundle(paramIndexWidgetResult);
       this.i.put(this.e, locala);
       if ((!paramIndexWidgetResult.redMark) || (paramIndexWidgetResult.tabRedMarkTip == null))

@@ -9,7 +9,7 @@ final class h
 
   public final void run()
   {
-    SMSReceiveFragment_.c(this.b, this.a);
+    SMSReceiveFragment_.i(this.b, this.a);
   }
 }
 

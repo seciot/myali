@@ -22,7 +22,7 @@ final class d
     if (str != null);
     try
     {
-      CompletePhoneUserInfoActivity.b(this.a, paramString);
+      CompletePhoneUserInfoActivity.d(this.a, paramString);
       this.a.showProgressDialog(null, true, null);
       localSetMobilePayPwdRes = CompletePhoneUserInfoActivity.b(this.a).b(CompletePhoneUserInfoActivity.getBundle(this.a), paramString, CompletePhoneUserInfoActivity.c(this.a));
       this.a.dismissProgressDialog();

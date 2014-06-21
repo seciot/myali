@@ -11,7 +11,7 @@ final class g
   {
     try
     {
-      String str = new AppBundle(this.a.a(), e.getBundle(this.b)).b(this.a.b().toString());
+      String str = new AppBundle(this.a.a(), e.getBundle(this.b)).b(this.a.stop().toString());
       if ((str != null) && (((String)str).length() > 0))
       {
         this.a.b(str);

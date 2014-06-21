@@ -18,19 +18,19 @@ public class o
 
   public final void a(String paramString)
   {
-    c.a(3, a, "setNotifyState() state=" + paramString);
+    c.e(3, a, "setNotifyState() state=" + paramString);
     d locald = d.a(this.b);
     a locala = new a(this.b);
     if ((paramString != null) && (paramString.equals("false")))
     {
-      c.a(3, a, "setNotifyState() stopService!");
+      c.e(3, a, "setNotifyState() stopService!");
       locala.a();
       locald.a("setting_notify_state", paramString);
       return;
     }
     locald.a("setting_notify_state", paramString);
     locala.a("2");
-    c.a(3, a, "setNotifyState() startService!");
+    c.e(3, a, "setNotifyState() startService!");
   }
 
   public final boolean a()
@@ -69,7 +69,7 @@ public class o
   public final boolean d()
   {
     String str = d.a(this.b).a("setting_tracelog_state");
-    c.a(4, a, "getTraceLogState=" + str);
+    c.e(4, a, "getTraceLogState=" + str);
     boolean bool = false;
     if (str != null)
     {
@@ -96,12 +96,12 @@ public class o
     if ((str == null) || (str.length() == 0))
       str = "22";
     int j = Integer.parseInt(str);
-    int k = Integer.valueOf(j.b()).intValue();
-    c.a(4, a, "isNotificationTime() settingStart=" + i + ", settingEnd=" + j + ", curHour=" + k);
+    int k = Integer.valueOf(j.stop()).intValue();
+    c.e(4, a, "isNotificationTime() settingStart=" + i + ", settingEnd=" + j + ", curHour=" + k);
     if ((k < j) && (k >= i))
       return true;
     boolean bool = c();
-    c.a(4, a, "isNotificationTime() timeCtrl=" + bool);
+    c.e(4, a, "isNotificationTime() timeCtrl=" + bool);
     return !bool;
   }
 }

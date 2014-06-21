@@ -9,7 +9,7 @@ final class k
 
   public final void run()
   {
-    AccountManagerActivity_.a(this.c, this.a, this.b);
+    AccountManagerActivity_.e(this.c, this.a, this.b);
   }
 }
 

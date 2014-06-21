@@ -17,8 +17,8 @@ final class c
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(3, a.x(), "===== ConnectTask.run()=====");
-    com.alipay.mobile.longlink.c.a.a(5, a.x(), "===== ConnectTask connManager=" + this.a.hashCode());
+    com.alipay.mobile.longlink.c.a.e(3, a.x(), "===== ConnectTask.run()=====");
+    com.alipay.mobile.longlink.c.a.e(5, a.x(), "===== ConnectTask connManager=" + this.a.hashCode());
     if (!this.a.o())
     {
       a.b(this.b);
@@ -46,7 +46,7 @@ final class c
         label244: localc1.getBundle(com.alipay.mobile.longlink.b.a.d.c);
       }
     }
-    com.alipay.mobile.longlink.c.a.a(3, a.x(), "The connManager is connected now.");
+    com.alipay.mobile.longlink.c.a.e(3, a.x(), "The connManager is connected now.");
   }
 }
 

@@ -12,7 +12,7 @@ final class bv
 
   public final void run()
   {
-    SecurityUtil.c(this.a, this.a.e.getEtContent());
+    SecurityUtil.i(this.a, this.a.e.getEtContent());
   }
 }
 

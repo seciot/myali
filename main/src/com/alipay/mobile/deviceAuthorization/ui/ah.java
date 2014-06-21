@@ -11,7 +11,7 @@ final class ah
 
   public final void run()
   {
-    LoginLogsActivity_.b(this.b, this.a);
+    LoginLogsActivity_.d(this.b, this.a);
   }
 }
 

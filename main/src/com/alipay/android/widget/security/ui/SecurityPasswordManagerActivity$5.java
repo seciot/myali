@@ -24,7 +24,7 @@ class SecurityPasswordManagerActivity$5
     if (!"".equalsIgnoreCase(str.trim()))
     {
       this.c.showProgressDialog(this.c.getResources().getString(R.string.bF), false, null);
-      this.c.a(this.c.j, str, this.b);
+      this.c.e(this.c.j, str, this.b);
       return;
     }
     APToggleButton localAPToggleButton = this.c.a.getToggleButton();

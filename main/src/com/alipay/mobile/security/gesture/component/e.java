@@ -23,7 +23,7 @@ final class e
         for (Object localObject = SHA1.sha1(paramString + Des.encrypt(this.a.getUserId(), "userInfo")); (((String)localObject).equals(this.a.getGesturePwd())) && (this.c.mPatternCheckedListener != null); localObject = str)
         {
           this.c.settingGestureError(this.b, this.a, 0);
-          this.c.mPatternCheckedListener.a(false, true, false);
+          this.c.mPatternCheckedListener.e(false, true, false);
           return;
           str = SecurityCommonUtil.getMD5Str(paramString);
         }

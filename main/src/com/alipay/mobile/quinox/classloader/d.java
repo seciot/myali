@@ -40,16 +40,16 @@ public final class d extends ClassLoader
       String str;
       if ((Build.HARDWARE.toLowerCase().contains("mt6592")) && (parama1.getBundlePath().endsWith(".so")))
       {
-        str = b.a(parama1.getBundlePath(), paramString1).replace("plugins_opt", "plugins").replace(".dex", ".jar");
+        str = b.v(parama1.getBundlePath(), paramString1).replace("plugins_opt", "plugins").replace(".dex", ".jar");
         File localFile = new File(str);
         if (!localFile.exists())
         {
           BufferedInputStream localBufferedInputStream = new BufferedInputStream(new FileInputStream(parama1.getBundlePath()));
-          c.a(localBufferedInputStream, localFile);
+          c.v(localBufferedInputStream, localFile);
           localBufferedInputStream.close();
         }
       }
-      for (this.c = DexFile.loadDex(str, b.a(parama1.getBundlePath(), paramString1), 0); ; this.c = DexFile.loadDex(parama1.getBundlePath(), b.a(parama1.getBundlePath(), paramString1), 0))
+      for (this.c = DexFile.loadDex(str, b.v(parama1.getBundlePath(), paramString1), 0); ; this.c = DexFile.loadDex(parama1.getBundlePath(), b.v(parama1.getBundlePath(), paramString1), 0))
       {
         this.e = new ZipFile(parama1.getBundlePath());
         this.f = new File(parama1.getBundlePath());
@@ -155,12 +155,12 @@ public final class d extends ClassLoader
 
   public final Class loadClass(String paramString)
   {
-    com.alipay.mobile.quinox.utils.d.c("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
+    com.alipay.mobile.quinox.utils.ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
     Class localClass = this.c.loadClass(paramString, this);
     if (localClass == null)
     {
-      com.alipay.mobile.quinox.utils.d.c("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClass from depends: " + paramString);
-      localClass = a.a(paramString, getDepends());
+      com.alipay.mobile.quinox.utils.ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClass from depends: " + paramString);
+      localClass = a.v(paramString, getDepends());
       if (localClass == null)
         throw new ClassNotFoundException(this + " can,t find class: " + paramString);
     }
@@ -169,7 +169,7 @@ public final class d extends ClassLoader
 
   public final Class loadClassFromCurrent(String paramString)
   {
-    com.alipay.mobile.quinox.utils.d.c("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClassFromCurrent: " + paramString);
+    com.alipay.mobile.quinox.utils.ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":" + this + " loadClassFromCurrent: " + paramString);
     Class localClass = this.c.loadClass(paramString, this);
     if (localClass == null)
       throw new ClassNotFoundException(this + " can,t find class: " + paramString);

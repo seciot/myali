@@ -224,7 +224,7 @@ public class AuthorizeLogsActivity extends BaseActivity
 
     protected final void onAutoLoadMore()
     {
-      AuthorizeLogsActivity.b();
+      AuthorizeLogsActivity.stop();
       AuthorizeLogsActivity.this.a();
     }
 

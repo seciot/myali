@@ -52,7 +52,7 @@ final class an
     }
     if ("700".equalsIgnoreCase(localMobileSecurityResult.getResultCode()))
     {
-      SecurityCommonDialogUtil.a(this.b, ForgotLoginPwdActivity.C(this.b), localMobileSecurityResult);
+      SecurityCommonDialogUtil.e(this.b, ForgotLoginPwdActivity.C(this.b), localMobileSecurityResult);
       return;
     }
     this.b.alert(null, localMobileSecurityResult.getMessage(), "确定", new ap(this, paramPwdHistoryClearCallBack), null, null);

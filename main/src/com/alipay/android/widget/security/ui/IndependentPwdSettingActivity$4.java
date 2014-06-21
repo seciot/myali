@@ -12,7 +12,7 @@ class IndependentPwdSettingActivity$4
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    IndependentPwdSettingActivity.a(this.a, false);
+    IndependentPwdSettingActivity.v(this.a, false);
   }
 }
 

@@ -11,7 +11,7 @@ final class az
 
   public final void onRefresh()
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

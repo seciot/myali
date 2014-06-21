@@ -62,7 +62,7 @@ public class RegisterDownSmsFragment extends BaseRegisterUserFragment
     int i = paramSendSmsCodeRes.resultStatus;
     if (i == 1000)
     {
-      SecurityUtil.b(this.a, this.d.getEtContent());
+      SecurityUtil.d(this.a, this.d.getEtContent());
       this.a.a(paramString);
       this.a.b(40);
       return;

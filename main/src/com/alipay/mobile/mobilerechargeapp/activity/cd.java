@@ -13,7 +13,7 @@ final class cd
   {
     try
     {
-      MobileRechargeCashierActivity.a(this.b.a, this.a);
+      MobileRechargeCashierActivity.v(this.b.a, this.a);
       return;
     }
     catch (JSONException localJSONException)

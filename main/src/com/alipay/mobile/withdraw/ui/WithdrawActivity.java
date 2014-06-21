@@ -129,7 +129,7 @@ public class WithdrawActivity extends BaseActivity
     this.b.setTextFormatter(new APMoneyFormatter());
     this.f.addNeedCheckView(this.b.getEtContent());
     this.c = ((TextView)findViewById(R.id.AppBundle));
-    this.e = ((TextView)findViewById(R.id.d));
+    this.e = ((TextView)findViewById(R.id.ZLog));
     this.m = ((APMultiTextTableView)findViewById(R.id.l));
     this.m.setOnClickListener(new f(this));
     this.n = ((APTableView)findViewById(R.id.f));
@@ -392,7 +392,7 @@ public class WithdrawActivity extends BaseActivity
     localListView.setAdapter(this.s);
     localListView.setOnItemClickListener(new n(this));
     AlertDialog.Builder localBuilder = new AlertDialog.Builder(this);
-    localBuilder.setTitle(getString(R.string.d));
+    localBuilder.setTitle(getString(R.string.ZLog));
     localBuilder.setView(localListView);
     this.t = localBuilder.create();
     this.t.setCanceledOnTouchOutside(false);

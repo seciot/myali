@@ -7,7 +7,7 @@ import android.os.Message;
 public final class c
 {
   private static BundlesManagerImpl a;
-  private d b;
+  private ZLog b;
   private e c;
 
   private c(Context paramContext)
@@ -15,7 +15,7 @@ public final class c
     this.c = new e(paramContext);
     HandlerThread localHandlerThread = new HandlerThread("controller");
     localHandlerThread.start();
-    this.b = new d(localHandlerThread.getLooper(), this);
+    this.b = new ZLog(localHandlerThread.getLooper(), this);
   }
 
   public static BundlesManagerImpl setBundlePath(Context paramContext)

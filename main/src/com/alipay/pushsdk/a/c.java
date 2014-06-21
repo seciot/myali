@@ -23,17 +23,17 @@ public class c
   public final void a()
   {
     String str1 = this.d.a();
-    String str2 = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.b();
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "request() getConfigURL=" + str2);
+    String str2 = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.stop();
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, AppBundle, "request() getConfigURL=" + str2);
     try
     {
-      JSONObject localJSONObject = this.c.b();
+      JSONObject localJSONObject = this.c.stop();
       localJSONObject.put("userId", str1);
       localJSONObject.put("lastPubMsgId", new f(this.b).a());
       localJSONObject.put("pushCfgId", this.c.a().a);
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
-      d locald = new d(this);
-      new e(this.b, locald).a(str2, localJSONObject);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
+      ZLog locald = new ZLog(this);
+      new e(this.b, locald).v(str2, localJSONObject);
       return;
     }
     catch (Exception localException)

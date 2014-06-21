@@ -24,27 +24,27 @@ final class q extends Handler
     case 0:
       this.a.dismissProgressDialog();
       MobileBindQueryRes localMobileBindQueryRes2 = (MobileBindQueryRes)JSON.parseObject(localBundle.get("rs").toString(), MobileBindQueryRes.class);
-      BindPhoneActivity.a(this.a, localMobileBindQueryRes2);
+      BindPhoneActivity.v(this.a, localMobileBindQueryRes2);
       return;
     case 1:
       MobileBindVerifyRes localMobileBindVerifyRes2 = (MobileBindVerifyRes)JSON.parseObject(localBundle.get("rs").toString(), MobileBindVerifyRes.class);
-      BindPhoneActivity.a(this.a, localMobileBindVerifyRes2);
+      BindPhoneActivity.v(this.a, localMobileBindVerifyRes2);
       return;
     case 4:
       this.a.dismissProgressDialog();
       MobileBindQueryRes localMobileBindQueryRes1 = (MobileBindQueryRes)JSON.parseObject(localBundle.get("rs").toString(), MobileBindQueryRes.class);
-      BindPhoneActivity.b(this.a, localMobileBindQueryRes1);
+      BindPhoneActivity.d(this.a, localMobileBindQueryRes1);
       return;
     case 2:
       this.a.dismissProgressDialog();
       MobileSecurityResult localMobileSecurityResult = (MobileSecurityResult)JSON.parseObject(localBundle.get("rs").toString(), MobileSecurityResult.class);
-      BindPhoneActivity.a(this.a, localMobileSecurityResult);
+      BindPhoneActivity.v(this.a, localMobileSecurityResult);
       return;
     case 3:
     }
     this.a.dismissProgressDialog();
     MobileBindVerifyRes localMobileBindVerifyRes1 = (MobileBindVerifyRes)JSON.parseObject(localBundle.get("rs").toString(), MobileBindVerifyRes.class);
-    BindPhoneActivity.b(this.a, localMobileBindVerifyRes1);
+    BindPhoneActivity.d(this.a, localMobileBindVerifyRes1);
   }
 }
 

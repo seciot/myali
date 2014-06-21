@@ -12,7 +12,7 @@ final class dj
 
   public final void onClick(View paramView)
   {
-    SelectAccountActivity.a(this.a, "");
+    SelectAccountActivity.v(this.a, "");
   }
 }
 

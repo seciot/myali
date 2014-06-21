@@ -12,7 +12,7 @@ class UploadIdResultFragment_$1
 
   public void run()
   {
-    UploadIdResultFragment_.a(this.c, this.a, this.b);
+    UploadIdResultFragment_.e(this.c, this.a, this.b);
   }
 }
 

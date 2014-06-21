@@ -41,7 +41,7 @@ final class aa
     new StringBuilder("onSwitchListener pos = ").append(paramInt).append(" isOff = ").append(paramBoolean).toString();
     if (paramBoolean)
     {
-      this.a.a(((ItemData)this.a.b.get(paramInt)).b, paramInt, ((ItemData)this.a.b.get(paramInt)).d);
+      this.a.e(((ItemData)this.a.b.get(paramInt)).b, paramInt, ((ItemData)this.a.b.get(paramInt)).d);
       return;
     }
     this.a.b(((ItemData)this.a.b.get(paramInt)).b, paramInt, ((ItemData)this.a.b.get(paramInt)).d);

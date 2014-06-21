@@ -22,7 +22,7 @@ class SecurityWebviewActivity$4 extends WebViewClient
     super.shouldOverrideUrlLoading(paramWebView, paramString);
     try
     {
-      boolean bool = SecurityWebviewActivity.a(this.a, paramWebView, paramString);
+      boolean bool = SecurityWebviewActivity.e(this.a, paramWebView, paramString);
       return bool;
     }
     catch (Exception localException)

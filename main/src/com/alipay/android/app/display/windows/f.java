@@ -14,7 +14,7 @@ final class f
   {
     if (MspWindow.b(this.a) != null)
     {
-      for (IUIElement localIUIElement : MspWindow.b(this.a).b())
+      for (IUIElement localIUIElement : MspWindow.b(this.a).stop())
         if ((localIUIElement != null) && ((localIUIElement instanceof IDispose)))
           ((IDispose)localIUIElement).dispose();
       MspWindow.c(this.a);

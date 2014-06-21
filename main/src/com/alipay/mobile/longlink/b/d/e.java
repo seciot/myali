@@ -31,7 +31,7 @@ public class e
       m.c(localJSONObject.optInt("keepLiveTime"));
       m.getBundle(localJSONObject.optInt("heartTimeOut"));
       com.alipay.mobile.longlink.service.AppBundle.getAllComponentNames();
-      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "processPacket() replyTimeout=" + m.b() / 1000 + "s, keepLiveTime=" + m.getBundleName());
+      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "processPacket() replyTimeout=" + m.stop() / 1000 + "s, keepLiveTime=" + m.getBundleName());
       this.b.t();
       return;
     }

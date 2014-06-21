@@ -44,7 +44,7 @@ public class IconLoadHelper
   private static void a()
   {
     if (a == null)
-      a = AlipayApplication.getInstance().getResources().getDrawable(R.drawable.d);
+      a = AlipayApplication.getInstance().getResources().getDrawable(R.drawable.ZLog);
   }
 }
 

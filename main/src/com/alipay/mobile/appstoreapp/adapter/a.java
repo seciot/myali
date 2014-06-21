@@ -15,7 +15,7 @@ final class a
   {
     FastLoginAppAdapter localFastLoginAppAdapter = this.c;
     App localApp = this.a;
-    FastLoginAppAdapter.a(localFastLoginAppAdapter, paramView, localApp);
+    FastLoginAppAdapter.e(localFastLoginAppAdapter, paramView, localApp);
   }
 }
 

@@ -14,7 +14,7 @@ final class m
 
   public final void run()
   {
-    com.alipay.pushsdk.c.a.c.a(4, j.z(), "===== HeartBeatTask() Runnable=====");
+    com.alipay.pushsdk.c.a.c.e(4, j.z(), "===== HeartBeatTask() Runnable=====");
     if (this.a.s())
       try
       {
@@ -22,7 +22,7 @@ final class m
         locala.getBundle(3);
         locala.b(0);
         locala.getBundle("");
-        com.alipay.pushsdk.c.a.c.a(4, j.z(), "HeartBeatTask() heartBeat will be sent! length=" + locala.g());
+        com.alipay.pushsdk.c.a.c.e(4, j.z(), "HeartBeatTask() heartBeat will be sent! length=" + locala.g());
         this.a.getInitLevel().getBundle(locala);
         return;
       }
@@ -31,7 +31,7 @@ final class m
         localException.printStackTrace();
         return;
       }
-    com.alipay.pushsdk.c.a.c.a(3, j.z(), "Account registered has not been done.");
+    com.alipay.pushsdk.c.a.c.e(3, j.z(), "Account registered has not been done.");
   }
 }
 

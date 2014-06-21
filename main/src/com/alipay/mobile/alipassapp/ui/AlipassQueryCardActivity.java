@@ -201,11 +201,11 @@ public class AlipassQueryCardActivity extends BaseActivity
   {
     try
     {
-      com.alipay.mobile.alipassapp.biz.AppBundle.a locala = this.g;
+      com.alipay.mobile.alipassapp.biz.ExceptionHandler.a locala = this.g;
       Object localObject = null;
       if (locala != null)
       {
-        PassInfoResult localPassInfoResult = this.g.a(this.r, this.p.userId, this.q);
+        PassInfoResult localPassInfoResult = this.g.e(this.r, this.p.userId, this.q);
         localObject = localPassInfoResult;
       }
       return localObject;
@@ -232,7 +232,7 @@ public class AlipassQueryCardActivity extends BaseActivity
   {
     if ((this.j != null) && (this.j.getCode() == 2))
     {
-      this.i.a(this, this.l, new cb(this));
+      this.i.e(this, this.l, new cb(this));
       this.j = null;
       return true;
     }
@@ -334,7 +334,7 @@ public class AlipassQueryCardActivity extends BaseActivity
           AlipassInfo.More localMore = new AlipassInfo.More();
           localMore.setUrl(localKabaoCommonResult.resultDesc);
           localIntent.putExtra("more", localMore);
-          an.a().a(localIntent, this.mApp);
+          an.a().v(localIntent, this.mApp);
           return;
         }
         a(localKabaoCommonResult);
@@ -452,7 +452,7 @@ public class AlipassQueryCardActivity extends BaseActivity
     }
     else
       return;
-    ai.a(this, new bx(this), R.string.alipass_open_membercard_error_msg);
+    ai.e(this, new bx(this), R.string.alipass_open_membercard_error_msg);
   }
 
   @UiThread
@@ -510,14 +510,14 @@ public class AlipassQueryCardActivity extends BaseActivity
   protected void g()
   {
     if (!isFinishing())
-      ai.a(this, new by(this), R.string.member_card_open_msg);
+      ai.e(this, new by(this), R.string.member_card_open_msg);
   }
 
   @UiThread
   protected void h()
   {
     if (!isFinishing())
-      ai.a(this, new bz(this), new ca(this));
+      ai.e(this, new bz(this), new ca(this));
   }
 
   public void onCancel(DialogInterface paramDialogInterface)
@@ -546,7 +546,7 @@ public class AlipassQueryCardActivity extends BaseActivity
         this.k.setVisibility(8);
       setContentView(this.e);
     }
-    this.g = new com.alipay.mobile.alipassapp.biz.AppBundle.a.a(this.mApp, getApplicationContext());
+    this.g = new com.alipay.mobile.alipassapp.biz.ExceptionHandler.a.a(this.mApp, getApplicationContext());
     this.h = new com.alipay.mobile.alipassapp.biz.c.a(AlipayApplication.getInstance().getMicroApplicationContext());
     Intent localIntent = getIntent();
     Bundle localBundle;

@@ -70,7 +70,7 @@ public class NoPasswordActivity extends BaseSettingActivity
         localJSONObject = new JSONObject(paramString);
         if (localJSONObject.optBoolean("success", false))
         {
-          CustomToast.a(this, R.drawable.ax, R.string.V);
+          CustomToast.e(this, R.drawable.ax, R.string.V);
           Intent localIntent = new Intent();
           localIntent.putExtra("value", this.h);
           if (this.f.getToggleButton().isChecked())

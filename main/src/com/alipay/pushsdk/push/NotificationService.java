@@ -37,7 +37,7 @@ public class NotificationService extends Service
 
   protected final void a(int paramInt)
   {
-    com.alipay.pushsdk.c.a.c.a(3, a, "startAlarmTimer ELAPSED_REALTIME_WAKEUP! nextTime=" + paramInt);
+    com.alipay.pushsdk.c.a.c.e(3, a, "startAlarmTimer ELAPSED_REALTIME_WAKEUP! nextTime=" + paramInt);
     Intent localIntent = new Intent();
     localIntent.setAction(getPackageName() + ".push.action.CHECK");
     this.d = PendingIntent.getBroadcast(this, 100, localIntent, 0);
@@ -70,14 +70,14 @@ public class NotificationService extends Service
 
   public IBinder onBind(Intent paramIntent)
   {
-    com.alipay.pushsdk.c.a.c.a(4, a, "onBind()...");
+    com.alipay.pushsdk.c.a.c.e(4, a, "onBind()...");
     return null;
   }
 
   public void onCreate()
   {
     super.onCreate();
-    com.alipay.pushsdk.c.a.c.a(3, a, "onCreate()...");
+    com.alipay.pushsdk.c.a.c.e(3, a, "onCreate()...");
     this.l = this;
     this.g = Executors.newSingleThreadExecutor();
     this.h = new c(this);
@@ -90,8 +90,8 @@ public class NotificationService extends Service
       {
         com.alipay.pushsdk.c.a.c.a();
         this.b = new j(this);
-        com.alipay.pushsdk.c.a.c.a(5, a, "onCreate=" + this.b.hashCode());
-        com.alipay.pushsdk.c.a.c.a(3, a, "start()...");
+        com.alipay.pushsdk.c.a.c.e(5, a, "onCreate=" + this.b.hashCode());
+        com.alipay.pushsdk.c.a.c.e(3, a, "start()...");
         new g(this).a();
         this.j = new h(this).a();
         com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.f, com.alipay.pushsdk.c.a.d.C, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.C, 10000L + System.currentTimeMillis(), "NotificationService_start():mUserId=" + this.j);
@@ -110,7 +110,7 @@ public class NotificationService extends Service
         registerReceiver(this.f, localIntentFilter2);
         a(1000 * ClientActionReceiver.a);
         com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.l, com.alipay.pushsdk.c.a.d.A, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.B, System.currentTimeMillis() + 1000 * ClientActionReceiver.a, "NotificationService_registerClientActionReceiver:" + ClientActionReceiver.a / 60 + " minutes");
-        com.alipay.pushsdk.c.a.c.a(5, a, "onCreate() executorService isShutdown=" + this.g.isShutdown());
+        com.alipay.pushsdk.c.a.c.e(5, a, "onCreate() executorService isShutdown=" + this.g.isShutdown());
         if (this.g.isShutdown())
           this.g = Executors.newSingleThreadExecutor();
         return;
@@ -123,7 +123,7 @@ public class NotificationService extends Service
       String str2;
       for (Object localObject2 = ""; ; localObject2 = str2)
       {
-        com.alipay.pushsdk.c.a.c.a(1, str1, (String)localObject2);
+        com.alipay.pushsdk.c.a.c.e(1, str1, (String)localObject2);
         com.alipay.pushsdk.c.a.c.a = false;
         com.alipay.pushsdk.c.a.c.a();
         break;
@@ -139,9 +139,9 @@ public class NotificationService extends Service
   public void onDestroy()
   {
     super.onDestroy();
-    com.alipay.pushsdk.c.a.c.a(4, a, "onDestroy()...");
+    com.alipay.pushsdk.c.a.c.e(4, a, "onDestroy()...");
     com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.g, com.alipay.pushsdk.c.a.d.D, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.D, 10000L + System.currentTimeMillis(), "NotificationService_onDestroy:mUserId=" + this.j);
-    com.alipay.pushsdk.c.a.c.a(3, a, "stop()...");
+    com.alipay.pushsdk.c.a.c.e(3, a, "stop()...");
     try
     {
       if ((this.c != null) && (this.d != null))
@@ -164,13 +164,13 @@ public class NotificationService extends Service
             this.f = null;
             com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.g, com.alipay.pushsdk.c.a.d.z, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.w, System.currentTimeMillis() + 1000 * com.alipay.pushsdk.push.a.o.getBundleName(), "NotificationService_stop:reconnectInterval=" + com.alipay.pushsdk.push.a.o.getBundleName() + " lostedTime=" + System.currentTimeMillis());
             this.b.c();
-            com.alipay.pushsdk.c.a.c.a(5, a, "stop() executorService will be shutdown!");
+            com.alipay.pushsdk.c.a.c.e(5, a, "stop() executorService will be shutdown!");
             this.g.shutdown();
             com.alipay.pushsdk.c.a.e.a();
             o localo = new o(this.l);
             if ((this.b.e() != null) && (this.b.e().length() > 0) && (localo.a()))
             {
-              com.alipay.pushsdk.c.a.c.a(4, a, "onDestroy() will restart this service.");
+              com.alipay.pushsdk.c.a.c.e(4, a, "onDestroy() will restart this service.");
               Intent localIntent = new Intent(this, NotificationService.class);
               localIntent.putExtra("cur_triger", "16");
               startService(localIntent);
@@ -194,12 +194,12 @@ public class NotificationService extends Service
 
   public void onRebind(Intent paramIntent)
   {
-    com.alipay.pushsdk.c.a.c.a(4, a, "onRebind()...");
+    com.alipay.pushsdk.c.a.c.e(4, a, "onRebind()...");
   }
 
   public int onStartCommand(Intent paramIntent, int paramInt1, int paramInt2)
   {
-    com.alipay.pushsdk.c.a.c.a(5, a, "onStartCommand Received start id " + paramInt2 + ", intent: " + paramIntent);
+    com.alipay.pushsdk.c.a.c.e(5, a, "onStartCommand Received start id " + paramInt2 + ", intent: " + paramIntent);
     String str1;
     String str2;
     String str3;
@@ -231,10 +231,10 @@ public class NotificationService extends Service
     while (true)
     {
       this.b.a(this.j);
-      com.alipay.pushsdk.c.a.c.a(3, a, "onStartCommand trigerEvent=" + str4 + ", userId=" + this.j + ", utdId=" + this.k);
+      com.alipay.pushsdk.c.a.c.e(3, a, "onStartCommand trigerEvent=" + str4 + ", userId=" + this.j + ", utdId=" + this.k);
       if ((this.b.e() != null) && (this.b.e().length() > 0))
         new Thread(new e(this, str4), "NotificationService Triger Runnable").start();
-      com.alipay.pushsdk.c.a.c.a(4, a, "configRequest()...");
+      com.alipay.pushsdk.c.a.c.e(4, a, "configRequest()...");
       this.h.a(new b(this));
       return 1;
       str1 = "";
@@ -249,7 +249,7 @@ public class NotificationService extends Service
 
   public boolean onUnbind(Intent paramIntent)
   {
-    com.alipay.pushsdk.c.a.c.a(4, a, "onUnbind()...");
+    com.alipay.pushsdk.c.a.c.e(4, a, "onUnbind()...");
     return true;
   }
 }

@@ -9,7 +9,7 @@ final class g
 
   public final void run()
   {
-    BalancesVerifySmsActivity_.b(this.b, this.a);
+    BalancesVerifySmsActivity_.d(this.b, this.a);
   }
 }
 

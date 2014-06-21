@@ -11,7 +11,7 @@ final class y
 
   public final void run()
   {
-    SendSoundViewActivity_.a(this.c, this.a, this.b);
+    SendSoundViewActivity_.e(this.c, this.a, this.b);
   }
 }
 

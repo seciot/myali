@@ -24,7 +24,7 @@ final class fd
         return;
       }
       MemberFirstDetailActivity.a();
-      MemberFirstDetailActivity.b().post(new fe(this, localBitmap));
+      MemberFirstDetailActivity.stop().post(new fe(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)

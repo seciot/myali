@@ -13,7 +13,7 @@ class BeijingBusCardFragment$1
 
   public void onClick(View paramView)
   {
-    BeijingBusCardFragment.getBundle(this.a).a(LastTenRecordFragment.class, false);
+    BeijingBusCardFragment.getBundle(this.a).v(LastTenRecordFragment.class, false);
   }
 }
 

@@ -20,7 +20,7 @@ final class g
       if (!FacePayeeActivity.b(this.a).isReceiverSoincWave())
       {
         FacePayeeActivity.d(this.a);
-        FacePayeeActivity.a(this.a, 3);
+        FacePayeeActivity.v(this.a, 3);
         this.a.o = true;
         this.a.i.setVisibility(0);
       }

@@ -16,12 +16,12 @@ final class d
   {
     try
     {
-      FastLoginAppAdapter.a(this.b, this.a);
+      FastLoginAppAdapter.v(this.b, this.a);
       return;
     }
     catch (AppLoadException localAppLoadException)
     {
-      FastLoginAppAdapter.b();
+      FastLoginAppAdapter.stop();
       localAppLoadException.getLocalizedMessage();
     }
   }

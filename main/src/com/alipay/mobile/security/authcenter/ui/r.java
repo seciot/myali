@@ -11,7 +11,7 @@ final class r
 
   public final void run()
   {
-    ExternalLoginActivity.a(this.b, this.a);
+    ExternalLoginActivity.v(this.b, this.a);
   }
 }
 

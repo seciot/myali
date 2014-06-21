@@ -18,20 +18,20 @@ class d extends ILongLinkPacketNotifer.Stub
       try
       {
         JSONObject localJSONObject = new JSONObject(str);
-        a.a(3, LongLinkServiceManager.access$200(), "packet=" + localJSONObject.toString());
+        a.e(3, LongLinkServiceManager.access$200(), "packet=" + localJSONObject.toString());
         if (LongLinkServiceManager.access$300(this.a, localJSONObject))
         {
-          a.a(3, LongLinkServiceManager.access$200(), "onReceivedPacket call onAppHanlder successfully.");
+          a.e(3, LongLinkServiceManager.access$200(), "onReceivedPacket call onAppHanlder successfully.");
           return;
         }
         LongLinkServiceManager.access$400(this.a, localJSONObject);
-        a.a(3, LongLinkServiceManager.access$200(), "onReceivedPacket call mComPktHanlder to broadcast.");
+        a.e(3, LongLinkServiceManager.access$200(), "onReceivedPacket call mComPktHanlder to broadcast.");
         return;
       }
       catch (Exception localException)
       {
         localException.printStackTrace();
-        a.a(2, LongLinkServiceManager.access$200(), "=====> process info fail");
+        a.e(2, LongLinkServiceManager.access$200(), "=====> process info fail");
       }
     }
   }

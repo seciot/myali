@@ -9,7 +9,7 @@ final class r
 
   public final void run()
   {
-    AlipassDetailActivity_.b(this.b, this.a);
+    AlipassDetailActivity_.d(this.b, this.a);
   }
 }
 

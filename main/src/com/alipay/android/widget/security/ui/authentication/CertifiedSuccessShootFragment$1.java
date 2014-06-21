@@ -13,7 +13,7 @@ class CertifiedSuccessShootFragment$1
   public void onClick(View paramView)
   {
     CertifiedSuccessShootFragment.a(true);
-    this.a.b();
+    this.a.stop();
   }
 }
 

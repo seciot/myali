@@ -26,7 +26,7 @@ final class al
     MultiPictureSelectorActivity.k(this.a).removeBundle(localb.a());
     MultiPictureSelectorActivity.j(this.a).removeView(paramView);
     if ((i >= MultiPictureSelectorActivity.p(this.a)) && (i <= MultiPictureSelectorActivity.p(this.a) + MultiPictureSelectorActivity.q(this.a)))
-      MultiPictureSelectorActivity.a(this.a, localc.b);
+      MultiPictureSelectorActivity.v(this.a, localc.b);
     APTextView localAPTextView = MultiPictureSelectorActivity.r(this.a);
     Object[] arrayOfObject = new Object[2];
     arrayOfObject[0] = Integer.valueOf(MultiPictureSelectorActivity.m(this.a));
@@ -36,7 +36,7 @@ final class al
     if (MultiPictureSelectorActivity.m(this.a) > 0);
     for (boolean bool = true; ; bool = false)
     {
-      MultiPictureSelectorActivity.a(localMultiPictureSelectorActivity, bool);
+      MultiPictureSelectorActivity.v(localMultiPictureSelectorActivity, bool);
       return;
     }
   }

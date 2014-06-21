@@ -19,10 +19,10 @@ public class BroadcastActionReceiver extends BroadcastReceiver
   public void onReceive(Context paramContext, Intent paramIntent)
   {
     String str = paramIntent.getAction();
-    BundlesManagerImpl.a(3, a, "onReceive() getAction=" + str);
+    BundlesManagerImpl.e(3, a, "onReceive() getAction=" + str);
     if (Integer.valueOf(Build.VERSION.SDK).intValue() > 4)
     {
-      d.a(d.n, d.C, System.currentTimeMillis(), d.C, 10000L + System.currentTimeMillis(), "BroadcastActionReceiver_onReceive getAction:" + str);
+      ZLog.a(ZLog.n, ZLog.C, System.currentTimeMillis(), ZLog.C, 10000L + System.currentTimeMillis(), "BroadcastActionReceiver_onReceive getAction:" + str);
       if (!str.equals("android.intent.action.BOOT_COMPLETED"))
         break label95;
       a(paramContext, "11");

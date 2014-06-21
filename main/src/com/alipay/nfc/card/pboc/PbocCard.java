@@ -119,7 +119,7 @@ public class PbocCard
           localObject = new LeavedCard(localTag);
           break;
         }
-        localObject = HardReader.a(localTag, paramResources);
+        localObject = HardReader.v(localTag, paramResources);
         break;
         label294: localObject = new UnknownCard(localTag);
       }
@@ -136,7 +136,7 @@ public class PbocCard
     do
     {
       return false;
-      arrayOfByte = paramResponse.b();
+      arrayOfByte = paramResponse.stop();
       i1 = -23 + arrayOfByte.length;
       i2 = 0;
     }
@@ -153,13 +153,13 @@ public class PbocCard
   protected static ArrayList<byte[]> b(Iso7816.Tag paramTag)
   {
     ArrayList localArrayList = new ArrayList(10);
-    Iso7816.Response localResponse = paramTag.b();
+    Iso7816.Response localResponse = paramTag.stop();
     if (localResponse.getBundleName())
-      a(localResponse, localArrayList);
+      v(localResponse, localArrayList);
     while (true)
     {
       return localArrayList;
-      for (int i1 = 1; (i1 <= 10) && (a(paramTag.a(24, i1), localArrayList)); i1++);
+      for (int i1 = 1; (i1 <= 10) && (v(paramTag.v(24, i1), localArrayList)); i1++);
     }
   }
 
@@ -211,7 +211,7 @@ public class PbocCard
       this.k = null;
       return;
     }
-    int i1 = Util.a(paramResponse.b(), 0, 4);
+    int i1 = Util.e(paramResponse.stop(), 0, 4);
     if ((i1 > 100000) || (i1 < -100000))
       i1 += -2147483648;
     this.k = Util.a(i1 / 100.0F);
@@ -227,7 +227,7 @@ public class PbocCard
       this.g = null;
       return;
     }
-    byte[] arrayOfByte = paramResponse.b();
+    byte[] arrayOfByte = paramResponse.stop();
     if ((paramInt <= 0) || (paramInt > 10))
     {
       this.g = Util.b(arrayOfByte, 12, 8);

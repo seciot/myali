@@ -66,8 +66,8 @@ public final class AlipassInfo$AliPassBaseInfo
         this.endDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(paramPassBaseInfo.endDate);
         this.isreaded = paramPassBaseInfo.isreaded;
         return;
-        label157: this.displayInfo = ((AlipassInfo.DisplayInfo)b.b(paramPassBaseInfo.displayInfo, AlipassInfo.DisplayInfo.class));
-        this.headFields = b.a(paramPassBaseInfo.headFields, AlipassInfo.EinfoFields.class);
+        label157: this.displayInfo = ((AlipassInfo.DisplayInfo)b.d(paramPassBaseInfo.displayInfo, AlipassInfo.DisplayInfo.class));
+        this.headFields = b.v(paramPassBaseInfo.headFields, AlipassInfo.EinfoFields.class);
       }
       catch (Exception localException)
       {
@@ -81,9 +81,9 @@ public final class AlipassInfo$AliPassBaseInfo
   {
     if (this.isLazyParse)
     {
-      this.displayInfo = ((AlipassInfo.DisplayInfo)b.b(this.displayData, AlipassInfo.DisplayInfo.class));
+      this.displayInfo = ((AlipassInfo.DisplayInfo)b.d(this.displayData, AlipassInfo.DisplayInfo.class));
       this.displayData = null;
-      this.headFields = b.a(this.headData, AlipassInfo.EinfoFields.class);
+      this.headFields = b.v(this.headData, AlipassInfo.EinfoFields.class);
       this.headData = null;
       this.isLazyParse = false;
     }

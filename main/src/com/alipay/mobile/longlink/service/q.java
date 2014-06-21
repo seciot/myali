@@ -14,7 +14,7 @@ public class q
     b = i;
     if (i >= 30)
       c = -1;
-    a.a(3, a, "waiting seconds=" + c + ", mCtrlCount=" + b);
+    a.e(3, a, "waiting seconds=" + c + ", mCtrlCount=" + b);
     return c;
   }
 

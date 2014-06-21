@@ -24,7 +24,7 @@ public class f extends c
       if (localObject1.length >= 10)
       {
         localObject1[0] = paramString;
-        com.alipay.pushsdk.c.a.c.a(3, a, "updatePubMsgList() pubMsgId=" + paramString + ", newPubList:" + localObject1.toString());
+        com.alipay.pushsdk.c.a.c.e(3, a, "updatePubMsgList() pubMsgId=" + paramString + ", newPubList:" + localObject1.toString());
         return localObject1;
       }
       if (localObject1 != null)
@@ -169,7 +169,7 @@ public class f extends c
   public final boolean a(NotifierInfo paramNotifierInfo)
   {
     b localb = paramNotifierInfo.g();
-    com.alipay.pushsdk.c.a.c.a(3, a, "isContainMsg() newPubMsgId=" + localb.b());
+    com.alipay.pushsdk.c.a.c.e(3, a, "isContainMsg() newPubMsgId=" + localb.b());
     String[] arrayOfString = c();
     boolean bool = false;
     if (arrayOfString != null)
@@ -180,11 +180,11 @@ public class f extends c
   public final void b(NotifierInfo paramNotifierInfo)
   {
     String str1 = paramNotifierInfo.g().b();
-    com.alipay.pushsdk.c.a.c.a(3, a, "savePubMsgRecord() pubMsgId=" + str1);
+    com.alipay.pushsdk.c.a.c.e(3, a, "savePubMsgRecord() pubMsgId=" + str1);
     if ((str1 != null) && (str1.length() > 0))
     {
       String str2 = h.a(b(str1));
-      com.alipay.pushsdk.c.a.c.a(4, a, "savePubMsgRecord() listMsgId:" + str2);
+      com.alipay.pushsdk.c.a.c.e(4, a, "savePubMsgRecord() listMsgId:" + str2);
       try
       {
         File localFile = new File(b() + b);
@@ -198,11 +198,11 @@ public class f extends c
       catch (Exception localException)
       {
         localException.printStackTrace();
-        com.alipay.pushsdk.c.a.c.a(3, a, "savePubMsgRecord() encounter exception!");
+        com.alipay.pushsdk.c.a.c.e(3, a, "savePubMsgRecord() encounter exception!");
         return;
       }
     }
-    com.alipay.pushsdk.c.a.c.a(2, a, "savePubMsgRecord() error!");
+    com.alipay.pushsdk.c.a.c.e(2, a, "savePubMsgRecord() error!");
   }
 }
 

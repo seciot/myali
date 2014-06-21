@@ -22,7 +22,7 @@ public class j extends BroadcastReceiver
     NetworkInfo[] arrayOfNetworkInfo = ((ConnectivityManager)paramContext.getSystemService("connectivity")).getAllNetworkInfo();
     if (arrayOfNetworkInfo == null)
     {
-      com.alipay.mobile.longlink.c.a.a(2, a, "isNetworkAvailable networkInfos Unavailable.");
+      com.alipay.mobile.longlink.c.a.e(2, a, "isNetworkAvailable networkInfos Unavailable.");
       return false;
     }
     int i = arrayOfNetworkInfo.length;
@@ -34,7 +34,7 @@ public class j extends BroadcastReceiver
     }
     for (boolean bool = true; ; bool = false)
     {
-      com.alipay.mobile.longlink.c.a.a(4, a, "isNetworkAvailable=" + bool);
+      com.alipay.mobile.longlink.c.a.e(4, a, "isNetworkAvailable=" + bool);
       return bool;
       j++;
       break;
@@ -44,7 +44,7 @@ public class j extends BroadcastReceiver
   public void onReceive(Context paramContext, Intent paramIntent)
   {
     String str = paramIntent.getAction();
-    com.alipay.mobile.longlink.c.a.a(3, a, "onReceive() getAction=" + str);
+    com.alipay.mobile.longlink.c.a.e(3, a, "onReceive() getAction=" + str);
     if (str.equals("android.net.conn.CONNECTIVITY_CHANGE"))
     {
       if (!a(paramContext))
@@ -61,9 +61,9 @@ public class j extends BroadcastReceiver
       LongLinkService.d().b();
       return;
     }
-    com.alipay.mobile.longlink.c.a.a(3, a, "onReceive() no valid user.");
+    com.alipay.mobile.longlink.c.a.e(3, a, "onReceive() no valid user.");
     return;
-    label137: com.alipay.mobile.longlink.c.a.a(3, a, "onReceive() Nothing to do.");
+    label137: com.alipay.mobile.longlink.c.a.e(3, a, "onReceive() Nothing to do.");
   }
 }
 

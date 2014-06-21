@@ -13,7 +13,7 @@ final class j
   {
     try
     {
-      BalancesWarnCmsActivity.a(this.b.a, this.a);
+      BalancesWarnCmsActivity.v(this.b.a, this.a);
       return;
     }
     catch (JSONException localJSONException)

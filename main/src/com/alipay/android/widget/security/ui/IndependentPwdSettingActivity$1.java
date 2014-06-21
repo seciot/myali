@@ -14,7 +14,7 @@ class IndependentPwdSettingActivity$1
 
   public void onClick(View paramView)
   {
-    SecurityUtil.b(AlipayApplication.getInstance(), IndependentPwdSettingActivity.getBundle(this.a));
+    SecurityUtil.d(AlipayApplication.getInstance(), IndependentPwdSettingActivity.getBundle(this.a));
     if (IndependentPwdSettingActivity.b(this.a) != null)
       this.a.getBundle(IndependentPwdSettingActivity.b(this.a));
   }

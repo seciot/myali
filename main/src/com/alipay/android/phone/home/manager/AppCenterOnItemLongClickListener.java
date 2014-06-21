@@ -42,7 +42,7 @@ public class AppCenterOnItemLongClickListener
           localAppCenterItemAdapter.a(((AppManageService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(AppManageService.class.getName())).getAppCenterAppsFromLocal());
         return true;
       }
-      i = R.array.d;
+      i = R.array.ZLog;
       if (AppUtils.checkCanAddShortcut(localApp))
         break label206;
     }

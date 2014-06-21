@@ -339,7 +339,7 @@ public class ForgotPayPwdActivity extends BaseActivity
           runOnUiThread(new bm(this, this, Boolean.valueOf(true), localActivityApplication));
           return;
         }
-        SecurityCommonDialogUtil.a(this, this.mApp, paramFoundPasswordResult);
+        SecurityCommonDialogUtil.e(this, this.mApp, paramFoundPasswordResult);
         return;
       }
       toast(paramFoundPasswordResult.getMessage(), 1);

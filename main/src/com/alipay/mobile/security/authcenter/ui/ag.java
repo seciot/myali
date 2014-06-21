@@ -12,7 +12,7 @@ final class ag
 
   public final void run()
   {
-    SecurityUtil.c(this.a.getActivity(), this.a.d.getEtContent());
+    SecurityUtil.i(this.a.getActivity(), this.a.d.getEtContent());
   }
 }
 

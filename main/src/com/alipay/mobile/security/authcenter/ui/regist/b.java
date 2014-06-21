@@ -11,7 +11,7 @@ final class b
 
   public final void run()
   {
-    PreRegistFragment_.a(this.c, this.a, this.b);
+    PreRegistFragment_.e(this.c, this.a, this.b);
   }
 }
 

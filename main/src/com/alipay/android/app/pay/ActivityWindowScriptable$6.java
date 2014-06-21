@@ -15,7 +15,7 @@ class ActivityWindowScriptable$6
   {
     if (!this.mIsloaded)
     {
-      this.this$0.b();
+      this.this$0.stop();
       this.mIsloaded = true;
     }
   }

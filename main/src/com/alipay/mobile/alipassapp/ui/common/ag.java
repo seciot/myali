@@ -27,7 +27,7 @@ final class ag
           if (ae.removeBundle(this.c).booleanValue())
             return;
           if ("DELSEED".equals(this.a.optString("attachAction")))
-            ae.b().deleteSeed();
+            ae.stop().deleteSeed();
           str = this.a.optString("action");
           new StringBuilder("action=").append(str).toString();
           ((Vibrator)AlipayApplication.getInstance().getApplicationContext().getApplicationContext().getSystemService("vibrator")).vibrate(AlipassConstants.DEFAULT_VIBRATE_PATTERN, -1);
@@ -35,7 +35,7 @@ final class ag
           {
             JSONObject localJSONObject2 = this.a;
             ae.getBundle(localJSONObject2);
-            ae.a(this.c, Boolean.valueOf(true));
+            ae.v(this.c, Boolean.valueOf(true));
             return;
           }
         }

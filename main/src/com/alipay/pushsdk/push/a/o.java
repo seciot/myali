@@ -37,7 +37,7 @@ public final class o
     h = paramBoolean;
   }
 
-  public static int b()
+  public static int stop()
   {
     if (AppBundle <= 0)
       AppBundle = 10000;
@@ -46,7 +46,7 @@ public final class o
 
   public static void b(int paramInt)
   {
-    d = paramInt * 60;
+    ZLog = paramInt * 60;
   }
 
   public static void b(boolean paramBoolean)
@@ -56,7 +56,7 @@ public final class o
 
   public static int getBundleName()
   {
-    return d;
+    return ZLog;
   }
 
   public static void c(int paramInt)

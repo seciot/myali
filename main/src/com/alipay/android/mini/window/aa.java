@@ -27,7 +27,7 @@ final class aa
       boolean bool = TextUtils.isEmpty(str1);
       String str2;
       if ((GlobalConstant.DEBUG) && (bool))
-        str2 = localContext.getString(R.string.d);
+        str2 = localContext.getString(R.string.ZLog);
       while (true)
       {
         String str3 = localContext.getString(17039370);

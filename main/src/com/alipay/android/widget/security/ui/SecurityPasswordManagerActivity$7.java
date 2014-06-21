@@ -12,7 +12,7 @@ class SecurityPasswordManagerActivity$7
 
   public void run()
   {
-    SecurityUtil.c(this.b, this.a);
+    SecurityUtil.i(this.b, this.a);
   }
 }
 

@@ -15,7 +15,7 @@ class ValidatePayPwdAcitivyt$2
   public void onClick(View paramView)
   {
     this.a.showProgressDialog(this.a.getResources().getString(R.string.bF), false, null);
-    this.a.b();
+    this.a.stop();
   }
 }
 

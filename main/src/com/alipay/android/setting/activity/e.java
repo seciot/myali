@@ -19,7 +19,7 @@ final class e
     String str = this.a.getText().toString();
     if (TextUtils.isEmpty(str))
     {
-      CustomToast.a(this.b, R.string.N);
+      CustomToast.v(this.b, R.string.N);
       return;
     }
     paramDialogInterface.dismiss();

@@ -79,7 +79,7 @@ public class BoardingpassPrimaryFieldLayout extends AlipassInfoFieldLayout
       this.mLeftValueAPTextView = ((APTextView)this.mRootView.findViewById(R.id.left_value));
       this.mLeftValue = localEinfoFields2.getValue();
       this.mLeftValueAPTextView.setText(this.mLeftValue);
-      this.mLeftValueAPTextView.setTextColor(a.a(localContext, localEinfoFields2));
+      this.mLeftValueAPTextView.setTextColor(a.v(localContext, localEinfoFields2));
       this.mLeftValueAPTextView.setTextSize(0, getTextSize(localEinfoFields2, localAPTextView2));
       if ((this.mLeftValue != null) && (this.mLeftValue.length() > 0))
       {
@@ -99,7 +99,7 @@ public class BoardingpassPrimaryFieldLayout extends AlipassInfoFieldLayout
       this.mRightValueAPTextView = ((APTextView)this.mRootView.findViewById(R.id.right_value));
       this.mRightValue = localEinfoFields1.getValue();
       this.mRightValueAPTextView.setText(this.mRightValue);
-      this.mRightValueAPTextView.setTextColor(a.a(localContext, localEinfoFields1));
+      this.mRightValueAPTextView.setTextColor(a.v(localContext, localEinfoFields1));
       this.mRightValueAPTextView.setTextSize(0, getTextSize(localEinfoFields1, localAPTextView1));
       if ((this.mRightValue != null) && (this.mRightValue.length() > 0))
       {

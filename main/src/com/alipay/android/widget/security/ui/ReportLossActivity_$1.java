@@ -11,7 +11,7 @@ class ReportLossActivity_$1
 
   public void run()
   {
-    ReportLossActivity_.a(this.b, this.a);
+    ReportLossActivity_.v(this.b, this.a);
   }
 }
 

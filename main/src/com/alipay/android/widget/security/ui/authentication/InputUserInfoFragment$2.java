@@ -12,7 +12,7 @@ class InputUserInfoFragment$2
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.c.a(this.a, this.b);
+    this.c.v(this.a, this.b);
   }
 }
 

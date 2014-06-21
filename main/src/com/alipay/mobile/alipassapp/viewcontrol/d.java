@@ -13,8 +13,8 @@ final class d
   public final void run()
   {
     a.b(this.a.c).findViewById(R.id.layout_backview_top_back).setVisibility(8);
-    a.a(this.a.c, this.a.a);
-    a.a(this.a.c, this.a.b);
+    a.v(this.a.c, this.a.a);
+    a.v(this.a.c, this.a.b);
   }
 }
 

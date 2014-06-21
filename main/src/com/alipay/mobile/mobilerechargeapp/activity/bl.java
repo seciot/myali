@@ -11,7 +11,7 @@ final class bl
 
   public final void run()
   {
-    MobileRechargeActivity_.a(this.c, this.a, this.b);
+    MobileRechargeActivity_.e(this.c, this.a, this.b);
   }
 }
 

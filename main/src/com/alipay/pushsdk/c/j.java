@@ -22,7 +22,7 @@ public class j
   public static boolean a(long paramLong1, long paramLong2)
   {
     long l = (System.currentTimeMillis() - paramLong1) / 1000L;
-    c.a(4, a, "isBetweenTime compareTime=" + paramLong2 + ", between=" + l);
+    c.e(4, a, "isBetweenTime compareTime=" + paramLong2 + ", between=" + l);
     boolean bool1 = l < paramLong2;
     boolean bool2 = false;
     if (!bool1)

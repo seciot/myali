@@ -9,7 +9,7 @@ class HasCertifiedFragment_$2
 
   public void run()
   {
-    HasCertifiedFragment_.a(this.b, this.a);
+    HasCertifiedFragment_.v(this.b, this.a);
   }
 }
 

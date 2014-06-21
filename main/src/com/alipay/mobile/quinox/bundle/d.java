@@ -176,7 +176,7 @@ public final class d
             }
           }
           break;
-          if (e.a(str3, locala2.getBundleVersion()))
+          if (e.v(str3, locala2.getBundleVersion()))
           {
             Log.e("BundleVerifier", locala1.getFullBundleName() + "'s dependencies error:" + str1 + "->" + locala2.getFullBundleName());
             localHashSet.add(locala1);

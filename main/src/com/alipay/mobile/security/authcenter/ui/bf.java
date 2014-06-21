@@ -9,7 +9,7 @@ final class bf
 
   public final void run()
   {
-    TaobaoBindingAlipayUserActivity_.a(this.c, this.a, this.b);
+    TaobaoBindingAlipayUserActivity_.e(this.c, this.a, this.b);
   }
 }
 

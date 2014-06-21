@@ -150,7 +150,7 @@ public final class y
   {
     SetSimplePwdFragment_ localSetSimplePwdFragment_ = new SetSimplePwdFragment_();
     String str = paramLoginInfo.a();
-    localSetSimplePwdFragment_.a(str, null, new aa(this, str));
+    localSetSimplePwdFragment_.e(str, null, new aa(this, str));
     this.a.getSupportFragmentManager().beginTransaction().add(R.id.bR, localSetSimplePwdFragment_).setTransition(4097).addToBackStack(null).commitAllowingStateLoss();
   }
 }

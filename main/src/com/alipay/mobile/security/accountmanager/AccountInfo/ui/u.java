@@ -11,7 +11,7 @@ final class u
 
   public final void run()
   {
-    SecurityAvatarViewActivity_.a(this.b, this.a);
+    SecurityAvatarViewActivity_.v(this.b, this.a);
   }
 }
 

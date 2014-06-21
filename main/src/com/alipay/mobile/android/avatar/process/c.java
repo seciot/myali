@@ -9,7 +9,7 @@ final class c
 
   public final void run()
   {
-    EditAvatarActivity_.a(this.c, this.a, this.b);
+    EditAvatarActivity_.e(this.c, this.a, this.b);
   }
 }
 

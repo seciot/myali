@@ -12,7 +12,7 @@ class SecurityPasswordManagerActivity$1
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

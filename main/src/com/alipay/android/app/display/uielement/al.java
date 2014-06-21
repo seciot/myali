@@ -17,12 +17,12 @@ final class al extends BaseTarget
 
   public final void a(int paramInt)
   {
-    UIUtils.a(this.a.d, this.b, paramInt);
+    UIUtils.e(this.a.d, this.b, paramInt);
   }
 
   public final void a(Drawable paramDrawable)
   {
-    UIUtils.a(this.a.d, this.b, paramDrawable);
+    UIUtils.e(this.a.d, this.b, paramDrawable);
   }
 }
 

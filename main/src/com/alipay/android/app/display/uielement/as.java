@@ -15,7 +15,7 @@ final class as
   public final void onDateSet(DatePicker paramDatePicker, int paramInt1, int paramInt2, int paramInt3)
   {
     this.a.set(paramInt1, paramInt2, paramInt3);
-    UIDatePicker.a(this.c, this.b, this.a.getTime());
+    UIDatePicker.e(this.c, this.b, this.a.getTime());
   }
 }
 

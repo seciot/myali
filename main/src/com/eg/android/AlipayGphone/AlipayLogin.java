@@ -12,7 +12,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.alipay.mobile.quinox.LauncherApplication;
 import com.alipay.mobile.quinox.splash.c;
-import com.alipay.mobile.quinox.utils.d;
+import com.alipay.mobile.quinox.utils.ZLog;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -40,7 +40,7 @@ public class AlipayLogin extends Activity
     }
     catch (Exception localException)
     {
-      d.a("Entry", "getLayoutId", localException);
+      d.e("Entry", "getLayoutId", localException);
     }
     return -1;
   }

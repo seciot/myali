@@ -9,7 +9,7 @@ final class j
 
   public final void run()
   {
-    GestureActivity_.a(this.b, this.a);
+    GestureActivity_.v(this.b, this.a);
   }
 }
 

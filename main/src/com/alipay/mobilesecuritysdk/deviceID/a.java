@@ -17,8 +17,8 @@ final class a
     try
     {
       DeviceIdModel localDeviceIdModel = new DeviceIdModel();
-      localDeviceIdModel.a(this.b, this.c);
-      localDeviceIdModel.b(this.b, DeviceIdManager.a);
+      localDeviceIdModel.v(this.b, this.c);
+      localDeviceIdModel.d(this.b, DeviceIdManager.a);
       return;
     }
     catch (Throwable localThrowable)

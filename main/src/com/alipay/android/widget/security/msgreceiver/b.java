@@ -11,7 +11,7 @@ final class b
 
   public final void run()
   {
-    TaobaoSsoTokenWriteBackTrigger_.a(this.b, this.a);
+    TaobaoSsoTokenWriteBackTrigger_.v(this.b, this.a);
   }
 }
 

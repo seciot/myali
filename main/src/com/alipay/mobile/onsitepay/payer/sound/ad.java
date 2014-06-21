@@ -13,7 +13,7 @@ final class ad
   public final void onClick(View paramView)
   {
     this.a.setWavingState(true);
-    this.a.waveButtonListener.b();
+    this.a.waveButtonListener.stop();
   }
 }
 

@@ -19,7 +19,7 @@ final class g
     }
     if (AlipassDetailActivity.q(this.a.a))
     {
-      this.a.a.b();
+      this.a.a.stop();
       return;
     }
     this.a.a.b(AlipassDetailActivity.removeBundle(this.a.a));

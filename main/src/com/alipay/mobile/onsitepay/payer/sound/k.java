@@ -20,7 +20,7 @@ final class k
     Context localContext = this.a.getApplicationContext();
     BehaviourIdEnum localBehaviourIdEnum = BehaviourIdEnum.MONITOR;
     AlipayLogAgent.writeLog(localContext, localBehaviourIdEnum, "kf", null, null, null, null, null, "", "", SendSoundViewActivity.v(), "-", new String[] { "kf", "deviceAuthLayout_clicked", "", "y", "alipayclient" });
-    SendSoundViewActivity.a(this.a, new l(this));
+    SendSoundViewActivity.v(this.a, new l(this));
     this.a.l.setClickable(true);
   }
 }

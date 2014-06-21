@@ -17,7 +17,7 @@ final class ad
 
   public final void onClick(View paramView)
   {
-    if (RegisterDownSmsFragment.a(this.a, this.a.d.getInputedText()))
+    if (RegisterDownSmsFragment.v(this.a, this.a.d.getInputedText()))
       ((BaseFragmentActivity)this.a.getActivity()).alert(this.a.getResources().getString(R.string.K), this.a.getResources().getString(R.string.P) + this.a.d.getEtContent().getText().toString(), this.a.getResources().getString(R.string.N), new ae(this), this.a.getResources().getString(R.string.Z), null);
   }
 }

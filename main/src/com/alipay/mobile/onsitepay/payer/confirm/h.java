@@ -9,7 +9,7 @@ final class h
 
   public final void run()
   {
-    C2BConfirmActivity_.c(this.b, this.a);
+    C2BConfirmActivity_.i(this.b, this.a);
   }
 }
 

@@ -11,7 +11,7 @@ final class o
 
   public final void run()
   {
-    BarcodePayActivity_.a(this.b, this.a);
+    BarcodePayActivity_.v(this.b, this.a);
   }
 }
 

@@ -19,7 +19,7 @@ final class d
     {
       GestureActivity.a(GestureActivity.getBundle(this.a), "", "true", "0");
       GestureActivity.i(this.a).updateUserGesture(GestureActivity.getBundle(this.a));
-      GestureActivity.b(this.a, this.a.getResources().getString(f.d));
+      GestureActivity.d(this.a, this.a.getResources().getString(f.d));
     }
     GestureActivity.a(this.a, BehaviourIdEnum.CLICKED, "setGestureView", "skipButton");
     GestureActivity.c(this.a).callback(false);

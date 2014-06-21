@@ -4,7 +4,7 @@ public abstract interface a
 {
   public abstract void a();
 
-  public abstract void b();
+  public abstract void stop();
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

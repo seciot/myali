@@ -68,7 +68,7 @@ public final class a
       k = 0;
       if (i >= j)
       {
-        this.d = SsoManager.a(this.b, arrayOfSignature, l);
+        this.d = SsoManager.e(this.b, arrayOfSignature, l);
         return;
       }
     }

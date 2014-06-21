@@ -11,7 +11,7 @@ final class e
 
   public final void run()
   {
-    BaseElement localBaseElement = this.a.a.b();
+    BaseElement localBaseElement = this.a.a.stop();
     if (localBaseElement != null)
       localBaseElement.g();
   }

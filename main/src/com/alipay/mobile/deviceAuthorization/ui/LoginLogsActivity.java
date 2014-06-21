@@ -244,7 +244,7 @@ public class LoginLogsActivity extends BaseActivity
 
     protected final void onAutoLoadMore()
     {
-      LoginLogsActivity.b();
+      LoginLogsActivity.stop();
       LoginLogsActivity.this.a();
     }
 

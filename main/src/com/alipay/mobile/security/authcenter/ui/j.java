@@ -13,7 +13,7 @@ final class j
   public final void onClick(View paramView)
   {
     if (CompleteUserInfoActivity.getBundle(this.a))
-      this.a.b();
+      this.a.stop();
   }
 }
 

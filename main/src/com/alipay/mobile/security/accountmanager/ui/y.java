@@ -23,7 +23,7 @@ final class y
       if ((BindPhoneActivity.b(this.a) != null) && (BindPhoneActivity.b(this.a).isAlive()))
       {
         BindPhoneActivity.b(this.a).interrupt();
-        BindPhoneActivity.b(this.a, Boolean.valueOf(true));
+        BindPhoneActivity.d(this.a, Boolean.valueOf(true));
         this.a.dismissProgressDialog();
         return;
       }

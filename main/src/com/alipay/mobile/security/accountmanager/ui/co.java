@@ -13,7 +13,7 @@ final class co
 
   public final void onClick(View paramView)
   {
-    ModifyLoginPwdActivity.a(this.a, this.a.i.getText().toString());
+    ModifyLoginPwdActivity.v(this.a, this.a.i.getText().toString());
     if ((ModifyLoginPwdActivity.getBundle(this.a) != null) && (!"".equals(ModifyLoginPwdActivity.getBundle(this.a).trim())))
     {
       new Thread(new ModifyLoginPwdActivity.a(this.a, 2, (byte)0)).start();

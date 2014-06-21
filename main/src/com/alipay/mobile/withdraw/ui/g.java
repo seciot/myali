@@ -13,7 +13,7 @@ final class g
 
   public final void onClick(View paramView)
   {
-    WithdrawActivity.a(this.a, "withdraw", "selectFinishTime");
+    WithdrawActivity.e(this.a, "withdraw", "selectFinishTime");
     if (WithdrawActivity.c(this.a) == null)
     {
       this.a.getBundlePath();

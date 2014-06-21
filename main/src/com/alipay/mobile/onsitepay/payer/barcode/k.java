@@ -12,7 +12,7 @@ final class k
 
   public final void onClick(View paramView)
   {
-    BarcodePayActivity.a(this.a, "barcode");
+    BarcodePayActivity.v(this.a, "barcode");
   }
 }
 

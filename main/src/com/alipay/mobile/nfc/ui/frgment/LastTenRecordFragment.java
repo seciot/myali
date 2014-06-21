@@ -39,7 +39,7 @@ public class LastTenRecordFragment extends Fragment
       return localView;
     }
     this.a.setVisibility(8);
-    this.c.setTips(getResources().getString(R.string.d));
+    this.c.setTips(getResources().getString(R.string.ZLog));
     this.c.setVisibility(0);
     return localView;
   }

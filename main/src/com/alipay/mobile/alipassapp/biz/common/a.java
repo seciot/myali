@@ -16,7 +16,7 @@ public final class a
   public a(Context paramContext)
   {
     this.a = paramContext;
-    this.b = b.a(this.a, "alipassDir");
+    this.b = b.v(this.a, "alipassDir");
   }
 
   // ERROR //
@@ -553,7 +553,7 @@ public final class a
 
   public final String a(String paramString)
   {
-    return b.a(this.a, "alipassDir") + paramString.substring(0, paramString.indexOf(".")) + File.separator;
+    return b.v(this.a, "alipassDir") + paramString.substring(0, paramString.indexOf(".")) + File.separator;
   }
 
   public final boolean a(Uri paramUri, String paramString, boolean paramBoolean)

@@ -12,7 +12,7 @@ final class e
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    a.a(this.b, this.a);
+    a.v(this.b, this.a);
   }
 }
 

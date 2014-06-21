@@ -18,7 +18,7 @@ class SecurityPasswordManagerForTUserActivity$1
       AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "security", "-", "inputLoginPwdBox", "mobilePasswordIndex", "openGesture");
     for (this.a.j = 1; ; this.a.j = 2)
     {
-      SecurityPasswordManagerForTUserActivity.a(this.a, paramBoolean);
+      SecurityPasswordManagerForTUserActivity.v(this.a, paramBoolean);
       return;
       AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "security", "-", "inputLoginPwdBox", "mobilePasswordIndex", "closeGesture");
     }

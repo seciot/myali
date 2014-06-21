@@ -9,7 +9,7 @@ final class h
 
   public final void run()
   {
-    CompletePhoneUserInfoActivity_.a(this.b, this.a);
+    CompletePhoneUserInfoActivity_.v(this.b, this.a);
   }
 }
 

@@ -2,7 +2,7 @@ package com.alipay.mobile.quinox.classloader;
 
 import com.alipay.mobile.quinox.LauncherApplication;
 import com.alipay.mobile.quinox.bundle.BundlesManager;
-import com.alipay.mobile.quinox.utils.d;
+import com.alipay.mobile.quinox.utils.ZLog;
 import dalvik.system.PathClassLoader;
 import java.lang.reflect.Method;
 import java.util.HashSet;
@@ -31,7 +31,7 @@ public final class e extends PathClassLoader
   {
     try
     {
-      d.c("HostClassLoader", Thread.currentThread().getName() + ":" + this.c + " loadClass: " + paramString);
+      d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this.c + " loadClass: " + paramString);
       Method localMethod1 = ClassLoader.class.getDeclaredMethod("findLoadedClass", new Class[] { String.class });
       localMethod1.setAccessible(true);
       Class localClass = (Class)localMethod1.invoke(this.c, new Object[] { paramString });
@@ -77,7 +77,7 @@ public final class e extends PathClassLoader
             if (localh != null)
               localHashSet.add(localh);
           }
-      localClass1 = a.a(paramString, localHashSet);
+      localClass1 = a.v(paramString, localHashSet);
       if (localClass1 == null);
     }
     do
@@ -87,14 +87,14 @@ public final class e extends PathClassLoader
       {
         if (this.a.patternHost(paramString))
           return a(paramString);
-        d.c("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
+        d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
         Class localClass2 = super.loadClass(paramString);
         return localClass2;
       }
       catch (ClassNotFoundException localClassNotFoundException)
       {
-        d.c("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass from depends: " + paramString);
-        localClass1 = a.a(paramString, getDepends());
+        d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass from depends: " + paramString);
+        localClass1 = a.v(paramString, getDepends());
       }
     }
     while (localClass1 != null);
@@ -105,7 +105,7 @@ public final class e extends PathClassLoader
   {
     if (this.a.patternHost(paramString))
       return a(paramString);
-    d.c("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
+    d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
     return super.loadClass(paramString);
   }
 }

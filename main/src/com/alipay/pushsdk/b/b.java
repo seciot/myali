@@ -60,7 +60,7 @@ public final class b
     this.b = paramString;
   }
 
-  public final Object b()
+  public final Object stop()
   {
     return this.c;
   }

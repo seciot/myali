@@ -24,7 +24,7 @@ final class ey
         return;
       }
       MemberChargeOffActivity.a();
-      MemberChargeOffActivity.b().post(new ez(this, localBitmap));
+      MemberChargeOffActivity.stop().post(new ez(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)

@@ -21,7 +21,7 @@ final class p
 
   public final void onPostLoad(String paramString, Bitmap paramBitmap)
   {
-    this.b.a(this.a, paramBitmap);
+    this.b.v(this.a, paramBitmap);
   }
 
   public final void onPreLoad(String paramString)

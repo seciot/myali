@@ -31,7 +31,7 @@ final class a extends Handler
       while (this.b != 0)
         return;
       new StringBuilder("currentCount=").append(this.b).toString();
-      BarcodePayActivity.a(this.a, false);
+      BarcodePayActivity.v(this.a, false);
       this.b = 1440;
       sendEmptyMessage(101);
       return;
@@ -40,7 +40,7 @@ final class a extends Handler
     {
       this.b = 1440;
       new StringBuilder("MSG_TIME_COUNT_RESET currentCount=").append(this.b).toString();
-      BarcodePayActivity.a(this.a, true);
+      BarcodePayActivity.v(this.a, true);
       sendEmptyMessage(101);
       return;
     }

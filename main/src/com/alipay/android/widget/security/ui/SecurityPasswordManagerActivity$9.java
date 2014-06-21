@@ -16,7 +16,7 @@ class SecurityPasswordManagerActivity$9
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     if (!"194".equalsIgnoreCase(this.a.getResultCode()))
-      SecurityPasswordManagerActivity.a(this.c, this.b);
+      SecurityPasswordManagerActivity.v(this.c, this.b);
     do
     {
       return;

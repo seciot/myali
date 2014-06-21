@@ -60,7 +60,7 @@ public class CouponPrimaryFieldLayout extends FrameLayout
         APTextView localAPTextView1 = (APTextView)localAPLinearLayout2.findViewById(R.id.tv_primary_label);
         APTextView localAPTextView2 = (APTextView)localAPLinearLayout2.findViewById(R.id.tv_primary_value);
         AlipassInfo.EinfoFields localEinfoFields = (AlipassInfo.EinfoFields)paramList.get(i);
-        localAPTextView2.setTextColor(a.a(this.mContext, localEinfoFields));
+        localAPTextView2.setTextColor(a.v(this.mContext, localEinfoFields));
         if (localEinfoFields != null)
         {
           if ("url".equalsIgnoreCase(localEinfoFields.getType()))

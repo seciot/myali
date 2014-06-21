@@ -26,7 +26,7 @@ public class SuzhouTong extends PbocCard
         ArrayList localArrayList = b(paramTag);
         SuzhouTong localSuzhouTong = new SuzhouTong(paramTag);
         localSuzhouTong.getBundle(localResponse2);
-        localSuzhouTong.a(localResponse1, 0, false);
+        localSuzhouTong.e(localResponse1, 0, false);
         localSuzhouTong.a(new ArrayList[] { localArrayList });
         return localSuzhouTong;
       }

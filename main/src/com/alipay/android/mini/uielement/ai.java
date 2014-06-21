@@ -15,7 +15,7 @@ final class ai
   public final void run()
   {
     this.b.hasResource();
-    CustomToast.a(this.a, this.a.getResources().getString(R.string.k));
+    CustomToast.v(this.a, this.a.getResources().getString(R.string.k));
   }
 }
 

@@ -45,9 +45,9 @@ final class c
         AlipayLogAgent.writeLog(localAlipayApplication1, localBehaviourIdEnum1, "", "", "20000021", "", "", "travelItineraryDetails", "operate", "", "", "", arrayOfString1);
       }
     }
-    AlipassDetailActivity.a(this.a, null);
+    AlipassDetailActivity.v(this.a, null);
     View localView = LayoutInflater.from(this.a).inflate(R.layout.alipass_detail_more_dialog, null);
-    AlipassDetailActivity.a(this.a, new APPopupWindow(localView, -2, -2));
+    AlipassDetailActivity.v(this.a, new APPopupWindow(localView, -2, -2));
     AlipassDetailActivity.i(this.a).setFocusable(true);
     AlipassDetailActivity.i(this.a).setOutsideTouchable(true);
     AlipassDetailActivity.i(this.a).update();

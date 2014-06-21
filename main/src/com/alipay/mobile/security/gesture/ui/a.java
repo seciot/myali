@@ -13,7 +13,7 @@ final class a
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    GestureActivity.a(this.a, GestureActivity.getBundle(this.a).getLogonId());
+    GestureActivity.v(this.a, GestureActivity.getBundle(this.a).getLogonId());
   }
 }
 

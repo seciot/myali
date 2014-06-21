@@ -15,15 +15,15 @@ final class v
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    this.a.a(this, ActionType.t);
+    this.a.v(this, ActionType.t);
     if (UIInput.getBundle(this.a).getText().toString().length() > 0)
     {
       if (UIInput.d(this.a).getVisibility() == 0)
         UIInput.d(this.a).setVisibility(8);
-      UIInput.b(this.a, UIInput.getBundle(this.a));
+      UIInput.d(this.a, UIInput.getBundle(this.a));
       return;
     }
-    UIInput.a(this.a, UIInput.getBundle(this.a));
+    UIInput.v(this.a, UIInput.getBundle(this.a));
   }
 
   public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

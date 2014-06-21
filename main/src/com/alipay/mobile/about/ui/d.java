@@ -24,8 +24,8 @@ final class d
     if (paramCharSequence.length() > 0);
     for (boolean bool = true; ; bool = false)
     {
-      AboutFeedbackActivity.b(localAboutFeedbackActivity, bool);
-      AboutFeedbackActivity.a(this.a, paramCharSequence.length());
+      AboutFeedbackActivity.d(localAboutFeedbackActivity, bool);
+      AboutFeedbackActivity.v(this.a, paramCharSequence.length());
       return;
     }
   }

@@ -20,7 +20,7 @@ final class o
       return;
     MiniPayActivity.getBundle(this.b);
     if (MiniPayActivity.b(this.b) == null)
-      MiniPayActivity.a(this.b, new MiniProgressDialog(this.b));
+      MiniPayActivity.v(this.b, new MiniProgressDialog(this.b));
     MiniPayActivity.b(this.b).setCancelable(false);
     MiniPayActivity.b(this.b).getBundle(str);
     MiniPayActivity.b(this.b).show();

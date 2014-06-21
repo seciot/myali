@@ -11,7 +11,7 @@ class HasCertifiedFragment_$3
 
   public void run()
   {
-    HasCertifiedFragment_.a(this.b, this.a);
+    HasCertifiedFragment_.v(this.b, this.a);
   }
 }
 

@@ -9,7 +9,7 @@ final class q
 
   public final void run()
   {
-    SendSoundViewActivity_.a(this.b, this.a);
+    SendSoundViewActivity_.v(this.b, this.a);
   }
 }
 

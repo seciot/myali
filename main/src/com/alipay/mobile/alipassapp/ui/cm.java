@@ -11,7 +11,7 @@ final class cm
 
   public final void run()
   {
-    AlipassQueryCardActivity_.a(this.c, this.a, this.b);
+    AlipassQueryCardActivity_.e(this.c, this.a, this.b);
   }
 }
 

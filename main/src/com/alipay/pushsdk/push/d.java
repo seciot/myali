@@ -14,9 +14,9 @@ public final class d
   {
     synchronized (this.b.getBundleName())
     {
-      d locald2 = this.b.getBundleName();
+      ZLog locald2 = this.b.getBundleName();
       locald2.AppBundle = (-1 + locald2.AppBundle);
-      BundlesManagerImpl.a(4, NotificationService.getFullBundleName(), "Decremented task count to " + this.a);
+      BundlesManagerImpl.e(4, NotificationService.getFullBundleName(), "Decremented task count to " + this.a);
       return;
     }
   }

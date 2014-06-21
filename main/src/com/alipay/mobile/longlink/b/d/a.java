@@ -19,8 +19,8 @@ public class a
   {
     if (new f(3).getBundle(parama))
     {
-      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
-      if (parama.b() != 0);
+      com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
+      if (parama.stop() != 0);
     }
     try
     {

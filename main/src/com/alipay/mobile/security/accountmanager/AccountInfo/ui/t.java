@@ -9,7 +9,7 @@ final class t
 
   public final void run()
   {
-    SecurityAccountQrCodeActivity_.a(this.b, this.a);
+    SecurityAccountQrCodeActivity_.v(this.b, this.a);
   }
 }
 

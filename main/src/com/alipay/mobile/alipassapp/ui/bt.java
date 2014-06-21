@@ -9,7 +9,7 @@ final class bt
 
   public final void run()
   {
-    AlipassQueryCardActivity.a(this.a, AlipassQueryCardActivity.g(this.a), AlipassQueryCardActivity.h(this.a));
+    AlipassQueryCardActivity.e(this.a, AlipassQueryCardActivity.g(this.a), AlipassQueryCardActivity.h(this.a));
   }
 }
 

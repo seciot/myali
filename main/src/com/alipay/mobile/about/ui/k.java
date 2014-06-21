@@ -11,7 +11,7 @@ final class k
 
   public final void run()
   {
-    AboutMainActivity_.a(this.b, this.a);
+    AboutMainActivity_.v(this.b, this.a);
   }
 }
 

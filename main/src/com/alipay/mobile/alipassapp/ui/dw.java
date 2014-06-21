@@ -26,7 +26,7 @@ final class dw
     }
     catch (AppLoadException localAppLoadException)
     {
-      MemberCardDetailActivity.b();
+      MemberCardDetailActivity.stop();
       localAppLoadException.getLocalizedMessage();
     }
   }

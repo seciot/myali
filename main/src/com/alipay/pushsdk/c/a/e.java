@@ -10,7 +10,7 @@ public class e
 
   public static void a()
   {
-    g.a().b();
+    g.a().stop();
   }
 
   public static void setBundlePath(Context paramContext)
@@ -21,7 +21,7 @@ public class e
     String str1 = locali.getBundleName();
     String str2 = localh.getInitLevel();
     String str3 = localh.a();
-    String str4 = locali.b();
+    String str4 = locali.stop();
     g.a().a(str1, str2, "", str3, str4);
   }
 
@@ -29,7 +29,7 @@ public class e
   {
     try
     {
-      BundlesManagerImpl.a(3, AppBundle, "writeLog start...");
+      BundlesManagerImpl.e(3, AppBundle, "writeLog start...");
       if (!o.getAllBundles())
         return;
       new k(paramString1, paramString2, paramString3).a();

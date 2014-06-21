@@ -12,7 +12,7 @@ class SelectAccountFragment$1
 
   public void onClick(View paramView)
   {
-    this.a.a(-1, this.a.g);
+    this.a.v(-1, this.a.g);
   }
 }
 

@@ -32,7 +32,7 @@ final class i
             this.a.q = 0;
             if (this.a.p == -1)
               break;
-            this.a.a(this.a.q, bool);
+            this.a.v(this.a.q, bool);
             FacePayeeActivity localFacePayeeActivity1 = this.a;
             localFacePayeeActivity1.q = (1 + localFacePayeeActivity1.q);
             FacePayeeActivity localFacePayeeActivity2 = this.a;
@@ -46,7 +46,7 @@ final class i
             }
             else
             {
-              this.a.p = (-1 + FacePayeeActivity.b(this.a, this.a.r));
+              this.a.p = (-1 + FacePayeeActivity.d(this.a, this.a.r));
               bool = false;
             }
           }

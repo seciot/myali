@@ -127,10 +127,10 @@ public class TaobaoBindingAlipayUserActivity extends BaseActivity
       String str = paramBindingLoginIdRes.getMemo();
       if ((str != null) && (!str.trim().equalsIgnoreCase("")))
       {
-        a(this, paramBindingLoginIdRes.getMemo());
+        v(this, paramBindingLoginIdRes.getMemo());
         return;
       }
-      a(this, getResources().getString(R.string.J));
+      v(this, getResources().getString(R.string.J));
       return;
     }
     catch (Exception localException)

@@ -16,7 +16,7 @@ final class br
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     if (AlipassQueryCardActivity.c(this.a.c) == null)
-      AlipassQueryCardActivity.a(this.a.c, (BindPhoneService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(BindPhoneService.class.getName()));
+      AlipassQueryCardActivity.v(this.a.c, (BindPhoneService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(BindPhoneService.class.getName()));
     if (AlipassQueryCardActivity.c(this.a.c) == null)
       return;
     AlipassQueryCardActivity.c(this.a.c).bindPhone(new bs(this));

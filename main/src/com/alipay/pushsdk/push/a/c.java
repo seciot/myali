@@ -6,7 +6,7 @@ import javax.net.SocketFactory;
 public final class c
   implements Cloneable
 {
-  protected com.alipay.pushsdk.push.AppBundle.a.BundlesManagerImpl a;
+  protected com.alipay.pushsdk.push.AppBundle.ExceptionHandler.BundlesManagerImpl a;
   private String b;
   private String c;
   private int d;
@@ -23,13 +23,13 @@ public final class c
   private boolean o = false;
   private boolean p = false;
   private boolean q = true;
-  private boolean r = AppBundle.a;
+  private boolean r = AppBundle.ExceptionHandler;
   private boolean s = true;
   private SocketFactory t;
   private boolean u = true;
-  private d v = d.BundlesManager;
+  private ZLog v = ZLog.BundlesManager;
 
-  public c(String paramString, int paramInt, com.alipay.pushsdk.push.AppBundle.a.BundlesManagerImpl paramc)
+  public c(String paramString, int paramInt, com.alipay.pushsdk.push.AppBundle.ExceptionHandler.BundlesManagerImpl paramc)
   {
     this.c = paramString;
     this.d = paramInt;
@@ -54,22 +54,22 @@ public final class c
     return this.c;
   }
 
-  public final void setBundlePath(d paramd)
+  public final void setBundlePath(ZLog paramd)
   {
     this.v = paramd;
   }
 
-  public final int b()
+  public final int stop()
   {
     return this.d;
   }
 
-  public final com.alipay.pushsdk.push.AppBundle.a.BundlesManagerImpl getBundleName()
+  public final com.alipay.pushsdk.push.AppBundle.ExceptionHandler.BundlesManagerImpl getBundleName()
   {
     return this.a;
   }
 
-  public final d getInitLevel()
+  public final ZLog getInitLevel()
   {
     return this.v;
   }

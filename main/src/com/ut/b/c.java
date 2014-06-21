@@ -497,15 +497,15 @@ public class c
           String str = (String)localEntry.getKey();
           Object localObject = localEntry.getValue();
           if ((localObject instanceof String))
-            locala.a(str, (String)localObject);
+            locala.v(str, (String)localObject);
           else if ((localObject instanceof Integer))
-            locala.a(str, ((Integer)localObject).intValue());
+            locala.v(str, ((Integer)localObject).intValue());
           else if ((localObject instanceof Long))
-            locala.a(str, ((Long)localObject).longValue());
+            locala.v(str, ((Long)localObject).longValue());
           else if ((localObject instanceof Float))
-            locala.a(str, ((Float)localObject).floatValue());
+            locala.v(str, ((Float)localObject).floatValue());
           else if ((localObject instanceof Boolean))
-            locala.a(str, ((Boolean)localObject).booleanValue());
+            locala.v(str, ((Boolean)localObject).booleanValue());
         }
         locala.commit();
       }
@@ -586,7 +586,7 @@ public class c
     if (this.as != null)
     {
       this.as.r();
-      this.as.a("t", l);
+      this.as.v("t", l);
     }
   }
 
@@ -673,7 +673,7 @@ public class c
       if (this.ar != null)
         this.ar.putLong(paramString, paramLong);
       if (this.as != null)
-        this.as.a(paramString, paramLong);
+        this.as.v(paramString, paramLong);
     }
   }
 
@@ -685,7 +685,7 @@ public class c
       if (this.ar != null)
         this.ar.putString(paramString1, paramString2);
       if (this.as != null)
-        this.as.a(paramString1, paramString2);
+        this.as.v(paramString1, paramString2);
     }
   }
 }

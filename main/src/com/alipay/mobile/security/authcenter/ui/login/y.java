@@ -11,7 +11,7 @@ final class y
 
   public final void run()
   {
-    MobileInputFragment_.a(this.c, this.a, this.b);
+    MobileInputFragment_.e(this.c, this.a, this.b);
   }
 }
 

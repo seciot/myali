@@ -43,7 +43,7 @@ final class at
     if (str != null);
     try
     {
-      SmsCheckActivity.a(this.a, paramString2);
+      SmsCheckActivity.v(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
       localVerifyAuthCodeResp = SmsCheckActivity.b(this.a).a(SmsCheckActivity.getBundle(this.a).getLogonId(), SmsCheckActivity.getBundle(this.a).getMobileNumber(), paramString1, SmsCheckActivity.d(this.a));
       this.a.dismissProgressDialog();

@@ -27,7 +27,7 @@ public abstract class b
     }
   }
 
-  private void b()
+  private void stop()
   {
     if (this.buffer == null)
     {
@@ -59,7 +59,7 @@ public abstract class b
   protected void setBundlePath(int paramInt)
   {
     if ((this.buffer == null) || (this.buffer.length < paramInt + this.pos))
-      b();
+      stop();
   }
 
   abstract void a(byte[] paramArrayOfByte, int paramInt1, int paramInt2);
@@ -94,8 +94,8 @@ public abstract class b
     reset();
     if ((paramArrayOfByte == null) || (paramArrayOfByte.length == 0))
       return paramArrayOfByte;
-    a(paramArrayOfByte, 0, paramArrayOfByte.length);
-    a(paramArrayOfByte, 0, -1);
+    e(paramArrayOfByte, 0, paramArrayOfByte.length);
+    e(paramArrayOfByte, 0, -1);
     byte[] arrayOfByte = new byte[this.pos - this.q];
     b(arrayOfByte, 0, arrayOfByte.length);
     return arrayOfByte;

@@ -1,7 +1,7 @@
 package a.a.b.b;
 
 abstract class a extends e
-  implements AppBundle.a.a.a.a
+  implements ExceptionHandler.a.a.a.a
 {
   Class[] a;
   String[] b;

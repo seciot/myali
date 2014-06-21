@@ -14,7 +14,7 @@ final class c
   {
     AppDetailActivity.g(this.a).setEnabled(false);
     AppDetailActivity.g(this.a).setText(this.a.getString(R.string.f));
-    AppDetailActivity.a(this.a, "main_button_style");
+    AppDetailActivity.v(this.a, "main_button_style");
   }
 }
 

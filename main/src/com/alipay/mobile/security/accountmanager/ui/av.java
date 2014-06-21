@@ -22,7 +22,7 @@ final class av
     this.a.b.setVisibility(0);
     this.a.a.setTitleText(this.a.getResources().getString(R.string.ap).toString());
     this.a.m.getInputBox().setText("");
-    this.a.b();
+    this.a.stop();
   }
 }
 

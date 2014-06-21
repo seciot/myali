@@ -15,7 +15,7 @@ final class be extends Thread
       return;
     boolean bool = MobileRechargeActivity.d(this.a).auth(new Bundle());
     new StringBuilder("login success:").append(bool).toString();
-    MobileRechargeActivity.a(this.a, bool);
+    MobileRechargeActivity.v(this.a, bool);
   }
 }
 

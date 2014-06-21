@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.e;
 import com.alipay.pushsdk.push.a.o;
 import com.alipay.pushsdk.push.j;
 
-public final class c extends d
+public final class c extends ZLog
 {
   public c(j paramj)
   {
@@ -15,12 +15,12 @@ public final class c extends d
   {
     if ((this.a.w()) || (o.hasResource()))
     {
-      this.a.b();
-      e.a(b(), "80", "1");
+      this.a.stop();
+      e.e(stop(), "80", "1");
       return;
     }
     this.a.p();
-    e.a(b(), "81", "8");
+    e.e(stop(), "81", "8");
   }
 }
 

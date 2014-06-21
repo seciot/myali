@@ -61,7 +61,7 @@ public class MemberCardObtainableListActivity extends BaseActivity
 
   protected final void a(String paramString1, String paramString2, String paramString3)
   {
-    a(BehaviourIdEnum.CLICKED, "getCard", paramString1);
+    e(BehaviourIdEnum.CLICKED, "getCard", paramString1);
     Intent localIntent = new Intent(this, AlipassQueryCardActivity_.class);
     localIntent.putExtra("pid", paramString1);
     localIntent.putExtra("ctype", paramString2);

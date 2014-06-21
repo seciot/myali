@@ -9,7 +9,7 @@ final class j
 
   public final void run()
   {
-    FacePayeeActivity_.a(this.b, this.a);
+    FacePayeeActivity_.v(this.b, this.a);
   }
 }
 

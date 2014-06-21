@@ -15,7 +15,7 @@ class SecurityPasswordManagerActivity$14
 
   public void onClick(View paramView)
   {
-    SecurityPasswordManagerActivity.b(this.a, false);
+    SecurityPasswordManagerActivity.d(this.a, false);
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, SecurityPasswordManagerActivity.g(this.a).getAppId(), "-", "mobilePasswordIndex", "openMobilePayPwd");
   }
 }

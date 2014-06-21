@@ -11,7 +11,7 @@ class SmsCheckActivity_$1
 
   public void run()
   {
-    SmsCheckActivity_.a(this.b, this.a);
+    SmsCheckActivity_.v(this.b, this.a);
   }
 }
 

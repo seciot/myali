@@ -9,7 +9,7 @@ final class dl
 
   public final void run()
   {
-    C2BConfirmActivity_.b(this.b, this.a);
+    C2BConfirmActivity_.d(this.b, this.a);
   }
 }
 

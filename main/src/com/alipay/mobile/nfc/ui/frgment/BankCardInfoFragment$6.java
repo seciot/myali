@@ -13,7 +13,7 @@ class BankCardInfoFragment$6
 
   public void onClick(View paramView)
   {
-    BankCardInfoFragment.getBundle(this.a).a(LastTenRecordFragment.class, false);
+    BankCardInfoFragment.getBundle(this.a).v(LastTenRecordFragment.class, false);
   }
 }
 

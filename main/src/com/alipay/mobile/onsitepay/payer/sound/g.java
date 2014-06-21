@@ -21,7 +21,7 @@ final class g extends BroadcastReceiver
       boolean bool2 = false;
       if (!bool1)
         bool2 = true;
-      SendSoundViewActivity.b(localSendSoundViewActivity, bool2);
+      SendSoundViewActivity.d(localSendSoundViewActivity, bool2);
       if (!this.a.m.isWaveNow)
         this.a.m();
     }

@@ -9,7 +9,7 @@ class AuthenticationCertifiedActivity_$1
 
   public void run()
   {
-    AuthenticationCertifiedActivity_.a(this.c, this.a, this.b);
+    AuthenticationCertifiedActivity_.e(this.c, this.a, this.b);
   }
 }
 

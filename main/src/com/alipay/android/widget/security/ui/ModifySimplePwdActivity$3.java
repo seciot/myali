@@ -21,9 +21,9 @@ class ModifySimplePwdActivity$3
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localMobileSecurityResult = ModifySimplePwdActivity.b(this.a).b(ModifySimplePwdActivity.getBundle(this.a).getLogonId(), paramString);
+      localMobileSecurityResult = ModifySimplePwdActivity.b(this.a).d(ModifySimplePwdActivity.getBundle(this.a).getLogonId(), paramString);
       this.a.dismissProgressDialog();
-      ModifySimplePwdActivity.b(this.a, paramString);
+      ModifySimplePwdActivity.d(this.a, paramString);
       return localMobileSecurityResult;
     }
     catch (RpcException localRpcException)

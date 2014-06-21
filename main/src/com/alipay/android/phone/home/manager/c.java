@@ -10,7 +10,7 @@ final class c extends Thread
 
   public final void run()
   {
-    AppCenterOnItemLongClickListener.b(this.b, this.a);
+    AppCenterOnItemLongClickListener.d(this.b, this.a);
   }
 }
 

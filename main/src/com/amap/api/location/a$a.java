@@ -14,14 +14,14 @@ class a$a extends Handler
 
   public void handleMessage(Message paramMessage)
   {
-    if (paramMessage.what == AppBundle.a)
+    if (paramMessage.what == AppBundle.ExceptionHandler)
     {
       Iterator localIterator = AppBundle.getInitLevel().iterator();
       while (localIterator.hasNext())
         ((f)localIterator.next()).c.onLocationChanged((AMapLocation)paramMessage.obj);
-      AppBundle.a(this.a, (AMapLocation)paramMessage.obj);
+      AppBundle.v(this.a, (AMapLocation)paramMessage.obj);
       if (AppBundle.getBundle(this.a) != null)
-        c.a(AppBundle.b(this.a), AppBundle.getBundle(this.a));
+        c.v(AppBundle.b(this.a), AppBundle.getBundle(this.a));
     }
   }
 }

@@ -11,7 +11,7 @@ final class i
 
   public final void run()
   {
-    AccountInfoActivity_.a(this.b, this.a);
+    AccountInfoActivity_.v(this.b, this.a);
   }
 }
 

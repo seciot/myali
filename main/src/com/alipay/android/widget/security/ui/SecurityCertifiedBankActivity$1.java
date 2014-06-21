@@ -12,7 +12,7 @@ class SecurityCertifiedBankActivity$1
 
   public void onClick(View paramView)
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

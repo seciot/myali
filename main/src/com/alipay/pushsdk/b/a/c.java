@@ -16,10 +16,10 @@ public class c
   {
     this.a = paramString;
     this.e = paramContext;
-    HttpsURLConnection.setDefaultHostnameVerifier(new d(this));
+    HttpsURLConnection.setDefaultHostnameVerifier(new ZLog(this));
   }
 
-  private NetworkInfo b()
+  private NetworkInfo stop()
   {
     try
     {

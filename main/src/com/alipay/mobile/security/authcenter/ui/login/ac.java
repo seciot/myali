@@ -9,7 +9,7 @@ final class ac
 
   public final void run()
   {
-    TaobaoUserLoginFragment_.a(this.b, this.a);
+    TaobaoUserLoginFragment_.v(this.b, this.a);
   }
 }
 

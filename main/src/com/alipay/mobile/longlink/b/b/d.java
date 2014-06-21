@@ -6,7 +6,7 @@ import com.alipay.mobile.longlink.b.a.n;
 public class d
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(d.class);
+  private static final String a = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(ZLog.class);
   private final com.alipay.mobile.longlink.service.AppBundle b;
 
   public d(com.alipay.mobile.longlink.service.AppBundle parama)
@@ -16,19 +16,19 @@ public class d
 
   public final void a()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "connectionClosed()...");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "connectionClosed()...");
   }
 
   public final void setBundlePath(n paramn)
   {
     String str = paramn.a();
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(2, AppBundle, "connectionClosedOnError()... errorType=" + str + ", errorInfo: " + paramn.getMessage());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(2, AppBundle, "connectionClosedOnError()... errorType=" + str + ", errorInfo: " + paramn.getMessage());
     if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().a()))
     {
       this.b.getBundle(false);
       this.b.getInitLevel().getFullBundleName();
     }
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle, "connectionClosedOnError() and then to startReconnectionThread...");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "connectionClosedOnError() and then to startReconnectionThread...");
     this.b.m();
   }
 }

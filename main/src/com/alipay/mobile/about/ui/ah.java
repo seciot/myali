@@ -12,8 +12,8 @@ final class ah
 
   public final void onScroll(AbsListView paramAbsListView, int paramInt1, int paramInt2, int paramInt3)
   {
-    MultiPictureSelectorActivity.a(this.a, paramInt1);
-    MultiPictureSelectorActivity.b(this.a, paramInt2);
+    MultiPictureSelectorActivity.v(this.a, paramInt1);
+    MultiPictureSelectorActivity.d(this.a, paramInt2);
   }
 
   public final void onScrollStateChanged(AbsListView paramAbsListView, int paramInt)

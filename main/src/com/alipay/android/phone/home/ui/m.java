@@ -15,7 +15,7 @@ final class m
   public final void onVisibleChange(boolean paramBoolean)
   {
     LogCatLog.i("wif", ((TabHost)HeaderAreaLayout.k(this.a).get()).getCurrentTabTag());
-    if (((!paramBoolean) || ((paramBoolean) && (HeaderAreaLayout.k(this.a).get() != null) && (!"20000002".endsWith(((TabHost)HeaderAreaLayout.k(this.a).get()).getCurrentTabTag())))) && (2 == HeaderAreaLayout.d(this.a).b()))
+    if (((!paramBoolean) || ((paramBoolean) && (HeaderAreaLayout.k(this.a).get() != null) && (!"20000002".endsWith(((TabHost)HeaderAreaLayout.k(this.a).get()).getCurrentTabTag())))) && (2 == HeaderAreaLayout.d(this.a).stop()))
     {
       HeaderAreaLayout.d(this.a).a();
       HeaderAreaLayout.d(this.a).changeState(1);

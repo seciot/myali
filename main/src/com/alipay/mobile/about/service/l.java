@@ -42,7 +42,7 @@ final class l
   public final void onCancel(DownloadRequest paramDownloadRequest)
   {
     a.a = false;
-    a(this.a, this.b);
+    v(this.a, this.b);
   }
 
   public final void onFailed(DownloadRequest paramDownloadRequest, int paramInt, String paramString)
@@ -61,7 +61,7 @@ final class l
       localIntent.setDataAndType(Uri.parse("file://" + paramString), "application/vnd.android.package-archive");
       AlipayApplication.getInstance().getApplicationContext().startActivity(localIntent);
     }
-    a(this.a, this.b);
+    v(this.a, this.b);
     getBundle(this.b);
   }
 

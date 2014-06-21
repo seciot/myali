@@ -12,7 +12,7 @@ class ValidatePayPwdAcitivyt$1
 
   public void run()
   {
-    SecurityUtil.c(this.a, this.a.a.getEtContent());
+    SecurityUtil.i(this.a, this.a.a.getEtContent());
   }
 }
 

@@ -33,7 +33,7 @@ public class NotifierInfo
 
   public NotifierInfo(Parcel paramParcel)
   {
-    c.a(4, "NotifierInfo", "NotifierInfo.Parcel...");
+    c.e(4, "NotifierInfo", "NotifierInfo.Parcel...");
     this.a = paramParcel.readString();
     this.c = paramParcel.readString();
     this.d = paramParcel.readString();
@@ -137,7 +137,7 @@ public class NotifierInfo
 
   public void writeToParcel(Parcel paramParcel, int paramInt)
   {
-    c.a(4, "NotifierInfo", "NotifierInfo.writeToParcel...");
+    c.e(4, "NotifierInfo", "NotifierInfo.writeToParcel...");
     paramParcel.writeString(this.a);
     paramParcel.writeString(this.c);
     paramParcel.writeString(this.d);
@@ -145,7 +145,7 @@ public class NotifierInfo
     paramParcel.writeString(this.f);
     paramParcel.writeString(this.b);
     paramParcel.writeString(this.g);
-    c.a(4, "NotifierInfo", "NotifierInfo.writeToParcel msgInfo.");
+    c.e(4, "NotifierInfo", "NotifierInfo.writeToParcel msgInfo.");
     paramParcel.writeString(this.h.d());
     paramParcel.writeString(this.h.a());
     paramParcel.writeString(this.h.c());

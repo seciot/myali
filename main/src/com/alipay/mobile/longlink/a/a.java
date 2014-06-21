@@ -21,7 +21,7 @@ public class a
     this.e = paramString;
   }
 
-  public String b()
+  public String stop()
   {
     return this.d;
   }

@@ -13,13 +13,13 @@ final class ap
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     this.b.a.showProgressDialog("正在删除", true, AlipassListActivity.c(this.b.a));
-    this.b.a.a(null, "del", this.a);
+    this.b.a.e(null, "del", this.a);
     if (1 == this.a.getItemFrom())
     {
-      AlipassListActivity.a(this.b.a, this.a.getPartnerID(), this.a.getSerialNumber());
+      AlipassListActivity.e(this.b.a, this.a.getPartnerID(), this.a.getSerialNumber());
       return;
     }
-    this.b.a.a(this.a.getPassId(), this.b.a.getInitLevel());
+    this.b.a.v(this.a.getPassId(), this.b.a.getInitLevel());
   }
 }
 

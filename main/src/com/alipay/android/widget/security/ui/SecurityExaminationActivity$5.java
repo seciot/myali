@@ -20,7 +20,7 @@ class SecurityExaminationActivity$5
   {
     try
     {
-      SecurityExaminationActivity.a(this.a, (SchemeService)SecurityExaminationActivity.d(this.a).getMicroApplicationContext().findServiceByInterface(SchemeService.class.getName()));
+      SecurityExaminationActivity.v(this.a, (SchemeService)SecurityExaminationActivity.d(this.a).getMicroApplicationContext().findServiceByInterface(SchemeService.class.getName()));
       SecurityExaminationActivity localSecurityExaminationActivity = this.a;
       BehaviourIdEnum localBehaviourIdEnum = BehaviourIdEnum.CLICKED;
       String[] arrayOfString = new String[5];

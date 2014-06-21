@@ -13,7 +13,7 @@ final class ak extends Thread
   public final void run()
   {
     Looper.prepare();
-    s.a(this.a, Looper.myLooper());
+    s.v(this.a, Looper.myLooper());
     s.c(this.a).requestLocationUpdates("passive", 1000L, 50.0F, s.b(this.a));
     Looper.loop();
   }

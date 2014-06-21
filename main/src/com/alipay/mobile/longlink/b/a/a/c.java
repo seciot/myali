@@ -6,21 +6,21 @@ public final class c
 {
   private String a;
   private int b;
-  private d c;
+  private ZLog c;
 
-  public c(d paramd, String paramString, int paramInt)
+  public c(ZLog paramd, String paramString, int paramInt)
   {
     this.c = paramd;
     this.a = paramString;
     this.b = paramInt;
   }
 
-  public final d a()
+  public final ZLog a()
   {
     return this.c;
   }
 
-  public final String b()
+  public final String stop()
   {
     return this.a;
   }
@@ -32,9 +32,9 @@ public final class c
 
   public final SocketFactory getInitLevel()
   {
-    if (this.c == d.AppBundle)
+    if (this.c == ZLog.AppBundle)
       return new AppBundle();
-    if (this.c == d.BundlesManagerImpl)
+    if (this.c == ZLog.BundlesManagerImpl)
       return new e(this);
     return null;
   }

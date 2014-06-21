@@ -11,7 +11,7 @@ final class aj
 
   public final void run()
   {
-    RegisterDownSmsFragment_.a(this.c, this.a, this.b);
+    RegisterDownSmsFragment_.e(this.c, this.a, this.b);
   }
 }
 

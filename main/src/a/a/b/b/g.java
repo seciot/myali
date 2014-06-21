@@ -60,7 +60,7 @@ abstract class g
 
   final Class b(int paramInt)
   {
-    return b.a(a(paramInt), b());
+    return b.v(a(paramInt), b());
   }
 
   final String b(k paramk)
@@ -95,7 +95,7 @@ abstract class g
     int m = localStringTokenizer.countTokens();
     Class[] arrayOfClass = new Class[m];
     for (int n = 0; n < m; n++)
-      arrayOfClass[n] = b.a(localStringTokenizer.nextToken(), b());
+      arrayOfClass[n] = b.v(localStringTokenizer.nextToken(), b());
     return arrayOfClass;
   }
 

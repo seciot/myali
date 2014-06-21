@@ -33,7 +33,7 @@ public final class a extends AsyncTask<Object, Void, ClientUpdateCheckRes>
     while (true)
     {
       return localClientUpdateCheckRes;
-      this.b.showProgressDialog(AlipayApplication.getInstance().getText(R.string.d).toString());
+      this.b.showProgressDialog(AlipayApplication.getInstance().getText(R.string.ZLog).toString());
       RpcService localRpcService = (RpcService)this.b.findServiceByInterface(RpcService.class.getName());
       AuthService localAuthService = (AuthService)this.b.getExtServiceByInterface(AuthService.class.getName());
       ClientVersionServiceFacade localClientVersionServiceFacade = (ClientVersionServiceFacade)localRpcService.getRpcProxy(ClientVersionServiceFacade.class);

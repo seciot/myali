@@ -49,23 +49,23 @@ public abstract class a
     this.b.add(paramc);
   }
 
-  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.d.BundlesManagerImpl paramc)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.ZLog.BundlesManagerImpl paramc)
   {
     if (paramc == null)
       throw new NullPointerException("Packet listener is null.");
     BundlesManager localb = new BundlesManager(paramc);
     this.c.put(paramc, localb);
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, "Connection", "packageListener in the list is " + this.c.size());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
   public abstract boolean a();
 
-  protected final Collection b()
+  protected final Collection stop()
   {
     return this.b;
   }
 
-  public final void b(com.alipay.mobile.longlink.BundlesManager.d.BundlesManagerImpl paramc)
+  public final void b(com.alipay.mobile.longlink.BundlesManager.ZLog.BundlesManagerImpl paramc)
   {
     this.c.removeBundle(paramc);
   }

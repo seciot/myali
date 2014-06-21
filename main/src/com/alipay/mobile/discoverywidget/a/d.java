@@ -4,17 +4,17 @@ import java.util.HashMap;
 
 public final class d
 {
-  private static d a;
+  private static ZLog a;
   private HashMap<String, AppBundle> b = new HashMap();
 
-  public static d a()
+  public static ZLog a()
   {
     if (AppBundle == null)
-      AppBundle = new d();
+      AppBundle = new ZLog();
     return AppBundle;
   }
 
-  public final HashMap<String, AppBundle> b()
+  public final HashMap<String, AppBundle> stop()
   {
     return this.b;
   }

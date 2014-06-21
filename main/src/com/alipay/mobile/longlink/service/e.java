@@ -10,7 +10,7 @@ final class e extends TimerTask
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(4, a.x(), "===== HeartBeatTask() TimerTask=====");
+    com.alipay.mobile.longlink.c.a.e(4, a.x(), "===== HeartBeatTask() TimerTask=====");
     this.a.s();
   }
 }

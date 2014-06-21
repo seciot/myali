@@ -9,7 +9,7 @@ final class bj
 
   public final void run()
   {
-    ForgotLoginPwdActivity_.b(this.b, this.a);
+    ForgotLoginPwdActivity_.d(this.b, this.a);
   }
 }
 

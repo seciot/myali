@@ -11,7 +11,7 @@ final class ai
   {
     if (UICheckBox.f(this.b) != null)
     {
-      this.b.b(UICheckBox.f(this.b), this.a);
+      this.b.d(UICheckBox.f(this.b), this.a);
       UICheckBox.d(this.b);
     }
   }

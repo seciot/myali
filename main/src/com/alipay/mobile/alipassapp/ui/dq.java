@@ -16,18 +16,18 @@ final class dq
   {
     this.b.c("offerDetails");
     if (StringUtils.equals("openWeb", this.a.getType()))
-      MemberCardDetailActivity.a(this.b, this.a);
+      MemberCardDetailActivity.v(this.b, this.a);
     do
     {
       return;
       if (StringUtils.equals("openNative", this.a.getType()))
       {
-        MemberCardDetailActivity.b(this.b, this.a);
+        MemberCardDetailActivity.d(this.b, this.a);
         return;
       }
     }
     while (!StringUtils.equals("openSchema", this.a.getType()));
-    MemberCardDetailActivity.c(this.b, this.a);
+    MemberCardDetailActivity.i(this.b, this.a);
   }
 }
 

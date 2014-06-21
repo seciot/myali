@@ -9,7 +9,7 @@ final class am
 
   public final void run()
   {
-    MobileReChargePPBindMobileAcitvity_.a(this.b, this.a);
+    MobileReChargePPBindMobileAcitvity_.v(this.b, this.a);
   }
 }
 

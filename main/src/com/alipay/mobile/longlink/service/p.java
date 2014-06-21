@@ -16,7 +16,7 @@ public final class p
     {
       p localp2 = this.b.getBundleName();
       localp2.AppBundle = (-1 + localp2.AppBundle);
-      AppBundle.a(4, LongLinkService.getFullBundleName(), "Decremented task count to " + this.a);
+      AppBundle.e(4, LongLinkService.getFullBundleName(), "Decremented task count to " + this.a);
       return;
     }
   }

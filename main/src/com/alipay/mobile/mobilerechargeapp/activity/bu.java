@@ -9,7 +9,7 @@ final class bu
 
   public final void run()
   {
-    MobileRechargeActivity_.b(this.b, this.a);
+    MobileRechargeActivity_.d(this.b, this.a);
   }
 }
 

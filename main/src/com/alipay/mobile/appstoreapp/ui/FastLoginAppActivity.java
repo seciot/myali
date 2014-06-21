@@ -74,7 +74,7 @@ public class FastLoginAppActivity extends BaseActivity
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    setContentView(R.layout.d);
+    setContentView(R.layout.ZLog);
     this.d = ((AppManageService)this.mApp.getMicroApplicationContext().getExtServiceByInterface(AppManageService.class.getName()));
     this.d.addObserver(this);
     this.c = new AppsDataBizImpl(this.mApp, this.d);

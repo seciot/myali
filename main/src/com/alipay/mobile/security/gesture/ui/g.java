@@ -14,7 +14,7 @@ final class g
     if (paramBoolean)
       GestureActivity.k(this.a);
     if ((!paramBoolean) && (paramString != null))
-      GestureActivity.c(this.a, paramString);
+      GestureActivity.i(this.a, paramString);
   }
 }
 

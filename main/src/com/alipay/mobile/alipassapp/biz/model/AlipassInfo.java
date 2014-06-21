@@ -49,11 +49,11 @@ public class AlipassInfo extends f
     while (true)
     {
       return;
-      this.primaryFields = b.a(paramPassInfo.getPrimaryFields(), AlipassInfo.EinfoFields.class);
-      this.secondaryFields = b.a(paramPassInfo.getSecondaryFields(), AlipassInfo.EinfoFields.class);
-      this.auxiliaryFields = b.a(paramPassInfo.getAuxiliaryFields(), AlipassInfo.EinfoFields.class);
-      this.backFields = b.a(paramPassInfo.getBackFields(), AlipassInfo.EinfoFields.class);
-      this.appInfo = ((AlipassInfo.AppInfo)b.b(paramPassInfo.getAppInfo(), AlipassInfo.AppInfo.class));
+      this.primaryFields = b.v(paramPassInfo.getPrimaryFields(), AlipassInfo.EinfoFields.class);
+      this.secondaryFields = b.v(paramPassInfo.getSecondaryFields(), AlipassInfo.EinfoFields.class);
+      this.auxiliaryFields = b.v(paramPassInfo.getAuxiliaryFields(), AlipassInfo.EinfoFields.class);
+      this.backFields = b.v(paramPassInfo.getBackFields(), AlipassInfo.EinfoFields.class);
+      this.appInfo = ((AlipassInfo.AppInfo)b.d(paramPassInfo.getAppInfo(), AlipassInfo.AppInfo.class));
       this.passName = paramPassInfo.getPassName();
       this.passFrom = paramPassInfo.getPassFrom();
       this.remindSupport = paramPassInfo.getRemindSupport();
@@ -71,25 +71,25 @@ public class AlipassInfo extends f
             String str = localJSONObject.optString("format");
             if ("text".equals(str))
             {
-              this.operation.add(b.b(localJSONObject.toString(), AlipassInfo.Operation.OperationText.class));
+              this.operation.add(b.d(localJSONObject.toString(), AlipassInfo.Operation.OperationText.class));
               if (("1".equals(this.passBaseInfo.getFormatVersion())) && (((AlipassInfo.Operation.OperationText)this.operation.get(-1 + this.operation.size())).getMessage() == null))
                 this.operation.removeBundle(-1 + this.operation.size());
             }
             else if ("app".equals(str))
             {
-              this.operation.add(b.b(localJSONObject.toString(), AlipassInfo.Operation.OperationApp.class));
+              this.operation.add(b.d(localJSONObject.toString(), AlipassInfo.Operation.OperationApp.class));
               if (("1".equals(this.passBaseInfo.getFormatVersion())) && (((AlipassInfo.Operation.OperationApp)this.operation.get(-1 + this.operation.size())).getMessage() == null))
                 this.operation.removeBundle(-1 + this.operation.size());
             }
             else if (("barcode".equalsIgnoreCase(str)) || ("qrcode".equalsIgnoreCase(str)) || ("stamp".equalsIgnoreCase(str)) || ("url".equalsIgnoreCase(str)) || ("wave".equalsIgnoreCase(str)) || ("dbarcode".equalsIgnoreCase(str)) || ("dqrcode".equalsIgnoreCase(str)) || ("dwave".equalsIgnoreCase(str)))
             {
-              this.operation.add(b.b(localJSONObject.toString(), AlipassInfo.Operation.OperationString.class));
+              this.operation.add(b.d(localJSONObject.toString(), AlipassInfo.Operation.OperationString.class));
               if (("1".equals(this.passBaseInfo.getFormatVersion())) && (((AlipassInfo.Operation.OperationString)this.operation.get(-1 + this.operation.size())).getMessage() == null))
                 this.operation.removeBundle(-1 + this.operation.size());
             }
             else if ("img".equalsIgnoreCase(str))
             {
-              this.operation.add(b.b(localJSONObject.toString(), AlipassInfo.Operation.OperationImg.class));
+              this.operation.add(b.d(localJSONObject.toString(), AlipassInfo.Operation.OperationImg.class));
             }
           }
         }

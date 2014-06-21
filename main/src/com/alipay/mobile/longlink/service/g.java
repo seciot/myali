@@ -14,7 +14,7 @@ final class g
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(4, a.x(), "===== ReconnectTask() Runnable=====");
+    com.alipay.mobile.longlink.c.a.e(4, a.x(), "===== ReconnectTask() Runnable=====");
     synchronized (this.b)
     {
       if (this.a.getInitLevel() != null)
@@ -24,13 +24,13 @@ final class g
       this.a.getBundle(false);
       if (this.a.q())
       {
-        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, AppBundle.x(), "ReconnectTask() return because of flag(forcestopped).");
+        com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle.x(), "ReconnectTask() return because of flag(forcestopped).");
         return;
       }
     }
     if ((this.a.e() != null) && (this.a.e().length() > 0))
     {
-      com.alipay.mobile.longlink.c.a.a(4, a.x(), "ReconnectTask() getUsername=" + this.a.e());
+      com.alipay.mobile.longlink.c.a.e(4, a.x(), "ReconnectTask() getUsername=" + this.a.e());
       try
       {
         Thread.sleep(100L);
@@ -43,7 +43,7 @@ final class g
         return;
       }
     }
-    com.alipay.mobile.longlink.c.a.a(3, a.x(), "ReconnectTask() there isn't valind user and give up connecting.");
+    com.alipay.mobile.longlink.c.a.e(3, a.x(), "ReconnectTask() there isn't valind user and give up connecting.");
   }
 }
 

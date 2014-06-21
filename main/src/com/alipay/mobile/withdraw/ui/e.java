@@ -13,7 +13,7 @@ final class e
   public final void onFocusChange(View paramView, boolean paramBoolean)
   {
     if (paramBoolean)
-      WithdrawActivity.a(this.c, this.a, this.b);
+      WithdrawActivity.e(this.c, this.a, this.b);
   }
 }
 

@@ -11,7 +11,7 @@ class IndependentPwdSettingActivity_$1
 
   public void run()
   {
-    IndependentPwdSettingActivity_.a(this.b, this.a);
+    IndependentPwdSettingActivity_.v(this.b, this.a);
   }
 }
 

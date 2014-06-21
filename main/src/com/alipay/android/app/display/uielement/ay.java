@@ -10,7 +10,7 @@ final class ay
   public final void run()
   {
     if (UIDatePicker.getBundle(this.a) != null)
-      this.a.a(UIDatePicker.getBundle(this.a), null);
+      this.a.v(UIDatePicker.getBundle(this.a), null);
   }
 }
 

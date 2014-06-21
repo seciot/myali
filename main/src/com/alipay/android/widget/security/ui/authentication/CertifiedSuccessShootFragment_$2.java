@@ -12,7 +12,7 @@ class CertifiedSuccessShootFragment_$2
 
   public void run()
   {
-    CertifiedSuccessShootFragment_.a(this.c, this.a, this.b);
+    CertifiedSuccessShootFragment_.e(this.c, this.a, this.b);
   }
 }
 

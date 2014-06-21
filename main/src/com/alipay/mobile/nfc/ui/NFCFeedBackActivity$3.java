@@ -13,7 +13,7 @@ class NFCFeedBackActivity$3
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    NFCFeedBackActivity.a(this.a, paramInt);
+    NFCFeedBackActivity.v(this.a, paramInt);
     NFCFeedBackActivity.f(this.a).setLeftText(NFCFeedBackActivity.removeBundle(this.a)[paramInt]);
     NFCFeedBackActivity.g(this.a);
     paramDialogInterface.cancel();

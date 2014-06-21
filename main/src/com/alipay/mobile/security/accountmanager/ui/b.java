@@ -29,7 +29,7 @@ final class b
         new StringBuilder("click position: ").append(paramInt).append(" size: ").append(this.a.g.size()).toString();
         return;
       }
-      ((AppBundle.a)paramView.getTag()).c.setVisibility(0);
+      ((AppBundle.ExceptionHandler)paramView.getTag()).c.setVisibility(0);
       this.a.c.notifyDataSetChanged();
       localUserInfo = (UserInfo)this.a.g.get(paramInt);
       Object localObject = "";
@@ -56,7 +56,7 @@ final class b
       new StringBuilder("切换账户异常：").append(localException.getMessage()).toString();
       return;
     }
-    AccountManagerActivity.a(this.a, localUserInfo);
+    AccountManagerActivity.v(this.a, localUserInfo);
   }
 }
 

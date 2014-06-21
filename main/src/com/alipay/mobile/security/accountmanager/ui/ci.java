@@ -12,7 +12,7 @@ final class ci
 
   public final void run()
   {
-    SecurityUtil.c(this.a, this.a.a.getEtContent());
+    SecurityUtil.i(this.a, this.a.a.getEtContent());
   }
 }
 

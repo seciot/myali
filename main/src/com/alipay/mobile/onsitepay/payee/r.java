@@ -9,7 +9,7 @@ final class r
 
   public final void run()
   {
-    FacePayeeActivity_.b(this.b, this.a);
+    FacePayeeActivity_.d(this.b, this.a);
   }
 }
 

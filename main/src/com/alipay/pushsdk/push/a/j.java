@@ -36,7 +36,7 @@ class j
         synchronized (this.e)
         {
           this.e.wait();
-          BundlesManagerImpl.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
+          BundlesManagerImpl.e(4, AppBundle, "nextPacket queue len=" + this.e.size());
         }
       }
       catch (InterruptedException localInterruptedException)
@@ -116,7 +116,7 @@ class j
     //   50	90	97	finally
   }
 
-  public final void b()
+  public final void stop()
   {
     this.b.start();
   }

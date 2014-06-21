@@ -69,7 +69,7 @@ final class SpdyStream$SpdyDataOutputStream extends OutputStream
     int i = this.b;
     synchronized (this.this$0)
     {
-      a(i, paramBoolean);
+      v(i, paramBoolean);
       this.e = (i + this.e);
       SpdyStream.access$800(this.this$0).writeData(SpdyStream.access$700(this.this$0), paramBoolean, this.a, 0, this.b);
       this.b = 0;

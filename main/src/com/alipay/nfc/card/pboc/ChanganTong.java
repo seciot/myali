@@ -29,8 +29,8 @@ final class ChanganTong extends PbocCard
         ArrayList localArrayList = b(paramTag);
         ChanganTong localChanganTong = new ChanganTong(paramTag);
         localChanganTong.getBundle(localResponse2);
-        localChanganTong.a(localResponse1, 4, false);
-        String str = Util.b(localResponse1.b(), 2, 2);
+        localChanganTong.e(localResponse1, 4, false);
+        String str = Util.b(localResponse1.stop(), 2, 2);
         String[][] arrayOfString = u;
         int i = arrayOfString.length;
         for (int j = 0; ; j++)

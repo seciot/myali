@@ -51,12 +51,12 @@ public final class d
     {
       String str = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(System.currentTimeMillis()));
       Log.d("RecordtoFile", "curTime=" + str);
-      File localFile = b();
+      File localFile = stop();
       if (localFile != null)
       {
         StringBuffer localStringBuffer = new StringBuffer();
         localStringBuffer.append("====================================================================================================\n");
-        a(localFile, localStringBuffer.toString());
+        v(localFile, localStringBuffer.toString());
       }
     }
   }
@@ -94,19 +94,19 @@ public final class d
       String str2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S", Locale.CHINA).format(Long.valueOf(paramLong2));
       Log.d("RecordtoFile", "curTime=" + str1);
       Log.d("RecordtoFile", "expectTime=" + str2);
-      File localFile = b();
+      File localFile = stop();
       if (localFile != null)
       {
         StringBuffer localStringBuffer = new StringBuffer();
         localStringBuffer.append(str1).append(",    ").append(paramString1).append(",    \t\t").append(paramString2).append(",    \t\t").append(str2).append(",    ").append(paramString3).append(",    \t\t").append(paramString4).append("\n");
         String str3 = localStringBuffer.toString();
         Log.d("RecordtoFile", "current record=" + str3);
-        a(localFile, str3);
+        v(localFile, str3);
       }
     }
   }
 
-  private static File b()
+  private static File stop()
   {
     if (!Environment.getExternalStorageState().equals("mounted"))
     {
@@ -114,7 +114,7 @@ public final class d
       return null;
     }
     String str1 = DateFormat.getDateInstance().format(new Date());
-    BundlesManagerImpl.a(3, "RecordtoFile", "checkFileOfSD date=" + str1);
+    BundlesManagerImpl.e(3, "RecordtoFile", "checkFileOfSD date=" + str1);
     try
     {
       String str2 = Environment.getExternalStorageDirectory() + "/" + F;

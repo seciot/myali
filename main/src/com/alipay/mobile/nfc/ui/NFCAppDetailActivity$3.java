@@ -17,12 +17,12 @@ class NFCAppDetailActivity$3
     {
     default:
       NFCAppDetailActivity.d(this.a).setText(this.a.getString(R.string.BundlesManagerImpl));
-      NFCAppDetailActivity.a(this.a, "main_button_style");
+      NFCAppDetailActivity.v(this.a, "main_button_style");
       return;
     case 202:
     }
     NFCAppDetailActivity.d(this.a).setText(this.a.getString(R.string.l));
-    NFCAppDetailActivity.a(this.a, "main_button_style");
+    NFCAppDetailActivity.v(this.a, "main_button_style");
   }
 }
 

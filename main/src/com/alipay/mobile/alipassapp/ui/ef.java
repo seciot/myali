@@ -11,7 +11,7 @@ final class ef
 
   public final void run()
   {
-    MemberCardDetailActivity_.a(this.b, this.a);
+    MemberCardDetailActivity_.v(this.b, this.a);
   }
 }
 

@@ -13,7 +13,7 @@ final class a
   public final void onClick(View paramView)
   {
     if (this.a.mPatternCheckedListener != null)
-      this.a.mPatternCheckedListener.a(true, false, false);
+      this.a.mPatternCheckedListener.e(true, false, false);
   }
 }
 

@@ -14,7 +14,7 @@ final class a
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     paramDialogInterface.dismiss();
-    this.a.a(((java.lang.String[])this.b.get(paramInt))[0], ((java.lang.String[])this.b.get(paramInt))[1]);
+    this.a.v(((java.lang.String[])this.b.get(paramInt))[0], ((java.lang.String[])this.b.get(paramInt))[1]);
   }
 }
 

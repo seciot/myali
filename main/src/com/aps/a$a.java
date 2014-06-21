@@ -24,10 +24,10 @@ class a$a extends BroadcastReceiver
       {
         if (a.f(this.a) == null)
           continue;
-        a.a(this.a, a.f(this.a).getScanResults());
+        a.v(this.a, a.f(this.a).getScanResults());
         if (a.g(this.a) != null)
           continue;
-        a.a(this.a, new ArrayList());
+        a.v(this.a, new ArrayList());
         return;
       }
       int n;
@@ -75,7 +75,7 @@ class a$a extends BroadcastReceiver
         }
         if (str.equals("android.intent.action.AIRPLANE_MODE"))
         {
-          a.a(this.a, n.getBundle(paramContext));
+          a.v(this.a, n.getBundle(paramContext));
           return;
         }
         if (!str.equals("android.intent.action.BATTERY_CHANGED"))
@@ -92,7 +92,7 @@ class a$a extends BroadcastReceiver
         switch (k)
         {
         default:
-          a.b(this.a, true);
+          a.d(this.a, true);
           return;
         case 4:
         }
@@ -100,13 +100,13 @@ class a$a extends BroadcastReceiver
         {
           if (a.j(this.a) >= 5)
           {
-            a.b(this.a, false);
+            a.d(this.a, false);
             return;
           }
-          a.b(this.a, false);
+          a.d(this.a, false);
           return;
         }
-        a.b(this.a, true);
+        a.d(this.a, true);
         return;
       }
       catch (SecurityException localSecurityException)

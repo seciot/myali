@@ -26,7 +26,7 @@ public abstract class c
     String str1 = this.d.getFilesDir().getPath() + "/";
     String str2 = str1 + b;
     String str3 = str2 + c;
-    com.alipay.pushsdk.c.a.c.a(4, a, "getMsgDir() strRoot=" + str1);
+    com.alipay.pushsdk.c.a.c.e(4, a, "getMsgDir() strRoot=" + str1);
     new File(str1).mkdir();
     new File(str2).mkdir();
     new File(str3).mkdir();

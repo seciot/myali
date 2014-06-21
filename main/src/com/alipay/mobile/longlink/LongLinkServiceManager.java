@@ -31,7 +31,7 @@ public final class LongLinkServiceManager
   {
     if ((this.mAppPktHanlderMap != null) && (!this.mAppPktHanlderMap.isEmpty()))
       this.mAppPktHanlderMap.clear();
-    a.a(3, LOGTAG, "clearAppHanlderMap is done.");
+    a.e(3, LOGTAG, "clearAppHanlderMap is done.");
   }
 
   public static LongLinkServiceManager getInstance(Context paramContext)
@@ -55,21 +55,21 @@ public final class LongLinkServiceManager
     boolean bool;
     if ((str1 != null) && (str1.length() > 0))
     {
-      a.a(3, LOGTAG, "onAppHanlder appId=" + str1);
+      a.e(3, LOGTAG, "onAppHanlder appId=" + str1);
       if ((this.mAppPktHanlderMap != null) && (this.mAppPktHanlderMap.containsKey(str1)))
       {
         PacketHanlder localPacketHanlder = (PacketHanlder)this.mAppPktHanlderMap.get(str1);
         if (localPacketHanlder != null)
         {
           localPacketHanlder.processPacket(str1, str2);
-          a.a(3, LOGTAG, "onAppHanlder processPacket done. ");
+          a.e(3, LOGTAG, "onAppHanlder processPacket done. ");
           bool = true;
         }
       }
     }
     while (true)
     {
-      a.a(3, LOGTAG, "onAppHanlder is done. ret=" + bool);
+      a.e(3, LOGTAG, "onAppHanlder is done. ret=" + bool);
       return bool;
       bool = false;
       continue;
@@ -85,11 +85,11 @@ public final class LongLinkServiceManager
     String str2 = paramJSONObject.optString("payload");
     if ((str1 != null) && (str1.length() > 0))
     {
-      a.a(3, LOGTAG, "onCommonHanlder appId=" + str1);
+      a.e(3, LOGTAG, "onCommonHanlder appId=" + str1);
       if (this.mComPktHanlder != null)
       {
         this.mComPktHanlder.processPacket(str1, str2);
-        a.a(3, LOGTAG, "mComPktHanlder processPacket done. ");
+        a.e(3, LOGTAG, "mComPktHanlder processPacket done. ");
       }
     }
   }
@@ -115,10 +115,10 @@ public final class LongLinkServiceManager
       this.mContext.getApplicationContext().bindService(new Intent(this.mContext, LongLinkService.class), this.mServiceConn, 1);
       registerCommonFunc(paramPacketHanlder);
       this.mAppPktHanlderMap = new ConcurrentHashMap();
-      a.a(3, LOGTAG, "LongLinkServiceManager bindService done.");
+      a.e(3, LOGTAG, "LongLinkServiceManager bindService done.");
       return;
     }
-    a.a(2, LOGTAG, "LongLinkServiceManager mService is null.");
+    a.e(2, LOGTAG, "LongLinkServiceManager mService is null.");
   }
 
   public final boolean isConnected()
@@ -130,7 +130,7 @@ public final class LongLinkServiceManager
     {
       boolean bool2 = this.mService.c();
       bool1 = bool2;
-      a.a(3, LOGTAG, "isConnected ret=" + bool1);
+      a.e(3, LOGTAG, "isConnected ret=" + bool1);
       return bool1;
     }
     catch (RemoteException localRemoteException)
@@ -147,24 +147,24 @@ public final class LongLinkServiceManager
   {
     if (this.mAppPktHanlderMap != null)
     {
-      a.a(4, LOGTAG, "registerAppAppHanlder the size is " + this.mAppPktHanlderMap.size());
+      a.e(4, LOGTAG, "registerAppAppHanlder the size is " + this.mAppPktHanlderMap.size());
       if ((paramString != null) && (paramString.length() > 0) && (paramPacketHanlder != null))
       {
         this.mAppPktHanlderMap.put(paramString, paramPacketHanlder);
-        a.a(3, LOGTAG, "registerAppAppHanlder is done.");
+        a.e(3, LOGTAG, "registerAppAppHanlder is done.");
         return;
       }
-      a.a(2, LOGTAG, "registerAppAppHanlder params are invalid. AppId=" + paramString);
+      a.e(2, LOGTAG, "registerAppAppHanlder params are invalid. AppId=" + paramString);
       return;
     }
-    a.a(2, LOGTAG, "registerAppAppHanlder mAppPktHanlderMap is null.");
+    a.e(2, LOGTAG, "registerAppAppHanlder mAppPktHanlderMap is null.");
   }
 
   public final void registerCommonFunc(PacketHanlder paramPacketHanlder)
   {
     this.mComPktHanlder = paramPacketHanlder;
     setPacketListener(this.mPacketNotifer);
-    a.a(3, LOGTAG, "registerCommonFunc set packetHandler done.");
+    a.e(3, LOGTAG, "registerCommonFunc set packetHandler done.");
   }
 
   public final void sendPacketUplink(String paramString1, String paramString2)
@@ -172,7 +172,7 @@ public final class LongLinkServiceManager
     if (this.mService != null)
       try
       {
-        a.a(3, LOGTAG, "sendPacketUplink is called. appId=" + paramString1 + ", appData=" + paramString2);
+        a.e(3, LOGTAG, "sendPacketUplink is called. appId=" + paramString1 + ", appData=" + paramString2);
         JSONObject localJSONObject = new JSONObject();
         try
         {
@@ -184,14 +184,14 @@ public final class LongLinkServiceManager
         catch (JSONException localJSONException)
         {
           localJSONException.printStackTrace();
-          a.a(2, LOGTAG, "sendPacketUplink get bizData failed.");
+          a.e(2, LOGTAG, "sendPacketUplink get bizData failed.");
           return;
         }
       }
       catch (RemoteException localRemoteException)
       {
         localRemoteException.printStackTrace();
-        a.a(2, LOGTAG, "sendPacketUplink failed.");
+        a.e(2, LOGTAG, "sendPacketUplink failed.");
       }
   }
 
@@ -200,7 +200,7 @@ public final class LongLinkServiceManager
     if (this.mService != null);
     try
     {
-      a.a(3, LOGTAG, "setAppUserInfo is called. userId=" + paramString1 + ", loginTime=" + paramString3);
+      a.e(3, LOGTAG, "setAppUserInfo is called. userId=" + paramString1 + ", loginTime=" + paramString3);
       this.mService.a(paramString1, paramString2, paramString3);
       return;
     }
@@ -221,7 +221,7 @@ public final class LongLinkServiceManager
     if (this.mService != null);
     try
     {
-      a.a(3, LOGTAG, "setLinkAddr is called. host=" + paramString1 + ", port=" + paramInt + ", sslFlag=" + paramString2);
+      a.e(3, LOGTAG, "setLinkAddr is called. host=" + paramString1 + ", port=" + paramInt + ", sslFlag=" + paramString2);
       this.mService.a(paramString1, paramInt, paramString2);
       return;
     }
@@ -236,10 +236,10 @@ public final class LongLinkServiceManager
     if (this.mService != null)
       try
       {
-        a.a(3, LOGTAG, "startLink will be called.");
+        a.e(3, LOGTAG, "startLink will be called.");
         if (this.mService.c())
         {
-          a.a(3, LOGTAG, "LongLink is still working...");
+          a.e(3, LOGTAG, "LongLink is still working...");
           return;
         }
         this.mService.a();
@@ -256,7 +256,7 @@ public final class LongLinkServiceManager
     if (this.mService != null);
     try
     {
-      a.a(3, LOGTAG, "stopLink will be called.");
+      a.e(3, LOGTAG, "stopLink will be called.");
       this.mService.b();
       return;
     }
@@ -294,17 +294,17 @@ public final class LongLinkServiceManager
   {
     if ((paramString != null) && (paramString.length() > 0))
     {
-      a.a(3, LOGTAG, "unRegisterAppAppHanlder Enter... AppId=" + paramString);
+      a.e(3, LOGTAG, "unRegisterAppAppHanlder Enter... AppId=" + paramString);
       if ((this.mAppPktHanlderMap != null) && (this.mAppPktHanlderMap.containsKey(paramString)))
       {
         this.mAppPktHanlderMap.remove(paramString);
-        a.a(3, LOGTAG, "unRegisterAppAppHanlder is done.");
+        a.e(3, LOGTAG, "unRegisterAppAppHanlder is done.");
         return;
       }
-      a.a(2, LOGTAG, "unRegisterAppAppHanlder AppId is not exist.");
+      a.e(2, LOGTAG, "unRegisterAppAppHanlder AppId is not exist.");
       return;
     }
-    a.a(2, LOGTAG, "unRegisterAppAppHanlder params are invalid. AppId=" + paramString);
+    a.e(2, LOGTAG, "unRegisterAppAppHanlder params are invalid. AppId=" + paramString);
   }
 
   public final void unRegisterCommonFunc()

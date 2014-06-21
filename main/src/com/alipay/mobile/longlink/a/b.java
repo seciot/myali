@@ -19,7 +19,7 @@ public abstract class b
   {
     String str1 = this.d.getFilesDir().getPath() + "/";
     String str2 = str1 + BundlesManagerImpl + File.separatorChar;
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, BundlesManager, "getMsgDir() strPush=" + str2);
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManager, "getMsgDir() strPush=" + str2);
     new File(str1).mkdir();
     new File(str2).mkdir();
     return str2;

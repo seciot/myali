@@ -12,7 +12,7 @@ final class at
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.a(this.a.b(), "");
+    RegisterNewActivity.v(this.a.stop(), "");
   }
 }
 

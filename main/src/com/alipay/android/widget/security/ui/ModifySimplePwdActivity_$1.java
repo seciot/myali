@@ -9,7 +9,7 @@ class ModifySimplePwdActivity_$1
 
   public void run()
   {
-    ModifySimplePwdActivity_.a(this.b, this.a);
+    ModifySimplePwdActivity_.v(this.b, this.a);
   }
 }
 

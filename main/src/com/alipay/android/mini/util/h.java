@@ -20,8 +20,8 @@ final class h
     {
       String str1 = "js://changeSubmitValue('" + this.c + "','" + this.b[paramInt] + "')";
       String str2 = "js://changeHint('" + this.d + "','" + this.e[paramInt] + "号码')";
-      this.f.a(this.f, ActionType.a(new ElementAction(str1)));
-      this.f.a(this.f, ActionType.a(new ElementAction(str2)));
+      this.f.v(this.f, ActionType.a(new ElementAction(str1)));
+      this.f.v(this.f, ActionType.a(new ElementAction(str2)));
     }
   }
 }

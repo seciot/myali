@@ -17,12 +17,12 @@ public class SendSoundViewActivity$HeadSetReceiver extends BroadcastReceiver
       if (paramIntent.getIntExtra("state", 0) != 0)
         break label74;
       new StringBuilder("接收耳机拨插时的广播1　misHeadSetOn").append(SendSoundViewActivity.m(this.a)).toString();
-      SendSoundViewActivity.a(this.a, false);
+      SendSoundViewActivity.v(this.a, false);
       if (!SendSoundViewActivity.m(this.a))
         this.a.getBundle("点击重试");
     }
     return;
-    label74: SendSoundViewActivity.a(this.a, true);
+    label74: SendSoundViewActivity.v(this.a, true);
     this.a.r();
   }
 }

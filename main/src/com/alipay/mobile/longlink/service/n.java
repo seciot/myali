@@ -38,7 +38,7 @@ class n extends ILongLinkService.Stub
     locall.a(paramString1);
     locall.b(paramString2);
     locall.c(paramString3);
-    com.alipay.mobile.longlink.c.a.a(3, LongLinkService.getFullBundleName(), "setAppUserInfo() userId=" + paramString1 + ", loginTime=" + paramString3);
+    com.alipay.mobile.longlink.c.a.e(3, LongLinkService.getFullBundleName(), "setAppUserInfo() userId=" + paramString1 + ", loginTime=" + paramString3);
     LongLinkService.a.a(locall.c());
     LongLinkService.a.b(false);
     q.b();

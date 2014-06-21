@@ -9,7 +9,7 @@ class SmsCheckActivity_$2
 
   public void run()
   {
-    SmsCheckActivity_.a(this.b, this.a);
+    SmsCheckActivity_.v(this.b, this.a);
   }
 }
 

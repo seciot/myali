@@ -12,7 +12,7 @@ final class e
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    CompletePhoneUserInfoActivity.a(this.a.a, CompletePhoneUserInfoActivity.getBundle(this.a.a), CompletePhoneUserInfoActivity.d(this.a.a));
+    CompletePhoneUserInfoActivity.e(this.a.a, CompletePhoneUserInfoActivity.getBundle(this.a.a), CompletePhoneUserInfoActivity.d(this.a.a));
   }
 }
 

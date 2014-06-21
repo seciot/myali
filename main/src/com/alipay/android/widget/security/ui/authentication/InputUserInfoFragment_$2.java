@@ -11,7 +11,7 @@ class InputUserInfoFragment_$2
 
   public void run()
   {
-    InputUserInfoFragment_.a(this.b, this.a);
+    InputUserInfoFragment_.v(this.b, this.a);
   }
 }
 

@@ -18,7 +18,7 @@ public final class m
     AppBundle = paramInt * 1000;
   }
 
-  public static int b()
+  public static int stop()
   {
     if (AppBundle <= 0)
       AppBundle = 10000;

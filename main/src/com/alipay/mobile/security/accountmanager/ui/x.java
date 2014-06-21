@@ -12,7 +12,7 @@ final class x
 
   public final void onSend(SendResultCallback paramSendResultCallback)
   {
-    BindPhoneActivity.a(this.a, Boolean.valueOf(false));
+    BindPhoneActivity.v(this.a, Boolean.valueOf(false));
     new Thread(new BindPhoneActivity.b(this.a, 2, (byte)0)).start();
   }
 }

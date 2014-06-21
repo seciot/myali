@@ -31,7 +31,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
     this.j = ((TextView)findViewById(R.id.i));
     this.i = ((TextView)findViewById(R.id.h));
     this.d = ((ViewGroup)findViewById(R.id.BundlesManager));
-    this.e = ((Button)findViewById(R.id.d));
+    this.e = ((Button)findViewById(R.id.ZLog));
     b();
   }
 
@@ -50,7 +50,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
     this.q = AnimationUtils.loadAnimation(this, R.anim.f);
     this.p = AnimationUtils.loadAnimation(this, R.anim.e);
     this.m = AnimationUtils.loadAnimation(this, R.anim.BundlesManagerImpl);
-    this.o = AnimationUtils.loadAnimation(this, R.anim.d);
+    this.o = AnimationUtils.loadAnimation(this, R.anim.ZLog);
     this.n = AnimationUtils.loadAnimation(this, R.anim.BundlesManager);
     this.l = AnimationUtils.loadAnimation(this, R.anim.AppBundle);
     a();

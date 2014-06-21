@@ -13,7 +13,7 @@ final class a extends Handler
   {
     super.handleMessage(paramMessage);
     if (paramMessage.what == 1)
-      HyperlinkActivity.a(this.a, (String)paramMessage.obj);
+      HyperlinkActivity.v(this.a, (String)paramMessage.obj);
   }
 }
 

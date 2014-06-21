@@ -42,7 +42,7 @@ public class UIButtonGroup extends BaseElement
               localMap = m();
             }
             this.a[j] = new UIButtonGroup.UIButtonItem();
-            this.a[j].a(localJSONObject, localMap);
+            this.a[j].v(localJSONObject, localMap);
           }
         }
       }

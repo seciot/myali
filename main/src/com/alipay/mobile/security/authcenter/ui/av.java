@@ -11,7 +11,7 @@ final class av
 
   public final void run()
   {
-    RegisterNewActivity_.a(this.b, this.a);
+    RegisterNewActivity_.v(this.b, this.a);
   }
 }
 

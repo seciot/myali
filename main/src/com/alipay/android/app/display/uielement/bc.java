@@ -17,12 +17,12 @@ final class bc extends BaseTarget
 
   public final void a(int paramInt)
   {
-    UIUtils.a(UILabel.getBundle(this.b), this.a, paramInt);
+    UIUtils.e(UILabel.getBundle(this.b), this.a, paramInt);
   }
 
   public final void a(Drawable paramDrawable)
   {
-    UIUtils.a(UILabel.getBundle(this.b), this.a, paramDrawable);
+    UIUtils.e(UILabel.getBundle(this.b), this.a, paramDrawable);
   }
 }
 

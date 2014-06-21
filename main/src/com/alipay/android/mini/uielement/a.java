@@ -13,7 +13,7 @@ final class a
 
   public final void onClick(View paramView)
   {
-    this.a.a(this.a, ActionType.getBundle(BaseComponent.getBundle(this.a)));
+    this.a.v(this.a, ActionType.getBundle(BaseComponent.getBundle(this.a)));
   }
 }
 

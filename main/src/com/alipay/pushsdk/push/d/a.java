@@ -24,9 +24,9 @@ public class a
     {
       o.getBundle(System.currentTimeMillis());
       this.b.b(System.currentTimeMillis());
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
-      d.a(d.u, d.y, System.currentTimeMillis(), d.y, System.currentTimeMillis() + 1000 * o.l(), "HeartBeatPacketListener_processPacket:keepLiveTime=" + o.l());
-      if (parama.b() != 0);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
+      ZLog.a(ZLog.u, ZLog.y, System.currentTimeMillis(), ZLog.y, System.currentTimeMillis() + 1000 * o.l(), "HeartBeatPacketListener_processPacket:keepLiveTime=" + o.l());
+      if (parama.stop() != 0);
     }
     try
     {

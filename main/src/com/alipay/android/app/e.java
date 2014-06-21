@@ -11,7 +11,7 @@ final class e extends BroadcastReceiver
   public final void onReceive(Context paramContext, Intent paramIntent)
   {
     int i = paramIntent.getIntExtra("pid", -1);
-    FrameUtils.getBundle(PayEngine.a(StringUtil.b(paramIntent.getStringExtra("externalInfo")), i));
+    FrameUtils.getBundle(PayEngine.v(StringUtil.b(paramIntent.getStringExtra("externalInfo")), i));
   }
 }
 

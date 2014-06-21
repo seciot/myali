@@ -18,7 +18,7 @@ final class v
     try
     {
       AlipassOperationViewPager.access$800();
-      Bitmap localBitmap = i.a(this.a.getMessage(), this.b);
+      Bitmap localBitmap = i.v(this.a.getMessage(), this.b);
       if (this.c == null)
         return;
       AlipassOperationViewPager.access$800();

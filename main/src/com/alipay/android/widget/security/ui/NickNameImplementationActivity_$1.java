@@ -11,7 +11,7 @@ class NickNameImplementationActivity_$1
 
   public void run()
   {
-    NickNameImplementationActivity_.a(this.b, this.a);
+    NickNameImplementationActivity_.v(this.b, this.a);
   }
 }
 

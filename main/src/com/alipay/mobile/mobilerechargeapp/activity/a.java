@@ -14,7 +14,7 @@ final class a
   public final void onClick(View paramView)
   {
     LogAgentWriteLog.d(this.a);
-    this.a.b();
+    this.a.stop();
   }
 }
 

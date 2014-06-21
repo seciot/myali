@@ -16,15 +16,15 @@ public class b
   public final void a()
   {
     this.a.getInitLevel().getBundleName();
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(5, BundlesManager, "getConnection=" + this.a.getInitLevel().hashCode());
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(3, BundlesManager, "===== Connected onSuccess()=====");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, BundlesManager, "getConnection=" + this.a.getInitLevel().hashCode());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, BundlesManager, "===== Connected onSuccess()=====");
     this.a.getInitLevel().getBundle(this.a.hasResource());
     this.a.r();
   }
 
-  public final void b()
+  public final void stop()
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(2, BundlesManager, "===== Connected onFail()=====");
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(2, BundlesManager, "===== Connected onFail()=====");
     this.a.m();
   }
 }

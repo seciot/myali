@@ -19,7 +19,7 @@ final class m
     for (int j = 0; j < i; j++)
       if (j != paramLong)
         WithdrawActivity.j(this.a).getBundle(j).getBundle(false);
-    WithdrawActivity.a(this.a, (WithdrawBankInfo)paramAdapterView.getItemAtPosition((int)paramLong));
+    WithdrawActivity.v(this.a, (WithdrawBankInfo)paramAdapterView.getItemAtPosition((int)paramLong));
     WithdrawActivity.k(this.a).getBundle(true);
     this.a.getInitLevel();
     WithdrawActivity.j(this.a).notifyDataSetChanged();

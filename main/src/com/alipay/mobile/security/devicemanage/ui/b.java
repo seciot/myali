@@ -17,8 +17,8 @@ final class b
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     this.b.b.showProgressDialog(this.b.b.getResources().getString(R.string.bl));
-    DeviceManageActivity.a(this.b.b, this.a);
-    this.b.b.a(((DeviceInfo)this.b.a.get(this.a)).tid, this.b.a);
+    DeviceManageActivity.v(this.b.b, this.a);
+    this.b.b.v(((DeviceInfo)this.b.a.get(this.a)).tid, this.b.a);
   }
 }
 

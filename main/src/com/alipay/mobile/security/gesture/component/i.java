@@ -13,7 +13,7 @@ final class i
   public final void onClick(View paramView)
   {
     if (this.a.mPatternChangeListener != null)
-      this.a.mPatternChangeListener.a(true, null);
+      this.a.mPatternChangeListener.v(true, null);
   }
 }
 

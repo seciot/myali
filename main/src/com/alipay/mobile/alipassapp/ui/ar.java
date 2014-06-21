@@ -11,7 +11,7 @@ final class ar
   {
     AlipassListActivity.d(this.a.a);
     AlipassListActivity.removeBundle(this.a.a);
-    AlipassListActivity.a(this.a.a, this.a.a.getAllBundles());
+    AlipassListActivity.v(this.a.a, this.a.a.getAllBundles());
   }
 }
 

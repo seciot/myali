@@ -26,7 +26,7 @@ public final class a
     {
       if (localo.a())
         this.b.stopService(new Intent(this.b, NotificationService.class));
-      BundlesManagerImpl.a(3, a, "stopService is called.");
+      BundlesManagerImpl.e(3, a, "stopService is called.");
       com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.g, com.alipay.pushsdk.c.a.d.D, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.E, 10000L + System.currentTimeMillis(), "ServiceManager_stopService");
       return;
     }
@@ -41,7 +41,7 @@ public final class a
   {
     Thread localThread = new Thread(new b(this));
     o localo = new o(this.b);
-    BundlesManagerImpl.a(3, a, "isNotificationEnabled=" + localo.a() + ", triger=" + paramString);
+    BundlesManagerImpl.e(3, a, "isNotificationEnabled=" + localo.a() + ", triger=" + paramString);
     if (localo.a())
     {
       com.alipay.pushsdk.c.a.d.a();
@@ -79,7 +79,7 @@ public final class a
     {
       Thread.sleep(500L);
       localh.a(paramString);
-      BundlesManagerImpl.a(3, a, "setUserId=" + paramString);
+      BundlesManagerImpl.e(3, a, "setUserId=" + paramString);
       if (paramString.length() > 0)
         a("1");
       return;
@@ -95,7 +95,7 @@ public final class a
   {
     h localh = new h(this.b);
     String str = localh.a();
-    BundlesManagerImpl.a(3, a, "delUserId=" + paramString + ", curUserId=" + str);
+    BundlesManagerImpl.e(3, a, "delUserId=" + paramString + ", curUserId=" + str);
     if ((paramString != null) && (paramString.length() > 0) && (paramString.equals(str)))
     {
       a();

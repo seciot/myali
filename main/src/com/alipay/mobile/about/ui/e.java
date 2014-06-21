@@ -16,7 +16,7 @@ final class e
 
   public final void run()
   {
-    UserProposalFacade localUserProposalFacade = (UserProposalFacade)((RpcService)AboutFeedbackActivity.a(this.a, RpcService.class.getName())).getRpcProxy(UserProposalFacade.class);
+    UserProposalFacade localUserProposalFacade = (UserProposalFacade)((RpcService)AboutFeedbackActivity.v(this.a, RpcService.class.getName())).getRpcProxy(UserProposalFacade.class);
     UserProposalReq localUserProposalReq = AboutFeedbackActivity.f(this.a);
     try
     {

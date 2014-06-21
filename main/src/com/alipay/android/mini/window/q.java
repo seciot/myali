@@ -13,7 +13,7 @@ final class q
   public final void run()
   {
     MiniPayActivity localMiniPayActivity = this.d;
-    SystemDefaultDialog.a(localMiniPayActivity, this.b, this.c);
+    SystemDefaultDialog.e(localMiniPayActivity, this.b, this.c);
   }
 }
 

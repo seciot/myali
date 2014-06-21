@@ -9,7 +9,7 @@ final class cg
 
   public final void run()
   {
-    MobileRechargeCashierActivity_.a(this.b, this.a);
+    MobileRechargeCashierActivity_.v(this.b, this.a);
   }
 }
 

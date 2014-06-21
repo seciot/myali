@@ -29,17 +29,17 @@ public class UICombobox extends BaseElement
 
   private void a(TextView paramTextView, UICombobox.Option paramOption)
   {
-    UIUtils.a(paramOption.d, paramTextView, 0);
-    UIUtils.a(paramOption.c, new al(this, paramOption, paramTextView));
+    UIUtils.e(paramOption.d, paramTextView, 0);
+    UIUtils.v(paramOption.c, new al(this, paramOption, paramTextView));
   }
 
   private void setBundlePath(UICombobox.Option paramOption)
   {
     if (paramOption != null)
     {
-      a("value", paramOption.b);
-      super.a(this.g, paramOption.a);
-      a(this.g, paramOption);
+      v("value", paramOption.b);
+      super.v(this.g, paramOption.a);
+      v(this.g, paramOption);
       if (TextUtils.isEmpty(paramOption.b))
         this.d = 0;
     }
@@ -63,7 +63,7 @@ public class UICombobox extends BaseElement
         localOption.d = localJSONObject.optString("icon_align", "left");
         if (localJSONObject.optBoolean("selected", false))
         {
-          a("value", localOption.b);
+          v("value", localOption.b);
           this.d = i;
         }
         this.b.add(localOption);
@@ -114,7 +114,7 @@ public class UICombobox extends BaseElement
         if (localOption.b.equals(paramString))
         {
           this.d = i;
-          a("value", localOption.b);
+          v("value", localOption.b);
         }
       }
       else

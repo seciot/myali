@@ -19,13 +19,13 @@ public final class NotificationReceiver extends BroadcastReceiver
 
   public final void onReceive(Context paramContext, Intent paramIntent)
   {
-    BundlesManagerImpl.a(4, a, "NotificationReceiver.onReceive()...");
+    BundlesManagerImpl.e(4, a, "NotificationReceiver.onReceive()...");
     String str = paramIntent.getAction();
-    BundlesManagerImpl.a(3, a, "onReceive:" + this.b + ", action=" + str);
+    BundlesManagerImpl.e(3, a, "onReceive:" + this.b + ", action=" + str);
     if (this.b.equals(str))
     {
       NotifierInfo localNotifierInfo = (NotifierInfo)paramIntent.getParcelableExtra("notifier_parcelable");
-      BundlesManagerImpl.a(3, a, "onReceive() style=" + localNotifierInfo.e() + ", title=" + localNotifierInfo.a() + ", text=" + localNotifierInfo.b() + ", id=" + localNotifierInfo.g().a() + ", uri=" + localNotifierInfo.d());
+      BundlesManagerImpl.e(3, a, "onReceive() style=" + localNotifierInfo.e() + ", title=" + localNotifierInfo.a() + ", text=" + localNotifierInfo.b() + ", id=" + localNotifierInfo.g().a() + ", uri=" + localNotifierInfo.d());
       Intent localIntent = new Intent(paramContext.getPackageName() + ".push.action.MESSAGE_RECEIVED");
       localIntent.putExtra("push_show_title", localNotifierInfo.a());
       localIntent.putExtra("push_show_text", localNotifierInfo.b());
@@ -34,9 +34,9 @@ public final class NotificationReceiver extends BroadcastReceiver
       localIntent.putExtra("push_msg_key", localNotifierInfo.g().a());
       localIntent.putExtra("push_msg_data", localNotifierInfo.d());
       localIntent.addCategory(paramContext.getPackageName());
-      BundlesManagerImpl.a(3, a, "onReceive() getAction:" + localIntent.getAction());
+      BundlesManagerImpl.e(3, a, "onReceive() getAction:" + localIntent.getAction());
       paramContext.startService(localIntent);
-      BundlesManagerImpl.a(3, a, "onReceive() dispatchIntent to startService!");
+      BundlesManagerImpl.e(3, a, "onReceive() dispatchIntent to startService!");
     }
   }
 }

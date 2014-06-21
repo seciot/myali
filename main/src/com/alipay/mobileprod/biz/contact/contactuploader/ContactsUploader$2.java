@@ -8,7 +8,7 @@ class ContactsUploader$2 extends Thread
 
   public void run()
   {
-    ContactsUploader.a(this.b, this.a);
+    ContactsUploader.v(this.b, this.a);
   }
 }
 

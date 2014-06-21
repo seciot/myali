@@ -23,7 +23,7 @@ final class u
     SMSService localSMSService = (SMSService)BindPhoneActivity.w(this.a).getMicroApplicationContext().getExtServiceByInterface(SMSService.class.getName());
     if (localSMSService != null)
     {
-      BindPhoneActivity.c(this.a, Boolean.valueOf(localSMSService.isCanUseSim()));
+      BindPhoneActivity.i(this.a, Boolean.valueOf(localSMSService.isCanUseSim()));
       if (!BindPhoneActivity.x(this.a).booleanValue())
       {
         BindPhoneActivity.r(this.a);

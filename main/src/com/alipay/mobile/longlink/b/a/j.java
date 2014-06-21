@@ -8,7 +8,7 @@ final class j extends Thread
 
   public final void run()
   {
-    i.a(this.a, this);
+    i.v(this.a, this);
   }
 }
 

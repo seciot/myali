@@ -136,7 +136,7 @@ public abstract class AliUserLoginFragment<T> extends BaseLoginFragment
     int i1 = paramView.getId();
     if (i1 == R.id.Z)
     {
-      b();
+      stop();
       getRequireBundleName();
     }
     while (i1 != R.id.bN)

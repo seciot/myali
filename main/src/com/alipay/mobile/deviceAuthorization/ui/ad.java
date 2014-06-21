@@ -22,7 +22,7 @@ final class ad
 
   public final void onRefresh()
   {
-    LoginLogsActivity.a(this.a, false);
+    LoginLogsActivity.v(this.a, false);
   }
 }
 

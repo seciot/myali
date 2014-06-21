@@ -20,7 +20,7 @@ final class i
     {
       LogCatLog.i(HeaderAreaLayout.h(this.a), "query bill remind info");
       BillRemindInfoResp localBillRemindInfoResp = HeaderAreaLayout.i(this.a).getWaitPayRecordNum(localBillRemindInfoReq);
-      HeaderAreaLayout.a(this.a, localBillRemindInfoResp);
+      HeaderAreaLayout.v(this.a, localBillRemindInfoResp);
       return;
     }
     catch (RpcException localRpcException)

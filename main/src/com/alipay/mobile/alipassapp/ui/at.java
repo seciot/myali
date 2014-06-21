@@ -12,7 +12,7 @@ final class at
 
   public final void run()
   {
-    a locala = AlipassListActivity.f(this.a.a).a(this.a.a.getRequireBundleName(), this.a.a.getInitLevel());
+    a locala = AlipassListActivity.f(this.a.a).v(this.a.a.getRequireBundleName(), this.a.a.getInitLevel());
     locala.b = true;
     this.a.a.b(locala);
   }

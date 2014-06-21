@@ -13,7 +13,7 @@ final class f
 
   public final void onClick(View paramView)
   {
-    WithdrawActivity.a(this.a, "withdraw", "selectCard");
+    WithdrawActivity.e(this.a, "withdraw", "selectCard");
     if (WithdrawActivity.getBundle(this.a) == null)
     {
       WithdrawActivity.b(this.a);

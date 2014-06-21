@@ -24,7 +24,7 @@ class SecurityPasswordManagerActivity$8
         this.b.getInitLevel();
         return;
       }
-      this.b.a(paramResultBean, this.a);
+      this.b.v(paramResultBean, this.a);
       return;
     }
     this.b.getBundle(this.a);

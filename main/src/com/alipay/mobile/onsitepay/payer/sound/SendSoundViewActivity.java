@@ -106,7 +106,7 @@ public class SendSoundViewActivity extends BasicFacePayerActivity
       int i = com.alipay.mobile.onsitepay.e.l;
       if (this.x)
         i = com.alipay.mobile.onsitepay.e.m;
-      a.a(getApplicationContext(), "promptFlag", "true");
+      a.e(getApplicationContext(), "promptFlag", "true");
       View localView = LayoutInflater.from(this).inflate(i, null);
       this.r = new PopupWindow(localView, -1, -1, true);
       this.r.setFocusable(true);
@@ -169,7 +169,7 @@ public class SendSoundViewActivity extends BasicFacePayerActivity
 
   private boolean x()
   {
-    return "true".equals(a.a(getApplicationContext(), "promptFlag"));
+    return "true".equals(a.v(getApplicationContext(), "promptFlag"));
   }
 
   private void y()

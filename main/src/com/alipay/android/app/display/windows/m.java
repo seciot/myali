@@ -17,7 +17,7 @@ final class m
   {
     Context localContext = GlobalContext.a().b();
     String str1 = localContext.getString(R.string.l);
-    String str2 = WindowsManager.b(this.a).b();
+    String str2 = WindowsManager.b(this.a).stop();
     if (TextUtils.isEmpty(str2))
       str2 = localContext.getString(R.string.m);
     String str3 = localContext.getString(17039370);

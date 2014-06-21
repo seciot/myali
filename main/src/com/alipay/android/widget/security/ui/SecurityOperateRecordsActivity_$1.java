@@ -11,7 +11,7 @@ class SecurityOperateRecordsActivity_$1
 
   public void run()
   {
-    SecurityOperateRecordsActivity_.a(this.b, this.a);
+    SecurityOperateRecordsActivity_.v(this.b, this.a);
   }
 }
 

@@ -17,7 +17,7 @@ final class w
 
   public final void run()
   {
-    File localFile = LWThumbnailUtils.b(this.g, this.a);
+    File localFile = LWThumbnailUtils.d(this.g, this.a);
     if (localFile != null)
     {
       Bitmap localBitmap = ImageUtils.a(localFile.getAbsolutePath());

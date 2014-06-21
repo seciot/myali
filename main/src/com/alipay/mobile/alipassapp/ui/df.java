@@ -9,7 +9,7 @@ final class df
 
   public final void run()
   {
-    C2BConfirmActivity_.a(this.b, this.a);
+    C2BConfirmActivity_.v(this.b, this.a);
   }
 }
 

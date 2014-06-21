@@ -15,8 +15,8 @@ final class j
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    PaymentChannelActivity.a(this.b, paramInt);
-    PaymentChannelActivity.a(this.b, (String)PaymentChannelActivity.getBundle(this.b).get(paramInt));
+    PaymentChannelActivity.v(this.b, paramInt);
+    PaymentChannelActivity.v(this.b, (String)PaymentChannelActivity.getBundle(this.b).get(paramInt));
     PaymentChannelActivity.b(this.b).setLeftText(((CharSequence)this.a.getItem(paramInt)).toString());
     paramDialogInterface.dismiss();
   }

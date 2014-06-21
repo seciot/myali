@@ -23,10 +23,10 @@ public class PushReportIntentService extends IntentService
     {
       String str2 = paramIntent.getStringExtra("k");
       String str3 = paramIntent.getStringExtra("ext");
-      BundlesManagerImpl.a(3, a, "onHandleIntent: action = " + str1 + ", msgId=" + str2 + ", msgExt=" + str3);
+      BundlesManagerImpl.e(3, a, "onHandleIntent: action = " + str1 + ", msgId=" + str2 + ", msgExt=" + str3);
       String str4 = new h(this).a();
       String str5 = i.a(this).c();
-      BundlesManagerImpl.a(3, a, "reportClickMsg() clientId=" + str5 + ", userId=" + str4);
+      BundlesManagerImpl.e(3, a, "reportClickMsg() clientId=" + str5 + ", userId=" + str4);
       try
       {
         String str6 = com.alipay.pushsdk.c.a.c();
@@ -41,7 +41,7 @@ public class PushReportIntentService extends IntentService
           JSONObject localJSONObject2 = new JSONObject(str7);
           int i = localJSONObject2.getInt("resultStatus");
           String str8 = localJSONObject2.optString("memo");
-          BundlesManagerImpl.a(3, a, "reportClickMsg() resultStatus=" + i + ", memo=" + str8);
+          BundlesManagerImpl.e(3, a, "reportClickMsg() resultStatus=" + i + ", memo=" + str8);
           return;
         }
         return;
@@ -52,7 +52,7 @@ public class PushReportIntentService extends IntentService
         return;
       }
     }
-    BundlesManagerImpl.a(3, a, "onHandleIntent nothing to do!");
+    BundlesManagerImpl.e(3, a, "onHandleIntent nothing to do!");
   }
 }
 

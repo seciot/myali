@@ -145,12 +145,12 @@ public final class a extends PathClassLoader
       AppBundle locala = this.b.getBundle(paramString);
       if (this.b.b(paramString))
       {
-        com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getQuinoxClassLoader static link ->bundle: " + paramString);
+        com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader", "getQuinoxClassLoader static link ->bundle: " + paramString);
         return this.e;
       }
       if (locala == null)
       {
-        com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getQuinoxClassLoader can't find bundle: " + paramString);
+        com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader", "getQuinoxClassLoader can't find bundle: " + paramString);
         return null;
       }
       this.d.a(paramString);
@@ -174,7 +174,7 @@ public final class a extends PathClassLoader
     {
       AppBundle locala = this.b.getBundle(paramString);
       if (locala == null)
-        com.alipay.mobile.quinox.utils.d.b("BootstrapClassloader", "getBundleClassLoader can't find bundle: " + paramString);
+        com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader", "getBundleClassLoader can't find bundle: " + paramString);
       while (!locala.hasClass())
         return null;
       this.d.a(paramString);
@@ -184,7 +184,7 @@ public final class a extends PathClassLoader
 
   protected final Class findClass(String paramString)
   {
-    com.alipay.mobile.quinox.utils.d.c("BootstrapClassloader", Thread.currentThread().getName() + ":" + this + " findClass: " + paramString);
+    com.alipay.mobile.quinox.utils.ZLog.i("BootstrapClassloader", Thread.currentThread().getName() + ":" + this + " findClass: " + paramString);
     AppBundle locala = this.b.c(paramString);
     if (locala != null)
     {

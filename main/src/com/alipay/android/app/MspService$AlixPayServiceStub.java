@@ -29,7 +29,7 @@ public class MspService$AlixPayServiceStub extends IAlixPay.Stub
 
   public void registerCallback(IRemoteServiceCallback paramIRemoteServiceCallback)
   {
-    MspService.a((MspService)this.b.get(), paramIRemoteServiceCallback);
+    MspService.v((MspService)this.b.get(), paramIRemoteServiceCallback);
   }
 
   public String test()
@@ -41,7 +41,7 @@ public class MspService$AlixPayServiceStub extends IAlixPay.Stub
   public void unregisterCallback(IRemoteServiceCallback paramIRemoteServiceCallback)
   {
     this.b.get();
-    MspService.b();
+    MspService.stop();
   }
 }
 

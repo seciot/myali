@@ -11,7 +11,7 @@ class UnRealNameFragment_$3
 
   public void run()
   {
-    UnRealNameFragment_.a(this.b, this.a);
+    UnRealNameFragment_.v(this.b, this.a);
   }
 }
 

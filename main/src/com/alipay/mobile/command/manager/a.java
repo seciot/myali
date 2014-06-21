@@ -22,7 +22,7 @@ final class a
       Object[] arrayOfObject1 = new Object[2];
       arrayOfObject1[0] = "开始处理消息:";
       arrayOfObject1[1] = this.c;
-      this.a = ListenerManager.a(this.b, this.c.b());
+      this.a = ListenerManager.v(this.b, this.c.stop());
     }
     try
     {

@@ -25,7 +25,7 @@ final class bd
 
   public final void onRefresh()
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

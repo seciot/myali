@@ -24,7 +24,7 @@ final class ShenzhenTong extends PbocCard
       ArrayList localArrayList = b(paramTag);
       ShenzhenTong localShenzhenTong = new ShenzhenTong(paramTag);
       localShenzhenTong.getBundle(localResponse2);
-      localShenzhenTong.a(localResponse1, 4, true);
+      localShenzhenTong.e(localResponse1, 4, true);
       localShenzhenTong.a(new ArrayList[] { localArrayList });
       return localShenzhenTong;
     }

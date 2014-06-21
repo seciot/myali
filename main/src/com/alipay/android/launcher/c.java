@@ -9,7 +9,7 @@ final class c
 
   public final void run()
   {
-    TabLauncher.a(this.b, this.a);
+    TabLauncher.v(this.b, this.a);
   }
 }
 

@@ -31,7 +31,7 @@ final class q
     }
     label37: for (boolean bool = true; ; bool = false)
     {
-      FeedAssistantActivity.a(localFeedAssistantActivity, bool);
+      FeedAssistantActivity.v(localFeedAssistantActivity, bool);
       return;
     }
   }

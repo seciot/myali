@@ -11,7 +11,7 @@ final class ae
 
   public final void run()
   {
-    WithdrawSmsCheckActivity_.a(this.b, this.a);
+    WithdrawSmsCheckActivity_.v(this.b, this.a);
   }
 }
 

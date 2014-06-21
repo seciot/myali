@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class b extends IOException
 {
-  public b(d paramd, String paramString)
+  public b(ZLog paramd, String paramString)
   {
     super("Proxy Exception " + paramd.toString() + " : " + paramString);
   }

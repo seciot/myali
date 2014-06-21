@@ -17,7 +17,7 @@ final class d extends Handler
     {
       if (SyncAnimatingHelper.getBundle(this.b))
         break label58;
-      SyncAnimatingHelper.a(this.b, false);
+      SyncAnimatingHelper.v(this.b, false);
       SyncAnimatingHelper.b(this.b);
       SyncAnimatingHelper.c(this.b).sendEmptyMessageDelayed(4097, 100L);
     }
@@ -26,7 +26,7 @@ final class d extends Handler
       super.handleMessage(paramMessage);
       return;
       label58: SyncAnimatingHelper.d(this.b);
-      SyncAnimatingHelper.a(this.b, true);
+      SyncAnimatingHelper.v(this.b, true);
       SyncAnimatingHelper.b(this.b);
       if (SyncAnimatingHelper.removeBundle(this.b) != null)
         SyncAnimatingHelper.removeBundle(this.b).a();

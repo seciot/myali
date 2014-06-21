@@ -9,7 +9,7 @@ class SmsCheckFragment_$2
 
   public void run()
   {
-    SmsCheckFragment_.a(this.b, this.a);
+    SmsCheckFragment_.v(this.b, this.a);
   }
 }
 

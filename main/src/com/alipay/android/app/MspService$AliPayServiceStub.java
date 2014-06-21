@@ -14,7 +14,7 @@ public class MspService$AliPayServiceStub extends IAliPay.Stub
   public String Pay(String paramString1, String paramString2, String paramString3)
   {
     this.b.get();
-    return MspService.a(paramString1, paramString2, paramString3);
+    return MspService.e(paramString1, paramString2, paramString3);
   }
 
   public void deployFastConnect()
@@ -24,7 +24,7 @@ public class MspService$AliPayServiceStub extends IAliPay.Stub
 
   public void registerCallback(IRemoteServiceCallback paramIRemoteServiceCallback)
   {
-    MspService.a((MspService)this.b.get(), paramIRemoteServiceCallback);
+    MspService.v((MspService)this.b.get(), paramIRemoteServiceCallback);
   }
 
   public String test()
@@ -36,7 +36,7 @@ public class MspService$AliPayServiceStub extends IAliPay.Stub
   public void unregisterCallback(IRemoteServiceCallback paramIRemoteServiceCallback)
   {
     this.b.get();
-    MspService.b();
+    MspService.stop();
   }
 }
 

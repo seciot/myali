@@ -13,7 +13,7 @@ final class t
   public final void a()
   {
     UIInput.getBundle(this.a.a).setText(null);
-    UIInput.a(this.a.a, UIInput.getBundle(this.a.a));
+    UIInput.v(this.a.a, UIInput.getBundle(this.a.a));
   }
 }
 

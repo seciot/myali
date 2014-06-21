@@ -24,7 +24,7 @@ final class b
     }
     catch (AppLoadException localAppLoadException)
     {
-      AssetWidgetGroup.b();
+      AssetWidgetGroup.stop();
     }
   }
 }

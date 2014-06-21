@@ -15,7 +15,7 @@ final class d
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(4, a.x(), "===== HeartBeatTask() Runnable=====");
+    com.alipay.mobile.longlink.c.a.e(4, a.x(), "===== HeartBeatTask() Runnable=====");
     if (this.a.p())
       try
       {
@@ -23,7 +23,7 @@ final class d
         locala.getBundle(3);
         locala.b(0);
         locala.getBundle("");
-        com.alipay.mobile.longlink.c.a.a(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.getBundleName());
+        com.alipay.mobile.longlink.c.a.e(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.getBundleName());
         this.a.d().getBundle(locala);
         return;
       }
@@ -32,7 +32,7 @@ final class d
         localException.printStackTrace();
         return;
       }
-    com.alipay.mobile.longlink.c.a.a(3, a.x(), "Account registered has not been done.");
+    com.alipay.mobile.longlink.c.a.e(3, a.x(), "Account registered has not been done.");
   }
 }
 

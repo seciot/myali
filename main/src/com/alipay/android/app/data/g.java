@@ -28,7 +28,7 @@ final class g
     while (true)
     {
       if ((f.getBundle(this.g) != null) && (f.getBundle(this.g).get() != null))
-        ((ValidatedFrameData)f.getBundle(this.g).get()).a(this.f, new Object[] { str, localObject });
+        ((ValidatedFrameData)f.getBundle(this.g).get()).v(this.f, new Object[] { str, localObject });
       return;
       try
       {

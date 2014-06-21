@@ -48,7 +48,7 @@ final class dp extends Handler
         MemberCardDetailActivity.getBundle(this.a).setImageBitmap(MemberCardDetailActivity.d(this.a).getBitmap(MemberCardDetailActivity.getBundle(this.a).getTag()));
         if (MemberCardDetailActivity.removeBundle(this.a) != null)
           break label340;
-        MemberCardDetailActivity.a(this.a, new au(this.a, MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()), true));
+        MemberCardDetailActivity.v(this.a, new au(this.a, MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()), true));
         MemberCardDetailActivity.getBundle(this.a).setOnClickListener(MemberCardDetailActivity.removeBundle(this.a));
       }
       while (true)
@@ -61,7 +61,7 @@ final class dp extends Handler
         break;
         i = 0;
         break label185;
-        MemberCardDetailActivity.removeBundle(this.a).a(MemberCardDetailActivity.getBundle(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()));
+        MemberCardDetailActivity.removeBundle(this.a).v(MemberCardDetailActivity.getBundle(this.a), MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag()));
       }
     }
   }

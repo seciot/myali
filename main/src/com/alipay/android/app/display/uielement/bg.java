@@ -11,7 +11,7 @@ final class bg
   {
     if (UILabel.removeBundle(this.b) != null)
     {
-      this.b.a(UILabel.removeBundle(this.b), this.a);
+      this.b.v(UILabel.removeBundle(this.b), this.a);
       UILabel.f(this.b);
     }
   }

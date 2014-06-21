@@ -11,7 +11,7 @@ final class cu
 
   public final void run()
   {
-    AlipassRemindActivity_.a(this.b, this.a);
+    AlipassRemindActivity_.v(this.b, this.a);
   }
 }
 

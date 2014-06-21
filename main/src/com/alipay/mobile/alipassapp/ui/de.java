@@ -12,12 +12,12 @@ final class de
 
   public final void onInstallFailed()
   {
-    this.a.b();
+    this.a.stop();
   }
 
   public final void onPayFailed(int paramInt, String paramString)
   {
-    this.a.a(paramString, true);
+    this.a.v(paramString, true);
   }
 
   public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)

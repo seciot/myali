@@ -68,7 +68,7 @@ public class AppDetailActivity extends BaseActivity
     while (this.c.isDownloading())
     {
       a("main_button_style");
-      this.i.setText(getString(R.string.d));
+      this.i.setText(getString(R.string.ZLog));
       this.i.setEnabled(false);
       return;
       this.c.loadIcon(new a(this));
@@ -115,7 +115,7 @@ public class AppDetailActivity extends BaseActivity
     {
       a("main_button_style");
       this.i.setEnabled(false);
-      this.i.setText(getString(R.string.d));
+      this.i.setText(getString(R.string.ZLog));
       new f(this).start();
       return;
     }
@@ -155,7 +155,7 @@ public class AppDetailActivity extends BaseActivity
     this.f.addObserver(this);
     this.b = new AppsDataBizImpl(this.mApp, this.f);
     this.h = ((APTitleBar)findViewById(R.id.i));
-    this.j = ((APTextView)findViewById(R.id.d));
+    this.j = ((APTextView)findViewById(R.id.ZLog));
     this.k = ((APTextView)findViewById(R.id.g));
     this.l = ((APTextView)findViewById(R.id.e));
     this.m = ((APTextView)findViewById(R.id.BundlesManager));

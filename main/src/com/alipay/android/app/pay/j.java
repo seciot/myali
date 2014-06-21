@@ -20,7 +20,7 @@ final class j
     LogUtils.g();
     synchronized (PageForBrowser.c(this.a))
     {
-      PageForBrowser.a(this.a, IAlixPay.Stub.getBundle(paramIBinder));
+      PageForBrowser.v(this.a, IAlixPay.Stub.getBundle(paramIBinder));
       try
       {
         LogUtils.g();

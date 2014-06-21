@@ -33,7 +33,7 @@ public class MemberCardPastListActivity extends AlipassListActivity
     {
       Intent localIntent = new Intent(this, MemberCardDetailActivity_.class);
       BaseAlipassInfoItem.AlipassInfoItem localAlipassInfoItem = (BaseAlipassInfoItem.AlipassInfoItem)localObject;
-      a("20000062OverdueDetails", "seeCard", localAlipassInfoItem);
+      e("20000062OverdueDetails", "seeCard", localAlipassInfoItem);
       localIntent.putExtra("p", localAlipassInfoItem.getPassId());
       localIntent.putExtra("b", "MCARD");
       localIntent.putExtra("is_invalid", true);

@@ -9,7 +9,7 @@ final class x
 
   public final void run()
   {
-    BalancesWarnInputActivity_.b(this.b, this.a);
+    BalancesWarnInputActivity_.d(this.b, this.a);
   }
 }
 

@@ -13,7 +13,7 @@ final class i
   public final void onSwitchListener(boolean paramBoolean, View paramView)
   {
     if (WarnManagerListAdapter.getBundle(this.b) != null)
-      WarnManagerListAdapter.getBundle(this.b).a(this.a, paramBoolean);
+      WarnManagerListAdapter.getBundle(this.b).v(this.a, paramBoolean);
   }
 }
 

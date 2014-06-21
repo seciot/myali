@@ -34,7 +34,7 @@ class i
         synchronized (this.e)
         {
           this.e.wait();
-          com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.a(4, AppBundle, "nextPacket queue len=" + this.e.size());
+          com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, AppBundle, "nextPacket queue len=" + this.e.size());
         }
       }
       catch (InterruptedException localInterruptedException)
@@ -114,7 +114,7 @@ class i
     //   50	90	97	finally
   }
 
-  public final void b()
+  public final void stop()
   {
     this.b.start();
   }

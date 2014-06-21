@@ -24,7 +24,7 @@ final class dk
       this.b.getBundle(localUserInfo);
       return;
     }
-    SelectAccountActivity.a(this.b, localUserInfo.getLogonId());
+    SelectAccountActivity.v(this.b, localUserInfo.getLogonId());
   }
 }
 

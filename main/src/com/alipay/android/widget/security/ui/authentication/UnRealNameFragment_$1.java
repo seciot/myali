@@ -12,7 +12,7 @@ class UnRealNameFragment_$1
 
   public void run()
   {
-    UnRealNameFragment_.a(this.c, this.a, this.b);
+    UnRealNameFragment_.e(this.c, this.a, this.b);
   }
 }
 

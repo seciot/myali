@@ -13,16 +13,16 @@ final class b
 
   public final void run()
   {
-    com.alipay.mobile.longlink.c.a.a(5, a.x(), "terminatePersistentConnection()... called. connection:" + a.getBundle(this.b).hashCode());
+    com.alipay.mobile.longlink.c.a.e(5, a.x(), "terminatePersistentConnection()... called. connection:" + a.getBundle(this.b).hashCode());
     if (this.b.o())
     {
-      com.alipay.mobile.longlink.c.a.a(4, a.x(), "terminatePersistentConnection()... run()");
+      com.alipay.mobile.longlink.c.a.e(4, a.x(), "terminatePersistentConnection()... run()");
       this.a.d().b(this.a.i());
       this.a.d().b(this.a.j());
       this.a.d().b(this.a.j());
       this.a.d().b(this.a.l());
       this.b.getInitLevel().getFullBundleName();
-      com.alipay.mobile.longlink.c.a.a(4, a.x(), "terminatePersistentConnection()...Done!");
+      com.alipay.mobile.longlink.c.a.e(4, a.x(), "terminatePersistentConnection()...Done!");
     }
   }
 }

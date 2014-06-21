@@ -52,7 +52,7 @@ final class h
           int k = a.getBundle(localEinfoFields.getType());
           if (k > 0)
             localAPTextView2.setCompoundDrawablesWithIntrinsicBounds(this.c.mContext.getResources().getDrawable(k), null, null, null);
-          localAPTextView2.setTextColor(a.a(this.c.mContext, localEinfoFields));
+          localAPTextView2.setTextColor(a.v(this.c.mContext, localEinfoFields));
           localAPTextView2.setOnClickListener(new a(this.c.mContext, localEinfoFields.getType(), localEinfoFields.getValue(), this.b));
         }
         this.c.addView(localAPLinearLayout);

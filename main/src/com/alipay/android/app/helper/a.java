@@ -14,12 +14,12 @@ final class a
 
   public final void onServiceConnected(ComponentName paramComponentName, IBinder paramIBinder)
   {
-    PayHelper.a(this.a, IAlixPay.Stub.getBundle(paramIBinder));
+    PayHelper.v(this.a, IAlixPay.Stub.getBundle(paramIBinder));
   }
 
   public final void onServiceDisconnected(ComponentName paramComponentName)
   {
-    PayHelper.a(this.a, null);
+    PayHelper.v(this.a, null);
   }
 }
 

@@ -17,7 +17,7 @@ final class aa
     if (localElementAction != null)
     {
       ActionType[] arrayOfActionType = ActionType.a(localElementAction);
-      this.a.a(this.a, arrayOfActionType);
+      this.a.v(this.a, arrayOfActionType);
     }
   }
 }

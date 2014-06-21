@@ -12,7 +12,7 @@ final class d
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.mPatternCheckedListener.a(false, false, false);
+    this.a.mPatternCheckedListener.e(false, false, false);
   }
 }
 

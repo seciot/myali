@@ -14,16 +14,16 @@ final class k
 
   public final void run()
   {
-    c.a(5, j.z(), "terminatePersistentConnection()... called. connection:" + j.getBundle(this.b).hashCode());
+    c.e(5, j.z(), "terminatePersistentConnection()... called. connection:" + j.getBundle(this.b).hashCode());
     if (this.b.r())
     {
-      c.a(4, j.z(), "terminatePersistentConnection()... run()");
+      c.e(4, j.z(), "terminatePersistentConnection()... run()");
       this.a.getInitLevel().b(this.a.l());
       this.a.getInitLevel().b(this.a.m());
       this.a.getInitLevel().b(this.a.m());
       this.a.getInitLevel().b(this.a.o());
       this.b.getInitLevel().getFullBundleName();
-      c.a(4, j.z(), "terminatePersistentConnection()...Done!");
+      c.e(4, j.z(), "terminatePersistentConnection()...Done!");
     }
   }
 }

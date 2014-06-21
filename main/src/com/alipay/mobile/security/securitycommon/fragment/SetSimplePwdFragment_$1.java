@@ -9,7 +9,7 @@ class SetSimplePwdFragment_$1
 
   public void run()
   {
-    SetSimplePwdFragment_.a(this.b, this.a);
+    SetSimplePwdFragment_.v(this.b, this.a);
   }
 }
 

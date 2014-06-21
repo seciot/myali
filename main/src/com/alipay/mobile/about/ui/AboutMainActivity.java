@@ -112,7 +112,7 @@ public class AboutMainActivity extends BaseActivity
     super.onCreate(paramBundle);
     setContentView(R.layout.U);
     this.a = ((APTextView)findViewById(R.id.k));
-    this.b = ((APTextView)findViewById(R.id.d));
+    this.b = ((APTextView)findViewById(R.id.ZLog));
     this.c = ((APTableView)findViewById(R.id.h));
     this.d = ((APExtTableView)findViewById(R.id.BundlesManagerImpl));
     this.e = ((APTableView)findViewById(R.id.g));

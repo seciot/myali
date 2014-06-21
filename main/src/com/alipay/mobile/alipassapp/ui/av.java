@@ -44,14 +44,14 @@ final class av
           AlipassListActivity.getBundle(this.a).set(false);
           locala1.d = true;
           AlipassListActivity.b(this.a).set(true);
-          a locala2 = AlipassListActivity.f(this.a).a(this.a.getRequireBundleName(), this.a.getInitLevel());
+          a locala2 = AlipassListActivity.f(this.a).v(this.a.getRequireBundleName(), this.a.getInitLevel());
           locala1.e = locala2.e;
           locala1.a = locala2.a;
           if ((locala1.e != null) && ((locala1.e instanceof RpcException)) && (locala1.d) && (((RpcException)locala1.e).getCode() == 2))
           {
             if (j != 0)
               this.a.dismissProgressDialog();
-            AlipassListActivity.h(this.a).a(this.a, this.a.a, new aw(this));
+            AlipassListActivity.h(this.a).e(this.a, this.a.a, new aw(this));
           }
         }
         while (true)
@@ -72,7 +72,7 @@ final class av
             this.a.dismissProgressDialog();
           while (this.a.getInitLevel())
           {
-            AlipassListActivity.a(this.a, this.a.getAllBundles());
+            AlipassListActivity.v(this.a, this.a.getAllBundles());
             return;
             this.a.getBundle(true);
             AlipassListActivity.d(this.a);

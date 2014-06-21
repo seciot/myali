@@ -358,7 +358,7 @@ public class AlipassPreviewActivity extends BaseActivity
     }
     dismissProgressDialog();
     SimpleToast.makeToast(this, R.string.alipass_unzip_voucher_fail, 0).show();
-    a(102, getResources().getString(R.string.alipass_add_failed));
+    v(102, getResources().getString(R.string.alipass_add_failed));
   }
 
   @Background
@@ -409,16 +409,16 @@ public class AlipassPreviewActivity extends BaseActivity
     catch (RpcException localRpcException)
     {
       g();
-      a(102, getResources().getString(R.string.alipass_add_failed));
+      v(102, getResources().getString(R.string.alipass_add_failed));
       return;
       g();
-      a(102, getResources().getString(R.string.alipass_add_failed));
+      v(102, getResources().getString(R.string.alipass_add_failed));
       return;
     }
     catch (Exception localException)
     {
       g();
-      a(102, getResources().getString(R.string.alipass_add_failed));
+      v(102, getResources().getString(R.string.alipass_add_failed));
     }
   }
 
@@ -481,7 +481,7 @@ public class AlipassPreviewActivity extends BaseActivity
       this.k = ((APTitleBar)findViewById(R.id.titlebar));
       this.k.setTitleText(getResources().getString(R.string.alipass_preview_title));
       this.j = new com.alipay.mobile.alipassapp.biz.c.a(this.mApp);
-      this.n = new com.alipay.mobile.alipassapp.biz.AppBundle.a.a(this);
+      this.n = new com.alipay.mobile.alipassapp.biz.ExceptionHandler.a.a(this);
       showProgressDialog("加载中...");
       f();
       return;

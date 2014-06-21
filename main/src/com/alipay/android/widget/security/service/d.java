@@ -29,7 +29,7 @@ final class d
     {
       return;
     }
-    MobileSecurityResult localMobileSecurityResult = SecurityInitServiceImpl.access$200(this.b).a(localMspDeviceInfoBean, this.a);
+    MobileSecurityResult localMobileSecurityResult = SecurityInitServiceImpl.access$200(this.b).v(localMspDeviceInfoBean, this.a);
     this.b.handleUpdateLoginResult(localMobileSecurityResult);
   }
 }

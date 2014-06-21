@@ -19,7 +19,7 @@ final class el
       String str1 = ((BaseAlipassInfoItem.MemberCardObtainableInfoItem)localObject).getPartnerId();
       String str2 = ((BaseAlipassInfoItem.MemberCardObtainableInfoItem)localObject).getCardType();
       String str3 = ((BaseAlipassInfoItem.MemberCardObtainableInfoItem)localObject).getTid();
-      this.a.a(str1, str2, str3);
+      this.a.e(str1, str2, str3);
     }
   }
 }

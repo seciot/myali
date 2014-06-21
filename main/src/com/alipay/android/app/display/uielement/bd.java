@@ -12,7 +12,7 @@ final class bd extends CountDownTimer
 
   public final void onFinish()
   {
-    UILabel.a(this.a, 0);
+    UILabel.v(this.a, 0);
     UILabel.d(this.a);
     bf localbf = new bf(this, EventType.n);
     this.a.getBundle(localbf);
@@ -20,7 +20,7 @@ final class bd extends CountDownTimer
 
   public final void onTick(long paramLong)
   {
-    UILabel.a(this.a, (int)paramLong - UILabel.b(this.a));
+    UILabel.v(this.a, (int)paramLong - UILabel.b(this.a));
     be localbe = new be(this, EventType.o);
     this.a.getBundle(localbe);
   }

@@ -9,7 +9,7 @@ final class g
 
   public final void run()
   {
-    AlipayUserLoginFragment_.a(this.b, this.a);
+    AlipayUserLoginFragment_.v(this.b, this.a);
   }
 }
 

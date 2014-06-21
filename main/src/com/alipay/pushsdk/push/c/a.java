@@ -84,7 +84,7 @@ public abstract class a
     }
   }
 
-  public final int b()
+  public final int stop()
   {
     return this.d;
   }

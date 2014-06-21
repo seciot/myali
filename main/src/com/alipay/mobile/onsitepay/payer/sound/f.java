@@ -15,7 +15,7 @@ final class f
   {
     if ((paramBoolean) && (paramLocation.longitude != 0.0D) && (paramLocation.latitude != 0.0D))
     {
-      SendSoundViewActivity.a(this.a, paramLocation);
+      SendSoundViewActivity.v(this.a, paramLocation);
       LBSInfoGather.getInstance(this.a).removeUpdates(this);
     }
   }

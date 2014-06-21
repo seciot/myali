@@ -133,7 +133,7 @@ public class au
       int k = localBitmap2.getHeight();
       BaseActivity localBaseActivity = (BaseActivity)this.h;
       this.b = ax.getBundle(localBaseActivity);
-      this.b.a(localBaseActivity, ax.a, ax.a);
+      this.b.e(localBaseActivity, ax.a, ax.a);
       DisplayMetrics localDisplayMetrics = new DisplayMetrics();
       localBaseActivity.getWindowManager().getDefaultDisplay().getMetrics(localDisplayMetrics);
       int m = (int)(0.8F * localDisplayMetrics.widthPixels);

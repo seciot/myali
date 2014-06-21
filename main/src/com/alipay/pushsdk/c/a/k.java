@@ -20,7 +20,7 @@ public class k
 
   public final void a()
   {
-    BundlesManagerImpl.a(4, AppBundle, "put writeLog into thread pool");
+    BundlesManagerImpl.e(4, AppBundle, "put writeLog into thread pool");
     BundlesManager.execute(new l(this, (byte)0));
   }
 }

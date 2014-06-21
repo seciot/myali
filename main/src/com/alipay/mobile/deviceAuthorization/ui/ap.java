@@ -12,7 +12,7 @@ final class ap
 
   public final void run()
   {
-    PermAuthActivity_.a(this.c, this.a, this.b);
+    PermAuthActivity_.e(this.c, this.a, this.b);
   }
 }
 

@@ -129,7 +129,7 @@ public class AssetWidgetGroup
     this.n.setWidgetType(WealthWidgetMsgFlag.MSG_WIDGET_TYPE_SDK);
     this.n.setBindingWidget("50000004");
     this.h.addChild(this.n);
-    TextView localTextView = (TextView)this.o.findViewById(R.id.d);
+    TextView localTextView = (TextView)this.o.findViewById(R.id.ZLog);
     localTextView.setText(this.c.getText(R.string.AppBundle));
     Drawable localDrawable = this.c.getResources().getDrawable(R.drawable.AppBundle);
     localDrawable.setBounds(0, 0, localDrawable.getMinimumWidth(), localDrawable.getMinimumHeight());

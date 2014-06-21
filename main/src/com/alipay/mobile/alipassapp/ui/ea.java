@@ -24,13 +24,13 @@ final class ea
     }
     catch (OutOfMemoryError localOutOfMemoryError)
     {
-      MemberCardDetailActivity.b();
+      MemberCardDetailActivity.stop();
       localOutOfMemoryError.getMessage();
       return;
     }
     catch (Exception localException)
     {
-      MemberCardDetailActivity.b();
+      MemberCardDetailActivity.stop();
       localException.getMessage();
     }
   }

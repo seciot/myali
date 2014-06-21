@@ -12,8 +12,8 @@ final class an
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.a(this.a.b(), RegisterNewActivity.getBundle(this.a), true, true, true);
-    RegisterNewActivity.a(this.a, "");
+    RegisterNewActivity.a(this.a.stop(), RegisterNewActivity.getBundle(this.a), true, true, true);
+    RegisterNewActivity.v(this.a, "");
   }
 }
 

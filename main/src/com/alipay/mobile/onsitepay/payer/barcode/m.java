@@ -14,7 +14,7 @@ final class m
   public final void onClick(View paramView)
   {
     this.a.q.setClickable(false);
-    BarcodePayActivity.a(this.a, new n(this));
+    BarcodePayActivity.v(this.a, new n(this));
     this.a.q.setClickable(true);
   }
 }

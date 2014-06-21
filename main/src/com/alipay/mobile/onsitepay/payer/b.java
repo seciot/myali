@@ -28,7 +28,7 @@ final class b extends WebViewClient
   {
     new StringBuilder("shouldOverrideUrlLoading url:").append(paramString).toString();
     this.a.e.setVisibility(8);
-    AutoPaySuccessActivity.a(this.a, paramWebView, paramString);
+    AutoPaySuccessActivity.e(this.a, paramWebView, paramString);
     return true;
   }
 }

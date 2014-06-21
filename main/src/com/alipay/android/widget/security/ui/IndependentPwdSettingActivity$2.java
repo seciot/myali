@@ -20,7 +20,7 @@ class IndependentPwdSettingActivity$2
       IndependentPwdSettingActivity.d(this.a).getMicroApplicationContext().exit();
       return;
     }
-    IndependentPwdSettingActivity.a(this.a, true);
+    IndependentPwdSettingActivity.v(this.a, true);
   }
 }
 

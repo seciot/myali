@@ -12,8 +12,8 @@ final class ad
 
   public final void run()
   {
-    DeletePassResult localDeletePassResult = AlipassListActivity.f(this.c).a(this.a, this.b);
-    this.c.a(localDeletePassResult, this.b, this.a);
+    DeletePassResult localDeletePassResult = AlipassListActivity.f(this.c).v(this.a, this.b);
+    this.c.e(localDeletePassResult, this.b, this.a);
   }
 }
 

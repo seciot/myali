@@ -1,7 +1,7 @@
 package com.alipay.mobile.longlink.b.c;
 
 public final class f
-  implements d
+  implements ZLog
 {
   private int a = -1;
 

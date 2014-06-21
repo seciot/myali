@@ -17,12 +17,12 @@ final class d
     if (!AppDetailActivity.removeBundle(this.a).isInstalled())
     {
       AppDetailActivity.g(this.a).setText(this.a.getString(R.string.BundlesManagerImpl));
-      AppDetailActivity.a(this.a, "main_button_style");
+      AppDetailActivity.v(this.a, "main_button_style");
     }
     while (!AppDetailActivity.removeBundle(this.a).isNeedUpgrade())
       return;
     AppDetailActivity.g(this.a).setText(this.a.getString(R.string.j));
-    AppDetailActivity.a(this.a, "main_button_style");
+    AppDetailActivity.v(this.a, "main_button_style");
   }
 }
 

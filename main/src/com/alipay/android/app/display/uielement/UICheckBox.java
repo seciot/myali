@@ -35,7 +35,7 @@ public class UICheckBox extends BaseElement
   {
     ElementFactory.a(paramView);
     this.d = paramView.findViewById(R.id.BundlesManagerImpl);
-    this.b = ((CheckBox)paramView.findViewById(R.id.d));
+    this.b = ((CheckBox)paramView.findViewById(R.id.ZLog));
     if (this.g)
     {
       this.c = ((TextView)paramView.findViewById(R.id.e));

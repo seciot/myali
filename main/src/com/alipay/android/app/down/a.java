@@ -41,13 +41,13 @@ final class a
     {
       FileDownloader.c(this.a);
     }
-    FileDownloader.a(this.a, new c(FileDownloader.d(this.a), FileDownloader.removeBundle(this.a), this.a));
+    FileDownloader.v(this.a, new c(FileDownloader.d(this.a), FileDownloader.removeBundle(this.a), this.a));
     getBundle(FileDownloader.removeBundle(this.a));
     getBundle(FileDownloader.f(this.a));
     if (FileDownloader.getBundle(this.a))
     {
       FileDownloader.g(this.a);
-      if (FileDownloader.h(this.a).b() != l)
+      if (FileDownloader.h(this.a).stop() != l)
       {
         FileDownloader.c(this.a);
         FileDownloader.h(this.a).getBundle(0L);
@@ -55,7 +55,7 @@ final class a
       }
     }
     new Thread(FileDownloader.h(this.a)).start();
-    FileDownloader.a(this.a, false);
+    FileDownloader.v(this.a, false);
     while (true)
       if (!FileDownloader.h(this.a).getBundleName())
         try

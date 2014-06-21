@@ -4,7 +4,7 @@ import com.alipay.pushsdk.c.a.c;
 
 public class d extends AppBundle
 {
-  private static final String c = BundlesManagerImpl.getBundle(d.class);
+  private static final String c = BundlesManagerImpl.getBundle(ZLog.class);
   private int d = BundlesManager.AppBundle;
   private int e = BundlesManager.b;
 
@@ -17,11 +17,11 @@ public class d extends AppBundle
   public final void b(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
-    BundlesManagerImpl.a(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
+    BundlesManagerImpl.e(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
     byte[] arrayOfByte = new byte[4];
     System.arraycopy(paramArrayOfByte, 1, arrayOfByte, 0, 4);
     int j = d(arrayOfByte);
-    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
+    BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
     b(i);
     removeBundle(j);
   }
@@ -29,7 +29,7 @@ public class d extends AppBundle
   public final void c(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
-    BundlesManagerImpl.a(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
+    BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
     getBundle(i);
   }
 
@@ -38,7 +38,7 @@ public class d extends AppBundle
     byte[] arrayOfByte = new byte[this.e];
     arrayOfByte[0] = Integer.valueOf(this.d).byteValue();
     arrayOfByte[1] = Integer.valueOf(a()).byteValue();
-    arrayOfByte[2] = Integer.valueOf(b()).byteValue();
+    arrayOfByte[2] = Integer.valueOf(stop()).byteValue();
     System.arraycopy(h(g()), 0, arrayOfByte, 3, 4);
     System.arraycopy(new byte[4], 0, arrayOfByte, 7, 4);
     System.arraycopy(new byte[4], 0, arrayOfByte, 11, 4);

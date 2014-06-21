@@ -129,7 +129,7 @@ public class BalancesWarnInputActivity extends BaseActivity
     dismissProgressDialog();
     if (paramAlertSignRes == null)
     {
-      a(getResources().getString(R.string.w), true);
+      v(getResources().getString(R.string.w), true);
       return;
     }
     new StringBuilder("processAddalertSign Status = ").append(paramAlertSignRes.resultStatus).toString();

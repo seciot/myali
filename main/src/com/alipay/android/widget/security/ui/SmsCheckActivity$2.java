@@ -13,7 +13,7 @@ class SmsCheckActivity$2
 
   public void run()
   {
-    SecurityUtil.c(AlipayApplication.getInstance(), SmsCheckActivity.getBundle(this.a).getEtContent());
+    SecurityUtil.i(AlipayApplication.getInstance(), SmsCheckActivity.getBundle(this.a).getEtContent());
   }
 }
 

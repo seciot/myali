@@ -9,7 +9,7 @@ final class ca
 
   public final void run()
   {
-    ForgotPayPwdActivity_.a(this.b, this.a);
+    ForgotPayPwdActivity_.v(this.b, this.a);
   }
 }
 

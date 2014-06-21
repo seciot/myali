@@ -43,19 +43,19 @@ public final class b
           localAliPassBaseInfo.setSecondLogoText(localJSONObject6.getString("secondLogoText"));
           JSONArray localJSONArray2 = localJSONObject6.getJSONArray("headFields");
           if (localJSONArray2 != null)
-            localAliPassBaseInfo.setHeadFields(a(localJSONArray2.toString(), AlipassInfo.EinfoFields.class));
+            localAliPassBaseInfo.setHeadFields(v(localJSONArray2.toString(), AlipassInfo.EinfoFields.class));
           JSONArray localJSONArray3 = localJSONObject6.getJSONArray("primaryFields");
           if (localJSONArray3 != null)
-            paramAlipassInfo.setPrimaryFields(a(localJSONArray3.toString(), AlipassInfo.EinfoFields.class));
+            paramAlipassInfo.setPrimaryFields(v(localJSONArray3.toString(), AlipassInfo.EinfoFields.class));
           JSONArray localJSONArray4 = localJSONObject6.getJSONArray("secondaryFields");
           if (localJSONArray4 != null)
-            paramAlipassInfo.setSecondaryFields(a(localJSONArray4.toString(), AlipassInfo.EinfoFields.class));
+            paramAlipassInfo.setSecondaryFields(v(localJSONArray4.toString(), AlipassInfo.EinfoFields.class));
           JSONArray localJSONArray5 = localJSONObject6.getJSONArray("auxiliaryFields");
           if (localJSONArray5 != null)
-            paramAlipassInfo.setAuxiliaryFields(a(localJSONArray5.toString(), AlipassInfo.EinfoFields.class));
+            paramAlipassInfo.setAuxiliaryFields(v(localJSONArray5.toString(), AlipassInfo.EinfoFields.class));
           JSONArray localJSONArray6 = localJSONObject6.getJSONArray("backFields");
           if (localJSONArray6 != null)
-            paramAlipassInfo.setBackFields(a(localJSONArray6.toString(), AlipassInfo.EinfoFields.class));
+            paramAlipassInfo.setBackFields(v(localJSONArray6.toString(), AlipassInfo.EinfoFields.class));
         }
         localJSONArray1 = localJSONObject1.getJSONArray("operation");
         if (localJSONArray1 != null)
@@ -71,19 +71,19 @@ public final class b
         String str4 = localJSONObject7.getString("format");
         if ("text".equals(str4))
         {
-          localArrayList.add(b(localJSONObject7.toString(), AlipassInfo.Operation.OperationText.class));
+          localArrayList.add(d(localJSONObject7.toString(), AlipassInfo.Operation.OperationText.class));
         }
         else if ("app".equals(str4))
         {
-          localArrayList.add(b(localJSONObject7.toString(), AlipassInfo.Operation.OperationApp.class));
+          localArrayList.add(d(localJSONObject7.toString(), AlipassInfo.Operation.OperationApp.class));
         }
         else if (("barcode".equals(str4)) || ("qrcode".equals(str4)) || ("stamp".equals(str4)) || ("url".equals(str4)) || ("wave".equals(str4)))
         {
-          localArrayList.add(b(localJSONObject7.toString(), AlipassInfo.Operation.OperationString.class));
+          localArrayList.add(d(localJSONObject7.toString(), AlipassInfo.Operation.OperationString.class));
         }
         else if ("img".equals(str4))
         {
-          localArrayList.add(b(localJSONObject7.toString(), AlipassInfo.Operation.OperationImg.class));
+          localArrayList.add(d(localJSONObject7.toString(), AlipassInfo.Operation.OperationImg.class));
           break label605;
           JSONObject localJSONObject2 = paramJSONObject.getJSONObject("fileInfo");
           if (localJSONObject2 != null)
@@ -96,7 +96,7 @@ public final class b
             localAliPassBaseInfo.setPartnerId(String.valueOf(localJSONObject3.get("channelID")));
           JSONObject localJSONObject4 = paramJSONObject.getJSONObject("appInfo");
           if (localJSONObject4 != null)
-            paramAlipassInfo.setAppInfo((AlipassInfo.AppInfo)b(localJSONObject4.toString(), AlipassInfo.AppInfo.class));
+            paramAlipassInfo.setAppInfo((AlipassInfo.AppInfo)d(localJSONObject4.toString(), AlipassInfo.AppInfo.class));
           JSONObject localJSONObject5 = paramJSONObject.getJSONObject("style");
           if (localJSONObject5 != null)
           {

@@ -26,8 +26,8 @@ final class r
     this.d.h.setLayoutParams(localLayoutParams2);
     if ((this.b != null) && (this.b.trim().length() > 0))
       ((AQuery)new AQuery(this.d.a).id(this.d.h)).image(this.b);
-    this.d.a(this.c.getPrimaryFields(), this.c.getPassBaseInfo().getDisplayInfo());
-    this.d.b(this.c.getSecondaryFields(), this.c.getPassBaseInfo().getDisplayInfo());
+    this.d.v(this.c.getPrimaryFields(), this.c.getPassBaseInfo().getDisplayInfo());
+    this.d.d(this.c.getSecondaryFields(), this.c.getPassBaseInfo().getDisplayInfo());
   }
 }
 

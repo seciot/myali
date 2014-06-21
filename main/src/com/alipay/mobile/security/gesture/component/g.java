@@ -21,7 +21,7 @@ final class g
       if (AlipayPattern.access$500(this.b).equals(paramString))
       {
         if (this.b.mPatternChangeListener != null)
-          this.b.mPatternChangeListener.a(false, paramString);
+          this.b.mPatternChangeListener.v(false, paramString);
       }
       else
         AlipayPattern.access$900(this.b);

@@ -14,7 +14,7 @@ final class b
   public final void onClick(View paramView)
   {
     if (this.a != null)
-      this.a.a(this.b, this.c, this.d);
+      this.a.e(this.b, this.c, this.d);
   }
 }
 

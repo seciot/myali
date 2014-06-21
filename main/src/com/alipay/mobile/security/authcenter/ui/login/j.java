@@ -14,7 +14,7 @@ final class j
   {
     String str = "";
     if ("alipay".equals(this.a.p))
-      str = this.a.s.b();
+      str = this.a.s.stop();
     while (true)
     {
       this.a.b(str);

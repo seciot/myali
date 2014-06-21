@@ -29,13 +29,13 @@ public class g
     {
       this.c = locala1.a;
       if ((this.c != null) && (this.c.length() > 0))
-        c.a(4, a, "push use config data based on cfgId:" + this.c);
+        c.e(4, a, "push use config data based on cfgId:" + this.c);
       while (c.b > c.d)
       {
         int j = com.alipay.pushsdk.c.a.e();
         if (j >= c.e)
           c.a = true;
-        c.a(3, a, "getConfigAddr push logLevel=" + j + ", configurable=" + c.a);
+        c.e(3, a, "getConfigAddr push logLevel=" + j + ", configurable=" + c.a);
         if (!c.a)
           break;
         HashMap localHashMap = com.alipay.pushsdk.c.a.d();
@@ -44,7 +44,7 @@ public class g
         String str1 = (String)localHashMap.get("host");
         String str2 = (String)localHashMap.get("port");
         String str3 = (String)localHashMap.get("version");
-        c.a(3, a, "getConfigAddr pushAddr==> host=" + str1 + ", port=" + str2 + ", version=" + str3);
+        c.e(3, a, "getConfigAddr pushAddr==> host=" + str1 + ", port=" + str2 + ", version=" + str3);
         com.alipay.pushsdk.data.a locala3 = new com.alipay.pushsdk.data.a();
         b localb = new b(this.b);
         if ((str1 != null) && (str1.length() > 0))
@@ -61,7 +61,7 @@ public class g
         this.h = "0";
         this.i = "1";
         this.f = String.valueOf(com.alipay.pushsdk.c.a.a);
-        c.a(3, a, "push dest==>" + this.d + ":" + this.e + ":" + this.f + ":" + this.g);
+        c.e(3, a, "push dest==>" + this.d + ":" + this.e + ":" + this.f + ":" + this.g);
         com.alipay.pushsdk.data.a locala2 = new com.alipay.pushsdk.data.a();
         locala2.a = "";
         locala2.b = this.d;

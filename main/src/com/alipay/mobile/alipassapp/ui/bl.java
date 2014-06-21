@@ -9,7 +9,7 @@ final class bl
 
   public final void run()
   {
-    AlipassPreviewActivity_.a(this.c, this.a, this.b);
+    AlipassPreviewActivity_.e(this.c, this.a, this.b);
   }
 }
 

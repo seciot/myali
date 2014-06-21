@@ -25,14 +25,14 @@ final class d
         IEventArgs.EventScript localEventScript = this.a.getEventScript(EventScriptType.a);
         if (localEventScript != null)
         {
-          str = localEventScript.b();
+          str = localEventScript.stop();
           EventType localEventType2 = EventType.getBundle(str);
           if (localEventType2 != null)
           {
             MspWindow.a(this.c, this.b, this.a, localEventType2);
             return;
           }
-          MspWindow.a(this.c, localEventScript, str);
+          MspWindow.e(this.c, localEventScript, str);
           localEventType2 = localEventType1;
           continue;
         }

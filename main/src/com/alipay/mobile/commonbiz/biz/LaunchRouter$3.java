@@ -13,7 +13,7 @@ class LaunchRouter$3
 
   public void onGestureResult(boolean paramBoolean)
   {
-    LaunchRouter.a(this.c, this.a, this.b);
+    LaunchRouter.e(this.c, this.a, this.b);
   }
 }
 

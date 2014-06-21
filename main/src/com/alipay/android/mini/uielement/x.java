@@ -13,7 +13,7 @@ final class x
   public final void a()
   {
     this.a.setText(null);
-    UIInput.a(this.b, this.a);
+    UIInput.v(this.b, this.a);
   }
 }
 

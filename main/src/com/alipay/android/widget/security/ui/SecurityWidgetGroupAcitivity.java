@@ -77,7 +77,7 @@ public class SecurityWidgetGroupAcitivity extends BaseActivity
     this.h = ((NFCService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(NFCService.class.getName()));
     this.b = ((APTitleBar)findViewById(R.id.BundlesManagerImpl));
     this.c = ((APScrollView)findViewById(R.id.BundlesManager));
-    this.f = ((WidgetListContainer)findViewById(R.id.d));
+    this.f = ((WidgetListContainer)findViewById(R.id.ZLog));
     this.g = ((APButton)findViewById(R.id.AppBundle));
     this.f.setAdapter(this);
     this.g.setOnClickListener(new a(this));

@@ -9,7 +9,7 @@ final class ej
 
   public final void run()
   {
-    MemberCardDetailActivity_.b(this.b, this.a);
+    MemberCardDetailActivity_.d(this.b, this.a);
   }
 }
 

@@ -156,7 +156,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     localb.a = ((RecycleabledImageView)localView.findViewById(R.id.bw));
     localView.setTag(localb);
     com.alipay.mobile.about.ui.BundlesManager.b localb1 = (com.alipay.mobile.about.ui.BundlesManager.b)this.i.get(paramInt);
-    this.w.a(localb.a, localb1.a(), this.x);
+    this.w.e(localb.a, localb1.a(), this.x);
     return localView;
   }
 
@@ -260,7 +260,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
   public void onItemClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
     com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)this.i.get(paramInt);
-    if (localb.b())
+    if (localb.stop())
     {
       a(paramView);
       localb.getBundle(false);
@@ -387,8 +387,8 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       for (MultiPictureSelectorActivity.b localb1 = localb2; ; localb1 = (MultiPictureSelectorActivity.b)paramView.getTag())
       {
         com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
-        MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).a(localb1.a, localb.a(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
-        if (!localb.b())
+        MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).e(localb1.a, localb.a(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
+        if (!localb.stop())
           break label417;
         localb1.d.setVisibility(0);
         localb1.c.setVisibility(0);
@@ -401,7 +401,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
         i = MultiPictureSelectorActivity.f(MultiPictureSelectorActivity.this).getColumnWidth();
         break;
       }
-      label417: localb1.d.setVisibility(8);
+      label417: localb1.ZLog.setVisibility(8);
       localb1.BundlesManagerImpl.setVisibility(8);
       return paramView;
     }
@@ -411,7 +411,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       int i = ((Integer)paramView.getTag()).intValue();
       com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(i);
       MultiPictureSelectorActivity localMultiPictureSelectorActivity;
-      if (localb.b())
+      if (localb.stop())
       {
         localb.getBundle(false);
         View localView2 = localb.getBundleName();
@@ -431,7 +431,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       }
       label360: for (boolean bool = true; ; bool = false)
       {
-        MultiPictureSelectorActivity.a(localMultiPictureSelectorActivity, bool);
+        MultiPictureSelectorActivity.v(localMultiPictureSelectorActivity, bool);
         return;
         if (MultiPictureSelectorActivity.m(MultiPictureSelectorActivity.this) >= MultiPictureSelectorActivity.n(MultiPictureSelectorActivity.this) - MultiPictureSelectorActivity.o(MultiPictureSelectorActivity.this))
         {

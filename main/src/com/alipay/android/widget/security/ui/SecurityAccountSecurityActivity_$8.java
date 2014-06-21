@@ -9,7 +9,7 @@ class SecurityAccountSecurityActivity_$8
 
   public void run()
   {
-    SecurityAccountSecurityActivity_.c(this.b, this.a);
+    SecurityAccountSecurityActivity_.i(this.b, this.a);
   }
 }
 

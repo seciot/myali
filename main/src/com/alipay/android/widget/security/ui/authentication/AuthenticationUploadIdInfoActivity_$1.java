@@ -9,7 +9,7 @@ class AuthenticationUploadIdInfoActivity_$1
 
   public void run()
   {
-    AuthenticationUploadIdInfoActivity_.a(this.c, this.a, this.b);
+    AuthenticationUploadIdInfoActivity_.e(this.c, this.a, this.b);
   }
 }
 

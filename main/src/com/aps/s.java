@@ -81,7 +81,7 @@ public class s
   public void a()
   {
     if ((!this.t) || (this.f == null))
-      p.a("collector", "no gps or passive, so not to collect!");
+      p.v("collector", "no gps or passive, so not to collect!");
     while (a)
       return;
     IntentFilter localIntentFilter = new IntentFilter();

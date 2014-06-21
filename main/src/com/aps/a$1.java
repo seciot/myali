@@ -19,10 +19,10 @@ class a$1 extends PhoneStateListener
     while (a.getBundle(this.a))
       return;
     if (a.b(this.a) != null)
-      a.a(this.a, a.b(this.a).getCellLocation());
+      a.v(this.a, a.b(this.a).getCellLocation());
     if (a.c(this.a) == null)
-      a.a(this.a, paramCellLocation);
-    a.a(this.a, n.a());
+      a.v(this.a, paramCellLocation);
+    a.v(this.a, n.a());
   }
 
   public void onServiceStateChanged(ServiceState paramServiceState)
@@ -34,7 +34,7 @@ class a$1 extends PhoneStateListener
     case 1:
     }
     a.removeBundle(this.a).clear();
-    a.b(this.a, -113);
+    a.d(this.a, -113);
   }
 
   public void onSignalStrengthChanged(int paramInt)
@@ -48,7 +48,7 @@ class a$1 extends PhoneStateListener
     }
     while (true)
     {
-      a.a(this.a, i);
+      a.v(this.a, i);
       return;
       i = n.a(paramInt);
       continue;
@@ -67,7 +67,7 @@ class a$1 extends PhoneStateListener
     }
     while (true)
     {
-      a.a(this.a, i);
+      a.v(this.a, i);
       return;
       i = n.a(paramSignalStrength.getGsmSignalStrength());
       continue;

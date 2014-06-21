@@ -12,7 +12,7 @@ class RealNameFragment_$3
 
   public void run()
   {
-    RealNameFragment_.a(this.c, this.a, this.b);
+    RealNameFragment_.e(this.c, this.a, this.b);
   }
 }
 

@@ -7,7 +7,7 @@ import android.widget.CheckBox;
 final class e
   implements View.OnClickListener
 {
-  e(d paramd, CheckBox paramCheckBox)
+  e(ZLog paramd, CheckBox paramCheckBox)
   {
   }
 

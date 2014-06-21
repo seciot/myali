@@ -11,7 +11,7 @@ final class be
 
   public final void run()
   {
-    ForgotLoginPwdActivity_.a(this.b, this.a);
+    ForgotLoginPwdActivity_.v(this.b, this.a);
   }
 }
 

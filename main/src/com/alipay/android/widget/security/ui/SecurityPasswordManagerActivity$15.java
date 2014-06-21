@@ -12,7 +12,7 @@ class SecurityPasswordManagerActivity$15
 
   public void onClick(View paramView)
   {
-    SecurityPasswordManagerActivity.b(this.a, true);
+    SecurityPasswordManagerActivity.d(this.a, true);
   }
 }
 

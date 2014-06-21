@@ -18,11 +18,11 @@ final class i
     if ((!this.c) && (MainActivity.b(this.b) != null))
     {
       MainActivity.b(this.b).getBundleName();
-      MainActivity.b(this.b).b();
+      MainActivity.b(this.b).stop();
       this.c = true;
-      MainActivity.a(this.b, this.a.getInitLevel());
+      MainActivity.v(this.b, this.a.getInitLevel());
       if (MainActivity.c(this.b) != null)
-        MainActivity.c(this.b).a(this.b, MainActivity.d(this.b));
+        MainActivity.c(this.b).v(this.b, MainActivity.d(this.b));
     }
   }
 }

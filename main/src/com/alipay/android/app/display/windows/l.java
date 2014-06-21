@@ -11,7 +11,7 @@ final class l
 
   public final void run()
   {
-    WindowsManager.a(this.c, System.currentTimeMillis());
+    WindowsManager.v(this.c, System.currentTimeMillis());
     if (WindowsManager.getBundle(this.c) != null)
     {
       IContainer localIContainer = WindowsManager.getBundle(this.c);

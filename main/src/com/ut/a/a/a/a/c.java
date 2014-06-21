@@ -20,13 +20,13 @@ public class c
     }
     catch (UnsupportedEncodingException localUnsupportedEncodingException)
     {
-      throw a(paramString, localUnsupportedEncodingException);
+      throw v(paramString, localUnsupportedEncodingException);
     }
   }
 
   public static String e(byte[] paramArrayOfByte)
   {
-    return a(paramArrayOfByte, "UTF-8");
+    return v(paramArrayOfByte, "UTF-8");
   }
 }
 

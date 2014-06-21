@@ -28,7 +28,7 @@ final class ao
     if ((PermAuthActivity.getBundle(this.b) != null) && (PermAuthActivity.getBundle(this.b).getVisibility() == 0))
     {
       String str3 = PermAuthActivity.getBundle(this.b).getInputedText();
-      PermAuthActivity.a(this.b, PermAuthActivity.getBundle(this.b));
+      PermAuthActivity.v(this.b, PermAuthActivity.getBundle(this.b));
       str1 = "PAYMENTPASSWORD";
       localObject = str3;
     }
@@ -47,7 +47,7 @@ final class ao
           if ((PermAuthActivity.b(this.b) == null) || (PermAuthActivity.b(this.b).getVisibility() != 0))
             break label242;
           String str2 = PermAuthActivity.b(this.b).getInputedPwd(-1);
-          PermAuthActivity.a(this.b, PermAuthActivity.b(this.b));
+          PermAuthActivity.v(this.b, PermAuthActivity.b(this.b));
           str1 = "MOBILEPASSWORD";
           localObject = str2;
           break;

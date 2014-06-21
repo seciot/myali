@@ -47,7 +47,7 @@ public class LauncherApplication extends Application {
 					localObject, new Object[] { paramThrowable, paramString });
 			return;
 		} catch (Exception localException) {
-			com.alipay.mobile.quinox.utils.d.a("verify", "LogError",
+			com.alipay.mobile.quinox.utils.ZLog.e("verify", "LogError",
 					localException);
 		}
 	}
@@ -69,7 +69,7 @@ public class LauncherApplication extends Application {
 									null });
 			return;
 		} catch (Exception localException) {
-			com.alipay.mobile.quinox.utils.d.a("verify", "LogError",
+			com.alipay.mobile.quinox.utils.ZLog.e("verify", "LogError",
 					localException);
 		}
 	}

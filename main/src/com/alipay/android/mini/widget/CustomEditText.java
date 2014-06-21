@@ -209,7 +209,7 @@ public class CustomEditText extends EditText
       return;
     this.n = true;
     if (this.b == null)
-      this.b = UIPropUtil.a(R.drawable.y, getResources());
+      this.b = UIPropUtil.v(R.drawable.y, getResources());
     this.a = true;
     a();
   }
@@ -237,7 +237,7 @@ public class CustomEditText extends EditText
         paramView.setBackgroundResource(R.drawable.ae);
       this.j.showAsDropDown(this, i4, i3);
       Resources localResources = getContext().getResources();
-      this.b = UIPropUtil.a(R.drawable.U, localResources);
+      this.b = UIPropUtil.v(R.drawable.U, localResources);
       this.a = true;
       a();
       return;

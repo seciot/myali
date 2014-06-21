@@ -10,7 +10,7 @@ final class aa
   public final void run()
   {
     if (UICheckBox.f(this.a) != null)
-      this.a.b(UICheckBox.f(this.a), null);
+      this.a.d(UICheckBox.f(this.a), null);
   }
 }
 

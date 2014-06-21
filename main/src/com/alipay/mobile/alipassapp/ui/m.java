@@ -9,7 +9,7 @@ final class m
 
   public final void run()
   {
-    AlipassDetailActivity_.a(this.b, this.a);
+    AlipassDetailActivity_.v(this.b, this.a);
   }
 }
 

@@ -18,7 +18,7 @@ class SecurityExaminationActivity$4
 
   public void onClick(View paramView)
   {
-    SecurityExaminationActivity.a(this.a, (SchemeService)SecurityExaminationActivity.getBundle(this.a).getMicroApplicationContext().findServiceByInterface(SchemeService.class.getName()));
+    SecurityExaminationActivity.v(this.a, (SchemeService)SecurityExaminationActivity.getBundle(this.a).getMicroApplicationContext().findServiceByInterface(SchemeService.class.getName()));
     SecurityExaminationActivity localSecurityExaminationActivity = this.a;
     BehaviourIdEnum localBehaviourIdEnum = BehaviourIdEnum.CLICKED;
     String[] arrayOfString = new String[5];

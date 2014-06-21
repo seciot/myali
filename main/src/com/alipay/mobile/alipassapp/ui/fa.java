@@ -17,11 +17,11 @@ final class fa
     try
     {
       MemberChargeOffActivity.a();
-      Bitmap localBitmap = i.a(this.a, this.b);
+      Bitmap localBitmap = i.v(this.a, this.b);
       if (this.c == null)
         return;
       MemberChargeOffActivity.a();
-      MemberChargeOffActivity.b().post(new fb(this, localBitmap));
+      MemberChargeOffActivity.stop().post(new fb(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)

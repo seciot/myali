@@ -40,9 +40,9 @@ final class b
     if (str != null);
     try
     {
-      CompletePhoneUserInfoActivity.a(this.a, paramString2);
+      CompletePhoneUserInfoActivity.v(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
-      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).a(CompletePhoneUserInfoActivity.getBundle(this.a), paramString1, CompletePhoneUserInfoActivity.c(this.a));
+      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).e(CompletePhoneUserInfoActivity.getBundle(this.a), paramString1, CompletePhoneUserInfoActivity.c(this.a));
       this.a.dismissProgressDialog();
       return localSmsCodeRes;
     }

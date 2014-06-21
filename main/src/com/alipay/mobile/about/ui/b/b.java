@@ -30,7 +30,7 @@ public final class b
     this.c = paramBoolean;
   }
 
-  public final boolean b()
+  public final boolean stop()
   {
     return this.c;
   }

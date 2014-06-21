@@ -107,15 +107,15 @@ public class ActiveTopBoardContainer extends FrameLayout
       if (c == 0)
       {
         this.e.b();
-        this.e.a(localView, i2, SyncAnimatingHelper.TYPE.a);
-        this.e.a(this.g, i2, SyncAnimatingHelper.TYPE.a);
+        this.e.e(localView, i2, SyncAnimatingHelper.TYPE.a);
+        this.e.e(this.g, i2, SyncAnimatingHelper.TYPE.a);
         this.e.a(200);
         this.e.c();
       }
       else if (2 == c)
       {
         this.e.b();
-        this.e.a(localView, i2, SyncAnimatingHelper.TYPE.a);
+        this.e.e(localView, i2, SyncAnimatingHelper.TYPE.a);
         int i4 = 200 * Math.abs(localView.getTop()) / i1;
         if ((this.l != 0.0F) && (Math.round(this.l) > 0))
           i4 = (localView.getTop() - i2) / Math.round(this.l);
@@ -130,7 +130,7 @@ public class ActiveTopBoardContainer extends FrameLayout
         if (c == 0)
         {
           this.e.b();
-          this.e.a(localView, i1, SyncAnimatingHelper.TYPE.a);
+          this.e.e(localView, i1, SyncAnimatingHelper.TYPE.a);
           this.e.a(200);
           this.e.getBundle(new b(this, localView, i2));
           this.e.c();
@@ -139,8 +139,8 @@ public class ActiveTopBoardContainer extends FrameLayout
         else if (1 == c)
         {
           this.e.b();
-          this.e.a(localView, i1, SyncAnimatingHelper.TYPE.a);
-          this.e.a(this.g, 0, SyncAnimatingHelper.TYPE.b);
+          this.e.e(localView, i1, SyncAnimatingHelper.TYPE.a);
+          this.e.e(this.g, 0, SyncAnimatingHelper.TYPE.b);
           int i3 = 200 * Math.abs(localView.getTop() - i1) / i1;
           if ((this.l != 0.0F) && (Math.round(this.l) > 0))
             i3 = (i1 - localView.getTop()) / Math.round(this.l);
@@ -157,7 +157,7 @@ public class ActiveTopBoardContainer extends FrameLayout
             if (1 == c)
             {
               this.e.b();
-              this.e.a(localView, 0, SyncAnimatingHelper.TYPE.a);
+              this.e.e(localView, 0, SyncAnimatingHelper.TYPE.a);
               this.e.a(200);
               this.e.getBundle(new c(this, localView));
               this.e.c();
@@ -165,7 +165,7 @@ public class ActiveTopBoardContainer extends FrameLayout
             else if (2 == c)
             {
               this.e.b();
-              this.e.a(localView, 0, SyncAnimatingHelper.TYPE.a);
+              this.e.e(localView, 0, SyncAnimatingHelper.TYPE.a);
               this.e.a(200);
               this.e.getBundle(new d(this, localView));
               this.e.c();

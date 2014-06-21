@@ -15,7 +15,7 @@ final class bw
   public final void onClick(View paramView)
   {
     LogAgentWriteLog.g(this.c);
-    this.c.a(this.a, this.b.getString("title"));
+    this.c.v(this.a, this.b.getString("title"));
   }
 }
 

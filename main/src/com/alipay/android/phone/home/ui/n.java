@@ -90,17 +90,17 @@ final class n
             {
               HeaderAreaLayout.j(this.b).setVisibility(0);
               continue;
-              this.b.b();
+              this.b.stop();
               this.b.getBundleName();
               if (1 == this.c)
               {
-                HeaderAreaLayout.l(this.b).a(HeaderAreaLayout.m(this.b).getBottom(), true);
+                HeaderAreaLayout.l(this.b).v(HeaderAreaLayout.m(this.b).getBottom(), true);
               }
               else
               {
                 if (2 != this.c)
                   break;
-                HeaderAreaLayout.l(this.b).a(HeaderAreaLayout.m(this.b).getBottom(), false);
+                HeaderAreaLayout.l(this.b).v(HeaderAreaLayout.m(this.b).getBottom(), false);
                 HeaderAreaLayout.j(this.b).setVisibility(4);
               }
             }
@@ -120,7 +120,7 @@ final class n
     {
       HeaderAreaLayout.j(this.b).setLayoutParams(localLayoutParams);
       HeaderAreaLayout.j(this.b).setVisibility(0);
-      HeaderAreaLayout.l(this.b).a(HeaderAreaLayout.m(this.b).getBottom(), true);
+      HeaderAreaLayout.l(this.b).v(HeaderAreaLayout.m(this.b).getBottom(), true);
       break;
       label474: localLayoutParams.height = HeaderAreaLayout.m(this.b).getHeight();
       localLayoutParams.width = HeaderAreaLayout.removeBundle(this.b).getWidth();
@@ -152,7 +152,7 @@ final class n
   public final void updateTopInfo(String paramString1, String paramString2, String paramString3)
   {
     if (HeaderAreaLayout.l(this.b) != null)
-      HeaderAreaLayout.l(this.b).a(paramString1, paramString2, paramString3);
+      HeaderAreaLayout.l(this.b).e(paramString1, paramString2, paramString3);
   }
 }
 

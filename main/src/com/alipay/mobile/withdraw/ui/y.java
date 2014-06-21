@@ -9,7 +9,7 @@ final class y
 
   public final void run()
   {
-    WithdrawActivity_.b(this.b, this.a);
+    WithdrawActivity_.d(this.b, this.a);
   }
 }
 

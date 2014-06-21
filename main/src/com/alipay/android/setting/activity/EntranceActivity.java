@@ -98,7 +98,7 @@ public class EntranceActivity extends BaseSettingActivity
       catch (JSONException localJSONException)
       {
         localJSONException.printStackTrace();
-        CustomToast.a(this, R.drawable.ax, R.string.Q);
+        CustomToast.e(this, R.drawable.ax, R.string.Q);
         a(this.g);
         if (!this.n)
           break label274;
@@ -172,7 +172,7 @@ public class EntranceActivity extends BaseSettingActivity
     {
       showProgressDialog(null, false, null);
       localBundle = getIntent().getExtras();
-      GlobalContext.a().a(getApplicationContext(), MspConfig.u());
+      GlobalContext.a().v(getApplicationContext(), MspConfig.u());
     }
     try
     {

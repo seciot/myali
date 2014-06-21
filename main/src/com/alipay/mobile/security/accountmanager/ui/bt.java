@@ -23,18 +23,18 @@ final class bt
 
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
-    ForgotPayPwdActivity.a(this.a, this.a.e.getInputedText().toString().replace(" ", ""));
+    ForgotPayPwdActivity.v(this.a, this.a.e.getInputedText().toString().replace(" ", ""));
     if ((ForgotPayPwdActivity.c(this.a) != null) && (!"".equals(ForgotPayPwdActivity.c(this.a).trim())))
     {
       this.a.f.setEnabled(true);
-      ForgotPayPwdActivity.b(this.a, this.a.k.getText().toString());
+      ForgotPayPwdActivity.d(this.a, this.a.k.getText().toString());
       if ((ForgotPayPwdActivity.d(this.a) == null) || ("".equals(ForgotPayPwdActivity.d(this.a).trim())))
         break label199;
       this.a.l.setEnabled(true);
     }
     while (true)
     {
-      ForgotPayPwdActivity.c(this.a, this.a.m.getInputedText());
+      ForgotPayPwdActivity.i(this.a, this.a.m.getInputedText());
       if ((ForgotPayPwdActivity.removeBundle(this.a) == null) || ("".equals(ForgotPayPwdActivity.removeBundle(this.a).trim())))
         break label213;
       this.a.n.setEnabled(true);

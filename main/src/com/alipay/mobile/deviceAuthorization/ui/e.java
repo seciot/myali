@@ -22,7 +22,7 @@ final class e
 
   public final void onRefresh()
   {
-    AuthorizeLogsActivity.a(this.a, false);
+    AuthorizeLogsActivity.v(this.a, false);
   }
 }
 

@@ -12,7 +12,7 @@ final class ad
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

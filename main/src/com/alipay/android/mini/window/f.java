@@ -12,7 +12,7 @@ final class f
 
   public final void run()
   {
-    BaseElement localBaseElement = this.a.a.b();
+    BaseElement localBaseElement = this.a.a.stop();
     if ((localBaseElement != null) && (localBaseElement.z() != null))
       UIPropUtil.b(localBaseElement.z());
   }

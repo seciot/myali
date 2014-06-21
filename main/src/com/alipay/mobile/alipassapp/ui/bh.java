@@ -18,7 +18,7 @@ final class bh extends AsyncTask<String, Object, Object>
     {
       if ((paramObject instanceof AlipassInfo))
       {
-        AlipassPreviewActivity.a(this.a, (AlipassInfo)paramObject);
+        AlipassPreviewActivity.v(this.a, (AlipassInfo)paramObject);
         AlipassPreviewActivity.c(this.a);
         if (!AlipassPreviewActivity.d(this.a))
           this.a.getInitLevel();
@@ -31,7 +31,7 @@ final class bh extends AsyncTask<String, Object, Object>
       while (true)
       {
         AlipassPreviewActivity.removeBundle(this.a);
-        this.a.a(102, this.a.getResources().getString(R.string.alipass_add_failed));
+        this.a.v(102, this.a.getResources().getString(R.string.alipass_add_failed));
       }
     }
   }

@@ -20,7 +20,7 @@ final class d
       a locala = a.a();
       Object[] arrayOfObject = new Object[1];
       arrayOfObject[0] = Looper.myLooper();
-      PubAppLongConnMsgReceiver.a(localPubAppLongConnMsgReceiver, (PubAppMsgNotifyHandler)locala.a(PubAppMsgNotifyHandler.class, arrayOfObject));
+      PubAppLongConnMsgReceiver.v(localPubAppLongConnMsgReceiver, (PubAppMsgNotifyHandler)locala.a(PubAppMsgNotifyHandler.class, arrayOfObject));
       Looper.loop();
       LogCatLog.isSwitch();
       return;

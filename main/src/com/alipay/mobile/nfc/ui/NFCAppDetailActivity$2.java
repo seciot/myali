@@ -13,7 +13,7 @@ class NFCAppDetailActivity$2
   {
     NFCAppDetailActivity.d(this.a).setEnabled(true);
     NFCAppDetailActivity.d(this.a).setText("安装应用");
-    NFCAppDetailActivity.a(this.a, "main_button_style");
+    NFCAppDetailActivity.v(this.a, "main_button_style");
     this.a.finish();
   }
 }

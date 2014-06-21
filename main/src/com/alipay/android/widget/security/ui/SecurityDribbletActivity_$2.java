@@ -9,7 +9,7 @@ class SecurityDribbletActivity_$2
 
   public void run()
   {
-    SecurityDribbletActivity_.a(this.b, this.a);
+    SecurityDribbletActivity_.v(this.b, this.a);
   }
 }
 

@@ -17,11 +17,11 @@ final class ff
     try
     {
       MemberFirstDetailActivity.a();
-      Bitmap localBitmap = i.a(this.a, this.b);
+      Bitmap localBitmap = i.v(this.a, this.b);
       if (MemberFirstDetailActivity.getBundle(this.d) == null)
         return;
       MemberFirstDetailActivity.a();
-      MemberFirstDetailActivity.b().post(new fg(this, localBitmap));
+      MemberFirstDetailActivity.stop().post(new fg(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)

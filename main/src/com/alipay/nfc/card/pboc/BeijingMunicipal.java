@@ -40,7 +40,7 @@ final class BeijingMunicipal extends PbocCard
           {
             localBeijingMunicipal.a(new ArrayList[] { localArrayList });
             return localBeijingMunicipal;
-            byte[] arrayOfByte1 = localResponse1.b();
+            byte[] arrayOfByte1 = localResponse1.stop();
             localBeijingMunicipal.g = Util.b(arrayOfByte1, 0, 8);
             Object[] arrayOfObject1 = new Object[3];
             arrayOfObject1[0] = Byte.valueOf(arrayOfByte1[8]);
@@ -60,7 +60,7 @@ final class BeijingMunicipal extends PbocCard
             localBeijingMunicipal.j = null;
             if ((localResponse2 != null) && (localResponse2.getBundleName()) && (localResponse2.a() > 4))
             {
-              byte[] arrayOfByte2 = localResponse2.b();
+              byte[] arrayOfByte2 = localResponse2.stop();
               int i = Util.a(arrayOfByte2, 1, 4);
               if (arrayOfByte2[0] == 0)
               {

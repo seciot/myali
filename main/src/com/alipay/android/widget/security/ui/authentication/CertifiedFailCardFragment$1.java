@@ -13,7 +13,7 @@ class CertifiedFailCardFragment$1
   public void onClick(View paramView)
   {
     CertifiedFailCardFragment.a(false);
-    this.a.b();
+    this.a.stop();
   }
 }
 

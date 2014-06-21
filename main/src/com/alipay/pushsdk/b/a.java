@@ -31,13 +31,13 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
       ArrayList localArrayList2 = new ArrayList();
       localArrayList2.add(new BasicNameValuePair("requestData", paramString));
       URL localURL = a();
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, "HttpClient", "Request" + paramString);
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, "HttpClient", "Dest url:  " + localURL.toString());
-      HttpResponse localHttpResponse = a(localArrayList2, localArrayList1);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, "HttpClient", "Request" + paramString);
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, "HttpClient", "Dest url:  " + localURL.toString());
+      HttpResponse localHttpResponse = v(localArrayList2, localArrayList1);
       if (localHttpResponse == null)
         return null;
       str = URLDecoder.decode(EntityUtils.toString(localHttpResponse.getEntity()), "UTF-8");
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.a(3, g, "Response " + str.toString());
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, g, "Response " + str.toString());
       return str;
     }
     catch (Exception localException)

@@ -20,10 +20,10 @@ final class h
 
   public final void onClick(View paramView)
   {
-    WithdrawActivity.a(this.a, "withdraw", "confirmButton");
+    WithdrawActivity.e(this.a, "withdraw", "confirmButton");
     ExtViewUtil.closeSoftInputWindow(this.a);
     String str1 = WithdrawActivity.d(this.a).getInputedText().toString();
-    if (!WithdrawActivity.a(this.a, str1))
+    if (!WithdrawActivity.v(this.a, str1))
       return;
     String str2 = MoneyUtil.formatMoney(str1) + this.a.getResources().getString(R.string.o);
     if (StringUtils.equalsIgnoreCase("2", WithdrawActivity.removeBundle(this.a)))

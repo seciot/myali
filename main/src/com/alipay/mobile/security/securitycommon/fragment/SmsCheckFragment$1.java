@@ -29,8 +29,8 @@ class SmsCheckFragment$1
     }
     SmsCheckFragment.b(this.a).set(false);
     SmsCheckFragment.c(this.a).dispose();
-    this.a.a(str, this.a);
-    SecurityUtil.b(AlipayApplication.getInstance(), SmsCheckFragment.getBundle(this.a).getEtContent());
+    this.a.v(str, this.a);
+    SecurityUtil.d(AlipayApplication.getInstance(), SmsCheckFragment.getBundle(this.a).getEtContent());
   }
 }
 

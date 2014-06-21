@@ -11,7 +11,7 @@ final class bf
   {
     if (this.a)
     {
-      this.b.b();
+      this.b.stop();
       return;
     }
     this.b.finish();

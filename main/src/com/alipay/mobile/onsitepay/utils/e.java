@@ -11,7 +11,7 @@ final class e
 
   public final void run()
   {
-    ShareSavePicThireBtnActivity_.a(this.c, this.a, this.b);
+    ShareSavePicThireBtnActivity_.e(this.c, this.a, this.b);
   }
 }
 

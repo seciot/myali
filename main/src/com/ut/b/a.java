@@ -161,7 +161,7 @@ class a
       }
     }
     if (i < m)
-      a(paramString, i, m - i);
+      e(paramString, i, m - i);
   }
 
   public XmlSerializer attribute(String paramString1, String paramString2, String paramString3)

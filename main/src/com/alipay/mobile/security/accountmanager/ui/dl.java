@@ -11,7 +11,7 @@ final class dl
 
   public final void onGestureResult(boolean paramBoolean)
   {
-    this.a.b();
+    this.a.stop();
   }
 }
 

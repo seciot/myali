@@ -50,7 +50,7 @@ public final class b extends AppBundle
       com.alipay.mobile.about.ui.BundlesManager.AppBundle locala1 = (com.alipay.mobile.about.ui.BundlesManager.AppBundle)this.b.get(paramInt);
       locala.BundlesManager.setText(locala1.e);
       locala.BundlesManagerImpl.setText(locala1.AppBundle);
-      this.c.a(locala.AppBundle, locala1.d, this.d);
+      this.c.e(locala.AppBundle, locala1.ZLog, this.d);
       return paramView;
       locala = (AppBundle)paramView.getTag();
     }

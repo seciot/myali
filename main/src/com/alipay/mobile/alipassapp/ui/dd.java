@@ -9,7 +9,7 @@ final class dd
 
   public final void run()
   {
-    AlipassShareActivity_.a(this.b, this.a);
+    AlipassShareActivity_.v(this.b, this.a);
   }
 }
 

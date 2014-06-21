@@ -11,7 +11,7 @@ final class ce
 
   public final void run()
   {
-    MobileRechargeCashierActivity_.a(this.c, this.a, this.b);
+    MobileRechargeCashierActivity_.e(this.c, this.a, this.b);
   }
 }
 

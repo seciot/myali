@@ -18,7 +18,7 @@ final class er
     {
       if (this.a.e.a())
         break label58;
-      this.a.b();
+      this.a.stop();
     }
     label58: 
     do
@@ -31,7 +31,7 @@ final class er
       }
     }
     while (MemberCardObtainableListActivity.getBundle(this.a).get());
-    this.a.d.a(this.a.e.b(), this.a.e.getInitLevel());
+    this.a.d.v(this.a.e.stop(), this.a.e.getInitLevel());
     long l = System.currentTimeMillis() - MemberCardObtainableListActivity.f(this.a);
     new StringBuilder("会员卡领卡列表加载时间").append(l).toString();
   }

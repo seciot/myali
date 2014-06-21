@@ -12,7 +12,7 @@ class LaunchRouter$5
 
   public void run()
   {
-    LaunchRouter.a(this.b, this.a);
+    LaunchRouter.v(this.b, this.a);
     LaunchRouter.d(this.b).finish();
   }
 }

@@ -26,10 +26,10 @@ final class ah
     APTextView localAPTextView;
     LinearLayout.LayoutParams localLayoutParams;
     DisplayMetrics localDisplayMetrics;
-    if ((this.a != null) && (this.b.b() != null))
+    if ((this.a != null) && (this.b.stop() != null))
     {
-      AlipassListActivity.a(this.b, (APLinearLayout)this.b.b().findViewById(R.id.cms_container));
-      localAPTextView = (APTextView)this.b.b().findViewById(R.id.cms_txt);
+      AlipassListActivity.v(this.b, (APLinearLayout)this.b.stop().findViewById(R.id.cms_container));
+      localAPTextView = (APTextView)this.b.stop().findViewById(R.id.cms_txt);
       localLayoutParams = (LinearLayout.LayoutParams)AlipassListActivity.j(this.b).getLayoutParams();
       localDisplayMetrics = new DisplayMetrics();
       if ((AlipassListActivity.m(this.b) != null) && (AlipassListActivity.n(this.b).getTopActivity() != null));

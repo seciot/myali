@@ -16,7 +16,7 @@ class SelectAccountFragment$2
   public void onItemClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
     SelectAccountInfo localSelectAccountInfo = (SelectAccountInfo)this.a.f.get(paramInt);
-    this.a.a(paramInt, localSelectAccountInfo);
+    this.a.v(paramInt, localSelectAccountInfo);
   }
 }
 

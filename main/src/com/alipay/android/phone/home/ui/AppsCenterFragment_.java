@@ -34,7 +34,7 @@ public final class AppsCenterFragment_ extends AppsCenterFragment
   {
     this.d = super.onCreateView(paramLayoutInflater, paramViewGroup, paramBundle);
     if (this.d == null)
-      this.d = paramLayoutInflater.inflate(R.layout.d, paramViewGroup, false);
+      this.d = paramLayoutInflater.inflate(R.layout.ZLog, paramViewGroup, false);
     return this.d;
   }
 
@@ -42,7 +42,7 @@ public final class AppsCenterFragment_ extends AppsCenterFragment
   {
     super.onViewCreated(paramView, paramBundle);
     this.c = ((APPullRefreshView)findViewById(R.id.s));
-    this.a = ((APGridView)findViewById(R.id.d));
+    this.a = ((APGridView)findViewById(R.id.ZLog));
     afterView();
   }
 }

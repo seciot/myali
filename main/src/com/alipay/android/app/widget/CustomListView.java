@@ -107,7 +107,7 @@ public class CustomListView extends ListView
       this.k.setState(2);
     }
     while (this.d == null);
-    this.d.b();
+    this.d.stop();
   }
 
   public void computeScroll()

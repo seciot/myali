@@ -16,7 +16,7 @@ final class g
     if (this.a)
     {
       GestureDataCenter.getInstance().setNeedNotifyCallBack(false);
-      TabLauncher.a(this.c, this.b);
+      TabLauncher.v(this.c, this.b);
     }
   }
 }
