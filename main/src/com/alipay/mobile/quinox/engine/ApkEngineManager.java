@@ -11,17 +11,16 @@ import com.alipay.mobile.apk.common.ZPackageManager;
 import dalvik.system.DexClassLoader;
 
 public class ApkEngineManager {
-	private static ApkEngineManager manager;
+	private static ApkEngineManager instance;
 	private Application app;
 	@SuppressWarnings("unused")
 	private AbstractEngine engine;
 
-	private ApkEngineManager(Application paramApplication) {
-		app = paramApplication;
+	private ApkEngineManager(Application appCtx) {
+		app = appCtx;
 		String str = app.getCacheDir().getAbsolutePath() + File.separator
 				+ "tmpEngine.apk";
-		MiscUtils
-				.fileFromAssets("NativeApkEngine.apk", app.getAssets(), str);
+		MiscUtils.fileFromAssets("NativeApkEngine.apk", app.getAssets(), str);
 		updateEngine(str);
 	}
 
@@ -41,27 +40,28 @@ public class ApkEngineManager {
 		return null;
 	}
 
-	public static ApkEngineManager getInstance(Application paramApplication) {
-		try {
-			if (manager == null)
-				manager = new ApkEngineManager(paramApplication);
-			ApkEngineManager localApkEngineManager = manager;
-			return localApkEngineManager;
-		} finally {
+	public static ApkEngineManager getInstance(Application app) {
+		if (instance == null) {
+			instance = new ApkEngineManager(app);
 		}
+		return instance;
 	}
 
 	public AbstractEngine getEngine() {
-        synchronized (this) {
-            return this.getEngine("DefaultEngine");
-        }
-    }
-    
-    public AbstractEngine getEngine(final String s) {
-        synchronized (this) {
-            return this.engine = (AbstractEngine)MiscUtils.newInstance("com.alipay.mobile.apk.engine." + s, (ClassLoader)new DexClassLoader(this.a(), app.getCacheDir().getAbsolutePath(), (String)null, this.getClass().getClassLoader()));
-        }
-    }
+		synchronized (this) {
+			return getEngine("DefaultEngine");
+		}
+	}
+
+	public AbstractEngine getEngine(final String s) {
+		synchronized (this) {
+			return engine = (AbstractEngine) MiscUtils.newInstance(
+					"com.alipay.mobile.apk.engine." + s,
+					(ClassLoader) new DexClassLoader(this.a(), app
+							.getCacheDir().getAbsolutePath(), (String) null,
+							this.getClass().getClassLoader()));
+		}
+	}
 
 	public Throwable getUnsupportedCause() {
 		return getUnsupportedCause("DefaultEngine");
@@ -94,18 +94,17 @@ public class ApkEngineManager {
 	}
 
 	public boolean updateEngine(final String s) {
-        final String a = this.a();
-        boolean copyFile;
-        if (this.a(s) <= this.a(a)) {
-            copyFile = false;
-        }
-        else {
-            copyFile = MiscUtils.copyFile(s, a);
-            if (copyFile) {
-                this.engine = null;
-                return copyFile;
-            }
-        }
-        return copyFile;
-    }
+		final String a = this.a();
+		boolean copyFile;
+		if (this.a(s) <= this.a(a)) {
+			copyFile = false;
+		} else {
+			copyFile = MiscUtils.copyFile(s, a);
+			if (copyFile) {
+				this.engine = null;
+				return copyFile;
+			}
+		}
+		return copyFile;
+	}
 }
