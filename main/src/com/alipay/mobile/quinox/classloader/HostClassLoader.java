@@ -28,26 +28,26 @@ public final class HostClassLoader extends PathClassLoader implements Loadable {
 		this.e = bundlesManager.h();
 	}
 
-	private Class a(String paramString) {
+	private Class getClass(String className) {
 		try {
 			ZLog.i("HostClassLoader", Thread.currentThread().getName() + ":"
-					+ this.pathClassLoader + " loadClass: " + paramString);
+					+ this.pathClassLoader + " loadClass: " + className);
 			Method localMethod1 = ClassLoader.class.getDeclaredMethod(
 					"findLoadedClass", new Class[] { String.class });
 			localMethod1.setAccessible(true);
 			Class localClass = (Class) localMethod1.invoke(this.pathClassLoader,
-					new Object[] { paramString });
+					new Object[] { className });
 			if (localClass == null) {
 				Method localMethod2 = ClassLoader.class.getDeclaredMethod(
 						"findClass", new Class[] { String.class });
 				localMethod2.setAccessible(true);
 				localClass = (Class) localMethod2.invoke(this.pathClassLoader,
-						new Object[] { paramString });
+						new Object[] { className });
 			}
 			return localClass;
 		} catch (Exception localException) {
 			throw new RuntimeException(this + "can't find class: "
-					+ paramString);
+					+ className);
 		}
 	}
 
@@ -111,7 +111,7 @@ public final class HostClassLoader extends PathClassLoader implements Loadable {
 
 	public final Class<?> loadClassFromCurrent(String s) {
 		if (this.app.patternHost(s)) {
-			return this.a(s);
+			return this.getClass(s);
 		}
 		ZLog.i("HostClassLoader", Thread.currentThread().getName() + ":" + this
 				+ " loadClass: " + s);

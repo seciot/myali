@@ -1,37 +1,45 @@
 package com.alipay.mobile.quinox;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Iterator;
+import java.util.Observable;
 import java.util.Observer;
 
+import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
 
 import com.alipay.mobile.quinox.bundle.AppBundle;
 import com.alipay.mobile.quinox.bundle.BundlesManager;
+import com.alipay.mobile.quinox.classloader.BootstrapClassLoader;
+import com.alipay.mobile.quinox.utils.ZLog;
 
 public class LauncherApplication extends Application {
 	private static final String[] a = { "mobile-base-commonbiz",
 			"mobile-framework-framework" };
 	private Object b;
-	private com.alipay.mobile.quinox.classloader.BootstrapClassLoader c;
-	private Resources d;
+	private BootstrapClassLoader bootstrapClassLoader;
+	private Resources resources;
 	private BundlesManager bundlesManager;
-	private BundleContext f;
+	private BundleContext bundleContext;
 	private Application app;
 	// TODO
 	// private d h = new d(this, (byte)0);
-	private d h = new d(this);
-	private Handler i;
-	private HandlerThread j;
+	private Observable observable = new Observable() {
+	};
+
+	private Handler handler;
+	private HandlerThread handlerThread;
 	private boolean isLoadingClass;
 
 	public void LogError(Throwable paramThrowable, String paramString) {
@@ -75,7 +83,7 @@ public class LauncherApplication extends Application {
 	}
 
 	public void addListener(Observer paramObserver) {
-		this.h.addObserver(paramObserver);
+		this.observable.addObserver(paramObserver);
 	}
 
 	public boolean bootFinish() {
@@ -83,13 +91,13 @@ public class LauncherApplication extends Application {
 	}
 
 	public AssetManager getAssets() {
-		if (this.d == null)
+		if (this.resources == null)
 			return super.getAssets();
-		return this.d.getAssets();
+		return this.resources.getAssets();
 	}
 
 	public BundleContext getBundleContext() {
-		return this.f;
+		return this.bundleContext;
 	}
 
 	public BundlesManager getBundlesManager() {
@@ -97,15 +105,15 @@ public class LauncherApplication extends Application {
 	}
 
 	public ClassLoader getClassLoader() {
-		if (this.c == null)
+		if (this.bootstrapClassLoader == null)
 			return super.getClassLoader();
-		return this.c;
+		return this.bootstrapClassLoader;
 	}
 
 	public Resources getResources() {
-		if (this.d == null)
+		if (this.resources == null)
 			return super.getResources();
-		return this.d;
+		return this.resources;
 	}
 
 	public void onConfigurationChanged(Configuration paramConfiguration) {
@@ -139,16 +147,23 @@ public class LauncherApplication extends Application {
 					"mPackageInfo");
 			localField1.setAccessible(true);
 			this.b = localField1.get(localContext);
-			this.j = new HandlerThread("Init");
-			this.j.start();
-			this.i = new Handler(this.j.getLooper());
-			this.i.post(new b(this));
+			this.handlerThread = new HandlerThread("Init");
+			this.handlerThread.start();
+			this.handler = new Handler(this.handlerThread.getLooper());
+			this.handler.post(new Runnable() {
+				@Override
+				public void run() {
+					// TODO
+					// LauncherApplication.access$100(this.a);
+					LauncherApplication.this.handlerThread.quit();
+				}
+			});
 			ClassLoader localClassLoader = getClass().getClassLoader();
 			try {
 				Field localField2 = ClassLoader.class
 						.getDeclaredField("parent");
 				localField2.setAccessible(true);
-				localField2.set(localClassLoader, new c(this));
+				localField2.set(localClassLoader, new OriginClassLoader());
 				return;
 			} catch (Exception localException) {
 				throw new RuntimeException(localException);
@@ -202,15 +217,17 @@ public class LauncherApplication extends Application {
 						.startsWith("com.alipay.mobile.quinox.ExceptionHandler"));
 	}
 
-	public void recover() {
-		// TODO
-		// if (this.app != null)
-		// this.app.getClass().getDeclaredMethod("recover", new
-		// Class[0]).invoke(this.app, new Object[0]);
+	public void recover() throws IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException,
+			NoSuchMethodException {
+		if (app != null) {
+			app.getClass().getDeclaredMethod("recover", new Class[] {})
+					.invoke(app, new Object[] {});
+		}
 	}
 
 	public void removeListener(Observer paramObserver) {
-		this.h.deleteObserver(paramObserver);
+		this.observable.deleteObserver(paramObserver);
 	}
 
 	public void setupResources() {
@@ -226,8 +243,7 @@ public class LauncherApplication extends Application {
 			localMethod.invoke(localAssetManager, arrayOfObject1);
 			Iterator localIterator = this.bundlesManager.b();
 			while (localIterator.hasNext()) {
-				AppBundle locala = (AppBundle) localIterator
-						.next();
+				AppBundle locala = (AppBundle) localIterator.next();
 				if (locala.hasResource()) {
 					Object[] arrayOfObject2 = new Object[1];
 					arrayOfObject2[0] = locala.getBundlePath();
@@ -248,6 +264,29 @@ public class LauncherApplication extends Application {
 			// return;
 		} catch (Exception exception) {
 			throw new RuntimeException(exception);
+		}
+	}
+
+	final class OriginClassLoader extends ClassLoader {
+		@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+		public Class<?> findClass(String className)
+				throws ClassNotFoundException {
+			ZLog.d("OriginClassLoader", this + "load class: " + className);
+
+			if (LauncherApplication.this.pattern(className)
+					|| LauncherApplication.this.patternHost(className)) {
+				return super.findClass(className);
+			}
+
+			while (!LauncherApplication.this.isLoadingClass) {
+				try {
+					Thread.sleep(300L);
+				} catch (InterruptedException ex) {
+					ex.printStackTrace();
+				}
+			}
+			return LauncherApplication.this.bootstrapClassLoader
+					.loadClass(className);
 		}
 	}
 }
