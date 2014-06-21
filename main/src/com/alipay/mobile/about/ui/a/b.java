@@ -14,10 +14,10 @@ import java.util.List;
 
 public final class b extends AppBundle
 {
-  private com.alipay.mobile.about.BundlesManager.b c;
+  private com.alipay.mobile.about.BundlesManager.MinPriorityThreadFactory c;
   private Bitmap d;
 
-  public b(Context paramContext, List<com.alipay.mobile.about.ui.BundlesManager.AppBundle> paramList, com.alipay.mobile.about.BundlesManager.b paramb)
+  public b(Context paramContext, List<com.alipay.mobile.about.ui.BundlesManager.AppBundle> paramList, com.alipay.mobile.about.BundlesManager.MinPriorityThreadFactory paramb)
   {
     super(paramContext, paramList);
     this.c = paramb;

@@ -12,15 +12,15 @@ import com.alipay.mobile.quinox.bundle.BundlesManager;
 
 public class InitExecutor
 {
-  private static final ThreadFactory f = new f();
+  private static final ThreadFactory f = new DefaultThreadFactory();
   private ExecutorService a;
-  private a b;
+  private BootstrapClassloader b;
   private com.alipay.mobile.quinox.bundle.BundlesManager c;
   private Map d;
   private String e;
 
   // ERROR //
-  public InitExecutor(a parama, BundlesManager paramb)
+  public InitExecutor(BootstrapClassloader parama, BundlesManager paramb)
   {
     // Byte code:
     //   0: aload_0

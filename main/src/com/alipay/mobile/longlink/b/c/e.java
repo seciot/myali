@@ -4,12 +4,12 @@ public class e extends AppBundle
 {
   private static final String c = com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.getBundle(e.class);
   private int d = BundlesManager.AppBundle;
-  private int e = BundlesManager.b;
+  private int e = BundlesManager.MinPriorityThreadFactory;
 
   public e()
   {
     removeBundle(BundlesManager.AppBundle);
-    f(BundlesManager.b);
+    f(BundlesManager.MinPriorityThreadFactory);
   }
 
   public final void b(byte[] paramArrayOfByte)

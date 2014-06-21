@@ -52,7 +52,7 @@ public class UICheckBox extends BaseElement
       if (TextUtils.isEmpty(this.f))
         break label230;
       Resources localResources = GlobalContext.a().b().getResources();
-      this.d.setPadding((int)localResources.getDimension(R.dimen.f), 0, (int)localResources.getDimension(R.dimen.g), 0);
+      this.d.setPadding((int)localResources.getDimension(R.dimen.DefaultThreadFactory), 0, (int)localResources.getDimension(R.dimen.g), 0);
       UIUtils.a(this.f, new ad(this));
     }
     while (true)

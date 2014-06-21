@@ -53,7 +53,7 @@ public class BankCardListAdapter extends BaseAdapter
       paramView = LayoutInflater.from(this.a).inflate(this.c, null);
       localViewHolder = new BankCardListAdapter.ViewHolder();
       localViewHolder.a = ((ImageView)paramView.findViewById(R.id.j));
-      localViewHolder.b = ((TextView)paramView.findViewById(R.id.h));
+      localViewHolder.b = ((TextView)paramView.findViewById(R.id.Dependable));
       localViewHolder.c = ((TextView)paramView.findViewById(R.id.i));
       localViewHolder.d = ((RadioButton)paramView.findViewById(R.id.k));
       localViewHolder.d.setClickable(false);

@@ -11,13 +11,13 @@ public class c
   private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.getBundle(BundlesManagerImpl.class);
   private Context b;
   private BundlesManager c;
-  private h d;
+  private Dependable d;
 
   public c(Context paramContext)
   {
     this.b = paramContext;
     this.c = new BundlesManager(this.b);
-    this.d = new h(this.b);
+    this.d = new Dependable(this.b);
   }
 
   public final void a()
@@ -29,7 +29,7 @@ public class c
     {
       JSONObject localJSONObject = this.c.stop();
       localJSONObject.put("userId", str1);
-      localJSONObject.put("lastPubMsgId", new f(this.b).a());
+      localJSONObject.put("lastPubMsgId", new DefaultThreadFactory(this.b).a());
       localJSONObject.put("pushCfgId", this.c.a().a);
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
       ZLog locald = new ZLog(this);

@@ -65,7 +65,7 @@ public class CanNotCertifiedFragment extends BaseAuthenticationFragment
         ((BaseAuthenticationActivity)getActivity()).e();
         this.e.setVisibility(0);
         this.k.setVisibility(8);
-        this.f.setImageResource(R.drawable.f);
+        this.f.setImageResource(R.drawable.DefaultThreadFactory);
         if (localRealNameCertifyResult.certifyReturnInfo != null)
         {
           String str4 = (String)localRealNameCertifyResult.certifyReturnInfo.get("resultTitle");

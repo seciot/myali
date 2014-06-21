@@ -4,7 +4,7 @@ import com.alipay.mobile.commonui.widget.APLinearLayout;
 import com.alipay.mobile.security.authcenter.ui.regist.PreRegistFragment.a;
 
 final class aq
-  implements ExceptionHandler.a
+  implements BootstrapClassloader.a
 {
   aq(ForgotLoginPwdActivity paramForgotLoginPwdActivity, String paramString)
   {

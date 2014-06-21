@@ -13,7 +13,7 @@ public class m extends AppBundle
   protected Socket i;
   String j = null;
   j k;
-  f l;
+  DefaultThreadFactory l;
   private String n = null;
   private boolean o = false;
   private int p = BundlesManager.AppBundle;

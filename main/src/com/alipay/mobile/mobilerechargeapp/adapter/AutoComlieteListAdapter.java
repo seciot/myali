@@ -100,7 +100,7 @@ public class AutoComlieteListAdapter extends BaseAdapter
     String str;
     if (paramView == null)
     {
-      paramView = this.b.inflate(R.layout.f, null);
+      paramView = this.b.inflate(R.layout.DefaultThreadFactory, null);
       locale = new e(this);
       locale.b = ((APTextView)paramView.findViewById(R.id.w));
       locale.c = ((APTextView)paramView.findViewById(R.id.v));

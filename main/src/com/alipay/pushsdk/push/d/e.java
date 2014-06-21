@@ -22,7 +22,7 @@ public class e
   public final void setBundlePath(AppBundle parama)
   {
     String str1;
-    if (new f(0).getBundle(parama))
+    if (new DefaultThreadFactory(0).getBundle(parama))
     {
       this.b.getBundle(true);
       o.getBundle(System.currentTimeMillis());

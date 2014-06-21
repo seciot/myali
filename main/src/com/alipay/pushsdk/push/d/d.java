@@ -21,7 +21,7 @@ public final class d
   public final void setBundlePath(AppBundle parama)
   {
     String str;
-    if (new f(2).getBundle(parama))
+    if (new DefaultThreadFactory(2).getBundle(parama))
     {
       o.getBundle(System.currentTimeMillis());
       this.a.b(System.currentTimeMillis());

@@ -28,9 +28,9 @@ public class UISwitcher extends BaseElement
     boolean bool = TextUtils.equals(this.d, "Y");
     Resources localResources = GlobalContext.a().b().getResources();
     if (paramView != null)
-      paramView.setPadding((int)localResources.getDimension(R.dimen.f), 0, (int)localResources.getDimension(R.dimen.g), 0);
+      paramView.setPadding((int)localResources.getDimension(R.dimen.DefaultThreadFactory), 0, (int)localResources.getDimension(R.dimen.g), 0);
     this.b = ((CheckedTextView)paramView);
-    this.b.setPadding((int)localResources.getDimension(R.dimen.f), 0, (int)localResources.getDimension(R.dimen.g), 0);
+    this.b.setPadding((int)localResources.getDimension(R.dimen.DefaultThreadFactory), 0, (int)localResources.getDimension(R.dimen.g), 0);
     this.b.setChecked(bool);
     this.b.setText(this.a);
     this.b.setOnClickListener(new bu(this));

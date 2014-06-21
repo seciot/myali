@@ -18,7 +18,7 @@ final class b
     }
     catch (InterruptedException localInterruptedException)
     {
-      synchronized (f.k)
+      synchronized (DefaultThreadFactory.k)
       {
         this.a.a.flush();
         AppBundle.getBundle(this.a).set(false);

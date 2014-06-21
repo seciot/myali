@@ -100,7 +100,7 @@ public class RechargeAmountAdapter extends BaseAdapter
   public View getView(int paramInt, View paramView, ViewGroup paramViewGroup)
   {
     if (paramView == null)
-      paramView = this.c.inflate(R.layout.h, null);
+      paramView = this.c.inflate(R.layout.Dependable, null);
     EcardVOWrapper localEcardVOWrapper = (EcardVOWrapper)this.b.get(paramInt);
     APTextView localAPTextView1 = (APTextView)paramView.findViewById(R.id.K);
     APTextView localAPTextView2 = (APTextView)paramView.findViewById(R.id.L);

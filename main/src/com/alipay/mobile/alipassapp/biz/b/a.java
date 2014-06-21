@@ -23,7 +23,7 @@ public class a extends OrmLiteSqliteOpenHelper
   private com.alipay.mobile.alipassapp.biz.Bundle.AppBundle g;
   private Context h;
 
-  public a(Context paramContext, com.alipay.mobile.alipassapp.biz.ExceptionHandler.a parama)
+  public a(Context paramContext, com.alipay.mobile.alipassapp.biz.BootstrapClassloader.a parama)
   {
     super(paramContext, "alipayclient_alipass.db", null, 5);
     this.h = paramContext;

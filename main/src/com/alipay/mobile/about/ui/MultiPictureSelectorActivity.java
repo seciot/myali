@@ -61,7 +61,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
   private GridView f;
   private APLinearLayout g;
   private a h;
-  private List<com.alipay.mobile.about.ui.BundlesManager.b> i = new ArrayList();
+  private List<com.alipay.mobile.about.ui.MinPriorityThreadFactory.b> i = new ArrayList();
   private APTextView j;
   private HorizontalScrollView k;
   private List<String> l = new ArrayList();
@@ -155,7 +155,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     b localb = new b();
     localb.a = ((RecycleabledImageView)localView.findViewById(R.id.bw));
     localView.setTag(localb);
-    com.alipay.mobile.about.ui.BundlesManager.b localb1 = (com.alipay.mobile.about.ui.BundlesManager.b)this.i.get(paramInt);
+    com.alipay.mobile.about.ui.MinPriorityThreadFactory.b localb1 = (com.alipay.mobile.about.ui.MinPriorityThreadFactory.b)this.i.get(paramInt);
     this.w.e(localb.a, localb1.a(), this.x);
     return localView;
   }
@@ -259,7 +259,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
 
   public void onItemClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)this.i.get(paramInt);
+    com.alipay.mobile.about.ui.MinPriorityThreadFactory.b localb = (com.alipay.mobile.about.ui.MinPriorityThreadFactory.b)this.i.get(paramInt);
     if (localb.stop())
     {
       a(paramView);
@@ -386,7 +386,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       }
       for (MultiPictureSelectorActivity.b localb1 = localb2; ; localb1 = (MultiPictureSelectorActivity.b)paramView.getTag())
       {
-        com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
+        com.alipay.mobile.about.ui.MinPriorityThreadFactory.b localb = (com.alipay.mobile.about.ui.MinPriorityThreadFactory.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
         MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).e(localb1.a, localb.a(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
         if (!localb.stop())
           break label417;
@@ -409,7 +409,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     public final void onClick(View paramView)
     {
       int i = ((Integer)paramView.getTag()).intValue();
-      com.alipay.mobile.about.ui.BundlesManager.b localb = (com.alipay.mobile.about.ui.BundlesManager.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(i);
+      com.alipay.mobile.about.ui.MinPriorityThreadFactory.b localb = (com.alipay.mobile.about.ui.MinPriorityThreadFactory.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(i);
       MultiPictureSelectorActivity localMultiPictureSelectorActivity;
       if (localb.stop())
       {

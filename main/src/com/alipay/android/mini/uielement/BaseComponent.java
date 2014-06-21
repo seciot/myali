@@ -143,7 +143,7 @@ public abstract class BaseComponent extends IUIComponet
         int i11 = localView1.getPaddingBottom();
         if (i3 > 1)
           if (i4 == 0)
-            localView1.setBackgroundResource(R.drawable.h);
+            localView1.setBackgroundResource(R.drawable.Dependable);
         while (true)
         {
           localView1.setPadding(i8, i9, i10, i11);
@@ -151,7 +151,7 @@ public abstract class BaseComponent extends IUIComponet
           break;
           if (i4 == i3 - 1)
           {
-            localView1.setBackgroundResource(R.drawable.f);
+            localView1.setBackgroundResource(R.drawable.DefaultThreadFactory);
           }
           else
           {

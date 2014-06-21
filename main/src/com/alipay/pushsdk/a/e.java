@@ -8,13 +8,13 @@ import com.alipay.pushsdk.b.c;
 public final class e
 {
   private g a;
-  private f b;
+  private DefaultThreadFactory b;
   private BundlesManagerImpl c;
 
   public e(Context paramContext, g paramg)
   {
     this.a = paramg;
-    this.b = new f(this);
+    this.b = new DefaultThreadFactory(this);
     this.c = BundlesManagerImpl.getBundle(paramContext);
   }
 

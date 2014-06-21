@@ -14,7 +14,7 @@ public final class e
   public e(Context paramContext)
   {
     this.a = paramContext;
-    HttpsURLConnection.setDefaultHostnameVerifier(new f(this));
+    HttpsURLConnection.setDefaultHostnameVerifier(new DefaultThreadFactory(this));
     this.b = new ThreadPoolExecutor(3, 4, 5L, TimeUnit.SECONDS, new ArrayBlockingQueue(128));
   }
 

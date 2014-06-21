@@ -26,11 +26,11 @@ final class l
       this.b.d(System.currentTimeMillis());
       j.b(this.b);
       j.c(this.b);
-      com.alipay.pushsdk.push.ExceptionHandler.a.c localc;
+      com.alipay.pushsdk.push.BootstrapClassloader.a.c localc;
       com.alipay.pushsdk.push.BundlesManagerImpl.c localc1;
       if ((j.d(this.b) != null) && (j.d(this.b).length() > 0) && (j.removeBundle(this.b) != 0))
       {
-        localc = new com.alipay.pushsdk.push.ExceptionHandler.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.removeBundle(this.b));
+        localc = new com.alipay.pushsdk.push.BootstrapClassloader.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.removeBundle(this.b));
         localc1 = new com.alipay.pushsdk.push.BundlesManagerImpl.c(j.f(this.b), j.g(this.b), localc);
         if ((j.h(this.b) == null) || (!j.h(this.b).equals("1")))
           break label282;
@@ -46,7 +46,7 @@ final class l
         this.a.getInitLevel().getBundle(j.j(this.b));
         this.a.getInitLevel().getBundle(this.c);
         return;
-        localc = new com.alipay.pushsdk.push.ExceptionHandler.a.c(com.alipay.pushsdk.push.a.a.d.a, null, 0);
+        localc = new com.alipay.pushsdk.push.BootstrapClassloader.a.c(com.alipay.pushsdk.push.a.a.d.a, null, 0);
         break;
         label282: localc1.getBundle(com.alipay.pushsdk.push.a.d.c);
       }

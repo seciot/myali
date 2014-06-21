@@ -22,7 +22,7 @@ public class LauncherApplication extends Application {
 	private static final String[] a = { "mobile-base-commonbiz",
 			"mobile-framework-framework" };
 	private Object b;
-	private com.alipay.mobile.quinox.classloader.a c;
+	private com.alipay.mobile.quinox.classloader.BootstrapClassloader c;
 	private Resources d;
 	private BundlesManager bundlesManager;
 	private BundleContext f;
@@ -32,7 +32,7 @@ public class LauncherApplication extends Application {
 	private d h = new d(this);
 	private Handler i;
 	private HandlerThread j;
-	private boolean k;
+	private boolean isLoadingClass;
 
 	public void LogError(Throwable paramThrowable, String paramString) {
 		try {
@@ -79,7 +79,7 @@ public class LauncherApplication extends Application {
 	}
 
 	public boolean bootFinish() {
-		return this.k;
+		return this.isLoadingClass;
 	}
 
 	public AssetManager getAssets() {
@@ -116,7 +116,7 @@ public class LauncherApplication extends Application {
 
 	public void onCreate() {
 		super.onCreate();
-		this.k = false;
+		this.isLoadingClass = false;
 		String str1 = getPackageName();
 		int m = Process.myPid();
 		Iterator localIterator = ((ActivityManager) getSystemService("activity"))

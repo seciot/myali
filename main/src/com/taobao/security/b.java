@@ -12,7 +12,7 @@ public final class b
     ArrayList localArrayList = new ArrayList();
     a = localArrayList;
     localArrayList.add(new AppBundle.ExceptionHandler((byte)0));
-    a.add(new BundlesManager.b((byte)0));
+    a.add(new MinPriorityThreadFactory.b((byte)0));
     a.add(new BundlesManagerImpl.c((byte)0));
   }
 

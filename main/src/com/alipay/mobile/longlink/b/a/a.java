@@ -39,7 +39,7 @@ public abstract class a
     this.h = paramc;
   }
 
-  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl paramc)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl paramc)
   {
     if (!a())
       throw new IllegalStateException("Not connected to server.");

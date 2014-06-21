@@ -20,7 +20,7 @@ public class a
 
   public final void setBundlePath(com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle parama)
   {
-    if (new f(3).getBundle(parama))
+    if (new DefaultThreadFactory(3).getBundle(parama))
     {
       o.getBundle(System.currentTimeMillis());
       this.b.b(System.currentTimeMillis());

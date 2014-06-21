@@ -25,7 +25,7 @@ public class UITitle extends BaseComponent
 
   protected final int f()
   {
-    return R.layout.f;
+    return R.layout.DefaultThreadFactory;
   }
 
   public final String h()

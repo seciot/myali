@@ -24,12 +24,12 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
   private void i()
   {
     this.g = ((ImageView)findViewById(R.id.e));
-    this.h = ((ImageView)findViewById(R.id.f));
+    this.h = ((ImageView)findViewById(R.id.DefaultThreadFactory));
     this.f = ((TextView)findViewById(R.id.BundlesManagerImpl));
     this.c = ((ViewGroup)findViewById(R.id.AppBundle));
     this.k = ((LinearLayout)findViewById(R.id.g));
     this.j = ((TextView)findViewById(R.id.i));
-    this.i = ((TextView)findViewById(R.id.h));
+    this.i = ((TextView)findViewById(R.id.Dependable));
     this.d = ((ViewGroup)findViewById(R.id.BundlesManager));
     this.e = ((Button)findViewById(R.id.ZLog));
     b();
@@ -47,7 +47,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
 
   public final void onCreate(Bundle paramBundle)
   {
-    this.q = AnimationUtils.loadAnimation(this, R.anim.f);
+    this.q = AnimationUtils.loadAnimation(this, R.anim.DefaultThreadFactory);
     this.p = AnimationUtils.loadAnimation(this, R.anim.e);
     this.m = AnimationUtils.loadAnimation(this, R.anim.BundlesManagerImpl);
     this.o = AnimationUtils.loadAnimation(this, R.anim.ZLog);

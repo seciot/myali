@@ -109,7 +109,7 @@ public class WithdrawActivity extends BaseActivity
 
   private void i()
   {
-    showProgressDialog(getString(R.string.h), true, null);
+    showProgressDialog(getString(R.string.Dependable), true, null);
   }
 
   @AfterViews
@@ -132,7 +132,7 @@ public class WithdrawActivity extends BaseActivity
     this.e = ((TextView)findViewById(R.id.ZLog));
     this.m = ((APMultiTextTableView)findViewById(R.id.l));
     this.m.setOnClickListener(new f(this));
-    this.n = ((APTableView)findViewById(R.id.f));
+    this.n = ((APTableView)findViewById(R.id.DefaultThreadFactory));
     this.n.setClickable(false);
     this.n.setOnClickListener(new g(this));
     this.d = ((Button)findViewById(R.id.g));
@@ -280,7 +280,7 @@ public class WithdrawActivity extends BaseActivity
       h();
       return;
     }
-    alert(null, str2, getString(R.string.f), new c(this), null, null, Boolean.valueOf(false));
+    alert(null, str2, getString(R.string.DefaultThreadFactory), new c(this), null, null, Boolean.valueOf(false));
   }
 
   @UiThread
@@ -300,7 +300,7 @@ public class WithdrawActivity extends BaseActivity
     }
     if (("190".equals(str1)) || ("191".equals(str1)) || (str1.equals("1830")) || (str1.equals("1831")))
     {
-      alert(null, str2, getString(R.string.f), null, null, null);
+      alert(null, str2, getString(R.string.DefaultThreadFactory), null, null, null);
       return;
     }
     if ("192".equals(str1))

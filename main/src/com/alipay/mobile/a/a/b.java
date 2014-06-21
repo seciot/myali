@@ -29,9 +29,9 @@ public final class b
       localc.BundlesManagerImpl = localCursor.getString(localCursor.getColumnIndex("TYPE"));
       localc.ZLog = localCursor.getString(localCursor.getColumnIndex("USERID"));
       localc.e = localCursor.getString(localCursor.getColumnIndex("RSAPASSWORD"));
-      localc.f = localCursor.getString(localCursor.getColumnIndex("RANDOMNUM"));
+      localc.DefaultThreadFactory = localCursor.getString(localCursor.getColumnIndex("RANDOMNUM"));
       localc.g = localCursor.getString(localCursor.getColumnIndex("REALNAME"));
-      localc.h = localCursor.getString(localCursor.getColumnIndex("PHONENO"));
+      localc.Dependable = localCursor.getString(localCursor.getColumnIndex("PHONENO"));
       localc.i = localCursor.getString(localCursor.getColumnIndex("USERAVTARPATH"));
       localArrayList.add(localc);
     }

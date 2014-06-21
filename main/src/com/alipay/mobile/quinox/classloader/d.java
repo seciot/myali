@@ -21,16 +21,16 @@ import com.alipay.mobile.quinox.bundle.AppBundle;
 import dalvik.system.DexFile;
 
 public final class d extends ClassLoader
-  implements h
+  implements Dependable
 {
   private AppBundle a;
-  private a b;
+  private BootstrapClassloader b;
   private DexFile c;
   private File[] d;
   private ZipFile e;
   private File f;
 
-  public d(a parama, AppBundle parama1, String paramString1, String paramString2, ClassLoader paramClassLoader)
+  public d(BootstrapClassloader parama, AppBundle parama1, String paramString1, String paramString2, ClassLoader paramClassLoader)
   {
     super(paramClassLoader);
     this.a = parama1;
@@ -120,7 +120,7 @@ public final class d extends ClassLoader
         String str = arrayOfString[j];
         if ((str != null) && (str.length() > 0))
         {
-          h localh = this.b.b(str.split("@")[0]);
+          Dependable localh = this.b.b(str.split("@")[0]);
           if (localh != null)
             localHashSet.add(localh);
         }

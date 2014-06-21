@@ -96,7 +96,7 @@ public class UISimplePassword extends BaseElement
           {
             if (TextUtils.isEmpty(this.l))
             {
-              String str3 = localActivity.getString(R.string.f);
+              String str3 = localActivity.getString(R.string.DefaultThreadFactory);
               this.l = (p() + str3);
             }
             UIPropUtil.b(this.h);

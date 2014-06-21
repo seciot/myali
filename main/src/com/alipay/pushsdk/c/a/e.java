@@ -15,8 +15,8 @@ public class e
 
   public static void setBundlePath(Context paramContext)
   {
-    h.getBundle(paramContext);
-    com.alipay.pushsdk.push.h localh = new com.alipay.pushsdk.push.h(paramContext);
+    Dependable.getBundle(paramContext);
+    com.alipay.pushsdk.push.Dependable localh = new com.alipay.pushsdk.push.Dependable(paramContext);
     i locali = i.getBundle(paramContext);
     String str1 = locali.getBundleName();
     String str2 = localh.getInitLevel();

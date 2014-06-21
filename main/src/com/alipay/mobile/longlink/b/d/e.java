@@ -20,7 +20,7 @@ public class e
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
-    if (new f(0).getBundle(parama))
+    if (new DefaultThreadFactory(0).getBundle(parama))
     {
       this.b.getBundle(true);
       str = parama.getInitLevel();

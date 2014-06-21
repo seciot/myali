@@ -58,7 +58,7 @@ public class PermAuthActivity extends BaseAuthActivity
 
   public final void a(PrepareApproveRes paramPrepareApproveRes)
   {
-    setContentView(R.layout.f);
+    setContentView(R.layout.DefaultThreadFactory);
     if (StringUtils.isNotBlank(paramPrepareApproveRes.approvePageTitle))
       ((APTitleBar)findViewById(R.id.gg)).setTitleText(paramPrepareApproveRes.approvePageTitle);
     if (StringUtils.isNotBlank(paramPrepareApproveRes.authTargetLogoUrl))

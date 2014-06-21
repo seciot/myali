@@ -20,7 +20,7 @@ public final class FeedAssistantActivity_ extends FeedAssistantActivity
   private void f()
   {
     this.e = ((APEditText)findViewById(R.id.e));
-    this.f = ((APInputBox)findViewById(R.id.f));
+    this.f = ((APInputBox)findViewById(R.id.DefaultThreadFactory));
     this.d = ((APTextView)findViewById(R.id.aV));
     this.g = ((APTitleBar)findViewById(R.id.ge));
     this.c = ((APLinearLayout)findViewById(R.id.fx));

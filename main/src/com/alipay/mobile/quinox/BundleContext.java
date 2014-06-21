@@ -27,8 +27,8 @@ public class BundleContext {
 
 	public ClassLoader findClassLoaderByBundleName(String bundleName) {
 		ClassLoader localClassLoader = app.getClassLoader();
-		if ((localClassLoader instanceof com.alipay.mobile.quinox.classloader.a))
-			localClassLoader = (ClassLoader) ((com.alipay.mobile.quinox.classloader.a) localClassLoader)
+		if ((localClassLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassloader))
+			localClassLoader = (ClassLoader) ((com.alipay.mobile.quinox.classloader.BootstrapClassloader) localClassLoader)
 					.b(bundleName);
 		return localClassLoader;
 	}
@@ -65,7 +65,7 @@ public class BundleContext {
 	public void init(String paramString) {
 		BundlesManager manager = app.getBundlesManager();
 		AppBundle locala = manager.getBundle(paramString);
-		com.alipay.mobile.quinox.classloader.a locala1 = manager.j();
+		com.alipay.mobile.quinox.classloader.BootstrapClassloader locala1 = manager.j();
 		if (locala1.b(paramString) == null) {
 			locala1.a(locala);
 			locala1.b(paramString);

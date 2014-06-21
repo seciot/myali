@@ -34,7 +34,7 @@ public final class o
 
   public static void setBundlePath(boolean paramBoolean)
   {
-    h = paramBoolean;
+    Dependable = paramBoolean;
   }
 
   public static int stop()
@@ -81,7 +81,7 @@ public final class o
 
   public static long getFullBundleName()
   {
-    return f;
+    return DefaultThreadFactory;
   }
 
   public static long getBundlePath()
@@ -91,7 +91,7 @@ public final class o
 
   public static boolean g()
   {
-    return h;
+    return Dependable;
   }
 
   public static boolean hasResource()

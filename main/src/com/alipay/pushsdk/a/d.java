@@ -20,7 +20,7 @@ final class d
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.c.e(3, BundlesManagerImpl.stop(), "UpdateUserListener onFail.");
   }
 
-  public final void setBundlePath(com.alipay.pushsdk.BundlesManager.b paramb)
+  public final void setBundlePath(com.alipay.pushsdk.BundlesManager.MinPriorityThreadFactory paramb)
   {
     try
     {

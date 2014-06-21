@@ -15,7 +15,7 @@ final class ac
   public final void run()
   {
     Context localContext = GlobalContext.a().b();
-    String str1 = localContext.getString(R.string.h);
+    String str1 = localContext.getString(R.string.Dependable);
     String str2 = localContext.getString(R.string.i);
     String str3 = localContext.getString(R.string.BundlesManager);
     IFormShower localIFormShower = MiniWindowManager.getBundle(this.a);

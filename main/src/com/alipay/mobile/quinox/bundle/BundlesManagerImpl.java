@@ -322,7 +322,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	private void a(Map paramMap) {
-		com.alipay.mobile.quinox.classloader.a locala = j();
+		com.alipay.mobile.quinox.classloader.BootstrapClassloader locala = j();
 		Iterator localIterator = paramMap.values().iterator();
 		while (localIterator.hasNext())
 			locala.b((AppBundle) localIterator.next());
@@ -1427,10 +1427,10 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	@Override
-	public final com.alipay.mobile.quinox.classloader.a j() {
+	public final com.alipay.mobile.quinox.classloader.BootstrapClassloader j() {
 		final ClassLoader classLoader = this.a.getClassLoader();
-		if (classLoader instanceof com.alipay.mobile.quinox.classloader.a) {
-			return (com.alipay.mobile.quinox.classloader.a) classLoader;
+		if (classLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassloader) {
+			return (com.alipay.mobile.quinox.classloader.BootstrapClassloader) classLoader;
 		}
 		throw new RuntimeException("classloader error");
 	}

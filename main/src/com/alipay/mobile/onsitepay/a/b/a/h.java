@@ -9,7 +9,7 @@ import org.json.JSONObject;
 final class h
   implements Runnable
 {
-  h(f paramf, String paramString)
+  h(DefaultThreadFactory paramf, String paramString)
   {
   }
 

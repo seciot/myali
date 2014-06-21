@@ -61,9 +61,9 @@ public class WealthAccountInfoView extends APFrameLayout
   private void a(Context paramContext)
   {
     LayoutInflater.from(paramContext).inflate(R.layout.AppBundle, this, true);
-    this.a = ((APImageView)findViewById(R.id.f));
+    this.a = ((APImageView)findViewById(R.id.DefaultThreadFactory));
     this.b = ((APTextView)findViewById(R.id.g));
-    this.c = ((APTextView)findViewById(R.id.h));
+    this.c = ((APTextView)findViewById(R.id.Dependable));
     this.e = ((APImageView)findViewById(R.id.BundlesManagerImpl));
   }
 

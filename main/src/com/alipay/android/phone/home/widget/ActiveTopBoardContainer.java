@@ -69,7 +69,7 @@ public class ActiveTopBoardContainer extends FrameLayout
     LayoutInflater.from(paramContext).inflate(R.layout.AppBundle, this, true);
     this.d = new GestureDetector(this);
     this.e = new SyncAnimatingHelper();
-    this.f = ((TopBoard)findViewById(R.id.f));
+    this.f = ((TopBoard)findViewById(R.id.DefaultThreadFactory));
     this.g = ((ActiveTopTips)findViewById(R.id.x));
     this.g.setOnClickListener(new e(this));
     this.n = MediaPlayer.create(AlipayApplication.getInstance().getApplicationContext(), R.raw.AppBundle);

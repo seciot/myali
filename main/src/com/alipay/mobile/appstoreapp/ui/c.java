@@ -13,7 +13,7 @@ final class c
   public final void run()
   {
     AppDetailActivity.g(this.a).setEnabled(false);
-    AppDetailActivity.g(this.a).setText(this.a.getString(R.string.f));
+    AppDetailActivity.g(this.a).setText(this.a.getString(R.string.DefaultThreadFactory));
     AppDetailActivity.v(this.a, "main_button_style");
   }
 }

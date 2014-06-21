@@ -6,12 +6,12 @@ public class d extends AppBundle
 {
   private static final String c = BundlesManagerImpl.getBundle(ZLog.class);
   private int d = BundlesManager.AppBundle;
-  private int e = BundlesManager.b;
+  private int e = BundlesManager.MinPriorityThreadFactory;
 
   public d()
   {
     f(BundlesManager.AppBundle);
-    g(BundlesManager.b);
+    g(BundlesManager.MinPriorityThreadFactory);
   }
 
   public final void b(byte[] paramArrayOfByte)

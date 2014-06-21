@@ -10,14 +10,14 @@ final class i
 {
   private AppBundle b;
 
-  public i(f paramf, AppBundle parama)
+  public i(DefaultThreadFactory paramf, AppBundle parama)
   {
     this.b = parama;
   }
 
   public final void run()
   {
-    Iterator localIterator = f.getBundle(this.a).c.values().iterator();
+    Iterator localIterator = DefaultThreadFactory.getBundle(this.a).c.values().iterator();
     while (localIterator.hasNext())
       ((BundlesManager)localIterator.next()).getBundle(this.b);
   }

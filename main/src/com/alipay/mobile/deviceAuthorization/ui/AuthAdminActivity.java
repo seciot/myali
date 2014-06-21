@@ -45,7 +45,7 @@ public class AuthAdminActivity extends BaseActivity
 
   public boolean onItemLongClick(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    com.alipay.mobile.deviceAuthorization.ExceptionHandler.a locala = (com.alipay.mobile.deviceAuthorization.ExceptionHandler.a)paramAdapterView.getAdapter();
+    com.alipay.mobile.deviceAuthorization.BootstrapClassloader.a locala = (com.alipay.mobile.deviceAuthorization.BootstrapClassloader.a)paramAdapterView.getAdapter();
     if (paramInt >= locala.getCount())
       return false;
     AuthInfo localAuthInfo = locala.getBundle(paramInt);

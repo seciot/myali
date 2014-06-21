@@ -32,7 +32,7 @@ public class k extends AppBundle
   }
 
   // ERROR //
-  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.b.AppBundle parama)
+  public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.AppBundle parama)
   {
     // Byte code:
     //   0: aload_0

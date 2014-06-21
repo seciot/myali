@@ -59,7 +59,7 @@ public class HeaderAreaLayout
     this.b = paramActivity;
     this.l = ((AuthService)AlipayApplication.getInstance().getMicroApplicationContext().getExtServiceByInterface(AuthService.class.getName()));
     this.o = ((QueryBillRemindInfoRPCService)((RpcService)AlipayApplication.getInstance().getMicroApplicationContext().findServiceByInterface(RpcService.class.getName())).getRpcProxy(QueryBillRemindInfoRPCService.class));
-    this.g = ((NFDFrameLayout)LayoutInflater.from(paramActivity).inflate(R.layout.h, null));
+    this.g = ((NFDFrameLayout)LayoutInflater.from(paramActivity).inflate(R.layout.Dependable, null));
     this.i = this.g.findViewById(R.id.g);
     this.i.setVisibility(8);
     this.t = new WeakReference((TabHost)paramActivity.findViewById(16908306));

@@ -8,10 +8,10 @@ final class d
 {
   String a;
   e b;
-  AppBundle.ExceptionHandler.a.a.ZLog c;
+  AppBundle.ExceptionHandler.BootstrapClassloader.a.ZLog c;
   private int d;
 
-  public d(int paramInt, String paramString, e parame, ZLog.ExceptionHandler.a.a.LogUtil paramd)
+  public d(int paramInt, String paramString, e parame, BootstrapClassloader.ExceptionHandler.a.a.LogUtil paramd)
   {
     this.a = paramString;
     this.b = parame;

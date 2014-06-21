@@ -5,8 +5,11 @@ import com.alipay.mobile.quinox.utils.ZLog;
 
 final class c extends ClassLoader
 {
+	final /* synthetic */ LauncherApplication a;
+	
   c(LauncherApplication paramLauncherApplication)
   {
+	  a = paramLauncherApplication;
   }
 
   public final Class findClass(String paramString)

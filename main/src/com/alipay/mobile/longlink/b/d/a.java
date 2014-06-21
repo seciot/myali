@@ -17,7 +17,7 @@ public class a
 
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
-    if (new f(3).getBundle(parama))
+    if (new DefaultThreadFactory(3).getBundle(parama))
     {
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
       if (parama.stop() != 0);

@@ -71,7 +71,7 @@ public abstract class BaseSettingActivity extends BaseActivity
     localBuilder.setView(localView);
     localBuilder.setCancelable(false);
     localBuilder.setNegativeButton(R.string.L, new b(this));
-    APSixNumberPwdInputBox localAPSixNumberPwdInputBox = (APSixNumberPwdInputBox)localView.findViewById(R.id.f);
+    APSixNumberPwdInputBox localAPSixNumberPwdInputBox = (APSixNumberPwdInputBox)localView.findViewById(R.id.DefaultThreadFactory);
     localBuilder.setPositiveButton(R.string.W, new c(this, localAPSixNumberPwdInputBox));
     AlertDialog localAlertDialog = localBuilder.create();
     localAPSixNumberPwdInputBox.setPwdInputListener(new d(this, localAlertDialog));

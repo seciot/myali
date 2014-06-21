@@ -90,7 +90,7 @@ class e
           continue;
         com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, AppBundle, "processPacket() are processing one valid packet!");
         this.d.g();
-        this.c.submit(new h(this, locala));
+        this.c.submit(new Dependable(this, locala));
         continue;
       }
       catch (Exception localException)
@@ -106,7 +106,7 @@ class e
   protected final void a()
   {
     this.e = false;
-    this.b = new f(this);
+    this.b = new DefaultThreadFactory(this);
     this.b.setName("Packet Reader (" + this.d.g + ")");
     this.b.setDaemon(true);
     this.c = Executors.newSingleThreadExecutor(new g(this));
@@ -120,7 +120,7 @@ class e
     Iterator localIterator = this.d.stop().iterator();
     while (localIterator.hasNext())
     {
-      com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl)localIterator.next();
+      com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl)localIterator.next();
       try
       {
         localc.getBundle(paramn);
@@ -154,7 +154,7 @@ class e
       Iterator localIterator = this.d.stop().iterator();
       while (localIterator.hasNext())
       {
-        com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.b.BundlesManagerImpl)localIterator.next();
+        com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl)localIterator.next();
         try
         {
           localc.a();

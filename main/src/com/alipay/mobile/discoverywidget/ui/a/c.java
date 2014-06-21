@@ -3,7 +3,7 @@ package com.alipay.mobile.discoverywidget.ui.a;
 import com.alibaba.fastjson.TypeReference;
 import java.util.HashMap;
 
-final class c extends TypeReference<HashMap<String, com.alipay.mobile.discoverywidget.ExceptionHandler.a>>
+final class c extends TypeReference<HashMap<String, com.alipay.mobile.discoverywidget.BootstrapClassloader.a>>
 {
   c(a parama)
   {

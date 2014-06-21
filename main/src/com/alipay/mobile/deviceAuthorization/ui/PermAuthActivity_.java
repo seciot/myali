@@ -20,7 +20,7 @@ public final class PermAuthActivity_ extends PermAuthActivity
   public final void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    super.setContentView(R.layout.f);
+    super.setContentView(R.layout.DefaultThreadFactory);
   }
 
   public final void setContentView(int paramInt)

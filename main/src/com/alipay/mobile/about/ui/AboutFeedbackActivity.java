@@ -143,7 +143,7 @@ public class AboutFeedbackActivity extends BaseActivity
     this.e = this.f.getGenericButton();
     ColorStateList localColorStateList = getResources().getColorStateList(R.color.AppBundle);
     this.e.setTextColor(localColorStateList);
-    this.c = ((APInputBox)findViewById(R.id.f));
+    this.c = ((APInputBox)findViewById(R.id.DefaultThreadFactory));
     this.c.setTextFormatter(new APSplitTextFormatter("3,8"));
     this.c.getEtContent().setInputType(3);
     this.c.setApprerance(true);

@@ -113,7 +113,7 @@ public class AboutMainActivity extends BaseActivity
     setContentView(R.layout.U);
     this.a = ((APTextView)findViewById(R.id.k));
     this.b = ((APTextView)findViewById(R.id.ZLog));
-    this.c = ((APTableView)findViewById(R.id.h));
+    this.c = ((APTableView)findViewById(R.id.Dependable));
     this.d = ((APExtTableView)findViewById(R.id.BundlesManagerImpl));
     this.e = ((APTableView)findViewById(R.id.g));
     this.f = ((APTableView)findViewById(R.id.i));
@@ -125,7 +125,7 @@ public class AboutMainActivity extends BaseActivity
     if ((str2 == null) || (!str2.contains("RC")))
       str1 = str1.substring(0, str1.indexOf(".", 2));
     this.a.setText(getText(R.string.m) + " " + str1);
-    String str3 = String.valueOf(getText(R.string.f));
+    String str3 = String.valueOf(getText(R.string.DefaultThreadFactory));
     String str4 = String.valueOf(DateFormat.format("yyyy", new Date()));
     if (Integer.parseInt(str4) < 2014)
       str4 = "2014";

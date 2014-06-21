@@ -7,7 +7,7 @@ import com.googlecode.androidannotations.api.BackgroundExecutor;
 
 final class g extends BroadcastReceiver
 {
-  g(f paramf)
+  g(DefaultThreadFactory paramf)
   {
   }
 
@@ -18,7 +18,7 @@ final class g extends BroadcastReceiver
       String str = paramIntent.getStringExtra("payload");
       new StringBuilder("payLoadData=").append(str).toString();
       if (str != null)
-        BackgroundExecutor.execute(new h(this.a, str));
+        BackgroundExecutor.execute(new Dependable(this.a, str));
     }
   }
 }

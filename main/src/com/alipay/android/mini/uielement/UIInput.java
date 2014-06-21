@@ -212,7 +212,7 @@ public class UIInput extends BaseElement
               this.h.setTextColor(-65536);
               if (TextUtils.isEmpty(this.r))
               {
-                String str = this.e.getContext().getString(R.string.f);
+                String str = this.e.getContext().getString(R.string.DefaultThreadFactory);
                 this.r = (p() + str);
               }
               UIPropUtil.b(this.e);

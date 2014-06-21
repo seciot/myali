@@ -20,14 +20,14 @@ final class bm
     {
     case 1:
     default:
-      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.f));
+      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.DefaultThreadFactory));
     case 0:
     case 2:
     }
     while (true)
     {
       return false;
-      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.h));
+      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.Dependable));
     }
   }
 }

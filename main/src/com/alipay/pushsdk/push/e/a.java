@@ -20,7 +20,7 @@ public class a extends ZLog
     long l2 = o.getInitLevel();
     long l3 = System.currentTimeMillis() - l2;
     BundlesManagerImpl.e(3, BundlesManagerImpl, "osTriggerEvent_onExecute isConnected=" + this.a.r() + ", lostedTime=" + l3 + ", lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l2) + ", lastCreateConnectTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l1));
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.h, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, 0L + System.currentTimeMillis(), "osTriggerEvent_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l2) + " trigger=" + stop());
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.Dependable, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.E, 0L + System.currentTimeMillis(), "osTriggerEvent_onExecute:lastConnectedTime=" + com.alipay.pushsdk.BundlesManagerImpl.j.getBundle(l2) + " trigger=" + stop());
     if (l1 == 0L)
     {
       this.a.stop();

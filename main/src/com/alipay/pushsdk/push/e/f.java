@@ -6,7 +6,7 @@ import com.alipay.pushsdk.push.j;
 
 public class f extends ZLog
 {
-  private static final String c = BundlesManagerImpl.getBundle(f.class);
+  private static final String c = BundlesManagerImpl.getBundle(DefaultThreadFactory.class);
 
   public f(j paramj)
   {

@@ -13,12 +13,12 @@ public class i
   {
     while (true)
     {
-      synchronized (f.k)
+      synchronized (DefaultThreadFactory.k)
       {
-        f.i = 1 + f.i;
-        long l = System.currentTimeMillis() - f.j;
-        BundlesManagerImpl.e(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + f.i + ", send log duration=" + l);
-        if ((!o.getAllBundles()) || (f.i < 30) || (l < 1800000L))
+        DefaultThreadFactory.i = 1 + DefaultThreadFactory.i;
+        long l = System.currentTimeMillis() - DefaultThreadFactory.j;
+        BundlesManagerImpl.e(3, AppBundle, "tracelogFlag=" + o.getAllBundles() + ", log count=" + DefaultThreadFactory.i + ", send log duration=" + l);
+        if ((!o.getAllBundles()) || (DefaultThreadFactory.i < 30) || (l < 1800000L))
         {
           BundlesManagerImpl.e(4, AppBundle, "checkAndSend is not ready.");
           return;

@@ -3,21 +3,23 @@ package com.alipay.mobile.quinox.classloader;
 import com.alipay.mobile.quinox.LauncherApplication;
 import com.alipay.mobile.quinox.bundle.BundlesManager;
 import com.alipay.mobile.quinox.utils.ZLog;
+
 import dalvik.system.PathClassLoader;
+
 import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
 public final class e extends PathClassLoader
-  implements h
+  implements Dependable
 {
   private LauncherApplication a;
-  private a b;
+  private BootstrapClassloader b;
   private PathClassLoader c;
   private String[] d;
   private String[] e;
 
-  public e(a parama, String paramString1, String paramString2, ClassLoader paramClassLoader, PathClassLoader paramPathClassLoader, BundlesManager paramb)
+  public e(BootstrapClassloader parama, String paramString1, String paramString2, ClassLoader paramClassLoader, PathClassLoader paramPathClassLoader, BundlesManager paramb)
   {
     super(paramString1, paramString2, paramClassLoader);
     this.c = paramPathClassLoader;
@@ -31,7 +33,7 @@ public final class e extends PathClassLoader
   {
     try
     {
-      d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this.c + " loadClass: " + paramString);
+      ZLog.i("HostClassLoader", Thread.currentThread().getName() + ":" + this.c + " loadClass: " + paramString);
       Method localMethod1 = ClassLoader.class.getDeclaredMethod("findLoadedClass", new Class[] { String.class });
       localMethod1.setAccessible(true);
       Class localClass = (Class)localMethod1.invoke(this.c, new Object[] { paramString });
@@ -45,23 +47,26 @@ public final class e extends PathClassLoader
     }
     catch (Exception localException)
     {
+    	throw new RuntimeException(this + "can't find class: " + paramString);
     }
-    throw new ClassNotFoundException(this + "can't find class: " + paramString);
   }
 
-  public final Set getDepends()
-  {
-    HashSet localHashSet = new HashSet();
-    if (this.e != null)
-      for (String str : this.e)
-        if ((str != null) && (str.length() > 0))
-        {
-          h localh = this.b.c(str.split("@")[0]);
-          if (localh != null)
-            localHashSet.add(localh);
-        }
-    return localHashSet;
-  }
+	public final Set<Dependable> getDepends() {
+		final Set<Dependable> depends = new HashSet<Dependable>();
+		if (this.e != null) {
+			for (final String s : this.e) {
+				if (s != null && s.length() > 0) {
+					final Dependable c = this.b.c(s.split("@")[0]);
+					if (c != null) {
+						depends.add(c);
+					}
+				}
+			}
+		}
+		return depends;
+	}
+  
+  
 
   public final Class loadClass(String paramString)
   {
@@ -73,7 +78,7 @@ public final class e extends PathClassLoader
         for (String str : this.d)
           if ((str != null) && (str.length() > 0))
           {
-            h localh = this.b.c(str);
+            Dependable localh = this.b.c(str);
             if (localh != null)
               localHashSet.add(localh);
           }
@@ -101,13 +106,18 @@ public final class e extends PathClassLoader
     throw localClassNotFoundException;
   }
 
-  public final Class loadClassFromCurrent(String paramString)
-  {
-    if (this.a.patternHost(paramString))
-      return a(paramString);
-    d.i("HostClassLoader", Thread.currentThread().getName() + ":" + this + " loadClass: " + paramString);
-    return super.loadClass(paramString);
-  }
+	public final Class<?> loadClassFromCurrent(String s) {
+		if (this.a.patternHost(s)) {
+			return this.a(s);
+		}
+		ZLog.i("HostClassLoader", Thread.currentThread().getName() + ":" + this
+				+ " loadClass: " + s);
+		try {
+			return super.loadClass(s);
+		} catch (ClassNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

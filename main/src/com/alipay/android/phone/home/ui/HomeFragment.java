@@ -73,7 +73,7 @@ public class HomeFragment extends APRelativeLayout
 
   private void a()
   {
-    this.a = ((APLinearLayout)findViewById(R.id.h));
+    this.a = ((APLinearLayout)findViewById(R.id.Dependable));
     this.b = ((APGridView)findViewById(R.id.i));
     this.d = ((APPullRefreshView)findViewById(R.id.s));
     this.j = ((PortraitOverView)LayoutInflater.from(this.e).inflate(R.layout.l, null));

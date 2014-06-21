@@ -11,7 +11,7 @@ public final class e
     {
       if ((!paramString.equalsIgnoreCase("0")) && (!paramString.equalsIgnoreCase("1")) && (!paramString.equalsIgnoreCase("2")))
         break label53;
-      localObject = new f(paramj);
+      localObject = new DefaultThreadFactory(paramj);
     }
     while (true)
     {

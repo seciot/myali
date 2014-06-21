@@ -17,7 +17,7 @@ public class AppItemView extends APFrameLayout
   public AppItemView(Context paramContext)
   {
     super(paramContext);
-    addView(LayoutInflater.from(paramContext).inflate(R.layout.f, null));
+    addView(LayoutInflater.from(paramContext).inflate(R.layout.DefaultThreadFactory, null));
   }
 
   protected void onDetachedFromWindow()

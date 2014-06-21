@@ -18,7 +18,7 @@ public final class d
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
     String str;
-    if (new f(2).getBundle(parama))
+    if (new DefaultThreadFactory(2).getBundle(parama))
       str = parama.getInitLevel();
     try
     {

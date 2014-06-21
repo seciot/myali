@@ -153,7 +153,7 @@ public class WithdrawSmsCheckActivity extends BaseActivity
   {
     super.onCreate(paramBundle);
     this.e = new EditTextHasNullChecker();
-    this.a = ((LinearLayout)LayoutInflater.from(this).inflate(R.layout.f, null, false));
+    this.a = ((LinearLayout)LayoutInflater.from(this).inflate(R.layout.DefaultThreadFactory, null, false));
     setContentView(this.a);
     ((APTitleBar)findViewById(R.id.n)).setTitleText(getString(R.string.AppBundle));
     this.b = ((APCheckCodeHorizontalView)findViewById(R.id.m));

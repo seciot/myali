@@ -21,7 +21,7 @@ public final class MobileRechargeCashierActivity_ extends MobileRechargeCashierA
   {
     this.a = ((APRadioTableView)findViewById(R.id.J));
     this.b = ((APTextView)findViewById(R.id.I));
-    this.c = ((APTableView)findViewById(R.id.f));
+    this.c = ((APTableView)findViewById(R.id.DefaultThreadFactory));
     this.d = ((APTitleBar)findViewById(R.id.B));
     a();
   }

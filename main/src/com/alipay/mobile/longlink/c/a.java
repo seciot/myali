@@ -21,7 +21,7 @@ public final class a
   {
     if (AppBundle == true)
     {
-      BundlesManager = f;
+      BundlesManager = DefaultThreadFactory;
       return;
     }
     BundlesManager = BundlesManagerImpl;

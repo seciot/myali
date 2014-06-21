@@ -162,7 +162,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       localViewHolder = new FastLoginAppAdapter.ViewHolder(this);
       localViewHolder.b = ((APImageView)paramView.findViewById(R.id.BundlesManagerImpl));
       localViewHolder.a = ((APTextView)paramView.findViewById(R.id.ZLog));
-      localViewHolder.c = ((APTextView)paramView.findViewById(R.id.f));
+      localViewHolder.c = ((APTextView)paramView.findViewById(R.id.DefaultThreadFactory));
       localViewHolder.d = ((APImageView)paramView.findViewById(R.id.n));
       localViewHolder.e = ((APButton)paramView.findViewById(R.id.AppBundle));
       paramView.setTag(localViewHolder);
@@ -206,7 +206,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       else
       {
         localViewHolder.e.setBackgroundResource(R.drawable.BundlesManagerImpl);
-        localViewHolder.e.setText(R.string.h);
+        localViewHolder.e.setText(R.string.Dependable);
         localViewHolder.e.setTextColor(-1);
         localViewHolder.e.setEnabled(true);
       }

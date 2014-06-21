@@ -2,13 +2,13 @@ package com.alipay.pushsdk.push.a;
 
 final class g extends Thread
 {
-  g(f paramf)
+  g(DefaultThreadFactory paramf)
   {
   }
 
   public final void run()
   {
-    f.v(this.a, this);
+    DefaultThreadFactory.v(this.a, this);
   }
 }
 
