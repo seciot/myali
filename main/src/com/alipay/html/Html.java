@@ -231,7 +231,7 @@ public class Html
     Parser localParser = new Parser();
     try
     {
-      localParser.setProperty("http://www.ccil.org/~cowan/tagsoup/properties/schema", a.a());
+      localParser.setProperty("http://www.ccil.org/~cowan/tagsoup/properties/schema", a.getInstance());
       return new b(paramString, localParser).a();
     }
     catch (SAXNotRecognizedException localSAXNotRecognizedException)

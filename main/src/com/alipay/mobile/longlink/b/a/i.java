@@ -18,7 +18,7 @@ class i
   protected i(k paramk)
   {
     this.d = paramk;
-    a();
+    getInstance();
   }
 
   private com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle getFullBundleName()

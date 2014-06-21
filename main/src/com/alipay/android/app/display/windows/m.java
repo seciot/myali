@@ -22,7 +22,7 @@ final class m
       str2 = localContext.getString(R.string.m);
     String str3 = localContext.getString(17039370);
     String str4 = localContext.getString(17039360);
-    WindowsManager.getBundle(this.a).confirm(EventType.s.a(), EventType.v.a(), str1, str2, null, str3, str4);
+    WindowsManager.getBundle(this.a).confirm(EventType.s.getInstance(), EventType.v.getInstance(), str1, str2, null, str3, str4);
   }
 }
 

@@ -6,7 +6,7 @@ public class g
 
   public static i a()
   {
-    i locali = a.a();
+    i locali = a.getInstance();
     a = locali;
     return locali;
   }

@@ -227,11 +227,11 @@ public class LauncherApplication extends Application {
 	}
 
 	public void removeListener(Observer paramObserver) {
-		this.observable.deleteObserver(paramObserver);
+		observable.deleteObserver(paramObserver);
 	}
 
 	public void setupResources() {
-		Resources localResources1 = getResources();
+		Resources res = getResources();
 		AssetManager localAssetManager;
 		try {
 			localAssetManager = (AssetManager) AssetManager.class.newInstance();

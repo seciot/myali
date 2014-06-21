@@ -20,7 +20,7 @@ final class c
     {
       if ((localActivity == null) || ((!"GestureActivity_".equals(str)) && (!"LoginActivity_".equals(str))))
         WealthHomeBroadcastReciever.getBundle(this.a);
-      WealthHomeBroadcastReciever.a();
+      WealthHomeBroadcastReciever.getInstance();
       new StringBuilder().append(str).append(",showWap = ").append(WealthHomeBroadcastReciever.b(this.a)).toString();
       return;
     }

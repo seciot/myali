@@ -17,7 +17,7 @@ final class a
   {
     if (PreRegistFragment.getBundle(this.a) != null)
     {
-      PreRegistFragment.getBundle(this.a).a();
+      PreRegistFragment.getBundle(this.a).getInstance();
       return;
     }
     Bundle localBundle = new Bundle();

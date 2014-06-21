@@ -16,23 +16,23 @@ final class fa
   {
     try
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       Bitmap localBitmap = i.v(this.a, this.b);
       if (this.c == null)
         return;
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       MemberChargeOffActivity.stop().post(new fb(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       localOutOfMemoryError.getMessage();
       return;
     }
     catch (Exception localException)
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       localException.getMessage();
     }
   }

@@ -69,7 +69,7 @@ public class CustomCheckbox extends ImageView
       if (this.c != null)
       {
         CustomCheckbox.OnCheckedChangeListener localOnCheckedChangeListener = this.c;
-        localOnCheckedChangeListener.a();
+        localOnCheckedChangeListener.getInstance();
       }
       b();
       return;
@@ -85,7 +85,7 @@ public class CustomCheckbox extends ImageView
   public void setChecked(boolean paramBoolean)
   {
     if ((!(paramBoolean & this.b)) && (this.c != null))
-      this.c.a();
+      this.c.getInstance();
     this.b = paramBoolean;
     b();
   }

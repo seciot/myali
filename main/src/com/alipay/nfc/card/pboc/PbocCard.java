@@ -40,7 +40,7 @@ public class PbocCard
 
   protected PbocCard(Iso7816.Tag paramTag)
   {
-    this.e = paramTag.a().toString();
+    this.e = paramTag.getInstance().toString();
   }
 
   public static CardInfo a(Intent paramIntent, Resources paramResources)
@@ -206,7 +206,7 @@ public class PbocCard
 
   protected final void setBundlePath(Iso7816.Response paramResponse)
   {
-    if ((!paramResponse.getBundleName()) || (paramResponse.a() < 4))
+    if ((!paramResponse.getBundleName()) || (paramResponse.getInstance() < 4))
     {
       this.k = null;
       return;
@@ -219,7 +219,7 @@ public class PbocCard
 
   protected final void a(Iso7816.Response paramResponse, int paramInt, boolean paramBoolean)
   {
-    if ((!paramResponse.getBundleName()) || (paramResponse.a() < 30))
+    if ((!paramResponse.getBundleName()) || (paramResponse.getInstance() < 30))
     {
       this.j = null;
       this.i = null;

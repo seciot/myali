@@ -92,7 +92,7 @@ public class a
         Object localObject = this.i.get(this.e);
         localIndexWidgetResult = null;
         if (localObject != null)
-          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.IOUtil.a)this.i.get(this.e)).a();
+          localIndexWidgetResult = ((com.alipay.mobile.discoverywidget.IOUtil.a)this.i.get(this.e)).getInstance();
       }
     }
   }
@@ -149,7 +149,7 @@ public class a
   {
     this.b = paramMicroApplicationContext;
     this.c = paramMicroApplicationContext.getApplicationContext();
-    this.h = d.a();
+    this.h = d.getInstance();
     a();
   }
 
@@ -158,7 +158,7 @@ public class a
     this.b = paramMicroApplicationContext;
     this.c = paramMicroApplicationContext.getApplicationContext();
     this.f = paramc;
-    this.h = d.a();
+    this.h = d.getInstance();
     a();
   }
 

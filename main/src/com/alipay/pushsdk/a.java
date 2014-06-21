@@ -44,7 +44,7 @@ public final class a
     BundlesManagerImpl.e(3, a, "isNotificationEnabled=" + localo.a() + ", triger=" + paramString);
     if (localo.a())
     {
-      com.alipay.pushsdk.c.a.d.a();
+      com.alipay.pushsdk.c.a.d.getInstance();
       com.alipay.pushsdk.c.a.d.a(com.alipay.pushsdk.c.a.d.p, com.alipay.pushsdk.c.a.d.C, System.currentTimeMillis(), com.alipay.pushsdk.c.a.d.C, 10000L + System.currentTimeMillis(), "ServiceManager_startService: triger=" + paramString);
       com.alipay.pushsdk.c.d.a(this.b).a("cur_triger", paramString);
       localThread.start();

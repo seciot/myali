@@ -58,7 +58,7 @@ public final class AliPushInterface
   public static void setDebugMode(boolean paramBoolean)
   {
     BundlesManagerImpl.AppBundle = paramBoolean;
-    BundlesManagerImpl.a();
+    BundlesManagerImpl.getInstance();
   }
 
   public static void setMsptid(Context paramContext, String paramString)

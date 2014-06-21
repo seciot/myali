@@ -30,7 +30,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
       ArrayList localArrayList1 = new ArrayList();
       ArrayList localArrayList2 = new ArrayList();
       localArrayList2.add(new BasicNameValuePair("requestData", paramString));
-      URL localURL = a();
+      URL localURL = getInstance();
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, "HttpClient", "Request" + paramString);
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, "HttpClient", "Dest url:  " + localURL.toString());
       HttpResponse localHttpResponse = v(localArrayList2, localArrayList1);

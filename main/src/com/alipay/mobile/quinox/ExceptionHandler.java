@@ -14,13 +14,11 @@ public final class ExceptionHandler implements Thread.UncaughtExceptionHandler {
 	private Context app;
 	private Thread.UncaughtExceptionHandler defaultHandler;
 
-	public static ExceptionHandler a() {
-		synchronized (ExceptionHandler.class) {
-			if (instance == null) {
-				instance = new ExceptionHandler();
-			}
-			return instance;
+	public static synchronized ExceptionHandler getInstance() {
+		if (instance == null) {
+			instance = new ExceptionHandler();
 		}
+		return instance;
 	}
 
 	public final void setUp(Context ctx) {

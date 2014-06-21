@@ -18,9 +18,9 @@ final class al
 
   public final void onLocationChanged(Location paramLocation)
   {
-    s.d(this.a).a();
+    s.d(this.a).getInstance();
     a(paramLocation);
-    if (((this.a.getFullBundleName()) || (s.d(this.a).a())) && (a(paramLocation)))
+    if (((this.a.getFullBundleName()) || (s.d(this.a).getInstance())) && (a(paramLocation)))
     {
       paramLocation.setTime(System.currentTimeMillis());
       s.v(this.a, System.currentTimeMillis());

@@ -11,7 +11,7 @@ final class ab
 
   public final void run()
   {
-    AlipassListActivity.f(this.a).a();
+    AlipassListActivity.f(this.a).getInstance();
   }
 }
 

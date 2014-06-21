@@ -13,7 +13,7 @@ final class ax
   public final void onClick(View paramView)
   {
     this.a.finish();
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

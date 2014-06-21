@@ -241,7 +241,7 @@ public class b
       localJSONObject.put("utdId", localh.d());
       localJSONObject.put("mspTid", localh.e());
       localJSONObject.put("productId", locali.a());
-      localJSONObject.put("pushVersion", com.alipay.pushsdk.push.a.o.a());
+      localJSONObject.put("pushVersion", com.alipay.pushsdk.push.a.o.getInstance());
       localJSONObject.put("osType", "Android");
       localJSONObject.put("osVersion", Build.VERSION.RELEASE);
       try

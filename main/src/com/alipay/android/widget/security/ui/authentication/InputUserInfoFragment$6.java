@@ -13,7 +13,7 @@ class InputUserInfoFragment$6
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a().onBackPressed();
+    this.a.getInstance().onBackPressed();
   }
 }
 

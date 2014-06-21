@@ -13,7 +13,7 @@ final class ez
 
   public final void run()
   {
-    MemberChargeOffActivity.a();
+    MemberChargeOffActivity.getInstance();
     this.b.b.setImageBitmap(this.a);
     this.b.b.setOnClickListener(new au(MemberChargeOffActivity.removeBundle(this.b.d), this.b.c, true));
   }

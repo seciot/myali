@@ -88,7 +88,7 @@ public class CustomEditText extends EditText
   {
     super.onEditorAction(paramInt);
     if ((this.k != null) && (6 == paramInt))
-      this.k.a();
+      this.k.getInstance();
   }
 
   protected void onLayout(boolean paramBoolean, int paramInt1, int paramInt2, int paramInt3, int paramInt4)

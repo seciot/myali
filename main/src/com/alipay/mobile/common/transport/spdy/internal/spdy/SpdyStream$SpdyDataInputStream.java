@@ -41,7 +41,7 @@ final class SpdyStream$SpdyDataInputStream extends InputStream
   {
     synchronized (this.this$0)
     {
-      a();
+      getInstance();
       if (this.b == -1)
         return 0;
       if (this.c > this.b)

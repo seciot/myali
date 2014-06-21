@@ -19,7 +19,7 @@ class BankCardInfoFragment$1 extends Handler
       return;
     case 701:
     }
-    BankCardInfoFragment.a();
+    BankCardInfoFragment.getInstance();
     OfficialAccountLinkResult localOfficialAccountLinkResult = (OfficialAccountLinkResult)paramMessage.obj;
     Toast.makeText(BankCardInfoFragment.getBundle(this.a), localOfficialAccountLinkResult.getErrMsg(), 1).show();
   }

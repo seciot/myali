@@ -17,7 +17,7 @@ final class d
     if (AlipayApplication.getInstance().getMicroApplicationContext().findDescriptionById(this.a.getAppId()) == null)
       try
       {
-        AlipayApplication.getInstance().getBundleContext().addExternelBundle(this.a.a());
+        AlipayApplication.getInstance().getBundleContext().addExternelBundle(this.a.getInstance());
         InnerApp.getBundle(this.a).post(new e(this));
         return;
       }

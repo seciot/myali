@@ -12,7 +12,7 @@ class InputUserInfoFragment$5
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    ((AuthenticationCertifiedActivity)this.a.a()).b();
+    ((AuthenticationCertifiedActivity)this.a.getInstance()).b();
   }
 }
 

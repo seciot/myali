@@ -18,7 +18,7 @@ final class NetWorkReceiver$a
   {
     b localb = ProtocolManager.a((ContextWrapper)this.b);
     if ((localb != null) && (localb.a == 0) && (localb.d != null));
-    synchronized (NetWorkReceiver.a())
+    synchronized (NetWorkReceiver.getInstance())
     {
       NetWorkReceiver.stop();
       ProtocolManager.v(localb, (ContextWrapper)this.b);

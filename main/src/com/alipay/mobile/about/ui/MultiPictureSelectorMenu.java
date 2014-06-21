@@ -56,7 +56,7 @@ public class MultiPictureSelectorMenu extends AbsAlbumListActivity<com.alipay.mo
   {
     super.onDestroy();
     if (this.e != null)
-      this.e.a();
+      this.e.getInstance();
     if (this.b != null)
       this.b.b();
   }

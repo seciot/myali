@@ -11,7 +11,7 @@ final class b
 
   public final void onQueryFinish()
   {
-    PublicHomeWidgetGroup.access$000(this.a).a();
+    PublicHomeWidgetGroup.access$000(this.a).getInstance();
   }
 }
 

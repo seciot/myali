@@ -55,7 +55,7 @@ public class CustomListView extends ListView
   private void a()
   {
     if ((this.c instanceof CustomListView.OnXScrollListener))
-      ((CustomListView.OnXScrollListener)this.c).a();
+      ((CustomListView.OnXScrollListener)this.c).getInstance();
   }
 
   private void a(Context paramContext)
@@ -157,7 +157,7 @@ public class CustomListView extends ListView
           this.j = true;
           this.e.setState(2);
           if (this.d != null)
-            this.d.a();
+            this.d.getInstance();
         }
         b();
       }

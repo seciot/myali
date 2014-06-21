@@ -17,7 +17,7 @@ public final class f
 
   public final boolean a(a parama)
   {
-    return (parama != null) && (parama.a() == this.a);
+    return (parama != null) && (parama.getInstance() == this.a);
   }
 
   public final String toString()

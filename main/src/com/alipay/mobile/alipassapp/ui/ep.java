@@ -14,7 +14,7 @@ final class ep
     this.a.showProgressDialog("加载中", true, MemberCardObtainableListActivity.c(this.a));
     MemberCardObtainableListActivity.getBundle(this.a).set(false);
     MemberCardObtainableListActivity.b(this.a);
-    this.a.a();
+    this.a.getInstance();
     this.a.dismissProgressDialog();
   }
 }

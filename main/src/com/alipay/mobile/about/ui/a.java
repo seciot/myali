@@ -12,7 +12,7 @@ final class a
 
   public final void onClick(View paramView)
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

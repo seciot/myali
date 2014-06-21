@@ -18,7 +18,7 @@ final class l
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
     this.a.c = System.currentTimeMillis();
-    AlipayLogAgent.writeLog(this.a.getApplicationContext(), BehaviourIdEnum.MONITOR, "kf", null, this.a.f, null, null, null, "C2C", this.a.b, this.a.a(), "-", new String[] { "kf", "confirmpay", "", "y", "alipayclient" });
+    AlipayLogAgent.writeLog(this.a.getApplicationContext(), BehaviourIdEnum.MONITOR, "kf", null, this.a.f, null, null, null, "C2C", this.a.b, this.a.getInstance(), "-", new String[] { "kf", "confirmpay", "", "y", "alipayclient" });
     String str = this.a.k.getInputedText();
     this.a.showProgressDialog(this.a.getResources().getString(f.b));
     this.a.c(str);

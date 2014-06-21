@@ -17,7 +17,7 @@ final class a
 
   public final void run()
   {
-    if (this.b.isMatch(this.c.a()))
+    if (this.b.isMatch(this.c.getInstance()))
     {
       Object[] arrayOfObject1 = new Object[2];
       arrayOfObject1[0] = "开始处理消息:";

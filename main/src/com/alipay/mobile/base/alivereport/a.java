@@ -9,7 +9,7 @@ final class a
 
   public final void run()
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

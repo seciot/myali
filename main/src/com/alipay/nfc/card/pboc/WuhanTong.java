@@ -34,7 +34,7 @@ final class WuhanTong extends PbocCard
         ArrayList localArrayList = b(paramTag);
         WuhanTong localWuhanTong = new WuhanTong(paramTag);
         localWuhanTong.getBundle(localResponse3);
-        if ((localResponse1.a() < 27) || (localResponse2.a() < 27))
+        if ((localResponse1.getInstance() < 27) || (localResponse2.getInstance() < 27))
         {
           localWuhanTong.j = null;
           localWuhanTong.i = null;

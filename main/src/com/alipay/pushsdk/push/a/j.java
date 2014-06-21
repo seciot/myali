@@ -20,7 +20,7 @@ class j
   protected j(m paramm)
   {
     this.d = paramm;
-    a();
+    getInstance();
   }
 
   private AppBundle getFullBundleName()

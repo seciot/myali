@@ -16,7 +16,7 @@ final class f
 
   public final void run()
   {
-    UpdateServices localUpdateServices = UpdateBroadcastReceiver.a();
+    UpdateServices localUpdateServices = UpdateBroadcastReceiver.getInstance();
     if ("com.alipay.mobile.about.UPDATE_CHECK_VERSION".equals(this.b.getAction()))
       localUpdateServices.checkUpdate(this.b.getStringExtra("userId"));
     UserLoginResult localUserLoginResult;

@@ -13,7 +13,7 @@ final class fb
 
   public final void run()
   {
-    MemberChargeOffActivity.a();
+    MemberChargeOffActivity.getInstance();
     this.b.c.setVisibility(0);
     this.b.c.setImageBitmap(this.a);
     this.b.c.setOnClickListener(new au(MemberChargeOffActivity.removeBundle(this.b.d)));

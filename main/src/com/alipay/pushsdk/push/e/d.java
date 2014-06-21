@@ -17,7 +17,7 @@ public abstract class d
   public d(j paramj)
   {
     this.a = paramj;
-    this.b = this.a.a();
+    this.b = this.a.getInstance();
     com.alipay.pushsdk.push.AppBundle.o.getBundle(this.a.getBundlePath());
   }
 
@@ -36,7 +36,7 @@ public abstract class d
   public final void getBundleName()
   {
     if (getInitLevel())
-      a();
+      getInstance();
   }
 
   public boolean getInitLevel()
@@ -45,7 +45,7 @@ public abstract class d
     if (!getFullBundleName())
     {
       HostClassLoader.e(this.d, "40", "6");
-      if (p.a() < 0)
+      if (p.getInstance() < 0)
         HostClassLoader.e(this.d, "70", "8");
     }
     label118: 
@@ -56,7 +56,7 @@ public abstract class d
       bool1 = false;
       continue;
       com.alipay.pushsdk.push.o localo = new com.alipay.pushsdk.push.o(this.b);
-      if ((localo.a()) && (localo.getBundlePath()));
+      if ((localo.getInstance()) && (localo.getBundlePath()));
       for (boolean bool2 = bool1; ; bool2 = false)
       {
         if (bool2)

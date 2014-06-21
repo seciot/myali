@@ -31,7 +31,7 @@ public abstract class b
   {
     if (this.buffer == null)
     {
-      this.buffer = new byte[a()];
+      this.buffer = new byte[getInstance()];
       this.pos = 0;
       this.q = 0;
       return;

@@ -23,7 +23,7 @@ class e
   protected e(k paramk)
   {
     this.d = paramk;
-    a();
+    getInstance();
   }
 
   private int a(byte[] paramArrayOfByte, int paramInt)
@@ -157,7 +157,7 @@ class e
         com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl localc = (com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl)localIterator.next();
         try
         {
-          localc.a();
+          localc.getInstance();
         }
         catch (Exception localException)
         {

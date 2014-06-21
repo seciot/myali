@@ -18,7 +18,7 @@ final class b
     try
     {
       ((LogoutService)SecurityWidgetGroupAcitivity.getBundle(this.a.a).getMicroApplicationContext().getExtServiceByInterface(LogoutService.class.getName())).logout();
-      this.a.a.a();
+      this.a.a.getInstance();
       label39: paramDialogInterface.dismiss();
       return;
     }

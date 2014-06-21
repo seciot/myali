@@ -10,7 +10,7 @@ public class e
 
   public static void a()
   {
-    g.a().stop();
+    g.getInstance().stop();
   }
 
   public static void setBundlePath(Context paramContext)
@@ -20,9 +20,9 @@ public class e
     i locali = i.getBundle(paramContext);
     String str1 = locali.getBundleName();
     String str2 = localh.getInitLevel();
-    String str3 = localh.a();
+    String str3 = localh.getInstance();
     String str4 = locali.stop();
-    g.a().a(str1, str2, "", str3, str4);
+    g.getInstance().a(str1, str2, "", str3, str4);
   }
 
   public static void a(String paramString1, String paramString2, String paramString3)
@@ -32,7 +32,7 @@ public class e
       BundlesManagerImpl.e(3, AppBundle, "writeLog start...");
       if (!o.getAllBundles())
         return;
-      new k(paramString1, paramString2, paramString3).a();
+      new k(paramString1, paramString2, paramString3).getInstance();
       return;
     }
     catch (Exception localException)

@@ -189,7 +189,7 @@ public class c extends BundlesManager
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManager, "saveMsgRecord() listMsgId:" + str2);
       try
       {
-        File localFile = new File(a() + this.a);
+        File localFile = new File(getInstance() + this.a);
         if (!localFile.exists())
           localFile.createNewFile();
         FileOutputStream localFileOutputStream = new FileOutputStream(localFile);

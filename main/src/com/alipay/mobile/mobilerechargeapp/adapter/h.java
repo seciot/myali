@@ -13,7 +13,7 @@ final class h
   public final void onClick(View paramView)
   {
     if (WarnManagerListAdapter.getBundle(this.a) != null)
-      WarnManagerListAdapter.getBundle(this.a).a();
+      WarnManagerListAdapter.getBundle(this.a).getInstance();
   }
 }
 

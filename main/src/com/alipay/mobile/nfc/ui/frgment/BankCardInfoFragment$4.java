@@ -22,8 +22,8 @@ class BankCardInfoFragment$4
     if (this.a != null)
     {
       localBundle.putString("actionType", "toCard");
-      localBundle.putString("cardNo", this.a.a());
-      List localList = CardbinManager.getInstance(BankCardInfoFragment.getBundle(this.b)).queryCarbin(this.a.a());
+      localBundle.putString("cardNo", this.a.getInstance());
+      List localList = CardbinManager.getInstance(BankCardInfoFragment.getBundle(this.b)).queryCarbin(this.a.getInstance());
       if ((localList != null) && (localList.size() == 1) && (localList.get(0) != null))
         localBundle.putString("bankMark", ((Cardbin)localList.get(0)).getBandAlias());
     }

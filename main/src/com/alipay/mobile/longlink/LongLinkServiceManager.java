@@ -213,7 +213,7 @@ public final class LongLinkServiceManager
   public final void setDebugMode(boolean paramBoolean)
   {
     a.a = paramBoolean;
-    a.a();
+    a.getInstance();
   }
 
   public final void setLinkAddr(String paramString1, int paramInt, String paramString2)

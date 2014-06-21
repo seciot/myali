@@ -17,7 +17,7 @@ final class b
     if (paramInt == 0)
     {
       HomeLogAgentUtil.i(this.a.getAppId());
-      if (AppCenterOnItemLongClickListener.a())
+      if (AppCenterOnItemLongClickListener.getInstance())
         AppCenterOnItemLongClickListener.getBundle(this.c);
     }
     while (paramInt != 1)

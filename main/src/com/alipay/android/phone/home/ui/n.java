@@ -66,7 +66,7 @@ final class n
         {
           HeaderAreaLayout.j(this.b).setVisibility(8);
           if (HeaderAreaLayout.l(this.b) != null)
-            HeaderAreaLayout.l(this.b).a();
+            HeaderAreaLayout.l(this.b).getInstance();
         }
         else if (this.c == 0)
         {
@@ -84,7 +84,7 @@ final class n
             else if (2 == this.c)
             {
               if (HeaderAreaLayout.l(this.b) != null)
-                HeaderAreaLayout.l(this.b).a();
+                HeaderAreaLayout.l(this.b).getInstance();
             }
             else if (this.c == 0)
             {

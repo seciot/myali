@@ -35,7 +35,7 @@ public class MspService$AlixPayServiceStub extends IAlixPay.Stub
   public String test()
   {
     this.b.get();
-    return MspService.a();
+    return MspService.getInstance();
   }
 
   public void unregisterCallback(IRemoteServiceCallback paramIRemoteServiceCallback)

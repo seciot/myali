@@ -1,6 +1,7 @@
 package com.alipay.mobile.quinox.classloader;
 
 import java.util.Map;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -246,8 +247,18 @@ public class InitExecutor {
 		this.exeService = Executors.newFixedThreadPool(5, threadFactory);
 	}
 
+	private class MyCallable implements Callable{
+		@Override
+		public Object call() throws Exception {
+			return null;
+		}
+	}
+	
 	public final void a(AppBundle parama) {
-		Future localFuture = this.exeService.submit(new g(this, parama));
+//		Future localFuture = this.exeService.submit(new g(this, parama));
+		Future localFuture = this.exeService.submit(new Callable<?>() {
+			
+		});
 		this.d.put(parama.getBundleName(), localFuture);
 	}
 

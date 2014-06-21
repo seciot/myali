@@ -10,7 +10,7 @@ final class cy extends Thread
 
   public final void run()
   {
-    this.a.a = this.a.a();
+    this.a.a = this.a.getInstance();
     AlipassSchemeTransferActivity.getBundle(this.a).sendEmptyMessage(1);
   }
 }

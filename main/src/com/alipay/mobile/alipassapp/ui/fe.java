@@ -13,7 +13,7 @@ final class fe
 
   public final void run()
   {
-    MemberFirstDetailActivity.a();
+    MemberFirstDetailActivity.getInstance();
     this.b.b.setImageBitmap(this.a);
     this.b.b.setOnClickListener(new au(MemberFirstDetailActivity.b(this.b.d), this.b.c, true));
   }

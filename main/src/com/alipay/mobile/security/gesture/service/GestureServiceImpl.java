@@ -157,7 +157,7 @@ public class GestureServiceImpl extends GestureService
   public boolean restoreStateValidateGesture(GestureCallBack paramGestureCallBack)
   {
     this.b.add(paramGestureCallBack);
-    GestureServiceImpl.GestureEnum localGestureEnum = a();
+    GestureServiceImpl.GestureEnum localGestureEnum = getInstance();
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:
@@ -368,7 +368,7 @@ public class GestureServiceImpl extends GestureService
   public boolean validateStartClientGesture(GestureCallBack paramGestureCallBack)
   {
     this.b.add(paramGestureCallBack);
-    GestureServiceImpl.GestureEnum localGestureEnum = a();
+    GestureServiceImpl.GestureEnum localGestureEnum = getInstance();
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:

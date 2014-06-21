@@ -17,7 +17,7 @@ class SecurityPasswordManagerForTUserActivity$2
       this.b.e(this.b.h, paramString, this.a);
       return;
     }
-    this.b.o.a();
+    this.b.o.getInstance();
     APToggleButton localAPToggleButton = this.b.a.getToggleButton();
     if (!this.a);
     for (boolean bool = true; ; bool = false)

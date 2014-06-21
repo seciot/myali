@@ -16,7 +16,7 @@ final class er
       this.a.d.getMoreFinish(true);
     if (!this.a.e.getBundlePath())
     {
-      if (this.a.e.a())
+      if (this.a.e.getInstance())
         break label58;
       this.a.stop();
     }

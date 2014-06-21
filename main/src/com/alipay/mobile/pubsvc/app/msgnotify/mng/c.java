@@ -57,7 +57,7 @@ public class c
       return false;
     try
     {
-      PubAppLongConnMsgReceiver localPubAppLongConnMsgReceiver = (PubAppLongConnMsgReceiver)a.a().getBundle(PubAppLongConnMsgReceiver.class);
+      PubAppLongConnMsgReceiver localPubAppLongConnMsgReceiver = (PubAppLongConnMsgReceiver)a.getInstance().getBundle(PubAppLongConnMsgReceiver.class);
       if (!localPubAppLongConnMsgReceiver.b())
         localPubAppLongConnMsgReceiver.a();
       try
@@ -88,7 +88,7 @@ public class c
     {
       try
       {
-        if (((b)a.a().getBundle(b.class)).b(paramString))
+        if (((b)a.getInstance().getBundle(b.class)).b(paramString))
         {
           this.a.remove(paramString);
           if (LogCatLog.isSwitch())

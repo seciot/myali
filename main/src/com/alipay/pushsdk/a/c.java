@@ -22,15 +22,15 @@ public class c
 
   public final void a()
   {
-    String str1 = this.d.a();
+    String str1 = this.d.getInstance();
     String str2 = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.stop();
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle, "request() getConfigURL=" + str2);
     try
     {
       JSONObject localJSONObject = this.c.stop();
       localJSONObject.put("userId", str1);
-      localJSONObject.put("lastPubMsgId", new DefaultThreadFactory(this.b).a());
-      localJSONObject.put("pushCfgId", this.c.a().a);
+      localJSONObject.put("lastPubMsgId", new DefaultThreadFactory(this.b).getInstance());
+      localJSONObject.put("pushCfgId", this.c.getInstance().a);
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle, "getReqData() jsonRequest=" + localJSONObject.toString());
       ZLog locald = new ZLog(this);
       new HostClassLoader(this.b, locald).v(str2, localJSONObject);

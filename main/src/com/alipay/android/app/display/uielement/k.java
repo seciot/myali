@@ -19,7 +19,7 @@ final class k
       BaseEditElement.v(this.a, paramEditable.toString());
       return;
     }
-    BaseEditElement.v(this.a, this.a.b.a());
+    BaseEditElement.v(this.a, this.a.b.getInstance());
   }
 
   public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

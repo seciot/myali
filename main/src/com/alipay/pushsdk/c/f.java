@@ -16,7 +16,7 @@ final class f
     }
     finally
     {
-      this.b.a();
+      this.b.getInstance();
     }
   }
 }

@@ -15,7 +15,7 @@ class BeijingBusCardFragment$3
     AuthService localAuthService = (AuthService)BeijingBusCardFragment.d(this.a).getExtServiceByInterface(AuthService.class.getName());
     if ((localAuthService != null) && (localAuthService.showActivityLogin(null, localAuthService.getUserInfo())))
     {
-      BeijingBusCardFragment.a();
+      BeijingBusCardFragment.getInstance();
       BeijingBusCardFragment.b(this.a);
     }
   }

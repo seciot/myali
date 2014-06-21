@@ -23,7 +23,7 @@ final class an
     localb.getBundle(false);
     localb.getBundle(null);
     MultiPictureSelectorActivity.l(this.a.c);
-    MultiPictureSelectorActivity.k(this.a.c).removeBundle(localb.a());
+    MultiPictureSelectorActivity.k(this.a.c).removeBundle(localb.getInstance());
     MultiPictureSelectorActivity.j(this.a.c).removeView(paramView);
     if ((i >= MultiPictureSelectorActivity.p(this.a.c)) && (i <= MultiPictureSelectorActivity.p(this.a.c) + MultiPictureSelectorActivity.q(this.a.c)))
       MultiPictureSelectorActivity.v(this.a.c, localc.b);

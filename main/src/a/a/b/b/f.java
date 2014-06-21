@@ -27,9 +27,9 @@ final class f extends a
     }
     if (paramk.b)
       localStringBuffer.append(" ");
-    Class localClass = a();
+    Class localClass = getInstance();
     if (this.g == null)
-      this.g = a().getName();
+      this.g = getInstance().getName();
     localStringBuffer.append(paramk.a(localClass, this.g));
     localStringBuffer.append(".");
     if (this.f == null)

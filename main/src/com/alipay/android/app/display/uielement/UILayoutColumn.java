@@ -88,7 +88,7 @@ public class UILayoutColumn extends r
     {
       return;
       this.b = -2;
-      if (ElementDimension.a.a().equalsIgnoreCase(paramString1))
+      if (ElementDimension.a.getInstance().equalsIgnoreCase(paramString1))
         this.c = 1;
       while (this.b > 0)
       {

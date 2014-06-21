@@ -25,7 +25,7 @@ public abstract class a
     try
     {
       AppBundle = Boolean.getBoolean("smack.debugEnabled");
-      label23: m.a();
+      label23: m.getInstance();
       return;
     }
     catch (Exception localException)
@@ -41,7 +41,7 @@ public abstract class a
 
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.MinPriorityThreadFactory.BundlesManagerImpl paramc)
   {
-    if (!a())
+    if (!getInstance())
       throw new IllegalStateException("Not connected to server.");
     if (paramc == null);
     while (this.b.contains(paramc))

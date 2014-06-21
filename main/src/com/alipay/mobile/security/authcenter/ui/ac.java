@@ -13,7 +13,7 @@ final class ac
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

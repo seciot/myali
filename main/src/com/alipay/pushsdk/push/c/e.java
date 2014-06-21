@@ -44,7 +44,7 @@ public class e extends AppBundle
 
   public final int getRequireBundleName()
   {
-    if (a() == 3)
+    if (getInstance() == 3)
       g(2);
     return this.b;
   }
@@ -52,14 +52,14 @@ public class e extends AppBundle
   public final byte[] getBundleVersion()
   {
     int i = this.e;
-    if (a() == 3)
+    if (getInstance() == 3)
       i = 2;
     byte[] arrayOfByte = new byte[i];
-    arrayOfByte[0] = ((byte)(this.d << 4 | a()));
+    arrayOfByte[0] = ((byte)(this.d << 4 | getInstance()));
     arrayOfByte[1] = ((byte)(stop() << 7 | getBundleName() << 6 | getInitLevel() << 5 | getFullBundleName() << 4));
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrbufforWrite() the 1st buffer:" + arrayOfByte[0]);
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrbufforWrite() the 2nd buffer:" + arrayOfByte[1]);
-    if (a() != 3)
+    if (getInstance() != 3)
     {
       System.arraycopy(h(g()), 0, arrayOfByte, 2, 4);
       System.arraycopy(new byte[8], 0, arrayOfByte, 6, 8);

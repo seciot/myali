@@ -64,7 +64,7 @@ final class ab extends Handler
       SoundButtonActivity.access$200(this.a);
     }
     while (!this.a.timeOut);
-    this.a.waveButtonListener.a();
+    this.a.waveButtonListener.getInstance();
   }
 }
 

@@ -29,7 +29,7 @@ final class d extends Handler
       SyncAnimatingHelper.v(this.b, true);
       SyncAnimatingHelper.b(this.b);
       if (SyncAnimatingHelper.removeBundle(this.b) != null)
-        SyncAnimatingHelper.removeBundle(this.b).a();
+        SyncAnimatingHelper.removeBundle(this.b).getInstance();
     }
   }
 }

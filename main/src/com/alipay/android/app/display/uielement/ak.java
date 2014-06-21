@@ -17,7 +17,7 @@ final class ak extends CustomArrayAdapter
     UICombobox.Option localOption = (UICombobox.Option)UICombobox.d(this.a).get(paramInt);
     UICombobox.e(this.a, paramTextView, localOption);
     this.a.d(paramTextView, localOption.a);
-    paramTextView.setGravity(this.a.o().a());
+    paramTextView.setGravity(this.a.o().getInstance());
   }
 }
 

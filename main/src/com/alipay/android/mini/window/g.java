@@ -14,7 +14,7 @@ final class g
 
   public final void run()
   {
-    Iterator localIterator = this.a.a.a().iterator();
+    Iterator localIterator = this.a.a.getInstance().iterator();
     while (localIterator.hasNext())
     {
       IUIElement localIUIElement = (IUIElement)localIterator.next();

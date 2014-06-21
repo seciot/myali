@@ -433,10 +433,10 @@ public class k extends AppBundle
 
   public final void setBundlePath(com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle parama)
   {
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "sendPacket()... isConnected=" + a());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "sendPacket()... isConnected=" + getInstance());
     try
     {
-      if (!a())
+      if (!getInstance())
         throw new IllegalStateException("Have not connected to server.");
     }
     catch (Exception localException)
@@ -447,7 +447,7 @@ public class k extends AppBundle
     if (parama == null)
       throw new NullPointerException("Packet is null.");
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, m, "sendPacket()... writer=" + this.f.hashCode() + ", reader=" + this.e.hashCode());
-    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "sendPacket()... packet.id=" + parama.a());
+    com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, m, "sendPacket()... packet.id=" + parama.getInstance());
     this.k.getBundle(parama);
   }
 

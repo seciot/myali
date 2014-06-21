@@ -21,11 +21,11 @@ final class j
     String str2 = localContext.getString(17039370);
     String str3 = localContext.getString(R.string.u);
     if ("must".equals(i.getBundle(this.a)));
-    for (String str4 = EventType.s.a(); ; str4 = EventType.t.a())
+    for (String str4 = EventType.s.getInstance(); ; str4 = EventType.t.getInstance())
     {
       String str5 = localContext.getString(17039360);
       if ((i.b(this.a) != null) && (i.b(this.a).get() != null))
-        ((IWindowScriptable)i.b(this.a).get()).confirm(EventType.q.a(), str4, str1, str3, null, str2, str5);
+        ((IWindowScriptable)i.b(this.a).get()).confirm(EventType.q.getInstance(), str4, str1, str3, null, str2, str5);
       return;
     }
   }

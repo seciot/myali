@@ -9,8 +9,8 @@ final class b
 
   public final void run()
   {
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle.a(), "sendConfigReq doing...");
-    new BundlesManagerImpl(AppBundle.getBundle(this.a)).a();
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle.getInstance(), "sendConfigReq doing...");
+    new BundlesManagerImpl(AppBundle.getBundle(this.a)).getInstance();
   }
 }
 

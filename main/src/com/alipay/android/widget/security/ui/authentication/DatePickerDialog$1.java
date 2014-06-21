@@ -14,7 +14,7 @@ class DatePickerDialog$1
   {
     if (DatePickerDialog.getBundle(this.a) != null)
     {
-      DatePickerDialog.getBundle(this.a).a();
+      DatePickerDialog.getBundle(this.a).getInstance();
       this.a.cancel();
     }
   }

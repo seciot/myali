@@ -24,7 +24,7 @@ final class b extends Handler
       {
         if (FileDownloader.getBundle(this.a))
         {
-          f = (float)(100L * FileDownloader.h(this.a).a() / FileDownloader.h(this.a).stop());
+          f = (float)(100L * FileDownloader.h(this.a).getInstance() / FileDownloader.h(this.a).stop());
           if (!FileDownloader.h(this.a).getBundleName())
             break label180;
           if (FileDownloader.j(this.a))

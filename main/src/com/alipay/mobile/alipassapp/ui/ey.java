@@ -16,26 +16,26 @@ final class ey
   {
     try
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       Bitmap localBitmap = i.getBundle(this.a);
       if (this.b == null)
       {
-        MemberChargeOffActivity.a();
+        MemberChargeOffActivity.getInstance();
         return;
       }
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       MemberChargeOffActivity.stop().post(new ez(this, localBitmap));
       return;
     }
     catch (OutOfMemoryError localOutOfMemoryError)
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       localOutOfMemoryError.getMessage();
       return;
     }
     catch (Exception localException)
     {
-      MemberChargeOffActivity.a();
+      MemberChargeOffActivity.getInstance();
       localException.getMessage();
     }
   }

@@ -37,7 +37,7 @@ public class d extends AppBundle
   {
     byte[] arrayOfByte = new byte[this.e];
     arrayOfByte[0] = Integer.valueOf(this.d).byteValue();
-    arrayOfByte[1] = Integer.valueOf(a()).byteValue();
+    arrayOfByte[1] = Integer.valueOf(getInstance()).byteValue();
     arrayOfByte[2] = Integer.valueOf(stop()).byteValue();
     System.arraycopy(h(g()), 0, arrayOfByte, 3, 4);
     System.arraycopy(new byte[4], 0, arrayOfByte, 7, 4);

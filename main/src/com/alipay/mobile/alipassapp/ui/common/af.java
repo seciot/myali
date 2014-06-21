@@ -13,7 +13,7 @@ final class af
   public final void run()
   {
     ae.v(this.b, Boolean.valueOf(false));
-    if (!ae.a());
+    if (!ae.getInstance());
     int i;
     int j;
     label76: 

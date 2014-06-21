@@ -21,7 +21,7 @@ final class ai
   {
     ContentResolver localContentResolver = this.a.getContentResolver();
     Uri localUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-    String[] arrayOfString = MultiPictureSelectorActivity.a();
+    String[] arrayOfString = MultiPictureSelectorActivity.getInstance();
     Cursor localCursor = localContentResolver.query(localUri, arrayOfString, "bucket_id = ?", MultiPictureSelectorActivity.getBundle(String.valueOf(MultiPictureSelectorActivity.getBundle(this.a))), "datetaken DESC");
     if (localCursor != null)
     {

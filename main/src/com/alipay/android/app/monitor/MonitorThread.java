@@ -212,7 +212,7 @@ public class MonitorThread
     this.b = Thread.currentThread().getId();
     Thread.currentThread().setName("sampling point");
     Thread.currentThread().setPriority(5);
-    a.a();
+    a.getInstance();
     Looper localLooper = Looper.myLooper();
     if (localLooper == null)
     {

@@ -23,7 +23,7 @@ public final class b
     Object localObject = locala;
     for (int i = 0; i < 2; i++)
     {
-      localObject = (com.taobao.securityjni.connector.BundlesManager)locala1.a();
+      localObject = (com.taobao.securityjni.connector.BundlesManager)locala1.getInstance();
       if (((com.taobao.securityjni.connector.BundlesManager)localObject).a == 0)
         break;
     }

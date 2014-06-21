@@ -33,7 +33,7 @@ final class d
         BundlesManagerImpl.getBundle(this.a).v("LAST_CONFIG_TIME", l);
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, BundlesManagerImpl.stop(), "onComplete() saveCfgPolicy Time is:" + j.getBundle(l));
         Thread.sleep(1000L);
-        if (BundlesManagerImpl.b(this.a).a().length() == 0)
+        if (BundlesManagerImpl.b(this.a).getInstance().length() == 0)
           BundlesManagerImpl.c(this.a).stopService(new Intent(BundlesManagerImpl.c(this.a), NotificationService.class));
       }
       return;

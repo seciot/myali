@@ -19,7 +19,7 @@ class BankCardInfoFragment$2
     Bundle localBundle = new Bundle();
     if (this.a != null)
     {
-      localBundle.putString("cardNo", this.a.a());
+      localBundle.putString("cardNo", this.a.getInstance());
       if (this.a.getFullBundleName() != null)
       {
         localBundle.putString("certNo", (String)this.a.getFullBundleName().get("idcard"));

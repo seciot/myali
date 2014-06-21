@@ -14,7 +14,7 @@ final class b
   public final void onClick(View paramView)
   {
     if (AutoComlieteListAdapter.getBundle(this.a) != null)
-      AutoComlieteListAdapter.getBundle(this.a).a();
+      AutoComlieteListAdapter.getBundle(this.a).getInstance();
   }
 }
 

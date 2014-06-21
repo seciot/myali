@@ -16,7 +16,7 @@ final class bj extends r
   {
     paramLayoutParams.width = -1;
     paramLayoutParams.height = -2;
-    if ((ElementDimension.a.a().equals(paramString2)) && ((paramLayoutParams instanceof LinearLayout.LayoutParams)))
+    if ((ElementDimension.a.getInstance().equals(paramString2)) && ((paramLayoutParams instanceof LinearLayout.LayoutParams)))
       ((LinearLayout.LayoutParams)paramLayoutParams).weight = 1.0F;
   }
 

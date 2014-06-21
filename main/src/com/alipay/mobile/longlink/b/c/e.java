@@ -38,7 +38,7 @@ public class e extends AppBundle
   {
     byte[] arrayOfByte1 = new byte[this.e];
     arrayOfByte1[0] = Integer.valueOf(this.d).byteValue();
-    arrayOfByte1[1] = Integer.valueOf(a()).byteValue();
+    arrayOfByte1[1] = Integer.valueOf(getInstance()).byteValue();
     arrayOfByte1[2] = Integer.valueOf(stop()).byteValue();
     int i = getBundleName();
     byte[] arrayOfByte2 = new byte[4];

@@ -106,7 +106,7 @@ public class CustomEditText extends EditText
   {
     super.onEditorAction(paramInt);
     if ((this.k != null) && (6 == paramInt))
-      this.k.a();
+      this.k.getInstance();
   }
 
   public void onFocusChange(View paramView, boolean paramBoolean)
@@ -153,7 +153,7 @@ public class CustomEditText extends EditText
         if (paramMotionEvent.getAction() == 1)
         {
           CustomEditText.OnIconClickListener localOnIconClickListener = this.c;
-          localOnIconClickListener.a();
+          localOnIconClickListener.getInstance();
         }
         return true;
       }

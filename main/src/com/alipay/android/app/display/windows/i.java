@@ -96,13 +96,13 @@ final class i
     String str4 = localContext.getString(17039370);
     String str5;
     if (!"must".equals(str2))
-      str5 = EventType.t.a();
+      str5 = EventType.t.getInstance();
     for (String str6 = localContext.getString(17039360); ; str6 = localContext.getString(R.string.t))
     {
       if ((this.f != null) && (this.f.get() != null))
-        ((IWindowScriptable)this.f.get()).confirm(EventType.q.a(), str5, str3, str1, null, str4, str6);
+        ((IWindowScriptable)this.f.get()).confirm(EventType.q.getInstance(), str5, str3, str1, null, str4, str6);
       return;
-      str5 = EventType.s.a();
+      str5 = EventType.s.getInstance();
     }
   }
 }

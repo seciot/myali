@@ -9,7 +9,7 @@ final class a
 
   public final void run()
   {
-    WealthHomeRpcExcutor.getBundle(this.a).a();
+    WealthHomeRpcExcutor.getBundle(this.a).getInstance();
   }
 }
 

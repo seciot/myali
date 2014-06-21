@@ -22,7 +22,7 @@ final class de
 
   public final void onPaySuccess(PhoneCashierPaymentResult paramPhoneCashierPaymentResult)
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

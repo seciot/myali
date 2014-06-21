@@ -495,7 +495,7 @@ public class AlipassPreviewActivity extends BaseActivity
   protected void onDestroy()
   {
     if (this.n != null)
-      this.n.a();
+      this.n.getInstance();
     if ((!this.h) && ((this.mApp instanceof AlipassApp)));
     try
     {

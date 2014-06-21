@@ -16,7 +16,7 @@ final class o
     String str = this.b.getString(R.string.g);
     if ((this.a != null) && (this.a.length > 0))
       str = this.a[0];
-    if ((MiniPayActivity.b(this.b) != null) && (MiniPayActivity.b(this.b).isShowing()) && (TextUtils.equals(MiniPayActivity.b(this.b).a(), str)))
+    if ((MiniPayActivity.b(this.b) != null) && (MiniPayActivity.b(this.b).isShowing()) && (TextUtils.equals(MiniPayActivity.b(this.b).getInstance(), str)))
       return;
     MiniPayActivity.getBundle(this.b);
     if (MiniPayActivity.b(this.b) == null)

@@ -12,18 +12,18 @@ public final class o
 
   public final Future a(Runnable paramRunnable)
   {
-    boolean bool1 = this.a.a().isTerminated();
+    boolean bool1 = this.a.getInstance().isTerminated();
     Future localFuture = null;
     if (!bool1)
     {
-      boolean bool2 = this.a.a().isShutdown();
+      boolean bool2 = this.a.getInstance().isShutdown();
       localFuture = null;
       if (!bool2)
       {
         localFuture = null;
         if (paramRunnable != null)
         {
-          localFuture = this.a.a().submit(paramRunnable);
+          localFuture = this.a.getInstance().submit(paramRunnable);
           a.e(5, LongLinkService.getFullBundleName(), "Future result is " + localFuture.getClass().getName().toString());
         }
       }

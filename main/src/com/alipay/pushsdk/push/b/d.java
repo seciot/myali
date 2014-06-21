@@ -26,8 +26,8 @@ public class d
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(2, AppBundle, "=== connectionClosedOnError()===");
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.j, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.A, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis() + 1000 * (1 * o.getBundleName()), "PersistentConnectionListener_connectionClosedOnError:ReconnectInterval=" + 1000 * o.getBundleName());
-    String str = paramp.a();
-    if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().a()))
+    String str = paramp.getInstance();
+    if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().getInstance()))
     {
       this.b.getBundle(false);
       this.b.getInitLevel().getFullBundleName();

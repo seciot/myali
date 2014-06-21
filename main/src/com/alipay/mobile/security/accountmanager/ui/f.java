@@ -11,7 +11,7 @@ final class f
 
   public final void onGestureResult(boolean paramBoolean)
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

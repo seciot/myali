@@ -14,7 +14,7 @@ public final class f
 
   public final boolean setBundlePath(AppBundle parama)
   {
-    return (parama != null) && (parama.a() == this.a);
+    return (parama != null) && (parama.getInstance() == this.a);
   }
 
   public final String toString()

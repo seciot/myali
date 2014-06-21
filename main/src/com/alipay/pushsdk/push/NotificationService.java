@@ -88,7 +88,7 @@ public class NotificationService extends Service
       if ((0x2 & this.l.getPackageManager().getApplicationInfo(this.l.getPackageName(), 16384).flags) != 0);
       for (com.alipay.pushsdk.c.a.c.a = true; ; com.alipay.pushsdk.c.a.c.a = false)
       {
-        com.alipay.pushsdk.c.a.c.a();
+        com.alipay.pushsdk.c.a.c.getInstance();
         this.b = new j(this);
         com.alipay.pushsdk.c.a.c.e(5, a, "onCreate=" + this.b.hashCode());
         com.alipay.pushsdk.c.a.c.e(3, a, "start()...");
@@ -125,14 +125,14 @@ public class NotificationService extends Service
       {
         com.alipay.pushsdk.c.a.c.e(1, str1, (String)localObject2);
         com.alipay.pushsdk.c.a.c.a = false;
-        com.alipay.pushsdk.c.a.c.a();
+        com.alipay.pushsdk.c.a.c.getInstance();
         break;
         str2 = localNameNotFoundException.getMessage();
       }
     }
     finally
     {
-      com.alipay.pushsdk.c.a.c.a();
+      com.alipay.pushsdk.c.a.c.getInstance();
     }
   }
 
@@ -166,7 +166,7 @@ public class NotificationService extends Service
             this.b.c();
             com.alipay.pushsdk.c.a.c.e(5, a, "stop() executorService will be shutdown!");
             this.g.shutdown();
-            com.alipay.pushsdk.c.a.e.a();
+            com.alipay.pushsdk.c.a.e.getInstance();
             o localo = new o(this.l);
             if ((this.b.e() != null) && (this.b.e().length() > 0) && (localo.a()))
             {

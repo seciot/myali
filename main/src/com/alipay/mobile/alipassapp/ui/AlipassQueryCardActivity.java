@@ -615,7 +615,7 @@ public class AlipassQueryCardActivity extends BaseActivity
   protected void onDestroy()
   {
     if (this.g != null)
-      this.g.a();
+      this.g.getInstance();
     super.onDestroy();
   }
 

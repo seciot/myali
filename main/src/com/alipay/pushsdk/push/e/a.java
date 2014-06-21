@@ -33,7 +33,7 @@ public class a extends ZLog
       HostClassLoader.e(stop(), "41", "3");
       return;
     }
-    if (p.a() < 0)
+    if (p.getInstance() < 0)
     {
       this.a.p();
       HostClassLoader.e(stop(), "70", "8");

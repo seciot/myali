@@ -40,7 +40,7 @@ public class OldDataTransferUtil
       {
         if (localb.getBundle(AlipayApplication.getInstance()))
         {
-          ArrayList localArrayList = localb.a();
+          ArrayList localArrayList = localb.getInstance();
           if ((localArrayList != null) && (!localArrayList.isEmpty()))
           {
             Iterator localIterator = localArrayList.iterator();

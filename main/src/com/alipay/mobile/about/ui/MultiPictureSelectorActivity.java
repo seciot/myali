@@ -156,7 +156,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     localb.a = ((RecycleabledImageView)localView.findViewById(R.id.bw));
     localView.setTag(localb);
     com.alipay.mobile.about.ui.DexUtil.b localb1 = (com.alipay.mobile.about.ui.DexUtil.b)this.i.get(paramInt);
-    this.w.e(localb.a, localb1.a(), this.x);
+    this.w.e(localb.a, localb1.getInstance(), this.x);
     return localView;
   }
 
@@ -267,7 +267,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       View localView2 = localb.getBundleName();
       this.g.removeView(localView2);
       localb.getBundle(null);
-      this.l.removeBundle(localb.a());
+      this.l.removeBundle(localb.getInstance());
       this.n = (-1 + this.n);
       APTextView localAPTextView = this.j;
       Object[] arrayOfObject = new Object[2];
@@ -289,7 +289,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       }
       a(paramView);
       localb.getBundle(true);
-      this.l.add(localb.a());
+      this.l.add(localb.getInstance());
       View localView1 = a(paramInt);
       localView1.setTag(new c(paramInt, paramView));
       localb.getBundle(localView1);
@@ -387,7 +387,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       for (MultiPictureSelectorActivity.b localb1 = localb2; ; localb1 = (MultiPictureSelectorActivity.b)paramView.getTag())
       {
         com.alipay.mobile.about.ui.DexUtil.b localb = (com.alipay.mobile.about.ui.DexUtil.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
-        MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).e(localb1.a, localb.a(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
+        MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).e(localb1.a, localb.getInstance(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
         if (!localb.stop())
           break label417;
         localb1.d.setVisibility(0);
@@ -417,7 +417,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
         View localView2 = localb.getBundleName();
         MultiPictureSelectorActivity.j(MultiPictureSelectorActivity.this).removeView(localView2);
         localb.getBundle(null);
-        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).removeBundle(localb.a());
+        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).removeBundle(localb.getInstance());
         MultiPictureSelectorActivity.l(MultiPictureSelectorActivity.this);
         APTextView localAPTextView = MultiPictureSelectorActivity.r(MultiPictureSelectorActivity.this);
         Object[] arrayOfObject = new Object[2];
@@ -439,7 +439,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
           return;
         }
         localb.getBundle(true);
-        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).add(localb.a());
+        MultiPictureSelectorActivity.k(MultiPictureSelectorActivity.this).add(localb.getInstance());
         View localView1 = MultiPictureSelectorActivity.this.a(i);
         localView1.setTag(new c(i, paramView));
         localb.getBundle(localView1);

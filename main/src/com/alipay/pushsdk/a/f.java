@@ -23,7 +23,7 @@ public final class f extends Handler
       return;
     case 4:
     }
-    HostClassLoader.getBundle(this.a).a();
+    HostClassLoader.getBundle(this.a).getInstance();
   }
 }
 

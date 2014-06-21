@@ -74,12 +74,12 @@ public class MspWindow
         if (((localIUIElement.a() != ElementType.b) || ((!TextUtils.isEmpty(paramString)) && (paramString.equals(localIUIElement.n())))) && ((localIUIElement instanceof ISubmitable)))
         {
           localSubmitValue = ((ISubmitable)localIUIElement).getRequireBundleName();
-          if ((localSubmitValue == null) || (TextUtils.isEmpty(localSubmitValue.a())));
+          if ((localSubmitValue == null) || (TextUtils.isEmpty(localSubmitValue.getInstance())));
         }
       }
       try
       {
-        localJSONObject.put(localSubmitValue.a(), localSubmitValue.stop());
+        localJSONObject.put(localSubmitValue.getInstance(), localSubmitValue.stop());
         label121: i2++;
         continue;
         if (this.g != null)
@@ -266,10 +266,10 @@ public class MspWindow
         {
           localJSONObject1.toString();
           LogUtils.g();
-          localUIWindow.v(localJSONObject1.optJSONObject(ElementType.t.a()), localJSONObject2);
-          localUIWindow.i(localJSONObject1.optJSONObject(ElementType.s.a()), localJSONObject2);
-          localUIWindow.getBundle(localJSONObject1.optJSONArray(ElementType.w.a()));
-          localUIWindow.d(localJSONObject1.optJSONObject(ElementType.x.a()), localJSONObject2);
+          localUIWindow.v(localJSONObject1.optJSONObject(ElementType.t.getInstance()), localJSONObject2);
+          localUIWindow.i(localJSONObject1.optJSONObject(ElementType.s.getInstance()), localJSONObject2);
+          localUIWindow.getBundle(localJSONObject1.optJSONArray(ElementType.w.getInstance()));
+          localUIWindow.d(localJSONObject1.optJSONObject(ElementType.x.getInstance()), localJSONObject2);
         }
       }
       try

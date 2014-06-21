@@ -21,9 +21,9 @@ public class d
 
   public final void setBundlePath(n paramn)
   {
-    String str = paramn.a();
+    String str = paramn.getInstance();
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(2, AppBundle, "connectionClosedOnError()... errorType=" + str + ", errorInfo: " + paramn.getMessage());
-    if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().a()))
+    if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().getInstance()))
     {
       this.b.getBundle(false);
       this.b.getInitLevel().getFullBundleName();

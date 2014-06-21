@@ -29,7 +29,7 @@ final class b
       locala.setInterpolator(new DecelerateInterpolator());
       this.b.startAnimation(locala);
       if (this.c != null)
-        this.c.a();
+        this.c.getInstance();
       return;
     }
   }

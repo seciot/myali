@@ -12,7 +12,7 @@ class AuthenticationCameraShootActivity$3
 
   public void onClick(View paramView)
   {
-    this.a.a();
+    this.a.getInstance();
   }
 }
 

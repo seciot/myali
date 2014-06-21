@@ -33,7 +33,7 @@ final class a
       while (true)
       {
         String str4 = localContext.getString(17039370);
-        MspWindow.getBundle(this.b).confirm(EventType.s.a(), null, str1, str3, null, str4, null);
+        MspWindow.getBundle(this.b).confirm(EventType.s.getInstance(), null, str1, str3, null, str4, null);
         return;
         if (bool)
           str3 = localContext.getString(R.string.n);
