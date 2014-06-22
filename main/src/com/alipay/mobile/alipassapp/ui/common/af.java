@@ -25,16 +25,16 @@ final class af
         new StringBuilder("loopQueryTask dynamicId=").append(this.a).toString();
         ae.getBundle(this.b);
         ae.b(this.b);
-        i = ae.c(this.b);
+        i = ae.getBundleByComponentName(this.b);
         j = 1;
         if (j >= 20)
           break;
         new StringBuilder("loopQueryTask continueLoop=").append(ae.d(this.b)).toString();
       }
       while ((!ae.d(this.b)) || (StringUtils.isBlank(this.a)));
-      new StringBuilder("loopQueryTask currentLoopQueryTime=").append(i).append(" excuteloopQueryTimes=").append(ae.c(this.b)).toString();
+      new StringBuilder("loopQueryTask currentLoopQueryTime=").append(i).append(" excuteloopQueryTimes=").append(ae.getBundleByComponentName(this.b)).toString();
     }
-    while (i != ae.c(this.b));
+    while (i != ae.getBundleByComponentName(this.b));
     new StringBuilder("过滤后:第{").append(i).append("}次调用loopQueryTask,动态码:{").append(this.a).append("}  短轮询第{").append(j).append("}次").toString();
     if (j == 1)
       SystemClock.sleep(3000L);

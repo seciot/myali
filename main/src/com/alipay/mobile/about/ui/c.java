@@ -23,7 +23,7 @@ final class c
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
     AboutFeedbackActivity localAboutFeedbackActivity;
-    if (!AboutFeedbackActivity.c(this.a))
+    if (!AboutFeedbackActivity.getBundleByComponentName(this.a))
     {
       localAboutFeedbackActivity = this.a;
       if (paramCharSequence.length() <= 0)

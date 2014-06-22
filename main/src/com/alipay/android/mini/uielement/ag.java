@@ -17,7 +17,7 @@ final class ag
   {
     UISimplePassword.v(this.a, UISimplePassword.getBundle(this.a).getText().toString());
     UISimplePassword.v(this.a, UISimplePassword.b(this.a).length());
-    if ((UISimplePassword.b(this.a).length() == 6) && (UISimplePassword.c(this.a)))
+    if ((UISimplePassword.b(this.a).length() == 6) && (UISimplePassword.getBundleByComponentName(this.a)))
       this.a.v(this.a, ActionType.getBundle(this.a.getAllComponentNames()));
     this.a.v(this, new MiniEventArgs(ActionType.t));
   }

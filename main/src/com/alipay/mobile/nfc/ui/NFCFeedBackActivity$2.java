@@ -19,7 +19,7 @@ class NFCFeedBackActivity$2
       NFCFeedBackActivity.v(this.a, "请选择卡类别");
       return;
     }
-    if (TextUtils.isEmpty(NFCFeedBackActivity.c(this.a).getInputedText()))
+    if (TextUtils.isEmpty(NFCFeedBackActivity.getBundleByComponentName(this.a).getInputedText()))
     {
       NFCFeedBackActivity.v(this.a, "请填写发送单位名称");
       return;

@@ -15,7 +15,7 @@ class AuthenticationCameraShootActivity$4
     try
     {
       AuthenticationCameraShootActivity.b(this.a).hasResource();
-      AuthenticationCameraShootActivity.c(this.a);
+      AuthenticationCameraShootActivity.getBundleByComponentName(this.a);
       return;
     }
     catch (Exception localException)

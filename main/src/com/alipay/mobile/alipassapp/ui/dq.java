@@ -14,7 +14,7 @@ final class dq
 
   public final void onClick(View paramView)
   {
-    this.b.c("offerDetails");
+    this.b.getBundleByComponentName("offerDetails");
     if (StringUtils.equals("openWeb", this.a.getType()))
       MemberCardDetailActivity.v(this.b, this.a);
     do

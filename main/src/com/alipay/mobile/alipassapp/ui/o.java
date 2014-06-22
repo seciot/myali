@@ -9,7 +9,7 @@ final class o
 
   public final void run()
   {
-    AlipassDetailActivity_.c(this.a);
+    AlipassDetailActivity_.getBundleByComponentName(this.a);
   }
 }
 

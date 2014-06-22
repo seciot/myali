@@ -12,7 +12,7 @@ final class c
 
   public final void run()
   {
-    AppsCenterFragment.access$000(this.b).c(this.a.getApp());
+    AppsCenterFragment.access$000(this.b).getBundleByComponentName(this.a.getApp());
   }
 }
 

@@ -14,7 +14,7 @@ final class ak extends Thread
   {
     Looper.prepare();
     s.v(this.a, Looper.myLooper());
-    s.c(this.a).requestLocationUpdates("passive", 1000L, 50.0F, s.b(this.a));
+    s.getBundleByComponentName(this.a).requestLocationUpdates("passive", 1000L, 50.0F, s.b(this.a));
     Looper.loop();
   }
 }

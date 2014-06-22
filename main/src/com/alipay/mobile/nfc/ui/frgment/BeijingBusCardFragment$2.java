@@ -16,7 +16,7 @@ class BeijingBusCardFragment$2
 
   public final void b()
   {
-    BeijingBusCardFragment.c(this.a);
+    BeijingBusCardFragment.getBundleByComponentName(this.a);
   }
 }
 

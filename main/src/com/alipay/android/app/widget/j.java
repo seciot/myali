@@ -14,7 +14,7 @@ final class j
 
   public final void onItemClick(AdapterView paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    CustomAlertDialog.c(this.a).onClick(CustomAlertDialog.getBundle(this.a), paramInt);
+    CustomAlertDialog.getBundleByComponentName(this.a).onClick(CustomAlertDialog.getBundle(this.a), paramInt);
   }
 }
 

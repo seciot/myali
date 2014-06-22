@@ -22,7 +22,7 @@ final class h
       NoPasswordActivity.v(this.a, this.a.a.f);
       NoPasswordActivity.getBundle(this.a).setVisibility(0);
       NoPasswordActivity.b(this.a).setVisibility(0);
-      NoPasswordActivity.c(this.a).setType(17);
+      NoPasswordActivity.getBundleByComponentName(this.a).setType(17);
       LogAgent.j("SPSafePay");
       return;
     }
@@ -30,7 +30,7 @@ final class h
     NoPasswordActivity.v(this.a, 0);
     NoPasswordActivity.getBundle(this.a).setVisibility(8);
     NoPasswordActivity.b(this.a).setVisibility(8);
-    NoPasswordActivity.c(this.a).setType(16);
+    NoPasswordActivity.getBundleByComponentName(this.a).setType(16);
   }
 }
 

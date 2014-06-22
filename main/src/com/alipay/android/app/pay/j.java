@@ -18,14 +18,14 @@ final class j
   public final void onServiceConnected(ComponentName paramComponentName, IBinder paramIBinder)
   {
     LogUtils.g();
-    synchronized (PageForBrowser.c(this.a))
+    synchronized (PageForBrowser.getBundleByComponentName(this.a))
     {
       PageForBrowser.v(this.a, IAlixPay.Stub.getBundle(paramIBinder));
       try
       {
         LogUtils.g();
         PageForBrowser.b(this.a).registerCallback(PageForBrowser.getBundle(this.a));
-        PageForBrowser.c(this.a).notify();
+        PageForBrowser.getBundleByComponentName(this.a).notify();
         return;
       }
       catch (RemoteException localRemoteException)

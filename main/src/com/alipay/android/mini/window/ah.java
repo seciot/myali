@@ -17,7 +17,7 @@ final class ah
     this.a.addView(UISubForm.getBundle(this.b));
     if (UISubForm.b(this.b) != null)
       UISubForm.b(this.b).g();
-    UISubForm.c(this.b);
+    UISubForm.getBundleByComponentName(this.b);
     UISubForm.d(this.b);
   }
 }

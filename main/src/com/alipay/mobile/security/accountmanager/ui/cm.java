@@ -18,7 +18,7 @@ final class cm
     {
       ModifyLoginPwdActivity.b(this.a).interrupt();
       this.a.dismissProgressDialog();
-      ModifyLoginPwdActivity.removeBundle(this.a).getMicroApplicationContext().finishApp(ModifyLoginPwdActivity.c(this.a).getAppId(), ModifyLoginPwdActivity.d(this.a).getAppId(), null);
+      ModifyLoginPwdActivity.removeBundle(this.a).getMicroApplicationContext().finishApp(ModifyLoginPwdActivity.getBundleByComponentName(this.a).getAppId(), ModifyLoginPwdActivity.d(this.a).getAppId(), null);
     }
     do
     {

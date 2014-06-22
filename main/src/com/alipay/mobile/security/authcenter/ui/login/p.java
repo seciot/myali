@@ -20,7 +20,7 @@ final class p
       BaseLoginFragment.getBundle(this.c);
       return;
     }
-    BaseLoginFragment.c(this.c).process(this.b);
+    BaseLoginFragment.getBundleByComponentName(this.c).process(this.b);
     BaseLoginFragment.b(this.c);
     CacheSet.getInstance(AlipayApplication.getInstance()).putString("isValidScheme", "false");
   }

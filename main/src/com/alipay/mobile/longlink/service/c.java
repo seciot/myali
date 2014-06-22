@@ -22,7 +22,7 @@ final class c
     if (!this.a.o())
     {
       a.b(this.b);
-      a.c(this.b);
+      a.getBundleByComponentName(this.b);
       com.alipay.mobile.longlink.b.a.a.c localc;
       com.alipay.mobile.longlink.b.a.c localc1;
       if ((a.d(this.b) != null) && (a.d(this.b).length() > 0) && (a.removeBundle(this.b) != 0))

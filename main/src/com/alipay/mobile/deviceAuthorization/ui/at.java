@@ -30,7 +30,7 @@ final class at
     catch (RpcException localRpcException)
     {
       this.a.dismissProgressDialog();
-      SmsCheckActivity.c(this.a);
+      SmsCheckActivity.getBundleByComponentName(this.a);
       localRpcException.getMessage();
       throw localRpcException;
     }
@@ -52,7 +52,7 @@ final class at
     catch (RpcException localRpcException)
     {
       this.a.dismissProgressDialog();
-      SmsCheckActivity.c(this.a);
+      SmsCheckActivity.getBundleByComponentName(this.a);
       localRpcException.getMessage();
       throw localRpcException;
     }
@@ -61,7 +61,7 @@ final class at
   public final void a(Object paramObject, int paramInt)
   {
     if ((this.a == null) || (this.a.isFinishing()))
-      SmsCheckActivity.c(this.a);
+      SmsCheckActivity.getBundleByComponentName(this.a);
     VerifyAuthCodeResp localVerifyAuthCodeResp1;
     do
     {
@@ -74,7 +74,7 @@ final class at
             return;
             if (paramInt != 1)
               break;
-            SmsCheckActivity.c(this.a);
+            SmsCheckActivity.getBundleByComponentName(this.a);
           }
           while ((paramObject == null) || (!(paramObject instanceof VerifyAuthCodeResp)));
           VerifyAuthCodeResp localVerifyAuthCodeResp2 = (VerifyAuthCodeResp)paramObject;
@@ -89,7 +89,7 @@ final class at
           return;
         }
         while (paramInt != 2);
-        SmsCheckActivity.c(this.a);
+        SmsCheckActivity.getBundleByComponentName(this.a);
       }
       while ((paramObject == null) || (!(paramObject instanceof VerifyAuthCodeResp)));
       localVerifyAuthCodeResp1 = (VerifyAuthCodeResp)paramObject;

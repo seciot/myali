@@ -17,7 +17,7 @@ final class f
       for (IUIElement localIUIElement : MspWindow.b(this.a).stop())
         if ((localIUIElement != null) && ((localIUIElement instanceof IDispose)))
           ((IDispose)localIUIElement).dispose();
-      MspWindow.c(this.a);
+      MspWindow.getBundleByComponentName(this.a);
     }
     MspWindow.d(this.a);
     MspWindow.removeBundle(this.a);

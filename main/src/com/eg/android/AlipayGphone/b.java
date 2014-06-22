@@ -9,7 +9,7 @@ final class b
 
   public final void run()
   {
-    AlipayLogin.c(this.a);
+    AlipayLogin.getBundleByComponentName(this.a);
     AlipayLogin.b(this.a);
   }
 }

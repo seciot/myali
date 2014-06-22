@@ -13,8 +13,8 @@ final class t
 
   public final void onDismiss(DialogInterface paramDialogInterface)
   {
-    if (AlipassForShareActivity.c(this.a) != null)
-      AlipassForShareActivity.c(this.a).dismiss();
+    if (AlipassForShareActivity.getBundleByComponentName(this.a) != null)
+      AlipassForShareActivity.getBundleByComponentName(this.a).dismiss();
     this.a.finish();
   }
 }

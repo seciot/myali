@@ -29,7 +29,7 @@ final class bc
     if (this.a.b.getVisibility() == 0)
       ForgotLoginPwdActivity.d(this.a, this.a.i.getInputedText().toString());
     ForgotLoginPwdActivity.v(this.a, this.a.j.getCheckCodeInput().getEtContent().getText().toString());
-    if ((ForgotLoginPwdActivity.c(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.c(this.a).trim())) && (ForgotLoginPwdActivity.d(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.d(this.a).trim())))
+    if ((ForgotLoginPwdActivity.getBundleByComponentName(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.getBundleByComponentName(this.a).trim())) && (ForgotLoginPwdActivity.d(this.a) != null) && (!"".equals(ForgotLoginPwdActivity.d(this.a).trim())))
     {
       this.a.k.setEnabled(true);
       ForgotLoginPwdActivity.i(this.a, this.a.m.getText().toString());

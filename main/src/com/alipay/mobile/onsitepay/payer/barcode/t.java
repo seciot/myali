@@ -9,7 +9,7 @@ final class t
 
   public final void run()
   {
-    BarcodePayActivity_.c(this.a);
+    BarcodePayActivity_.getBundleByComponentName(this.a);
   }
 }
 

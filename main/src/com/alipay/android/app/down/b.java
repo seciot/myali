@@ -46,7 +46,7 @@ final class b extends Handler
         f = 100.0F;
     }
     label153: if (f > 100.0F)
-      FileDownloader.c(this.a);
+      FileDownloader.getBundleByComponentName(this.a);
     FileDownloader.i(this.a).getInitLevel();
     return;
     label180: FileDownloader.i(this.a).getBundle(f);

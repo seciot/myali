@@ -22,7 +22,7 @@ final class fi
   public final void onClick(View paramView)
   {
     this.a.getSharedPreferences("alipass_setting", 0).edit().putInt("travel_setting_version", 1).commit();
-    ((AlipassAppEntryDistributeService)TravelUserGuideActivity.getBundle(this.a).getMicroApplicationContext().getExtServiceByInterface(AlipassAppEntryDistributeService.class.getName())).distributeApp("", "20000021", ((AlipassApp)TravelUserGuideActivity.b(this.a)).getAppBundle(), TravelUserGuideActivity.c(this.a).getMicroApplicationContext());
+    ((AlipassAppEntryDistributeService)TravelUserGuideActivity.getBundle(this.a).getMicroApplicationContext().getExtServiceByInterface(AlipassAppEntryDistributeService.class.getName())).distributeApp("", "20000021", ((AlipassApp)TravelUserGuideActivity.b(this.a)).getAppBundle(), TravelUserGuideActivity.getBundleByComponentName(this.a).getMicroApplicationContext());
     AlipayLogAgent.writeLog(AlipayApplication.getInstance(), BehaviourIdEnum.CLICKED, "20000021", null, "newGuideView", "startMyTravel");
     this.a.finish();
   }

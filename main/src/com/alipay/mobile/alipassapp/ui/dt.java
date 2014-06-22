@@ -18,7 +18,7 @@ final class dt
   public final void onClick(View paramView)
   {
     MemberCardDetailActivity.r(this.a);
-    this.a.c("share");
+    this.a.getBundleByComponentName("share");
     Intent localIntent = new Intent(this.a, AlipassForShareActivity_.class);
     if ((MemberCardDetailActivity.j(this.a) != null) && (MemberCardDetailActivity.j(this.a).getPassBaseInfo() != null))
       localIntent.putExtra("p", String.valueOf(MemberCardDetailActivity.j(this.a).getPassBaseInfo().getPassId()));

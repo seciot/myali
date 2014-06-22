@@ -28,7 +28,7 @@ public class e
     try
     {
       JSONObject localJSONObject = new JSONObject(str);
-      m.c(localJSONObject.optInt("keepLiveTime"));
+      m.getBundleByComponentName(localJSONObject.optInt("keepLiveTime"));
       m.getBundle(localJSONObject.optInt("heartTimeOut"));
       com.alipay.mobile.longlink.service.AppBundle.getAllComponentNames();
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "processPacket() replyTimeout=" + m.stop() / 1000 + "s, keepLiveTime=" + m.getBundleName());

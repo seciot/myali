@@ -9,7 +9,7 @@ final class di
 
   public final void run()
   {
-    ModifyPayPwdActivity_.c(this.a);
+    ModifyPayPwdActivity_.getBundleByComponentName(this.a);
   }
 }
 

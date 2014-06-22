@@ -22,7 +22,7 @@ final class s extends WebViewClient
   {
     boolean bool1 = true;
     super.onPageFinished(paramWebView, paramString);
-    ImageView localImageView1 = MiniWebActivity.c(this.a);
+    ImageView localImageView1 = MiniWebActivity.getBundleByComponentName(this.a);
     boolean bool2;
     ImageView localImageView2;
     if (MiniWebActivity.b(this.a).canGoBack())

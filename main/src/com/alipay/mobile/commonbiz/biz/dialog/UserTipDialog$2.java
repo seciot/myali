@@ -13,8 +13,8 @@ class UserTipDialog$2
 
   public void onClick(View paramView)
   {
-    if (UserTipDialog.c(this.a) != null)
-      UserTipDialog.c(this.a).dismiss();
+    if (UserTipDialog.getBundleByComponentName(this.a) != null)
+      UserTipDialog.getBundleByComponentName(this.a).dismiss();
   }
 }
 

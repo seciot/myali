@@ -32,7 +32,7 @@ public class e
     try
     {
       JSONObject localJSONObject = new JSONObject(str1);
-      o.c(localJSONObject.optInt("keepLiveTime"));
+      o.getBundleByComponentName(localJSONObject.optInt("keepLiveTime"));
       o.b(localJSONObject.optInt("reconnectTime"));
       o.d(localJSONObject.optBoolean("updateLBSInfo"));
       String str2 = localJSONObject.optString("heartTimeout");

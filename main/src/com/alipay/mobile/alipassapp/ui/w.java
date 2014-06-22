@@ -9,7 +9,7 @@ final class w
 
   public final void run()
   {
-    AlipassForShareActivity_.c(this.a);
+    AlipassForShareActivity_.getBundleByComponentName(this.a);
   }
 }
 

@@ -31,11 +31,11 @@ final class dp extends Handler
       }
       if (!StringUtils.equalsIgnoreCase(MemberCardDetailActivity.b(this.a), "dbarcode"))
       {
-        MemberCardDetailActivity.c(this.a).setVisibility(i);
+        MemberCardDetailActivity.getBundleByComponentName(this.a).setVisibility(i);
         MemberCardDetailActivity.getBundle(this.a).setVisibility(i);
         return;
       }
-      APTextView localAPTextView = MemberCardDetailActivity.c(this.a);
+      APTextView localAPTextView = MemberCardDetailActivity.getBundleByComponentName(this.a);
       int j;
       if (StringUtils.isBlank(MemberCardDetailActivity.d(this.a).getAltText(MemberCardDetailActivity.getBundle(this.a).getTag())))
       {

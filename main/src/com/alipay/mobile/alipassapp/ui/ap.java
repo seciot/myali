@@ -12,7 +12,7 @@ final class ap
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.b.a.showProgressDialog("正在删除", true, AlipassListActivity.c(this.b.a));
+    this.b.a.showProgressDialog("正在删除", true, AlipassListActivity.getBundleByComponentName(this.b.a));
     this.b.a.e(null, "del", this.a);
     if (1 == this.a.getItemFrom())
     {

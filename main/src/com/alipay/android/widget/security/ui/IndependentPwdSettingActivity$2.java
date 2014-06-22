@@ -15,7 +15,7 @@ class IndependentPwdSettingActivity$2
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    if (StringUtils.equals("msp", IndependentPwdSettingActivity.c(this.a)))
+    if (StringUtils.equals("msp", IndependentPwdSettingActivity.getBundleByComponentName(this.a)))
     {
       IndependentPwdSettingActivity.d(this.a).getMicroApplicationContext().exit();
       return;

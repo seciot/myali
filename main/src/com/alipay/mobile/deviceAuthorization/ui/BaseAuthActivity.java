@@ -433,7 +433,7 @@ public abstract class BaseAuthActivity extends BaseActivity
         MspDeviceInfoBean localMspDeviceInfoBean = BaseAuthActivity.getBundle(BaseAuthActivity.this).queryCertification();
         localConfirmApproveReq.password = BaseAuthActivity.i(BaseAuthActivity.this, (String)paramArrayOfObject[0]);
         localConfirmApproveReq.approveId = BaseAuthActivity.b(BaseAuthActivity.this);
-        localConfirmApproveReq.approveType = BaseAuthActivity.c(BaseAuthActivity.this);
+        localConfirmApproveReq.approveType = BaseAuthActivity.getBundleByComponentName(BaseAuthActivity.this);
         localConfirmApproveReq.targetId = BaseAuthActivity.d(BaseAuthActivity.this);
         localConfirmApproveReq.targetType = BaseAuthActivity.removeBundle(BaseAuthActivity.this);
         localConfirmApproveReq.partnerId = BaseAuthActivity.f(BaseAuthActivity.this);
@@ -495,7 +495,7 @@ public abstract class BaseAuthActivity extends BaseActivity
       }
       localPrepareApproveReq.tid = localTid;
       localPrepareApproveReq.approveId = BaseAuthActivity.b(BaseAuthActivity.this);
-      localPrepareApproveReq.approveType = BaseAuthActivity.c(BaseAuthActivity.this);
+      localPrepareApproveReq.approveType = BaseAuthActivity.getBundleByComponentName(BaseAuthActivity.this);
       localPrepareApproveReq.targetId = BaseAuthActivity.d(BaseAuthActivity.this);
       localPrepareApproveReq.targetType = BaseAuthActivity.removeBundle(BaseAuthActivity.this);
       localPrepareApproveReq.partnerId = BaseAuthActivity.f(BaseAuthActivity.this);

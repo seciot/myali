@@ -20,8 +20,8 @@ final class aa
     if (!MobileBalancesWarnActivity.getBundle(this.a))
       return;
     MobileBalancesWarnActivity.b(this.a);
-    LogAgentWriteLog.c(this.a);
-    MicroApplicationContext localMicroApplicationContext = MobileBalancesWarnActivity.c(this.a).getMicroApplicationContext();
+    LogAgentWriteLog.getBundleByComponentName(this.a);
+    MicroApplicationContext localMicroApplicationContext = MobileBalancesWarnActivity.getBundleByComponentName(this.a).getMicroApplicationContext();
     Intent localIntent = new Intent(this.a, BalancesWarnInputActivity_.class);
     localIntent.setFlags(67108864);
     localMicroApplicationContext.startActivityForResult(MobileBalancesWarnActivity.d(this.a), localIntent, 10);

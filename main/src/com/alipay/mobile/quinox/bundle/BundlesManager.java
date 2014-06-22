@@ -20,7 +20,7 @@ public interface BundlesManager {
 
 	 boolean b(String paramString);
 
-	 AppBundle c(String paramString);
+	 AppBundle getBundleByComponentName(String paramString);
 
 	 String c();
 

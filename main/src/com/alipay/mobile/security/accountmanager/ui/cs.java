@@ -9,7 +9,7 @@ final class cs
 
   public final void run()
   {
-    ModifyLoginPwdActivity_.c(this.a);
+    ModifyLoginPwdActivity_.getBundleByComponentName(this.a);
   }
 }
 

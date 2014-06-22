@@ -25,7 +25,7 @@ final class dx
   {
     if ((MemberCardDetailActivity.j(this.a) == null) || (MemberCardDetailActivity.k(this.a) == null))
       return;
-    this.a.c("operate");
+    this.a.getBundleByComponentName("operate");
     MemberCardDetailActivity.v(this.a, null);
     View localView = LayoutInflater.from(this.a).inflate(R.layout.member_detail_more_dialog, null);
     MemberCardDetailActivity.v(this.a, new APPopupWindow(localView, -2, -2));

@@ -20,7 +20,7 @@ final class b extends AsyncTask<String, String, AuthSignRes>
   {
     String str = paramArrayOfString[0];
     AuthSignReq localAuthSignReq = new AuthSignReq();
-    localAuthSignReq.setAppId(AuthorizationActivity.c(this.a));
+    localAuthSignReq.setAppId(AuthorizationActivity.getBundleByComponentName(this.a));
     localAuthSignReq.setPlatform("Android");
     localAuthSignReq.setUserId(str);
     localAuthSignReq.setAuthType(AuthorizationActivity.d(this.a));

@@ -11,7 +11,7 @@ final class i
 
   public final void run()
   {
-    b.c(this.a).show();
+    b.getBundleByComponentName(this.a).show();
   }
 }
 

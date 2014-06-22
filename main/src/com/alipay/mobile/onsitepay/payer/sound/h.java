@@ -41,7 +41,7 @@ final class h
   public final void b()
   {
     this.a.t();
-    SendSoundViewActivity.c(this.a);
+    SendSoundViewActivity.getBundleByComponentName(this.a);
     this.a.l.setVisibility(8);
     if (!this.a.getBundle(this.a.getApplicationContext()))
     {

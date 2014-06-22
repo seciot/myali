@@ -9,7 +9,7 @@ final class cd
 
   public final void run()
   {
-    ForgotPayPwdActivity_.c(this.a);
+    ForgotPayPwdActivity_.getBundleByComponentName(this.a);
   }
 }
 

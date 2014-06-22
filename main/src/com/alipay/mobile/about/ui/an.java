@@ -19,7 +19,7 @@ final class an
   {
     c localc = (c)paramView.getTag();
     int i = localc.a;
-    b localb = (b)MultiPictureSelectorActivity.c(this.a.c).get(i);
+    b localb = (b)MultiPictureSelectorActivity.getBundleByComponentName(this.a.c).get(i);
     localb.getBundle(false);
     localb.getBundle(null);
     MultiPictureSelectorActivity.l(this.a.c);

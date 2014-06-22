@@ -53,7 +53,7 @@ final class b
                 ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity7, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 1));
                 localShareContent.setTitle(((SecurityShareInfo)this.b.get("SMS")).getTitle());
                 localShareContent.setContent(((SecurityShareInfo)this.b.get("SMS")).getContent());
-                this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+                this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
                 return;
                 localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
               }
@@ -62,7 +62,7 @@ final class b
               ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity6, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 16));
               localShareContent.setTitle(((SecurityShareInfo)this.b.get("SINA_WEIBO")).getTitle());
               localShareContent.setContent(((SecurityShareInfo)this.b.get("SINA_WEIBO")).getContent());
-              this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+              this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
               return;
               localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
             }
@@ -71,7 +71,7 @@ final class b
             ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity5, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 1048576));
             localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
             localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
-            this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+            this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
             return;
             localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
           }
@@ -80,7 +80,7 @@ final class b
           ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity4, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 16777216));
           localShareContent.setTitle(((SecurityShareInfo)this.b.get("LAIWANG")).getContent());
           localShareContent.setContent(ShareSavePicThireBtnActivity.getBundle(this.c));
-          this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+          this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
           return;
           localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
         }
@@ -89,7 +89,7 @@ final class b
         ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity3, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 256));
         localShareContent.setTitle(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND")).getTitle());
         localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND")).getContent());
-        this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+        this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
         return;
         localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
       }
@@ -98,7 +98,7 @@ final class b
       ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity2, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 4096));
       localShareContent.setTitle(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND_CIRCLE")).getTitle());
       localShareContent.setContent(((SecurityShareInfo)this.b.get("WEIXIN_FRIEND_CIRCLE")).getContent());
-      this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+      this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
       return;
       localShareContent.setUrl(ShareSavePicThireBtnActivity.getBundle(this.c));
     }
@@ -107,7 +107,7 @@ final class b
     ShareSavePicThireBtnActivity.v(localShareSavePicThireBtnActivity1, ShareSavePicThireBtnActivity.v(ShareSavePicThireBtnActivity.b(this.c), 65536));
     localShareContent.setTitle(((SecurityShareInfo)this.b.get("COPY_LINK")).getTitle());
     localShareContent.setContent(((SecurityShareInfo)this.b.get("COPY_LINK")).getContent());
-    this.c.a(ShareSavePicThireBtnActivity.c(this.c), localShareContent, this.a, paramInt);
+    this.c.a(ShareSavePicThireBtnActivity.getBundleByComponentName(this.c), localShareContent, this.a, paramInt);
   }
 }
 

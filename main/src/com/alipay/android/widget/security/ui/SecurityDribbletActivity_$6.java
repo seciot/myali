@@ -9,7 +9,7 @@ class SecurityDribbletActivity_$6
 
   public void run()
   {
-    SecurityDribbletActivity_.c(this.a);
+    SecurityDribbletActivity_.getBundleByComponentName(this.a);
   }
 }
 

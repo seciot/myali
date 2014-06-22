@@ -1,7 +1,7 @@
 package a.a.b.b;
 
 abstract class a extends e
-  implements IOUtil.a.a.a.a
+  implements ZResources.a.a.a.a
 {
   Class[] a;
   String[] b;

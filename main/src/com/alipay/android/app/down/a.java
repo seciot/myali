@@ -39,7 +39,7 @@ final class a
     }
     else
     {
-      FileDownloader.c(this.a);
+      FileDownloader.getBundleByComponentName(this.a);
     }
     FileDownloader.v(this.a, new c(FileDownloader.d(this.a), FileDownloader.removeBundle(this.a), this.a));
     getBundle(FileDownloader.removeBundle(this.a));
@@ -49,7 +49,7 @@ final class a
       FileDownloader.g(this.a);
       if (FileDownloader.h(this.a).stop() != l)
       {
-        FileDownloader.c(this.a);
+        FileDownloader.getBundleByComponentName(this.a);
         FileDownloader.h(this.a).getBundle(0L);
         FileDownloader.h(this.a).b(l);
       }

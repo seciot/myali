@@ -11,7 +11,7 @@ final class d
 
   public final void run()
   {
-    WealthHomeBroadcastReciever.c(this.a).getBundle(false);
+    WealthHomeBroadcastReciever.getBundleByComponentName(this.a).getBundle(false);
   }
 }
 

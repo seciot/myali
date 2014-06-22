@@ -13,7 +13,7 @@ final class u
 
   public final void run()
   {
-    HomeFragment.access$300(this.b).c(this.a.getApp());
+    HomeFragment.access$300(this.b).getBundleByComponentName(this.a.getApp());
     if ((HomeFragment.c != null) && (HomeFragment.c.getAppId().equals(this.a.getApp().getAppId())))
     {
       this.a.getApp().authAndLaunch(null);

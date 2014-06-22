@@ -9,7 +9,7 @@ final class dk
 
   public final void run()
   {
-    C2BConfirmActivity_.c(this.a);
+    C2BConfirmActivity_.getBundleByComponentName(this.a);
   }
 }
 

@@ -18,7 +18,7 @@ final class dw
   {
     try
     {
-      this.a.c("question");
+      this.a.getBundleByComponentName("question");
       Bundle localBundle = new Bundle();
       localBundle.putString("scode", "app_membership_card");
       MemberCardDetailActivity.i(this.a).getMicroApplicationContext().startApp("20000004", "20000011", localBundle);

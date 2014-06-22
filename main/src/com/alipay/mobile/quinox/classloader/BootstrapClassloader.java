@@ -44,7 +44,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		c();
 	}
 
-	public static Class a(String paramString, Collection paramCollection) {
+	public static Class<?> a(String paramString, Collection paramCollection) {
 		// TODO
 		return null;
 		// Object localObject1 = null;
@@ -96,16 +96,15 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		this.initExecutor.b();
 	}
 
-	private boolean d(String paramString) {
+	private boolean d(String bundleName) {
 		synchronized (this.map) {
-			boolean bool = this.map.containsKey(paramString);
-			return bool;
+			return map.containsKey(bundleName);
 		}
 	}
 
-	private d e(String paramString) {
+	private BundleClassloader e(String paramString) {
 		synchronized (this.map) {
-			d locald = (d) this.map.get(paramString);
+			BundleClassloader locald = (BundleClassloader) this.map.get(paramString);
 			return locald;
 		}
 	}
@@ -127,31 +126,31 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		}
 	}
 
-	public final void a(String paramString, d paramd) {
+	public final void a(String paramString, BundleClassloader paramd) {
 		synchronized (this.map) {
 			this.map.put(paramString, paramd);
 			return;
 		}
 	}
 
-	public final Loadable b(String paramString) {
-		if (!d(paramString)) {
-			AppBundle locala = this.bundlesManager.getBundle(paramString);
-			if (this.bundlesManager.b(paramString)) {
+	public final Loadable b(String bundleName) {
+		if (!d(bundleName)) {
+			AppBundle locala = this.bundlesManager.getBundle(bundleName);
+			if (this.bundlesManager.b(bundleName)) {
 				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
 						"getQuinoxClassLoader static link ->bundle: "
-								+ paramString);
+								+ bundleName);
 				return this.e;
 			}
 			if (locala == null) {
 				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
 						"getQuinoxClassLoader can't find bundle: "
-								+ paramString);
+								+ bundleName);
 				return null;
 			}
-			this.initExecutor.a(paramString);
+			this.initExecutor.a(bundleName);
 		}
-		return e(paramString);
+		return e(bundleName);
 	}
 
 	public final String b() {
@@ -178,23 +177,23 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-	protected final Class<?> findClass(String paramString) {
+	protected final Class<?> findClass(String className) throws ClassNotFoundException {
 		com.alipay.mobile.quinox.utils.ZLog.i("BootstrapClassloader", Thread
 				.currentThread().getName()
 				+ ":"
 				+ this
 				+ " findClass: "
-				+ paramString);
-		AppBundle locala = this.bundlesManager.c(paramString);
-		if (locala != null) {
-			Loadable localh = b(locala.getBundleName());
-			if ((localh == null) && (locala.getInitLevel() == 11110000)) {
-				a(locala);
-				localh = b(locala.getBundleName());
+				+ className);
+		AppBundle appBundle = bundlesManager.getBundleByComponentName(className);
+		if (appBundle != null) {
+			Loadable localh = b(appBundle.getBundleName());
+			if ((localh == null) && (appBundle.getInitLevel() == 11110000)) {
+				a(appBundle);
+				localh = b(appBundle.getBundleName());
 			}
 			if ((localh != null) && (localh != this.e))
-				return localh.loadClassFromCurrent(paramString);
+				return localh.loadClassFromCurrent(className);
 		}
-		return this.e.loadClass(paramString);
+		return this.e.loadClass(className);
 	}
 }

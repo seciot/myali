@@ -27,9 +27,9 @@ final class y
         this.a.dismissProgressDialog();
         return;
       }
-      if ((BindPhoneActivity.c(this.a) != null) && (BindPhoneActivity.c(this.a).isAlive()))
+      if ((BindPhoneActivity.getBundleByComponentName(this.a) != null) && (BindPhoneActivity.getBundleByComponentName(this.a).isAlive()))
       {
-        BindPhoneActivity.c(this.a).interrupt();
+        BindPhoneActivity.getBundleByComponentName(this.a).interrupt();
         this.a.dismissProgressDialog();
         return;
       }

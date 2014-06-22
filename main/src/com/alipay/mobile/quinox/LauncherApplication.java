@@ -146,7 +146,7 @@ public class LauncherApplication extends Application {
 			packageInfo = mPackageInfo.get(ctx);
 			handlerThread = new HandlerThread("Init");
 			handlerThread.start();
-			handler = new Handler(this.handlerThread.getLooper());
+			handler = new Handler(handlerThread.getLooper());
 			handler.post(new Runnable() {
 				@Override
 				public void run() {
@@ -285,6 +285,7 @@ public class LauncherApplication extends Application {
 					ex.printStackTrace();
 				}
 			}
+			
 			return LauncherApplication.this.bootstrapClassLoader
 					.loadClass(className);
 		}

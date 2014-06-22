@@ -61,7 +61,7 @@ class NFCMainActivity$CardInfoTask extends AsyncTask<Intent, Void, Void>
   protected void onPreExecute()
   {
     NFCMainActivity.getBundleName();
-    NFCMainActivity.c(this.a);
+    NFCMainActivity.getBundleByComponentName(this.a);
     this.a.showProgressDialog("数据读取中...");
     this.b = System.currentTimeMillis();
   }

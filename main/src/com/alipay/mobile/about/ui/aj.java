@@ -14,7 +14,7 @@ final class aj
   {
     if (MultiPictureSelectorActivity.b(this.b.a) != null)
       MultiPictureSelectorActivity.b(this.b.a).dismiss();
-    MultiPictureSelectorActivity.c(this.b.a).addAll(this.a);
+    MultiPictureSelectorActivity.getBundleByComponentName(this.b.a).addAll(this.a);
     MultiPictureSelectorActivity.d(this.b.a).notifyDataSetChanged();
   }
 }

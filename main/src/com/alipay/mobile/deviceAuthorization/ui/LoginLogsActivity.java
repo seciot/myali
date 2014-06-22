@@ -210,7 +210,7 @@ public class LoginLogsActivity extends BaseActivity
       TextView localTextView2 = (TextView)localView.findViewById(R.id.bW);
       TextView localTextView3 = (TextView)localView.findViewById(R.id.bV);
       ImageView localImageView = (ImageView)localView.findViewById(R.id.bU);
-      LoginLog localLoginLog = (LoginLog)LoginLogsActivity.c(LoginLogsActivity.this).getItem(paramInt);
+      LoginLog localLoginLog = (LoginLog)LoginLogsActivity.getBundleByComponentName(LoginLogsActivity.this).getItem(paramInt);
       if (localLoginLog == null)
         return localView;
       localTextView1.setText(localLoginLog.getIpAddress());

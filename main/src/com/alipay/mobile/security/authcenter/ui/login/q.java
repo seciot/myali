@@ -12,7 +12,7 @@ final class q
   public final void onGestureResult(boolean paramBoolean)
   {
     if ("registbindToFundBao".equals(this.a))
-      this.c.c(this.b);
+      this.c.getBundleByComponentName(this.b);
     do
       while (true)
       {

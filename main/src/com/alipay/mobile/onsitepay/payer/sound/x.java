@@ -9,7 +9,7 @@ final class x
 
   public final void run()
   {
-    SendSoundViewActivity_.c(this.a);
+    SendSoundViewActivity_.getBundleByComponentName(this.a);
   }
 }
 

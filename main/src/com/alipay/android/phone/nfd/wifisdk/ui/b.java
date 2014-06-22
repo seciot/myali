@@ -16,7 +16,7 @@ final class b extends i
     {
       if ((WifiConnectingActivity.b(this.a) != null) && (WifiConnectingActivity.b(this.a).a))
       {
-        WifiConnectingActivity.c(this.a);
+        WifiConnectingActivity.getBundleByComponentName(this.a);
         return;
       }
       this.a.getBundlePath();

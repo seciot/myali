@@ -37,7 +37,7 @@ public class ElementStyle
   {
     getBundle(null);
     b("medium");
-    c(null);
+    getBundleByComponentName(null);
     d(null);
   }
 

@@ -16,7 +16,7 @@ final class e
   {
     HeaderAreaLayout.getBundle(this.a).setVisibility(8);
     HeaderAreaLayout.b(this.a).setVisibility(8);
-    HeaderAreaLayout.c(this.a);
+    HeaderAreaLayout.getBundleByComponentName(this.a);
     HomeLogAgentUtil.a();
   }
 }

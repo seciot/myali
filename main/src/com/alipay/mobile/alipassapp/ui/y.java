@@ -16,7 +16,7 @@ final class y
   public final void onDownloadStart(String paramString1, String paramString2, String paramString3, String paramString4, long paramLong)
   {
     Intent localIntent = new Intent("android.intent.action.VIEW", Uri.parse(paramString1));
-    AlipassHtmlActivity.d(this.a).getMicroApplicationContext().startActivity(AlipassHtmlActivity.c(this.a), localIntent);
+    AlipassHtmlActivity.d(this.a).getMicroApplicationContext().startActivity(AlipassHtmlActivity.getBundleByComponentName(this.a), localIntent);
   }
 }
 

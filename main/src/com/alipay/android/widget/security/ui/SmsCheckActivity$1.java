@@ -28,7 +28,7 @@ class SmsCheckActivity$1
       return;
     }
     SmsCheckActivity.b(this.a).set(false);
-    SmsCheckActivity.c(this.a).dispose();
+    SmsCheckActivity.getBundleByComponentName(this.a).dispose();
     this.a.getBundle(str);
     SecurityUtil.d(AlipayApplication.getInstance(), SmsCheckActivity.getBundle(this.a).getEtContent());
   }

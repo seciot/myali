@@ -23,7 +23,7 @@ final class ac
     for (boolean bool = true; ; bool = false)
     {
       this.a.v("checked", Boolean.valueOf(bool));
-      UICheckBox.c(this.a).setChecked(bool);
+      UICheckBox.getBundleByComponentName(this.a).setChecked(bool);
       UICheckBox.removeBundle(this.a);
       return;
     }

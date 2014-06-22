@@ -12,7 +12,7 @@ final class b
   public final void run()
   {
     GestureActivity.b(this.a);
-    GestureActivity.c(this.a).notifyunLockApp();
+    GestureActivity.getBundleByComponentName(this.a).notifyunLockApp();
   }
 }
 

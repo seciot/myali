@@ -35,12 +35,12 @@ final class ao
     while (true)
     {
       ArrayList localArrayList = new ArrayList();
-      d locald = (d)PermAuthActivity.c(this.b).getAdapter();
+      d locald = (d)PermAuthActivity.getBundleByComponentName(this.b).getAdapter();
       int i = 0;
       while (true)
-        if (i < PermAuthActivity.c(this.b).getChildCount())
+        if (i < PermAuthActivity.getBundleByComponentName(this.b).getChildCount())
         {
-          if (((CheckBox)((LinearLayout)PermAuthActivity.c(this.b).getChildAt(i)).findViewById(R.id.y)).isChecked())
+          if (((CheckBox)((LinearLayout)PermAuthActivity.getBundleByComponentName(this.b).getChildAt(i)).findViewById(R.id.y)).isChecked())
             localArrayList.add(locald.getBundle(i).optionKey);
           i++;
           continue;

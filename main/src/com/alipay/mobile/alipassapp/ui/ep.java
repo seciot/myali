@@ -11,7 +11,7 @@ final class ep
 
   public final void run()
   {
-    this.a.showProgressDialog("加载中", true, MemberCardObtainableListActivity.c(this.a));
+    this.a.showProgressDialog("加载中", true, MemberCardObtainableListActivity.getBundleByComponentName(this.a));
     MemberCardObtainableListActivity.getBundle(this.a).set(false);
     MemberCardObtainableListActivity.b(this.a);
     this.a.getInstance();

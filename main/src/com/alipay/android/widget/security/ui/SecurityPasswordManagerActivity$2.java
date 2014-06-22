@@ -13,7 +13,7 @@ class SecurityPasswordManagerActivity$2
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    SecurityPasswordManagerActivity.c(this.a).finishApp("20000028", "20000028", null);
+    SecurityPasswordManagerActivity.getBundleByComponentName(this.a).finishApp("20000028", "20000028", null);
   }
 }
 

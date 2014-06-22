@@ -20,7 +20,7 @@ final class o
       if (this.a.s)
       {
         this.a.s = false;
-        SendSoundViewActivity.c(this.a);
+        SendSoundViewActivity.getBundleByComponentName(this.a);
         this.a.l.setVisibility(8);
         this.a.m.waveRetry();
         SendSoundViewActivity.d(this.a);

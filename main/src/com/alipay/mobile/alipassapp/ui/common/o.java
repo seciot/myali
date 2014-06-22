@@ -15,7 +15,7 @@ final class o
   {
     if (k.removeBundle(this.a) != null)
     {
-      k.c(this.a).removeView(k.removeBundle(this.a));
+      k.getBundleByComponentName(this.a).removeView(k.removeBundle(this.a));
       k.f(this.a);
     }
     if (k.g(this.a) != null)

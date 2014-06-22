@@ -19,7 +19,7 @@ final class bh extends AsyncTask<String, Object, Object>
       if ((paramObject instanceof AlipassInfo))
       {
         AlipassPreviewActivity.v(this.a, (AlipassInfo)paramObject);
-        AlipassPreviewActivity.c(this.a);
+        AlipassPreviewActivity.getBundleByComponentName(this.a);
         if (!AlipassPreviewActivity.d(this.a))
           this.a.getInitLevel();
       }

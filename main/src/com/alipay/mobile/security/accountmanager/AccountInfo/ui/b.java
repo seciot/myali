@@ -19,7 +19,7 @@ final class b
   {
     try
     {
-      AccountInfoActivity.c(this.a).getMicroApplicationContext().startApp("20000070", "20000027", null);
+      AccountInfoActivity.getBundleByComponentName(this.a).getMicroApplicationContext().startApp("20000070", "20000027", null);
       AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "20000070", "-", "accountManageView", "accountInfoIndex", "accountManage");
       return;
     }

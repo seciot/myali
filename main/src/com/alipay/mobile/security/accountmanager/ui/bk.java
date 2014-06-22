@@ -9,7 +9,7 @@ final class bk
 
   public final void run()
   {
-    ForgotLoginPwdActivity_.c(this.a);
+    ForgotLoginPwdActivity_.getBundleByComponentName(this.a);
   }
 }
 

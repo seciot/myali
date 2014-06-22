@@ -20,7 +20,7 @@ final class b
 
   public final boolean canRefresh()
   {
-    ViewPagerScrollView localViewPagerScrollView = (ViewPagerScrollView)AlipassDetailActivity.c(this.a).findViewById(R.id.alipass_scrollview);
+    ViewPagerScrollView localViewPagerScrollView = (ViewPagerScrollView)AlipassDetailActivity.getBundleByComponentName(this.a).findViewById(R.id.alipass_scrollview);
     if ((localViewPagerScrollView != null) && (localViewPagerScrollView.getScrollY() > 0) && (localViewPagerScrollView.isClick()))
     {
       LogCatLog.v(AlipassDetailActivity.getBundlePath(), "########get touch event ,the reuslt is v.isClick()=true");

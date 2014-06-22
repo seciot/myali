@@ -18,13 +18,13 @@ final class ao
   {
     new StringBuilder("应用授权成功，appId=").append(an.getBundle(this.a)).append("，authCode=").append(paramString2).toString();
     an.v(this.a, an.b(this.a) + "auth_code=" + paramString2);
-    an.c(this.a);
+    an.getBundleByComponentName(this.a);
   }
 
   public final void onNotNeedAuth()
   {
     new StringBuilder("应用不需要授权，appId=").append(an.getBundle(this.a)).toString();
-    an.c(this.a);
+    an.getBundleByComponentName(this.a);
   }
 
   public final void onUserCancel()

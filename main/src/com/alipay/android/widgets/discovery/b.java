@@ -27,7 +27,7 @@ final class b extends BroadcastReceiver
           d locald = d.a(paramContext);
           locald.getBundle(DiscoveryWidgetGroup.access$000(this.a));
           locald.a = DiscoveryWidgetGroup.access$200(this.a);
-          locald.c(DiscoveryWidgetGroup.access$300(this.a));
+          locald.getBundleByComponentName(DiscoveryWidgetGroup.access$300(this.a));
           return;
         }
         DiscoveryWidgetGroup.access$100(this.a);

@@ -14,7 +14,7 @@ final class bd
 
   public final void onClick(View paramView)
   {
-    ActivityApplication localActivityApplication = MobileRechargeActivity.c(this.a);
+    ActivityApplication localActivityApplication = MobileRechargeActivity.getBundleByComponentName(this.a);
     PhoneContactUtil.a(localActivityApplication);
   }
 }

@@ -338,14 +338,14 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
 
     public final int getCount()
     {
-      return MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).size();
+      return MultiPictureSelectorActivity.getBundleByComponentName(MultiPictureSelectorActivity.this).size();
     }
 
     public final Object getItem(int paramInt)
     {
-      if (MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).isEmpty())
+      if (MultiPictureSelectorActivity.getBundleByComponentName(MultiPictureSelectorActivity.this).isEmpty())
         return Integer.valueOf(paramInt);
-      return MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
+      return MultiPictureSelectorActivity.getBundleByComponentName(MultiPictureSelectorActivity.this).get(paramInt);
     }
 
     public final long getItemId(int paramInt)
@@ -386,7 +386,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
       }
       for (MultiPictureSelectorActivity.b localb1 = localb2; ; localb1 = (MultiPictureSelectorActivity.b)paramView.getTag())
       {
-        com.alipay.mobile.about.ui.DexUtil.b localb = (com.alipay.mobile.about.ui.DexUtil.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(paramInt);
+        com.alipay.mobile.about.ui.DexUtil.b localb = (com.alipay.mobile.about.ui.DexUtil.b)MultiPictureSelectorActivity.getBundleByComponentName(MultiPictureSelectorActivity.this).get(paramInt);
         MultiPictureSelectorActivity.i(MultiPictureSelectorActivity.this).e(localb1.a, localb.getInstance(), MultiPictureSelectorActivity.h(MultiPictureSelectorActivity.this));
         if (!localb.stop())
           break label417;
@@ -409,7 +409,7 @@ public class MultiPictureSelectorActivity extends BaseFragmentActivity
     public final void onClick(View paramView)
     {
       int i = ((Integer)paramView.getTag()).intValue();
-      com.alipay.mobile.about.ui.DexUtil.b localb = (com.alipay.mobile.about.ui.DexUtil.b)MultiPictureSelectorActivity.c(MultiPictureSelectorActivity.this).get(i);
+      com.alipay.mobile.about.ui.DexUtil.b localb = (com.alipay.mobile.about.ui.DexUtil.b)MultiPictureSelectorActivity.getBundleByComponentName(MultiPictureSelectorActivity.this).get(i);
       MultiPictureSelectorActivity localMultiPictureSelectorActivity;
       if (localb.stop())
       {

@@ -14,7 +14,7 @@ final class c
 
   public final void onAnimationEnd(Animation paramAnimation)
   {
-    a.c(this.c).post(new d(this));
+    a.getBundleByComponentName(this.c).post(new d(this));
   }
 
   public final void onAnimationRepeat(Animation paramAnimation)

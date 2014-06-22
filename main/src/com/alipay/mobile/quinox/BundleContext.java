@@ -56,7 +56,7 @@ public class BundleContext {
 
 	public String getBundleNameByComponent(String componentName) {
 	    AppBundle locala = app.getBundlesManager()
-				.c(componentName);
+				.getBundleByComponentName(componentName);
 		if (locala == null)
 			return null;
 		return locala.getBundleName();

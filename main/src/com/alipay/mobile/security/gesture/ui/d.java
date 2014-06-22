@@ -22,7 +22,7 @@ final class d
       GestureActivity.d(this.a, this.a.getResources().getString(f.d));
     }
     GestureActivity.a(this.a, BehaviourIdEnum.CLICKED, "setGestureView", "skipButton");
-    GestureActivity.c(this.a).callback(false);
+    GestureActivity.getBundleByComponentName(this.a).callback(false);
   }
 }
 

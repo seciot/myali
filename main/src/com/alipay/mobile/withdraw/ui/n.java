@@ -23,7 +23,7 @@ final class n
     WithdrawActivity.n(this.a).getBundle(true);
     WithdrawActivity.m(this.a).notifyDataSetChanged();
     this.a.getFullBundleName();
-    WithdrawActivity.c(this.a).dismiss();
+    WithdrawActivity.getBundleByComponentName(this.a).dismiss();
   }
 }
 

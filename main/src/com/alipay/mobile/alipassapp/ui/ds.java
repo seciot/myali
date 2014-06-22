@@ -12,7 +12,7 @@ final class ds
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    this.a.a.c("del");
+    this.a.a.getBundleByComponentName("del");
     if (MemberCardDetailActivity.s(this.a.a))
     {
       this.a.a.b(MemberCardDetailActivity.t(this.a.a));

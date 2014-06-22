@@ -16,7 +16,7 @@ final class l
   public final void onClick(View paramView)
   {
     Intent localIntent = new Intent(this.a, ShareSavePicThireBtnActivity.class);
-    SecurityAccountQrCodeActivity.c(this.a).getMicroApplicationContext().startActivityForResult(SecurityAccountQrCodeActivity.b(this.a), localIntent, 4370);
+    SecurityAccountQrCodeActivity.getBundleByComponentName(this.a).getMicroApplicationContext().startActivityForResult(SecurityAccountQrCodeActivity.b(this.a), localIntent, 4370);
   }
 }
 

@@ -13,7 +13,7 @@ final class h
 
   public final void onAnimationEnd(Animation paramAnimation)
   {
-    a.c(this.a).post(new j(this));
+    a.getBundleByComponentName(this.a).post(new j(this));
   }
 
   public final void onAnimationRepeat(Animation paramAnimation)
@@ -22,7 +22,7 @@ final class h
 
   public final void onAnimationStart(Animation paramAnimation)
   {
-    a.c(this.a).post(new i(this));
+    a.getBundleByComponentName(this.a).post(new i(this));
   }
 }
 

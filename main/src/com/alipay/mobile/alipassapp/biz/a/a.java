@@ -52,7 +52,7 @@ public abstract interface a
 
   public abstract boolean b(String paramString);
 
-  public abstract int c(String paramString);
+  public abstract int getBundleByComponentName(String paramString);
 
   public abstract AlipassOffline c(String paramString1, String paramString2);
 

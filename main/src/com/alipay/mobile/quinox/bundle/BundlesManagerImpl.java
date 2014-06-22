@@ -1139,7 +1139,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 		return false;
 	}
 
-	public final AppBundle c(String paramString) {
+	public final AppBundle getBundleByComponentName(String paramString) {
 		Iterator localIterator = b();
 		while (localIterator.hasNext()) {
 			AppBundle locala = (AppBundle) localIterator.next();

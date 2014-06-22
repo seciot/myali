@@ -13,7 +13,7 @@ final class b
 
   public final void run()
   {
-    AppsCenterFragment.access$000(this.b).c(this.a.getApp());
+    AppsCenterFragment.access$000(this.b).getBundleByComponentName(this.a.getApp());
     if ((AppsCenterFragment.b != null) && (AppsCenterFragment.b.getAppId().equals(this.a.getApp().getAppId())))
     {
       this.a.getApp().authAndLaunch(null);

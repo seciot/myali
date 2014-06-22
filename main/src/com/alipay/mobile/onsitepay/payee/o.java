@@ -9,7 +9,7 @@ final class o
 
   public final void run()
   {
-    FacePayeeActivity_.c(this.a);
+    FacePayeeActivity_.getBundleByComponentName(this.a);
   }
 }
 

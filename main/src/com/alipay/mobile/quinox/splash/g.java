@@ -14,7 +14,7 @@ final class g
     if ((c.getBundle(this.a.a) != null) && (!c.b(this.a.a)))
     {
       c.getBundle(this.a.a).setVisibility(8);
-      c.c(this.a.a).start();
+      c.getBundleByComponentName(this.a.a).start();
     }
   }
 }

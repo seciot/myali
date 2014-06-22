@@ -12,12 +12,12 @@ class ActivityWindowScriptable$11
 
   public void run()
   {
-    if (ActivityWindowScriptable.c(this.this$0) == null)
+    if (ActivityWindowScriptable.getBundleByComponentName(this.this$0) == null)
       ActivityWindowScriptable.v(this.this$0, Toast.makeText(ActivityWindowScriptable.d(this.this$0).getApplicationContext(), this.val$message, 0));
-    ActivityWindowScriptable.c(this.this$0).setGravity(17, 0, 0);
-    ActivityWindowScriptable.c(this.this$0).setText(this.val$message);
-    ActivityWindowScriptable.c(this.this$0).setDuration(0);
-    ActivityWindowScriptable.c(this.this$0).show();
+    ActivityWindowScriptable.getBundleByComponentName(this.this$0).setGravity(17, 0, 0);
+    ActivityWindowScriptable.getBundleByComponentName(this.this$0).setText(this.val$message);
+    ActivityWindowScriptable.getBundleByComponentName(this.this$0).setDuration(0);
+    ActivityWindowScriptable.getBundleByComponentName(this.this$0).show();
   }
 }
 

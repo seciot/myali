@@ -11,7 +11,7 @@ class LaunchRouter$2
 
   public void run()
   {
-    LaunchRouter.c(this.a).putCacheLocationInfo();
+    LaunchRouter.getBundleByComponentName(this.a).putCacheLocationInfo();
   }
 }
 

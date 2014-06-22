@@ -28,7 +28,7 @@ final class bz
       }
       while (true)
       {
-        MobileRechargeCashierActivity.c(this.c).getMicroApplicationContext().finishApp("10000003", "10000003", null);
+        MobileRechargeCashierActivity.getBundleByComponentName(this.c).getMicroApplicationContext().finishApp("10000003", "10000003", null);
         return;
         MobileRechargeCashierActivity.b(this.c).getMicroApplicationContext().startApp("10000003", this.b, null);
       }

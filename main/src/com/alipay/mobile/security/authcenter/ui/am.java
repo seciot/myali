@@ -12,7 +12,7 @@ final class am
 
   public final void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    RegisterNewActivity.c(this.a);
+    RegisterNewActivity.getBundleByComponentName(this.a);
     this.a.onBackPressed();
   }
 }

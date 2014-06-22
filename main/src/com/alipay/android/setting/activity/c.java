@@ -24,7 +24,7 @@ final class c
     }
     paramDialogInterface.dismiss();
     this.b.showProgressDialog(null, false, null);
-    this.b.c(str);
+    this.b.getBundleByComponentName(str);
   }
 }
 

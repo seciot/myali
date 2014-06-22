@@ -19,7 +19,7 @@ final class d extends Handler
         break label58;
       SyncAnimatingHelper.v(this.b, false);
       SyncAnimatingHelper.b(this.b);
-      SyncAnimatingHelper.c(this.b).sendEmptyMessageDelayed(4097, 100L);
+      SyncAnimatingHelper.getBundleByComponentName(this.b).sendEmptyMessageDelayed(4097, 100L);
     }
     while (true)
     {

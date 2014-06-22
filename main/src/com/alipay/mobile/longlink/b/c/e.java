@@ -24,7 +24,7 @@ public class e extends AppBundle
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! isGziped=" + k);
     d(k);
     b(i);
-    c(j);
+    getBundleByComponentName(j);
   }
 
   public final void c(byte[] paramArrayOfByte)

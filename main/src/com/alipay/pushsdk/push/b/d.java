@@ -34,7 +34,7 @@ public class d
       HostClassLoader.e(str, "41", "7");
     }
     long l = System.currentTimeMillis();
-    this.b.c(l);
+    this.b.getBundleByComponentName(l);
     if ((this.b.w()) || (o.hasResource()))
     {
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle, "connectionClosedOnError() isFrontPolicy and then to startReconnectionThread...");

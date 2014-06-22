@@ -1,26 +1,26 @@
 package com.alipay.mobile.quinox.utils;
 
 public final class DexUtil {
-	public static String getDexFullPath(String name, final String path) {
-		if (name == null || path == null) {
+	public static String getDexFullPath(String relativePath, final String rootPath) {
+		if (relativePath == null || rootPath == null) {
 			return null;
 		}
 		final StringBuilder sb = new StringBuilder(80);
-		sb.append(path);
-		if (!path.endsWith("/")) {
+		sb.append(rootPath);
+		if (!rootPath.endsWith("/")) {
 			sb.append("/");
 		}
 		
-		final int lastIndex = name.lastIndexOf("/");
+		final int lastIndex = relativePath.lastIndexOf("/");
 		if (lastIndex >= 0) {
-			name = name.substring(lastIndex + 1);
+			relativePath = relativePath.substring(lastIndex + 1);
 		}
 		
-		final int lastIndex2 = name.lastIndexOf(".");
+		final int lastIndex2 = relativePath.lastIndexOf(".");
 		if (lastIndex2 < 0) {
-			sb.append(name);
+			sb.append(relativePath);
 		} else {
-			sb.append(name, 0, lastIndex2);
+			sb.append(relativePath, 0, lastIndex2);
 		}
 		sb.append(".dex");
 		return sb.toString();

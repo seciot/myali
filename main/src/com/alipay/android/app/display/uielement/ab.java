@@ -17,13 +17,13 @@ final class ab
     if ((!UICheckBox.b(this.a)) && (TextUtils.equals(this.a.getBundle("show_toast"), "true")) && (!TextUtils.isEmpty(this.a.getBundle("toast_message"))))
     {
       this.a.t();
-      UICheckBox.c(this.a).setOnCheckedChangeListener(null);
-      CheckBox localCheckBox = UICheckBox.c(this.a);
+      UICheckBox.getBundleByComponentName(this.a).setOnCheckedChangeListener(null);
+      CheckBox localCheckBox = UICheckBox.getBundleByComponentName(this.a);
       if (!paramBoolean);
       for (boolean bool = true; ; bool = false)
       {
         localCheckBox.setChecked(bool);
-        UICheckBox.c(this.a).setOnCheckedChangeListener(this);
+        UICheckBox.getBundleByComponentName(this.a).setOnCheckedChangeListener(this);
         return;
       }
     }

@@ -9,7 +9,7 @@ class SecurityPasswordManagerActivity_$10
 
   public void run()
   {
-    SecurityPasswordManagerActivity_.c(this.a);
+    SecurityPasswordManagerActivity_.getBundleByComponentName(this.a);
   }
 }
 

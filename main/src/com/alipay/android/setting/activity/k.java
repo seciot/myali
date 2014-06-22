@@ -22,12 +22,12 @@ final class k
     {
       PaymentChannelActivity.v(this.c, this.b.e);
       PaymentChannelActivity.b(this.c).setVisibility(0);
-      PaymentChannelActivity.c(this.c).setVisibility(0);
+      PaymentChannelActivity.getBundleByComponentName(this.c).setVisibility(0);
       return;
     }
     PaymentChannelActivity.v(this.c, null);
     PaymentChannelActivity.b(this.c).setVisibility(8);
-    PaymentChannelActivity.c(this.c).setVisibility(8);
+    PaymentChannelActivity.getBundleByComponentName(this.c).setVisibility(8);
   }
 }
 

@@ -24,7 +24,7 @@ final class bt
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
     ForgotPayPwdActivity.v(this.a, this.a.e.getInputedText().toString().replace(" ", ""));
-    if ((ForgotPayPwdActivity.c(this.a) != null) && (!"".equals(ForgotPayPwdActivity.c(this.a).trim())))
+    if ((ForgotPayPwdActivity.getBundleByComponentName(this.a) != null) && (!"".equals(ForgotPayPwdActivity.getBundleByComponentName(this.a).trim())))
     {
       this.a.f.setEnabled(true);
       ForgotPayPwdActivity.d(this.a, this.a.k.getText().toString());

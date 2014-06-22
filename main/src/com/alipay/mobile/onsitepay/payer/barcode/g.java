@@ -12,7 +12,7 @@ final class g
 
   public final void onClick(View paramView)
   {
-    BarcodePayActivity.c(this.a);
+    BarcodePayActivity.getBundleByComponentName(this.a);
   }
 }
 

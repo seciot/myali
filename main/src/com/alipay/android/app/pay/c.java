@@ -37,13 +37,13 @@ final class c
     catch (NetErrorException localNetErrorException)
     {
       LogUtils.a(localNetErrorException);
-      HyperlinkActivity.c(this.c);
+      HyperlinkActivity.getBundleByComponentName(this.c);
       return;
     }
     catch (Exception localException)
     {
       LogUtils.a(localException);
-      HyperlinkActivity.c(this.c);
+      HyperlinkActivity.getBundleByComponentName(this.c);
       return;
     }
     finally

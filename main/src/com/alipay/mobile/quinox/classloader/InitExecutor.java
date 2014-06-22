@@ -225,12 +225,12 @@ public class InitExecutor {
 	private native void dexopt(String paramString1, String paramString2,
 			String paramString3);
 
-	public final d a(String paramString) {
+	public final BundleClassloader a(String paramString) {
 		try {
 			Future localFuture = (Future) this.d.get(paramString);
 			if (localFuture == null)
 				return null;
-			d locald = (d) localFuture.get();
+			BundleClassloader locald = (BundleClassloader) localFuture.get();
 			return locald;
 		} catch (InterruptedException localInterruptedException) {
 			com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor",

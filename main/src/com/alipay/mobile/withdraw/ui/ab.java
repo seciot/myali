@@ -16,7 +16,7 @@ final class ab
   {
     WithdrawSmsCheckActivity.getBundle(this.a).dispose();
     ExtViewUtil.closeSoftInputWindow(this.a);
-    WithdrawSmsCheckActivity.c(this.a);
+    WithdrawSmsCheckActivity.getBundleByComponentName(this.a);
   }
 }
 

@@ -24,7 +24,7 @@ final class ad extends Thread
       ac.b(this.a).start();
     }
     ac.v(this.a, new ag(this.a, (byte)0));
-    ac.a(this.a, ac.c(this.a), 0L, 2.0F);
+    ac.a(this.a, ac.getBundleByComponentName(this.a), 0L, 2.0F);
     ac.v(this.a, new ai(this.a, (byte)0));
     ac.v(this.a, ac.d(this.a));
     ac.removeBundle(this.a);

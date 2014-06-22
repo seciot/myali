@@ -13,7 +13,7 @@ final class q
 
   public final void afterTextChanged(Editable paramEditable)
   {
-    FeedAssistantActivity.d(this.a).setEnabled(FeedAssistantActivity.c(this.a));
+    FeedAssistantActivity.d(this.a).setEnabled(FeedAssistantActivity.getBundleByComponentName(this.a));
   }
 
   public final void beforeTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)

@@ -20,7 +20,7 @@ class a$1 extends PhoneStateListener
       return;
     if (a.b(this.a) != null)
       a.v(this.a, a.b(this.a).getCellLocation());
-    if (a.c(this.a) == null)
+    if (a.getBundleByComponentName(this.a) == null)
       a.v(this.a, paramCellLocation);
     a.v(this.a, n.a());
   }

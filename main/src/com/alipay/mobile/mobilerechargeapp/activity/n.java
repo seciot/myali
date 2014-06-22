@@ -11,7 +11,7 @@ final class n extends TimerTask
   public final void run()
   {
     BalancesWarnInputActivity.b(this.a);
-    if (BalancesWarnInputActivity.c(this.a) <= 0)
+    if (BalancesWarnInputActivity.getBundleByComponentName(this.a) <= 0)
       cancel();
   }
 }

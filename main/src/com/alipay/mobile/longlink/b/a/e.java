@@ -46,7 +46,7 @@ class e
         int i1;
         if (n == m)
         {
-          locala.c(arrayOfByte1);
+          locala.getBundleByComponentName(arrayOfByte1);
           i1 = locala.g() - m;
           com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, AppBundle, "handleRecvMsg() leftHdrLen=" + i1);
           if (i1 > k - 2)
@@ -70,7 +70,7 @@ class e
         if (locala.getBundlePath() == 1)
         {
           arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUitl.b(arrayOfByte3);
-          locala.c(arrayOfByte3.length);
+          locala.getBundleByComponentName(arrayOfByte3.length);
         }
         locala.getBundle(arrayOfByte3);
         com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, AppBundle, "handleRecvMsg() got valid packet! rawData=" + locala.getInitLevel());

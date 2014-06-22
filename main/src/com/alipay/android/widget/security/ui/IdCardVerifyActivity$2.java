@@ -27,7 +27,7 @@ class IdCardVerifyActivity$2
       if ("1802".equals(this.a))
         try
         {
-          IdCardVerifyActivity.c(this.b).startApp(IdCardVerifyActivity.b(this.b).getAppId(), "20000038", null);
+          IdCardVerifyActivity.getBundleByComponentName(this.b).startApp(IdCardVerifyActivity.b(this.b).getAppId(), "20000038", null);
           return;
         }
         catch (AppLoadException localAppLoadException)

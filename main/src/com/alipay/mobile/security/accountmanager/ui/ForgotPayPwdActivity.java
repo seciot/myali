@@ -527,7 +527,7 @@ public class ForgotPayPwdActivity extends BaseActivity
         ForgotPayPwdActivity.l(ForgotPayPwdActivity.this).sendMessage(localMessage);
         return;
       case 1:
-        FoundPasswordResult localFoundPasswordResult1 = ForgotPayPwdActivity.d(ForgotPayPwdActivity.this, ForgotPayPwdActivity.c(ForgotPayPwdActivity.this));
+        FoundPasswordResult localFoundPasswordResult1 = ForgotPayPwdActivity.d(ForgotPayPwdActivity.this, ForgotPayPwdActivity.getBundleByComponentName(ForgotPayPwdActivity.this));
         Bundle localBundle4 = new Bundle();
         localBundle4.putCharSequence("rs", JSON.toJSONString(localFoundPasswordResult1));
         localMessage.setData(localBundle4);

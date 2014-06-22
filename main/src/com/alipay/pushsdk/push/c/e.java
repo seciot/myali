@@ -36,7 +36,7 @@ public class e extends AppBundle
     int n = 0x1 & j >>> 5;
     getBundle(i);
     b(k);
-    c(m);
+    getBundleByComponentName(m);
     d(n);
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);
     BundlesManagerImpl.e(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + k);

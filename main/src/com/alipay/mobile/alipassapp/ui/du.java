@@ -26,7 +26,7 @@ final class du
       String str = localOperation.getFormat();
       if (StringUtils.equals(localOperation.getFormat(), "wave"))
         str = "soundwave";
-      this.a.c(str);
+      this.a.getBundleByComponentName(str);
       Intent localIntent = new Intent(this.a, MemberChargeOffActivity.class);
       localIntent.putExtra("operation", localOperation);
       localIntent.putExtra("passId", MemberCardDetailActivity.t(this.a));

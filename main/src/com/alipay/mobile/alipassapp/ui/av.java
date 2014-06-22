@@ -29,7 +29,7 @@ final class av
       int k;
       if (this.a.getInitLevel())
       {
-        PassListResult localPassListResult2 = AlipassListActivity.f(this.a).c(this.a.getAllBundles());
+        PassListResult localPassListResult2 = AlipassListActivity.f(this.a).getBundleByComponentName(this.a.getAllBundles());
         this.a.b(new a(localPassListResult2, 1));
         if (i != 0)
           if ((localPassListResult2 == null) || (localPassListResult2.getHasCurrent() != 1))
@@ -40,7 +40,7 @@ final class av
         a locala1 = new a();
         if (j != 0)
         {
-          this.a.showProgressDialog("加载中", true, AlipassListActivity.c(this.a));
+          this.a.showProgressDialog("加载中", true, AlipassListActivity.getBundleByComponentName(this.a));
           AlipassListActivity.getBundle(this.a).set(false);
           locala1.d = true;
           AlipassListActivity.b(this.a).set(true);

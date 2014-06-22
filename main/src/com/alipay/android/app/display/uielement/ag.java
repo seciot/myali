@@ -11,8 +11,8 @@ final class ag
 
   public final void run()
   {
-    if (UICheckBox.c(this.b) != null)
-      UICheckBox.c(this.b).setChecked(this.a);
+    if (UICheckBox.getBundleByComponentName(this.b) != null)
+      UICheckBox.getBundleByComponentName(this.b).setChecked(this.a);
   }
 }
 

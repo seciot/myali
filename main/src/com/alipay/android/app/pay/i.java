@@ -21,8 +21,8 @@ final class i
       MainActivity.b(this.b).stop();
       this.c = true;
       MainActivity.v(this.b, this.a.getInitLevel());
-      if (MainActivity.c(this.b) != null)
-        MainActivity.c(this.b).v(this.b, MainActivity.d(this.b));
+      if (MainActivity.getBundleByComponentName(this.b) != null)
+        MainActivity.getBundleByComponentName(this.b).v(this.b, MainActivity.d(this.b));
     }
   }
 }

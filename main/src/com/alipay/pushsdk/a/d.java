@@ -34,7 +34,7 @@ final class d
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, BundlesManagerImpl.stop(), "onComplete() saveCfgPolicy Time is:" + j.getBundle(l));
         Thread.sleep(1000L);
         if (BundlesManagerImpl.b(this.a).getInstance().length() == 0)
-          BundlesManagerImpl.c(this.a).stopService(new Intent(BundlesManagerImpl.c(this.a), NotificationService.class));
+          BundlesManagerImpl.getBundleByComponentName(this.a).stopService(new Intent(BundlesManagerImpl.getBundleByComponentName(this.a), NotificationService.class));
       }
       return;
     }

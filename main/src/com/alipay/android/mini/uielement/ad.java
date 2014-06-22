@@ -18,15 +18,15 @@ final class ad extends BaseAdapter
 
   private String a(int paramInt)
   {
-    if ((UISelectButton.c(this.a) != null) && (paramInt < UISelectButton.c(this.a).size()))
-      return (String)UISelectButton.c(this.a).get(paramInt);
+    if ((UISelectButton.getBundleByComponentName(this.a) != null) && (paramInt < UISelectButton.getBundleByComponentName(this.a).size()))
+      return (String)UISelectButton.getBundleByComponentName(this.a).get(paramInt);
     return null;
   }
 
   public final int getCount()
   {
-    if (UISelectButton.c(this.a) != null)
-      return UISelectButton.c(this.a).size();
+    if (UISelectButton.getBundleByComponentName(this.a) != null)
+      return UISelectButton.getBundleByComponentName(this.a).size();
     return 0;
   }
 

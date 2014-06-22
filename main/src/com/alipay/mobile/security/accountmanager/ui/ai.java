@@ -9,7 +9,7 @@ final class ai
 
   public final void run()
   {
-    BindPhoneActivity_.c(this.a);
+    BindPhoneActivity_.getBundleByComponentName(this.a);
   }
 }
 

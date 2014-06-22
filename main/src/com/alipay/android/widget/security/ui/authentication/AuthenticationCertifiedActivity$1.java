@@ -13,7 +13,7 @@ class AuthenticationCertifiedActivity$1
   public final void a()
   {
     AuthenticationCertifiedActivity.getBundle(AuthenticationCertifiedActivity.getBundle(this.a));
-    AuthenticationCertifiedActivity.d(this.a).finishApp(AuthenticationCertifiedActivity.b(this.a).getAppId(), AuthenticationCertifiedActivity.c(this.a).getAppId(), null);
+    AuthenticationCertifiedActivity.d(this.a).finishApp(AuthenticationCertifiedActivity.b(this.a).getAppId(), AuthenticationCertifiedActivity.getBundleByComponentName(this.a).getAppId(), null);
   }
 }
 

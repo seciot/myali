@@ -18,7 +18,7 @@ class SecurityDribbletActivity$4
     paramDialogInterface.cancel();
     try
     {
-      SecurityDribbletActivity.d(this.a).getMicroApplicationContext().startApp(SecurityDribbletActivity.c(this.a).getAppId(), "20000013", null);
+      SecurityDribbletActivity.d(this.a).getMicroApplicationContext().startApp(SecurityDribbletActivity.getBundleByComponentName(this.a).getAppId(), "20000013", null);
       return;
     }
     catch (AppLoadException localAppLoadException)

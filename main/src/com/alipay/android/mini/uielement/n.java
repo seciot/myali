@@ -17,7 +17,7 @@ final class n
   {
     UIInput.getBundle(this.a).requestFocus();
     UIInput.b(this.a).getInstance();
-    UIPropUtil.v(UIInput.getBundle(this.a).getWindowToken(), UIInput.c(this.a));
+    UIPropUtil.v(UIInput.getBundle(this.a).getWindowToken(), UIInput.getBundleByComponentName(this.a));
   }
 }
 

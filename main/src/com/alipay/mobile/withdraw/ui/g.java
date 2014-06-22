@@ -14,12 +14,12 @@ final class g
   public final void onClick(View paramView)
   {
     WithdrawActivity.e(this.a, "withdraw", "selectFinishTime");
-    if (WithdrawActivity.c(this.a) == null)
+    if (WithdrawActivity.getBundleByComponentName(this.a) == null)
     {
       this.a.getBundlePath();
       return;
     }
-    WithdrawActivity.c(this.a).show();
+    WithdrawActivity.getBundleByComponentName(this.a).show();
   }
 }
 

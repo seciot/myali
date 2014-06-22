@@ -29,8 +29,8 @@ final class e
     while (ZLog.getBundle(this.a) > 0)
     {
       SystemClock.sleep(ZLog.b(this.a));
-      new StringBuilder("startPollingQuery loopNum=").append(ZLog.getBundle(this.a)).append(" isLoopFinish=").append(ZLog.c(this.a)).append(" sonicHashMap.size=").append(this.a.a.size()).toString();
-      if ((ZLog.c(this.a)) || (this.a.a.size() <= 0))
+      new StringBuilder("startPollingQuery loopNum=").append(ZLog.getBundle(this.a)).append(" isLoopFinish=").append(ZLog.getBundleByComponentName(this.a)).append(" sonicHashMap.size=").append(this.a.a.size()).toString();
+      if ((ZLog.getBundleByComponentName(this.a)) || (this.a.a.size() <= 0))
         break;
       new StringBuilder("loopQueryPayThread loopNum=").append(ZLog.getBundle(this.a)).toString();
       SoundWavePayRpcFacade localSoundWavePayRpcFacade;

@@ -9,7 +9,7 @@ final class cg
 
   public final void run()
   {
-    AlipassQueryCardActivity_.c(this.a);
+    AlipassQueryCardActivity_.getBundleByComponentName(this.a);
   }
 }
 

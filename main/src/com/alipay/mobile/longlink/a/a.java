@@ -36,7 +36,7 @@ public class a
     return this.a;
   }
 
-  public void c(String paramString)
+  public void getBundleByComponentName(String paramString)
   {
     this.a = paramString;
   }

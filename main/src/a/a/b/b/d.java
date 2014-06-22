@@ -11,7 +11,7 @@ final class d
   AppBundle.ExceptionHandler.BootstrapClassLoader.IOUtil.ZLog c;
   private int d;
 
-  public d(int paramInt, String paramString, e parame, BootstrapClassLoader.ExceptionHandler.IOUtil.a.LogUtil paramd)
+  public d(int paramInt, String paramString, e parame, BootstrapClassLoader.ExceptionHandler.IOUtil.ZResources.LogUtil paramd)
   {
     this.a = paramString;
     this.b = parame;
