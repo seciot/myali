@@ -121,6 +121,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 
 	private BundleClassloader e(String paramString) {
 		synchronized (this.map) {
+			
 			BundleClassloader locald = (BundleClassloader) this.map.get(paramString);
 			return locald;
 		}
