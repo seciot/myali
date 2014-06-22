@@ -26,7 +26,7 @@ class e
     getInstance();
   }
 
-  private int a(byte[] paramArrayOfByte, int paramInt)
+  private int put(byte[] paramArrayOfByte, int paramInt)
   {
     int i = this.d.getInitLevel();
     ByteArrayInputStream localByteArrayInputStream = new ByteArrayInputStream(paramArrayOfByte);

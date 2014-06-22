@@ -127,7 +127,7 @@ public class PbocCard
     label307: return null;
   }
 
-  private static boolean a(Iso7816.Response paramResponse, ArrayList<byte[]> paramArrayList)
+  private static boolean put(Iso7816.Response paramResponse, ArrayList<byte[]> paramArrayList)
   {
     if (!paramResponse.getBundleName());
     byte[] arrayOfByte;

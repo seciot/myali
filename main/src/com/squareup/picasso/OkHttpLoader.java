@@ -42,7 +42,7 @@ public class OkHttpLoader
     }
   }
 
-  public final Loader.Response a(Uri paramUri, boolean paramBoolean)
+  public final Loader.Response put(Uri paramUri, boolean paramBoolean)
   {
     HttpURLConnection localHttpURLConnection = this.a.open(new URL(paramUri.toString()));
     localHttpURLConnection.setUseCaches(true);

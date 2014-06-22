@@ -48,7 +48,7 @@ public class c
   }
 
   // ERROR //
-  public final org.apache.http.HttpResponse a(java.util.ArrayList paramArrayList1, java.util.ArrayList paramArrayList2)
+  public final org.apache.http.HttpResponse put(java.util.ArrayList paramArrayList1, java.util.ArrayList paramArrayList2)
   {
     // Byte code:
     //   0: aload_0

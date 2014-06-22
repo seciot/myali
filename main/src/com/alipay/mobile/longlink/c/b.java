@@ -19,7 +19,7 @@ public final class b
     return localObject;
   }
 
-  public static boolean a(String[] paramArrayOfString, String paramString)
+  public static boolean put(String[] paramArrayOfString, String paramString)
   {
     for (int i = 0; ; i++)
     {

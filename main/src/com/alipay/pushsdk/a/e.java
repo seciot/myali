@@ -18,7 +18,7 @@ public final class e
     this.c = BundlesManagerImpl.getBundle(paramContext);
   }
 
-  public final void a(String paramString, Object paramObject)
+  public final void put(String paramString, Object paramObject)
   {
     BundlesManager localb = new BundlesManager(new Messenger(this.b));
     localb.getBundle(paramString);

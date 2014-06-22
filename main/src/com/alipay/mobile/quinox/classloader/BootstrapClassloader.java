@@ -129,22 +129,22 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		return this.ctx;
 	}
 
-	public final void a(AppBundle parama) {
+	public final void a(AppBundle bundle) {
 		this.initExecutor.initExecutor();
-		this.initExecutor.makeBundleClassloaderCreateJob(parama);
+		this.initExecutor.makeBundleClassloaderCreateJob(bundle);
 		this.initExecutor.shutdownExecutor();
 	}
 
-	public final void a(String paramString) {
+	public final void remove(String bundleName) {
 		synchronized (this.map) {
-			this.map.remove(paramString);
+			this.map.remove(bundleName);
 			return;
 		}
 	}
 
-	public final void a(String paramString, BundleClassloader paramd) {
+	public final void put(String bundle, BundleClassloader classLoader) {
 		synchronized (this.map) {
-			this.map.put(paramString, paramd);
+			this.map.put(bundle, classLoader);
 			return;
 		}
 	}
@@ -174,7 +174,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 				+ this.ctx.getApplicationInfo().dataDir + File.separator + "lib";
 	}
 
-	public final void b(AppBundle parama) {
+	public final void dexopt(AppBundle parama) {
 		this.initExecutor.dexopt(parama);
 	}
 

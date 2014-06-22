@@ -4,7 +4,7 @@ import com.alipay.pushsdk.push.j;
 
 public final class e
 {
-  public static ZLog a(j paramj, String paramString)
+  public static ZLog put(j paramj, String paramString)
   {
     Object localObject = null;
     if (paramString != null)

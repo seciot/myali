@@ -6,7 +6,7 @@ public abstract interface c
 
   public abstract void getBundle(String paramString);
 
-  public abstract void a(String paramString1, String paramString2);
+  public abstract void put(String paramString1, String paramString2);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

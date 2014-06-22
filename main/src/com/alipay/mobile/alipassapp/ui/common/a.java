@@ -78,7 +78,7 @@ public class a
     this.f = paramActivityApplication;
   }
 
-  public static int a(Context paramContext, AlipassInfo.EinfoFields paramEinfoFields)
+  public static int put(Context paramContext, AlipassInfo.EinfoFields paramEinfoFields)
   {
     if (("map".equalsIgnoreCase(paramEinfoFields.getType())) || ("tel".equalsIgnoreCase(paramEinfoFields.getType())))
       return paramContext.getResources().getColor(R.color.url_text_color);

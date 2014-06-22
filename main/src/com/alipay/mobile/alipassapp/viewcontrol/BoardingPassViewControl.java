@@ -24,7 +24,7 @@ public class BoardingPassViewControl extends a
     this.e = ((BoardingpassPrimaryFieldLayout)this.c.findViewById(R.id.layout_primary));
   }
 
-  protected final void a(List<AlipassInfo.EinfoFields> paramList, AlipassInfo.DisplayInfo paramDisplayInfo)
+  protected final void put(List<AlipassInfo.EinfoFields> paramList, AlipassInfo.DisplayInfo paramDisplayInfo)
   {
     this.e.refresh(paramList, paramDisplayInfo, this.b);
   }

@@ -9,7 +9,7 @@ import com.alipay.mobile.alipassapp.R.string;
 
 public final class ai
 {
-  public static void a(Context paramContext, DialogInterface.OnClickListener paramOnClickListener)
+  public static void put(Context paramContext, DialogInterface.OnClickListener paramOnClickListener)
   {
     new AlertDialog.Builder(paramContext).setMessage(paramContext.getResources().getString(R.string.alipass_delete_message)).setPositiveButton(paramContext.getResources().getString(R.string.alipass_ok), paramOnClickListener).setNegativeButton(paramContext.getResources().getString(R.string.alipass_cancel), null).create().show();
   }

@@ -15,7 +15,7 @@ public class e extends SocketFactory
   }
 
   // ERROR //
-  private Socket a(String paramString, int paramInt)
+  private Socket put(String paramString, int paramInt)
   {
     // Byte code:
     //   0: iconst_4

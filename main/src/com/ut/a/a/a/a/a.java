@@ -42,7 +42,7 @@ public class a extends BundlesManager
     return BundlesManagerImpl.removeBundle(v(paramArrayOfByte, false));
   }
 
-  public static byte[] a(byte[] paramArrayOfByte, boolean paramBoolean)
+  public static byte[] put(byte[] paramArrayOfByte, boolean paramBoolean)
   {
     return e(paramArrayOfByte, paramBoolean, false);
   }

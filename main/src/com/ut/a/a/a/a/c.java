@@ -4,12 +4,12 @@ import java.io.UnsupportedEncodingException;
 
 public class c
 {
-  private static IllegalStateException a(String paramString, UnsupportedEncodingException paramUnsupportedEncodingException)
+  private static IllegalStateException put(String paramString, UnsupportedEncodingException paramUnsupportedEncodingException)
   {
     return new IllegalStateException(paramString + ": " + paramUnsupportedEncodingException);
   }
 
-  public static String a(byte[] paramArrayOfByte, String paramString)
+  public static String put(byte[] paramArrayOfByte, String paramString)
   {
     if (paramArrayOfByte == null)
       return null;

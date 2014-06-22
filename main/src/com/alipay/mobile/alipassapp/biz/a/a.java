@@ -10,13 +10,13 @@ import java.util.List;
 
 public abstract interface a
 {
-  public abstract PassInfoResult a(String paramString1, String paramString2);
+  public abstract PassInfoResult put(String paramString1, String paramString2);
 
   public abstract PassInfoResult a(String paramString1, String paramString2, String paramString3);
 
   public abstract PassListResult getBundle(String paramString);
 
-  public abstract AlipassOffline a(String paramString, long paramLong);
+  public abstract AlipassOffline put(String paramString, long paramLong);
 
   public abstract Object a(String paramString, int paramInt, Class<?> paramClass);
 
@@ -24,13 +24,13 @@ public abstract interface a
 
   public abstract void a(PassInfoResult paramPassInfoResult, String paramString, int paramInt);
 
-  public abstract void a(PassListResult paramPassListResult, String paramString);
+  public abstract void put(PassListResult paramPassListResult, String paramString);
 
   public abstract void a(String paramString1, String paramString2, List<String> paramList);
 
   public abstract void setBundlePath(List<AlipassOffline> paramList);
 
-  public abstract void a(List<String> paramList, String paramString);
+  public abstract void put(List<String> paramList, String paramString);
 
   public abstract void a(List<PassTimelineInfo> paramList, String paramString, int paramInt);
 
@@ -38,7 +38,7 @@ public abstract interface a
 
   public abstract boolean setBundlePath(AlipassOffline paramAlipassOffline);
 
-  public abstract boolean a(String paramString, AlipassOffline paramAlipassOffline);
+  public abstract boolean put(String paramString, AlipassOffline paramAlipassOffline);
 
   public abstract boolean a(String paramString1, String paramString2, String paramString3, PassInfoResult paramPassInfoResult);
 

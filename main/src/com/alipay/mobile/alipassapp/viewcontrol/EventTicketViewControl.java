@@ -72,7 +72,7 @@ public class EventTicketViewControl extends a
     }
   }
 
-  protected final void a(List<AlipassInfo.EinfoFields> paramList, AlipassInfo.DisplayInfo paramDisplayInfo)
+  protected final void put(List<AlipassInfo.EinfoFields> paramList, AlipassInfo.DisplayInfo paramDisplayInfo)
   {
     this.e.refresh(paramList, paramDisplayInfo, this.b);
   }

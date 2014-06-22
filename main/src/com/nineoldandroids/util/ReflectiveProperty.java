@@ -79,7 +79,7 @@ class ReflectiveProperty<T, V> extends Property<T, V>
     }
   }
 
-  private static boolean a(Class<V> paramClass, Class paramClass1)
+  private static boolean put(Class<V> paramClass, Class paramClass1)
   {
     if (paramClass1 != paramClass)
     {

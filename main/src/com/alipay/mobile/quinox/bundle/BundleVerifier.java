@@ -46,7 +46,7 @@ public final class BundleVerifier {
 				Log.e("BundleVerifier", appBundle.getBundleName()
 						+ "deleted jar.");
 				try {
-					this.bundlesManager.j().a(appBundle.getBundleName());
+					this.bundlesManager.j().remove(appBundle.getBundleName());
 				} catch (Exception localException) {
 					Log.e("BundleVerifier", appBundle.getBundleName()
 							+ " delete ", localException);

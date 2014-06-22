@@ -43,7 +43,7 @@ public final class d
     this.a.removeBundle(paramString);
   }
 
-  public final void a(String paramString1, String paramString2)
+  public final void put(String paramString1, String paramString2)
   {
     this.c = false;
     this.d = this.f;

@@ -39,7 +39,7 @@ class Hpack$Reader
     return Hpack.HeaderEntry.access$000((Hpack.HeaderEntry)this.d.get(paramInt));
   }
 
-  private void a(int paramInt, Hpack.HeaderEntry paramHeaderEntry)
+  private void put(int paramInt, Hpack.HeaderEntry paramHeaderEntry)
   {
     int i = paramHeaderEntry.length();
     if (paramInt != this.d.size())

@@ -33,7 +33,7 @@ public class m extends AppBundle
     this.p = paramInt;
   }
 
-  protected final void a(long paramLong, int paramInt)
+  protected final void put(long paramLong, int paramInt)
   {
     if (this.r != null)
       g();

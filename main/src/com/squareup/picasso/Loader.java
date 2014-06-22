@@ -4,7 +4,7 @@ import android.net.Uri;
 
 public abstract interface Loader
 {
-  public abstract Loader.Response a(Uri paramUri, boolean paramBoolean);
+  public abstract Loader.Response put(Uri paramUri, boolean paramBoolean);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

@@ -115,14 +115,14 @@ public class DaoManager
     }
   }
 
-  private static void a(DaoManager.ClassConnectionSource paramClassConnectionSource, Dao<?, ?> paramDao)
+  private static void put(DaoManager.ClassConnectionSource paramClassConnectionSource, Dao<?, ?> paramDao)
   {
     if (BundlesManager == null)
       BundlesManager = new HashMap();
     BundlesManager.put(paramClassConnectionSource, paramDao);
   }
 
-  private static void a(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource, Dao<?, ?> paramDao)
+  private static void put(DaoManager.TableConfigConnectionSource paramTableConfigConnectionSource, Dao<?, ?> paramDao)
   {
     if (BundlesManagerImpl == null)
       BundlesManagerImpl = new HashMap();

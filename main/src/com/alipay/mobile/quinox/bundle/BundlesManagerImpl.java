@@ -325,7 +325,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 		com.alipay.mobile.quinox.classloader.BootstrapClassLoader locala = j();
 		Iterator localIterator = paramMap.values().iterator();
 		while (localIterator.hasNext())
-			locala.b((AppBundle) localIterator.next());
+			locala.dexopt((AppBundle) localIterator.next());
 	}
 
 	private void a(ZipFile paramZipFile) {

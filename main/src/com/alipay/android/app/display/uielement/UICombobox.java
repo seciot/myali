@@ -27,7 +27,7 @@ public class UICombobox extends BaseElement
   private TextView g;
   private boolean h = true;
 
-  private void a(TextView paramTextView, UICombobox.Option paramOption)
+  private void put(TextView paramTextView, UICombobox.Option paramOption)
   {
     UIUtils.e(paramOption.d, paramTextView, 0);
     UIUtils.v(paramOption.c, new al(this, paramOption, paramTextView));

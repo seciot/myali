@@ -19,7 +19,7 @@ public final class DisplayRotate3D
     this.c = paramonCompletedListener;
   }
 
-  public static void a(View paramView, DisplayRotate3D.onCompletedListener paramonCompletedListener)
+  public static void put(View paramView, DisplayRotate3D.onCompletedListener paramonCompletedListener)
   {
     a(paramView, false, -90.0F, paramonCompletedListener);
   }

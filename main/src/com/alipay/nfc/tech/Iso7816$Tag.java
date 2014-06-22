@@ -31,7 +31,7 @@ public final class Iso7816$Tag
     return new Iso7816.Response(c(arrayOfByte));
   }
 
-  public final Iso7816.Response a(int paramInt1, int paramInt2)
+  public final Iso7816.Response put(int paramInt1, int paramInt2)
   {
     byte[] arrayOfByte = new byte[5];
     arrayOfByte[0] = 0;
