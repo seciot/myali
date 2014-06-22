@@ -10,7 +10,7 @@ public class Data
 
   public String getPush_key()
   {
-	//看不懂啊
+	//看不懂
     return this.a;
   }
 
