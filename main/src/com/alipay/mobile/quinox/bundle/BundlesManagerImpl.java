@@ -25,7 +25,7 @@ import com.alipay.mobile.quinox.LauncherApplication;
 
 //c.java
 public final class BundlesManagerImpl implements BundlesManager {
-	private Context a;
+	private Context app;
 	private String b;
 	private String c;
 	private String d;
@@ -33,15 +33,15 @@ public final class BundlesManagerImpl implements BundlesManager {
 	private String[] f;
 	private String[] g;
 	private Map h;
-	private d i;
+	private BundleVerifier i;
 
 	public BundlesManagerImpl(Context paramContext) {
-		this.a = paramContext;
-		this.i = new d(this.a, this);
+		this.app = paramContext;
+		this.i = new BundleVerifier(this.app, this);
 		this.h = new ConcurrentHashMap();
-		this.b = this.a.getDir("plugins", 0).getAbsolutePath();
-		this.c = this.a.getDir("plugins_opt", 0).getAbsolutePath();
-		this.d = this.a.getDir("plugins_lib", 0).getAbsolutePath();
+		this.b = this.app.getDir("plugins", 0).getAbsolutePath();
+		this.c = this.app.getDir("plugins_opt", 0).getAbsolutePath();
+		this.d = this.app.getDir("plugins_lib", 0).getAbsolutePath();
 		this.e = new String[0];
 		this.f = new String[0];
 	}
@@ -64,7 +64,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final File file = new File(s6);
 			final BufferedInputStream bufferedInputStream2 = bufferedInputStream;
 			final File file2 = file;
-			com.alipay.mobile.quinox.utils.FileUitl.saveInputStreamToFile(bufferedInputStream2, file2);
+			com.alipay.mobile.quinox.utils.FileUtil.saveInputStreamToFile(bufferedInputStream2, file2);
 			final BundlesManagerImpl c2 = this;
 			final File file3 = file;
 			final ZipFile zipFile = new ZipFile(file3);
@@ -139,7 +139,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final File file = new File(s6);
 			final BufferedInputStream bufferedInputStream2 = bufferedInputStream;
 			final File file2 = file;
-			com.alipay.mobile.quinox.utils.FileUitl.saveInputStreamToFile(bufferedInputStream2, file2);
+			com.alipay.mobile.quinox.utils.FileUtil.saveInputStreamToFile(bufferedInputStream2, file2);
 			final File file3 = file;
 			final ZipFile zipFile = new ZipFile(file3);
 			final BundlesManagerImpl c2 = this;
@@ -502,11 +502,11 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final String f = a.getBundlePath();
 			final AppBundle h = this.h(c);
 			if (h != null) {
-				com.alipay.mobile.quinox.utils.FileUitl
+				com.alipay.mobile.quinox.utils.FileUtil
 						.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(h.getBundlePath(), this.c));
-				com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(h.getBundlePath());
+				com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(h.getBundlePath());
 			}
-			com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
+			com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
 					.getDexFullPath(f, this.c));
 			// TODO
 			// a.a(this.a(f, a.getBundleName() + "-" + a.k() +
@@ -1075,7 +1075,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 
 	@Override
 	public final void a(final List<String> list) {
-		((LauncherApplication) this.a).LogInfo("upgrade");
+		((LauncherApplication) this.app).LogInfo("upgrade");
 		final HashMap hashMap = new HashMap();
 		final HashMap<String, AppBundle> hashMap2 = new HashMap<String, AppBundle>();
 		final Iterator<String> iterator = list.iterator();
@@ -1091,7 +1091,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			this.a(hashMap2);
 			this.a(hashMap.values().iterator());
 		} catch (Exception ex) {
-			((LauncherApplication) this.a).LogError((Throwable) ex,
+			((LauncherApplication) this.app).LogError((Throwable) ex,
 					"MonitorPoint_DynamicLoad_UpgradeErr");
 			throw new RuntimeException(hashMap2 + "'s dependencies error.");
 		}
@@ -1118,7 +1118,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 		this.f = list.toArray(new String[list.size()]);
 	}
 
-	public final Iterator b() {
+	public final Iterator<AppBundle> getAllBundlesIterator() {
 		ArrayList localArrayList = new ArrayList();
 		synchronized (this.h) {
 			localArrayList.addAll(this.h.values());
@@ -1140,7 +1140,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	public final AppBundle getBundleByComponentName(String paramString) {
-		Iterator localIterator = b();
+		Iterator localIterator = getAllBundlesIterator();
 		while (localIterator.hasNext()) {
 			AppBundle locala = (AppBundle) localIterator.next();
 			String[] arrayOfString = locala.getAllComponentNames();
@@ -1183,21 +1183,21 @@ public final class BundlesManagerImpl implements BundlesManager {
 						return c;
 					}
 				} catch (Exception ex) {
-					((LauncherApplication) this.a).LogError((Throwable) ex,
+					((LauncherApplication) this.app).LogError((Throwable) ex,
 							"MonitorPoint_DynamicLoad_addExternalErr");
 					throw new RuntimeException(g.getFullBundleName() + "'s dependencies error:"
 							+ g.getRequireBundleName());
 				}
 			}
 			this.b(hashMap2);
-			com.alipay.mobile.quinox.utils.FileUitl.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
+			com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
 					.getDexFullPath(s, this.c));
 			this.j().a(g);
 			synchronized (this.h) {
 				this.h.putAll(hashMap2);
 				// monitorexit(this.h)
-				((LauncherApplication) this.a).setupResources();
-				this.a(this.b());
+				((LauncherApplication) this.app).setupResources();
+				this.a(this.getAllBundlesIterator());
 				return c;
 			}
 		}
@@ -1428,7 +1428,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 
 	@Override
 	public final com.alipay.mobile.quinox.classloader.BootstrapClassLoader j() {
-		final ClassLoader classLoader = this.a.getClassLoader();
+		final ClassLoader classLoader = this.app.getClassLoader();
 		if (classLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassLoader) {
 			return (com.alipay.mobile.quinox.classloader.BootstrapClassLoader) classLoader;
 		}

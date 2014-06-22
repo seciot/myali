@@ -241,7 +241,7 @@ public class LauncherApplication extends Application {
 			Object[] arrayOfObject1 = new Object[1];
 			arrayOfObject1[0] = getApplicationInfo().sourceDir;
 			localMethod.invoke(localAssetManager, arrayOfObject1);
-			Iterator localIterator = this.bundlesManager.b();
+			Iterator localIterator = this.bundlesManager.getAllBundlesIterator();
 			while (localIterator.hasNext()) {
 				AppBundle locala = (AppBundle) localIterator.next();
 				if (locala.hasResource()) {

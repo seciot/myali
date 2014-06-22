@@ -13,7 +13,7 @@ final class n extends TimerTask
 
   public final void run()
   {
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, m.hasResource(), "reConnTask() curMsgId=" + m.getBundle(this.a));
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, m.hasResource(), "reConnTask() curMsgId=" + m.getBundle(this.a));
     ZLog.a(ZLog.k, ZLog.B, System.currentTimeMillis(), ZLog.E, 0L, "PushConnection_reConnTask:TimerTask timeout. lastMsgId=" + m.getBundle(this.a));
     Iterator localIterator = this.a.stop().iterator();
     while (localIterator.hasNext())
@@ -31,7 +31,7 @@ final class n extends TimerTask
         localException.printStackTrace();
       }
     }
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(2, m.hasResource(), "reConnTask() connectionClosedOnError has been notify!");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(2, m.hasResource(), "reConnTask() connectionClosedOnError has been notify!");
   }
 }
 

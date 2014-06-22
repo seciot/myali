@@ -55,7 +55,7 @@ public abstract class a
       throw new NullPointerException("Packet listener is null.");
     BundlesManager localb = new BundlesManager(paramc);
     this.c.put(paramc, localb);
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(5, "Connection", "packageListener in the list is " + this.c.size());
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
   public abstract boolean a();

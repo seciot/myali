@@ -153,7 +153,7 @@ public class a
     a();
   }
 
-  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.FileUitl.c paramc)
+  public final void a(MicroApplicationContext paramMicroApplicationContext, com.alipay.mobile.discoverywidget.FileUtil.c paramc)
   {
     this.b = paramMicroApplicationContext;
     this.c = paramMicroApplicationContext.getApplicationContext();

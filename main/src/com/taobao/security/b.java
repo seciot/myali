@@ -13,7 +13,7 @@ public final class b
     a = localArrayList;
     localArrayList.add(new AppBundle.ExceptionHandler((byte)0));
     a.add(new DexUtil.b((byte)0));
-    a.add(new FileUitl.c((byte)0));
+    a.add(new FileUtil.c((byte)0));
   }
 
   public static void a()

@@ -3,7 +3,7 @@ package com.alipay.mobile.quinox.utils;
 import java.io.BufferedInputStream;
 import java.io.File;
 
-public final class FileUitl {
+public final class FileUtil {
 	public static void saveInputStreamToFile(BufferedInputStream paramBufferedInputStream,
 			File paramFile) {
 		// try

@@ -27,11 +27,11 @@ final class l
       j.b(this.b);
       j.getBundleByComponentName(this.b);
       com.alipay.pushsdk.push.ZResources.a.c localc;
-      com.alipay.pushsdk.push.FileUitl.c localc1;
+      com.alipay.pushsdk.push.FileUtil.c localc1;
       if ((j.d(this.b) != null) && (j.d(this.b).length() > 0) && (j.removeBundle(this.b) != 0))
       {
         localc = new com.alipay.pushsdk.push.ZResources.a.c(com.alipay.pushsdk.push.a.a.d.c, j.d(this.b), j.removeBundle(this.b));
-        localc1 = new com.alipay.pushsdk.push.FileUitl.c(j.f(this.b), j.g(this.b), localc);
+        localc1 = new com.alipay.pushsdk.push.FileUtil.c(j.f(this.b), j.g(this.b), localc);
         if ((j.h(this.b) == null) || (!j.h(this.b).equals("1")))
           break label282;
         localc1.getBundle(com.alipay.pushsdk.push.a.d.a);

@@ -13,14 +13,13 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.zip.ZipFile;
-
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.text.TextUtils;
-
 import com.alipay.mobile.quinox.bundle.AppBundle;
 import com.alipay.mobile.quinox.utils.DexUtil;
+import com.alipay.mobile.quinox.utils.FileUtil;
 import com.alipay.mobile.quinox.utils.ZLog;
-
 import dalvik.system.DexFile;
 
 public final class BundleClassloader extends ClassLoader implements Loadable {
@@ -31,8 +30,10 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 	private ZipFile zipFile;
 	private File file;
 
-	public BundleClassloader(final BootstrapClassLoader bootstrapClassLoader, final AppBundle bundle,
-			final String rootPath, final String s2, final ClassLoader classLoader) {
+	@SuppressLint("DefaultLocale")
+	public BundleClassloader(final BootstrapClassLoader bootstrapClassLoader,
+			final AppBundle bundle, final String rootPath, final String s2,
+			final ClassLoader classLoader) {
 		appBundle = bundle;
 		this.bootstrapClassLoader = bootstrapClassLoader;
 		try {
@@ -46,15 +47,14 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 				if (!file.exists()) {
 					final BufferedInputStream bufferedInputStream = new BufferedInputStream(
 							new FileInputStream(bundle.getBundlePath()));
-					com.alipay.mobile.quinox.utils.FileUitl
-							.saveInputStreamToFile(bufferedInputStream, file);
+					FileUtil.saveInputStreamToFile(bufferedInputStream, file);
 					bufferedInputStream.close();
 				}
-				dexFile = DexFile.loadDex(replace,
-						DexUtil.getDexFullPath(bundle.getBundlePath(), rootPath), 0);
+				dexFile = DexFile.loadDex(replace, DexUtil.getDexFullPath(
+						bundle.getBundlePath(), rootPath), 0);
 			} else {
-				dexFile = DexFile.loadDex(bundle.getBundlePath(),
-						DexUtil.getDexFullPath(bundle.getBundlePath(), rootPath), 0);
+				dexFile = DexFile.loadDex(bundle.getBundlePath(), DexUtil
+						.getDexFullPath(bundle.getBundlePath(), rootPath), 0);
 			}
 			zipFile = new ZipFile(bundle.getBundlePath());
 			file = new File(bundle.getBundlePath());
@@ -87,12 +87,10 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 	}
 
 	public final URL findResource(String paramString) {
-		if ((zipFile == null)
-				|| (zipFile.getEntry(paramString) == null))
+		if ((zipFile == null) || (zipFile.getEntry(paramString) == null))
 			return null;
 		try {
-			URL localURL = new URL("jar:" + file.toURL() + "!/"
-					+ paramString);
+			URL localURL = new URL("jar:" + file.toURL() + "!/" + paramString);
 			return localURL;
 		} catch (MalformedURLException localMalformedURLException) {
 			throw new RuntimeException(localMalformedURLException);
@@ -113,8 +111,7 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 			for (int j = 0; j < i; j++) {
 				String str = arrayOfString[j];
 				if ((str != null) && (str.length() > 0)) {
-					Loadable localh = bootstrapClassLoader.b(str
-							.split("@")[0]);
+					Loadable localh = bootstrapClassLoader.b(str.split("@")[0]);
 					if (localh != null)
 						localHashSet.add(localh);
 				}

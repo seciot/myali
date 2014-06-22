@@ -24,7 +24,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	private BundlesManager bundlesManager;
 	private Map map;
 	private InitExecutor initExecutor;
-	private HostClassLoader e;
+	private HostClassLoader hostClassLoader;
 
 	public BootstrapClassLoader(Context context, PathClassLoader pathClassLoader,
 			BundlesManager bundlesManager) {
@@ -33,14 +33,29 @@ public final class BootstrapClassLoader extends PathClassLoader {
 				a(ClassLoader.getSystemClassLoader()));
 		this.ctx = context;
 		this.bundlesManager = bundlesManager;
-		this.e = new HostClassLoader(this, this.ctx.getApplicationInfo().sourceDir, b(),
+		this.hostClassLoader = new HostClassLoader(this, this.ctx.getApplicationInfo().sourceDir, b(),
 				a(ClassLoader.getSystemClassLoader()), pathClassLoader,
 				this.bundlesManager);
 		this.map = new ConcurrentHashMap(10);
 		this.initExecutor = new InitExecutor(this, this.bundlesManager);
-		ExecutorService localExecutorService = Executors.newFixedThreadPool(1,
+		final ExecutorService exeService = Executors.newFixedThreadPool(1,
 				threadFactory);
-		localExecutorService.execute(new c(this, localExecutorService));
+		exeService.execute(new Runnable() {
+			@Override
+			public void run() {
+				while(true){
+					try {
+		                Thread.sleep(10000L);
+		                //TODO
+	//	                BootstrapClassLoader.this.b.e();
+		                exeService.shutdown();
+		                return;
+		            } catch (InterruptedException ex) {
+		                continue;
+		            }
+				}
+			}
+		});
 		c();
 	}
 
@@ -87,7 +102,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 
 	private void c() {
 		this.initExecutor.a();
-		Iterator localIterator = this.bundlesManager.b();
+		Iterator localIterator = this.bundlesManager.getAllBundlesIterator();
 		while (localIterator.hasNext()) {
 			AppBundle locala = (AppBundle) localIterator.next();
 			if ((locala.hasClass()) && (locala.getInitLevel() != 11110000))
@@ -140,7 +155,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
 						"getQuinoxClassLoader static link ->bundle: "
 								+ bundleName);
-				return this.e;
+				return this.hostClassLoader;
 			}
 			if (locala == null) {
 				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
@@ -191,9 +206,9 @@ public final class BootstrapClassLoader extends PathClassLoader {
 				a(appBundle);
 				localh = b(appBundle.getBundleName());
 			}
-			if ((localh != null) && (localh != this.e))
+			if ((localh != null) && (localh != this.hostClassLoader))
 				return localh.loadClassFromCurrent(className);
 		}
-		return this.e.loadClass(className);
+		return this.hostClassLoader.loadClass(className);
 	}
 }

@@ -16,7 +16,7 @@ public class InitExecutor {
 	private ExecutorService exeService;
 	private BootstrapClassLoader bootstrapClassLoader;
 	private BundlesManager bundlersManager;
-	private Map d;
+	private Map<String, Future<?>> bundleMap;
 	private String e;
 
 	// ERROR //
@@ -227,7 +227,7 @@ public class InitExecutor {
 
 	public final BundleClassloader a(String paramString) {
 		try {
-			Future localFuture = (Future) this.d.get(paramString);
+			Future localFuture = (Future) this.bundleMap.get(paramString);
 			if (localFuture == null)
 				return null;
 			BundleClassloader locald = (BundleClassloader) localFuture.get();
@@ -248,18 +248,22 @@ public class InitExecutor {
 	}
 
 	private class MyCallable implements Callable{
+		private AppBundle appBundle;
+		
+		public MyCallable(AppBundle appBundle) {
+			this.appBundle = appBundle;
+		}
+		
+		//加载AppBundle?
 		@Override
 		public Object call() throws Exception {
 			return null;
 		}
 	}
 	
-	public final void a(AppBundle parama) {
-//		Future localFuture = this.exeService.submit(new g(this, parama));
-		Future localFuture = this.exeService.submit(new Callable<?>() {
-			
-		});
-		this.d.put(parama.getBundleName(), localFuture);
+	public final void a(AppBundle appBundle) {
+		Future future = exeService.submit(new MyCallable(appBundle));
+		bundleMap.put(appBundle.getBundleName(), future);
 	}
 
 	public final void b() {

@@ -9,7 +9,7 @@ import com.alipay.pushsdk.push.j;
 public class d
   implements BundlesManagerImpl
 {
-  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.getBundle(ZLog.class);
+  private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.getBundle(ZLog.class);
   private final j b;
 
   public d(j paramj)
@@ -19,12 +19,12 @@ public class d
 
   public final void a()
   {
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle, "connectionClosed()...");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "connectionClosed()...");
   }
 
   public final void setBundlePath(p paramp)
   {
-    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(2, AppBundle, "=== connectionClosedOnError()===");
+    com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(2, AppBundle, "=== connectionClosedOnError()===");
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.a(com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.j, com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.A, System.currentTimeMillis(), com.alipay.pushsdk.BundlesManagerImpl.AppBundle.ZLog.w, System.currentTimeMillis() + 1000 * (1 * o.getBundleName()), "PersistentConnectionListener_connectionClosedOnError:ReconnectInterval=" + 1000 * o.getBundleName());
     String str = paramp.getInstance();
     if ((this.b.getInitLevel() != null) && (this.b.getInitLevel().getInstance()))
@@ -37,7 +37,7 @@ public class d
     this.b.getBundleByComponentName(l);
     if ((this.b.w()) || (o.hasResource()))
     {
-      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUitl.e(3, AppBundle, "connectionClosedOnError() isFrontPolicy and then to startReconnectionThread...");
+      com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "connectionClosedOnError() isFrontPolicy and then to startReconnectionThread...");
       this.b.d(l);
       this.b.p();
       HostClassLoader.e(str, "80", "8");

@@ -16,7 +16,7 @@ public interface BundlesManager {
 
 	 void a(String[] paramArrayOfString);
 
-	 Iterator b();
+	 Iterator<AppBundle> getAllBundlesIterator();
 
 	 boolean b(String paramString);
 

@@ -38,7 +38,7 @@ class e
     {
       try
       {
-        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.FileUitl.getBundle(i);
+        com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.FileUtil.getBundle(i);
         int m = BundlesManager.BundlesManagerImpl;
         byte[] arrayOfByte1 = new byte[m];
         int n = localByteArrayInputStream.read(arrayOfByte1, 0, m);
@@ -69,7 +69,7 @@ class e
         int i3 = locala.getBundleName() + locala.g();
         if (locala.getBundlePath() == 1)
         {
-          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUitl.b(arrayOfByte3);
+          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUtil.b(arrayOfByte3);
           locala.getBundleByComponentName(arrayOfByte3.length);
         }
         locala.getBundle(arrayOfByte3);
