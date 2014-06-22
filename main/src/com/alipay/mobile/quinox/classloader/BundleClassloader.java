@@ -136,29 +136,29 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 		// monitorexit(this)
 	}
 
-	public final Class<?> loadClass(String s) throws ClassNotFoundException {
+	public final Class<?> loadClass(String className) throws ClassNotFoundException {
 		ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":"
-				+ this + " loadClass: " + s);
-		Class<?> clazz = dexFile.loadClass(s, (ClassLoader) this);
+				+ this + " loadClass: " + className);
+		Class<?> clazz = dexFile.loadClass(className, this);
 		if (clazz == null) {
 			ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":"
-					+ this + " loadClass from depends: " + s);
-			clazz = BootstrapClassLoader.a(s, this.getDepends());
+					+ this + " loadClass from depends: " + className);
+			clazz = BootstrapClassLoader.loadFromDepends(className, this.getDepends());
 			if (clazz == null) {
 				throw new ClassNotFoundException(this + " can,t find class: "
-						+ s);
+						+ className);
 			}
 		}
 		return clazz;
 	}
 
-	public final Class<?> loadClassFromCurrent(String s)
+	public final Class<?> loadClassFromCurrent(String className)
 			throws ClassNotFoundException {
 		ZLog.i("BundleClassloader", Thread.currentThread().getName() + ":"
-				+ this + " loadClassFromCurrent: " + s);
-		final Class<?> loadClass = dexFile.loadClass(s, this);
+				+ this + " loadClassFromCurrent: " + className);
+		final Class<?> loadClass = dexFile.loadClass(className, this);
 		if (loadClass == null) {
-			throw new ClassNotFoundException(this + " can,t find class: " + s);
+			throw new ClassNotFoundException(this + " can,t find class: " + className);
 		}
 		return loadClass;
 	}

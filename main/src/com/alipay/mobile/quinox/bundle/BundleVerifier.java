@@ -27,9 +27,9 @@ public final class BundleVerifier {
 	private Signature[] signatures;
 	private boolean e;
 
-	public BundleVerifier(Context paramContext, BundlesManager paramb) {
-		this.ctx = paramContext;
-		this.bundlesManager = paramb;
+	public BundleVerifier(Context app, BundlesManager bundlesManager) {
+		this.ctx = app;
+		this.bundlesManager = bundlesManager;
 	}
 
 	private void a(Map paramMap, Set<AppBundle> bundles, boolean paramBoolean) {

@@ -37,63 +37,69 @@ public class BundleEngine {
 			throw new ActivityNotFoundException("No Activity found to handle "
 					+ intent);
 		}
-		final Intent intent2 = new Intent(intent);
-		intent2.setComponent(null);
-		intent2.setFlags(262144);
+		final Intent realIntent = new Intent(intent);
+		realIntent.setComponent(null);
+		realIntent.setFlags(262144);
 		final BundleContext bundleContext = getBundleContext();
 		final String className = intent.getComponent().getClassName();
-		final String bundleNameByComponent = bundleContext
+		final String bundleName = bundleContext
 				.getBundleNameByComponent(className);
-		if (TextUtils.isEmpty((CharSequence) bundleNameByComponent)) {
+		if (TextUtils.isEmpty(bundleName)) {
 			Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:"
 					+ className + " canNot find bundleName:"
-					+ bundleNameByComponent);
+					+ bundleName);
+			return;
 		}
-		final ClassLoader classLoaderByBundleName = bundleContext
-				.findClassLoaderByBundleName(bundleNameByComponent);
-		if (classLoaderByBundleName == null) {
+		final ClassLoader classLoader = bundleContext
+				.findClassLoaderByBundleName(bundleName);
+		if (classLoader == null) {
 			Log.e("BundleEngine", "ClassLoaderError currentBunldleName:"
-					+ bundleNameByComponent + ",componetClassName:" + className
+					+ bundleName + ",componetClassName:" + className
 					+ " canNot find bundleClassLoader");
+			return;
 		}
-		intent2.setAction("android.intent.action.bundle."
-				+ getProxyClazz(className, classLoaderByBundleName)
+		realIntent.setAction("android.intent.action.bundle."
+				+ getProxyClazz(className, classLoader)
 						.getSimpleName() + "_SHELL");
-		intent2.setData(Uri.parse("content://"
+		realIntent.setData(Uri.parse("content://"
 				+ intent.getComponent().getClassName()));
-		context.startActivity(intent2);
+		context.startActivity(realIntent);
 	}
 
 	public static void startActivityForResult(final Activity activity,
-			final Intent intent, final int n) {
+			final Intent intent, final int reqCode) {
 		if (intent.getComponent() == null) {
 			throw new ActivityNotFoundException("No Activity found to handle "
 					+ intent);
 		}
-		final Intent intent2 = new Intent(intent);
-		intent2.setComponent(null);
-		intent2.setFlags(262144);
+		final Intent realIntent = new Intent(intent);
+		realIntent.setComponent(null);
+		realIntent.setFlags(262144);
 		final BundleContext bundleContext = getBundleContext();
 		final String className = intent.getComponent().getClassName();
-		final String bundleNameByComponent = bundleContext
+		final String bundleName = bundleContext
 				.getBundleNameByComponent(className);
-		if (TextUtils.isEmpty((CharSequence) bundleNameByComponent)) {
+		if (TextUtils.isEmpty(bundleName)) {
 			Log.e("BundleEngine", "ClassLoaderError currentcomponentClassName:"
 					+ className + " canNot find bundleName:"
-					+ bundleNameByComponent);
+					+ bundleName);
+			return;
 		}
-		final ClassLoader classLoaderByBundleName = bundleContext
-				.findClassLoaderByBundleName(bundleNameByComponent);
-		if (classLoaderByBundleName == null) {
+		
+		final ClassLoader classLoader = bundleContext
+				.findClassLoaderByBundleName(bundleName);
+		if (classLoader == null) {
 			Log.e("BundleEngine", "ClassLoaderError currentBunldleName:"
-					+ bundleNameByComponent + ",componetClassName:" + className
+					+ bundleName + ",componetClassName:" + className
 					+ " canNot find bundleClassLoader");
+			return;
 		}
-		intent2.setAction("android.intent.action.bundle."
-				+ getProxyClazz(className, classLoaderByBundleName)
+		
+		realIntent.setAction("android.intent.action.bundle."
+				+ getProxyClazz(className, classLoader)
 						.getSimpleName() + "_SHELL");
-		intent2.setData(Uri.parse("content://"
+		realIntent.setData(Uri.parse("content://"
 				+ intent.getComponent().getClassName()));
-		activity.startActivityForResult(intent2, n);
+		activity.startActivityForResult(realIntent, reqCode);
 	}
 }

@@ -59,7 +59,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		c();
 	}
 
-	public static Class<?> a(String paramString, Collection paramCollection) {
+	public static Class<?> loadFromDepends(String paramString, Collection paramCollection) {
 		// TODO
 		return null;
 		// Object localObject1 = null;

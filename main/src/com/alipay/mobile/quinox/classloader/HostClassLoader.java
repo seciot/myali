@@ -82,7 +82,7 @@ public final class HostClassLoader extends PathClassLoader implements Loadable {
 					}
 				}
 			}
-			Class clazz = BootstrapClassLoader.a(s, set);
+			Class clazz = BootstrapClassLoader.loadFromDepends(s, set);
 			if (clazz == null) {
 				break Label_0132;
 			}
