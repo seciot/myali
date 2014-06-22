@@ -111,7 +111,7 @@ public final class BundleClassloader extends ClassLoader implements Bundleable {
 			for (int j = 0; j < i; j++) {
 				String str = arrayOfString[j];
 				if ((str != null) && (str.length() > 0)) {
-					Bundleable localh = bootstrapClassLoader.b(str.split("@")[0]);
+					Bundleable localh = bootstrapClassLoader.getQuinoxClassLoader(str.split("@")[0]);
 					if (localh != null)
 						localHashSet.add(localh);
 				}

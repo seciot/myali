@@ -29,7 +29,7 @@ public class BundleContext {
 		ClassLoader localClassLoader = app.getClassLoader();
 		if ((localClassLoader instanceof com.alipay.mobile.quinox.classloader.BootstrapClassLoader))
 			localClassLoader = (ClassLoader) ((com.alipay.mobile.quinox.classloader.BootstrapClassLoader) localClassLoader)
-					.b(bundleName);
+					.getQuinoxClassLoader(bundleName);
 		return localClassLoader;
 	}
 
@@ -66,9 +66,9 @@ public class BundleContext {
 		BundlesManager manager = app.getBundlesManager();
 		AppBundle locala = manager.getBundle(paramString);
 		com.alipay.mobile.quinox.classloader.BootstrapClassLoader locala1 = manager.j();
-		if (locala1.b(paramString) == null) {
+		if (locala1.getQuinoxClassLoader(paramString) == null) {
 			locala1.a(locala);
-			locala1.b(paramString);
+			locala1.getQuinoxClassLoader(paramString);
 		}
 	}
 

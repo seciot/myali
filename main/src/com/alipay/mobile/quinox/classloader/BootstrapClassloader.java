@@ -149,7 +149,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		}
 	}
 
-	public final Bundleable b(String bundleName) {
+	public final Bundleable getQuinoxClassLoader(String bundleName) {
 		if (!exists(bundleName)) {
 			AppBundle locala = this.bundlesManager.getBundle(bundleName);
 			if (this.bundlesManager.b(bundleName)) {
@@ -202,10 +202,10 @@ public final class BootstrapClassLoader extends PathClassLoader {
 				+ componentName);
 		AppBundle appBundle = bundlesManager.getBundleByComponentName(componentName);
 		if (appBundle != null) {
-			Bundleable localh = b(appBundle.getBundleName());
+			Bundleable localh = getQuinoxClassLoader(appBundle.getBundleName());
 			if ((localh == null) && (appBundle.getInitLevel() == 11110000)) {
 				a(appBundle);
-				localh = b(appBundle.getBundleName());
+				localh = getQuinoxClassLoader(appBundle.getBundleName());
 			}
 			if ((localh != null) && (localh != this.hostClassLoader))
 				return localh.loadClassFromCurrent(componentName);
