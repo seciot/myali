@@ -9,6 +9,7 @@ import java.util.Observer;
 
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
+import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -27,16 +28,13 @@ import com.alipay.mobile.quinox.utils.ZLog;
 public class LauncherApplication extends Application {
 	private static final String[] a = { "mobile-base-commonbiz",
 			"mobile-framework-framework" };
-	private Object b;
+	private Object packageInfo;
 	private BootstrapClassLoader bootstrapClassLoader;
 	private Resources resources;
 	private BundlesManager bundlesManager;
 	private BundleContext bundleContext;
 	private Application app;
-	// TODO
-	// private d h = new d(this, (byte)0);
-	private Observable observable = new Observable() {
-	};
+	private Observable observable = new Observable() {};
 
 	private Handler handler;
 	private HandlerThread handlerThread;
@@ -125,32 +123,31 @@ public class LauncherApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 		this.isLoadingClass = false;
-		String str1 = getPackageName();
-		int m = Process.myPid();
-		Iterator localIterator = ((ActivityManager) getSystemService("activity"))
+		int currentPid = Process.myPid();
+		ActivityManager.RunningAppProcessInfo currentProcessInfo = null;
+		Iterator<RunningAppProcessInfo> ite = ((ActivityManager) getSystemService("activity"))
 				.getRunningAppProcesses().iterator();
-		ActivityManager.RunningAppProcessInfo localRunningAppProcessInfo;
-		do {
-			if (!localIterator.hasNext())
-				break;
-			localRunningAppProcessInfo = (ActivityManager.RunningAppProcessInfo) localIterator
-					.next();
-		} while (localRunningAppProcessInfo.pid != m);
-		// TODO
-		// for (String str2 = localRunningAppProcessInfo.processName;
-		// !str1.equalsIgnoreCase(str2); str2 = null)
-		// return;
-		// a.a().a(this);
+		while(ite.hasNext()){
+			ActivityManager.RunningAppProcessInfo processInfo = ite.next();
+			if(processInfo.pid == currentPid)
+				currentProcessInfo = processInfo;
+		}
+		
+		if(!getPackageName().equalsIgnoreCase(currentProcessInfo.processName))
+			return;
+		
+		ExceptionHandler.getInstance().setUp(this);
+		
 		try {
-			Context localContext = getBaseContext();
-			Field localField1 = localContext.getClass().getDeclaredField(
+			Context ctx = getBaseContext();
+			Field mPackageInfo = ctx.getClass().getDeclaredField(
 					"mPackageInfo");
-			localField1.setAccessible(true);
-			this.b = localField1.get(localContext);
-			this.handlerThread = new HandlerThread("Init");
-			this.handlerThread.start();
-			this.handler = new Handler(this.handlerThread.getLooper());
-			this.handler.post(new Runnable() {
+			mPackageInfo.setAccessible(true);
+			packageInfo = mPackageInfo.get(ctx);
+			handlerThread = new HandlerThread("Init");
+			handlerThread.start();
+			handler = new Handler(this.handlerThread.getLooper());
+			handler.post(new Runnable() {
 				@Override
 				public void run() {
 					// TODO
@@ -158,12 +155,12 @@ public class LauncherApplication extends Application {
 					LauncherApplication.this.handlerThread.quit();
 				}
 			});
-			ClassLoader localClassLoader = getClass().getClassLoader();
+			ClassLoader classLoader = getClass().getClassLoader();
 			try {
-				Field localField2 = ClassLoader.class
+				Field parent = ClassLoader.class
 						.getDeclaredField("parent");
-				localField2.setAccessible(true);
-				localField2.set(localClassLoader, new OriginClassLoader());
+				parent.setAccessible(true);
+				parent.set(classLoader, new OriginClassLoader());
 				return;
 			} catch (Exception localException) {
 				throw new RuntimeException(localException);
@@ -185,36 +182,39 @@ public class LauncherApplication extends Application {
 			this.app.onTerminate();
 	}
 
-	public boolean pattern(String paramString) {
-		return ((paramString.startsWith("android.")) && (!paramString
-				.startsWith("android.support.")))
-				|| (paramString.startsWith("java"))
-				|| (paramString.startsWith("dalvik."))
-				|| (paramString.startsWith("org.w3c."))
-				|| (paramString.startsWith("junit."))
-				|| (paramString.startsWith("org.apache."))
-				|| (paramString.startsWith("org.xml"))
-				|| (paramString.startsWith("org.json."));
+	/**
+	 * 判断是否用BootstrapClassLoader加载
+	 * @param className
+	 * @return 返回True表示用默认ClassLoader加载, 返回False表示用BootstrapClassLoader加载
+	 */
+	public boolean pattern(String className) {
+		return (className.startsWith("android.") && !className.startsWith("android.support."))
+				|| (className.startsWith("java"))
+				|| (className.startsWith("dalvik."))
+				|| (className.startsWith("org.w3c."))
+				|| (className.startsWith("junit."))
+				|| (className.startsWith("org.apache."))
+				|| (className.startsWith("org.xml"))
+				|| (className.startsWith("org.json."));
 	}
 
-	public boolean patternHost(String paramString) {
-		return (paramString.startsWith("com.alipay.mobile.quinox.bundle"))
-				|| (paramString
-						.startsWith("com.alipay.android.phone.automation.testui.MainTestActivity"))
-				|| (paramString.startsWith("com.eg.android.AlipayGphone"))
-				|| (paramString.startsWith(getPackageName()))
-				|| (paramString
-						.startsWith("com.alipay.mobile.quinox.classloader"))
-				|| (paramString
-						.startsWith("com.alipay.mobile.quinox.resources"))
-				|| (paramString.startsWith("com.alipay.mobile.quinox.splash"))
-				|| (paramString.startsWith("com.alipay.mobile.quinox.utils"))
-				|| (paramString
-						.startsWith("com.alipay.mobile.quinox.LauncherApplication"))
-				|| (paramString
-						.startsWith("com.alipay.mobile.quinox.BundleContext"))
-				|| (paramString
-						.startsWith("com.alipay.mobile.quinox.ExceptionHandler"));
+	/**
+	 * 判断是否用BootstrapClassLoader加载
+	 * @param className
+	 * @return 返回True表示用默认ClassLoader加载, 返回False表示用BootstrapClassLoader加载
+	 */
+	public boolean patternHost(String className) {
+		return (className.startsWith("com.alipay.mobile.quinox.bundle"))
+				|| (className.startsWith("com.alipay.android.phone.automation.testui.MainTestActivity"))
+				|| (className.startsWith("com.eg.android.AlipayGphone"))
+				|| (className.startsWith(getPackageName()))
+				|| (className.startsWith("com.alipay.mobile.quinox.classloader"))
+				|| (className.startsWith("com.alipay.mobile.quinox.resources"))
+				|| (className.startsWith("com.alipay.mobile.quinox.splash"))
+				|| (className.startsWith("com.alipay.mobile.quinox.utils"))
+				|| (className.startsWith("com.alipay.mobile.quinox.LauncherApplication"))
+				|| (className.startsWith("com.alipay.mobile.quinox.BundleContext"))
+				|| (className.startsWith("com.alipay.mobile.quinox.ExceptionHandler"));
 	}
 
 	public void recover() throws IllegalAccessException,

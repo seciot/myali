@@ -24,7 +24,7 @@ public class ApkEngineManager {
 		updateEngine(str);
 	}
 
-	private int a(String paramString) {
+	private int getVersionCode(String paramString) {
 		ZPackageInfo localZPackageInfo = new ZPackageManager(app)
 				.getPackageArchiveInfo(paramString, 1);
 		if (localZPackageInfo != null)
@@ -75,7 +75,7 @@ public class ApkEngineManager {
 	}
 
 	public int getVersion() {
-		return a(a());
+		return getVersionCode(a());
 	}
 
 	public String getVersionName() {
@@ -96,7 +96,7 @@ public class ApkEngineManager {
 	public boolean updateEngine(final String s) {
 		final String a = this.a();
 		boolean copyFile;
-		if (this.a(s) <= this.a(a)) {
+		if (this.getVersionCode(s) <= this.getVersionCode(a)) {
 			copyFile = false;
 		} else {
 			copyFile = MiscUtils.copyFile(s, a);
