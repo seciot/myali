@@ -115,45 +115,51 @@ public final class AppBundle implements Comparable {
 		// 43 49 86 finally
 	}
 
-	public final void a() throws IOException {
-		final JarFile jarFile = new JarFile(this.bundlePath );
-		if (jarFile.getEntry("resources.arsc") != null) {
-			this.hasResource = true;
-		}
-		if (jarFile.getEntry("classes.dex") != null) {
-			this.hasClass = true;
-		}
-		final Attributes mainAttributes = new Manifest(
-				jarFile.getInputStream(jarFile
-						.getJarEntry("META-INF/BUNDLE.MF")))
-				.getMainAttributes();
-		this.bundleName = mainAttributes.getValue("Bundle-Name");
-		this.bundleVersion = mainAttributes.getValue("Bundle-Version");
-		this.initLevel = Integer.parseInt(mainAttributes.getValue("Init-Level"));
-		this.fullBundleName = this.bundleName.concat("@").concat(this.bundleVersion);
-		this.packageNames = mainAttributes.getValue("Package-Name").split(",");
-		final ArrayList<String> appComponentNames = new ArrayList<String>();
-		final String activityNames = mainAttributes.getValue("Activity-Name");
-		if (activityNames != null) {
-			appComponentNames.addAll(Arrays.asList(activityNames.split(",")));
-		}
-		final String serviceNames = mainAttributes.getValue("Service-Name");
-		if (serviceNames != null) {
-			appComponentNames.addAll(Arrays.asList(serviceNames.split(",")));
-		}
-		final String receiverNames = mainAttributes.getValue("Receiver-Name");
-		if (receiverNames != null) {
-			appComponentNames.addAll(Arrays.asList(receiverNames.split(",")));
-		}
-		final String providerNames = mainAttributes.getValue("Provider-Name");
-		if (providerNames != null) {
-			appComponentNames.addAll(Arrays.asList(providerNames.split(",")));
-		}
-		this.allComponentNames = (String[]) appComponentNames.toArray(new String[appComponentNames.size()]);
-		this.packageId = mainAttributes.getValue("Package-Id");
-		final String requireBundle = mainAttributes.getValue("Require-Bundle");
-		if (requireBundle != null) {
-			this.requireBundleNames = requireBundle.split(",");
+	public final void init() {
+		try {
+			final JarFile jarFile = new JarFile(this.bundlePath);
+			if (jarFile.getEntry("resources.arsc") != null) {
+				this.hasResource = true;
+			}
+			if (jarFile.getEntry("classes.dex") != null) {
+				this.hasClass = true;
+			}
+			Attributes mainAttributes = new Manifest(
+					jarFile.getInputStream(jarFile
+							.getJarEntry("META-INF/BUNDLE.MF")))
+					.getMainAttributes();
+			jarFile.close();
+		
+			this.bundleName = mainAttributes.getValue("Bundle-Name");
+			this.bundleVersion = mainAttributes.getValue("Bundle-Version");
+			this.initLevel = Integer.parseInt(mainAttributes.getValue("Init-Level"));
+			this.fullBundleName = this.bundleName.concat("@").concat(this.bundleVersion);
+			this.packageNames = mainAttributes.getValue("Package-Name").split(",");
+			final ArrayList<String> appComponentNames = new ArrayList<String>();
+			final String activityNames = mainAttributes.getValue("Activity-Name");
+			if (activityNames != null) {
+				appComponentNames.addAll(Arrays.asList(activityNames.split(",")));
+			}
+			final String serviceNames = mainAttributes.getValue("Service-Name");
+			if (serviceNames != null) {
+				appComponentNames.addAll(Arrays.asList(serviceNames.split(",")));
+			}
+			final String receiverNames = mainAttributes.getValue("Receiver-Name");
+			if (receiverNames != null) {
+				appComponentNames.addAll(Arrays.asList(receiverNames.split(",")));
+			}
+			final String providerNames = mainAttributes.getValue("Provider-Name");
+			if (providerNames != null) {
+				appComponentNames.addAll(Arrays.asList(providerNames.split(",")));
+			}
+			this.allComponentNames = (String[]) appComponentNames.toArray(new String[appComponentNames.size()]);
+			this.packageId = mainAttributes.getValue("Package-Id");
+			final String requireBundle = mainAttributes.getValue("Require-Bundle");
+			if (requireBundle != null) {
+				this.requireBundleNames = requireBundle.split(",");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 

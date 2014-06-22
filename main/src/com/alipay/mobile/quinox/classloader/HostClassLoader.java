@@ -23,7 +23,7 @@ public final class HostClassLoader extends PathClassLoader implements Bundleable
 		super(paramString1, paramString2, paramClassLoader);
 		this.pathClassLoader = paramPathClassLoader;
 		this.bootstrapClassLoader = parama;
-		this.app = ((LauncherApplication) this.bootstrapClassLoader.a());
+		this.app = ((LauncherApplication) this.bootstrapClassLoader.getContext());
 		this.d = bundlesManager.g();
 		this.e = bundlesManager.h();
 	}

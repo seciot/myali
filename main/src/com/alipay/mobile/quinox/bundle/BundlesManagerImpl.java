@@ -26,22 +26,22 @@ import com.alipay.mobile.quinox.LauncherApplication;
 //c.java
 public final class BundlesManagerImpl implements BundlesManager {
 	private Context app;
-	private String b;
-	private String c;
-	private String d;
+	private String plugins_path;
+	private String plugins_opt_path;
+	private String plugins_lib_path;
 	private String[] e;
 	private String[] f;
 	private String[] g;
-	private Map h;
-	private BundleVerifier i;
+	private Map map;
+	private BundleVerifier bundleVerifier;
 
 	public BundlesManagerImpl(Context paramContext) {
 		this.app = paramContext;
-		this.i = new BundleVerifier(this.app, this);
-		this.h = new ConcurrentHashMap();
-		this.b = this.app.getDir("plugins", 0).getAbsolutePath();
-		this.c = this.app.getDir("plugins_opt", 0).getAbsolutePath();
-		this.d = this.app.getDir("plugins_lib", 0).getAbsolutePath();
+		this.bundleVerifier = new BundleVerifier(app, this);
+		this.map = new ConcurrentHashMap();
+		this.plugins_path = app.getDir("plugins", 0).getAbsolutePath();
+		this.plugins_opt_path = app.getDir("plugins_opt", 0).getAbsolutePath();
+		this.plugins_lib_path = app.getDir("plugins_lib", 0).getAbsolutePath();
 		this.e = new String[0];
 		this.f = new String[0];
 	}
@@ -54,7 +54,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 					new FileInputStream(s));
 			final StringBuilder sb = new StringBuilder();
 			final BundlesManagerImpl c = this;
-			final String s3 = c.b;
+			final String s3 = c.plugins_path;
 			final StringBuilder sb2 = sb.append(s3);
 			final String s4 = File.separator;
 			final StringBuilder sb3 = sb2.append(s4);
@@ -129,7 +129,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			bufferedInputStream = new BufferedInputStream(resourceAsStream);
 			final StringBuilder sb = new StringBuilder();
 			final BundlesManagerImpl c = this;
-			final String s3 = c.b;
+			final String s3 = c.plugins_path;
 			final StringBuilder sb2 = sb.append(s3);
 			final String s4 = File.separator;
 			final StringBuilder sb3 = sb2.append(s4);
@@ -212,8 +212,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 			while (true) {
 				final AppBundle a = new AppBundle(name);
 				a.a(array, zipFile);
-				synchronized (this.h) {
-					this.h.put(a.getBundleName(), a);
+				synchronized (this.map) {
+					this.map.put(a.getBundleName(), a);
 					return;
 					// TODO
 					// name = zipFile.getName();
@@ -503,11 +503,11 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final AppBundle h = this.h(c);
 			if (h != null) {
 				com.alipay.mobile.quinox.utils.FileUtil
-						.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(h.getBundlePath(), this.c));
+						.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(h.getBundlePath(), this.plugins_opt_path));
 				com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(h.getBundlePath());
 			}
 			com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
-					.getDexFullPath(f, this.c));
+					.getDexFullPath(f, this.plugins_opt_path));
 			// TODO
 			// a.a(this.a(f, a.getBundleName() + "-" + a.k() +
 			// ".jar").getAbsolutePath());
@@ -552,23 +552,21 @@ public final class BundlesManagerImpl implements BundlesManager {
 		return false;
 	}
 
-	private static AppBundle g(String paramString) {
-		AppBundle locala = new AppBundle(paramString);
-		// TODO 加载?
-		// locala.a();
-		return locala;
+	private static AppBundle createAppBundle(String bundlePath) {
+		AppBundle appBundle = new AppBundle(bundlePath);
+		appBundle.init();
+		return appBundle;
 	}
 
 	private AppBundle h(String paramString) {
-		synchronized (this.h) {
-			AppBundle locala = (AppBundle) this.h.get(paramString);
-			return locala;
+		synchronized (map) {
+			return (AppBundle) map.get(paramString);
 		}
 	}
 
 	private boolean i(String paramString) {
-		synchronized (this.h) {
-			boolean bool = this.h.containsKey(paramString);
+		synchronized (this.map) {
+			boolean bool = this.map.containsKey(paramString);
 			return bool;
 		}
 	}
@@ -848,8 +846,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	private Collection l() {
-		synchronized (this.h) {
-			Collection localCollection = this.h.values();
+		synchronized (this.map) {
+			Collection localCollection = this.map.values();
 			return localCollection;
 		}
 	}
@@ -1080,13 +1078,13 @@ public final class BundlesManagerImpl implements BundlesManager {
 		final HashMap<String, AppBundle> hashMap2 = new HashMap<String, AppBundle>();
 		final Iterator<String> iterator = list.iterator();
 		while (iterator.hasNext()) {
-			final AppBundle g = g(iterator.next());
+			final AppBundle g = createAppBundle(iterator.next());
 			hashMap2.put(g.getBundleName(), g);
 		}
 		hashMap.putAll(this.f());
 		hashMap.putAll(hashMap2);
 		try {
-			this.i.a(hashMap, false);
+			this.bundleVerifier.a(hashMap, false);
 			this.b(hashMap2);
 			this.a(hashMap2);
 			this.a(hashMap.values().iterator());
@@ -1120,8 +1118,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 
 	public final Iterator<AppBundle> getAllBundlesIterator() {
 		ArrayList localArrayList = new ArrayList();
-		synchronized (this.h) {
-			localArrayList.addAll(this.h.values());
+		synchronized (this.map) {
+			localArrayList.addAll(this.map.values());
 			Collections.sort(localArrayList);
 			return localArrayList.iterator();
 		}
@@ -1153,11 +1151,11 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	public final String c() {
-		return this.c;
+		return this.plugins_opt_path;
 	}
 
 	public final String d() {
-		return this.d;
+		return this.plugins_lib_path;
 	}
 
 	public final String d(String s) {
@@ -1166,7 +1164,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 			final String c;
 			final HashMap<String, AppBundle> hashMap2;
 			synchronized (this) {
-				g = g(s);
+				g = createAppBundle(s);
 				c = g.getBundleName();
 				final HashMap hashMap = new HashMap();
 				hashMap2 = new HashMap<String, AppBundle>();
@@ -1174,7 +1172,7 @@ public final class BundlesManagerImpl implements BundlesManager {
 				hashMap.putAll(this.f());
 				hashMap.putAll(hashMap2);
 				try {
-					this.i.a(hashMap, false);
+					this.bundleVerifier.a(hashMap, false);
 					if (this.i(c)) {
 						if (com.alipay.mobile.quinox.utils.StringUtil.a(g.getBundleVersion(), this.h(c)
 								.getBundleVersion())) {
@@ -1191,10 +1189,10 @@ public final class BundlesManagerImpl implements BundlesManager {
 			}
 			this.b(hashMap2);
 			com.alipay.mobile.quinox.utils.FileUtil.deleteFileIfExists(com.alipay.mobile.quinox.utils.DexUtil
-					.getDexFullPath(s, this.c));
+					.getDexFullPath(s, this.plugins_opt_path));
 			this.j().a(g);
-			synchronized (this.h) {
-				this.h.putAll(hashMap2);
+			synchronized (this.map) {
+				this.map.putAll(hashMap2);
 				// monitorexit(this.h)
 				((LauncherApplication) this.app).setupResources();
 				this.a(this.getAllBundlesIterator());
@@ -1397,8 +1395,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 	public final void removeBundle(final String s) {
 		// TODO appbundle卸载
 		synchronized (this) {
-			final AppBundle g = g(s);
-			synchronized (this.h) {
+			final AppBundle g = createAppBundle(s);
+			synchronized (this.map) {
 				// TODO
 				// this.h.remove(g.c());
 				// monitorexit(this.h)
@@ -1408,8 +1406,8 @@ public final class BundlesManagerImpl implements BundlesManager {
 	}
 
 	public final Map f() {
-		synchronized (this.h) {
-			Map localMap2 = this.h;
+		synchronized (this.map) {
+			Map localMap2 = this.map;
 			return localMap2;
 		}
 	}

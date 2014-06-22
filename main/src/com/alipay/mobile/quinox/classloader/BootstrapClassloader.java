@@ -102,31 +102,30 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	private void c() {
-		this.initExecutor.initExecutor();
-		Iterator localIterator = this.bundlesManager.getAllBundlesIterator();
-		while (localIterator.hasNext()) {
-			AppBundle locala = (AppBundle) localIterator.next();
-			if ((locala.hasClass()) && (locala.getInitLevel() != 11110000))
-				this.initExecutor.makeBundleClassloaderCreateJob(locala);
+		initExecutor.initExecutor();
+		Iterator<AppBundle> bundlesIte = bundlesManager.getAllBundlesIterator();
+		while (bundlesIte.hasNext()) {
+			AppBundle appBundle = (AppBundle) bundlesIte.next();
+			if ((appBundle.hasClass()) && (appBundle.getInitLevel() != 11110000))
+				initExecutor.makeBundleClassloaderCreateJob(appBundle);
 		}
-		this.initExecutor.shutdownExecutor();
+		initExecutor.shutdownExecutor();
 	}
 
 	private boolean exists(String bundleName) {
-		synchronized (this.map) {
+		synchronized (map) {
 			return map.containsKey(bundleName);
 		}
 	}
 
-	private BundleClassloader e(String paramString) {
-		synchronized (this.map) {
-			BundleClassloader locald = (BundleClassloader) this.map.get(paramString);
-			return locald;
+	private BundleClassloader e(String bundleName) {
+		synchronized (map) {
+			return (BundleClassloader) map.get(bundleName);
 		}
 	}
 
-	public final Context a() {
-		return this.ctx;
+	public final Context getContext() {
+		return ctx;
 	}
 
 	public final void a(AppBundle bundle) {
@@ -136,15 +135,15 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	public final void remove(String bundleName) {
-		synchronized (this.map) {
-			this.map.remove(bundleName);
+		synchronized (map) {
+			map.remove(bundleName);
 			return;
 		}
 	}
 
 	public final void put(String bundle, BundleClassloader classLoader) {
-		synchronized (this.map) {
-			this.map.put(bundle, classLoader);
+		synchronized (map) {
+			map.put(bundle, classLoader);
 			return;
 		}
 	}
