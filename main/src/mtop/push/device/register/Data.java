@@ -10,6 +10,7 @@ public class Data
 
   public String getPush_key()
   {
+	//¿´²»¶®
     return this.a;
   }
 
