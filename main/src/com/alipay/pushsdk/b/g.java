@@ -11,10 +11,10 @@ final class g
   {
     try
     {
-      String str = new AppBundle(this.a.getInstance(), HostClassLoader.getBundle(this.b)).b(this.a.stop().toString());
+      String str = new AppBundle(this.a.getInstance(), HostClassLoader.getBundle(this.b)).dexopt(this.a.stop().toString());
       if ((str != null) && (((String)str).length() > 0))
       {
-        this.a.b(str);
+        this.a.dexopt(str);
         this.a.getBundle(3);
         return;
       }

@@ -17,7 +17,7 @@ final class ao
   public final void onAuthSuccess(String paramString1, String paramString2)
   {
     new StringBuilder("应用授权成功，appId=").append(an.getBundle(this.a)).append("，authCode=").append(paramString2).toString();
-    an.v(this.a, an.b(this.a) + "auth_code=" + paramString2);
+    an.v(this.a, an.dexopt(this.a) + "auth_code=" + paramString2);
     an.getBundleByComponentName(this.a);
   }
 

@@ -16,7 +16,7 @@ final class f
     WithdrawActivity.e(this.a, "withdraw", "selectCard");
     if (WithdrawActivity.getBundle(this.a) == null)
     {
-      WithdrawActivity.b(this.a);
+      WithdrawActivity.dexopt(this.a);
       return;
     }
     WithdrawActivity.getBundle(this.a).show();

@@ -19,7 +19,7 @@ final class z
     localLoginInfo.b(false);
     if (paramInt == -1)
     {
-      this.a.b(localLoginInfo);
+      this.a.dexopt(localLoginInfo);
       return;
     }
     localLoginInfo.d("T");

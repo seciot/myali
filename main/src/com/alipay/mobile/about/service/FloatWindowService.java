@@ -50,10 +50,10 @@ public class FloatWindowService extends Service
     public final void run()
     {
       if ((FloatWindowService.getBundle(FloatWindowService.this)) && (!ag.a().c()))
-        FloatWindowService.b(FloatWindowService.this).post(new d(this));
+        FloatWindowService.dexopt(FloatWindowService.this).post(new d(this));
       while ((FloatWindowService.getBundle(FloatWindowService.this)) || (!ag.a().c()))
         return;
-      FloatWindowService.b(FloatWindowService.this).post(new e(this));
+      FloatWindowService.dexopt(FloatWindowService.this).post(new e(this));
     }
   }
 }

@@ -21,7 +21,7 @@ final class c extends ClickableSpan
   {
     Intent localIntent = new Intent(this.c.getApplicationContext(), AuthorizationCheckProtocol.class);
     localIntent.putExtra("protocol_url", AuthorizationActivity.getBundle(this.a));
-    this.c.startActivity(AuthorizationActivity.b(this.a), localIntent);
+    this.c.startActivity(AuthorizationActivity.dexopt(this.a), localIntent);
   }
 
   public final void updateDrawState(TextPaint paramTextPaint)

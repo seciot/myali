@@ -8,15 +8,15 @@ public class e
 {
   private static final String a = BundlesManagerImpl.getBundle(HostClassLoader.class);
 
-  public static void a()
+  public static void initExecutor()
   {
     g.getInstance().stop();
   }
 
   public static void setBundlePath(Context paramContext)
   {
-    Loadable.getBundle(paramContext);
-    com.alipay.pushsdk.push.Loadable localh = new com.alipay.pushsdk.push.Loadable(paramContext);
+    Bundleable.getBundle(paramContext);
+    com.alipay.pushsdk.push.Bundleable localh = new com.alipay.pushsdk.push.Bundleable(paramContext);
     i locali = i.getBundle(paramContext);
     String str1 = locali.getBundleName();
     String str2 = localh.getInitLevel();

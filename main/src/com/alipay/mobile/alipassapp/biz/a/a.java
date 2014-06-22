@@ -20,7 +20,7 @@ public abstract interface a
 
   public abstract Object a(String paramString, int paramInt, Class<?> paramClass);
 
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void a(PassInfoResult paramPassInfoResult, String paramString, int paramInt);
 
@@ -48,9 +48,9 @@ public abstract interface a
 
   public abstract void b(List<String> paramList, String paramString);
 
-  public abstract boolean b(AlipassListCache paramAlipassListCache);
+  public abstract boolean dexopt(AlipassListCache paramAlipassListCache);
 
-  public abstract boolean b(String paramString);
+  public abstract boolean dexopt(String paramString);
 
   public abstract int getBundleByComponentName(String paramString);
 

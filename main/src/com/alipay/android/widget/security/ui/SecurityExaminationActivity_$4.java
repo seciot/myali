@@ -9,7 +9,7 @@ class SecurityExaminationActivity_$4
 
   public void run()
   {
-    SecurityExaminationActivity_.b(this.a);
+    SecurityExaminationActivity_.dexopt(this.a);
   }
 }
 

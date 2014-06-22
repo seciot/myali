@@ -20,7 +20,7 @@ final class av
     if (this.a.getBundleName())
     {
       PassListResult localPassListResult3 = AlipassListActivity.f(this.a).getBundle(this.a.getAllBundles());
-      this.a.b(new a(localPassListResult3, 0));
+      this.a.dexopt(new a(localPassListResult3, 0));
       if ((localPassListResult3 == null) || (localPassListResult3.getHasCurrent() != 1))
         i = 1;
     }
@@ -30,7 +30,7 @@ final class av
       if (this.a.getInitLevel())
       {
         PassListResult localPassListResult2 = AlipassListActivity.f(this.a).getBundleByComponentName(this.a.getAllBundles());
-        this.a.b(new a(localPassListResult2, 1));
+        this.a.dexopt(new a(localPassListResult2, 1));
         if (i != 0)
           if ((localPassListResult2 == null) || (localPassListResult2.getHasCurrent() != 1))
             k = 1;
@@ -43,7 +43,7 @@ final class av
           this.a.showProgressDialog("加载中", true, AlipassListActivity.getBundleByComponentName(this.a));
           AlipassListActivity.getBundle(this.a).set(false);
           locala1.d = true;
-          AlipassListActivity.b(this.a).set(true);
+          AlipassListActivity.dexopt(this.a).set(true);
           a locala2 = AlipassListActivity.f(this.a).v(this.a.getRequireBundleName(), this.a.getInitLevel());
           locala1.e = locala2.e;
           locala1.a = locala2.a;
@@ -64,10 +64,10 @@ final class av
           if (this.a.getBundleName())
           {
             PassListResult localPassListResult1 = AlipassListActivity.f(this.a).getBundle(this.a.getAllBundles());
-            this.a.b(new a(localPassListResult1, 0));
+            this.a.dexopt(new a(localPassListResult1, 0));
           }
-          this.a.b(locala1);
-          AlipassListActivity.b(this.a).set(false);
+          this.a.dexopt(locala1);
+          AlipassListActivity.dexopt(this.a).set(false);
           if (j != 0)
             this.a.dismissProgressDialog();
           while (this.a.getInitLevel())

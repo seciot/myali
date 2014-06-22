@@ -14,7 +14,7 @@ final class ab
 
   public final void onCheckedChanged(CompoundButton paramCompoundButton, boolean paramBoolean)
   {
-    if ((!UICheckBox.b(this.a)) && (TextUtils.equals(this.a.getBundle("show_toast"), "true")) && (!TextUtils.isEmpty(this.a.getBundle("toast_message"))))
+    if ((!UICheckBox.dexopt(this.a)) && (TextUtils.equals(this.a.getBundle("show_toast"), "true")) && (!TextUtils.isEmpty(this.a.getBundle("toast_message"))))
     {
       this.a.t();
       UICheckBox.getBundleByComponentName(this.a).setOnCheckedChangeListener(null);

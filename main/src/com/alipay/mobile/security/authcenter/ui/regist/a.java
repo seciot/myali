@@ -22,7 +22,7 @@ final class a
     }
     Bundle localBundle = new Bundle();
     localBundle.putString("registerSource", "registerFromLogin");
-    localBundle.putString("registerMobileNum", PreRegistFragment.b(this.a));
+    localBundle.putString("registerMobileNum", PreRegistFragment.dexopt(this.a));
     try
     {
       PreRegistFragment.getBundleByComponentName(this.a).startApp("20000008", "20000009", localBundle);

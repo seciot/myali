@@ -16,7 +16,7 @@ final class d extends MiniReadSmsArgs
     if ("temp".equals(paramString))
       return MiniSmsReader.getBundle(this.a);
     if ("rules".equals(paramString))
-      return MiniSmsReader.b(this.a);
+      return MiniSmsReader.dexopt(this.a);
     if ("tmp_group".equals(paramString))
       return String.valueOf(MiniSmsReader.getBundleByComponentName(this.a));
     if ("read_time".equals(paramString))

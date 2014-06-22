@@ -23,7 +23,7 @@ final class q
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
     FeedAssistantActivity localFeedAssistantActivity;
-    if (!FeedAssistantActivity.b(this.a))
+    if (!FeedAssistantActivity.dexopt(this.a))
     {
       localFeedAssistantActivity = this.a;
       if (paramCharSequence.length() <= 0)

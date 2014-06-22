@@ -17,7 +17,7 @@ final class j
   {
     PaymentChannelActivity.v(this.b, paramInt);
     PaymentChannelActivity.v(this.b, (String)PaymentChannelActivity.getBundle(this.b).get(paramInt));
-    PaymentChannelActivity.b(this.b).setLeftText(((CharSequence)this.a.getItem(paramInt)).toString());
+    PaymentChannelActivity.dexopt(this.b).setLeftText(((CharSequence)this.a.getItem(paramInt)).toString());
     paramDialogInterface.dismiss();
   }
 }

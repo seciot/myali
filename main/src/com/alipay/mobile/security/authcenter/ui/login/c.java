@@ -15,7 +15,7 @@ final class c
   public final void onClick(View paramView)
   {
     a.getBundle(this.a).setText("");
-    a.b(this.a).setText("");
+    a.dexopt(this.a).setText("");
   }
 }
 

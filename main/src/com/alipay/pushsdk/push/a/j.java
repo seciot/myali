@@ -46,7 +46,7 @@ class j
     return locala;
   }
 
-  protected final void a()
+  protected final void initExecutor()
   {
     this.c = this.d.f;
     this.f = false;

@@ -15,10 +15,10 @@ final class i
 
   public final void onGlobalLayout()
   {
-    if ((!this.c) && (MainActivity.b(this.b) != null))
+    if ((!this.c) && (MainActivity.dexopt(this.b) != null))
     {
-      MainActivity.b(this.b).getBundleName();
-      MainActivity.b(this.b).stop();
+      MainActivity.dexopt(this.b).getBundleName();
+      MainActivity.dexopt(this.b).stop();
       this.c = true;
       MainActivity.v(this.b, this.a.getInitLevel());
       if (MainActivity.getBundleByComponentName(this.b) != null)

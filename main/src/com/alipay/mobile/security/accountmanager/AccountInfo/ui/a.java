@@ -19,7 +19,7 @@ final class a
   {
     Intent localIntent = new Intent();
     localIntent.setClass(this.a, SecurityAccountQrCodeActivity_.class);
-    AccountInfoActivity.b(this.a).getMicroApplicationContext().startActivity(AccountInfoActivity.getBundle(this.a), localIntent);
+    AccountInfoActivity.dexopt(this.a).getMicroApplicationContext().startActivity(AccountInfoActivity.getBundle(this.a), localIntent);
     AlipayLogAgent.writeLog(this.a, BehaviourIdEnum.CLICKED, "-", "-", "20000070", "-", "-", "accountInfoIndex", "qrcode");
   }
 }

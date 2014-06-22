@@ -11,7 +11,7 @@ final class g
 
   public final void run()
   {
-    if ((c.getBundle(this.a.a) != null) && (!c.b(this.a.a)))
+    if ((c.getBundle(this.a.a) != null) && (!c.dexopt(this.a.a)))
     {
       c.getBundle(this.a.a).setVisibility(8);
       c.getBundleByComponentName(this.a.a).start();

@@ -25,7 +25,7 @@ final class s extends WebViewClient
     ImageView localImageView1 = MiniWebActivity.getBundleByComponentName(this.a);
     boolean bool2;
     ImageView localImageView2;
-    if (MiniWebActivity.b(this.a).canGoBack())
+    if (MiniWebActivity.dexopt(this.a).canGoBack())
     {
       bool2 = bool1;
       localImageView1.setEnabled(bool2);

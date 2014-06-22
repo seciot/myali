@@ -17,10 +17,10 @@ final class b
     if (this.b.o())
     {
       com.alipay.mobile.longlink.c.a.e(4, a.x(), "terminatePersistentConnection()... run()");
-      this.a.d().b(this.a.i());
-      this.a.d().b(this.a.j());
-      this.a.d().b(this.a.j());
-      this.a.d().b(this.a.l());
+      this.a.d().dexopt(this.a.i());
+      this.a.d().dexopt(this.a.j());
+      this.a.d().dexopt(this.a.j());
+      this.a.d().dexopt(this.a.l());
       this.b.getInitLevel().getFullBundleName();
       com.alipay.mobile.longlink.c.a.e(4, a.x(), "terminatePersistentConnection()...Done!");
     }

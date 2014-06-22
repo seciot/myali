@@ -9,7 +9,7 @@ final class r
 
   public final void run()
   {
-    BarcodePayActivity_.b(this.a);
+    BarcodePayActivity_.dexopt(this.a);
   }
 }
 

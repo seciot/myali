@@ -12,7 +12,7 @@ class IndependentPwdSettingActivity$5
 
   public void onClick(DialogInterface paramDialogInterface, int paramInt)
   {
-    if (IndependentPwdSettingActivity.b(this.a))
+    if (IndependentPwdSettingActivity.dexopt(this.a))
     {
       IndependentPwdSettingActivity.removeBundle(this.b);
       return;

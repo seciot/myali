@@ -31,7 +31,7 @@ final class c
       Message localMessage = new Message();
       localMessage.what = 1;
       localMessage.obj = str2;
-      HyperlinkActivity.b(this.c).sendMessage(localMessage);
+      HyperlinkActivity.dexopt(this.c).sendMessage(localMessage);
       return;
     }
     catch (NetErrorException localNetErrorException)

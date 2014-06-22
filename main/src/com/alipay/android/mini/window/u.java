@@ -13,7 +13,7 @@ final class u
 
   public final void onClick(View paramView)
   {
-    MiniWebActivity.b(this.a).goForward();
+    MiniWebActivity.dexopt(this.a).goForward();
   }
 }
 

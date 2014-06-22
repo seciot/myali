@@ -11,7 +11,7 @@ final class b
 
   public final void run()
   {
-    GestureActivity.b(this.a);
+    GestureActivity.dexopt(this.a);
     GestureActivity.getBundleByComponentName(this.a).notifyunLockApp();
   }
 }

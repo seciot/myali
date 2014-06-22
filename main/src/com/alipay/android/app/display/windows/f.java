@@ -12,9 +12,9 @@ final class f
 
   public final void run()
   {
-    if (MspWindow.b(this.a) != null)
+    if (MspWindow.dexopt(this.a) != null)
     {
-      for (IUIElement localIUIElement : MspWindow.b(this.a).stop())
+      for (IUIElement localIUIElement : MspWindow.dexopt(this.a).stop())
         if ((localIUIElement != null) && ((localIUIElement instanceof IDispose)))
           ((IDispose)localIUIElement).dispose();
       MspWindow.getBundleByComponentName(this.a);

@@ -11,10 +11,10 @@ final class y
 
   public final void run()
   {
-    if (UIButton.b(this.b) != null)
+    if (UIButton.dexopt(this.b) != null)
     {
-      UIButton.b(this.b).setEnabled(this.a);
-      UIButton.b(this.b).setFocusable(this.a);
+      UIButton.dexopt(this.b).setEnabled(this.a);
+      UIButton.dexopt(this.b).setFocusable(this.a);
     }
   }
 }

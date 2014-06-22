@@ -2,7 +2,7 @@ package com.alipay.mobile.longlink.b.b;
 
 public abstract interface a
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void stop();
 }

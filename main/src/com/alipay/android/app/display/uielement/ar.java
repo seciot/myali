@@ -11,8 +11,8 @@ final class ar
   {
     if (UICombobox.g(this.a) != null)
       this.a.v(UICombobox.g(this.a), null);
-    if (UICombobox.b(this.a) != null)
-      this.a.v(UICombobox.b(this.a), null);
+    if (UICombobox.dexopt(this.a) != null)
+      this.a.v(UICombobox.dexopt(this.a), null);
   }
 }
 

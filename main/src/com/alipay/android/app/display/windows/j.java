@@ -24,8 +24,8 @@ final class j
     for (String str4 = EventType.s.getInstance(); ; str4 = EventType.t.getInstance())
     {
       String str5 = localContext.getString(17039360);
-      if ((i.b(this.a) != null) && (i.b(this.a).get() != null))
-        ((IWindowScriptable)i.b(this.a).get()).confirm(EventType.q.getInstance(), str4, str1, str3, null, str2, str5);
+      if ((i.dexopt(this.a) != null) && (i.dexopt(this.a).get() != null))
+        ((IWindowScriptable)i.dexopt(this.a).get()).confirm(EventType.q.getInstance(), str4, str1, str3, null, str2, str5);
       return;
     }
   }

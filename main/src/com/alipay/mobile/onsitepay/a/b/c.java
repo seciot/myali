@@ -2,7 +2,7 @@ package com.alipay.mobile.onsitepay.a.b;
 
 public abstract interface c
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void getBundle(String paramString);
 

@@ -25,7 +25,7 @@ final class aa
     {
       y.v(this.b, paramString);
       y.getBundle(this.b).showProgressDialog(null, true, null);
-      localSetMobilePayPwdRes = y.b(this.b).b(this.a, paramString, "");
+      localSetMobilePayPwdRes = y.dexopt(this.b).b(this.a, paramString, "");
       y.getBundle(this.b).dismissProgressDialog();
       return localSetMobilePayPwdRes;
     }

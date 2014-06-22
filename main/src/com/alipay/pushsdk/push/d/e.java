@@ -26,14 +26,14 @@ public class e
     {
       this.b.getBundle(true);
       o.getBundle(System.currentTimeMillis());
-      this.b.b(System.currentTimeMillis());
+      this.b.dexopt(System.currentTimeMillis());
       str1 = parama.hasResource();
     }
     try
     {
       JSONObject localJSONObject = new JSONObject(str1);
       o.getBundleByComponentName(localJSONObject.optInt("keepLiveTime"));
-      o.b(localJSONObject.optInt("reconnectTime"));
+      o.dexopt(localJSONObject.optInt("reconnectTime"));
       o.d(localJSONObject.optBoolean("updateLBSInfo"));
       String str2 = localJSONObject.optString("heartTimeout");
       if ((str2 != null) && (str2.length() > 0))
@@ -47,7 +47,7 @@ public class e
         String str4 = localJSONObject.optString("ctrlAlways");
         if ((str4 == null) || (!str4.equalsIgnoreCase("false")))
           break;
-        o.b(false);
+        o.dexopt(false);
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "processPacket ctrlAlways=" + o.hasResource());
         j.q();
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "processPacket() reconnectTime=" + o.getBundleName() + "s, keepLiveTime=" + o.l() + "s, updateLBSInfo=" + o.getRequireBundleName());
@@ -65,7 +65,7 @@ public class e
         this.b.getBundle(false);
         localJSONException.printStackTrace();
         continue;
-        o.b(true);
+        o.dexopt(true);
       }
     }
   }

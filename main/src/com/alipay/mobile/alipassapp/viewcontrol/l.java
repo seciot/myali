@@ -70,7 +70,7 @@ public final class l extends BaseAdapter
         localo1.b.setTextColor(com.alipay.mobile.alipassapp.ui.common.a.v(this.b.a, localEinfoFields));
         localo1.a.setText(localEinfoFields.getLabel());
         localo1.b.setText(localEinfoFields.getValue());
-        i = com.alipay.mobile.alipassapp.ui.common.a.b(localEinfoFields.getType());
+        i = com.alipay.mobile.alipassapp.ui.common.a.dexopt(localEinfoFields.getType());
         if (i == -1)
         {
           if (!Linkify.addLinks(localo1.b, 1))

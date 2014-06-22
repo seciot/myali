@@ -13,12 +13,12 @@ public class f extends ZLog
     super(paramj);
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     if ((Integer.parseInt(stop()) < Integer.parseInt("10")) && (!this.a.r()))
       if (this.a != null)
       {
-        this.a.b(0L);
+        this.a.dexopt(0L);
         this.a.d(0L);
         BundlesManagerImpl.e(4, BundlesManagerImpl, "clearLastConnInfo done!");
         this.a.getBundle(System.currentTimeMillis());

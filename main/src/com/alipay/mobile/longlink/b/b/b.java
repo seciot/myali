@@ -13,7 +13,7 @@ public class b
     this.a = parama;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     this.a.getInitLevel().getBundleName();
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, BundlesManager, "getConnection=" + this.a.getInitLevel().hashCode());

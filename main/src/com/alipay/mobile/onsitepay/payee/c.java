@@ -18,7 +18,7 @@ final class c
     Intent localIntent = new Intent();
     localIntent.setClass(this.a, SendSoundViewActivity_.class);
     this.a.finish();
-    FacePayeeActivity.b(this.a).stopReceiveData();
+    FacePayeeActivity.dexopt(this.a).stopReceiveData();
     this.a.startActivity(localIntent);
     this.a.overridePendingTransition(17432578, 17432579);
   }

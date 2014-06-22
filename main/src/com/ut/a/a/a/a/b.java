@@ -51,7 +51,7 @@ public abstract class b
     this.eof = false;
   }
 
-  protected int a()
+  protected int initExecutor()
   {
     return 8192;
   }
@@ -89,7 +89,7 @@ public abstract class b
     return 0;
   }
 
-  public byte[] b(byte[] paramArrayOfByte)
+  public byte[] dexopt(byte[] paramArrayOfByte)
   {
     reset();
     if ((paramArrayOfByte == null) || (paramArrayOfByte.length == 0))
@@ -101,7 +101,7 @@ public abstract class b
     return arrayOfByte;
   }
 
-  protected boolean c(byte[] paramArrayOfByte)
+  protected boolean getBundleClassLoader(byte[] paramArrayOfByte)
   {
     if (paramArrayOfByte == null);
     while (true)

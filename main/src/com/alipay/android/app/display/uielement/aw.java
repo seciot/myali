@@ -15,7 +15,7 @@ final class aw
     if (UIDatePicker.getBundle(this.b) != null);
     try
     {
-      Date localDate = UIDatePicker.b(this.b).parse(this.a);
+      Date localDate = UIDatePicker.dexopt(this.b).parse(this.a);
       UIDatePicker.e(this.b, UIDatePicker.getBundle(this.b), localDate);
       return;
     }

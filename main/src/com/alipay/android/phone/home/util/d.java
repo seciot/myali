@@ -18,7 +18,7 @@ final class d extends Handler
       if (SyncAnimatingHelper.getBundle(this.b))
         break label58;
       SyncAnimatingHelper.v(this.b, false);
-      SyncAnimatingHelper.b(this.b);
+      SyncAnimatingHelper.dexopt(this.b);
       SyncAnimatingHelper.getBundleByComponentName(this.b).sendEmptyMessageDelayed(4097, 100L);
     }
     while (true)
@@ -27,7 +27,7 @@ final class d extends Handler
       return;
       label58: SyncAnimatingHelper.d(this.b);
       SyncAnimatingHelper.v(this.b, true);
-      SyncAnimatingHelper.b(this.b);
+      SyncAnimatingHelper.dexopt(this.b);
       if (SyncAnimatingHelper.removeBundle(this.b) != null)
         SyncAnimatingHelper.removeBundle(this.b).getInstance();
     }

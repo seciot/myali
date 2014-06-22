@@ -18,7 +18,7 @@ public class b
     this.a = paramj;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     this.a.getInitLevel().getBundleName();
     BundlesManagerImpl.e(5, BundlesManager, "getConnection=" + this.a.getInitLevel().hashCode());
@@ -29,7 +29,7 @@ public class b
     this.a.t();
     long l = System.currentTimeMillis();
     o.getBundle(l);
-    this.a.b(l);
+    this.a.dexopt(l);
     BundlesManagerImpl.e(3, BundlesManager, "onSuccess setLastConnectedTime.");
     HostClassLoader.e("31", "01", "2");
   }

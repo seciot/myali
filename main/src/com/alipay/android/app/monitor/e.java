@@ -20,7 +20,7 @@ final class e
       TaskManager.a().getBundle(this.a);
       synchronized (SystemTimeTask.getBundle(this.a))
       {
-        SystemTimeTask.b(this.a);
+        SystemTimeTask.dexopt(this.a);
         return;
       }
     }
@@ -29,7 +29,7 @@ final class e
       LogUtils.a(localException);
       synchronized (SystemTimeTask.getBundle(this.a))
       {
-        SystemTimeTask.b(this.a);
+        SystemTimeTask.dexopt(this.a);
         return;
       }
     }
@@ -37,7 +37,7 @@ final class e
     {
       synchronized (SystemTimeTask.getBundle(this.a))
       {
-        SystemTimeTask.b(this.a);
+        SystemTimeTask.dexopt(this.a);
         throw localObject1;
       }
     }

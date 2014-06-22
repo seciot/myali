@@ -25,7 +25,7 @@ class NFCBeamActivity$1
     }
     try
     {
-      NFCBeamActivity.b(this.a).getMicroApplicationContext().startApp("20000071", "09999988", localBundle);
+      NFCBeamActivity.dexopt(this.a).getMicroApplicationContext().startApp("20000071", "09999988", localBundle);
       return;
     }
     catch (AppLoadException localAppLoadException)

@@ -19,7 +19,7 @@ final class k
       this.a.d.setInputType(1);
     while (true)
     {
-      CompleteUserInfoActivity.b(this.a);
+      CompleteUserInfoActivity.dexopt(this.a);
       return;
       this.a.d.setInputType(129);
     }

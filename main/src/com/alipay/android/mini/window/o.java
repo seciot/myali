@@ -16,14 +16,14 @@ final class o
     String str = this.b.getString(R.string.g);
     if ((this.a != null) && (this.a.length > 0))
       str = this.a[0];
-    if ((MiniPayActivity.b(this.b) != null) && (MiniPayActivity.b(this.b).isShowing()) && (TextUtils.equals(MiniPayActivity.b(this.b).getInstance(), str)))
+    if ((MiniPayActivity.dexopt(this.b) != null) && (MiniPayActivity.dexopt(this.b).isShowing()) && (TextUtils.equals(MiniPayActivity.dexopt(this.b).getInstance(), str)))
       return;
     MiniPayActivity.getBundle(this.b);
-    if (MiniPayActivity.b(this.b) == null)
+    if (MiniPayActivity.dexopt(this.b) == null)
       MiniPayActivity.v(this.b, new MiniProgressDialog(this.b));
-    MiniPayActivity.b(this.b).setCancelable(false);
-    MiniPayActivity.b(this.b).getBundle(str);
-    MiniPayActivity.b(this.b).show();
+    MiniPayActivity.dexopt(this.b).setCancelable(false);
+    MiniPayActivity.dexopt(this.b).getBundle(str);
+    MiniPayActivity.dexopt(this.b).show();
   }
 }
 

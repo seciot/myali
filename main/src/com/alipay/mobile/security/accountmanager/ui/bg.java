@@ -9,7 +9,7 @@ final class bg
 
   public final void run()
   {
-    ForgotLoginPwdActivity_.b(this.a);
+    ForgotLoginPwdActivity_.dexopt(this.a);
   }
 }
 

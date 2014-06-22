@@ -29,7 +29,7 @@ final class dp extends Handler
         return;
       case 1:
       }
-      if (!StringUtils.equalsIgnoreCase(MemberCardDetailActivity.b(this.a), "dbarcode"))
+      if (!StringUtils.equalsIgnoreCase(MemberCardDetailActivity.dexopt(this.a), "dbarcode"))
       {
         MemberCardDetailActivity.getBundleByComponentName(this.a).setVisibility(i);
         MemberCardDetailActivity.getBundle(this.a).setVisibility(i);

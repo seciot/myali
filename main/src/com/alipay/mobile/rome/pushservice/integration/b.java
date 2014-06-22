@@ -12,7 +12,7 @@ final class b
 
   public final void onClick(View paramView)
   {
-    PushDialogActivity.b(this.a);
+    PushDialogActivity.dexopt(this.a);
   }
 }
 

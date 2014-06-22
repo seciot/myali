@@ -14,7 +14,7 @@ class AuthenticationCameraShootActivity$4
   {
     try
     {
-      AuthenticationCameraShootActivity.b(this.a).hasResource();
+      AuthenticationCameraShootActivity.dexopt(this.a).hasResource();
       AuthenticationCameraShootActivity.getBundleByComponentName(this.a);
       return;
     }

@@ -14,7 +14,7 @@ public final class f
   BroadcastReceiver b = null;
   AppBundle c = null;
 
-  public final void a()
+  public final void initExecutor()
   {
     if (this.a != null)
       this.a.unregisterReceiver(this.b);

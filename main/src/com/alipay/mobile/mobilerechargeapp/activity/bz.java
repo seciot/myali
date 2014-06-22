@@ -30,7 +30,7 @@ final class bz
       {
         MobileRechargeCashierActivity.getBundleByComponentName(this.c).getMicroApplicationContext().finishApp("10000003", "10000003", null);
         return;
-        MobileRechargeCashierActivity.b(this.c).getMicroApplicationContext().startApp("10000003", this.b, null);
+        MobileRechargeCashierActivity.dexopt(this.c).getMicroApplicationContext().startApp("10000003", this.b, null);
       }
     }
     catch (AppLoadException localAppLoadException)

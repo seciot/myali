@@ -10,13 +10,14 @@ import java.util.concurrent.ThreadFactory;
 
 import com.alipay.mobile.quinox.bundle.AppBundle;
 import com.alipay.mobile.quinox.bundle.BundlesManager;
+import com.alipay.mobile.quinox.utils.ZLog;
 
 public class InitExecutor {
 	private static final ThreadFactory threadFactory = new DefaultThreadFactory();
 	private ExecutorService exeService;
 	private BootstrapClassLoader bootstrapClassLoader;
 	private BundlesManager bundlersManager;
-	private Map<String, Future<?>> bundleMap;
+	private Map<String, Future<BundleClassloader>> bundleMap;
 	private String e;
 
 	// ERROR //
@@ -206,7 +207,8 @@ public class InitExecutor {
 		// 158 239 288 java/lang/Throwable
 	}
 
-	private static String c() {
+	// #c
+	private static String getDexoptFlags() {
 		try {
 			String str = (String) Class
 					.forName("android.os.SystemProperties")
@@ -216,69 +218,65 @@ public class InitExecutor {
 							new Object[] { "dalvik.vm.dexopt-flags", "m=y" });
 			return str;
 		} catch (Exception localException) {
-			com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor",
-					"get dalvik.vm.dexopt-flags error", localException);
+			ZLog.e("InitExecutor", "get dalvik.vm.dexopt-flags error",
+					localException);
+			return "m=y";
 		}
-		return "m=y";
 	}
 
 	private native void dexopt(String paramString1, String paramString2,
 			String paramString3);
 
-	public final BundleClassloader a(String paramString) {
+	public final BundleClassloader createBundleClassloader(String bundleName) {
 		try {
-			Future localFuture = (Future) this.bundleMap.get(paramString);
+			Future<BundleClassloader> localFuture = bundleMap.get(bundleName);
 			if (localFuture == null)
 				return null;
 			BundleClassloader locald = (BundleClassloader) localFuture.get();
 			return locald;
 		} catch (InterruptedException localInterruptedException) {
-			com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor",
-					"create classloader error", localInterruptedException);
-			return null;
+			ZLog.e("InitExecutor", "create classloader error",
+					localInterruptedException);
 		} catch (ExecutionException localExecutionException) {
-			while (true)
-				com.alipay.mobile.quinox.utils.ZLog.e("InitExecutor",
-						"create classloader error", localExecutionException);
+			ZLog.e("InitExecutor", "create classloader error",
+					localExecutionException);
 		}
+		return null;
 	}
 
-	public final void a() {
-		this.exeService = Executors.newFixedThreadPool(5, threadFactory);
+	public final void initExecutor() {
+		exeService = Executors.newFixedThreadPool(5, threadFactory);
 	}
 
-	private class MyCallable implements Callable{
+	// TODO用于创建BundleClassloader, 但是反编译出来的代码中无法看到这部分代码
+	private class MyCallable implements Callable {
 		private AppBundle appBundle;
-		
+
 		public MyCallable(AppBundle appBundle) {
 			this.appBundle = appBundle;
 		}
-		
-		//加载AppBundle?
+
+		// 加载AppBundle?
 		@Override
 		public Object call() throws Exception {
 			return null;
 		}
 	}
-	
-	public final void a(AppBundle appBundle) {
-		Future future = exeService.submit(new MyCallable(appBundle));
+
+	public final void makeBundleClassloaderCreateJob(AppBundle appBundle) {
+		Future<BundleClassloader> future = exeService.submit(new MyCallable(
+				appBundle));
 		bundleMap.put(appBundle.getBundleName(), future);
 	}
 
-	public final void b() {
+	public final void shutdownExecutor() {
 		this.exeService.shutdown();
 	}
 
-	public final void b(AppBundle parama) {
-		dexopt(parama.getBundlePath(), com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(
-				parama.getBundlePath(), this.bundlersManager.c()), this.e);
+	public final void dexopt(AppBundle parama) {
+		dexopt(parama.getBundlePath(),
+				com.alipay.mobile.quinox.utils.DexUtil.getDexFullPath(
+						parama.getBundlePath(), this.bundlersManager.c()),
+				this.e);
 	}
 }
-
-/*
- * Location:
- * /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar
- * Qualified Name: com.alipay.mobile.quinox.classloader.InitExecutor JD-Core
- * Version: 0.6.2
- */

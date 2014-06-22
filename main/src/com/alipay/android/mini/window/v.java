@@ -13,7 +13,7 @@ final class v
 
   public final void onClick(View paramView)
   {
-    MiniWebActivity.b(this.a).reload();
+    MiniWebActivity.dexopt(this.a).reload();
   }
 }
 

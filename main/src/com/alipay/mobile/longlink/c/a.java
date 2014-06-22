@@ -17,7 +17,7 @@ public final class a
     return "LongLink_" + paramClass.getSimpleName();
   }
 
-  public static void a()
+  public static void initExecutor()
   {
     if (AppBundle == true)
     {

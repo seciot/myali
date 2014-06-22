@@ -198,7 +198,7 @@ public class AuthorizeLogsActivity extends BaseActivity
       TextView localTextView2 = (TextView)localView.findViewById(R.id.E);
       TextView localTextView3 = (TextView)localView.findViewById(R.id.F);
       TextView localTextView4 = (TextView)localView.findViewById(R.id.G);
-      ApproveRecord localApproveRecord = (ApproveRecord)AuthorizeLogsActivity.b(AuthorizeLogsActivity.this).getItem(paramInt);
+      ApproveRecord localApproveRecord = (ApproveRecord)AuthorizeLogsActivity.dexopt(AuthorizeLogsActivity.this).getItem(paramInt);
       if (localApproveRecord == null)
         return localView;
       localTextView1.setText(localApproveRecord.approveFrom);

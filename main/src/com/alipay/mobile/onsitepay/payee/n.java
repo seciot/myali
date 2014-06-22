@@ -9,7 +9,7 @@ final class n
 
   public final void run()
   {
-    FacePayeeActivity_.b(this.a);
+    FacePayeeActivity_.dexopt(this.a);
   }
 }
 

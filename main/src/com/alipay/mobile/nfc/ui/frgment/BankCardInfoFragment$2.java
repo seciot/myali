@@ -28,7 +28,7 @@ class BankCardInfoFragment$2
     }
     try
     {
-      BankCardInfoFragment.b(this.b).startApp("20000071", "09999983", localBundle);
+      BankCardInfoFragment.dexopt(this.b).startApp("20000071", "09999983", localBundle);
       return;
     }
     catch (AppLoadException localAppLoadException)

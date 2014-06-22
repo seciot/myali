@@ -22,7 +22,7 @@ import com.alipay.mobile.quinox.utils.FileUtil;
 import com.alipay.mobile.quinox.utils.ZLog;
 import dalvik.system.DexFile;
 
-public final class BundleClassloader extends ClassLoader implements Loadable {
+public final class BundleClassloader extends ClassLoader implements Bundleable {
 	private AppBundle appBundle;
 	private BootstrapClassLoader bootstrapClassLoader;
 	private DexFile dexFile;
@@ -111,7 +111,7 @@ public final class BundleClassloader extends ClassLoader implements Loadable {
 			for (int j = 0; j < i; j++) {
 				String str = arrayOfString[j];
 				if ((str != null) && (str.length() > 0)) {
-					Loadable localh = bootstrapClassLoader.b(str.split("@")[0]);
+					Bundleable localh = bootstrapClassLoader.b(str.split("@")[0]);
 					if (localh != null)
 						localHashSet.add(localh);
 				}

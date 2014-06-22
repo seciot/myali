@@ -17,7 +17,7 @@ final class e
     GestureDataCenter.getInstance().setNeedAuthGesture(false);
     GestureActivity.j(this.a);
     GestureActivity.e(this.a, "com.alipay.mobile.GESTURE_SETTING_SUCESS", "state=skipGestureAction");
-    GestureActivity.b(this.a);
+    GestureActivity.dexopt(this.a);
   }
 }
 

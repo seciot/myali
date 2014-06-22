@@ -22,7 +22,7 @@ final class g
       this.a.a.stop();
       return;
     }
-    this.a.a.b(AlipassDetailActivity.removeBundle(this.a.a));
+    this.a.a.dexopt(AlipassDetailActivity.removeBundle(this.a.a));
   }
 }
 

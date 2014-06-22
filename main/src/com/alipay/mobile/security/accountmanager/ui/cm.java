@@ -14,9 +14,9 @@ final class cm
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    if ((ModifyLoginPwdActivity.b(this.a) != null) && (ModifyLoginPwdActivity.b(this.a).isAlive()))
+    if ((ModifyLoginPwdActivity.dexopt(this.a) != null) && (ModifyLoginPwdActivity.dexopt(this.a).isAlive()))
     {
-      ModifyLoginPwdActivity.b(this.a).interrupt();
+      ModifyLoginPwdActivity.dexopt(this.a).interrupt();
       this.a.dismissProgressDialog();
       ModifyLoginPwdActivity.removeBundle(this.a).getMicroApplicationContext().finishApp(ModifyLoginPwdActivity.getBundleByComponentName(this.a).getAppId(), ModifyLoginPwdActivity.d(this.a).getAppId(), null);
     }

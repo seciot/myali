@@ -23,7 +23,7 @@ final class at
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localSendSmsResp = SmsCheckActivity.b(this.a).getBundle(SmsCheckActivity.getBundle(this.a).getLogonId());
+      localSendSmsResp = SmsCheckActivity.dexopt(this.a).getBundle(SmsCheckActivity.getBundle(this.a).getLogonId());
       this.a.dismissProgressDialog();
       return localSendSmsResp;
     }
@@ -45,7 +45,7 @@ final class at
     {
       SmsCheckActivity.v(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
-      localVerifyAuthCodeResp = SmsCheckActivity.b(this.a).a(SmsCheckActivity.getBundle(this.a).getLogonId(), SmsCheckActivity.getBundle(this.a).getMobileNumber(), paramString1, SmsCheckActivity.d(this.a));
+      localVerifyAuthCodeResp = SmsCheckActivity.dexopt(this.a).a(SmsCheckActivity.getBundle(this.a).getLogonId(), SmsCheckActivity.getBundle(this.a).getMobileNumber(), paramString1, SmsCheckActivity.d(this.a));
       this.a.dismissProgressDialog();
       return localVerifyAuthCodeResp;
     }

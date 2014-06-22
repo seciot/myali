@@ -10,7 +10,7 @@ class NFCAppDetailActivity$4 extends Thread
 
   public void run()
   {
-    NFCAppDetailActivity.b(this.a).downloadApp();
+    NFCAppDetailActivity.dexopt(this.a).downloadApp();
   }
 }
 

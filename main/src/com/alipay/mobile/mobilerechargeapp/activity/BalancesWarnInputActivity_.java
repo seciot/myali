@@ -19,7 +19,7 @@ public final class BalancesWarnInputActivity_ extends BalancesWarnInputActivity
   private void d()
   {
     this.b = ((APTextView)findViewById(R.id.q));
-    this.c = ((APButton)findViewById(R.id.Loadable));
+    this.c = ((APButton)findViewById(R.id.Bundleable));
     this.d = ((APTextView)findViewById(R.id.DefaultThreadFactory));
     this.a = ((APButtonInputBox)findViewById(R.id.N));
     a();

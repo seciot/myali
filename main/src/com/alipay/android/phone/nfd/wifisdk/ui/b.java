@@ -14,7 +14,7 @@ final class b extends i
     this.a.j.setVisibility(8);
     if (WifiConnectingActivity.getBundle(this.a) == true)
     {
-      if ((WifiConnectingActivity.b(this.a) != null) && (WifiConnectingActivity.b(this.a).a))
+      if ((WifiConnectingActivity.dexopt(this.a) != null) && (WifiConnectingActivity.dexopt(this.a).a))
       {
         WifiConnectingActivity.getBundleByComponentName(this.a);
         return;

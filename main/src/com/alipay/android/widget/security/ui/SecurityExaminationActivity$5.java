@@ -28,11 +28,11 @@ class SecurityExaminationActivity$5
       arrayOfString[1] = "-";
       arrayOfString[2] = "-";
       arrayOfString[3] = "-";
-      arrayOfString[4] = SecurityExaminationActivity.b(this.a).getLastTagId();
+      arrayOfString[4] = SecurityExaminationActivity.dexopt(this.a).getLastTagId();
       AlipayLogAgent.writeLog(localSecurityExaminationActivity, localBehaviourIdEnum, "-", "-", "20000043", "-", "realNameCheckView", "securityCheckUpIndex", "checkUp", "-", "u", "c", arrayOfString);
       if (!SecurityExaminationActivity.removeBundle(this.a))
       {
-        this.a.b("com.alipay.security.namecertified");
+        this.a.dexopt("com.alipay.security.namecertified");
         SecurityExaminationActivity.f(this.a);
       }
       SecurityExaminationActivity.h(this.a).getMicroApplicationContext().startApp(SecurityExaminationActivity.g(this.a).getAppId(), "20000038", null);

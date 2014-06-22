@@ -15,7 +15,7 @@ public class e extends AppBundle
     getBundlePath();
   }
 
-  public final void b(byte[] paramArrayOfByte)
+  public final void dexopt(byte[] paramArrayOfByte)
   {
     if (this.a != 3)
     {
@@ -27,7 +27,7 @@ public class e extends AppBundle
     }
   }
 
-  public final void c(byte[] paramArrayOfByte)
+  public final void getBundleClassLoader(byte[] paramArrayOfByte)
   {
     int i = 0xF & paramArrayOfByte[0];
     int j = paramArrayOfByte[1];
@@ -35,7 +35,7 @@ public class e extends AppBundle
     int m = 0x1 & j >>> 6;
     int n = 0x1 & j >>> 5;
     getBundle(i);
-    b(k);
+    dexopt(k);
     getBundleByComponentName(m);
     d(n);
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);

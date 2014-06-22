@@ -150,7 +150,7 @@ public class PbocCard
     return true;
   }
 
-  protected static ArrayList<byte[]> b(Iso7816.Tag paramTag)
+  protected static ArrayList<byte[]> dexopt(Iso7816.Tag paramTag)
   {
     ArrayList localArrayList = new ArrayList(10);
     Iso7816.Response localResponse = paramTag.stop();

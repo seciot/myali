@@ -21,12 +21,12 @@ final class k
     if (this.b.d)
     {
       PaymentChannelActivity.v(this.c, this.b.e);
-      PaymentChannelActivity.b(this.c).setVisibility(0);
+      PaymentChannelActivity.dexopt(this.c).setVisibility(0);
       PaymentChannelActivity.getBundleByComponentName(this.c).setVisibility(0);
       return;
     }
     PaymentChannelActivity.v(this.c, null);
-    PaymentChannelActivity.b(this.c).setVisibility(8);
+    PaymentChannelActivity.dexopt(this.c).setVisibility(8);
     PaymentChannelActivity.getBundleByComponentName(this.c).setVisibility(8);
   }
 }

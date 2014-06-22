@@ -20,7 +20,7 @@ final class m
       {
         a locala = com.alipay.pushsdk.push.c.c.getBundle(j.j(this.b));
         locala.getBundle(3);
-        locala.b(0);
+        locala.dexopt(0);
         locala.getBundle("");
         com.alipay.pushsdk.c.a.c.e(4, j.z(), "HeartBeatTask() heartBeat will be sent! length=" + locala.g());
         this.a.getInitLevel().getBundle(locala);

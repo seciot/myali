@@ -109,7 +109,7 @@ public class WithdrawActivity extends BaseActivity
 
   private void i()
   {
-    showProgressDialog(getString(R.string.Loadable), true, null);
+    showProgressDialog(getString(R.string.Bundleable), true, null);
   }
 
   @AfterViews

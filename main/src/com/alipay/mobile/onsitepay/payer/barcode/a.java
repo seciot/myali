@@ -48,7 +48,7 @@ final class a extends Handler
     {
       this.b = 1440;
       new StringBuilder("MSG_TIME_COUNT_RESET currentCount=").append(this.b).toString();
-      BarcodePayActivity.b(this.a);
+      BarcodePayActivity.dexopt(this.a);
       sendEmptyMessage(101);
       return;
     }

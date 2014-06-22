@@ -16,7 +16,7 @@ class SecurityCertifiedResultActivity$1
   {
     SecurityCertifiedResultActivity.getBundle(SecurityCertifiedResultActivity.getBundle(this.a));
     this.a.finish();
-    SecurityCertifiedResultActivity.d(this.a).getMicroApplicationContext().finishApp(SecurityCertifiedResultActivity.b(this.a).getAppId(), SecurityCertifiedResultActivity.getBundleByComponentName(this.a).getAppId(), null);
+    SecurityCertifiedResultActivity.d(this.a).getMicroApplicationContext().finishApp(SecurityCertifiedResultActivity.dexopt(this.a).getAppId(), SecurityCertifiedResultActivity.getBundleByComponentName(this.a).getAppId(), null);
   }
 }
 

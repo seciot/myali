@@ -15,7 +15,7 @@ final class fe
   {
     MemberFirstDetailActivity.getInstance();
     this.b.b.setImageBitmap(this.a);
-    this.b.b.setOnClickListener(new au(MemberFirstDetailActivity.b(this.b.d), this.b.c, true));
+    this.b.b.setOnClickListener(new au(MemberFirstDetailActivity.dexopt(this.b.d), this.b.c, true));
   }
 }
 

@@ -15,7 +15,7 @@ class SecurityCertifiedBankActivity$2
 
   public void onClick(View paramView)
   {
-    ((ExpressCardService)SecurityCertifiedBankActivity.getBundle(this.a).getMicroApplicationContext().getExtServiceByInterface(ExpressCardService.class.getName())).newExpressCard(SecurityCertifiedBankActivity.b(this.a).getAppId(), this.a);
+    ((ExpressCardService)SecurityCertifiedBankActivity.getBundle(this.a).getMicroApplicationContext().getExtServiceByInterface(ExpressCardService.class.getName())).newExpressCard(SecurityCertifiedBankActivity.dexopt(this.a).getAppId(), this.a);
   }
 }
 

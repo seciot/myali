@@ -14,7 +14,7 @@ final class d extends BroadcastReceiver
 
   public final void onReceive(Context paramContext, Intent paramIntent)
   {
-    TabLauncher.b(this.a).measure(-1, -1);
+    TabLauncher.dexopt(this.a).measure(-1, -1);
     TabLauncher.getBundleByComponentName(this.a).unregisterReceiver(this);
   }
 }

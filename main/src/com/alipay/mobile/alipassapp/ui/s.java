@@ -19,7 +19,7 @@ final class s
       ShareContent localShareContent = (ShareContent)AlipassForShareActivity.getBundle(this.b).get(Integer.valueOf(paramInt));
       AlipassForShareActivity.getInitLevel();
       new StringBuilder("content=").append(localShareContent.toString()).append(";type=").append(paramInt).toString();
-      this.a.silentShare(localShareContent, paramInt, AlipassForShareActivity.b(this.b));
+      this.a.silentShare(localShareContent, paramInt, AlipassForShareActivity.dexopt(this.b));
     }
   }
 }

@@ -20,7 +20,7 @@ final class g
     localBundle.putString("actionType", "20000005");
     try
     {
-      AccountManagerActivity.b(this.a).getMicroApplicationContext().startApp(AccountManagerActivity.getBundle(this.a).getAppId(), "20000001", localBundle);
+      AccountManagerActivity.dexopt(this.a).getMicroApplicationContext().startApp(AccountManagerActivity.getBundle(this.a).getAppId(), "20000001", localBundle);
       return;
     }
     catch (AppLoadException localAppLoadException)

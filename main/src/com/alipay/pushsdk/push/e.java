@@ -16,7 +16,7 @@ final class e
   {
     try
     {
-      d locald = com.alipay.pushsdk.push.e.e.v(NotificationService.b(this.a), this.b);
+      d locald = com.alipay.pushsdk.push.e.e.v(NotificationService.dexopt(this.a), this.b);
       if (locald != null)
         locald.getBundleName();
       return;

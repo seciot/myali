@@ -12,7 +12,7 @@ public class e extends AppBundle
     f(BundlesManager.MinPriorityThreadFactory);
   }
 
-  public final void b(byte[] paramArrayOfByte)
+  public final void dexopt(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
@@ -23,11 +23,11 @@ public class e extends AppBundle
     int k = paramArrayOfByte[5];
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! isGziped=" + k);
     d(k);
-    b(i);
+    dexopt(i);
     getBundleByComponentName(j);
   }
 
-  public final void c(byte[] paramArrayOfByte)
+  public final void getBundleClassLoader(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);

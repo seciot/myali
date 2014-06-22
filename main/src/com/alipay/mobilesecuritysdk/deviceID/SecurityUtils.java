@@ -33,7 +33,7 @@ public class SecurityUtils
       localCipher.init(1, localSecretKeySpec, new IvParameterSpec(new byte[localCipher.getBlockSize()]));
       byte[] arrayOfByte4 = localCipher.doFinal(arrayOfByte3);
       arrayOfByte1 = arrayOfByte4;
-      return b(arrayOfByte1);
+      return dexopt(arrayOfByte1);
     }
     catch (Exception localException)
     {

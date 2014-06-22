@@ -9,7 +9,7 @@ final class du
 
   public final void run()
   {
-    WapForgotPayPwdActivity_.b(this.a);
+    WapForgotPayPwdActivity_.dexopt(this.a);
   }
 }
 

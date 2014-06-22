@@ -14,7 +14,7 @@ final class c
   {
     try
     {
-      this.b.b(this.a);
+      this.b.dexopt(this.a);
       b.getBundle(this.b);
       if ((this.b.d) && (this.b.f != null))
       {

@@ -17,7 +17,7 @@ final class b
   {
     String str = AboutFeedbackActivity.getBundle(this.a).getInputedText().replace(" ", "");
     if ((!paramBoolean) && (!AboutFeedbackActivity.a.matcher(str).find()))
-      AboutFeedbackActivity.b(this.a);
+      AboutFeedbackActivity.dexopt(this.a);
   }
 }
 

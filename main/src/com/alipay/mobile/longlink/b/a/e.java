@@ -60,7 +60,7 @@ class e
         byte[] arrayOfByte2 = new byte[i1];
         if (localByteArrayInputStream.read(arrayOfByte2, 0, i1) != i1)
           break label517;
-        locala.b(arrayOfByte2);
+        locala.dexopt(arrayOfByte2);
         int i2 = locala.getBundleName();
         if ((i2 > k - locala.g()) || (i2 < 0))
           continue;
@@ -69,7 +69,7 @@ class e
         int i3 = locala.getBundleName() + locala.g();
         if (locala.getBundlePath() == 1)
         {
-          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUtil.b(arrayOfByte3);
+          arrayOfByte3 = com.alipay.mobile.longlink.BundlesManagerImpl.FileUtil.dexopt(arrayOfByte3);
           locala.getBundleByComponentName(arrayOfByte3.length);
         }
         locala.getBundle(arrayOfByte3);
@@ -90,7 +90,7 @@ class e
           continue;
         com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(5, AppBundle, "processPacket() are processing one valid packet!");
         this.d.g();
-        this.c.submit(new Loadable(this, locala));
+        this.c.submit(new Bundleable(this, locala));
         continue;
       }
       catch (Exception localException)
@@ -103,7 +103,7 @@ class e
     }
   }
 
-  protected final void a()
+  protected final void initExecutor()
   {
     this.e = false;
     this.b = new DefaultThreadFactory(this);

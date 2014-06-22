@@ -17,7 +17,7 @@ final class dn
   {
     this.a.e(null, "getCard", null);
     Intent localIntent = new Intent(this.a, MemberCardObtainableListActivity.class);
-    MemberCardCurrentListActivity.b(this.a).getMicroApplicationContext().startActivityForResult(MemberCardCurrentListActivity.getBundle(this.a), localIntent, 1);
+    MemberCardCurrentListActivity.dexopt(this.a).getMicroApplicationContext().startActivityForResult(MemberCardCurrentListActivity.getBundle(this.a), localIntent, 1);
   }
 }
 

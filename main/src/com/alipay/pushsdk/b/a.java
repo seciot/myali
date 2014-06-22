@@ -47,7 +47,7 @@ public class a extends com.alipay.pushsdk.BundlesManager.AppBundle.BundlesManage
     return str;
   }
 
-  public final String b(String paramString)
+  public final String dexopt(String paramString)
   {
     return getBundle(paramString);
   }

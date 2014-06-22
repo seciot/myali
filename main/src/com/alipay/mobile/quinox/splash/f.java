@@ -13,7 +13,7 @@ final class f extends WebViewClient
   public final void onPageFinished(WebView paramWebView, String paramString)
   {
     super.onPageFinished(paramWebView, paramString);
-    if ((c.getBundle(this.a) != null) && (!c.b(this.a)))
+    if ((c.getBundle(this.a) != null) && (!c.dexopt(this.a)))
       c.d(this.a).postDelayed(new g(this), 1000L);
   }
 

@@ -15,7 +15,7 @@ final class g
   {
     BaseEditElement.getBundle(this.a);
     if (!paramBoolean)
-      BaseEditElement.b(this.a);
+      BaseEditElement.dexopt(this.a);
     h localh = new h(this, EventType.d, paramBoolean);
     this.a.getBundle(localh);
   }

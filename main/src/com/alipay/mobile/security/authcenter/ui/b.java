@@ -21,7 +21,7 @@ final class b
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).getBundle(CompletePhoneUserInfoActivity.getBundle(this.a));
+      localSmsCodeRes = CompletePhoneUserInfoActivity.dexopt(this.a).getBundle(CompletePhoneUserInfoActivity.getBundle(this.a));
       this.a.dismissProgressDialog();
       return localSmsCodeRes;
     }
@@ -42,7 +42,7 @@ final class b
     {
       CompletePhoneUserInfoActivity.v(this.a, paramString2);
       this.a.showProgressDialog(null, true, null);
-      localSmsCodeRes = CompletePhoneUserInfoActivity.b(this.a).e(CompletePhoneUserInfoActivity.getBundle(this.a), paramString1, CompletePhoneUserInfoActivity.getBundleByComponentName(this.a));
+      localSmsCodeRes = CompletePhoneUserInfoActivity.dexopt(this.a).e(CompletePhoneUserInfoActivity.getBundle(this.a), paramString1, CompletePhoneUserInfoActivity.getBundleByComponentName(this.a));
       this.a.dismissProgressDialog();
       return localSmsCodeRes;
     }

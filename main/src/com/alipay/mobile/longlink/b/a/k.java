@@ -451,13 +451,13 @@ public class k extends AppBundle
     this.k.getBundle(parama);
   }
 
-  public final boolean a()
+  public final boolean initExecutor()
   {
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
     return this.o;
   }
 
-  protected final void b(int paramInt)
+  protected final void dexopt(int paramInt)
   {
     if (this.r != null)
       g();

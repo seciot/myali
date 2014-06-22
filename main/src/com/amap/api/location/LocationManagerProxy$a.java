@@ -29,7 +29,7 @@ class LocationManagerProxy$a
         localIntent.putExtras(localBundle);
         try
         {
-          localPendingIntent.send(LocationManagerProxy.b(this.a), 0, localIntent);
+          localPendingIntent.send(LocationManagerProxy.dexopt(this.a), 0, localIntent);
         }
         catch (PendingIntent.CanceledException localCanceledException)
         {
@@ -53,7 +53,7 @@ class LocationManagerProxy$a
         localIntent.putExtras(localBundle);
         try
         {
-          localPendingIntent.send(LocationManagerProxy.b(this.a), 0, localIntent);
+          localPendingIntent.send(LocationManagerProxy.dexopt(this.a), 0, localIntent);
         }
         catch (PendingIntent.CanceledException localCanceledException)
         {

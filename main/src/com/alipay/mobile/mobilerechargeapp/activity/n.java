@@ -10,7 +10,7 @@ final class n extends TimerTask
 
   public final void run()
   {
-    BalancesWarnInputActivity.b(this.a);
+    BalancesWarnInputActivity.dexopt(this.a);
     if (BalancesWarnInputActivity.getBundleByComponentName(this.a) <= 0)
       cancel();
   }

@@ -12,8 +12,8 @@ final class aj
 
   public final void run()
   {
-    if (MultiPictureSelectorActivity.b(this.b.a) != null)
-      MultiPictureSelectorActivity.b(this.b.a).dismiss();
+    if (MultiPictureSelectorActivity.dexopt(this.b.a) != null)
+      MultiPictureSelectorActivity.dexopt(this.b.a).dismiss();
     MultiPictureSelectorActivity.getBundleByComponentName(this.b.a).addAll(this.a);
     MultiPictureSelectorActivity.d(this.b.a).notifyDataSetChanged();
   }

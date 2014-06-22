@@ -13,7 +13,7 @@ final class t
 
   public final void onClick(View paramView)
   {
-    MiniWebActivity.b(this.a).goBack();
+    MiniWebActivity.dexopt(this.a).goBack();
   }
 }
 

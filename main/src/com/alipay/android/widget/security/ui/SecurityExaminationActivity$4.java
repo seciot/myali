@@ -26,7 +26,7 @@ class SecurityExaminationActivity$4
     arrayOfString[1] = "-";
     arrayOfString[2] = "-";
     arrayOfString[3] = "-";
-    arrayOfString[4] = SecurityExaminationActivity.b(this.a).getLastTagId();
+    arrayOfString[4] = SecurityExaminationActivity.dexopt(this.a).getLastTagId();
     AlipayLogAgent.writeLog(localSecurityExaminationActivity, localBehaviourIdEnum, "-", "-", "20000043", "-", "bindingMobileView", "securityCheckUpIndex", "bindingMobile", "-", "u", "c", arrayOfString);
     ((BindPhoneService)SecurityExaminationActivity.getBundleByComponentName(this.a).getMicroApplicationContext().getExtServiceByInterface(BindPhoneService.class.getName())).bindPhone(this.a);
   }

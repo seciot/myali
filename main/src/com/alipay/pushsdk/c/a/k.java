@@ -18,7 +18,7 @@ public class k
     this.e = paramString3;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     BundlesManagerImpl.e(4, AppBundle, "put writeLog into thread pool");
     BundlesManager.execute(new l(this, (byte)0));

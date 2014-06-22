@@ -50,7 +50,7 @@ public final class a extends AsyncTask<Object, Void, ClientUpdateCheckRes>
         this.b.dismissProgressDialog();
         if (localClientUpdateCheckRes.getResultStatus() != 201)
           continue;
-        CharSequence localCharSequence = this.b.getApplicationContext().getText(R.string.Loadable);
+        CharSequence localCharSequence = this.b.getApplicationContext().getText(R.string.Bundleable);
         this.b.Toast(localCharSequence.toString(), 1);
         return localClientUpdateCheckRes;
       }

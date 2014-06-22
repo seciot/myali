@@ -15,7 +15,7 @@ public final class c
     this.b = paramInt;
   }
 
-  public final ZLog a()
+  public final ZLog initExecutor()
   {
     return this.c;
   }

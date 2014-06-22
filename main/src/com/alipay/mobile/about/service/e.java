@@ -11,7 +11,7 @@ final class e
 
   public final void run()
   {
-    ag.a().b(this.a.a);
+    ag.a().dexopt(this.a.a);
     ag.a().d(this.a.a);
   }
 }

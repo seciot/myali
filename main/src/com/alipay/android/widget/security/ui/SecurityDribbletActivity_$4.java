@@ -9,7 +9,7 @@ class SecurityDribbletActivity_$4
 
   public void run()
   {
-    SecurityDribbletActivity_.b(this.a);
+    SecurityDribbletActivity_.dexopt(this.a);
   }
 }
 

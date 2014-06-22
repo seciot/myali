@@ -17,7 +17,7 @@ final class j
       str = this.a.s.stop();
     while (true)
     {
-      this.a.b(str);
+      this.a.dexopt(str);
       return;
       if ("taobao".equals(this.a.p))
         str = this.a.s.getBundleName();

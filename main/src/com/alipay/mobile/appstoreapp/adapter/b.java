@@ -14,7 +14,7 @@ final class b
   public final void onLoad(Bitmap paramBitmap)
   {
     if ((FastLoginAppAdapter.getBundle(this.b) instanceof Activity))
-      ((Activity)FastLoginAppAdapter.b(this.b)).runOnUiThread(new c(this, paramBitmap));
+      ((Activity)FastLoginAppAdapter.dexopt(this.b)).runOnUiThread(new c(this, paramBitmap));
   }
 }
 

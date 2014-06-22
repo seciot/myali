@@ -25,7 +25,7 @@ public abstract class a
     return j;
   }
 
-  public final int a()
+  public final int initExecutor()
   {
     return this.a;
   }
@@ -79,24 +79,24 @@ public abstract class a
     return this.d;
   }
 
-  public final void b(int paramInt)
+  public final void dexopt(int paramInt)
   {
     this.d = paramInt;
   }
 
-  public abstract void b(byte[] paramArrayOfByte);
+  public abstract void dexopt(byte[] paramArrayOfByte);
 
   public final int getBundleName()
   {
     return this.e;
   }
 
-  public final void c(int paramInt)
+  public final void getBundleClassLoader(int paramInt)
   {
     this.e = paramInt;
   }
 
-  public abstract void c(byte[] paramArrayOfByte);
+  public abstract void getBundleClassLoader(byte[] paramArrayOfByte);
 
   public final String getInitLevel()
   {

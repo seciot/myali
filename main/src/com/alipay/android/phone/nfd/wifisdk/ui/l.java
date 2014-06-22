@@ -9,7 +9,7 @@ final class l
 
   public final void run()
   {
-    WifiConnectingActivity_.b(this.a);
+    WifiConnectingActivity_.dexopt(this.a);
   }
 }
 

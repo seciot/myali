@@ -17,7 +17,7 @@ public class d
     this.b = paramj;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "connectionClosed()...");
   }

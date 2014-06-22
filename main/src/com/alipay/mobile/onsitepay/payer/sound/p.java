@@ -13,7 +13,7 @@ final class p
   {
     new StringBuilder("phoneBlackList=").append(paramString).toString();
     if (paramString != null)
-      this.a.b(paramString);
+      this.a.dexopt(paramString);
   }
 }
 

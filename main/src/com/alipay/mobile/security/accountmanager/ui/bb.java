@@ -14,9 +14,9 @@ final class bb
   {
     ForgotLoginPwdActivity.v(this.a, null);
     ForgotLoginPwdActivity.getBundle(this.a);
-    if (1 == ForgotLoginPwdActivity.b(this.a))
+    if (1 == ForgotLoginPwdActivity.dexopt(this.a))
       new Thread(new ForgotLoginPwdActivity.a(this.a, 1, (byte)0)).start();
-    while (2 != ForgotLoginPwdActivity.b(this.a))
+    while (2 != ForgotLoginPwdActivity.dexopt(this.a))
       return;
     new Thread(new ForgotLoginPwdActivity.a(this.a, 5, (byte)0)).start();
   }

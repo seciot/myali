@@ -24,7 +24,7 @@ final class af
         return;
         new StringBuilder("loopQueryTask dynamicId=").append(this.a).toString();
         ae.getBundle(this.b);
-        ae.b(this.b);
+        ae.dexopt(this.b);
         i = ae.getBundleByComponentName(this.b);
         j = 1;
         if (j >= 20)

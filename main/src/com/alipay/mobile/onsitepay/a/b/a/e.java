@@ -28,7 +28,7 @@ final class e
     new StringBuilder("startPollingQuery loopNum=").append(ZLog.getBundle(this.a)).toString();
     while (ZLog.getBundle(this.a) > 0)
     {
-      SystemClock.sleep(ZLog.b(this.a));
+      SystemClock.sleep(ZLog.dexopt(this.a));
       new StringBuilder("startPollingQuery loopNum=").append(ZLog.getBundle(this.a)).append(" isLoopFinish=").append(ZLog.getBundleByComponentName(this.a)).append(" sonicHashMap.size=").append(this.a.a.size()).toString();
       if ((ZLog.getBundleByComponentName(this.a)) || (this.a.a.size() <= 0))
         break;

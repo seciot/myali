@@ -77,7 +77,7 @@ public final class e
             try
             {
               localDate2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(paramString1);
-              localOperationsLogReq.setStartDate(b(localDate2));
+              localOperationsLogReq.setStartDate(dexopt(localDate2));
             }
             catch (ParseException localParseException)
             {

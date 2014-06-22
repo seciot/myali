@@ -19,7 +19,7 @@ final class aj
       this.b.t();
       return;
     }
-    UICombobox.a(this.b, UICombobox.b(this.b), UICombobox.getBundleByComponentName(this.b), this.a);
+    UICombobox.a(this.b, UICombobox.dexopt(this.b), UICombobox.getBundleByComponentName(this.b), this.a);
   }
 }
 

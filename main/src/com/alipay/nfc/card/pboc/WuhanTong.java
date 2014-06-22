@@ -18,7 +18,7 @@ final class WuhanTong extends PbocCard
 
   static final WuhanTong setBundlePath(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).getBundleName())
+    if (paramTag.dexopt(c).getBundleName())
     {
       Iso7816.Response localResponse1 = paramTag.getBundle(10);
       if (!localResponse1.getBundleName())
@@ -27,11 +27,11 @@ final class WuhanTong extends PbocCard
       if (!localResponse2.getBundleName())
         return null;
       Iso7816.Response localResponse3 = paramTag.getBundle(true);
-      if (paramTag.b(t).getBundleName())
+      if (paramTag.dexopt(t).getBundleName())
       {
         if (!localResponse3.getBundleName())
           localResponse3 = paramTag.getBundle(true);
-        ArrayList localArrayList = b(paramTag);
+        ArrayList localArrayList = dexopt(paramTag);
         WuhanTong localWuhanTong = new WuhanTong(paramTag);
         localWuhanTong.getBundle(localResponse3);
         if ((localResponse1.getInstance() < 27) || (localResponse2.getInstance() < 27))

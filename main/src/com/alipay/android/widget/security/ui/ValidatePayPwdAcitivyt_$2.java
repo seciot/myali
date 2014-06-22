@@ -9,7 +9,7 @@ class ValidatePayPwdAcitivyt_$2
 
   public void run()
   {
-    ValidatePayPwdAcitivyt_.b(this.a);
+    ValidatePayPwdAcitivyt_.dexopt(this.a);
   }
 }
 

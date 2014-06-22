@@ -9,7 +9,7 @@ final class di
 
   public final void run()
   {
-    C2BConfirmActivity_.b(this.a);
+    C2BConfirmActivity_.dexopt(this.a);
   }
 }
 

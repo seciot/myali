@@ -206,7 +206,7 @@ public class FastLoginAppAdapter extends ScrollMoreListAdapter
       else
       {
         localViewHolder.e.setBackgroundResource(R.drawable.BundlesManagerImpl);
-        localViewHolder.e.setText(R.string.Loadable);
+        localViewHolder.e.setText(R.string.Bundleable);
         localViewHolder.e.setTextColor(-1);
         localViewHolder.e.setEnabled(true);
       }

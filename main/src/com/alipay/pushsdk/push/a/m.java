@@ -484,13 +484,13 @@ public class m extends AppBundle
     this.k.getBundle(parama);
   }
 
-  public final boolean a()
+  public final boolean initExecutor()
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(4, m, "isConnected()...called=" + this.o + ", connection=" + hashCode());
     return this.o;
   }
 
-  public final void b(int paramInt)
+  public final void dexopt(int paramInt)
   {
     this.q = paramInt;
   }

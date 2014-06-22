@@ -42,7 +42,7 @@ final class ag
         if ("getGoodsList".equalsIgnoreCase(str))
         {
           JSONObject localJSONObject1 = this.a;
-          ae.b(localJSONObject1);
+          ae.dexopt(localJSONObject1);
         }
       }
   }

@@ -25,7 +25,7 @@ final class b
     String str;
     if (this.c)
     {
-      this.d = FormatBankcard.b(this.f).getSelectionEnd();
+      this.d = FormatBankcard.dexopt(this.f).getSelectionEnd();
       int i = 0;
       while (i < this.h.length())
         if (this.h.charAt(i) == ' ')
@@ -51,8 +51,8 @@ final class b
     }
     while (true)
     {
-      FormatBankcard.b(this.f).setText(str);
-      Selection.setSelection(FormatBankcard.b(this.f).getText(), this.d);
+      FormatBankcard.dexopt(this.f).setText(str);
+      Selection.setSelection(FormatBankcard.dexopt(this.f).getText(), this.d);
       this.c = false;
       return;
       label264: if (this.d < 0)

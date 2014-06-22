@@ -9,7 +9,7 @@ final class aa
 
   public final void run()
   {
-    FeedAssistantActivity_.b(this.a);
+    FeedAssistantActivity_.dexopt(this.a);
   }
 }
 

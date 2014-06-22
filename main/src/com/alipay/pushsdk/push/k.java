@@ -18,10 +18,10 @@ final class k
     if (this.b.r())
     {
       c.e(4, j.z(), "terminatePersistentConnection()... run()");
-      this.a.getInitLevel().b(this.a.l());
-      this.a.getInitLevel().b(this.a.m());
-      this.a.getInitLevel().b(this.a.m());
-      this.a.getInitLevel().b(this.a.o());
+      this.a.getInitLevel().dexopt(this.a.l());
+      this.a.getInitLevel().dexopt(this.a.m());
+      this.a.getInitLevel().dexopt(this.a.m());
+      this.a.getInitLevel().dexopt(this.a.o());
       this.b.getInitLevel().getFullBundleName();
       c.e(4, j.z(), "terminatePersistentConnection()...Done!");
     }

@@ -22,7 +22,7 @@ final class q extends AsyncTask<String, String, QueryResult<Page<App>>>
         FastLoginAppActivity.v(this.a, 2048);
       while (true)
       {
-        Page localPage = FastLoginAppActivity.getBundleByComponentName(this.a).v(FastLoginAppActivity.getBundle(this.a), FastLoginAppActivity.b(this.a));
+        Page localPage = FastLoginAppActivity.getBundleByComponentName(this.a).v(FastLoginAppActivity.getBundle(this.a), FastLoginAppActivity.dexopt(this.a));
         if (this.a.a)
           FastLoginAppActivity.getBundleName();
         return new QueryResult(1000, "", localPage);

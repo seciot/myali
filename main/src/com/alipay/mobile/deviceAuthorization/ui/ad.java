@@ -17,7 +17,7 @@ final class ad
 
   public final APOverView getOverView()
   {
-    return LoginLogsActivity.b(this.a);
+    return LoginLogsActivity.dexopt(this.a);
   }
 
   public final void onRefresh()

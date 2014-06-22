@@ -45,7 +45,7 @@ public final class d
   public static String y = "keeplive";
   public static String z = "disconnect";
 
-  public static void a()
+  public static void initExecutor()
   {
     if (BundlesManagerImpl.BundlesManager > 3)
     {

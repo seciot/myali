@@ -32,7 +32,7 @@ public final class c
     }
   }
 
-  public final HostClassLoader a()
+  public final HostClassLoader initExecutor()
   {
     return this.c;
   }

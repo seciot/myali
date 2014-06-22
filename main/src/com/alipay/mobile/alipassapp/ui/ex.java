@@ -32,26 +32,26 @@ final class ex extends Handler
       }
       APTextView localAPTextView = (APTextView)this.a.findViewById(R.id.member_qrcode_msg);
       int i;
-      if (StringUtils.isBlank(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag())))
+      if (StringUtils.isBlank(MemberChargeOffActivity.dexopt(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag())))
       {
         i = 0;
         localAPTextView.setVisibility(i);
-        ((APTextView)this.a.findViewById(R.id.member_qrcode_altText)).setText(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
-        ((APImageView)this.a.findViewById(R.id.member_qrcode)).setImageBitmap(MemberChargeOffActivity.b(this.a).getBitmap(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        ((APTextView)this.a.findViewById(R.id.member_qrcode_altText)).setText(MemberChargeOffActivity.dexopt(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        ((APImageView)this.a.findViewById(R.id.member_qrcode)).setImageBitmap(MemberChargeOffActivity.dexopt(this.a).getBitmap(MemberChargeOffActivity.getBundle(this.a).getTag()));
         if (MemberChargeOffActivity.getBundleByComponentName(this.a) != null)
           break label308;
-        MemberChargeOffActivity.v(this.a, new au(this.a, MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()), false));
+        MemberChargeOffActivity.v(this.a, new au(this.a, MemberChargeOffActivity.dexopt(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()), false));
         ((APImageView)this.a.findViewById(R.id.member_qrcode)).setOnClickListener(MemberChargeOffActivity.getBundleByComponentName(this.a));
       }
       while (true)
       {
         if (MemberChargeOffActivity.d(this.a) == null)
           break label352;
-        MemberChargeOffActivity.d(this.a).startPayBridge(MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        MemberChargeOffActivity.d(this.a).startPayBridge(MemberChargeOffActivity.dexopt(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
         return;
         i = 8;
         break;
-        MemberChargeOffActivity.getBundleByComponentName(this.a).v((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.b(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
+        MemberChargeOffActivity.getBundleByComponentName(this.a).v((APImageView)this.a.findViewById(R.id.member_qrcode), MemberChargeOffActivity.dexopt(this.a).getAltText(MemberChargeOffActivity.getBundle(this.a).getTag()));
       }
     }
   }

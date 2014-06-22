@@ -22,7 +22,7 @@ public final class d
       str = parama.getInitLevel();
     try
     {
-      m.b(new JSONObject(str).optInt("reconnectTime"));
+      m.dexopt(new JSONObject(str).optInt("reconnectTime"));
       this.a.getBundleName();
       return;
     }

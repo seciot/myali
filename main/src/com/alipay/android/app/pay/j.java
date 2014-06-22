@@ -24,7 +24,7 @@ final class j
       try
       {
         LogUtils.g();
-        PageForBrowser.b(this.a).registerCallback(PageForBrowser.getBundle(this.a));
+        PageForBrowser.dexopt(this.a).registerCallback(PageForBrowser.getBundle(this.a));
         PageForBrowser.getBundleByComponentName(this.a).notify();
         return;
       }
@@ -41,7 +41,7 @@ final class j
     LogUtils.g();
     try
     {
-      PageForBrowser.b(this.a).unregisterCallback(PageForBrowser.getBundle(this.a));
+      PageForBrowser.dexopt(this.a).unregisterCallback(PageForBrowser.getBundle(this.a));
       return;
     }
     catch (RemoteException localRemoteException)

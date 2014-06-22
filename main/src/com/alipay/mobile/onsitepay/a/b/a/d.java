@@ -33,7 +33,7 @@ public final class d
     this.e = 3000;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     this.c = true;
   }

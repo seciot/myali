@@ -29,7 +29,7 @@ public final class WifiConnectingActivity_ extends WifiConnectingActivity
     this.c = ((ViewGroup)findViewById(R.id.AppBundle));
     this.k = ((LinearLayout)findViewById(R.id.g));
     this.j = ((TextView)findViewById(R.id.i));
-    this.i = ((TextView)findViewById(R.id.Loadable));
+    this.i = ((TextView)findViewById(R.id.Bundleable));
     this.d = ((ViewGroup)findViewById(R.id.BundlesManager));
     this.e = ((Button)findViewById(R.id.ZLog));
     b();

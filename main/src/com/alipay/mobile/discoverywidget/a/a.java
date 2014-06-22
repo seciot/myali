@@ -6,7 +6,7 @@ public final class a
 {
   IndexWidgetResult a;
 
-  public final IndexWidgetResult a()
+  public final IndexWidgetResult initExecutor()
   {
     return this.a;
   }

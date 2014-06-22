@@ -12,7 +12,7 @@ class UserTipDialog$3
 
   public void onDismiss()
   {
-    UserTipDialog.b(this.a).setClickable(true);
+    UserTipDialog.dexopt(this.a).setClickable(true);
   }
 }
 

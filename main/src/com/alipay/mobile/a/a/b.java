@@ -15,7 +15,7 @@ public final class b
     this.b = paramContext;
   }
 
-  public final ArrayList<BundlesManagerImpl> a()
+  public final ArrayList<BundlesManagerImpl> initExecutor()
   {
     ArrayList localArrayList = new ArrayList();
     Cursor localCursor = this.a.query("RecentTable2", new String[] { "ID", "NAME", "PASSWORD", "TYPE", "LOGINTIME", "USERID", "RSAPASSWORD", "RANDOMNUM", "REALNAME", "PHONENO", "USERAVTARPATH" }, null, null, null, null, "ID desc");
@@ -31,7 +31,7 @@ public final class b
       localc.HostClassLoader = localCursor.getString(localCursor.getColumnIndex("RSAPASSWORD"));
       localc.DefaultThreadFactory = localCursor.getString(localCursor.getColumnIndex("RANDOMNUM"));
       localc.g = localCursor.getString(localCursor.getColumnIndex("REALNAME"));
-      localc.Loadable = localCursor.getString(localCursor.getColumnIndex("PHONENO"));
+      localc.Bundleable = localCursor.getString(localCursor.getColumnIndex("PHONENO"));
       localc.i = localCursor.getString(localCursor.getColumnIndex("USERAVTARPATH"));
       localArrayList.add(localc);
     }

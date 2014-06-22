@@ -15,7 +15,7 @@ public abstract class b
     this.d = paramContext;
   }
 
-  protected final String a()
+  protected final String initExecutor()
   {
     String str1 = this.d.getFilesDir().getPath() + "/";
     String str2 = str1 + BundlesManagerImpl + File.separatorChar;
@@ -29,7 +29,7 @@ public abstract class b
 
   public abstract boolean setBundlePath(AppBundle parama);
 
-  public abstract void b(AppBundle parama);
+  public abstract void dexopt(AppBundle parama);
 }
 
 /* Location:           /Users/don/DeSources/alipay/backup/zhifubaoqianbao_52/classes-dex2jar.jar

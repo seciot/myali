@@ -12,7 +12,7 @@ final class a
 
   public final void onInstallFailed()
   {
-    this.b.b(this.a);
+    this.b.dexopt(this.a);
   }
 
   public final void onPayFailed(int paramInt, String paramString)

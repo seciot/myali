@@ -33,7 +33,7 @@ final class a
     long l = -1L;
     if (FileDownloader.getBundle(this.a))
     {
-      l = FileDownloader.b(this.a);
+      l = FileDownloader.dexopt(this.a);
       if (l <= 0L)
         localb.sendEmptyMessage(0);
     }
@@ -51,7 +51,7 @@ final class a
       {
         FileDownloader.getBundleByComponentName(this.a);
         FileDownloader.h(this.a).getBundle(0L);
-        FileDownloader.h(this.a).b(l);
+        FileDownloader.h(this.a).dexopt(l);
       }
     }
     new Thread(FileDownloader.h(this.a)).start();

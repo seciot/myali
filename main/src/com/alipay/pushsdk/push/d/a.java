@@ -23,7 +23,7 @@ public class a
     if (new DefaultThreadFactory(3).getBundle(parama))
     {
       o.getBundle(System.currentTimeMillis());
-      this.b.b(System.currentTimeMillis());
+      this.b.dexopt(System.currentTimeMillis());
       com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, AppBundle, "processPacket() got one HeartBeatPacket from Server!");
       ZLog.a(ZLog.u, ZLog.y, System.currentTimeMillis(), ZLog.y, System.currentTimeMillis() + 1000 * o.l(), "HeartBeatPacketListener_processPacket:keepLiveTime=" + o.l());
       if (parama.stop() != 0);
@@ -32,7 +32,7 @@ public class a
     {
       com.alipay.pushsdk.push.BundlesManagerImpl.AppBundle locala = com.alipay.pushsdk.push.BundlesManagerImpl.FileUtil.getBundle(this.b.getRequireBundleName());
       locala.getBundle(3);
-      locala.b(1);
+      locala.dexopt(1);
       locala.getBundle("");
       this.b.getInitLevel().getBundle(locala);
       this.b.v();

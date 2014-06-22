@@ -15,7 +15,7 @@ final class h
   {
     if ((paramInt == 4) && (paramKeyEvent.getAction() == 0))
     {
-      b.b(this.a);
+      b.dexopt(this.a);
       return false;
     }
     return true;

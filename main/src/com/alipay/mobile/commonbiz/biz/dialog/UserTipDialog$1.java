@@ -14,7 +14,7 @@ class UserTipDialog$1
   public void onClick(View paramView)
   {
     UserTipDialog.getBundle(this.a);
-    UserTipDialog.b(this.a).setClickable(false);
+    UserTipDialog.dexopt(this.a).setClickable(false);
   }
 }
 

@@ -27,7 +27,7 @@ final class a
     if (DeviceManageActivity.getBundle(this.b).getClientTid() == null)
     {
       str = "";
-      localDeviceInfo = (DeviceInfo)DeviceManageActivity.b(this.b).getItem(i);
+      localDeviceInfo = (DeviceInfo)DeviceManageActivity.dexopt(this.b).getItem(i);
       if (localDeviceInfo != null)
         break label87;
     }

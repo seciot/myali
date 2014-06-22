@@ -17,7 +17,7 @@ final class cz extends Handler
       return;
     case 1:
     }
-    AlipassSchemeTransferActivity.b(this.a);
+    AlipassSchemeTransferActivity.dexopt(this.a);
   }
 }
 

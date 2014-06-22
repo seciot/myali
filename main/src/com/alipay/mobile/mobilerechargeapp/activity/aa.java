@@ -19,7 +19,7 @@ final class aa
   {
     if (!MobileBalancesWarnActivity.getBundle(this.a))
       return;
-    MobileBalancesWarnActivity.b(this.a);
+    MobileBalancesWarnActivity.dexopt(this.a);
     LogAgentWriteLog.getBundleByComponentName(this.a);
     MicroApplicationContext localMicroApplicationContext = MobileBalancesWarnActivity.getBundleByComponentName(this.a).getMicroApplicationContext();
     Intent localIntent = new Intent(this.a, BalancesWarnInputActivity_.class);

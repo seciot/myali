@@ -9,7 +9,7 @@ final class cf
 
   public final void run()
   {
-    AlipassQueryCardActivity_.b(this.a);
+    AlipassQueryCardActivity_.dexopt(this.a);
   }
 }
 

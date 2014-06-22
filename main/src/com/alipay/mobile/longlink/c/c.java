@@ -114,7 +114,7 @@ public class c
   }
 
   // ERROR //
-  public static byte[] b(byte[] paramArrayOfByte)
+  public static byte[] dexopt(byte[] paramArrayOfByte)
   {
     // Byte code:
     //   0: aload_0

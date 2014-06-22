@@ -64,7 +64,7 @@ public class a extends BundlesManager
         break;
       throw new IllegalArgumentException("Input array too big, the output array would be bigger (" + l + ") than the specified maximum size of " + paramInt);
     }
-    return locala.b(paramArrayOfByte);
+    return locala.dexopt(paramArrayOfByte);
   }
 
   void a(byte[] paramArrayOfByte, int paramInt1, int paramInt2)

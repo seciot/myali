@@ -4,7 +4,7 @@ import com.alipay.mobile.framework.AlipayApplication;
 
 public abstract interface d
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void a(AlipayApplication paramAlipayApplication, String paramString, AppBundle parama);
 }

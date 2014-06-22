@@ -15,8 +15,8 @@ final class ah
   {
     this.a.removeAllViews();
     this.a.addView(UISubForm.getBundle(this.b));
-    if (UISubForm.b(this.b) != null)
-      UISubForm.b(this.b).g();
+    if (UISubForm.dexopt(this.b) != null)
+      UISubForm.dexopt(this.b).g();
     UISubForm.getBundleByComponentName(this.b);
     UISubForm.d(this.b);
   }

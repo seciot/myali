@@ -9,7 +9,7 @@ class SecurityOperateRecordsActivity_$3
 
   public void run()
   {
-    SecurityOperateRecordsActivity_.b(this.a);
+    SecurityOperateRecordsActivity_.dexopt(this.a);
   }
 }
 

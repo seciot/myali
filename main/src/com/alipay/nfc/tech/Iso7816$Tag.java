@@ -15,7 +15,7 @@ public final class Iso7816$Tag
     this.b = new Iso7816.ID(paramIsoDep.getTag().getId());
   }
 
-  public final Iso7816.ID a()
+  public final Iso7816.ID initExecutor()
   {
     return this.b;
   }
@@ -71,7 +71,7 @@ public final class Iso7816$Tag
     return new Iso7816.Response(c(new byte[] { 0, -78, 1, -59, 0 }));
   }
 
-  public final Iso7816.Response b(byte[] paramArrayOfByte)
+  public final Iso7816.Response dexopt(byte[] paramArrayOfByte)
   {
     ByteBuffer localByteBuffer = ByteBuffer.allocate(6 + paramArrayOfByte.length);
     localByteBuffer.put((byte)0).put((byte)-92).put((byte)4).put((byte)0).put((byte)paramArrayOfByte.length).put(paramArrayOfByte).put((byte)0);

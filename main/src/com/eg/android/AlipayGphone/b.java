@@ -10,7 +10,7 @@ final class b
   public final void run()
   {
     AlipayLogin.getBundleByComponentName(this.a);
-    AlipayLogin.b(this.a);
+    AlipayLogin.dexopt(this.a);
   }
 }
 

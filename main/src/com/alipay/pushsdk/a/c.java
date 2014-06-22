@@ -11,16 +11,16 @@ public class c
   private static final String a = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.getBundle(BundlesManagerImpl.class);
   private Context b;
   private BundlesManager c;
-  private Loadable d;
+  private Bundleable d;
 
   public c(Context paramContext)
   {
     this.b = paramContext;
     this.c = new BundlesManager(this.b);
-    this.d = new Loadable(this.b);
+    this.d = new Bundleable(this.b);
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     String str1 = this.d.getInstance();
     String str2 = com.alipay.pushsdk.BundlesManagerImpl.AppBundle.stop();

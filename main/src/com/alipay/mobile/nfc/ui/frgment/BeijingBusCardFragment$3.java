@@ -16,7 +16,7 @@ class BeijingBusCardFragment$3
     if ((localAuthService != null) && (localAuthService.showActivityLogin(null, localAuthService.getUserInfo())))
     {
       BeijingBusCardFragment.getInstance();
-      BeijingBusCardFragment.b(this.a);
+      BeijingBusCardFragment.dexopt(this.a);
     }
   }
 }

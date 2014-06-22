@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-public final class HostClassLoader extends PathClassLoader implements Loadable {
+public final class HostClassLoader extends PathClassLoader implements Bundleable {
 	private LauncherApplication app;
 	private BootstrapClassLoader bootstrapClassLoader;
 	private PathClassLoader pathClassLoader;
@@ -51,12 +51,12 @@ public final class HostClassLoader extends PathClassLoader implements Loadable {
 		}
 	}
 
-	public final Set<Loadable> getDepends() {
-		final Set<Loadable> depends = new HashSet<Loadable>();
+	public final Set<Bundleable> getDepends() {
+		final Set<Bundleable> depends = new HashSet<Bundleable>();
 		if (this.e != null) {
 			for (final String s : this.e) {
 				if (s != null && s.length() > 0) {
-					final Loadable c = this.bootstrapClassLoader.c(s.split("@")[0]);
+					final Bundleable c = this.bootstrapClassLoader.getBundleClassLoader(s.split("@")[0]);
 					if (c != null) {
 						depends.add(c);
 					}
@@ -71,11 +71,11 @@ public final class HostClassLoader extends PathClassLoader implements Loadable {
 			if (this.app.pattern(s) || this.app.patternHost(s)) {
 				break Label_0132;
 			}
-			final HashSet<Loadable> set = new HashSet<Loadable>();
+			final HashSet<Bundleable> set = new HashSet<Bundleable>();
 			if (this.d != null) {
 				for (final String s2 : this.d) {
 					if (s2 != null && s2.length() > 0) {
-						final Loadable c = this.bootstrapClassLoader.c(s2);
+						final Bundleable c = this.bootstrapClassLoader.getBundleClassLoader(s2);
 						if (c != null) {
 							set.add(c);
 						}

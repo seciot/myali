@@ -9,7 +9,7 @@ final class cb
 
   public final void run()
   {
-    ForgotPayPwdActivity_.b(this.a);
+    ForgotPayPwdActivity_.dexopt(this.a);
   }
 }
 

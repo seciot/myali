@@ -9,7 +9,7 @@ final class ah
 
   public final void run()
   {
-    BindPhoneActivity_.b(this.a);
+    BindPhoneActivity_.dexopt(this.a);
   }
 }
 

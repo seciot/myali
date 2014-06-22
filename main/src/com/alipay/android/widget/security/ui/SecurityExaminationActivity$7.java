@@ -28,7 +28,7 @@ class SecurityExaminationActivity$7
       arrayOfString[1] = "-";
       arrayOfString[2] = "-";
       arrayOfString[3] = "-";
-      arrayOfString[4] = SecurityExaminationActivity.b(this.a).getLastTagId();
+      arrayOfString[4] = SecurityExaminationActivity.dexopt(this.a).getLastTagId();
       AlipayLogAgent.writeLog(localSecurityExaminationActivity, localBehaviourIdEnum, "-", "-", "20000043", "-", "-", "securityCheckUpIndex", "setGesture", "-", "u", "c", arrayOfString);
       SecurityExaminationActivity.p(this.a).getMicroApplicationContext().startApp(SecurityExaminationActivity.o(this.a).getAppId(), "20000028", null);
       SecurityExaminationActivity.q(this.a);

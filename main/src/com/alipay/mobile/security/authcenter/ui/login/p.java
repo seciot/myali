@@ -21,7 +21,7 @@ final class p
       return;
     }
     BaseLoginFragment.getBundleByComponentName(this.c).process(this.b);
-    BaseLoginFragment.b(this.c);
+    BaseLoginFragment.dexopt(this.c);
     CacheSet.getInstance(AlipayApplication.getInstance()).putString("isValidScheme", "false");
   }
 }

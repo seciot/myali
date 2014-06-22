@@ -44,8 +44,8 @@ class SecurityDribbletActivity$1 extends Handler
     }
     QueryFreePwdSwitchRes localQueryFreePwdSwitchRes = (QueryFreePwdSwitchRes)JSON.parseObject(localBundle.get("rs").toString(), QueryFreePwdSwitchRes.class);
     if (localQueryFreePwdSwitchRes != null)
-      SecurityDribbletActivity.b(this.a).setNoPayPwd(localQueryFreePwdSwitchRes.isOpen());
-    SecurityDribbletActivity.e(this.a, localQueryFreePwdSwitchRes, SecurityDribbletActivity.b(this.a));
+      SecurityDribbletActivity.dexopt(this.a).setNoPayPwd(localQueryFreePwdSwitchRes.isOpen());
+    SecurityDribbletActivity.e(this.a, localQueryFreePwdSwitchRes, SecurityDribbletActivity.dexopt(this.a));
   }
 }
 

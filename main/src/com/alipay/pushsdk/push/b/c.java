@@ -4,7 +4,7 @@ import com.alipay.pushsdk.push.a.p;
 
 public abstract interface c
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void setBundlePath(p paramp);
 }

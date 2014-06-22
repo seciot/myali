@@ -184,7 +184,7 @@ public final class a
     //   82	147	327	java/lang/Exception
   }
 
-  private static String b(String paramString)
+  private static String dexopt(String paramString)
   {
     int i = paramString.length();
     if (i < 32)

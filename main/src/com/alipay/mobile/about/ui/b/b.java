@@ -15,7 +15,7 @@ public final class b
     this.b = paramString;
   }
 
-  public final String a()
+  public final String initExecutor()
   {
     return this.b;
   }

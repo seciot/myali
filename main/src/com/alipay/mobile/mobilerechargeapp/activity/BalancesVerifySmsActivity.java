@@ -106,7 +106,7 @@ public class BalancesVerifySmsActivity extends BaseActivity
   {
     dismissProgressDialog();
     if (paramAlertSignRes == null)
-      b(getResources().getString(R.string.y));
+      dexopt(getResources().getString(R.string.y));
     do
     {
       return;

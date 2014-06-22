@@ -64,7 +64,7 @@ public class UICheckBox extends BaseElement
 
   protected final int t()
   {
-    return R.layout.Loadable;
+    return R.layout.Bundleable;
   }
 }
 

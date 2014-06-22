@@ -4,7 +4,7 @@ import com.alipay.mobile.longlink.b.a.n;
 
 public abstract interface c
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void setBundlePath(n paramn);
 }

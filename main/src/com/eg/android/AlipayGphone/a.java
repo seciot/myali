@@ -18,7 +18,7 @@ final class a extends Handler
     case 2:
     }
     AlipayLogin.getBundle(this.a);
-    AlipayLogin.b(this.a);
+    AlipayLogin.dexopt(this.a);
   }
 }
 

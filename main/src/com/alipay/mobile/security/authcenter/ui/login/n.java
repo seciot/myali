@@ -16,7 +16,7 @@ final class n
       BaseLoginFragment.getBundle(this.b);
       return;
     }
-    BaseLoginFragment.b(this.b);
+    BaseLoginFragment.dexopt(this.b);
   }
 }
 

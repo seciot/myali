@@ -16,11 +16,11 @@ final class q
     do
       while (true)
       {
-        BaseLoginFragment.b(this.c);
+        BaseLoginFragment.dexopt(this.c);
         return;
         if (!"registBindToCard".equals(this.a))
           break;
-        this.c.b(this.b);
+        this.c.dexopt(this.b);
       }
     while (!this.b);
     BaseLoginFragment.getBundle(this.c);

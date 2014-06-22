@@ -14,9 +14,9 @@ final class dc
 
   public final void onCancel(DialogInterface paramDialogInterface)
   {
-    if ((ModifyPayPwdActivity.b(this.a) != null) && (ModifyPayPwdActivity.b(this.a).isAlive()))
+    if ((ModifyPayPwdActivity.dexopt(this.a) != null) && (ModifyPayPwdActivity.dexopt(this.a).isAlive()))
     {
-      ModifyPayPwdActivity.b(this.a).interrupt();
+      ModifyPayPwdActivity.dexopt(this.a).interrupt();
       this.a.dismissProgressDialog();
       ModifyPayPwdActivity.removeBundle(this.a).getMicroApplicationContext().finishApp(ModifyPayPwdActivity.getBundleByComponentName(this.a).getAppId(), ModifyPayPwdActivity.d(this.a).getAppId(), null);
     }

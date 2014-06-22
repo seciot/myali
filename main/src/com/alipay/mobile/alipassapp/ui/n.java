@@ -9,7 +9,7 @@ final class n
 
   public final void run()
   {
-    AlipassDetailActivity_.b(this.a);
+    AlipassDetailActivity_.dexopt(this.a);
   }
 }
 

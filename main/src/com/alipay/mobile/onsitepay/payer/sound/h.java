@@ -18,11 +18,11 @@ final class h
   public final void a()
   {
     this.a.s();
-    if ((SendSoundViewActivity.b(this.a) != null) && (SendSoundViewActivity.b(this.a).userList != null) && (SendSoundViewActivity.b(this.a).userList.size() > 0))
+    if ((SendSoundViewActivity.dexopt(this.a) != null) && (SendSoundViewActivity.dexopt(this.a).userList != null) && (SendSoundViewActivity.dexopt(this.a).userList.size() > 0))
     {
-      new StringBuilder("set lbs frients count = ").append(SendSoundViewActivity.b(this.a).userList.size()).toString();
+      new StringBuilder("set lbs frients count = ").append(SendSoundViewActivity.dexopt(this.a).userList.size()).toString();
       this.a.n.setVisibility(0);
-      Iterator localIterator = SendSoundViewActivity.b(this.a).userList.iterator();
+      Iterator localIterator = SendSoundViewActivity.dexopt(this.a).userList.iterator();
       for (int i = 0; localIterator.hasNext(); i++)
       {
         DisplayUserInfo localDisplayUserInfo = (DisplayUserInfo)localIterator.next();

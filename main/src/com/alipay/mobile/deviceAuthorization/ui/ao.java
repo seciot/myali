@@ -44,10 +44,10 @@ final class ao
             localArrayList.add(locald.getBundle(i).optionKey);
           i++;
           continue;
-          if ((PermAuthActivity.b(this.b) == null) || (PermAuthActivity.b(this.b).getVisibility() != 0))
+          if ((PermAuthActivity.dexopt(this.b) == null) || (PermAuthActivity.dexopt(this.b).getVisibility() != 0))
             break label242;
-          String str2 = PermAuthActivity.b(this.b).getInputedPwd(-1);
-          PermAuthActivity.v(this.b, PermAuthActivity.b(this.b));
+          String str2 = PermAuthActivity.dexopt(this.b).getInputedPwd(-1);
+          PermAuthActivity.v(this.b, PermAuthActivity.dexopt(this.b));
           str1 = "MOBILEPASSWORD";
           localObject = str2;
           break;

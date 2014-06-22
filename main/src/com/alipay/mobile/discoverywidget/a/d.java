@@ -7,7 +7,7 @@ public final class d
   private static ZLog a;
   private HashMap<String, AppBundle> b = new HashMap();
 
-  public static ZLog a()
+  public static ZLog initExecutor()
   {
     if (AppBundle == null)
       AppBundle = new ZLog();

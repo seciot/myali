@@ -16,7 +16,7 @@ class BaseAuthenticationFragment$2
   {
     if (paramBoolean)
     {
-      this.b.b(this.a);
+      this.b.dexopt(this.a);
       AlipayLogAgent.writeLog(this.b.getActivity(), BehaviourIdEnum.OPENPAGE, "-", "-", "20000038", "-", "bindCardSuccessView", "-", "-");
       return;
     }

@@ -21,7 +21,7 @@ final class a
     int i = CardValidateInputUtil.getBundle(this.a).b.getYear();
     CardValidateInputUtil.v(this.a, CardValidateInputUtil.getBundle(this.a).b.getMonthStr(true));
     CardValidateInputUtil.d(this.a, String.valueOf(i));
-    CardValidateInputUtil.i(this.a, CardValidateInputUtil.b(this.a).substring(2, 4));
+    CardValidateInputUtil.i(this.a, CardValidateInputUtil.dexopt(this.a).substring(2, 4));
     CardValidateInputUtil.removeBundle(this.a).setText(CardValidateInputUtil.getBundleByComponentName(this.a) + "/" + CardValidateInputUtil.d(this.a));
     CardValidateInputUtil.f(this.a).v(CardValidateInputUtil.removeBundle(this.a), new MiniEventArgs(ActionType.t));
     paramDialogInterface.dismiss();

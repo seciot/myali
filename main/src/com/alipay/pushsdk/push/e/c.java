@@ -11,7 +11,7 @@ public final class c extends ZLog
     super(paramj);
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     if ((this.a.w()) || (o.hasResource()))
     {

@@ -9,7 +9,7 @@ final class h
 
   public final void run()
   {
-    AlipayUserLoginFragment_.b(this.a);
+    AlipayUserLoginFragment_.dexopt(this.a);
   }
 }
 

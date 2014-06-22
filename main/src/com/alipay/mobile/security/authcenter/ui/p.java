@@ -9,7 +9,7 @@ final class p
 
   public final void run()
   {
-    CompleteUserInfoActivity_.b(this.a);
+    CompleteUserInfoActivity_.dexopt(this.a);
   }
 }
 

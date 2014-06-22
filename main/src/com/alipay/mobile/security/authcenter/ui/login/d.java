@@ -14,7 +14,7 @@ final class d
   {
     if (AlipayUserLoginFragment.getBundle(this.a))
     {
-      AlipayUserLoginFragment.b(this.a);
+      AlipayUserLoginFragment.dexopt(this.a);
       paramEditable.clear();
     }
   }

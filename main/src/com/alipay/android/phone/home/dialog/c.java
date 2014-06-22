@@ -20,8 +20,8 @@ final class c
   {
     if (paramFloat2 < 0.0F)
     {
-      if (NfdPanelDialog.b(this.a) != null)
-        NfdPanelDialog.b(this.a).onClick(null);
+      if (NfdPanelDialog.dexopt(this.a) != null)
+        NfdPanelDialog.dexopt(this.a).onClick(null);
       return true;
     }
     return false;

@@ -26,7 +26,7 @@ public class a
     {
       com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.AppBundle locala = com.alipay.mobile.longlink.BundlesManager.BundlesManagerImpl.FileUtil.getBundle(this.b.g());
       locala.getBundle(3);
-      locala.b(1);
+      locala.dexopt(1);
       locala.getBundle("");
       this.b.getInitLevel().getBundle(locala);
       this.b.t();

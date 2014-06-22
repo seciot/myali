@@ -11,7 +11,7 @@ class NFCEntry$1
   {
     NFCEntry localNFCEntry = this.a;
     NFCEntry.getBundle(this.a);
-    NFCEntry.b(localNFCEntry);
+    NFCEntry.dexopt(localNFCEntry);
   }
 }
 

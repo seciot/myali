@@ -19,14 +19,14 @@ final class ChanganTong extends PbocCard
 
   static final ChanganTong setBundlePath(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).getBundleName())
+    if (paramTag.dexopt(c).getBundleName())
     {
       paramTag.getBundle(5);
-      if (paramTag.b(t).getBundleName())
+      if (paramTag.dexopt(t).getBundleName())
       {
         Iso7816.Response localResponse1 = paramTag.getBundle(21);
         Iso7816.Response localResponse2 = paramTag.getBundle(true);
-        ArrayList localArrayList = b(paramTag);
+        ArrayList localArrayList = dexopt(paramTag);
         ChanganTong localChanganTong = new ChanganTong(paramTag);
         localChanganTong.getBundle(localResponse2);
         localChanganTong.e(localResponse1, 4, false);

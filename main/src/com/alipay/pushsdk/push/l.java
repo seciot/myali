@@ -24,7 +24,7 @@ final class l
     if (!this.a.r())
     {
       this.b.d(System.currentTimeMillis());
-      j.b(this.b);
+      j.dexopt(this.b);
       j.getBundleByComponentName(this.b);
       com.alipay.pushsdk.push.ZResources.a.c localc;
       com.alipay.pushsdk.push.FileUtil.c localc1;
@@ -42,7 +42,7 @@ final class l
         localc1.getFullBundleName();
         m localm = new m(localc1);
         this.a.a(localm);
-        this.a.getInitLevel().b(j.i(this.b));
+        this.a.getInitLevel().dexopt(j.i(this.b));
         this.a.getInitLevel().getBundle(j.j(this.b));
         this.a.getInitLevel().getBundle(this.c);
         return;

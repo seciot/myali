@@ -27,7 +27,7 @@ class SmsCheckFragment$1
       AlipayApplication.getInstance().getMicroApplicationContext().Toast(this.a.getResources().getString(R.string.bB), 1);
       return;
     }
-    SmsCheckFragment.b(this.a).set(false);
+    SmsCheckFragment.dexopt(this.a).set(false);
     SmsCheckFragment.getBundleByComponentName(this.a).dispose();
     this.a.v(str, this.a);
     SecurityUtil.d(AlipayApplication.getInstance(), SmsCheckFragment.getBundle(this.a).getEtContent());

@@ -26,7 +26,7 @@ final class h
       AlipayLogAgent.writeLog(this.a.getApplicationContext(), BehaviourIdEnum.MONITOR, "kf", null, null, null, null, null, "C2C", paramString, "", "-", new String[] { "kf", "receivewave", "", "y", "alipayclient" });
       FacePayeeActivity.removeBundle(this.a).put(paramString, Long.valueOf(l));
       FacePayeeActivity.f(this.a);
-      this.a.b(paramString);
+      this.a.dexopt(paramString);
     }
     FacePayeeActivity.g(this.a);
   }

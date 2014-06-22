@@ -6,7 +6,7 @@ public final class m
   private static int b = 30;
   private static int c = 2;
 
-  public static String a()
+  public static String initExecutor()
   {
     return "1.0.0";
   }
@@ -25,7 +25,7 @@ public final class m
     return AppBundle;
   }
 
-  public static void b(int paramInt)
+  public static void dexopt(int paramInt)
   {
     BundlesManagerImpl = paramInt;
   }
@@ -35,7 +35,7 @@ public final class m
     return BundlesManager;
   }
 
-  public static void c(int paramInt)
+  public static void getBundleClassLoader(int paramInt)
   {
     BundlesManager = paramInt;
   }

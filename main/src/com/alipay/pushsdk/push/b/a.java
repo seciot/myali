@@ -2,7 +2,7 @@ package com.alipay.pushsdk.push.b;
 
 public abstract interface a
 {
-  public abstract void a();
+  public abstract void initExecutor();
 
   public abstract void stop();
 }

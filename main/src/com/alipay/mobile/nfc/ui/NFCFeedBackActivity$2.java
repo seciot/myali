@@ -14,7 +14,7 @@ class NFCFeedBackActivity$2
 
   public void onClick(View paramView)
   {
-    if (!NFCFeedBackActivity.b(this.a))
+    if (!NFCFeedBackActivity.dexopt(this.a))
     {
       NFCFeedBackActivity.v(this.a, "请选择卡类别");
       return;

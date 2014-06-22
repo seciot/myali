@@ -17,11 +17,11 @@ final class ad extends Thread
     ac.v(this.a, new Timer());
     ac.v(this.a, new af(this.a, (byte)0));
     ac.v(this.a, ac.getBundle(this.a));
-    if (ac.b(this.a) == null)
+    if (ac.dexopt(this.a) == null)
     {
       ac.v(this.a, true);
       ac.v(this.a, new ae(this.a, ""));
-      ac.b(this.a).start();
+      ac.dexopt(this.a).start();
     }
     ac.v(this.a, new ag(this.a, (byte)0));
     ac.a(this.a, ac.getBundleByComponentName(this.a), 0L, 2.0F);

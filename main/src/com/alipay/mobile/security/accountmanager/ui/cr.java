@@ -9,7 +9,7 @@ final class cr
 
   public final void run()
   {
-    ModifyLoginPwdActivity_.b(this.a);
+    ModifyLoginPwdActivity_.dexopt(this.a);
   }
 }
 

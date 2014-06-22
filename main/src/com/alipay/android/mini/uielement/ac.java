@@ -15,7 +15,7 @@ final class ac
 
   public final void onItemClick(AdapterView paramAdapterView, View paramView, int paramInt, long paramLong)
   {
-    UISelectButton.v(this.a, (String)UISelectButton.b(this.a).get(paramInt));
+    UISelectButton.v(this.a, (String)UISelectButton.dexopt(this.a).get(paramInt));
     this.a.v(this.a, ActionType.getBundle(this.a.getAllComponentNames()));
   }
 }

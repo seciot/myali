@@ -17,7 +17,7 @@ public class SyncAnimatingHelper$TransInfo
     this.d = paramInt;
   }
 
-  public final SyncAnimatingHelper.TYPE a()
+  public final SyncAnimatingHelper.TYPE initExecutor()
   {
     return this.c;
   }

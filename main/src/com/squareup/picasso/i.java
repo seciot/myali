@@ -24,7 +24,7 @@ final class i extends Handler
         case 0:
           return;
         case 1:
-          Loadable localh9 = this.a;
+          Bundleable localh9 = this.a;
           localh9.BundlesManagerImpl = (1L + localh9.BundlesManagerImpl);
         case 2:
         case 3:

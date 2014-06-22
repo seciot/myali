@@ -9,7 +9,7 @@ final class au
 
   public final void run()
   {
-    RegisterNewActivity.b(this.a);
+    RegisterNewActivity.dexopt(this.a);
   }
 }
 

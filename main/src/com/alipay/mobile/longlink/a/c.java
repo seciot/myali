@@ -127,7 +127,7 @@ public class c extends BundlesManager
     //   163	168	198	java/lang/Exception
   }
 
-  private String[] b(String paramString)
+  private String[] dexopt(String paramString)
   {
     int i = 0;
     Object localObject1 = stop();
@@ -179,13 +179,13 @@ public class c extends BundlesManager
     return bool;
   }
 
-  public final void b(AppBundle parama)
+  public final void dexopt(AppBundle parama)
   {
     String str1 = parama.getFullBundleName();
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, BundlesManager, "saveMsgRecord() perMsgId=" + str1);
     if ((str1 != null) && (str1.length() > 0))
     {
-      String str2 = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.getBundle(b(str1));
+      String str2 = com.alipay.mobile.longlink.BundlesManagerImpl.BundlesManager.getBundle(dexopt(str1));
       com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(4, BundlesManager, "saveMsgRecord() listMsgId:" + str2);
       try
       {

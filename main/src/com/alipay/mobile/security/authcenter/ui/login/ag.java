@@ -9,7 +9,7 @@ final class ag
 
   public final void run()
   {
-    TaobaoUserLoginFragment_.b(this.a);
+    TaobaoUserLoginFragment_.dexopt(this.a);
   }
 }
 

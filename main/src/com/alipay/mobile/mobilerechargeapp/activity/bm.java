@@ -9,7 +9,7 @@ final class bm
 
   public final void run()
   {
-    MobileRechargeActivity_.b(this.a);
+    MobileRechargeActivity_.dexopt(this.a);
   }
 }
 

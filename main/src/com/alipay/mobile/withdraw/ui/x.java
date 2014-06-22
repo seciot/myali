@@ -9,7 +9,7 @@ final class x
 
   public final void run()
   {
-    WithdrawActivity_.b(this.a);
+    WithdrawActivity_.dexopt(this.a);
   }
 }
 

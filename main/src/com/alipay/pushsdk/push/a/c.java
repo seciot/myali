@@ -49,7 +49,7 @@ public final class c
     this.t = paramc.getInitLevel();
   }
 
-  public final String a()
+  public final String initExecutor()
   {
     return this.c;
   }

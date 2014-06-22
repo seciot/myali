@@ -14,7 +14,7 @@ class CustomKeyboardhelper$2 extends ResultReceiver
   protected void onReceiveResult(int paramInt, Bundle paramBundle)
   {
     if ((paramInt == 3) || (paramInt == 1))
-      CustomKeyboardhelper.b(this.a).postDelayed(new c(this), 200L);
+      CustomKeyboardhelper.dexopt(this.a).postDelayed(new c(this), 200L);
   }
 }
 

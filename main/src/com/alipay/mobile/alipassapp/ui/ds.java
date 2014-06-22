@@ -15,7 +15,7 @@ final class ds
     this.a.a.getBundleByComponentName("del");
     if (MemberCardDetailActivity.s(this.a.a))
     {
-      this.a.a.b(MemberCardDetailActivity.t(this.a.a));
+      this.a.a.dexopt(MemberCardDetailActivity.t(this.a.a));
       return;
     }
     this.a.a.getBundle(MemberCardDetailActivity.t(this.a.a));

@@ -15,7 +15,7 @@ final class d
   {
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, BundlesManagerImpl.stop(), "UpdateUserListener onFail.");
   }
@@ -33,7 +33,7 @@ final class d
         BundlesManagerImpl.getBundle(this.a).v("LAST_CONFIG_TIME", l);
         com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(3, BundlesManagerImpl.stop(), "onComplete() saveCfgPolicy Time is:" + j.getBundle(l));
         Thread.sleep(1000L);
-        if (BundlesManagerImpl.b(this.a).getInstance().length() == 0)
+        if (BundlesManagerImpl.dexopt(this.a).getInstance().length() == 0)
           BundlesManagerImpl.getBundleByComponentName(this.a).stopService(new Intent(BundlesManagerImpl.getBundleByComponentName(this.a), NotificationService.class));
       }
       return;

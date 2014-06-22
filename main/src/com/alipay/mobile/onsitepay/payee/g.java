@@ -16,8 +16,8 @@ final class g
     if (paramString != null)
     {
       new StringBuilder("choseMode phoneBlackList = ").append(paramString).toString();
-      FacePayeeActivity.b(this.a).setPhoneConfig(paramString);
-      if (!FacePayeeActivity.b(this.a).isReceiverSoincWave())
+      FacePayeeActivity.dexopt(this.a).setPhoneConfig(paramString);
+      if (!FacePayeeActivity.dexopt(this.a).isReceiverSoincWave())
       {
         FacePayeeActivity.d(this.a);
         FacePayeeActivity.v(this.a, 3);

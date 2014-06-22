@@ -14,7 +14,7 @@ final class at
   {
     a locala = AlipassListActivity.f(this.a.a).v(this.a.a.getRequireBundleName(), this.a.a.getInitLevel());
     locala.b = true;
-    this.a.a.b(locala);
+    this.a.a.dexopt(locala);
   }
 }
 

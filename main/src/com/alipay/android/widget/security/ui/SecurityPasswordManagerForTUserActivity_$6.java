@@ -9,7 +9,7 @@ class SecurityPasswordManagerForTUserActivity_$6
 
   public void run()
   {
-    SecurityPasswordManagerForTUserActivity_.b(this.a);
+    SecurityPasswordManagerForTUserActivity_.dexopt(this.a);
   }
 }
 

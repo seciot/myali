@@ -17,7 +17,7 @@ final class BeijingMunicipal extends PbocCard
 
   static final BeijingMunicipal a(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(c).getBundleName())
+    if (paramTag.dexopt(c).getBundleName())
     {
       Iso7816.Response localResponse1 = paramTag.getBundle(4);
       if (localResponse1.getBundleName())
@@ -26,7 +26,7 @@ final class BeijingMunicipal extends PbocCard
         if (paramTag.getBundle(b).getBundleName())
         {
           Iso7816.Response localResponse3 = paramTag.getBundle(true);
-          ArrayList localArrayList = b(paramTag);
+          ArrayList localArrayList = dexopt(paramTag);
           BeijingMunicipal localBeijingMunicipal = new BeijingMunicipal(paramTag);
           localBeijingMunicipal.getBundle(localResponse3);
           if ((!localResponse1.getBundleName()) || (localResponse1.getInstance() < 32))

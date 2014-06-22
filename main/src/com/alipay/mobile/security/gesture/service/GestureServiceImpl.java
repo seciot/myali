@@ -24,7 +24,7 @@ public class GestureServiceImpl extends GestureService
   private long c = 0L;
   private Object d = new Object();
 
-  private GestureServiceImpl.GestureEnum a()
+  private GestureServiceImpl.GestureEnum initExecutor()
   {
     UserInfo localUserInfo = ((AuthService)getMicroApplicationContext().getExtServiceByInterface(AuthService.class.getName())).gestureGetUserInfo();
     if (localUserInfo == null)
@@ -44,7 +44,7 @@ public class GestureServiceImpl extends GestureService
     showGestureApp(localBundle);
   }
 
-  private GestureServiceImpl.GestureEnum b(boolean paramBoolean)
+  private GestureServiceImpl.GestureEnum dexopt(boolean paramBoolean)
   {
     UserInfo localUserInfo = ((AuthService)getMicroApplicationContext().getExtServiceByInterface(AuthService.class.getName())).getUserInfo();
     if (localUserInfo == null)
@@ -99,7 +99,7 @@ public class GestureServiceImpl extends GestureService
     boolean bool = true;
     if (paramGestureCallBack != null)
       this.b.add(paramGestureCallBack);
-    GestureServiceImpl.GestureEnum localGestureEnum = b(bool);
+    GestureServiceImpl.GestureEnum localGestureEnum = dexopt(bool);
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:
@@ -199,7 +199,7 @@ public class GestureServiceImpl extends GestureService
     if (paramBundle.getBoolean("switchAccount", true));
     try
     {
-      GestureServiceImpl.GestureEnum localGestureEnum = b(true);
+      GestureServiceImpl.GestureEnum localGestureEnum = dexopt(true);
       switch (c.a[localGestureEnum.ordinal()])
       {
       default:
@@ -234,7 +234,7 @@ public class GestureServiceImpl extends GestureService
   {
     if ((paramGestureCallBack != null) && (!this.b.contains(paramGestureCallBack)))
       this.b.add(paramGestureCallBack);
-    GestureServiceImpl.GestureEnum localGestureEnum = b(true);
+    GestureServiceImpl.GestureEnum localGestureEnum = dexopt(true);
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:
@@ -289,7 +289,7 @@ public class GestureServiceImpl extends GestureService
 
   public boolean startGestureIfNecessary(boolean paramBoolean)
   {
-    GestureServiceImpl.GestureEnum localGestureEnum = b(paramBoolean);
+    GestureServiceImpl.GestureEnum localGestureEnum = dexopt(paramBoolean);
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:
@@ -344,7 +344,7 @@ public class GestureServiceImpl extends GestureService
   public void validateGesture(GestureCallBack paramGestureCallBack)
   {
     this.b.add(paramGestureCallBack);
-    GestureServiceImpl.GestureEnum localGestureEnum = b(true);
+    GestureServiceImpl.GestureEnum localGestureEnum = dexopt(true);
     switch (c.a[localGestureEnum.ordinal()])
     {
     default:

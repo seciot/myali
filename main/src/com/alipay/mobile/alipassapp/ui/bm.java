@@ -9,7 +9,7 @@ final class bm
 
   public final void run()
   {
-    AlipassPreviewActivity_.b(this.a);
+    AlipassPreviewActivity_.dexopt(this.a);
   }
 }
 

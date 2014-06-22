@@ -58,14 +58,14 @@ public abstract class a
     com.alipay.pushsdk.BundlesManagerImpl.AppBundle.FileUtil.e(5, "Connection", "packageListener in the list is " + this.c.size());
   }
 
-  public abstract boolean a();
+  public abstract boolean initExecutor();
 
   protected final Collection stop()
   {
     return this.b;
   }
 
-  public final void b(com.alipay.pushsdk.push.ZLog.BundlesManagerImpl paramc)
+  public final void dexopt(com.alipay.pushsdk.push.ZLog.BundlesManagerImpl paramc)
   {
     this.c.removeBundle(paramc);
   }

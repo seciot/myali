@@ -14,7 +14,7 @@ public class d
     this.b = parama;
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     com.alipay.mobile.longlink.BundlesManagerImpl.AppBundle.e(3, AppBundle, "connectionClosed()...");
   }

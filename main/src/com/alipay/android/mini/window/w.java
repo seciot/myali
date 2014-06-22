@@ -11,7 +11,7 @@ final class w
   {
     if (MiniWindowManager.getBundle(this.a) != null)
       MiniWindowManager.getBundle(this.a).dispose();
-    MiniWindowManager.b(this.a);
+    MiniWindowManager.dexopt(this.a);
     MiniWindowManager.getBundleByComponentName(this.a);
     MiniWindowManager.d(this.a);
     MiniWindowManager.removeBundle(this.a);

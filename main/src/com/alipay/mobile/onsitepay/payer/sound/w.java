@@ -9,7 +9,7 @@ final class w
 
   public final void run()
   {
-    SendSoundViewActivity_.b(this.a);
+    SendSoundViewActivity_.dexopt(this.a);
   }
 }
 

@@ -18,7 +18,7 @@ final class h
 
   public final void onTabSelected(ActionBar.Tab paramTab, FragmentTransaction paramFragmentTransaction)
   {
-    if (TabLauncher.b(this.a) != null)
+    if (TabLauncher.dexopt(this.a) != null)
       this.a.onTabChanged((String)TabLauncher.d(this.a).get(Integer.valueOf(paramTab.getPosition())));
   }
 

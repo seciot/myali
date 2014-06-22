@@ -23,7 +23,7 @@ final class i
   public final void onPostExecute(Request paramRequest, Response paramResponse)
   {
     byte[] arrayOfByte = paramResponse.getResData();
-    BalancesWarnCmsActivity.b(this.a).post(new j(this, arrayOfByte));
+    BalancesWarnCmsActivity.dexopt(this.a).post(new j(this, arrayOfByte));
   }
 
   public final void onPreExecute(Request paramRequest)

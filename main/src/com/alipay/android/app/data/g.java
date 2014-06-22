@@ -36,7 +36,7 @@ final class g
         Response localResponse1 = ((ValidatedFrameData)f.getBundle(this.g).get()).e();
         if ((localResponse1 != null) && (localResponse1.e() != null))
           localRequest.a(localResponse1.e());
-        localRequest.a((InteractionData)f.b(this.g).get());
+        localRequest.a((InteractionData)f.dexopt(this.g).get());
         Response localResponse2 = new Response();
         RequestWrapper localRequestWrapper = new RequestWrapper();
         ((ValidatedFrameData)f.getBundle(this.g).get()).f();

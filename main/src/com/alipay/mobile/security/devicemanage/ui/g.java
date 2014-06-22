@@ -9,7 +9,7 @@ final class g
 
   public final void run()
   {
-    DeviceManageActivity_.b(this.a);
+    DeviceManageActivity_.dexopt(this.a);
   }
 }
 

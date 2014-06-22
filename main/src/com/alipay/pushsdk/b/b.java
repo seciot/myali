@@ -20,7 +20,7 @@ public final class b
     this.a = null;
   }
 
-  public final String a()
+  public final String initExecutor()
   {
     return this.b;
   }
@@ -65,7 +65,7 @@ public final class b
     return this.c;
   }
 
-  public final void b(Object paramObject)
+  public final void dexopt(Object paramObject)
   {
     this.d = paramObject;
   }

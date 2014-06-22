@@ -15,7 +15,7 @@ final class br
   public final void onSend(SendResultCallback paramSendResultCallback)
   {
     ForgotPayPwdActivity.getBundle(this.a);
-    if (Constants.BACK_PWD_SMS_SWITCH_UP == ForgotPayPwdActivity.b(this.a))
+    if (Constants.BACK_PWD_SMS_SWITCH_UP == ForgotPayPwdActivity.dexopt(this.a))
       this.a.i.scheduleTimer();
     while ((ForgotPayPwdActivity.getBundleByComponentName(this.a) != null) && (!"".equals(ForgotPayPwdActivity.getBundleByComponentName(this.a))))
     {

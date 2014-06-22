@@ -21,7 +21,7 @@ final class d
       {
         com.alipay.mobile.longlink.b.c.a locala = c.getBundle(a.i(this.b));
         locala.getBundle(3);
-        locala.b(0);
+        locala.dexopt(0);
         locala.getBundle("");
         com.alipay.mobile.longlink.c.a.e(4, a.x(), "HeartBeatTask() heartBeat will be sent! length=" + locala.getBundleName());
         this.a.d().getBundle(locala);

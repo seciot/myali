@@ -29,7 +29,7 @@ final class ap
     if (!this.a);
     for (int i = GlobalContext.a().b().getResources().getColor(R.color.j); ; i = this.b.o().g())
     {
-      UICombobox.b(this.b).setTextColor(i);
+      UICombobox.dexopt(this.b).setTextColor(i);
       UICombobox.g(this.b).setTextColor(i);
       return;
     }

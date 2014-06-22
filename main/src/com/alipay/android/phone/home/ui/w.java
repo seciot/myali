@@ -12,7 +12,7 @@ final class w
 
   public final void run()
   {
-    HomeFragment.access$300(this.b).b(this.a.getApp());
+    HomeFragment.access$300(this.b).dexopt(this.a.getApp());
   }
 }
 

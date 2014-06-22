@@ -13,7 +13,7 @@ final class ep
   {
     this.a.showProgressDialog("加载中", true, MemberCardObtainableListActivity.getBundleByComponentName(this.a));
     MemberCardObtainableListActivity.getBundle(this.a).set(false);
-    MemberCardObtainableListActivity.b(this.a);
+    MemberCardObtainableListActivity.dexopt(this.a);
     this.a.getInstance();
     this.a.dismissProgressDialog();
   }

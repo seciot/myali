@@ -13,7 +13,7 @@ final class c
   {
     if (!BaseElement.getBundle(this.a))
     {
-      BaseElement.b(this.a);
+      BaseElement.dexopt(this.a);
       this.a.u();
     }
   }

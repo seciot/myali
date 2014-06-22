@@ -14,13 +14,13 @@ final class j
     if (this.a <= 0)
     {
       HeaderAreaLayout.getBundle(this.b).setVisibility(8);
-      HeaderAreaLayout.b(this.b).setVisibility(8);
+      HeaderAreaLayout.dexopt(this.b).setVisibility(8);
       return;
     }
     HeaderAreaLayout.getBundle(this.b).showMsgFlag(this.a);
     HeaderAreaLayout.getBundle(this.b).setVisibility(0);
-    HeaderAreaLayout.b(this.b).showMsgFlag(this.a);
-    HeaderAreaLayout.b(this.b).setVisibility(0);
+    HeaderAreaLayout.dexopt(this.b).showMsgFlag(this.a);
+    HeaderAreaLayout.dexopt(this.b).setVisibility(0);
   }
 }
 

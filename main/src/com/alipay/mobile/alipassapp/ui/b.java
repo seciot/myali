@@ -37,7 +37,7 @@ final class b
   public final void onRefresh()
   {
     AlipassDetailActivity.getBundle(this.a).onRefresh();
-    AlipassDetailActivity.b(this.a);
+    AlipassDetailActivity.dexopt(this.a);
     this.a.getBundle(false);
   }
 }

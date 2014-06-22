@@ -24,7 +24,7 @@ final class d
     {
       CompletePhoneUserInfoActivity.d(this.a, paramString);
       this.a.showProgressDialog(null, true, null);
-      localSetMobilePayPwdRes = CompletePhoneUserInfoActivity.b(this.a).b(CompletePhoneUserInfoActivity.getBundle(this.a), paramString, CompletePhoneUserInfoActivity.getBundleByComponentName(this.a));
+      localSetMobilePayPwdRes = CompletePhoneUserInfoActivity.dexopt(this.a).b(CompletePhoneUserInfoActivity.getBundle(this.a), paramString, CompletePhoneUserInfoActivity.getBundleByComponentName(this.a));
       this.a.dismissProgressDialog();
       return localSetMobilePayPwdRes;
     }

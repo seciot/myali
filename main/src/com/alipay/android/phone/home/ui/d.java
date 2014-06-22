@@ -12,7 +12,7 @@ final class d
 
   public final void run()
   {
-    AppsCenterFragment.access$000(this.b).b(this.a.getApp());
+    AppsCenterFragment.access$000(this.b).dexopt(this.a.getApp());
   }
 }
 

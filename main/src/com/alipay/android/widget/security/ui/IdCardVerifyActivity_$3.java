@@ -9,7 +9,7 @@ class IdCardVerifyActivity_$3
 
   public void run()
   {
-    IdCardVerifyActivity_.b(this.a);
+    IdCardVerifyActivity_.dexopt(this.a);
   }
 }
 

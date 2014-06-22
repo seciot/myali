@@ -19,11 +19,11 @@ final class g
   {
     a.d(this.a.a).setVisibility(8);
     a.removeBundle(this.a.a).setVisibility(8);
-    ((APListView)a.b(this.a.a).findViewById(R.id.backview_list)).setSelection(0);
-    a.b(this.a.a).setVisibility(0);
+    ((APListView)a.dexopt(this.a.a).findViewById(R.id.backview_list)).setSelection(0);
+    a.dexopt(this.a.a).setVisibility(0);
     Animation localAnimation = AnimationUtils.loadAnimation(this.a.a.a, R.anim.alipass_detail_backview_top_show);
-    a.b(this.a.a).findViewById(R.id.layout_backview_top_back).setVisibility(0);
-    a.b(this.a.a).findViewById(R.id.layout_backview_top_back).startAnimation(localAnimation);
+    a.dexopt(this.a.a).findViewById(R.id.layout_backview_top_back).setVisibility(0);
+    a.dexopt(this.a.a).findViewById(R.id.layout_backview_top_back).startAnimation(localAnimation);
   }
 }
 

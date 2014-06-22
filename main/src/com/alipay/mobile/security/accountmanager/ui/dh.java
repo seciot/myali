@@ -9,7 +9,7 @@ final class dh
 
   public final void run()
   {
-    ModifyPayPwdActivity_.b(this.a);
+    ModifyPayPwdActivity_.dexopt(this.a);
   }
 }
 

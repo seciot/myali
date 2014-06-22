@@ -17,10 +17,10 @@ final class c
     try
     {
       AbstractUIForm.v(this.d, this.d.getBundle(this.a));
-      if (AbstractUIForm.b(this.d) != null)
+      if (AbstractUIForm.dexopt(this.d) != null)
       {
-        AbstractUIForm.b(this.d).getBundle(this.d.a.stop());
-        AbstractUIForm.b(this.d).v(this.b, this.c);
+        AbstractUIForm.dexopt(this.d).getBundle(this.d.a.stop());
+        AbstractUIForm.dexopt(this.d).v(this.b, this.c);
       }
       return;
     }

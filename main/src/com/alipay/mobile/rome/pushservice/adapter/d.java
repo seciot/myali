@@ -11,7 +11,7 @@ final class d
   {
     try
     {
-      this.b.b(this.a);
+      this.b.dexopt(this.a);
       return;
     }
     catch (Exception localException)

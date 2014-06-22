@@ -17,11 +17,11 @@ final class ShenzhenTong extends PbocCard
 
   static final ShenzhenTong setBundlePath(Iso7816.Tag paramTag)
   {
-    if ((paramTag.b(c).getBundleName()) && (paramTag.b(t).getBundleName()))
+    if ((paramTag.dexopt(c).getBundleName()) && (paramTag.dexopt(t).getBundleName()))
     {
       Iso7816.Response localResponse1 = paramTag.getBundle(21);
       Iso7816.Response localResponse2 = paramTag.getBundle(true);
-      ArrayList localArrayList = b(paramTag);
+      ArrayList localArrayList = dexopt(paramTag);
       ShenzhenTong localShenzhenTong = new ShenzhenTong(paramTag);
       localShenzhenTong.getBundle(localResponse2);
       localShenzhenTong.e(localResponse1, 4, true);

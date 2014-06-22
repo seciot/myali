@@ -18,7 +18,7 @@ public class n extends Exception
     this.a = paramThrowable;
   }
 
-  public String a()
+  public String initExecutor()
   {
     return this.b;
   }

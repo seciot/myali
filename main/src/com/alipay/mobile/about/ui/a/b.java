@@ -24,7 +24,7 @@ public final class b extends AppBundle
     this.d = BitmapFactory.decodeResource(paramContext.getResources(), R.drawable.g);
   }
 
-  public final void a()
+  public final void initExecutor()
   {
     if (this.d != null)
     {

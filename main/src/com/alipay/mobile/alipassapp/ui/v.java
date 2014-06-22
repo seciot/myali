@@ -9,7 +9,7 @@ final class v
 
   public final void run()
   {
-    AlipassForShareActivity_.b(this.a);
+    AlipassForShareActivity_.dexopt(this.a);
   }
 }
 

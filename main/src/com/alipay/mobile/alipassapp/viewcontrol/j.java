@@ -16,7 +16,7 @@ final class j
     a.d(this.a.a).setVisibility(8);
     a.removeBundle(this.a.a).setVisibility(8);
     a.f(this.a.a).setVisibility(0);
-    a.b(this.a.a).setVisibility(4);
+    a.dexopt(this.a.a).setVisibility(4);
   }
 }
 

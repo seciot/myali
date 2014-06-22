@@ -9,7 +9,7 @@ final class s
 
   public final void run()
   {
-    SecurityAccountQrCodeActivity_.b(this.a);
+    SecurityAccountQrCodeActivity_.dexopt(this.a);
   }
 }
 

@@ -9,7 +9,7 @@ final class ah
 
   public final void run()
   {
-    WithdrawSmsCheckActivity_.b(this.a);
+    WithdrawSmsCheckActivity_.dexopt(this.a);
   }
 }
 

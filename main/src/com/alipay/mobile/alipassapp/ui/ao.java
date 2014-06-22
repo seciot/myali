@@ -20,7 +20,7 @@ final class ao
     Object localObject = paramAdapterView.getItemAtPosition(paramInt);
     if ((localObject != null) && ((localObject instanceof BaseAlipassInfoItem.AlipassInfoItem)))
     {
-      if (AlipassListActivity.b(this.a).get())
+      if (AlipassListActivity.dexopt(this.a).get())
         return true;
       BaseAlipassInfoItem.AlipassInfoItem localAlipassInfoItem = (BaseAlipassInfoItem.AlipassInfoItem)localObject;
       ai.v(this.a, new ap(this, localAlipassInfoItem));

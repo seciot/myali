@@ -21,7 +21,7 @@ class ModifySimplePwdActivity$3
     try
     {
       this.a.showProgressDialog(null, true, null);
-      localMobileSecurityResult = ModifySimplePwdActivity.b(this.a).d(ModifySimplePwdActivity.getBundle(this.a).getLogonId(), paramString);
+      localMobileSecurityResult = ModifySimplePwdActivity.dexopt(this.a).d(ModifySimplePwdActivity.getBundle(this.a).getLogonId(), paramString);
       this.a.dismissProgressDialog();
       ModifySimplePwdActivity.d(this.a, paramString);
       return localMobileSecurityResult;

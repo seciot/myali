@@ -26,9 +26,9 @@ final class aw
     {
       this.b.a(this.a.needMobileSp, str2, str1, null);
       return;
-      if ((TempAuthActivity.b(this.b) != null) && (TempAuthActivity.b(this.b).getVisibility() == 0))
+      if ((TempAuthActivity.dexopt(this.b) != null) && (TempAuthActivity.dexopt(this.b).getVisibility() == 0))
       {
-        str2 = TempAuthActivity.b(this.b).getInputedPwd(-1);
+        str2 = TempAuthActivity.dexopt(this.b).getInputedPwd(-1);
         str1 = "MOBILEPASSWORD";
       }
       else

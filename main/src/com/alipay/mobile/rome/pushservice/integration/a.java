@@ -13,7 +13,7 @@ final class a
   public final void onClick(View paramView)
   {
     PushDialogActivity.getBundle(this.a);
-    PushDialogActivity.b(this.a);
+    PushDialogActivity.dexopt(this.a);
   }
 }
 

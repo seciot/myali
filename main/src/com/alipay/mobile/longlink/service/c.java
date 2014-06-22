@@ -21,7 +21,7 @@ final class c
     com.alipay.mobile.longlink.c.a.e(5, a.x(), "===== ConnectTask connManager=" + this.a.hashCode());
     if (!this.a.o())
     {
-      a.b(this.b);
+      a.dexopt(this.b);
       a.getBundleByComponentName(this.b);
       com.alipay.mobile.longlink.b.a.a.c localc;
       com.alipay.mobile.longlink.b.a.c localc1;

@@ -20,9 +20,9 @@ final class y
     do
     {
       return;
-      if ((BindPhoneActivity.b(this.a) != null) && (BindPhoneActivity.b(this.a).isAlive()))
+      if ((BindPhoneActivity.dexopt(this.a) != null) && (BindPhoneActivity.dexopt(this.a).isAlive()))
       {
-        BindPhoneActivity.b(this.a).interrupt();
+        BindPhoneActivity.dexopt(this.a).interrupt();
         BindPhoneActivity.d(this.a, Boolean.valueOf(true));
         this.a.dismissProgressDialog();
         return;

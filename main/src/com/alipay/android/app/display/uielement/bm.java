@@ -27,7 +27,7 @@ final class bm
     while (true)
     {
       return false;
-      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.Loadable));
+      UILink.getBundle(this.b).setTextColor(this.a.getColor(R.color.Bundleable));
     }
   }
 }

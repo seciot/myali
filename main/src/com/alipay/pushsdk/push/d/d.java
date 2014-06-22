@@ -24,12 +24,12 @@ public final class d
     if (new DefaultThreadFactory(2).getBundle(parama))
     {
       o.getBundle(System.currentTimeMillis());
-      this.a.b(System.currentTimeMillis());
+      this.a.dexopt(System.currentTimeMillis());
       str = parama.hasResource();
     }
     try
     {
-      o.b(new JSONObject(str).optInt("reconnectTime"));
+      o.dexopt(new JSONObject(str).optInt("reconnectTime"));
       this.a.getBundleName();
       return;
     }

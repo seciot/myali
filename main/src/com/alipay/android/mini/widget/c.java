@@ -25,7 +25,7 @@ final class c
     String str;
     if (this.c)
     {
-      this.d = FormatPhoneNO.b(this.f).getSelectionEnd();
+      this.d = FormatPhoneNO.dexopt(this.f).getSelectionEnd();
       int i = 0;
       while (i < this.h.length())
         if (this.h.charAt(i) == ' ')
@@ -50,8 +50,8 @@ final class c
     }
     while (true)
     {
-      FormatPhoneNO.b(this.f).setText(str);
-      Editable localEditable = FormatPhoneNO.b(this.f).getText();
+      FormatPhoneNO.dexopt(this.f).setText(str);
+      Editable localEditable = FormatPhoneNO.dexopt(this.f).getText();
       try
       {
         Selection.setSelection(localEditable, this.d);

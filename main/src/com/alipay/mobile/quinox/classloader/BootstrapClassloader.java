@@ -15,6 +15,7 @@ import android.os.Build;
 
 import com.alipay.mobile.quinox.bundle.AppBundle;
 import com.alipay.mobile.quinox.bundle.BundlesManager;
+import com.alipay.mobile.quinox.utils.ZLog;
 
 import dalvik.system.PathClassLoader;
 
@@ -101,17 +102,17 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	private void c() {
-		this.initExecutor.a();
+		this.initExecutor.initExecutor();
 		Iterator localIterator = this.bundlesManager.getAllBundlesIterator();
 		while (localIterator.hasNext()) {
 			AppBundle locala = (AppBundle) localIterator.next();
 			if ((locala.hasClass()) && (locala.getInitLevel() != 11110000))
-				this.initExecutor.a(locala);
+				this.initExecutor.makeBundleClassloaderCreateJob(locala);
 		}
-		this.initExecutor.b();
+		this.initExecutor.shutdownExecutor();
 	}
 
-	private boolean d(String bundleName) {
+	private boolean exists(String bundleName) {
 		synchronized (this.map) {
 			return map.containsKey(bundleName);
 		}
@@ -129,9 +130,9 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	public final void a(AppBundle parama) {
-		this.initExecutor.a();
-		this.initExecutor.a(parama);
-		this.initExecutor.b();
+		this.initExecutor.initExecutor();
+		this.initExecutor.makeBundleClassloaderCreateJob(parama);
+		this.initExecutor.shutdownExecutor();
 	}
 
 	public final void a(String paramString) {
@@ -148,8 +149,8 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		}
 	}
 
-	public final Loadable b(String bundleName) {
-		if (!d(bundleName)) {
+	public final Bundleable b(String bundleName) {
+		if (!exists(bundleName)) {
 			AppBundle locala = this.bundlesManager.getBundle(bundleName);
 			if (this.bundlesManager.b(bundleName)) {
 				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
@@ -163,7 +164,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 								+ bundleName);
 				return null;
 			}
-			this.initExecutor.a(bundleName);
+			this.initExecutor.createBundleClassloader(bundleName);
 		}
 		return e(bundleName);
 	}
@@ -174,41 +175,41 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	}
 
 	public final void b(AppBundle parama) {
-		this.initExecutor.b(parama);
+		this.initExecutor.dexopt(parama);
 	}
 
-	public final Loadable c(String paramString) {
-		if (!d(paramString)) {
-			AppBundle locala = this.bundlesManager.getBundle(paramString);
-			if (locala == null)
-				com.alipay.mobile.quinox.utils.ZLog.d("BootstrapClassloader",
+	public final Bundleable getBundleClassLoader(String bundleName) {
+		if (!exists(bundleName)) {
+			AppBundle appBundle = this.bundlesManager.getBundle(bundleName);
+			if (appBundle == null)
+				ZLog.d("BootstrapClassloader",
 						"getBundleClassLoader can't find bundle: "
-								+ paramString);
-			while (!locala.hasClass())
+								+ bundleName);
+			while (!appBundle.hasClass())
 				return null;
-			this.initExecutor.a(paramString);
+			this.initExecutor.createBundleClassloader(bundleName);
 		}
-		return e(paramString);
+		return e(bundleName);
 	}
 
 	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-	protected final Class<?> findClass(String className) throws ClassNotFoundException {
-		com.alipay.mobile.quinox.utils.ZLog.i("BootstrapClassloader", Thread
+	protected final Class<?> findClass(String componentName) throws ClassNotFoundException {
+		ZLog.i("BootstrapClassloader", Thread
 				.currentThread().getName()
 				+ ":"
 				+ this
 				+ " findClass: "
-				+ className);
-		AppBundle appBundle = bundlesManager.getBundleByComponentName(className);
+				+ componentName);
+		AppBundle appBundle = bundlesManager.getBundleByComponentName(componentName);
 		if (appBundle != null) {
-			Loadable localh = b(appBundle.getBundleName());
+			Bundleable localh = b(appBundle.getBundleName());
 			if ((localh == null) && (appBundle.getInitLevel() == 11110000)) {
 				a(appBundle);
 				localh = b(appBundle.getBundleName());
 			}
 			if ((localh != null) && (localh != this.hostClassLoader))
-				return localh.loadClassFromCurrent(className);
+				return localh.loadClassFromCurrent(componentName);
 		}
-		return this.hostClassLoader.loadClass(className);
+		return this.hostClassLoader.loadClass(componentName);
 	}
 }

@@ -21,7 +21,7 @@ final class a extends BroadcastReceiver
       {
         this.a.onInstallComplete(true);
         ApkApp.getBundle(this.a);
-        AppDao.getDao().saveOrUpdateAppEntity(ApkApp.b(this.a));
+        AppDao.getDao().saveOrUpdateAppEntity(ApkApp.dexopt(this.a));
       }
     }
   }

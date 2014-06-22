@@ -9,7 +9,7 @@ final class o
 
   public final void run()
   {
-    AccountManagerActivity_.b(this.a);
+    AccountManagerActivity_.dexopt(this.a);
   }
 }
 

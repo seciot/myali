@@ -14,7 +14,7 @@ public class d extends AppBundle
     g(BundlesManager.MinPriorityThreadFactory);
   }
 
-  public final void b(byte[] paramArrayOfByte)
+  public final void dexopt(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[0];
     BundlesManagerImpl.e(5, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgType=" + i);
@@ -22,11 +22,11 @@ public class d extends AppBundle
     System.arraycopy(paramArrayOfByte, 1, arrayOfByte, 0, 4);
     int j = d(arrayOfByte);
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgLen=" + j);
-    b(i);
+    dexopt(i);
     removeBundle(j);
   }
 
-  public final void c(byte[] paramArrayOfByte)
+  public final void getBundleClassLoader(byte[] paramArrayOfByte)
   {
     int i = paramArrayOfByte[1];
     BundlesManagerImpl.e(4, BundlesManagerImpl, "getHdrfromRead() got valid packet! msgId=" + i);

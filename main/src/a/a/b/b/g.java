@@ -101,7 +101,7 @@ abstract class g
 
   public final String toString()
   {
-    return b(k.k);
+    return dexopt(k.k);
   }
 }
 

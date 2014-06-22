@@ -16,7 +16,7 @@ final class fg
     MemberFirstDetailActivity.getInstance();
     this.b.c.setVisibility(0);
     this.b.c.setImageBitmap(this.a);
-    this.b.c.setOnClickListener(new au(MemberFirstDetailActivity.b(this.b.d)));
+    this.b.c.setOnClickListener(new au(MemberFirstDetailActivity.dexopt(this.b.d)));
   }
 }
 

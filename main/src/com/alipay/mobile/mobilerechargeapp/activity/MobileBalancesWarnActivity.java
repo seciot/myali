@@ -132,7 +132,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
     if ((paramAlertSignRes.resultStatus == 2013) || (paramAlertSignRes.resultStatus == 2102))
     {
       a(paramInt1, paramInt2);
-      b(getResources().getString(R.string.x));
+      dexopt(getResources().getString(R.string.x));
       return;
     }
     a(paramInt1, paramInt2);
@@ -238,7 +238,7 @@ public class MobileBalancesWarnActivity extends BaseActivity
     if ((paramAlertSignRes.resultStatus == 2013) || (paramAlertSignRes.resultStatus == 2102))
     {
       a(paramInt1, paramInt2);
-      b(getResources().getString(R.string.x));
+      dexopt(getResources().getString(R.string.x));
       return;
     }
     a(paramInt1, paramInt2);

@@ -11,7 +11,7 @@ class BeijingBusCardFragment$2
 
   public final void a()
   {
-    BeijingBusCardFragment.b(this.a);
+    BeijingBusCardFragment.dexopt(this.a);
   }
 
   public final void b()

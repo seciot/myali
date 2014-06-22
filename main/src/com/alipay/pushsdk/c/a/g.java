@@ -7,7 +7,7 @@ public final class g
   private static g a;
   private HashMap b = new HashMap();
 
-  public static g a()
+  public static g initExecutor()
   {
     try
     {

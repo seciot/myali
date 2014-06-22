@@ -11,7 +11,7 @@ public class a
   private String d = "";
   private String e = "";
 
-  public String a()
+  public String initExecutor()
   {
     return this.e;
   }
@@ -26,7 +26,7 @@ public class a
     return this.d;
   }
 
-  public void b(String paramString)
+  public void dexopt(String paramString)
   {
     this.d = paramString;
   }

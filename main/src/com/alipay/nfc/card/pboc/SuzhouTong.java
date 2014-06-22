@@ -18,12 +18,12 @@ public class SuzhouTong extends PbocCard
 
   static final SuzhouTong setBundlePath(Iso7816.Tag paramTag)
   {
-    if (paramTag.b(t).getBundleName())
+    if (paramTag.dexopt(t).getBundleName())
       if (new Iso7816.Response(paramTag.getBundleByComponentName(new byte[] { 0, 32, 0, 0, 3, 18, 52, 86 })).getBundleName())
       {
         Iso7816.Response localResponse1 = paramTag.getBundle(21);
         Iso7816.Response localResponse2 = paramTag.getBundle(true);
-        ArrayList localArrayList = b(paramTag);
+        ArrayList localArrayList = dexopt(paramTag);
         SuzhouTong localSuzhouTong = new SuzhouTong(paramTag);
         localSuzhouTong.getBundle(localResponse2);
         localSuzhouTong.e(localResponse1, 0, false);

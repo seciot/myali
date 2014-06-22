@@ -20,9 +20,9 @@ final class aa
 
   public final void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3)
   {
-    WithdrawSmsCheckActivity.b(this.a);
-    WithdrawSmsCheckActivity.v(this.a, Integer.valueOf(1 + WithdrawSmsCheckActivity.b(this.a).intValue()));
-    new StringBuilder("{[info=smsCheckCodeSendBox], [msg=autoReadCount:").append(WithdrawSmsCheckActivity.b(this.a)).append("]}").toString();
+    WithdrawSmsCheckActivity.dexopt(this.a);
+    WithdrawSmsCheckActivity.v(this.a, Integer.valueOf(1 + WithdrawSmsCheckActivity.dexopt(this.a).intValue()));
+    new StringBuilder("{[info=smsCheckCodeSendBox], [msg=autoReadCount:").append(WithdrawSmsCheckActivity.dexopt(this.a)).append("]}").toString();
   }
 }
 

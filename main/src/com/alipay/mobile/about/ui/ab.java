@@ -16,7 +16,7 @@ final class ab
   public final void onClick(View paramView)
   {
     ag.a().d(this.a);
-    ag.a().b(this.a);
+    ag.a().dexopt(this.a);
     Intent localIntent = new Intent(this.b.getContext(), FloatWindowService.class);
     this.a.stopService(localIntent);
   }

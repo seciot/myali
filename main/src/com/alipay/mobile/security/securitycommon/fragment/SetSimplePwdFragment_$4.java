@@ -9,7 +9,7 @@ class SetSimplePwdFragment_$4
 
   public void run()
   {
-    SetSimplePwdFragment_.b(this.a);
+    SetSimplePwdFragment_.dexopt(this.a);
   }
 }
 

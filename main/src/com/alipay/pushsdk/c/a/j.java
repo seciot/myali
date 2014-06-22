@@ -13,7 +13,7 @@ final class j extends Thread
 
   public final void run()
   {
-    i.b(this.a);
+    i.dexopt(this.a);
   }
 }
 

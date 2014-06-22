@@ -15,7 +15,7 @@ public final class o
   private static long k = 0L;
   private static long l = 0L;
 
-  public static String a()
+  public static String initExecutor()
   {
     return "1.1.0";
   }
@@ -34,7 +34,7 @@ public final class o
 
   public static void setBundlePath(boolean paramBoolean)
   {
-    Loadable = paramBoolean;
+    Bundleable = paramBoolean;
   }
 
   public static int stop()
@@ -44,12 +44,12 @@ public final class o
     return AppBundle;
   }
 
-  public static void b(int paramInt)
+  public static void dexopt(int paramInt)
   {
     ZLog = paramInt * 60;
   }
 
-  public static void b(boolean paramBoolean)
+  public static void dexopt(boolean paramBoolean)
   {
     i = paramBoolean;
   }
@@ -59,12 +59,12 @@ public final class o
     return ZLog;
   }
 
-  public static void c(int paramInt)
+  public static void getBundleClassLoader(int paramInt)
   {
     BundlesManager = paramInt;
   }
 
-  public static void c(boolean paramBoolean)
+  public static void getBundleClassLoader(boolean paramBoolean)
   {
     j = paramBoolean;
   }
@@ -91,7 +91,7 @@ public final class o
 
   public static boolean g()
   {
-    return Loadable;
+    return Bundleable;
   }
 
   public static boolean hasResource()

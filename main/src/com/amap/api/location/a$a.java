@@ -21,7 +21,7 @@ class a$a extends Handler
         ((f)localIterator.next()).c.onLocationChanged((AMapLocation)paramMessage.obj);
       AppBundle.v(this.a, (AMapLocation)paramMessage.obj);
       if (AppBundle.getBundle(this.a) != null)
-        c.v(AppBundle.b(this.a), AppBundle.getBundle(this.a));
+        c.v(AppBundle.dexopt(this.a), AppBundle.getBundle(this.a));
     }
   }
 }
