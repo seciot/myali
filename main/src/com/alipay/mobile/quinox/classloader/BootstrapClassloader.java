@@ -26,6 +26,7 @@ public final class BootstrapClassLoader extends PathClassLoader {
 	private Map map;
 	private InitExecutor initExecutor;
 	private HostClassLoader hostClassLoader;
+	
 
 	public BootstrapClassLoader(Context context, PathClassLoader pathClassLoader,
 			BundlesManager bundlesManager) {
