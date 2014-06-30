@@ -119,17 +119,9 @@ public final class BootstrapClassLoader extends PathClassLoader {
 		}
 	}
 
-<<<<<<< HEAD
 	private BundleClassloader e(String bundleName) {
 		synchronized (map) {
 			return (BundleClassloader) map.get(bundleName);
-=======
-	private BundleClassloader e(String paramString) {
-		synchronized (this.map) {
-			
-			BundleClassloader locald = (BundleClassloader) this.map.get(paramString);
-			return locald;
->>>>>>> 229413a2008063df0fa130c7895f803fce9f3af4
 		}
 	}
 
